@@ -20,6 +20,9 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT, help="Số item tối đa giữ lại.")
     parser.add_argument("--dry-run", action="store_true", help="Không ghi gì xuống data/.")
+    parser.add_argument(
+        "--explain", action="store_true", help="In bảng phân rã điểm của từng item."
+    )
     parser.add_argument("-v", "--verbose", action="store_true")
     return parser.parse_args(argv)
 
@@ -36,12 +39,20 @@ def main(argv: list[str] | None = None) -> int:
 
     print(
         f"\n{day}  fetched={manifest.fetched}  new={manifest.new}  "
-        f"duplicates={manifest.duplicates}"
+        f"gộp={manifest.merged}  trùng={manifest.duplicates}"
     )
     for source in manifest.sources:
         mark = "ok " if source.ok else "LỖI"
         detail = f"{source.fetched} item" if source.ok else (source.error or "")
         print(f"  [{mark}] {source.source:<14} {source.duration_s:>5.2f}s  {detail}")
+
+    if args.explain:
+        from ai_radar import store
+        from ai_radar.scoring import explain
+
+        print()
+        for item in store.read_items(day):
+            print("  " + explain(item))
 
     if manifest.failed_sources:
         print(f"\nNguồn lỗi: {', '.join(manifest.failed_sources)}")

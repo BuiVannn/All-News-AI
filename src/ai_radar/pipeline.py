@@ -15,8 +15,8 @@ from pathlib import Path
 
 import httpx
 
-from ai_radar import store
-from ai_radar.collectors import REGISTRY, Collector
+from ai_radar import config, dedup, scoring, store
+from ai_radar.collectors import Collector, default_registry
 from ai_radar.http import build_client
 from ai_radar.models import Item, RunManifest, SourceResult
 
@@ -59,7 +59,7 @@ async def collect(
     day: date, collectors: Sequence[Collector] | None = None
 ) -> tuple[list[SourceResult], list[Item]]:
     """Chạy mọi nguồn song song. Không bao giờ ném exception ra ngoài."""
-    active: Sequence[Collector] = REGISTRY if collectors is None else collectors
+    active: Sequence[Collector] = default_registry() if collectors is None else collectors
     async with build_client() as client:
         results = await asyncio.gather(*(_run_one(c, client, day) for c in active))
 
@@ -69,10 +69,10 @@ async def collect(
 
 
 def dedupe(items: list[Item], seen: set[str]) -> tuple[list[Item], int]:
-    """Bỏ item đã gặp ở lượt trước, và item trùng nhau trong cùng lượt này.
+    """Lọc theo `Item.id`: bỏ item đã đăng ngày trước và trùng trong cùng lượt.
 
-    M0 chỉ so theo `Item.id`. Gộp chéo nguồn theo `dedup_keys`
-    (arXiv ID / DOI / GitHub / title mờ) sẽ vào ở M1 — xem docs/ARCHITECTURE.md §5.
+    Đây chỉ là bước lọc rẻ tiền trước. Gộp chéo nguồn thật sự (arXiv ID / DOI /
+    GitHub / HF / URL / tiêu đề) nằm ở `dedup.merge` — xem docs/ARCHITECTURE.md §5.
     """
     fresh: list[Item] = []
     batch_ids: set[str] = set()
@@ -86,6 +86,56 @@ def dedupe(items: list[Item], seen: set[str]) -> tuple[list[Item], int]:
         fresh.append(item)
 
     return fresh, duplicates
+
+
+def select(candidates: list[Item], limit: int) -> list[Item]:
+    """Chọn `limit` item, đảm bảo suất tối thiểu cho từng loại.
+
+    Xếp thuần theo điểm thì model chiếm hết: model có ba tín hiệu đếm được
+    (trending/downloads/likes), paper chỉ có upvotes, còn tin blog thì không có
+    tín hiệu nào. Một lượt chạy thật cho ra 26/30 mục là model.
+
+    Hạn ngạch lấp trước, phần ghế còn lại xếp thuần theo điểm.
+    """
+    ranked = sorted(candidates, key=lambda i: -i.score)
+    quotas: dict[str, int] = {
+        str(k): int(v) for k, v in (config.section("feed").get("quotas") or {}).items()
+    }
+
+    # Cấp phát XOAY VÒNG, không duyệt tuần tự từng loại: tổng hạn ngạch có thể
+    # lớn hơn `limit` (25 > 10 chẳng hạn), và khi đó loại đứng đầu sẽ nuốt trọn
+    # số ghế, đúng cái mà hạn ngạch sinh ra để ngăn.
+    pools: dict[str, list[Item]] = {kind: [] for kind in quotas}
+    for item in ranked:
+        if item.kind.value in pools:
+            pools[item.kind.value].append(item)
+
+    chosen: list[Item] = []
+    taken: set[str] = set()
+    remaining = dict(quotas)
+
+    while len(chosen) < limit:
+        progressed = False
+        for kind in quotas:
+            if len(chosen) >= limit or remaining[kind] <= 0 or not pools[kind]:
+                continue
+            item = pools[kind].pop(0)
+            chosen.append(item)
+            taken.add(item.id)
+            remaining[kind] -= 1
+            progressed = True
+        if not progressed:
+            break
+
+    # Ghế còn trống (loại nào đó không đủ item) thì nhường cho điểm cao nhất.
+    for item in ranked:
+        if len(chosen) >= limit:
+            break
+        if item.id not in taken:
+            chosen.append(item)
+            taken.add(item.id)
+
+    return sorted(chosen, key=lambda i: -i.score)
 
 
 def run(
@@ -113,14 +163,15 @@ def run(
 
     # Item vừa fetch đè lên bản cũ trong file: cùng ID nhưng tín hiệu mới hơn
     # (upvotes tăng theo thời gian).
-    candidates = {**existing, **{item.id: item for item in fresh}}
+    candidates = list({**existing, **{item.id: item for item in fresh}}.values())
 
-    # M0 xếp hạng tạm bằng upvotes. Tier-1 scoring thật (config/weights.yaml)
-    # thay thế chỗ này ở M1.
-    for item in candidates.values():
-        item.score = float(item.signals.hf_upvotes)
+    # Gộp chéo nguồn: cùng một sự kiện ở arXiv + HF + GitHub + blog thành MỘT
+    # item nhiều link. Chạy sau khi hợp nhất để bắt được cả trùng giữa các nguồn
+    # lẫn trùng với những gì đã ghi hôm nay.
+    candidates, merged_away = dedup.merge(candidates)
 
-    selected = sorted(candidates.values(), key=lambda i: -i.score)[:limit]
+    scoring.score_all(candidates)
+    selected = select(candidates, limit)
 
     manifest = RunManifest(
         day=day.isoformat(),
@@ -129,7 +180,8 @@ def run(
         sources=stats,
         fetched=len(raw_items),
         new=sum(1 for item in selected if item.id not in existing),
-        duplicates=duplicates,
+        duplicates=duplicates + merged_away,
+        merged=merged_away,
     )
 
     if not dry_run:

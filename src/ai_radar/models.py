@@ -56,6 +56,7 @@ class Signals(BaseModel):
     """Tín hiệu thô dùng cho tier-1 scoring. Luôn có giá trị mặc định."""
 
     hf_upvotes: int = 0
+    hf_likes: int = 0
     hf_downloads: int = 0
     hf_trending_score: float = 0.0
     is_daily_paper: bool = False
@@ -119,6 +120,7 @@ class RunManifest(BaseModel):
     fetched: int = 0
     new: int = 0
     duplicates: int = 0
+    merged: int = 0
 
     @property
     def failed_sources(self) -> list[str]:

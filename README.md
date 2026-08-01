@@ -4,7 +4,7 @@ Gom **paper, model release, tin ra mắt và tooling AI** về một feed duy nh
 
 Mỗi ngày có hàng trăm paper và model mới ra. Vấn đề không phải là tìm chúng ở đâu, mà là **lọc ra 30 thứ đáng đọc** và gom các mảnh rời rạc của cùng một sự kiện lại với nhau.
 
-> 🚧 Đang phát triển — hiện ở mốc M0 (một nguồn, pipeline chạy được đầu-cuối).
+> 🚧 Đang phát triển — hiện ở mốc M1 (4 nguồn, gộp chéo nguồn, xếp hạng tier-1).
 
 ## Điểm khác biệt
 
@@ -27,20 +27,27 @@ flowchart LR
 
 Không có server, không có database. Dữ liệu là file JSON trong git — nghĩa là pipeline **replay được** (chạy lại thuật toán xếp hạng trên toàn bộ lịch sử mà không cần fetch lại), debug bằng `cat`, và rollback bằng `git revert`.
 
+Feed có hạn ngạch theo loại. Xếp thuần theo điểm thì model chiếm 26/30 chỗ, vì
+model có tới ba tín hiệu đếm được (trending/downloads/likes) trong khi paper chỉ
+có upvotes và tin blog thì không có tín hiệu nào.
+
 Lý do đằng sau từng quyết định: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 ## Nguồn dữ liệu
 
 | Nguồn | Loại | Trạng thái |
 |---|---|---|
-| HF Daily Papers | paper | ✅ M0 |
-| arXiv RSS | paper | M1 |
-| HF Models | model | M1 |
-| Blog RSS các lab | tin ra mắt | M1 |
+| HF Daily Papers | paper | ✅ |
+| arXiv RSS (5 category) | paper | ✅ |
+| HF Models | model | ✅ |
+| Blog RSS 8 lab | tin ra mắt | ✅ |
 | OpenRouter Models | model closed-source | M4 |
 | GitHub Search | repo | M4 |
 | MCP Registry | tooling | M4 |
 | Hacker News / Reddit | tín hiệu độ nóng | M4 |
+
+Anthropic, Meta AI, Mistral và DeepSeek **không publish RSS** ở path thông thường
+(đã dò 2026-08-01), nên sẽ phủ gián tiếp qua HN/Reddit ở M4.
 
 Chỉ dùng API chính thức và RSS — không scrape.
 
@@ -57,8 +64,18 @@ python -m ai_radar                                # thu thập hôm nay
 ```
 
 ```
-2026-07-31  fetched=26  new=26  duplicates=0
-  [ok ] hf_papers       0.42s  26 item
+2026-07-31  fetched=116  new=30  gộp=0  trùng=0
+  [ok ] hf_papers       0.45s  38 item
+  [ok ] arxiv           0.69s  0 item      # rỗng T7/CN — feed tự khai <skipDays>
+  [ok ] hf_models       0.45s  42 item
+  [ok ] blogs           6.62s  36 item
+```
+
+`--explain` in bảng phân rã điểm để hiểu vì sao một mục lên hạng:
+
+```
+99.7  deepseek-ai/DeepSeek-V4-Flash-0731   hf_trending=+43.0  hf_likes=+21.7
+                                           known_org=+10.0    age_decay=-2.3
 ```
 
 ## Phát triển
@@ -71,10 +88,20 @@ mypy
 
 Thêm một nguồn mới = viết một class kế thừa `Collector` rồi đăng ký vào `collectors/REGISTRY`. Không cần đụng vào pipeline.
 
+Mọi hằng số chỉnh được đều nằm trong `config/*.yaml`, không hardcode: danh sách
+feed, ngưỡng lọc, trọng số scoring, hạn ngạch từng loại.
+
+Test đánh dấu `live` chạm mạng thật và bị bỏ qua mặc định — dùng để bắt sai lệch
+giữa tài liệu và thực tế của arXiv RSS:
+
+```bash
+pytest -m live
+```
+
 ## Lộ trình
 
 - [x] **M0** — schema, `Collector` base, HF Daily Papers, ghi JSON
-- [ ] **M1** — arXiv RSS + HF Models + blog RSS, dedup chéo nguồn, tier-1 scoring
+- [x] **M1** — arXiv RSS + HF Models + blog RSS, dedup chéo nguồn 6 tầng, tier-1 scoring
 - [ ] **M2** — tóm tắt tiếng Việt (Claude Haiku), web Astro, deploy
 - [ ] **M3** — cron GitHub Actions, run manifest, xử lý lỗi
 - [ ] **M4** — thêm GitHub, MCP Registry, OpenRouter, HN, Reddit

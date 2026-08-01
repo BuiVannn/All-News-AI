@@ -1,0 +1,74 @@
+# Trọng số tier-1. Đây là chỗ bạn sẽ chỉnh nhiều nhất — sửa số ở đây rồi
+# chạy lại `python -m ai_radar --date <ngày> --explain` để xem điểm đổi ra sao.
+#
+# Tín hiệu đếm được (upvotes, stars, downloads) đi qua log1p trước khi nhân
+# trọng số: chênh lệch 10 -> 100 đáng kể, còn 10000 -> 10100 thì không.
+
+weights:
+  hf_upvotes: 8.0
+  hf_trending: 6.0
+  hf_downloads: 2.0
+  hf_likes: 3.0
+  github_stars: 2.0
+  github_stars_delta: 4.0
+  hn_points: 3.0
+  reddit_score: 2.0
+
+  # Cộng thẳng, không qua log
+  is_daily_paper: 5.0
+  has_code: 3.0
+  has_weights: 4.0
+  known_org: 10.0
+  topic_match: 4.0
+
+  # Trừ dần theo tuổi để tin cũ không chiếm chỗ tin mới
+  age_decay_per_day: 1.5
+
+# Điểm nền theo loại, bù cho việc mỗi loại có sẵn lượng tín hiệu khác nhau.
+# Tin ra mắt chính thức từ lab hầu như không có tín hiệu đếm được nào, nhưng
+# thường là thứ đáng đọc nhất trong ngày.
+kind_base:
+  release: 20.0
+  tool: 8.0
+  paper: 0.0
+  model: 0.0
+  repo: 0.0
+
+# Khớp theo tiền tố của tên tổ chức/tác giả (không phân biệt hoa thường).
+known_orgs:
+  - openai
+  - anthropic
+  - google
+  - deepmind
+  - meta
+  - facebook
+  - microsoft
+  - nvidia
+  - mistral
+  - qwen
+  - alibaba
+  - deepseek
+  - moonshot
+  - cohere
+  - allenai
+  - ai2
+  - stability
+  - together
+  - thinkingmachines
+  - kwaipilot
+
+# Chủ đề bạn quan tâm — item khớp được cộng điểm `topic_match`.
+topics_of_interest: [llm, agent, rag, mcp, multimodal]
+
+# Từ khoá suy ra chủ đề khi chưa có LLM gán tag (tier-2 sẽ ghi đè ở M2).
+topic_keywords:
+  llm: [llm, language model, gpt, transformer, instruction tuning, reasoning]
+  agent: [agent, agentic, tool use, tool-use, planning, autonomous]
+  rag: [retrieval, rag, retrieval-augmented, vector search, embedding]
+  mcp: [mcp, model context protocol]
+  multimodal: [multimodal, vision-language, vlm, omni, image-text]
+  cv: [vision, image, video, segmentation, detection, diffusion]
+  speech: [speech, audio, asr, tts, voice]
+  robotics: [robot, manipulation, embodied]
+  eval: [benchmark, evaluation, eval, leaderboard]
+  infra: [inference, serving, quantization, kernel, throughput, kv cache]

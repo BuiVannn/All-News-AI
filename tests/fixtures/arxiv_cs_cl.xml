@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Fixture dựng theo info.arxiv.org/help/rss_specifications.html, KHÔNG phải bản
+  chụp từ feed thật: feed arXiv rỗng vào cuối tuần (<skipDays>) nên không lấy
+  được mẫu có item vào lúc viết test.
+
+  Vì vậy có thêm test đánh dấu `live` trong test_arxiv_rss.py, chạm feed thật
+  vào ngày trong tuần để bắt sai lệch giữa spec và thực tế.
+
+  Bao phủ: announce_type new / cross / replace, description hỏng (rơi về guid),
+  entry thiếu title, và pubDate dạng RFC-822.
+-->
+<rss xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>cs.CL updates on arXiv.org</title>
+    <link>http://rss.arxiv.org/rss/cs.CL</link>
+    <description>cs.CL updates on the arXiv.org e-print archive.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jul 2026 04:00:14 +0000</lastBuildDate>
+    <pubDate>Wed, 29 Jul 2026 00:00:00 -0400</pubDate>
+    <skipDays>
+      <day>Sunday</day>
+      <day>Saturday</day>
+    </skipDays>
+
+    <item>
+      <title>Sparse Routing Improves Long-Context Retrieval in Language Models</title>
+      <link>https://arxiv.org/abs/2607.11111</link>
+      <description>arXiv:2607.11111v1 Announce Type: new Abstract: We study how sparse routing changes retrieval behaviour over long contexts. Our method improves recall at 128k tokens while reducing decode latency.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2607.11111v1</guid>
+      <category>cs.CL</category>
+      <category>cs.LG</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Mai Tran, Kenji Watanabe, Priya Raman</dc:creator>
+      <dc:rights>http://creativecommons.org/licenses/by/4.0/</dc:rights>
+    </item>
+
+    <item>
+      <title>Cross-Modal Grounding for Embodied Agents</title>
+      <link>https://arxiv.org/abs/2607.22222</link>
+      <description>arXiv:2607.22222v2 Announce Type: cross Abstract: We present a grounding method that aligns visual observations with agent action plans.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2607.22222v2</guid>
+      <category>cs.CL</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Elena Sokolova, David Okoro</dc:creator>
+      <arxiv:DOI>10.1234/example.2607.22222</arxiv:DOI>
+    </item>
+
+    <item>
+      <title>An Older Paper Being Revised Again</title>
+      <link>https://arxiv.org/abs/2203.01250</link>
+      <description>arXiv:2203.01250v3 Announce Type: replace-cross Abstract: We consider first order optimisation under noise. This is a revision of a 2022 paper.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2203.01250v3</guid>
+      <category>cs.CL</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Old Author</dc:creator>
+    </item>
+
+    <item>
+      <title>Description Format Changed Without Warning</title>
+      <link>https://arxiv.org/abs/2607.33333</link>
+      <description>Abstract only, no arXiv prefix and no announce type at all.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2607.33333v1</guid>
+      <category>cs.CL</category>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 -0400</pubDate>
+      <dc:creator>Schema Drift</dc:creator>
+    </item>
+
+    <item>
+      <title></title>
+      <link>https://arxiv.org/abs/2607.44444</link>
+      <description>arXiv:2607.44444v1 Announce Type: new Abstract: This entry has no title and must be skipped.</description>
+      <guid isPermaLink="false">oai:arXiv.org:2607.44444v1</guid>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 -0400</pubDate>
+    </item>
+  </channel>
+</rss>

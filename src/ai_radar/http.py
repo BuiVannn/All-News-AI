@@ -44,6 +44,23 @@ def _retry_delay(response: httpx.Response | None, attempt: int) -> float:
     return min(2.0**attempt, 30.0) + random.uniform(0, 1)
 
 
+async def get_bytes(
+    client: httpx.AsyncClient,
+    url: str,
+    *,
+    params: dict[str, Any] | None = None,
+    attempts: int = 3,
+) -> bytes:
+    """GET nội dung thô — dùng cho RSS/Atom.
+
+    Cố tình tự tải rồi mới đưa cho feedparser, thay vì để `feedparser.parse(url)`
+    tự gọi mạng: như vậy RSS mới đi qua cùng một lớp retry/backoff/User-Agent
+    như mọi nguồn khác.
+    """
+    response = await _request(client, url, params=params, attempts=attempts)
+    return response.content
+
+
 async def get_json(
     client: httpx.AsyncClient,
     url: str,
@@ -51,7 +68,22 @@ async def get_json(
     params: dict[str, Any] | None = None,
     attempts: int = 3,
 ) -> Any:
-    """GET một endpoint JSON.
+    """GET một endpoint JSON."""
+    response = await _request(client, url, params=params, attempts=attempts)
+    try:
+        return response.json()
+    except ValueError as exc:
+        raise FetchError(f"GET {url}: body không phải JSON hợp lệ: {exc}") from exc
+
+
+async def _request(
+    client: httpx.AsyncClient,
+    url: str,
+    *,
+    params: dict[str, Any] | None = None,
+    attempts: int = 3,
+) -> httpx.Response:
+    """GET có retry.
 
     Dùng GET chứ không POST một cách có chủ đích: nhiều nguồn (đáng chú ý là
     arXiv) đặt CDN cache trước GET, nên GET vừa nhanh hơn vừa ít dính rate
@@ -68,8 +100,8 @@ async def get_json(
                     f"HTTP {response.status_code}", request=response.request, response=response
                 )
             response.raise_for_status()
-            return response.json()
-        except (httpx.HTTPError, ValueError) as exc:
+            return response
+        except httpx.HTTPError as exc:
             last_error = exc
             retryable = response is None or response.status_code in RETRY_STATUS
             if not retryable or attempt == attempts - 1:

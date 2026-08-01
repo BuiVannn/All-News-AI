@@ -1,0 +1,63 @@
+# Cấu hình nguồn. Sửa file này, không sửa code.
+
+arxiv:
+  # Chỉ dùng RSS (rss.arxiv.org). KHÔNG dùng Query API — trả 429 liên tục từ
+  # 02/2026 kể cả khi tuân thủ 1 request/3 giây. Xem docs/ARCHITECTURE.md §2.2.
+  categories: [cs.CL, cs.CV, cs.LG, cs.AI, eess.AS]
+
+  # 'new'     = bài hoàn toàn mới
+  # 'cross'   = bài cross-list sang category này (vẫn là bài mới với người đọc)
+  # 'replace' = bản sửa của bài cũ -> KHÔNG phải tin tức, loại bỏ
+  announce_types: [new, cross]
+
+hf_models:
+  # sort=trendingScore (camelCase). 'trending_score' trả HTTP 400.
+  # sort=createdAt cho toàn model rác 0 download; sort=likes/downloads cho
+  # toàn model kinh điển nhiều năm tuổi. trendingScore là thứ duy nhất dùng được.
+  limit: 100
+  max_age_days: 30 # lọc lại theo createdAt để feed là "mới ra", không phải "đang hot"
+  min_likes: 3
+
+  # Bỏ bản lượng tử hoá (GGUF/AWQ/NVFP4...). HF công bố quan hệ này qua tag
+  # `base_model:quantized:<repo>` nên không phải đoán theo tên. Không lọc thì
+  # feed bị chiếm chỗ: một lượt chạy thật cho ra 4 biến thể Kimi-K3 và 4 biến
+  # thể Inkling trong top 30. Fine-tune thì GIỮ — đó là tin ra mắt thật.
+  skip_quantized: true
+
+blogs:
+  # Feed trả TOÀN BỘ archive (OpenAI: 1105 bài), nên bắt buộc lọc theo cửa sổ.
+  window_days: 7
+
+  # Cảnh báo khi feed không có bài mới quá lâu — nguồn chết âm thầm là
+  # failure mode khó phát hiện nhất.
+  stale_after_days: 120
+
+  feeds:
+    - { name: openai, url: "https://openai.com/blog/rss.xml" }
+    - { name: deepmind, url: "https://deepmind.google/blog/rss.xml" }
+    - { name: google_research, url: "https://research.google/blog/rss/" }
+    - { name: huggingface, url: "https://huggingface.co/blog/feed.xml" }
+    - { name: nvidia, url: "https://developer.nvidia.com/blog/feed" }
+    - { name: microsoft_research, url: "https://www.microsoft.com/en-us/research/feed/" }
+    - { name: bair, url: "https://bair.berkeley.edu/blog/feed.xml" }
+    # Qwen: feed còn sống nhưng bài mới nhất đã 312 ngày tuổi (đo 2026-08-01).
+    # Giữ lại để cơ chế cảnh báo stale có việc để làm.
+    - { name: qwen, url: "https://qwenlm.github.io/blog/index.xml" }
+# Không có RSS ở path thông thường (đã dò 2026-08-01): Anthropic, Meta AI,
+# Mistral, DeepSeek. Sẽ phủ gián tiếp qua Hacker News / Reddit ở M4.
+
+dedup:
+  # Khoá tiêu đề chỉ so trong cửa sổ này, nếu không sẽ vừa chậm vừa gộp nhầm
+  # các bài trùng tên qua nhiều năm.
+  title_window_days: 7
+  # Ngưỡng tương đồng tiêu đề. Đặt cao vì gộp nhầm tệ hơn bỏ sót.
+  title_similarity: 0.92
+
+feed:
+  # Suất tối thiểu đảm bảo cho mỗi loại, phần còn lại xếp theo điểm.
+  # Không có hạn ngạch thì model chiếm hết: model có tới 3 tín hiệu đếm được
+  # (trending/downloads/likes) còn paper chỉ có upvotes và blog thì không có gì.
+  quotas:
+    model: 10
+    paper: 10
+    release: 5

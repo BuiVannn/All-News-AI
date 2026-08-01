@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections import Counter
 from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import ClassVar
@@ -11,7 +12,7 @@ import httpx
 from ai_radar import store
 from ai_radar.collectors.base import Collector
 from ai_radar.models import Item, Kind, Signals
-from ai_radar.pipeline import dedupe, run
+from ai_radar.pipeline import dedupe, run, select
 
 DAY = date(2026, 7, 31)
 
@@ -165,3 +166,56 @@ def test_no_sources_succeed_is_reported(tmp_path: Path) -> None:
     manifest = run(DAY, root=tmp_path, collectors=[BrokenCollector()])
     assert manifest.new == 0
     assert not any(s.ok for s in manifest.sources)
+
+
+# --------------------------------------------------------------------------
+# Chọn feed theo hạn ngạch
+# --------------------------------------------------------------------------
+
+
+def _scored(item_id: str, kind: Kind, score: float) -> Item:
+    item = make_item(item_id)
+    item.kind = kind
+    item.score = score
+    return item
+
+
+def test_select_reserves_slots_for_each_kind() -> None:
+    """Hồi quy: xếp thuần theo điểm thì model chiếm 26/30 chỗ.
+
+    Model có ba tín hiệu đếm được (trending/downloads/likes), paper chỉ có
+    upvotes, tin blog thì không có gì — nên phải giữ chỗ tối thiểu cho từng loại.
+    """
+    models = [_scored(f"m{i}", Kind.MODEL, 100 - i) for i in range(30)]
+    papers = [_scored(f"p{i}", Kind.PAPER, 50 - i) for i in range(30)]
+    releases = [_scored(f"r{i}", Kind.RELEASE, 10 - i) for i in range(30)]
+
+    chosen = select([*models, *papers, *releases], 30)
+    counts = Counter(i.kind for i in chosen)
+
+    assert len(chosen) == 30
+    assert counts[Kind.PAPER] >= 10
+    assert counts[Kind.RELEASE] >= 5
+    assert counts[Kind.MODEL] >= 10
+
+
+def test_select_fills_leftover_slots_by_score() -> None:
+    """Thiếu item của một loại thì phần ghế trống nhường cho điểm cao nhất."""
+    models = [_scored(f"m{i}", Kind.MODEL, 100 - i) for i in range(20)]
+    papers = [_scored("p0", Kind.PAPER, 5)]
+
+    chosen = select([*models, *papers], 10)
+    assert len(chosen) == 10
+    assert any(i.kind is Kind.PAPER for i in chosen)
+    assert sum(1 for i in chosen if i.kind is Kind.MODEL) == 9
+
+
+def test_select_output_is_sorted_by_score() -> None:
+    items = [_scored("a", Kind.MODEL, 10), _scored("b", Kind.PAPER, 90)]
+    assert [i.id for i in select(items, 10)] == ["b", "a"]
+
+
+def test_select_never_duplicates_an_item() -> None:
+    items = [_scored(f"m{i}", Kind.MODEL, 100 - i) for i in range(5)]
+    chosen = select(items, 30)
+    assert len({i.id for i in chosen}) == len(chosen) == 5
