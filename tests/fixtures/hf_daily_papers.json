@@ -1,0 +1,438 @@
+[
+  {
+    "paper": {
+      "id": "2607.23193",
+      "authors": [
+        {
+          "_id": "6a6966f49d3a1231d492b82f",
+          "user": {
+            "_id": "6900bac1ce3f2835d3520a0d",
+            "avatarUrl": "/avatars/e3282fca2d6f42dfa8cb5557ffef72a9.svg",
+            "isPro": false,
+            "fullname": "Jinsen Su",
+            "user": "Consonnm",
+            "type": "user",
+            "name": "Consonnm"
+          },
+          "name": "Jinsen Su",
+          "status": "admin_assigned",
+          "statusLastChangedAt": "2026-07-31T18:06:25.607Z",
+          "hidden": false
+        },
+        {
+          "_id": "6a6966f49d3a1231d492b830",
+          "name": "Yongdong Luo",
+          "hidden": false
+        },
+        {
+          "_id": "6a6966f49d3a1231d492b831",
+          "name": "Yuexiao Ma",
+          "hidden": false
+        },
+        {
+          "_id": "6a6966f49d3a1231d492b832",
+          "name": "Yibo Hu",
+          "hidden": false
+        },
+        {
+          "_id": "6a6966f49d3a1231d492b833",
+          "name": "Meiguang Jin",
+          "hidden": false
+        },
+        {
+          "_id": "6a6966f49d3a1231d492b834",
+          "name": "Xiaowu Zheng",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-07-28T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-07-31T00:00:00.000Z",
+      "title": "OmniScope: Modality-Decoupled Token Compression for Omnimodal Large Language Models",
+      "submittedOnDailyBy": {
+        "_id": "6900bac1ce3f2835d3520a0d",
+        "avatarUrl": "/avatars/e3282fca2d6f42dfa8cb5557ffef72a9.svg",
+        "isPro": false,
+        "fullname": "Jinsen Su",
+        "user": "Consonnm",
+        "type": "user",
+        "name": "Consonnm"
+      },
+      "summary": "Existing token compression methods for omnimodal large language models typically rely on one modality to determine what to retain in the other. We show that this assumption often breaks down: for the same query, audio and video relevance often peaks at different moments. This cross-modal salience mismatch makes unidirectional guidance prone to discarding answer-critical cues under aggressive compression. We propose OmniScope, a training-free token compression framework that uses the query as a shared semantic anchor while estimating relevance separately for audio and video. OmniScope allocates modality-specific token budgets, prunes visual tokens with an anchor-delta strategy that preserves both global context and temporal changes, and merges audio tokens within each second to reduce redundancy while maintaining temporal continuity. Across four audio-video benchmarks and two Qwen2.5-Omni model scales, OmniScope achieves the best average accuracy across all compression settings. At 25% overall token retention, it delivers up to 3.53x prefill speedup and more than 15% GPU memory reduction, with only a 0.35-point drop in average accuracy. These results suggest a simple design principle for OmniLLM inference: share the query across modalities, but not the salience estimates. The code is available at https://github.com/MAC-AutoML/OmniScope.",
+      "upvotes": 3,
+      "discussionId": "6a6966f49d3a1231d492b835",
+      "githubRepo": "https://github.com/MAC-AutoML/OmniScope",
+      "githubRepoAddedBy": "user",
+      "githubStars": 3
+    },
+    "publishedAt": "2026-07-27T20:00:00.000Z",
+    "title": "OmniScope: Modality-Decoupled Token Compression for Omnimodal Large Language Models",
+    "summary": "Existing token compression methods for omnimodal large language models typically rely on one modality to determine what to retain in the other. We show that this assumption often breaks down: for the same query, audio and video relevance often peaks at different moments. This cross-modal salience mismatch makes unidirectional guidance prone to discarding answer-critical cues under aggressive compression. We propose OmniScope, a training-free token compression framework that uses the query as a shared semantic anchor while estimating relevance separately for audio and video. OmniScope allocates modality-specific token budgets, prunes visual tokens with an anchor-delta strategy that preserves both global context and temporal changes, and merges audio tokens within each second to reduce redundancy while maintaining temporal continuity. Across four audio-video benchmarks and two Qwen2.5-Omni model scales, OmniScope achieves the best average accuracy across all compression settings. At 25% overall token retention, it delivers up to 3.53x prefill speedup and more than 15% GPU memory reduction, with only a 0.35-point drop in average accuracy. These results suggest a simple design principle for OmniLLM inference: share the query across modalities, but not the salience estimates. The code is available at https://github.com/MAC-AutoML/OmniScope.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.23193.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6900bac1ce3f2835d3520a0d",
+      "avatarUrl": "/avatars/e3282fca2d6f42dfa8cb5557ffef72a9.svg",
+      "fullname": "Jinsen Su",
+      "name": "Consonnm",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2607.27958",
+      "authors": [
+        {
+          "_id": "6a6c0f17202e2d9e3ffdb718",
+          "user": {
+            "_id": "65f95363ca387c9d45a2d2ad",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/65f95363ca387c9d45a2d2ad/6VzOniOb4eFjOWuKLV32i.jpeg",
+            "isPro": false,
+            "fullname": "Peilin Feng",
+            "user": "Sssunset",
+            "type": "user",
+            "name": "Sssunset"
+          },
+          "name": "Peilin Feng",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-07-31T16:45:27.391Z",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c0f17202e2d9e3ffdb719",
+          "user": {
+            "_id": "66dee1c3c788a0ecfa63dd21",
+            "avatarUrl": "/avatars/9483c8350b529aa223d1a55fd0baadd9.svg",
+            "isPro": false,
+            "fullname": "Suorong Yang",
+            "user": "Jackbrocp",
+            "type": "user",
+            "name": "Jackbrocp"
+          },
+          "name": "Suorong Yang",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-07-31T08:45:05.542Z",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c0f17202e2d9e3ffdb71a",
+          "name": "Soujanya Poria",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-07-31T00:00:00.000Z",
+      "title": "Σ-Mem: An Online Reliability Memory for LLM-based Multi-Agent Systems",
+      "submittedOnDailyBy": {
+        "_id": "66dee1c3c788a0ecfa63dd21",
+        "avatarUrl": "/avatars/9483c8350b529aa223d1a55fd0baadd9.svg",
+        "isPro": false,
+        "fullname": "Suorong Yang",
+        "user": "Jackbrocp",
+        "type": "user",
+        "name": "Jackbrocp"
+      },
+      "summary": "Memory is central to long-horizon LLM agents, yet existing memory systems primarily preserve interaction content rather than modeling which agents can be trusted and under what conditions. This limitation is particularly important in multi-agent systems, where a central model may be unable to directly verify plausible or correlated peer responses. We introduce Σ-Mem, an online reliability memory that records historical competence evidence for individual peers and peer relationship evidence across the peer set. Both forms of evidence are maintained as real symmetric states and updated from post-decision correctness feedback. By Weyl's inequality, the spectral change caused by each event-level update is bounded, enabling stable online adaptation without retraining the underlying models. Σ-Mem provides a general write-and-read interface: the same memory can be used for residual steering of a central model, response-free peer routing, or reliability-weighted voting. Across five Qwen-family models, Σ-Mem adapts to counterfactual reliability shifts and generalizes to unseen peers and task domains. Direct memory readouts also outperform majority voting and the best fixed peer over the full OOD evaluation set. Moreover, performance improves consistently as more correctness feedback becomes available, indicating that Σ-Mem progressively accumulates actionable reliability information. These results establish reliability memory as a reusable foundation for adaptive coordination in LLM-based multi-agent systems.",
+      "upvotes": 11,
+      "discussionId": "6a6c0f17202e2d9e3ffdb71b",
+      "githubRepo": "https://github.com/declare-lab/sigma-mem",
+      "githubRepoAddedBy": "user",
+      "githubStars": 1,
+      "organization": {
+        "_id": "6508b28cf36bb51c50faad98",
+        "name": "NanyangTechnologicalUniversity",
+        "fullname": "Nanyang Technological University",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZPD1fvei0bcIGeDXxeSkn.png"
+      }
+    },
+    "publishedAt": "2026-07-29T20:00:00.000Z",
+    "title": "Σ-Mem: An Online Reliability Memory for LLM-based Multi-Agent Systems",
+    "summary": "Memory is central to long-horizon LLM agents, yet existing memory systems primarily preserve interaction content rather than modeling which agents can be trusted and under what conditions. This limitation is particularly important in multi-agent systems, where a central model may be unable to directly verify plausible or correlated peer responses. We introduce Σ-Mem, an online reliability memory that records historical competence evidence for individual peers and peer relationship evidence across the peer set. Both forms of evidence are maintained as real symmetric states and updated from post-decision correctness feedback. By Weyl's inequality, the spectral change caused by each event-level update is bounded, enabling stable online adaptation without retraining the underlying models. Σ-Mem provides a general write-and-read interface: the same memory can be used for residual steering of a central model, response-free peer routing, or reliability-weighted voting. Across five Qwen-family models, Σ-Mem adapts to counterfactual reliability shifts and generalizes to unseen peers and task domains. Direct memory readouts also outperform majority voting and the best fixed peer over the full OOD evaluation set. Moreover, performance improves consistently as more correctness feedback becomes available, indicating that Σ-Mem progressively accumulates actionable reliability information. These results establish reliability memory as a reusable foundation for adaptive coordination in LLM-based multi-agent systems.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.27958.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "66dee1c3c788a0ecfa63dd21",
+      "avatarUrl": "/avatars/9483c8350b529aa223d1a55fd0baadd9.svg",
+      "fullname": "Suorong Yang",
+      "name": "Jackbrocp",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 2,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "6508b28cf36bb51c50faad98",
+      "name": "NanyangTechnologicalUniversity",
+      "fullname": "Nanyang Technological University",
+      "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/630ca0817dacb93b33506ce7/ZPD1fvei0bcIGeDXxeSkn.png"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2607.28582",
+      "authors": [
+        {
+          "_id": "6a6cadc726c3ed41815c87fd",
+          "name": "Jiawei Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6a6cadc726c3ed41815c87fe",
+          "user": {
+            "_id": "668f330016a6ba9e78ec66ac",
+            "avatarUrl": "/avatars/cac0181818a5d91a866d030758bc67e5.svg",
+            "isPro": false,
+            "fullname": "Minghui Liu",
+            "user": "minghuiliu",
+            "type": "user",
+            "name": "minghuiliu"
+          },
+          "name": "Minghui Liu",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-07-31T16:45:27.497Z",
+          "hidden": false
+        },
+        {
+          "_id": "6a6cadc726c3ed41815c87ff",
+          "name": "Juzheng Zhang",
+          "hidden": false
+        },
+        {
+          "_id": "6a6cadc726c3ed41815c8800",
+          "name": "Tom Goldstein",
+          "hidden": false
+        },
+        {
+          "_id": "6a6cadc726c3ed41815c8801",
+          "name": "Furong Huang",
+          "hidden": false
+        }
+      ],
+      "mediaUrls": [
+        "https://cdn-uploads.huggingface.co/production/uploads/668f330016a6ba9e78ec66ac/odY26JA-7xKwoOUiN4eg6.png"
+      ],
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-07-31T00:00:00.000Z",
+      "title": "β-OPSD: Deriving with Policy Optimization, Training with Self-Distillation",
+      "submittedOnDailyBy": {
+        "_id": "668f330016a6ba9e78ec66ac",
+        "avatarUrl": "/avatars/cac0181818a5d91a866d030758bc67e5.svg",
+        "isPro": false,
+        "fullname": "Minghui Liu",
+        "user": "minghuiliu",
+        "type": "user",
+        "name": "minghuiliu"
+      },
+      "summary": "On-policy self-distillation (OPSD) is a promising approach to improve reasoning language models, but it remains brittle in practice: making it work reliably often requires substantial engineering effort. We identify a structural source of this difficulty: vanilla OPSD is precisely the β=1 member of a broader policy-optimization family, where β weights the KL penalty anchoring the student to a reference policy. This equivalence turns β from an implicit value fixed at one into a controllable regularization parameter, yielding a more general formulation that trades off proximity to a reference policy against privileged teacher guidance. We introduce β-OPSD and derive its optimal policy as a geometric interpolation between the reference policy and the privileged teacher. Directly optimizing this objective with reinforcement learning, however, would be costly and high-variance. Rather than optimize the RL objective directly, we turn its closed-form solution into a distillation target. Each value of β selects a target along the reference-to-teacher path, which we implement efficiently by mixing their token-level logits. In this way, inexpensive distillation approximates the solution of expensive policy optimization. Return-to-go credit assignment further aligns token updates with the sequence-level objective while retaining the simplicity of OPSD. Experiments on mathematical reasoning benchmarks show that β-OPSD consistently outperforms vanilla OPSD, improving optimization stability and downstream reasoning performance. Our results provide a principled route from self-distillation to policy optimization and back without sacrificing the efficiency that makes OPSD practical.",
+      "upvotes": 17,
+      "discussionId": "6a6cadc826c3ed41815c8802",
+      "projectPage": "https://umd-huang-lab.github.io/beta-opsd/",
+      "organization": {
+        "_id": "64cbc5468174e45ae060ec46",
+        "name": "furonghuang-lab",
+        "fullname": "Furong Huang's Lab at UMD",
+        "avatar": "https://www.gravatar.com/avatar/add71ee6bbcef2277b077b42b3cba002?d=retro&size=100"
+      }
+    },
+    "publishedAt": "2026-07-29T20:00:00.000Z",
+    "title": "β-OPSD: Deriving with Policy Optimization, Training with Self-Distillation",
+    "summary": "On-policy self-distillation (OPSD) is a promising approach to improve reasoning language models, but it remains brittle in practice: making it work reliably often requires substantial engineering effort. We identify a structural source of this difficulty: vanilla OPSD is precisely the β=1 member of a broader policy-optimization family, where β weights the KL penalty anchoring the student to a reference policy. This equivalence turns β from an implicit value fixed at one into a controllable regularization parameter, yielding a more general formulation that trades off proximity to a reference policy against privileged teacher guidance. We introduce β-OPSD and derive its optimal policy as a geometric interpolation between the reference policy and the privileged teacher. Directly optimizing this objective with reinforcement learning, however, would be costly and high-variance. Rather than optimize the RL objective directly, we turn its closed-form solution into a distillation target. Each value of β selects a target along the reference-to-teacher path, which we implement efficiently by mixing their token-level logits. In this way, inexpensive distillation approximates the solution of expensive policy optimization. Return-to-go credit assignment further aligns token updates with the sequence-level objective while retaining the simplicity of OPSD. Experiments on mathematical reasoning benchmarks show that β-OPSD consistently outperforms vanilla OPSD, improving optimization stability and downstream reasoning performance. Our results provide a principled route from self-distillation to policy optimization and back without sacrificing the efficiency that makes OPSD practical.",
+    "mediaUrls": [
+      "https://cdn-uploads.huggingface.co/production/uploads/668f330016a6ba9e78ec66ac/odY26JA-7xKwoOUiN4eg6.png"
+    ],
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.28582.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "668f330016a6ba9e78ec66ac",
+      "avatarUrl": "/avatars/cac0181818a5d91a866d030758bc67e5.svg",
+      "fullname": "Minghui Liu",
+      "name": "minghuiliu",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 4,
+      "isUserFollowing": false
+    },
+    "organization": {
+      "_id": "64cbc5468174e45ae060ec46",
+      "name": "furonghuang-lab",
+      "fullname": "Furong Huang's Lab at UMD",
+      "avatar": "https://www.gravatar.com/avatar/add71ee6bbcef2277b077b42b3cba002?d=retro&size=100"
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2607.28308",
+      "authors": [
+        {
+          "_id": "6a6c90ba26c3ed41815c87a1",
+          "user": {
+            "_id": "6739e34e04ba77f721b95b71",
+            "avatarUrl": "/avatars/18cc1c967df708cc8c9681932eb6837f.svg",
+            "isPro": false,
+            "fullname": "Huiyuan Tian",
+            "user": "Huiyuancs",
+            "type": "user",
+            "name": "Huiyuancs"
+          },
+          "name": "Huiyuan Tian",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-07-31T16:45:27.482Z",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c90ba26c3ed41815c87a2",
+          "name": "Bonan Xu",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c90ba26c3ed41815c87a3",
+          "name": "Shijian Li",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-07-31T00:00:00.000Z",
+      "title": "Beyond Geometric Complementarity: Coherent Overlap in Sparse Mixture-of-Experts Routing",
+      "submittedOnDailyBy": {
+        "_id": "6739e34e04ba77f721b95b71",
+        "avatarUrl": "/avatars/18cc1c967df708cc8c9681932eb6837f.svg",
+        "isPro": false,
+        "fullname": "Huiyuan Tian",
+        "user": "Huiyuancs",
+        "type": "user",
+        "name": "Huiyuancs"
+      },
+      "summary": "Sparse mixture-of-experts (MoE) language models route each token to multiple experts, suggesting a geometric account of their benefit: co-selected experts should contribute distinct representation directions. Existing evidence often conflates route coherence, candidate quality, and candidate-by-context interaction. We distinguish these quantities using an Expert Subspace Separation Index (ESSI), matched-route residuals, and a prefix-controlled 2times2 factorial; frozen-route interventions and a controlled Top-k study assess functional value. Three paired contrasts organize the findings. First, across six MoE architectures, expert subspaces overlap substantially, yet actual routes explain token representations better than matched alternatives. Second, across the 39 factorial cells in OLMoE, Mixtral, and DeepSeek, the selected candidate explains more of the residual representation than the strongest unselected rival in every cell, yet the actual prefix narrows this advantage throughout: all interactions are negative, and every 95% confidence interval lies below zero. Third, this geometric narrowing does not imply functional redundancy: adding later experts improves next-token prediction in 24 of 39 frozen-route comparisons, while the other 15 estimates are inconclusive; a controlled training study also favors Top-2 over Top-1 in all three seeds. We call this joint pattern coherent overlap: routing selects token-relevant experts from a shared geometric neighborhood, while useful multi-expert computation persists without disjoint linear coverage. Separating these quantities clarifies why geometric similarity alone cannot determine redundancy or pruning value.",
+      "upvotes": 2,
+      "discussionId": "6a6c90ba26c3ed41815c87a4"
+    },
+    "publishedAt": "2026-07-29T20:00:00.000Z",
+    "title": "Beyond Geometric Complementarity: Coherent Overlap in Sparse Mixture-of-Experts Routing",
+    "summary": "Sparse mixture-of-experts (MoE) language models route each token to multiple experts, suggesting a geometric account of their benefit: co-selected experts should contribute distinct representation directions. Existing evidence often conflates route coherence, candidate quality, and candidate-by-context interaction. We distinguish these quantities using an Expert Subspace Separation Index (ESSI), matched-route residuals, and a prefix-controlled 2times2 factorial; frozen-route interventions and a controlled Top-k study assess functional value. Three paired contrasts organize the findings. First, across six MoE architectures, expert subspaces overlap substantially, yet actual routes explain token representations better than matched alternatives. Second, across the 39 factorial cells in OLMoE, Mixtral, and DeepSeek, the selected candidate explains more of the residual representation than the strongest unselected rival in every cell, yet the actual prefix narrows this advantage throughout: all interactions are negative, and every 95% confidence interval lies below zero. Third, this geometric narrowing does not imply functional redundancy: adding later experts improves next-token prediction in 24 of 39 frozen-route comparisons, while the other 15 estimates are inconclusive; a controlled training study also favors Top-2 over Top-1 in all three seeds. We call this joint pattern coherent overlap: routing selects token-relevant experts from a shared geometric neighborhood, while useful multi-expert computation persists without disjoint linear coverage. Separating these quantities clarifies why geometric similarity alone cannot determine redundancy or pruning value.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.28308.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "6739e34e04ba77f721b95b71",
+      "avatarUrl": "/avatars/18cc1c967df708cc8c9681932eb6837f.svg",
+      "fullname": "Huiyuan Tian",
+      "name": "Huiyuancs",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  },
+  {
+    "paper": {
+      "id": "2607.16922",
+      "authors": [
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8c9",
+          "name": "Taorui Huang",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8ca",
+          "name": "Namita Gaidhani",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8cb",
+          "name": "Ritvik Bansal",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8cc",
+          "user": {
+            "_id": "68a9eeffae818c4444c8af81",
+            "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68a9eeffae818c4444c8af81/rYnYaFPloOSEQ_mcbFiM8.png",
+            "isPro": false,
+            "fullname": "S M Jubaer",
+            "user": "jub-aer",
+            "type": "user",
+            "name": "jub-aer"
+          },
+          "name": "S M Jubaer",
+          "status": "claimed_verified",
+          "statusLastChangedAt": "2026-07-31T08:45:05.676Z",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8cd",
+          "name": "Regina Lim",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8ce",
+          "name": "Rhett Zhao",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8cf",
+          "name": "Gavin Rafael Selin",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8d0",
+          "name": "Sunnie Deng Gao",
+          "hidden": false
+        },
+        {
+          "_id": "6a6c5d97202e2d9e3ffdb8d1",
+          "name": "Hasnain N Syed",
+          "hidden": false
+        }
+      ],
+      "publishedAt": "2026-07-18T00:00:00.000Z",
+      "submittedOnDailyAt": "2026-07-31T00:00:00.000Z",
+      "title": "Pedestrian Archetypes Extension -- More Pedestrian Models for Autonomous Vehicle Safety Testing",
+      "submittedOnDailyBy": {
+        "_id": "68a9eeffae818c4444c8af81",
+        "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68a9eeffae818c4444c8af81/rYnYaFPloOSEQ_mcbFiM8.png",
+        "isPro": false,
+        "fullname": "S M Jubaer",
+        "user": "jub-aer",
+        "type": "user",
+        "name": "jub-aer"
+      },
+      "summary": "In our prior work, Pedestrian Archetypes, we defined pedestrian archetypes as collections of behaviors that uniquely identify a specific type of pedestrian. The first paper proposed 12 pedestrian archetypes, including the Wanderer, Drunk, Distracted, Flash, Indecisive, Blind, Flock, Jaywalker, Elderly, Kid, Eventful, and Parked Pedestrian. These archetypes were introduced to move beyond single behavior labels and provide a more natural way to describe how dangerous pedestrians actually behave progressively in real-world traffic scenarios. However, upon further annotation of YouTube dash-cam videos, we identified 7 additional pedestrian archetypes with observable and significant behavioral differences from the previously proposed ones. These new archetypes capture pedestrian behavior patterns that could not be fully explained by the original taxonomy. In this pre-print, we introduce each new archetype, define its essential and optional behaviors, explain how it differs from previously proposed archetypes, and provide video-frame evidence showing the archetype in action.",
+      "upvotes": 0,
+      "discussionId": "6a6c5d97202e2d9e3ffdb8d2"
+    },
+    "publishedAt": "2026-07-17T20:00:00.000Z",
+    "title": "Pedestrian Archetypes Extension -- More Pedestrian Models for Autonomous Vehicle Safety Testing",
+    "summary": "In our prior work, Pedestrian Archetypes, we defined pedestrian archetypes as collections of behaviors that uniquely identify a specific type of pedestrian. The first paper proposed 12 pedestrian archetypes, including the Wanderer, Drunk, Distracted, Flash, Indecisive, Blind, Flock, Jaywalker, Elderly, Kid, Eventful, and Parked Pedestrian. These archetypes were introduced to move beyond single behavior labels and provide a more natural way to describe how dangerous pedestrians actually behave progressively in real-world traffic scenarios. However, upon further annotation of YouTube dash-cam videos, we identified 7 additional pedestrian archetypes with observable and significant behavioral differences from the previously proposed ones. These new archetypes capture pedestrian behavior patterns that could not be fully explained by the original taxonomy. In this pre-print, we introduce each new archetype, define its essential and optional behaviors, explain how it differs from previously proposed archetypes, and provide video-frame evidence showing the archetype in action.",
+    "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2607.16922.png",
+    "numComments": 2,
+    "submittedBy": {
+      "_id": "68a9eeffae818c4444c8af81",
+      "avatarUrl": "https://cdn-avatars.huggingface.co/v1/production/uploads/68a9eeffae818c4444c8af81/rYnYaFPloOSEQ_mcbFiM8.png",
+      "fullname": "S M Jubaer",
+      "name": "jub-aer",
+      "type": "user",
+      "isPro": false,
+      "isHf": false,
+      "isHfAdmin": false,
+      "isMod": false,
+      "followerCount": 1,
+      "isUserFollowing": false
+    },
+    "isAuthorParticipating": true
+  }
+]

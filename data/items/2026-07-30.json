@@ -1,0 +1,1303 @@
+[
+  {
+    "id": "d93d75833b133c6a",
+    "kind": "paper",
+    "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
+    "summary_en": "Vision-language-action (VLA) models commonly adopt an LLM-centric V to L to A pathway, where visual observations are projected into the representation space of a large language model before being decoded into robot actions. Although effective, this design incurs substantial computation and memory overhead at every policy invocation. In this work, we introduce TurboVLA, a new VLA paradigm that reformulates the conventional V to L to A pathway as a direct V + L to A mapping. Instead of using a large language model as the central interface between perception and action, TurboVLA independently encodes visual observations and language instructions, directly exchanges information between them through lightweight bidirectional vision-language interaction, and predicts continuous action chunks with a compact decoder. This simple design constructs task-conditioned representations directly from visual and linguistic features, significantly reducing the computational and memory costs of VLA inference. On LIBERO, TurboVLA achieves 97.7% average success with only 0.2B parameters, 31.2 ms inference latency, and 0.9 GB inference VRAM on a consumer-grade RTX 4090, matching or outperforming substantially larger VLA policies. These results establish TurboVLA as a simple and effective alternative to the prevailing LLM-centric VLA paradigm, offering a new perspective on how vision, language, and action can be connected for efficient robotic manipulation. Code is available at https://github.com/H-EmbodVis/TurboVLA.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.27205",
+        "external_id": "2607.27205"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.27205",
+        "external_id": "2607.27205"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/H-EmbodVis/TurboVLA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hengyi Xie",
+      "Chenfei Yao",
+      "Xianjin Wu",
+      "Xuanyang Xi",
+      "Yiping Tang",
+      "Di Xu",
+      "Yingying Zhu",
+      "Dingkang Liang",
+      "Xiang Bai",
+      "Han Ding"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850464Z",
+    "dedup_keys": [
+      "arxiv:2607.27205",
+      "title:4090 action language model real rtx time turbovla vision vram with",
+      "github:h-embodvis/turbovla"
+    ],
+    "signals": {
+      "hf_upvotes": 127,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 194,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 127.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "ad4bf38bb3e7223f",
+    "kind": "paper",
+    "title": "DistillAlign: Coordinating Mode Covering and Mode Seeking in Autoregressive Video Distillation",
+    "summary_en": "Existing autoregressive video distillation methods commonly adopt a Distribution Matching Distillation (DMD)-based multi-stage pipeline. However, they typically decouple the initialization and DMD stages -- which then pursue different target distributions -- and judge the intermediate student mainly by visual scores such as VBench. In this paper, we revisit this design from a distributional perspective. Given the mode-seeking nature of the distribution matching loss, a good initialization should match the mode coverage of the target DMD teacher, rather than merely pursuing high quality. To analyze this, we introduce a distributional evaluation protocol that measures precision and coverage between student and teacher distributions in a shared latent space. It exposes differences hidden by visual scores: some initializations reach high precision but low coverage, leading to suboptimal refinement, while mode-covering ones preserve broader support. Furthermore, even when the target distributions are aligned, DMD's reverse-KL objective can still drive the student toward high-probability teacher regions in late training, reducing coverage and diversity. To address this, we propose joint distillation, which combines DMD's mode-seeking objective with a Consistency Distillation-based mode-covering constraint. Experiments show that our method improves generation quality, coverage, and diversity; notably, even with a Wan-1.3B DMD teacher, it outperforms baselines refined with Wan-14B, underscoring the importance of distributional alignment in autoregressive video distillation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26811",
+        "external_id": "2607.26811"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26811",
+        "external_id": "2607.26811"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/LiJiaxing0213/DistillAlign",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jiaxing Li",
+      "Kai Zou",
+      "Cindy Zhou",
+      "Kaichen Huang",
+      "Junyao Gao",
+      "Zile Wang",
+      "Yang Liu",
+      "Bin Liu",
+      "Bo An",
+      "Yangguang Li"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850575Z",
+    "dedup_keys": [
+      "arxiv:2607.26811",
+      "title:and autoregressive coordinating covering distillalign distillation mode mode seeking video",
+      "github:lijiaxing0213/distillalign"
+    ],
+    "signals": {
+      "hf_upvotes": 88,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 89,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 88.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "addb2010cc1e9550",
+    "kind": "paper",
+    "title": "CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization",
+    "summary_en": "Rubric-based reinforcement learning enriches language model training by evaluating model outputs against explicit criteria. Yet in GRPO-style pipelines, these structured judgments are reduced to a scalar response-level reward and converted into a response-level advantage, which is broadcast uniformly to all generated tokens. This leaves no explicit mechanism for allocating credit within a response, even when different criteria are grounded in different spans, formatting decisions, or semantic choices. We propose CoRT, a token-level credit weighting method for rubric-conditioned GRPO. Instead of training an auxiliary token scoring model, CoRT uses counterfactual replay to rescore the same sampled response under the original rubric-conditioned prompt and a matched criteria-free prompt. The resulting tokenwise log-likelihood contrasts serve as a proxy for dependence on the rubric context. CoRT maps these contrasts to bounded, response-normalized weights and uses them to redistribute the signed GRPO advantage across tokens, without introducing an auxiliary scorer or changing the response-level reward. Experiments across instruction-tuned models and reward granularities show that CoRT improves over matched response-level GRPO in the vast majority of comparisons, with an average gain of 4.4 percentage points. The method remains competitive with learned token-level credit baselines while avoiding a separate relevance-learning stage. These results suggest that policy-internal counterfactual likelihood contrasts provide an effective training signal for within-response credit allocation while retaining the simplicity and stability of GRPO.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.25659",
+        "external_id": "2607.25659"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.25659",
+        "external_id": "2607.25659"
+      }
+    ],
+    "actors": [
+      "Bo-Wen Zhang",
+      "Junwei He",
+      "Wen Wang",
+      "Song-Lin Lv",
+      "Wentao Ma",
+      "Rongyi Lin",
+      "Shuhan Zhong",
+      "Lan-Zhe Guo"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850633Z",
+    "dedup_keys": [
+      "arxiv:2607.25659",
+      "title:cort counterfactual for guided level optimization policy replay rubric token"
+    ],
+    "signals": {
+      "hf_upvotes": 80,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 80.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "0d80184aea819728",
+    "kind": "paper",
+    "title": "HumanCLAW: Can Vision-Language Models Act Through a Body?",
+    "summary_en": "Evaluating whether a vision-language model (VLM) can act through a physical body is challenging. The outcome of an action couples the VLM's decision with motor control. When a task fails, it is hard to tell whether the VLM made a bad choice or the motor controller simply failed to execute it, e.g., losing balance and falling. In this work, we introduce HumanCLAW, an evaluation framework that decouples action decision-making from low-level execution. At every step, a harnessed, off-the-shelf VLM issues an atomic skill command, and the command is translated into a sub-second chunk of continuous full-body motion with real physical consequences, including gravity and collisions. The body can therefore act freely in the physical world, while execution-side disturbances, balance and motor errors, are factored out. What remains measurable is the model's action intelligence: its moment-to-moment choice of what the body should execute next. Based on this framework, we build HumanCLAW-Bench: 1,218 long-horizon, egocentric find-navigate-interact episodes across 41 indoor scenes. We test nine state-of-the-art VLMs and find that none solves the benchmark; the best model reaches only a 16.8% success rate. Recognizing the target is not the bottleneck. What current VLMs lack is embodied self-awareness: they lose track of their own body, failing to tell where it is, whether it has reached the goal, or whether it has hit an obstacle.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.27180",
+        "external_id": "2607.27180"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.27180",
+        "external_id": "2607.27180"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Human-CLAW/HumanCLAW",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Siyao Li",
+      "Jiawei Gu",
+      "Shuai Liu",
+      "Kairui Hu",
+      "Zekun Li",
+      "Linjie Li",
+      "Chengcheng Tang",
+      "Po-Chen Wu",
+      "Ivan Shugurov",
+      "Lingni Ma",
+      "Michael Zollhoefer",
+      "Sizhe An",
+      "Abhay Mittal",
+      "Amy Zhao",
+      "Ranjay Krishna",
+      "Manling Li",
+      "Ziwei Liu",
+      "Chuan Guo"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850695Z",
+    "dedup_keys": [
+      "arxiv:2607.27180",
+      "title:act body can humanclaw language models through vision",
+      "github:human-claw/humanclaw"
+    ],
+    "signals": {
+      "hf_upvotes": 69,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 44,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 5,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 69.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "2e45faef02c500a5",
+    "kind": "paper",
+    "title": "DecoEvo: Score-Decoupled Co-Evolution of Solver and Rubric-Generator Skills in Text Space",
+    "summary_en": "Text-space optimization adapts large language models (LLMs) by editing external natural-language artifacts rather than model weights, so the optimized artifacts remain inspectable and the model can be treated as a black box. However, most existing text-space methods keep evaluation fixed. On open-ended tasks, this can become a bottleneck: once the solver improves on the criteria a rubric measures, omitted dimensions remain invisible to the optimization signal. Simply evolving the rubric is also unreliable when updates are selected by the current solver's score, because apparent progress can come from making the rubric easier to satisfy. We introduce DecoEvo (Decoupled Co-Evolution), which co-evolves a solver skill and a rubric-generator skill under decoupled objectives without using gold rubrics during optimization. The solver skill is updated using criterion-level feedback, while the rubric-generator skill is revised through complementary audits of requirement coverage and response discrimination that are independent of aggregate solver score. This separation focuses generator updates on newly exposed solver weaknesses, reducing repeated emphasis on criteria the solver already satisfies. Under each benchmark's official evaluation, DecoEvo outperforms all compared methods across five benchmarks and three LLM backbones, yielding 2.8--5.0\\% relative gains over SkillOpt in the five-benchmark average.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.25675",
+        "external_id": "2607.25675"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.25675",
+        "external_id": "2607.25675"
+      }
+    ],
+    "actors": [
+      "Jiangwang Chen",
+      "Zixin Song",
+      "Junlin Liu",
+      "Shuaiyu Zhou",
+      "Haiyan Wu",
+      "Haihan Shi",
+      "Chenxi Zhou",
+      "Hanqing Li",
+      "Xiao Yang",
+      "Da Zhu",
+      "Guanjun Jiang",
+      "Hai Wan",
+      "Xibin Zhao"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850752Z",
+    "dedup_keys": [
+      "arxiv:2607.25675",
+      "title:and decoevo decoupled evolution generator rubric score skills solver space text"
+    ],
+    "signals": {
+      "hf_upvotes": 60,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 60.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "22bff32607fb6f1e",
+    "kind": "paper",
+    "title": "CLBench-V: Evaluating Multimodal Context Learning from Grounding to Knowledge Acquisition",
+    "summary_en": "Real-world tasks often require models to learn from task-specific context rather than relying only on pre-trained knowledge. While recent work has highlighted this capability as context learning, existing evaluations mainly focus on textual contexts. In many practical settings, however, the context to be learned from is multimodal: scientific findings are conveyed through figures and tables, financial indicators are scattered across converted reports, and spatial decisions depend on maps, scenes, or web pages. We introduce CLBench-V, a benchmark for multimodal context learning that addresses the difficulty of localizing where context use breaks down by organizing tasks around three dimensions: context grounding, new information application, and new knowledge learning. CLBench-V combines converted public benchmarks with newly constructed datasets spanning domains such as science, finance, long-document understanding, spatial reasoning, and web-based visual question answering. To reduce the cost of constructing domain-specific context-learning tasks, we further use automated construction and filtering procedures for our newly built datasets. Across 3,443 instances and six recent multimodal models, the best overall score is only 0.2847, indicating that multimodal context learning remains far from saturated. Moreover, InternVL3.5-30B-A3B performs best on context grounding and new knowledge learning, while Qwen3.5-Plus performs best on new information application. We further analyze judge reliability, context length, image count, and representative failure cases. Code is available at https://github.com/IamLihua/CLBench-V.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.25294",
+        "external_id": "2607.25294"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.25294",
+        "external_id": "2607.25294"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/IamLihua/CLBench-V",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Lai Wei",
+      "Chengqi Li",
+      "Jiapeng Li",
+      "Ruina Hu",
+      "Yue Wang",
+      "Weiran Huang"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850814Z",
+    "dedup_keys": [
+      "arxiv:2607.25294",
+      "title:acquisition clbench context evaluating from grounding knowledge learning multimodal",
+      "github:iamlihua/clbench-v"
+    ],
+    "signals": {
+      "hf_upvotes": 42,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "2b616f4ee6e3e450",
+    "kind": "paper",
+    "title": "CAST: Game Solvers as Turn-Level Teachers for LLM Agents",
+    "summary_en": "Training large language models (LLMs) to act in long-horizon games is a promising step toward generalist decision-making, yet reinforcement learning with verifiable rewards (RLVR) relies on sparse final rewards that reveal little about which decisions determine success. Denser process signals could supply this missing turn-level credit, but existing sources are hard to keep both cheap and accurate. We observe that changes in a game solver's state value reveal whether an action advances the state toward success. Building on this insight, we propose CAST (Credit Assignment from Solver Teachers), which converts these value changes into solver advantages and injects them into RLVR as turn-level signals. We further show that, under a soft-optimal solver assumption, maximizing the solver advantage is equivalent to on-policy distillation from the solver, requiring only scalar values rather than teacher logits. Across Sokoban, Minesweeper, and Rush Hour, CAST outperforms all trained baselines on every game under both in-domain and unseen-difficulty evaluation and achieves the highest average zero-shot performance on ALFWorld and WebShop. Our code is available at https://github.com/Wloner0809/CAST.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.25308",
+        "external_id": "2607.25308"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.25308",
+        "external_id": "2607.25308"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Wloner0809/CAST",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yu Wang",
+      "Yi-Kai Zhang",
+      "Wentao Shi",
+      "Ziang Ye",
+      "Yuchun Miao",
+      "Yueqing Sun",
+      "Qi Gu",
+      "Xunliang Cai",
+      "Lan-Zhe Guo",
+      "Han-Jia Ye",
+      "Fuli Feng"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850913Z",
+    "dedup_keys": [
+      "arxiv:2607.25308",
+      "title:agents cast for game level llm solvers teachers turn",
+      "github:wloner0809/cast"
+    ],
+    "signals": {
+      "hf_upvotes": 37,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 10,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "46a805099669d555",
+    "kind": "paper",
+    "title": "SkillRise: Agentic Reinforcement Learning for Cross-Task Skill Evolution",
+    "summary_en": "Large language model agents often encounter related yet distinct tasks that share reusable solution patterns. Yet standard agentic reinforcement learning treats tasks as independent episodes, while existing approaches to skill learning either focus on repeated attempts of one task or use pipelines with multiple stages that entangle extraction, retrieval, and execution. We introduce SkillRise, a unified reinforcement learning framework for learning skills across tasks. SkillRise organizes related instances into progressively challenging sequences and uses a single policy to alternate between task solving and curating an evolving skill document passed directly to the next task. Decoupled credit assignment across tasks supervises solving with the current task outcome and curation with discounted downstream outcomes. Experiments on ALFWorld, WebShop, and ScienceWorld show that SkillRise achieves the strongest Pass@1 performance among the compared methods, with gains over the strongest baseline ranging from 2.3 to 8.5 percentage points. Although trained across distinct tasks, its learned curation policy remains effective for repeated attempts on the same task. Further analysis reveals scaling at test time across tasks: performance improves with longer sequences of related tasks even when each task is attempted only once. This trend suggests that SkillRise reuses transferable skills across tasks rather than benefiting from repeated sampling of the same task. SkillRise further retains strong performance while substantially reducing the runtime overhead of skill learning pipelines with multiple stages. Together, these results provide a simple and efficient training paradigm for LLM agents to extract, refine, and reuse transferable skills across tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26784",
+        "external_id": "2607.26784"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26784",
+        "external_id": "2607.26784"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Within-yao/SkillRise",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhiyuan Yao",
+      "Yuxin Chen",
+      "Zhengxi Lu",
+      "Zishan Xu",
+      "Yueqing Sun",
+      "Yifu Guo",
+      "Yuquan Lu",
+      "Zhengzhou Cai",
+      "Kangning Zhang",
+      "Zhuowen Han",
+      "Zi-Han Wang",
+      "Ziang Ye",
+      "Qi Gu",
+      "Xunliang Cai",
+      "Weiwen Liu",
+      "Yongliang Shen"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.850973Z",
+    "dedup_keys": [
+      "arxiv:2607.26784",
+      "title:agentic cross evolution for learning reinforcement skill skillrise task",
+      "github:within-yao/skillrise"
+    ],
+    "signals": {
+      "hf_upvotes": 25,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 12,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 25.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "ea7ba8af419e1ae2",
+    "kind": "paper",
+    "title": "MindForge: Teaching Small Language Models Whole-Life-Cycle Software Engineering via Source-Free Program Synthesis",
+    "summary_en": "Coding agents have made substantial progress on software engineering tasks that modify existing codebases, including bug fixing and feature implementation. However, constructing a complete program from scratch remains a major challenge: even the frontier models evaluated on ProgramBench fully resolve fewer than 1% of tasks. One obstacle is the lack of scalable training environments for this from-scratch setting, spanning the whole software engineering life cycle, as existing environment-construction frameworks focus only on a single phase in software development. To address this gap, we introduce MindForge, an automated pipeline that converts open-source command-line programs into source-free environments that expose only a compiled reference executable and its documentation. Using MindForge, we construct training environments from repositories disjoint from those in ProgramBench, and curate a high-quality data recipe consisting of program synthesis trajectories using GLM-5.2 as the teacher agent. Fine-tuning Qwen3.6-27B on these trajectories increases its ProgramBench average test pass rate from 37.98% to 49.51%, achieving performance comparable to substantially larger frontier models. Moreover, the fine-tuned model consistently improves over the base model across all seven unseen software engineering benchmarks, spanning long-horizon repository generation and translation, bug fixing, feature implementation, and cross-language issue resolution, with absolute gains of 31.00 points on RepoZero-C2Rust, 14.16 on DeepSWE, 10.70/4.56 on NL2Repo-Bench (with/without tests), 5.04 on SWE-bench Verified, 5.93 on SWE-bench Pro, 5.22 on SWE-bench Multilingual, and 4.94 on FeatBench.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.27146",
+        "external_id": "2607.27146"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.27146",
+        "external_id": "2607.27146"
+      }
+    ],
+    "actors": [
+      "Yihao Chen",
+      "Shi Chang",
+      "Khaled Chawa",
+      "Feng Lin",
+      "Boyuan Chen",
+      "Shaowei Wang",
+      "Ahmed E. Hassan"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851019Z",
+    "dedup_keys": [
+      "arxiv:2607.27146",
+      "title:cycle engineering free language life mindforge models program small software source synthesis teaching via whole"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 22.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "3810b8b84d3cbafa",
+    "kind": "paper",
+    "title": "SpecFirst: Behavioral Specification Elicitation as a First-Class Step in Agent-Based Program Synthesis from Scratch",
+    "summary_en": "LLM-based agents excel at software engineering tasks where an existing codebase provides context, but constructing a program from scratch remains fundamentally harder. Recent benchmarks such as ProgramBench quantify this gap: given only natural-language documentation and an execute-only binary as a behavioral oracle, even frontier models solve fewer than 1% of instances. Existing frameworks conflate documentation reading, behavioral exploration, and code synthesis into a single pass, causing agents to probe insufficiently, lose behavioral intent as context drifts, and propagate early misinterpretations into the final implementation. Inspired by classical requirements engineering, we argue that behavioral specification elicitation should be a first-class phase that precedes implementation. We present SpecFirst, a two-stage framework that forces the specification elicitation before code synthesis. A dedicated spec agent first probes the binary and combines observations with documentation into a structured specification. Next, a code synthesis agent then uses this specification to drive implementation. This decomposition resolves documentation ambiguities before coding begins and provides a stable behavioral reference throughout synthesis. We evaluate SpecFirst on all 200 ProgramBench instances across four models spanning two families and an order of magnitude of capability. SpecFirst consistently outperforms the single-loop baseline, improving test pass rates by 6.9%-21.3% and binary exploration coverage by 9.4%-18.5%, all statistically significant. Behavioral analysis on code synthesis further shows that a prior specification enables earlier and more sustained code construction. Our results demonstrate that an explicit requirements-engineering phase is an effective paradigm for from-scratch program construction.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.27167",
+        "external_id": "2607.27167"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.27167",
+        "external_id": "2607.27167"
+      }
+    ],
+    "actors": [
+      "Yihao Chen",
+      "Shi Chang",
+      "Feng Lin",
+      "Khaled Chawa",
+      "Boyuan Chen",
+      "Shaowei Wang",
+      "Ahmed E. Hassan"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851096Z",
+    "dedup_keys": [
+      "arxiv:2607.27167",
+      "title:agent based behavioral class elicitation first from program scratch specfirst specification step synthesis"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 18.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "e9787b2e5d165f68",
+    "kind": "paper",
+    "title": "StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation",
+    "summary_en": "Recent game world models can generate visually realistic and interactive environments conditioned on player actions. However, games are not defined by pixels alone; they are governed by explicit mechanics, namely state-dependent rules that control health reduction, skill activation, and game termination. These mechanics depend on precise internal states, such as health points, skill meters, and timers, which are tightly coupled with visual observations and determine how gameplay evolves. Without modeling these state dynamics, existing game world models may generate visually plausible rollouts but violate the underlying game rules. In this paper, we propose StatePlay, a novel state-aware game world model that jointly predicts visual content and game states to promote mechanics-consistent generation. StatePlay adopts a mixture-of-transformers (MoT)-style architecture that preserves specialized visual and state representations while enabling cross-modal interaction, allowing predicted states to guide frame generation. Each branch is further optimized with a distinct objective suited to its modality. Experiments show that StatePlay achieves an average normalized L1 distance below 0.06 for state prediction. Furthermore, compared with models without explicit state modeling, our method improves mechanics fidelity in generated game rollouts by 18.6%. Overall, our work highlights the importance of state-aware game world modeling and advances beyond pixel-level realism toward complete and mechanically faithful game generation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26754",
+        "external_id": "2607.26754"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26754",
+        "external_id": "2607.26754"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Jimntu/StatePlay",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zijun Lin",
+      "Zeqing Wang",
+      "Cheston Tan",
+      "Bihan Wen",
+      "Yeying Jin"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851183Z",
+    "dedup_keys": [
+      "arxiv:2607.26754",
+      "title:aware consistent for game generation mechanics models state stateplay world",
+      "github:jimntu/stateplay"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 14,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 16.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "2474265fa2a1fea2",
+    "kind": "paper",
+    "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+    "summary_en": "Forecasts of explosive AI progress hinge on AI agents automating AI research. But evidence on whether agents can carry out open-ended AI research is thin. Current evaluations either test agents on narrow, verifiable tasks, which excludes open-ended research, or submit AI-generated papers to blind peer review, which is overstretched, stochastic, and suffers from poor review quality. We introduce a third way to measure progress towards AI R\\&D automation. An agent takes on the central, open-ended research question of a high-quality unpublished paper, and the paper's original authors grade its output. We call these shadow evaluations. We ran shadow evaluations on two unpublished NeurIPS 2026 submissions, giving frontier agents six days and thousands of dollars of compute. The agents completed all of the engineering without human help, yet could not make substantial progress towards answering the research questions. As a result, both papers were unambiguously rejected by the authors. We identify five recurring failure modes: poor judgment about the bar for publishable research, uncreative responses to shortcomings in the research design, ineffective backtracking from dead ends, poor resource awareness, and instruction drift. A robustness check with a second model and scaffold reproduced these failures. We release the expert reviews, survey responses, agent repositories, and logs. Our results provide early evidence that today's agents can do the engineering of AI research, but struggle with critical parts of the research lifecycle.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.27191",
+        "external_id": "2607.27191"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.27191",
+        "external_id": "2607.27191"
+      }
+    ],
+    "actors": [
+      "Peter Kirgis",
+      "Sayash Kapoor",
+      "Andrew Schwartz",
+      "Stephan Rabanser",
+      "David Africa",
+      "Konstantinos Voudouris",
+      "Viet Nguyen",
+      "Toby Pilditch",
+      "Magda Dubois",
+      "Harry Coppock",
+      "Cozmin Ududec",
+      "Nitya Nadgir",
+      "Matilda Orona",
+      "Tilman Bayer",
+      "Derrick Chan-Sew",
+      "Yue Ling",
+      "Abhishek Shetty",
+      "Helen Toner",
+      "Gillian Hadfield",
+      "Seth Lazar",
+      "Steve Newman",
+      "Shoshannah Tekofsky",
+      "Rishi Bommasani",
+      "Arvind Narayanan"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851243Z",
+    "dedup_keys": [
+      "arxiv:2607.27191",
+      "title:agents can case conduct early ended evidence from open research studies two"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 14.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "d0e3f3b77f6c203b",
+    "kind": "paper",
+    "title": "OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation",
+    "summary_en": "Open-vocabulary Earth observation (EO) aims to localize geospatial concepts specified in natural language rather than a fixed label set. Existing benchmarks, however, usually cover narrow category vocabularies or limited query forms. To fill this gap, we introduce OVEarth-Bench, which extends existing evaluation in two directions: category breadth, through broad hierarchical category coverage with positive and negative expressions, and query diversity, through vocabulary, referring, and reasoning queries. The benchmark supports mask and box localization under a unified zero-shot protocol. We evaluate a broad set of general and EO-specific methods. The evaluation reveals that: (1) the performance of current methods remains limited, while broader category coverage yields more stable model rankings; (2) MLLM-based methods achieve the strongest overall performance; and (3) EO-specific methods generally underperform general models and rarely match the strongest methods. These findings provide guidance for future open-vocabulary EO method design and highlight the importance of developing more realistic, diverse, high-quality, and large-scale benchmarks for reliable evaluation. Our data and evaluation package are released at https://earth-insights.github.io/OVEarth-bench.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.27278",
+        "external_id": "2607.27278"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.27278",
+        "external_id": "2607.27278"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/earth-insights/OVEarth-bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kaiyu Li",
+      "Zepeng Xin",
+      "Zixuan Jiang",
+      "Jing Fu",
+      "Lanxuan Xue",
+      "Lingyu Zhang",
+      "Xiangyong Cao"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851302Z",
+    "dedup_keys": [
+      "arxiv:2607.27278",
+      "title:and bench breadth category diversity earth evaluating for observation open ovearth query vocabulary",
+      "github:earth-insights/ovearth-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 12.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "c36b2033dd3b5b86",
+    "kind": "paper",
+    "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+    "summary_en": "Large language model (LLM) agents are increasingly expected to assist users in completing tasks. However, existing benchmarks provide limited support for evaluating whether agents can carry out office-suite workflows at a reasonable cost. We introduce OmegaUse-OfficeVal, a benchmark for evaluating LLM agents on long-horizon office-suite tasks with task-level economic grounding. The benchmark comprises 100 tasks derived from office-suite requests proposed by practitioners and adapted through a privacy-preserving process. On average, these tasks require 2.32 hours of human labor to complete. An important feature of the benchmark is that each task is paired with two economic signals: human labor time and task price proxy. These signals enable direct comparisons between human costs and LLM inference costs, as well as value-weighted evaluation. To support stable evaluation, we develop code-based verifiers from fine-grained rubrics. We evaluate several frontier LLMs together with a human baseline. Although all evaluated LLMs are substantially cheaper and faster than human workers, they have not yet approached human-level deliverable quality. The code and dataset are fully open-sourced, and more information is available on our project website: https://omegause-officeval.github.io.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.27155",
+        "external_id": "2607.27155"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.27155",
+        "external_id": "2607.27155"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/baidu-frontier-research/OmegaUse-OfficeVal",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jingbo Zhou",
+      "Yusai Zhao",
+      "Qi Bao",
+      "Jingjia Cao",
+      "Zhenghai Chen",
+      "Chang Gao",
+      "Kaiqi Guo",
+      "Muxin Guo",
+      "Mingxuan Li",
+      "Xinjiang Lu",
+      "Yanru Ma",
+      "Yixiong Xiao",
+      "Zenghui Zhang",
+      "Le Zhang",
+      "Hua Wu"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851356Z",
+    "dedup_keys": [
+      "arxiv:2607.27155",
+      "title:agents benchmarking economic grounding horizon llm long office officeval omegause suite tasks with",
+      "github:baidu-frontier-research/omegause-officeval"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 6,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 8.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "bd92a8280764eddd",
+    "kind": "paper",
+    "title": "Explicit Layer Modeling for Video Object Insertion and Layer Decomposition",
+    "summary_en": "Most video editing systems still lack explicit layered video representations, limiting their ability to perform realistic compositing, object reuse, and consistent manipulation. This limitation is especially pronounced in video object insertion and video layer decomposition, where existing methods rely on implicit inference or per-scene optimization due to the absence of explicit foreground-layer supervision. We introduce TriLayer, a large-scale triplet video dataset containing aligned composite, background, and foreground videos, where the foreground layers include both object appearance and associated visual effects. This explicit supervision enables models to learn layered video representations directly rather than inferring them implicitly. Building on this dataset, we propose DBL-Diffusion, a dual-branch diffusion framework that jointly models RGB composites and RGBA foreground layers through shared denoising and cross-branch interaction. We instantiate the framework in two tasks: DBL-Insert for layered object insertion, which generates explicit RGBA layers for realistic compositing and flexible post-editing, and DBL-Decompose for video layer decomposition, which recovers foreground and background layers using triplet supervision. Experiments demonstrate that explicit layer modeling substantially improves both insertion fidelity and decomposition quality.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.25802",
+        "external_id": "2607.25802"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.25802",
+        "external_id": "2607.25802"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/KyujinHan/DBL-Diffusion",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kyujin Han",
+      "Seungjoo Shin",
+      "Sunghyun Cho"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851492Z",
+    "dedup_keys": [
+      "arxiv:2607.25802",
+      "title:and decomposition explicit for insertion layer layer modeling object video",
+      "github:kyujinhan/dbl-diffusion"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 6,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 7.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "1f4cb7407ee14e0e",
+    "kind": "paper",
+    "title": "Memory for Large Language Models",
+    "summary_en": "Memory has evolved into a foundational architectural dimension in large language models (LLMs), shifting from an implicit byproduct of computation to a spectrum of explicit, controllable mechanisms. While recent advances introduce diverse strategies---spanning transient attention, recurrent state dynamics, parameter-efficient adaptations, and scalable lookup storage---this rapid evolution has led to a highly fragmented research landscape. In this survey, we present a systematic, architecture-centric taxonomy of memory in LLMs. Our framework characterizes memory along three orthogonal axes: representation (implicit versus explicit), update dynamics (offline versus online), and persistence (short-term versus long-term). We further formalize the granular mechanisms dictating memory writing, routing, state transitions, and consolidation. This unified perspective elucidates the conceptual boundaries between computation-coupled and independently addressable memory, effectively bridging disparate architectural paradigms. Additionally, we critically analyze hybrid memory architectures, system-level efficiency trade-offs, and multi-dimensional evaluation methodologies. By consolidating these scattered advancements into a cohesive framework, this survey charts the trajectory of memory-centric LLM design and provides a principled foundation for future innovations in scalable and adaptive language modeling.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.25380",
+        "external_id": "2607.25380"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.25380",
+        "external_id": "2607.25380"
+      }
+    ],
+    "actors": [
+      "Sining Zhoubian",
+      "Dan Zhang",
+      "Evgeny Kharlamov",
+      "Jie Tang"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851448Z",
+    "dedup_keys": [
+      "arxiv:2607.25380",
+      "title:for language large memory models"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 7.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "0d56af6e05cc28dd",
+    "kind": "paper",
+    "title": "Voice Memory for Agentic Speech Recognition",
+    "summary_en": "We present Voice Memory, a inference-only scheme for agentic speech recognition: at stream time, a frozen corrector reads a single per-domain memory.md and decides per utterance whether to act on the hypothesis or abstain and keep the 1-best. Asynchronously, a score-gated optimizer revises that file through bounded edits, accepting an edit only when it strictly improves a held-out score. Extended from classical ASR-LM framework, we refer this split the listener-thinker architecture; the two roles are coupled only through the memory, so no weights change and the learned skill stays auditable and portable. Restraint turns out to be the operative skill this loop discovers: unconstrained generative error correction (GER) over-corrects, breaking correct tokens on up to 64% of its edits on financial news, and Voice Memory, reduces this rate to 35%. Across ten HyPoradise domains with an open corrector, Voice Memory, lowers weighted word error rate from 8.36% to 7.52% (7.47% with three added in-context examples) without regressing any dataset below its 1-best baseline; gains concentrate where recoverable headroom is largest, including air-travel commands (8.40% to 3.40%) and noisy far-field speech (CHiME-4, 12.69% to 10.46%). The memory transfers across corrector families and adds zero parameters to the inference path. A demo and example code are provided for future studies.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26410",
+        "external_id": "2607.26410"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26410",
+        "external_id": "2607.26410"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/huckiyang/voice-memory-notebook",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chao-Han Huck Yang",
+      "Zih-Ching Chen",
+      "Piotr Zelasko",
+      "Zhehuai Chen",
+      "Jagadeesh Balam",
+      "Boris Ginsburg"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851412Z",
+    "dedup_keys": [
+      "arxiv:2607.26410",
+      "title:agentic for memory recognition speech voice",
+      "github:huckiyang/voice-memory-notebook"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 7.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "f222561332c23bd6",
+    "kind": "paper",
+    "title": "CADENCE: Closing the Reasoning Gap via Coverage-Adaptive On-Policy Distillation",
+    "summary_en": "On-policy knowledge distillation transfers reasoning from large teachers to compact students, but existing approaches suffer three compounding failure modes: (i) cold-start collapse, where a fresh student assigns near-zero mass to teacher-preferred tokens; (ii) state-agnostic divergence scheduling, where time-only forward/reverse-KL interpolation ignores the student's coverage state; and (iii) binary reward sparsity, where pass/fail signals discard information from partially correct traces.\n  We present CADENCE, a unified framework with a targeted fix for each. Its DRIFT mechanism schedules a per-token convex mixture of forward-KL and reverse-KL surrogate objectives on student-sampled trajectories (per-token surrogates, not sequence-level KL gradient estimators). Six components extend it: (A) COVA, a coverage-adaptive β schedule accelerating the forward-to-reverse transition; (B) FTB, a forking-token boost concentrating gradient at high-entropy positions via a globally-normalized entropy reference; (C) CCD, a dense reward adding numerical-proximity partial credit for incorrect-but-close traces; (D) LAP, brevity-preferential correct-rollout reinforcement; (E) EMR, an entropy-matching calibration regularizer; (F) BSD, a bootstrapped self-distillation phase.\n  On GSM8K and MATH-500 (corrected 512-token protocol, 5 seeds, reported std), CADENCE distills a 0.5B student from a 1.5B teacher to 69.8 pm 0.5% GSM8K pass@1 (from 48.7% pretrained; 63.2% of the teacher gap closed) and to 72.1 pm 0.4% with a 3B teacher (76.2% closed), beating the strongest matched-compute label-using baseline (DRIFT+binary reward) by +4.4 pm 0.7 points. All experiments run on a single Apple Mac Studio (M-series, 64GB unified memory), showing principled distillation reaches strong reasoning quality without datacenter-scale hardware.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.16955",
+        "external_id": "2607.16955"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.16955",
+        "external_id": "2607.16955"
+      }
+    ],
+    "actors": [
+      "Satyam Kumar",
+      "Saurabh Jha"
+    ],
+    "published_at": "2026-07-18T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851578Z",
+    "dedup_keys": [
+      "arxiv:2607.16955",
+      "title:adaptive cadence closing coverage distillation gap policy reasoning the via"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 4.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "29771fe70e3d56ba",
+    "kind": "paper",
+    "title": "GPT-Red: Automated Red Teaming via Self-Play at Scale",
+    "summary_en": "We introduce GPT-Red, an automated red-teaming agent that is trained to discover novel prompt injection attacks against frontier LLMs. The goal of this model is to evaluate and improve the robustness of our production systems. To this end, we use it to adversarially train GPT-5.6, our most robust model to prompt injections to date. To create GPT-Red, we design a scalable self-play algorithm where the model is tasked with attacking a diverse population of simultaneously-trained defender agents. We train the model on realistic red-teaming environments using compute on the same scale as some of our largest RL post-training runs, making it the single-largest LLM safety training run ever documented. GPT-Red excels at red-teaming: it reliably breaks our past models up to GPT-5.5, it finds more successful attacks than human red-teamers, and it generalizes to held-out environments, defender models, and harnesses. In the future, we expect that as we improve the robustness of each new GPT model, it will in turn will provide better learning signal for even stronger red-teamer agents, thus unlocking a self-improvement flywheel.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26115",
+        "external_id": "2607.26115"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26115",
+        "external_id": "2607.26115"
+      }
+    ],
+    "actors": [
+      "Eric Wallace",
+      "Christopher A. Choquette-Choo",
+      "Nikhil Kandpal",
+      "Sam Toyer",
+      "Dylan Hunn",
+      "Stephanie Lin",
+      "Yuxin Wen",
+      "Xiangyu Qi",
+      "Christopher Wolff",
+      "Zizhao Wang",
+      "Milad Nasr",
+      "Sicheng Zhu",
+      "Chuan Guo",
+      "Juan Felipe Cerón Uribe",
+      "Kaiwen Wang",
+      "Aiden Low",
+      "Kai Xiao",
+      "Kai Chen"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851534Z",
+    "dedup_keys": [
+      "arxiv:2607.26115",
+      "title:automated gpt play red red scale self teaming via"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 4.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "326066ec18a68140",
+    "kind": "paper",
+    "title": "Grading the Narrators: An Isnad-Rijal Framework for Claim-Level Provenance in Multi-Agent Knowledge Systems",
+    "summary_en": "Modern multi-agent knowledge systems increasingly accumulate knowledge through chains of autonomous transformations rather than direct retrieval. Existing provenance work records what happened - execution traces, tool calls, evidence links - and source-reliability estimation is long established (truth discovery, reputation systems). What is missing is an operational framework that attaches graded, per-domain transmitter reliability to claim-level transmission chains, with completeness semantics, transformation-typed aggregation, decoupled content criticism, and serve/review/quarantine routing.\n  Classical Islamic hadith science confronted a structurally similar problem: deciding whether knowledge transmitted through chains of human narrators should be accepted. Over centuries it developed a rigorous methodology - isnad (a complete transmission chain attached to every claim), rijal (systematic grading of each narrator's integrity and precision), weakest-link chain evaluation, corroboration through independent chains, and matn criticism (content evaluated independently of chain quality). This paper transfers that methodology to AI system design.\n  We contribute a formal mapping from hadith-science concepts to multi-agent pipelines, a relational schema implementing claim chains and a graded narrator registry, a decision matrix combining chain grade with content criticism, and an evaluation on 20,000 claims from real physics textbooks. The evaluation validates weakest-link quarantine and independent-chain corroboration; reports a partial failure of the grade-recovery loop, which missed the highest-fault narrator; and reports two analyses as inconclusive, including a matched-coverage comparison the framework could not reach with the reference content critic. The paper is explicit throughout about which claims the evidence does and does not yet support.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.24117",
+        "external_id": "2607.24117"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.24117",
+        "external_id": "2607.24117"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/alizahidraja/isnad",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ali Zahid Raja"
+    ],
+    "published_at": "2026-07-27T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851792Z",
+    "dedup_keys": [
+      "arxiv:2607.24117",
+      "title:agent claim for framework grading isnad knowledge level multi narrators provenance rijal systems the",
+      "github:alizahidraja/isnad"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 28,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 2.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "e58c17dbb108f46a",
+    "kind": "paper",
+    "title": "StealthBench: Measuring Operational Stealth in Autonomous Offensive-Security Agents",
+    "summary_en": "Stealth, the discipline of achieving an objective without revealing your presence, capabilities, or collected intelligence, is what separates sophisticated operators from detectable ones. Elite security researchers and advanced persistent threats achieve their objectives unnoticed; autonomous agents increasingly inherit the same offensive tasks, but do they inherit the tradecraft? We introduce StealthBench,a benchmark that measures operational stealth in autonomous offensive-security agents across six operational security (OPSEC) dimensions. We extract 11 hand-verified OPSEC incidents from real bug-bounty and red-team trajectories, expanded into 14 dockerized task scenarios, where agents, despite finding real vulnerabilities, committed stealth failures inconsistent with standard operational tradecraft: embedding credentials in public uploads, deleting production resources to prove access, force-adding uninvolved users to demonstrate a race condition.\n  We evaluate agent trajectories using a 3-model large language model (LLM) judge panel with majority-vote aggregation, measuring safe success rate (solved and stealthy), Stealth@Solve (tradecraft quality among successful solves), and reckless solve rate (solved but cover blown). Our results show that no model exceeds 54% safe success rate (the compound metric requiring both task completion and stealth), confirming that OPSEC failures are systematic across model families. We release StealthBench as a public benchmark to support both the development of stealth-aware agents and automated OPSEC monitoring for autonomous offensive-security deployments. The interactive leaderboard, evaluation harness, and dataset are available at https://stealthbench.com.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26314",
+        "external_id": "2607.26314"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26314",
+        "external_id": "2607.26314"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/GangGreenTemperTatum/stealthbench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ads Dawson",
+      "Adrian Wood"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851676Z",
+    "dedup_keys": [
+      "arxiv:2607.26314",
+      "title:agents autonomous measuring offensive operational security stealth stealthbench",
+      "github:ganggreentempertatum/stealthbench"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 2.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "2d7f357b59f4d888",
+    "kind": "paper",
+    "title": "πR^2: Reactive Real-time Flow Policies",
+    "summary_en": "Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input arriving mid-execution, sacrificing reactivity. Replanning more often would restore it, but the perception-to-action pipeline (a large backbone plus multiple denoising steps) is too slow: this latency forbids frequent replanning and leaves committed actions stale, making such policies ill-suited for dynamic, closed-loop control. We present πR^2, which makes these policies reactive and real-time while retaining large backbones, expressive multi-modal policies, and multi-action prediction. Built on the per-position noise schedule of diffusion forcing, πR^2 contributes two ideas. First, it splits conditioning into a fast channel (proprioception, fresh every tick) and an asynchronously updated slow channel (vision-language features), so the policy reacts to proprioception within a chunk while tolerating stale vision. Second, a latency-adaptive flow schedule treats in-flight actions as inpainting conditioning and emits actions in one denoising step per call, letting one trained model adapt to varying hardware latency. Requiring minimal modification to existing architectures, πR^2 can be finetuned from a pretrained policy: applied to GR00T-N1.7 on a real xArm6+XHand platform, it replans closed-loop roughly 4times faster than the base policy (~25Hz on an A5000 GPU), acting on a fresh observation every 40ms. Across simulation and real-world manipulation tasks, πR^2 improves the success rate by up to 23% in simulation and 30% in the real world over the strongest baseline. Project page: https://pi-r2-flow.github.io/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26055",
+        "external_id": "2607.26055"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26055",
+        "external_id": "2607.26055"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/pi-r2-flow/pi-r2-flow",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Sungjae Park",
+      "Shubham Tulsiani"
+    ],
+    "published_at": "2026-07-28T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851626Z",
+    "dedup_keys": [
+      "arxiv:2607.26055",
+      "title:flow policies reactive real time",
+      "github:pi-r2-flow/pi-r2-flow"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 19,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 2.0,
+    "score_breakdown": {}
+  },
+  {
+    "id": "54c65390a6dfc6eb",
+    "kind": "paper",
+    "title": "SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response",
+    "summary_en": "Large Language Model (LLM) agents are increasingly adopted in real-world security operations with access to host artifacts and command-line interfaces (CLIs), making it critical to thoroughly assess their security capabilities. However, existing cybersecurity benchmarks focus on pre-compromise settings where agents are placed in a clean and idealized environment before an attack occurs. This leaves the post-compromise setting underexplored. To address this gap, we introduce SecRespond, the first benchmark for evaluating LLM agents on the post-compromise incident-response workflow. Given a forensic disk snapshot of a compromised host together with the alerts, vulnerability scans, and baseline checks reported by a host security product, agents are required to produce forensic reports on intrusions, baseline risks, and vulnerability risks, together with a remediation plan. We instantiate this task across 10 cyber ranges, each constructed from a distinct compromised cloud host, spanning 4 entry-point types, 21 ATT&CK techniques, and 5 operating systems. We evaluate 23 frontier LLMs on the OpenCode agent harness. Experimental results show that although current agents can reliably uncover the problems exposed by alerts, they struggle to proactively investigate the disk for silent intrusions and to produce comprehensive, verified remediation plans, with no model achieving complete detection and remediation on any single range. This reveals a fundamental bottleneck in building agents for real-world incident response. The benchmark is publicly available at https://github.com/Alibaba-NLP/qqr/tree/main/data/secrespond.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.26791",
+        "external_id": "2607.26791"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.26791",
+        "external_id": "2607.26791"
+      }
+    ],
+    "actors": [
+      "Lehan Wang",
+      "Boli Chen",
+      "Ruixue Ding",
+      "Pengjun Xie",
+      "Jinwei Huang",
+      "Zhendong Liu",
+      "Shuo Wang",
+      "Tao Lei",
+      "Xin Ouyang",
+      "Xiaomeng Li"
+    ],
+    "published_at": "2026-07-29T00:00:00Z",
+    "first_seen_at": "2026-08-01T15:15:55.851869Z",
+    "dedup_keys": [
+      "arxiv:2607.26791",
+      "title:agents benchmarking compromise for incident post real response secrespond world"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 1.0,
+    "score_breakdown": {}
+  }
+]
