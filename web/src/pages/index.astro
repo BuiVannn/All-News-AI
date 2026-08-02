@@ -21,6 +21,7 @@ const untranslated = items.filter((item) => !item.summary_vi).length;
     {
       days.length > 0 && (
         <nav class="days">
+          <a href={href("nguon/")}>Nguồn tin</a>
           {days.slice(0, 14).map((day) => (
             <a href={day === today ? href("") : href(`day/${day}/`)} aria-current={day === today ? "page" : undefined}>
               {formatDay(day)}

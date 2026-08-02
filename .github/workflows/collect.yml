@@ -86,6 +86,10 @@ jobs:
         working-directory: web
 
       - uses: actions/configure-pages@v5
+        with:
+          # Tự bật Pages nếu chưa bật. Lượt chạy đầu đã fail đúng ở bước này
+          # vì workflow chạy trước khi Pages được cấu hình.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web/dist

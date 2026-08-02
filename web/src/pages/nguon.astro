@@ -1,0 +1,115 @@
+---
+import Base from "../layouts/Base.astro";
+import { DIRECTORY } from "../lib/directory";
+import { href } from "../lib/feed";
+
+const total = DIRECTORY.reduce((sum, section) => sum + section.sources.length, 0);
+const ingested = DIRECTORY.reduce(
+  (sum, section) => sum + section.sources.filter((s) => s.ingested).length,
+  0,
+);
+---
+
+<Base
+  title="Nguồn tin AI — ai-radar"
+  description="Thư mục nguồn tin AI phân theo mục đích: paper, model, repo, blog lab, newsletter, cộng đồng."
+>
+  <header class="site">
+    <h1>Nguồn tin AI</h1>
+    <p>
+      {total} nguồn, phân theo mục đích. Có dấu <span class="pill on">đã gom</span> là
+      ai-radar tự lấy về ({ingested} nguồn) — còn lại phải tự vào đọc.
+    </p>
+    <nav class="days">
+      <a href={href("")}>← Feed hôm nay</a>
+      {DIRECTORY.map((section) => <a href={`#${section.id}`}>{section.title}</a>)}
+    </nav>
+  </header>
+
+  {
+    DIRECTORY.map((section) => (
+      <section class="dir" id={section.id}>
+        <h2>{section.title}</h2>
+        <p class="intro">{section.intro}</p>
+        <ul>
+          {section.sources.map((source) => (
+            <li>
+              <a href={source.url} rel="noopener noreferrer" target="_blank">
+                {source.name}
+              </a>
+              {source.ingested && <span class="pill on">đã gom</span>}
+              {source.note && <span class="note">{source.note}</span>}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <footer class="site">
+    <p>
+      Vì sao một nguồn nằm ở nhóm nào, và nguồn nào không gom được:
+      <a href="https://github.com/BuiVannn/All-News-AI/blob/main/docs/SOURCES.md">
+        docs/SOURCES.md
+      </a>
+    </p>
+  </footer>
+</Base>
+
+<style>
+  .dir {
+    margin-bottom: 2.2rem;
+    scroll-margin-top: 1rem;
+  }
+  .dir h2 {
+    font-size: 1.12rem;
+    margin: 0 0 0.3rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .intro {
+    margin: 0 0 0.9rem;
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+  .dir ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .dir li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+  .dir li:last-child {
+    border-bottom: none;
+  }
+  .dir li > a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .dir li > a:hover {
+    color: var(--accent);
+  }
+  .note {
+    display: block;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 0.12rem;
+  }
+  .pill {
+    font-size: 0.68rem;
+    padding: 0.05rem 0.35rem;
+    border-radius: 4px;
+    margin-left: 0.4rem;
+    white-space: nowrap;
+    vertical-align: 0.08em;
+  }
+  .pill.on {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+</style>

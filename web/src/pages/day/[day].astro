@@ -25,6 +25,7 @@ const today = days[0];
     <h1>ai-radar</h1>
     <p>Feed ngày {formatDay(day!)}</p>
     <nav class="days">
+      <a href={href("nguon/")}>Nguồn tin</a>
       {
         days.slice(0, 14).map((other) => (
           <a
