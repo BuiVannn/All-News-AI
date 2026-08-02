@@ -77,11 +77,11 @@ flowchart TD
     B --> C[Normalizer<br/>→ Item schema chung]
     C --> D[Dedup + Cross-source linking]
     D --> E{Tier-1 scorer<br/>rule-based, rẻ}
-    E -->|top ~50| F[Tier-2 enricher<br/>Claude Haiku 4.5]
+    E -->|top 30| F[Tier-2 enricher<br/>Gemini Flash-Lite]
     E -->|phần còn lại| G[seen ledger<br/>chỉ ghi ID]
     F --> H[data/items/YYYY-MM-DD.json]
     H --> I[Astro static build]
-    I --> J[Cloudflare Pages]
+    I --> J[GitHub Pages]
     B -.lỗi.-> K[data/runs/YYYY-MM-DD.json<br/>run manifest]
 ```
 
@@ -185,25 +185,37 @@ score = w1·log1p(hf_upvotes)
 
 Lấy top ~50. Trọng số để trong `config/weights.yaml`, không hardcode — đây là chỗ bạn sẽ chỉnh nhiều nhất.
 
-### Tier 2 — LLM, chỉ chạy trên ~50 item đã lọc
+### Tier 2 — LLM, chỉ chạy trên ~30 item đã lọc
 
-Model: **Claude Haiku 4.5** (`claude-haiku-4-5`) — $1 / $5 per triệu token, context 200K. Đây là tier rẻ nhất, quá đủ cho tóm tắt.
+Nhà cung cấp **cắm rút được** (`Enricher` interface). Mặc định `NullEnricher`:
+không cần key nào, feed vẫn chạy, chỉ thiếu tóm tắt. Đổi nhà cung cấp = sửa một
+dòng `enrich.provider` trong `config/sources.yaml`.
+
+Đang dùng: **Gemini 2.5 Flash-Lite** — free tier thật, không cần thẻ tín dụng,
+1.000 request/ngày so với nhu cầu ~40.
+
+| Lựa chọn | Hạn mức miễn phí | Thẻ |
+|---|---|---|
+| Gemini Flash-Lite *(đang dùng)* | 15 req/phút, 1.000 req/ngày | Không |
+| Groq (Llama 3.3 70B) | 30 req/phút, 14.400 req/ngày | Không |
+| OpenRouter `:free` | 20 req/phút, **50 req/ngày** | Không |
+| Claude Haiku 4.5 | Không có free tier, ~$1.17/tháng | Có |
+
+API dùng `/v1beta/interactions` (`:generateContent` đã bị Google đánh dấu
+legacy), header `Api-Revision`, structured output qua `response_format`.
+Tên model để trong config vì Google đổi thế hệ nhanh — `--check-enrich` liệt kê
+model mà key hiện tại thực sự dùng được.
 
 Output có cấu trúc (structured outputs, không parse text thô):
 - `summary_vi`: 2–3 câu tiếng Việt
 - `topics`: mảng tag từ enum cố định
 - `why_it_matters`: 1 câu — đây mới là thứ bạn thực sự đọc
 
-### Ước tính chi phí
+### Chi phí
 
-| Khoản | Tính toán | Kết quả |
-|---|---|---|
-| Input | 50 item × 800 tok × 30 ngày = 1.2M tok | $1.20 |
-| Output | 50 item × 150 tok × 30 ngày = 225K tok | $1.13 |
-| **Tổng/tháng (thường)** | | **≈ $2.33** |
-| **Dùng Batch API (giảm 50%)** | Không cần realtime → nên dùng | **≈ $1.17** |
-
-**Khoảng 30.000đ/tháng.** Prompt caching (đọc ~0.1×, ghi 1.25×) có thể giảm thêm nếu system prompt lớn, nhưng ở quy mô này chưa cần tối ưu.
+**0đ** với Gemini free tier: ~40 request/ngày so với hạn mức 1.000. Nếu sau này
+chuyển sang Claude Haiku 4.5 ($1/$5 per triệu token) thì khoảng $1.17/tháng
+(≈30.000đ) khi dùng Batch API giảm 50%.
 
 ---
 
@@ -246,9 +258,9 @@ for source in SOURCES:
 | Collector | **Python 3.13** | `feedparser` cho RSS, `httpx` cho HTTP async, `pydantic` cho validation — hệ sinh thái parsing tốt nhất |
 | Validation | **Pydantic v2** | Bắt schema drift ngay tại biên |
 | Lưu trữ | **JSON files trong git** | Xem 3.1 |
-| LLM | **Claude Haiku 4.5** + Batch API | Xem 6 |
+| LLM | **Gemini 2.5 Flash-Lite** (cắm rút được) | Xem 6 |
 | Site | **Astro** (static) | Content-first, build ra HTML thuần, JS tối thiểu, nhanh |
-| Hosting | **Cloudflare Pages** | Free, bandwidth không giới hạn, build tự động từ git |
+| Hosting | **GitHub Pages** | Free, không cần đăng ký thêm dịch vụ nào, deploy thẳng từ Actions |
 | CI/cron | **GitHub Actions** | **Miễn phí không giới hạn phút với public repo** |
 | Lint/format | **ruff** | Nhanh, thay được cả black + flake8 + isort |
 | Type check | **mypy** (strict) | Điểm portfolio |
@@ -307,7 +319,7 @@ ai-radar/
 |---|---|---|
 | **M0** | Schema + `Collector` base + 1 nguồn (HF Daily Papers) + ghi JSON | Chạy `python -m ai_radar` ra được file `data/items/*.json` |
 | **M1** | Thêm arXiv RSS + HF Models + blog RSS. Dedup + tier-1 scoring | 3 nguồn chạy song song, dedup hoạt động |
-| **M2** | Tier-2 (Claude Haiku) + site Astro + deploy Cloudflare Pages | Web chạy thật, có tóm tắt tiếng Việt |
+| **M2** | Tier-2 (Gemini) + site Astro + deploy GitHub Pages | Web chạy thật, có tóm tắt tiếng Việt |
 | **M3** | GitHub Actions cron + run manifest + xử lý lỗi | Tự chạy 2 lần/ngày, một nguồn chết không làm đổ pipeline |
 | **M4** | Thêm GitHub Search, MCP Registry, OpenRouter, HN, Reddit | Đủ 8+ nguồn |
 | **M5** | Test + CI + README + ADR | Đủ chất lượng để pin lên profile |

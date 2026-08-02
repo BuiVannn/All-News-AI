@@ -61,3 +61,16 @@ feed:
     model: 10
     paper: 10
     release: 5
+
+enrich:
+  # 'none' | 'gemini'. Không có key thì tự động rơi về 'none' và feed vẫn chạy,
+  # chỉ thiếu tóm tắt tiếng Việt.
+  provider: gemini
+
+  # Google đổi thế hệ model khá nhanh (2.5 -> 3.x) và trang rate limit giờ chỉ
+  # nói "xem trong AI Studio", nên tên model để ở đây thay vì hardcode.
+  # Chạy `python -m ai_radar --check-enrich` để xem key của bạn dùng được gì.
+  model: gemini-2.5-flash-lite
+
+  # Giữ thấp để không chạm trần RPM của free tier.
+  concurrency: 4

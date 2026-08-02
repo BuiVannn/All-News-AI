@@ -96,6 +96,16 @@ class Item(BaseModel):
     score_breakdown: dict[str, float] = Field(default_factory=dict)
 
 
+class EnrichResult(BaseModel):
+    """Thống kê một lượt enrich (tier-2)."""
+
+    provider: str
+    requested: int = 0
+    enriched: int = 0
+    failed: int = 0
+    skipped: int = 0
+
+
 class SourceResult(BaseModel):
     """Kết quả của một nguồn trong một lượt chạy."""
 
@@ -121,6 +131,7 @@ class RunManifest(BaseModel):
     new: int = 0
     duplicates: int = 0
     merged: int = 0
+    enrichment: EnrichResult | None = None
 
     @property
     def failed_sources(self) -> list[str]:

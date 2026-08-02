@@ -1,0 +1,59 @@
+---
+import ItemCard from "../components/ItemCard.astro";
+import Base from "../layouts/Base.astro";
+import { formatDay, href, listDays, loadDay } from "../lib/feed";
+
+const days = listDays();
+const today = days[0] ?? null;
+const items = today ? loadDay(today) : [];
+
+// Chưa có key LLM thì báo rõ ngay trên trang, thay vì để người đọc tự đoán
+// vì sao mọi tóm tắt đều bằng tiếng Anh.
+const untranslated = items.filter((item) => !item.summary_vi).length;
+---
+
+<Base title="ai-radar — feed AI hằng ngày">
+  <header class="site">
+    <h1>ai-radar</h1>
+    <p>
+      Paper, model và tin ra mắt trong ngày — đã lọc, đã gộp trùng giữa các nguồn.
+    </p>
+    {
+      days.length > 0 && (
+        <nav class="days">
+          {days.slice(0, 14).map((day) => (
+            <a href={day === today ? href("") : href(`day/${day}/`)} aria-current={day === today ? "page" : undefined}>
+              {formatDay(day)}
+            </a>
+          ))}
+        </nav>
+      )
+    }
+  </header>
+
+  {
+    untranslated > 0 && untranslated === items.length && (
+      <p class="notice">
+        Chưa cấu hình <code>GEMINI_API_KEY</code> nên đang hiển thị mô tả gốc tiếng Anh.
+      </p>
+    )
+  }
+
+  {
+    items.length === 0 ? (
+      <p class="empty">
+        Chưa có dữ liệu. Chạy <code>python -m ai_radar</code> để thu thập.
+      </p>
+    ) : (
+      items.map((item) => <ItemCard item={item} />)
+    )
+  }
+
+  <footer class="site">
+    {today && <p>Cập nhật {formatDay(today)} · {items.length} mục</p>}
+    <p>
+      Chỉ dùng API chính thức và RSS. Nội dung thuộc về nguồn gốc.
+      <a href="https://github.com/BuiVannn/All-News-AI">Mã nguồn</a>
+    </p>
+  </footer>
+</Base>

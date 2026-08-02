@@ -1,0 +1,45 @@
+---
+import { KIND_LABEL, linkLabel, type Item } from "../lib/feed";
+
+interface Props {
+  item: Item;
+}
+
+const { item } = Astro.props;
+const primary = item.links[0]?.url ?? "#";
+
+// Chưa cấu hình LLM thì rơi về abstract gốc — thà có nội dung tiếng Anh còn
+// hơn để trống. Đây là lý do `summary_vi` được thiết kế nullable.
+const body = item.summary_vi ?? item.summary_en;
+const isVietnamese = Boolean(item.summary_vi);
+
+const stats: string[] = [];
+if (item.signals.hf_upvotes) stats.push(`${item.signals.hf_upvotes} upvote`);
+if (item.signals.hf_likes) stats.push(`${item.signals.hf_likes} like`);
+if (item.signals.github_stars) stats.push(`${item.signals.github_stars}★`);
+---
+
+<article class="item">
+  <div class="item-head">
+    <span class="kind">{KIND_LABEL[item.kind]}</span>
+    <h2>
+      <a href={primary} rel="noopener noreferrer" target="_blank">{item.title}</a>
+    </h2>
+  </div>
+
+  {body && <p class:list={["summary", !isVietnamese && "en"]}>{body}</p>}
+  {item.why_it_matters && <p class="why">→ {item.why_it_matters}</p>}
+
+  <div class="meta">
+    {item.topics.map((topic) => <span class="topic">{topic}</span>)}
+    {item.actors.length > 0 && <span>{item.actors.slice(0, 3).join(", ")}</span>}
+    {stats.length > 0 && <span>{stats.join(" · ")}</span>}
+    {
+      item.links.map((link) => (
+        <a href={link.url} rel="noopener noreferrer" target="_blank">
+          {linkLabel(link)}
+        </a>
+      ))
+    }
+  </div>
+</article>

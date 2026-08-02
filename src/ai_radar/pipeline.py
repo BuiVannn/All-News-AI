@@ -17,6 +17,7 @@ import httpx
 
 from ai_radar import config, dedup, scoring, store
 from ai_radar.collectors import Collector, default_registry
+from ai_radar.enrich import Enricher, EnrichResult, build_enricher
 from ai_radar.http import build_client
 from ai_radar.models import Item, RunManifest, SourceResult
 
@@ -88,6 +89,19 @@ def dedupe(items: list[Item], seen: set[str]) -> tuple[list[Item], int]:
     return fresh, duplicates
 
 
+async def _enrich(items: list[Item], enricher: Enricher | None) -> EnrichResult:
+    """Sinh tóm tắt tiếng Việt. Không bao giờ được làm hỏng lượt chạy."""
+    active = enricher or build_enricher()
+    async with build_client() as client:
+        try:
+            return await active.enrich(client, items)
+        except Exception as exc:  # noqa: BLE001 - nội dung là thứ có thì tốt
+            logger.error("bước enrich lỗi: %s", exc)
+            return EnrichResult(
+                provider=active.name, requested=len(items), failed=len(items)
+            )
+
+
 def select(candidates: list[Item], limit: int) -> list[Item]:
     """Chọn `limit` item, đảm bảo suất tối thiểu cho từng loại.
 
@@ -145,6 +159,7 @@ def run(
     root: Path | None = None,
     dry_run: bool = False,
     collectors: Sequence[Collector] | None = None,
+    enricher: Enricher | None = None,
 ) -> RunManifest:
     from ai_radar.collectors.base import utcnow
 
@@ -173,6 +188,10 @@ def run(
     scoring.score_all(candidates)
     selected = select(candidates, limit)
 
+    # Enrich SAU khi chọn: chỉ ~30 item được gọi LLM thay vì cả trăm ứng viên.
+    # Đây chính là lý do tier-1 tồn tại.
+    enrichment = asyncio.run(_enrich(selected, enricher))
+
     manifest = RunManifest(
         day=day.isoformat(),
         started_at=started_at,
@@ -182,6 +201,7 @@ def run(
         new=sum(1 for item in selected if item.id not in existing),
         duplicates=duplicates + merged_away,
         merged=merged_away,
+        enrichment=enrichment,
     )
 
     if not dry_run:

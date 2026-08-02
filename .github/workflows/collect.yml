@@ -1,0 +1,93 @@
+name: Thu thập và deploy
+
+on:
+  schedule:
+    # 2 lần/ngày theo UTC = 08:00 và 20:00 giờ VN.
+    # Lượt tối bắt kịp tin ra trong ngày làm việc ở Mỹ.
+    - cron: "0 1 * * *"
+    - cron: "0 13 * * *"
+  workflow_dispatch: # chạy tay từ tab Actions
+  push:
+    branches: [main]
+    paths: # đổi code/giao diện thì deploy lại, không cần thu thập
+      - "web/**"
+      - ".github/workflows/collect.yml"
+
+permissions:
+  contents: write # commit dữ liệu mới vào repo
+  pages: write
+  id-token: write
+
+concurrency:
+  group: collect-and-deploy
+  cancel-in-progress: false # đang ghi data thì đừng cắt giữa chừng
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: pip install -e .
+
+      - name: Thu thập
+        # Không có secret thì enricher tự rơi về NullEnricher: feed vẫn chạy,
+        # chỉ thiếu tóm tắt tiếng Việt. Vì vậy job này không cần key để xanh.
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m ai_radar
+
+      - name: Commit dữ liệu
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Không có dữ liệu mới."
+          else
+            git commit -m "data: feed $(date -u +%Y-%m-%d)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main # lấy commit dữ liệu mà job trước vừa push
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: npm ci || npm install
+        working-directory: web
+
+      - name: Build
+        # GitHub Pages phục vụ ở /<repo>/ nên phải truyền base, nếu không mọi
+        # link nội bộ đều 404.
+        env:
+          ASTRO_BASE: /${{ github.event.repository.name }}/
+          ASTRO_SITE: https://${{ github.repository_owner }}.github.io
+        run: npx astro build
+        working-directory: web
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+      - id: deploy
+        uses: actions/deploy-pages@v4

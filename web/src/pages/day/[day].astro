@@ -1,0 +1,52 @@
+---
+import ItemCard from "../../components/ItemCard.astro";
+import Base from "../../layouts/Base.astro";
+import { formatDay, href, listDays, loadDay, type Item } from "../../lib/feed";
+
+export function getStaticPaths() {
+  return listDays().map((day) => ({
+    params: { day },
+    props: { items: loadDay(day), days: listDays() },
+  }));
+}
+
+interface Props {
+  items: Item[];
+  days: string[];
+}
+
+const { day } = Astro.params;
+const { items, days } = Astro.props;
+const today = days[0];
+---
+
+<Base title={`ai-radar — ${formatDay(day!)}`}>
+  <header class="site">
+    <h1>ai-radar</h1>
+    <p>Feed ngày {formatDay(day!)}</p>
+    <nav class="days">
+      {
+        days.slice(0, 14).map((other) => (
+          <a
+            href={other === today ? href("") : href(`day/${other}/`)}
+            aria-current={other === day ? "page" : undefined}
+          >
+            {formatDay(other)}
+          </a>
+        ))
+      }
+    </nav>
+  </header>
+
+  {
+    items.length === 0 ? (
+      <p class="empty">Ngày này không có mục nào.</p>
+    ) : (
+      items.map((item) => <ItemCard item={item} />)
+    )
+  }
+
+  <footer class="site">
+    <p>{items.length} mục · <a href={href("")}>Về hôm nay</a></p>
+  </footer>
+</Base>

@@ -4,7 +4,7 @@ Gom **paper, model release, tin ra mắt và tooling AI** về một feed duy nh
 
 Mỗi ngày có hàng trăm paper và model mới ra. Vấn đề không phải là tìm chúng ở đâu, mà là **lọc ra 30 thứ đáng đọc** và gom các mảnh rời rạc của cùng một sự kiện lại với nhau.
 
-> 🚧 Đang phát triển — hiện ở mốc M1 (4 nguồn, gộp chéo nguồn, xếp hạng tier-1).
+> 🚧 Đang phát triển — hiện ở mốc M2 (4 nguồn, tóm tắt tiếng Việt, web tĩnh, deploy tự động).
 
 ## Điểm khác biệt
 
@@ -18,11 +18,11 @@ flowchart LR
     B --> C[Normalize<br/>→ Item]
     C --> D[Dedup +<br/>cross-source link]
     D --> E{Tier-1<br/>rule-based}
-    E -->|top 30| F[Tier-2<br/>Claude Haiku]
+    E -->|top 30| F[Tier-2<br/>Gemini Flash-Lite]
     E -->|còn lại| G[seen ledger]
     F --> H[data/items/*.json]
     H --> I[Astro static]
-    I --> J[Cloudflare Pages]
+    I --> J[GitHub Pages]
 ```
 
 Không có server, không có database. Dữ liệu là file JSON trong git — nghĩa là pipeline **replay được** (chạy lại thuật toán xếp hạng trên toàn bộ lịch sử mà không cần fetch lại), debug bằng `cat`, và rollback bằng `git revert`.
@@ -78,6 +78,34 @@ python -m ai_radar                                # thu thập hôm nay
                                            known_org=+10.0    age_decay=-2.3
 ```
 
+## Tóm tắt tiếng Việt
+
+Tầng enrich **không phụ thuộc nhà cung cấp**. Không có API key thì `NullEnricher`
+nhận việc: feed vẫn chạy, chỉ hiển thị mô tả gốc tiếng Anh.
+
+Bật tóm tắt tiếng Việt bằng Gemini (free tier, không cần thẻ tín dụng):
+
+1. Lấy key tại [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+2. `export GEMINI_API_KEY=<key>`
+3. `python -m ai_radar --check-enrich` để xác nhận key dùng được model nào
+
+Đổi sang nhà cung cấp khác = sửa `enrich.provider` trong `config/sources.yaml`.
+
+## Web
+
+```bash
+cd web && npm install
+npm run dev      # http://localhost:4321
+npm run build    # ra web/dist/
+```
+
+Trang tĩnh thuần, không JS phía client. Dữ liệu đọc từ `data/items/*.json` lúc
+build, nên mỗi bản deploy tương ứng chính xác với một commit.
+
+Deploy tự động qua GitHub Actions: cron 2 lần/ngày → thu thập → commit dữ liệu →
+build → GitHub Pages. Bật ở **Settings → Pages → Source: GitHub Actions**, và để
+key vào **Settings → Secrets → Actions** với tên `GEMINI_API_KEY`.
+
 ## Phát triển
 
 ```bash
@@ -102,8 +130,8 @@ pytest -m live
 
 - [x] **M0** — schema, `Collector` base, HF Daily Papers, ghi JSON
 - [x] **M1** — arXiv RSS + HF Models + blog RSS, dedup chéo nguồn 6 tầng, tier-1 scoring
-- [ ] **M2** — tóm tắt tiếng Việt (Claude Haiku), web Astro, deploy
-- [ ] **M3** — cron GitHub Actions, run manifest, xử lý lỗi
+- [x] **M2** — tóm tắt tiếng Việt (Gemini), web Astro, cron + deploy GitHub Pages
+- [ ] **M3** — ADR, observability, tinh chỉnh trọng số theo thực tế đọc
 - [ ] **M4** — thêm GitHub, MCP Registry, OpenRouter, HN, Reddit
 - [ ] **M5** — CI, ADR, hoàn thiện tài liệu
 

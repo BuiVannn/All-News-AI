@@ -49,6 +49,7 @@ async def get_bytes(
     url: str,
     *,
     params: dict[str, Any] | None = None,
+    headers: dict[str, str] | None = None,
     attempts: int = 3,
 ) -> bytes:
     """GET nội dung thô — dùng cho RSS/Atom.
@@ -57,7 +58,7 @@ async def get_bytes(
     tự gọi mạng: như vậy RSS mới đi qua cùng một lớp retry/backoff/User-Agent
     như mọi nguồn khác.
     """
-    response = await _request(client, url, params=params, attempts=attempts)
+    response = await _request(client, url, params=params, headers=headers, attempts=attempts)
     return response.content
 
 
@@ -66,10 +67,11 @@ async def get_json(
     url: str,
     *,
     params: dict[str, Any] | None = None,
+    headers: dict[str, str] | None = None,
     attempts: int = 3,
 ) -> Any:
     """GET một endpoint JSON."""
-    response = await _request(client, url, params=params, attempts=attempts)
+    response = await _request(client, url, params=params, headers=headers, attempts=attempts)
     try:
         return response.json()
     except ValueError as exc:
@@ -81,6 +83,7 @@ async def _request(
     url: str,
     *,
     params: dict[str, Any] | None = None,
+    headers: dict[str, str] | None = None,
     attempts: int = 3,
 ) -> httpx.Response:
     """GET có retry.
@@ -94,7 +97,7 @@ async def _request(
     for attempt in range(attempts):
         response: httpx.Response | None = None
         try:
-            response = await client.get(url, params=params)
+            response = await client.get(url, params=params, headers=headers)
             if response.status_code in RETRY_STATUS:
                 raise httpx.HTTPStatusError(
                     f"HTTP {response.status_code}", request=response.request, response=response

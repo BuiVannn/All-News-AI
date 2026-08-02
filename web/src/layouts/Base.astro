@@ -1,0 +1,28 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Feed AI hằng ngày: paper, model và tin ra mắt, có lọc và tóm tắt tiếng Việt.",
+} = Astro.props;
+---
+
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <div class="wrap">
+      <slot />
+    </div>
+  </body>
+</html>
