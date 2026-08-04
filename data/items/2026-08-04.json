@@ -1,5 +1,330 @@
 [
   {
+    "id": "8791bc35a00bb6a1",
+    "kind": "paper",
+    "title": "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks",
+    "summary_en": "Large language model (LLM) agents increasingly undertake long-horizon tasks that require sustained reasoning, tool use, and revision across many interdependent steps. However, existing agent harnesses maintain task execution, task state, and completion assessment within a growing context, making the state difficult to track and allowing incorrect self-assessments to propagate into later decisions. We reformulate long-horizon execution as a task-state management problem and propose LongHorizon-Harness, which maintains the task state explicitly outside execution and updates it only with facts independently verified from the environment. Its Manage-Execute-Audit(MEA) loop uses a manager to maintain the task state and determine the next subtask, a fresh-context executor to perform it, and a read-only auditor to verify the resulting environment state before the next round. A lightweight AgentAdapter supports interchangeable model and harness backends without modifying their native agent loops. LongHorizon-Harness improves Qwen~3.7-Plus from 51.8% to 80.7% on WeaveBench, from 69.7% to 77.2% on Terminal-Bench~2.1, and from 2.8% to 8.3% on OSWorld~2.0. It also raises Claude Opus~4.7 from 20.0% to 34.3% on an OSWorld2.0 subset, demonstrating consistent gains across models, harnesses, and interaction domains.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01964",
+        "external_id": "2608.01964"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01964",
+        "external_id": "2608.01964"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AMAP-ML/LongHorizon-Harness",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ziyu Ma",
+      "Hailang Huang",
+      "Shun Zou",
+      "Yong Wang",
+      "Shidong Yang",
+      "Yiming Hu",
+      "Fei Wei",
+      "XiangXiang Chu"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210425Z",
+    "dedup_keys": [
+      "arxiv:2608.01964",
+      "title:advancing agents for harness horizon long longhorizon real tasks world",
+      "github:amap-ml/longhorizon-harness"
+    ],
+    "signals": {
+      "hf_upvotes": 112,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 51,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 55.269,
+    "score_breakdown": {
+      "hf_upvotes": 37.819,
+      "github_stars": 7.902,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "7d1eb38180275425",
+    "kind": "model",
+    "title": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+    "summary_en": "en",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+        "external_id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+        "external_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-07-29T17:46:48Z",
+    "first_seen_at": "2026-08-04T15:13:34.200237Z",
+    "dedup_keys": [
+      "hf:nvidia/nvidia-nemotronlabs-voicechat-11b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 69,
+      "hf_downloads": 80,
+      "hf_trending_score": 69.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 52.185,
+    "score_breakdown": {
+      "hf_trending": 25.491,
+      "hf_downloads": 8.789,
+      "hf_likes": 12.745,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "age_decay": -8.84
+    }
+  },
+  {
+    "id": "6d06898cceef4bb4",
+    "kind": "paper",
+    "title": "SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks",
+    "summary_en": "Speech and audio generation is often needed in animation dubbing, audio drama, movies, advertising, games, podcasts, and short-video production. In these scenarios, creators may need to design voices without reference recordings, control speaker styles with natural language, support acoustic scenes with environments and audio effects, and later reuse the designed voices. Therefore, it is important to support multi-speaker speech and audio generation for both instruct and zero-shot tasks. The instruct task requires a caption of the environment, speaker styles, and fine-grained content, while the zero-shot task uses reference audio together with the same fine-grained content. We address these tasks from both the data and model sides. First, we propose SwanData-Caption, which cleans raw speech and audio data, adds targeted synthetic coverage, and annotates diverse and accurate multi-level captions. Then, we propose SwanTale, a multi-speaker expressive speech and audio generation model that supports both zero-shot and instruct tasks. We introduce SwanVAE to support high-quality multi-audio-modality generation. Then, we adopt reward-conditioned quality control and Engram conditioning, along with Unified MoE for multi-task and multi-audio-modality modeling. In addition, we use curriculum learning and GRPO post-training to let the model progressively learn and strengthen its capabilities. Experimental results show that SwanTale leads on multiple key zero-shot and instruct metrics, achieves the best expressiveness scores in both tasks, and supports complex instruct generation involving multi-speaker speech and audio. Demos can be found at https://swanaigc.github.io/\\#swantale.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02023",
+        "external_id": "2608.02023"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02023",
+        "external_id": "2608.02023"
+      }
+    ],
+    "actors": [
+      "Yu Zhang",
+      "Ruiqi Li",
+      "Changhao Pan",
+      "Ke Lei",
+      "Xiang Yin",
+      "Cheng Yang"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210469Z",
+    "dedup_keys": [
+      "arxiv:2608.02023",
+      "title:and and audio for generation instruct multi shot speaker speech swantale tasks unified zero"
+    ],
+    "signals": {
+      "hf_upvotes": 110,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 7,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 44.224,
+    "score_breakdown": {
+      "hf_upvotes": 37.676,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "715751c693a30163",
+    "kind": "paper",
+    "title": "Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs",
+    "summary_en": "Recent Vision-Language-Action (VLA) models for autonomous driving (AD) increasingly utilize chain-of-thought (CoT) supervision to enhance the reasoning capabilities of their Vision-Language Model (VLM) components, yet existing annotation pipelines commonly expose the teacher model to the logged ground-truth (GT) future trajectory. We empirically show that this induces trajectory anchoring bias: teacher models rationalize the revealed outcome rather than infer a decision from scene evidence, producing less causally faithful CoTs and substantially more severe hallucinations, especially in causally challenging scenes. Removing the GT trajectory eliminates this shortcut, but open-ended trajectory generation entangles high-level decision-making with precise geometric synthesis and low-level dynamics. To make trajectory-level driving decisions verifiable without requiring open-ended trajectory synthesis, we introduce Autonomous-Driving Multiple-Choice Question (AD-MCQ), which casts planning as selection among explicit trajectory candidates. Taking this a step further, we propose Deferred Exposure of Future Trajectories for RLVR (DEFT-RLVR) to transform future trajectories from pre-decision anchors into post-decision verification targets. Experimental results show that DEFT-RLVR improves AD reasoning while preserving or even enhancing general visual capabilities. With VLM-only inference and controllable difficulty through candidate construction, AD-MCQ provides a flexible, scalable, and extensible foundation for future research on verifiable AD reasoning.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01755",
+        "external_id": "2608.01755"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01755",
+        "external_id": "2608.01755"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/hzx122/DEFT-RLVR",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zixuan Huang",
+      "Yang Zhou",
+      "Kaixuan Wang",
+      "Guli Zhang",
+      "Hongyan Xie",
+      "Yakun Zhu",
+      "Hao Geng",
+      "Yikun Ban",
+      "Deqing Wang"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210691Z",
+    "dedup_keys": [
+      "arxiv:2608.01755",
+      "title:autonomous deferred driving exposure for future reasoning trajectories verifiable vlms",
+      "github:hzx122/deft-rlvr"
+    ],
+    "signals": {
+      "hf_upvotes": 25,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 20,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.702,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "github_stars": 6.089,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "e29efa0c386980d7",
+    "kind": "paper",
+    "title": "Progressive Agent Skill Generation via Reinforcement Learning",
+    "summary_en": "Existing skill generation methods largely rely on heuristics or pipeline-style consolidation, which must be specially designed for different evidence sources. In contrast, learning-based approaches offer a more unified way to model skill generation across heterogeneous sources. However, learning-based skill generation remains challenging because skills lack a natural supervision signal based on relevance or correctness; their value can largely be determined only by whether they improve the behavior of the agent on downstream tasks. To address this challenge, we propose Skill-α, a reinforcement learning method for progressively generating high-quality agent skills. Specifically, we formulate skill generation as a sequential editing process that decomposes skill construction into individually evaluable edits, and introduce a novel rollback reward that evaluates each edit by comparing downstream execution under the original and edited skills on an anchored query. Extensive experiments show that Skill-α generates more effective skills than methods based on heuristics or pipelines in both document-to-skill and experience-to-skill settings. Under the main GPT-4o worker, Skill-α improves average downstream success rates over the strongest skill-generation baseline by 3.3 points on CL-Bench and 6.7 points on tau2-bench. Further ablations validate the importance of rollback reward and progressive generation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01678",
+        "external_id": "2608.01678"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01678",
+        "external_id": "2608.01678"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ejhshen/skill-alpha",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Junhao Shen",
+      "Zhanqiu Zhang",
+      "Yiwen Guo",
+      "Hong Cheng"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210544Z",
+    "dedup_keys": [
+      "arxiv:2608.01678",
+      "title:agent generation learning progressive reinforcement skill via",
+      "github:ejhshen/skill-alpha"
+    ],
+    "signals": {
+      "hf_upvotes": 43,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.208,
+    "score_breakdown": {
+      "hf_upvotes": 30.274,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
     "id": "188a720452c9300b",
     "kind": "paper",
     "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
@@ -43,19 +368,19 @@
       "Yong Yu"
     ],
     "published_at": "2026-07-30T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440387Z",
+    "first_seen_at": "2026-08-04T15:13:34.210576Z",
     "dedup_keys": [
       "arxiv:2607.28590",
       "title:attributing distillation evidence for multimodal policy reconstruction target vad visual",
       "github:deepexperience/vad_multimodal_opd"
     ],
     "signals": {
-      "hf_upvotes": 19,
+      "hf_upvotes": 43,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 16,
+      "github_stars": 34,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -63,768 +388,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 33.885,
+    "score": 40.933,
     "score_breakdown": {
-      "hf_upvotes": 23.966,
-      "github_stars": 5.666,
+      "hf_upvotes": 30.274,
+      "github_stars": 7.111,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -7.747
-    }
-  },
-  {
-    "id": "e857739ab2ae2061",
-    "kind": "release",
-    "title": "NVIDIA Vera Storage Benchmarks: Faster Encryption, Compression, Integrity Checking, and Recovery for AI-Native Storage",
-    "summary_en": "Storage is an active part of every agentic AI workflow. As agents retrieve enterprise knowledge, access persistent memory, reuse key-value (KV) cache data,...",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/nvidia-vera-storage-benchmarks-faster-encryption-compression-integrity-checking-and-recovery-for-ai-native-storage/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "nvidia"
-    ],
-    "published_at": "2026-08-03T16:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:42.191546Z",
-    "dedup_keys": [
-      "url:developer.nvidia.com/blog/nvidia-vera-storage-benchmarks-faster-encryption-compression-integrity-checking-and-recovery-for-ai-native-storage",
-      "title:and benchmarks checking compression encryption faster for integrity native nvidia recovery storage storage vera"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.253,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.747
-    }
-  },
-  {
-    "id": "30005316b0ba9228",
-    "kind": "release",
-    "title": "Orchard: An open framework for scalable agentic AI",
-    "summary_en": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research .",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "microsoft_research",
-        "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "microsoft_research"
-    ],
-    "published_at": "2026-08-03T16:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:42.875963Z",
-    "dedup_keys": [
-      "url:microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai",
-      "title:agentic for framework open orchard scalable"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.253,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.747
-    }
-  },
-  {
-    "id": "aada1d4770fd0599",
-    "kind": "release",
-    "title": "How we built a realtime system for responsive voice AI in six months",
-    "summary_en": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "speech"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-08-03T07:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.432114Z",
-    "dedup_keys": [
-      "url:openai.com/index/continuous-voice-interaction-with-gpt-live",
-      "title:built for how months realtime responsive six system voice"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.691,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.309
-    }
-  },
-  {
-    "id": "6d06898cceef4bb4",
-    "kind": "paper",
-    "title": "SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instruct and Zero-Shot Tasks",
-    "summary_en": "Speech and audio generation is often needed in animation dubbing, audio drama, movies, advertising, games, podcasts, and short-video production. In these scenarios, creators may need to design voices without reference recordings, control speaker styles with natural language, support acoustic scenes with environments and audio effects, and later reuse the designed voices. Therefore, it is important to support multi-speaker speech and audio generation for both instruct and zero-shot tasks. The instruct task requires a caption of the environment, speaker styles, and fine-grained content, while the zero-shot task uses reference audio together with the same fine-grained content. We address these tasks from both the data and model sides. First, we propose SwanData-Caption, which cleans raw speech and audio data, adds targeted synthetic coverage, and annotates diverse and accurate multi-level captions. Then, we propose SwanTale, a multi-speaker expressive speech and audio generation model that supports both zero-shot and instruct tasks. We introduce SwanVAE to support high-quality multi-audio-modality generation. Then, we adopt reward-conditioned quality control and Engram conditioning, along with Unified MoE for multi-task and multi-audio-modality modeling. In addition, we use curriculum learning and GRPO post-training to let the model progressively learn and strengthen its capabilities. Experimental results show that SwanTale leads on multiple key zero-shot and instruct metrics, achieves the best expressiveness scores in both tasks, and supports complex instruct generation involving multi-speaker speech and audio. Demos can be found at https://swanaigc.github.io/\\#swantale.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv",
-      "speech"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.02023",
-        "external_id": "2608.02023"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.02023",
-        "external_id": "2608.02023"
-      }
-    ],
-    "actors": [
-      "Yu Zhang",
-      "Ruiqi Li",
-      "Changhao Pan",
-      "Ke Lei",
-      "Xiang Yin",
-      "Cheng Yang"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440218Z",
-    "dedup_keys": [
-      "arxiv:2608.02023",
-      "title:and and audio for generation instruct multi shot speaker speech swantale tasks unified zero"
-    ],
-    "signals": {
-      "hf_upvotes": 20,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 31.609,
-    "score_breakdown": {
-      "hf_upvotes": 24.356,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "d4ee45d9c51f10d4",
-    "kind": "paper",
-    "title": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
-    "summary_en": "Reinforcement learning (RL) post-training of Vision-Language-Action (VLA) models has shown strong promise for robotic manipulation. Among RL methods, critic-based approaches rely on a value estimator that predominantly operates on single-frame observations or single-frame VLM backbone latents, which is a fundamental mismatch with the partially observable nature of robot control. A naive approach to incorporate observation history into the critic incurs exponential complexity with high-dimensional visual space, and still fails because pure scalar-return regression provides insufficient supervision for learning cross-temporal dynamics. We identify the root cause as a state approximation problem: without an explicit world modeling objective, the critic's representation cannot capture the temporal structure needed for accurate value estimation. To address this, we propose the World Critic Model (WCM), built on a lightweight LeJEPA architecture; WCM jointly predicts future latent state and estimates values, such that the critic's representation is explicitly trained to capture temporal dynamics rather than merely regress scalar returns. WCM integrates seamlessly into both on-policy and off-policy training pipelines and is compatible with state-of-the-art VLA backbones including Pi0, Pi0.5, and OpenVLA-OFT. Extensive experiments on 149 tasks across four benchmarks demonstrate that WCM consistently achieves state-of-the-art performance in both in-distribution and out-of-distribution settings, with particularly strong generalization gains. We further validate WCM on seven real-world manipulation tasks using OpenVLA-OFT and Pi0.5 with off-policy RL, confirming stable deployment across diverse settings.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "multimodal",
-      "cv",
-      "robotics",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2607.29613",
-        "external_id": "2607.29613"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.29613",
-        "external_id": "2607.29613"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/sylvestf/WCM",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Senyu Fei",
-      "Xiaopeng Yu",
-      "Siyin Wang",
-      "Xianzhong Zhao",
-      "Jingjing Gong",
-      "Xipeng Qiu"
-    ],
-    "published_at": "2026-07-31T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440437Z",
-    "dedup_keys": [
-      "arxiv:2607.29613",
-      "title:action critic for language learning model reinforcement vision wcm world",
-      "github:sylvestf/wcm"
-    ],
-    "signals": {
-      "hf_upvotes": 12,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 11,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 6,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 31.243,
-    "score_breakdown": {
-      "hf_upvotes": 20.52,
-      "github_stars": 4.97,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -6.247
-    }
-  },
-  {
-    "id": "3c25b4fdf43dd0b0",
-    "kind": "release",
-    "title": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
-    "summary_en": "Running a dedicated Kubernetes cluster per team often results in more isolation than an organization requires. While one cluster can be successfully shared...",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "nvidia"
-    ],
-    "published_at": "2026-08-03T16:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:42.191478Z",
-    "dedup_keys": [
-      "url:developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure",
-      "title:clusters gpu how infrastructure isolated kubernetes run shared tenant"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.253,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.747
-    }
-  },
-  {
-    "id": "45bb4bc57b06e053",
-    "kind": "paper",
-    "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
-    "summary_en": "Real-world software development requires coding agents to operate in shared workspaces where users may inspect and modify code during an ongoing task, yet existing repository-level benchmarks typically evaluate agents working alone or restrict user participation to messages. This leads us to ask: how do coding agents understand and respond to code changes in a shared workspace? We introduce SWE-Touch, a framework that stress-tests this setting through validated Counter-Edits: plausible edits to task-relevant code that conflict with task completion. SWE-Touch mines task-critical regions from multiple repair trajectories, uses a separate User Patch Generator to construct the edits, and injects them with contextual user messages when agents reach the relevant code. We evaluate nine coding models on SWE-bench Verified, with additional experiments on longer-horizon tasks from SWE-Bench Pro and DeepSWE. Counter-Edit lowers average resolve rate by 7.7 percentage points on SWE-bench Verified, with degradation also persisting on both longer-horizon benchmarks. Trajectory analysis links these failures to limited awareness of the evolving workspace: agents may retain conflicting code or replace it without sufficiently re-inspecting the repository and validating the revised code with targeted tests. These findings show that strong autonomous performance does not yet ensure the state awareness and adaptive behavior needed for shared-workspace collaboration, and point to detecting workspace changes, reconciling conflicting edits with the task, and verifying the affected behavior as key capabilities for future optimization.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.02499",
-        "external_id": "2608.02499"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.02499",
-        "external_id": "2608.02499"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Trae1ounG/SWE-Touch",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yuqiao Tan",
-      "Jinxiang Meng",
-      "Fangyu Lei",
-      "Minzheng Wang",
-      "Shizhu He",
-      "Jun Zhao",
-      "Kang Liu"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440472Z",
-    "dedup_keys": [
-      "arxiv:2608.02499",
-      "title:agents benchmarking code coding swe the touch touch users when",
-      "github:trae1oung/swe-touch"
-    ],
-    "signals": {
-      "hf_upvotes": 9,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.674,
-    "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "7c1c6609b49e6e98",
-    "kind": "release",
-    "title": "Circles powers telco personalization with OpenAI technology",
-    "summary_en": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/circles",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.432251Z",
-    "dedup_keys": [
-      "url:openai.com/index/circles",
-      "title:circles openai personalization powers technology telco with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.253,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "c5146e17094b9456",
-    "kind": "paper",
-    "title": "UEmbed: Unified Sparse and Dense Multimodal Embeddings",
-    "summary_en": "Sparse retrieval underpins modern search systems, from web search to retrieval-augmented generation. Existing work has introduced Learned Sparse Retrieval (LSR) to push beyond exact lexical matching toward richer semantics. Yet LSR has so far remained tied to encoder-style bidirectional architectures, and its extension to multimodal settings still relies heavily on auxiliary cross-modal modules. To address these limitations, we introduce UEmbed (Unified Embedding), a decoder-only multimodal embedding model that produces both sparse lexical and dense representations in one causal forward pass. UEmbed appends N learnable special tokens to the input and partitions the vocabulary into N disjoint subsets. Each token's causal hidden state predicts sparse weights over its assigned subset, and the N subsets are concatenated into the full sparse vector. Trained on public data, we release UEmbed at 2B, 4B, and 9B scales. UEmbed-9B reaches 71.8 (dense) and 71.0 (sparse) on MMEB-v2, outperforming multimodal embedding models trained on publicly available data (e.g., RzenEmbed). On BEIR, UEmbed also remains competitive with strong dense and sparse baselines. Furthermore, we demonstrate the practical utility of UEmbed across three dimensions: effectiveness, efficiency, and agentic applications. Overall, UEmbed offers a new paradigm: it unifies dense and sparse embeddings in one model, while further extending sparse retrieval to unify text and multimodal inputs.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "rag",
-      "multimodal",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.02583",
-        "external_id": "2608.02583"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.02583",
-        "external_id": "2608.02583"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Alibaba-NLP/UEmbed",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Tingyu Song",
-      "Mingxin Li",
-      "Yanzhao Zhang",
-      "Dingkun Long",
-      "Pengjun Xie",
-      "Zhijie Nie",
-      "Yilun Zhao",
-      "Shu Wu"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440501Z",
-    "dedup_keys": [
-      "arxiv:2608.02583",
-      "title:and dense embeddings multimodal sparse uembed unified",
-      "github:alibaba-nlp/uembed"
-    ],
-    "signals": {
-      "hf_upvotes": 8,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 27.831,
-    "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "d84fbb0c7284b93f",
-    "kind": "paper",
-    "title": "Roomer: Reflective Object-Grounded Model Editing and Repair for 3D Indoor Layout Synthesis",
-    "summary_en": "Existing indoor layout generators produce globally plausible layouts yet may retain local violations such as collisions, out-of-bounds placements, obstructed openings, and blocked circulation. Most prior work focuses on full-scene synthesis or scene-level optimization, with limited support for identifying responsible objects and locally repairing affected regions. We present Roomer, a reflective repair framework that casts these violations as sparse, object-grounded repair problems. Roomer encodes layouts as ``RoState'' and uses ``RoReview'' to bind measured violations to implicated objects. A geometry-conditioned vision-language model planner proposes a structured local edit, while a deterministic solver validates it and generates a finite set of candidate edits when needed. Each candidate is committed only if full-scene verification confirms that it resolves the target violation without new hard violations or broken protected constraints. We train the planner on Roomer-CC, a controlled-corruption dataset that pairs faulty layouts with object-grounded violation evidence and known-feasible inverse StatePatches. Since existing benchmarks rarely assess whether physically valid layouts are usable, we introduce Roomer-Eval to assess distributional quality, physical validity, and practical usability. Experiments show that Roomer repairs residual violations while preserving valid regions, improves physical validity and usability, and transfers across external generators.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.01973",
-        "external_id": "2608.01973"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.01973",
-        "external_id": "2608.01973"
-      }
-    ],
-    "actors": [
-      "Lingwei Dang",
-      "Ziyan Qiu",
-      "Jiajia Cheng",
-      "Shishuo Shang",
-      "Zhenhao Zhang",
-      "Yufei Zhu",
-      "Qingxin Xiao",
-      "Pan Liu",
-      "Shenghui Huang",
-      "Yun Hao",
-      "Juntong Li",
-      "Qingyao Wu"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440554Z",
-    "dedup_keys": [
-      "arxiv:2608.01973",
-      "title:and editing for grounded indoor layout model object reflective repair roomer synthesis"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 21.587,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "7332525d8b858b65",
-    "kind": "paper",
-    "title": "StyleForge: Indoor Furniture Styling by Counterfactual Reasoning in a Hypergraph Field",
-    "summary_en": "Fixed-layout indoor furniture styling requires selecting assets that form a coherent room without changing the prescribed furniture categories, positions, orientations, or scales. Existing approaches typically retrieve each asset independently or rely on static local relations, making them prone to shape, material, and color conflicts after scene composition. We introduce StyleForge, a scene-level structured selection framework built on a dynamic hypergraph style field. A frozen multimodal large language model extracts structured style priors from an open-ended style request and the fixed layout, while StyleForge maintains a learnable candidate distribution for each furniture slot. Conditioned on the target style, the dynamic hypergraph style field adaptively activates and weights layout-induced hyperedges to capture higher-order dependencies among furniture. Counterfactual style preference learning then treats each candidate as a local substitution in the current style field and evaluates its contextual compatibility using Mahalanobis energies. Training alternates between optimizing the style field and the candidate logits. At inference, the model remains frozen and test-time training updates only room-specific candidate logits, progressively correcting cross-slot style conflicts as the global scene context evolves. Experiments on 3D-FRONT demonstrate state-of-the-art furniture retrieval and scene-level style coherence, producing more coherent fixed-layout furniture arrangements than object- and scene-level retrieval baselines.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.01954",
-        "external_id": "2608.01954"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.01954",
-        "external_id": "2608.01954"
-      }
-    ],
-    "actors": [
-      "Lingwei Dang",
-      "Shishuo Shang",
-      "Pan Liu",
-      "Jiajia Cheng",
-      "Ziyan Qiu",
-      "Zhenhao Zhang",
-      "Yufei Zhu",
-      "Shenghui Huang",
-      "Qingxin Xiao",
-      "Yun Hao",
-      "Juntong Li",
-      "Qingyao Wu"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440529Z",
-    "dedup_keys": [
-      "arxiv:2608.01954",
-      "title:counterfactual field furniture hypergraph indoor reasoning styleforge styling"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 21.587,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "66226f6a1b55253e",
-    "kind": "release",
-    "title": "Gemini Robotics 2 brings whole body intelligence to robots",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "deepmind",
-        "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "deepmind"
-    ],
-    "published_at": "2026-07-28T13:21:37Z",
-    "first_seen_at": "2026-08-04T03:56:41.051637Z",
-    "dedup_keys": [
-      "url:deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots",
-      "title:body brings gemini intelligence robotics robots whole"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 20.088,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -9.912
-    }
-  },
-  {
-    "id": "2ff702941dd4b171",
-    "kind": "paper",
-    "title": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
-    "summary_en": "To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation. However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery. To address this limitation, we introduce ScrambleToolBench, an interactive terminal benchmark designed to isolate behavioral reasoning. By removing semantic cues and enforcing a continuous task curriculum, the benchmark requires agents to uncover hidden tool behaviors entirely through trial-and-error interaction. The benchmark further introduces dynamic challenges, including mapping drift, stochastic action failures, and temporal execution windows, to evaluate whether agents can revise and adapt their hypotheses as the environment changes. Our evaluation of state-of-the-art language models reveals that successful initial discovery does not translate into robust adaptation. When faced with structural changes such as mapping drift, agents fail to use deductive strategies such as cycle tracing, and instead exhibit belief inertia or fall back to exhaustive search. Increasing test-time reasoning only amplifies this expensive brute-force search rather than enabling deductive recovery. While equipping agents with persistent memory reduces compounding errors, they remain unable to efficiently infer structural changes, highlighting a gap in current agent reasoning.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.02358",
-        "external_id": "2608.02358"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.02358",
-        "external_id": "2608.02358"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/declare-lab/ScrambleToolBench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Vernon Toh",
-      "Navonil Majumder",
-      "Zhengyuan Liu",
-      "Nancy F. Chen",
-      "Soujanya Poria"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440586Z",
-    "dedup_keys": [
-      "arxiv:2608.02358",
-      "title:agents even exhaustively map next own points scrambletoolbench search step the their when",
-      "github:declare-lab/scrambletoolbench"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 19.042,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
+      "age_decay": -8.452
     }
   },
   {
@@ -876,14 +447,1128 @@
       "Zhaoxiang Zhang"
     ],
     "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440643Z",
+    "first_seen_at": "2026-08-04T15:13:34.210607Z",
     "dedup_keys": [
       "arxiv:2608.02603",
       "title:apparent appearance benchmarking from inherent models reactivity world worldexam",
       "github:yuxueyang1204/worldexam"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 30,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 6,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 40.912,
+    "score_breakdown": {
+      "hf_upvotes": 27.472,
+      "github_stars": 3.892,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "c5146e17094b9456",
+    "kind": "paper",
+    "title": "UEmbed: Unified Sparse and Dense Multimodal Embeddings",
+    "summary_en": "Sparse retrieval underpins modern search systems, from web search to retrieval-augmented generation. Existing work has introduced Learned Sparse Retrieval (LSR) to push beyond exact lexical matching toward richer semantics. Yet LSR has so far remained tied to encoder-style bidirectional architectures, and its extension to multimodal settings still relies heavily on auxiliary cross-modal modules. To address these limitations, we introduce UEmbed (Unified Embedding), a decoder-only multimodal embedding model that produces both sparse lexical and dense representations in one causal forward pass. UEmbed appends N learnable special tokens to the input and partitions the vocabulary into N disjoint subsets. Each token's causal hidden state predicts sparse weights over its assigned subset, and the N subsets are concatenated into the full sparse vector. Trained on public data, we release UEmbed at 2B, 4B, and 9B scales. UEmbed-9B reaches 71.8 (dense) and 71.0 (sparse) on MMEB-v2, outperforming multimodal embedding models trained on publicly available data (e.g., RzenEmbed). On BEIR, UEmbed also remains competitive with strong dense and sparse baselines. Furthermore, we demonstrate the practical utility of UEmbed across three dimensions: effectiveness, efficiency, and agentic applications. Overall, UEmbed offers a new paradigm: it unifies dense and sparse embeddings in one model, while further extending sparse retrieval to unify text and multimodal inputs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "multimodal",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02583",
+        "external_id": "2608.02583"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02583",
+        "external_id": "2608.02583"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Alibaba-NLP/UEmbed",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Tingyu Song",
+      "Mingxin Li",
+      "Yanzhao Zhang",
+      "Dingkun Long",
+      "Pengjun Xie",
+      "Zhijie Nie",
+      "Yilun Zhao",
+      "Shu Wu"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210634Z",
+    "dedup_keys": [
+      "arxiv:2608.02583",
+      "title:and dense embeddings multimodal sparse uembed unified",
+      "github:alibaba-nlp/uembed"
+    ],
+    "signals": {
+      "hf_upvotes": 29,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 38.955,
+    "score_breakdown": {
+      "hf_upvotes": 27.21,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "45bb4bc57b06e053",
+    "kind": "paper",
+    "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code",
+    "summary_en": "Real-world software development requires coding agents to operate in shared workspaces where users may inspect and modify code during an ongoing task, yet existing repository-level benchmarks typically evaluate agents working alone or restrict user participation to messages. This leads us to ask: how do coding agents understand and respond to code changes in a shared workspace? We introduce SWE-Touch, a framework that stress-tests this setting through validated Counter-Edits: plausible edits to task-relevant code that conflict with task completion. SWE-Touch mines task-critical regions from multiple repair trajectories, uses a separate User Patch Generator to construct the edits, and injects them with contextual user messages when agents reach the relevant code. We evaluate nine coding models on SWE-bench Verified, with additional experiments on longer-horizon tasks from SWE-Bench Pro and DeepSWE. Counter-Edit lowers average resolve rate by 7.7 percentage points on SWE-bench Verified, with degradation also persisting on both longer-horizon benchmarks. Trajectory analysis links these failures to limited awareness of the evolving workspace: agents may retain conflicting code or replace it without sufficiently re-inspecting the repository and validating the revised code with targeted tests. These findings show that strong autonomous performance does not yet ensure the state awareness and adaptive behavior needed for shared-workspace collaboration, and point to detecting workspace changes, reconciling conflicting edits with the task, and verifying the affected behavior as key capabilities for future optimization.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02499",
+        "external_id": "2608.02499"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02499",
+        "external_id": "2608.02499"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Trae1ounG/SWE-Touch",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuqiao Tan",
+      "Jinxiang Meng",
+      "Fangyu Lei",
+      "Minzheng Wang",
+      "Shizhu He",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210742Z",
+    "dedup_keys": [
+      "arxiv:2608.02499",
+      "title:agents benchmarking code coding swe the touch touch users when",
+      "github:trae1oung/swe-touch"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.851,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "06f1c23fb34fea3b",
+    "kind": "paper",
+    "title": "DAPD: Dual-Anchored Policy Distillation",
+    "summary_en": "On-policy (self) distillation (OPSD) is increasingly adopted for language-model post-training. It strengthens the teacher with privileged information but can induce a privilege illusion: the student learns privilege-dependent behavior it cannot reproduce from its inference-time context, yet behaves as if the training-time privileged information remained available, ultimately degrading performance. In this paper, we identify information asymmetry between the privileged teacher and the student at inference as the root cause of this failure in OPSD. To resolve this asymmetry, we propose Dual-Anchored Policy Distillation (DAPD), a unified framework with two levels of anchoring. Dual-Path Anchoring (DPA) introduces a self-conditioned bridge and aligns reference and rollout behavior along two matched-information paths, preventing privilege-dependent behavior from being transferred to the inference-time student. Dual-Source Anchoring (DSA) applies these paths in both reference-to-rollout and rollout-to-reference directions, reducing reliance on privileged reference guidance while preserving correctness supervision. Extensive experiments show that DAPD significantly alleviates privilege illusion, outperforming OPSD on Qwen3-4B by +2.00 points on average across tasks. Notably, its gains persist across scales, reaching +2.69 at 4B and +2.78 at 32B.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01735",
+        "external_id": "2608.01735"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01735",
+        "external_id": "2608.01735"
+      }
+    ],
+    "actors": [
+      "Jianyu Wu",
+      "Yizhou Wang",
+      "Encheng Su",
+      "Chen Tang",
+      "Shixiang Tang"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210512Z",
+    "dedup_keys": [
+      "arxiv:2608.01735",
+      "title:anchored dapd distillation dual policy"
+    ],
+    "signals": {
+      "hf_upvotes": 45,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 37.177,
+    "score_breakdown": {
+      "hf_upvotes": 30.629,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "02eeda619d156136",
+    "kind": "paper",
+    "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+    "summary_en": "Optimization-based latent reasoning improves large language model outputs by optimizing instance-specific continuous states at test time while keeping model parameters frozen. Existing methods, however, typically connect these states to the reasoning trajectory through decoded tokens, making sequence-level credit assignment indirect and obscuring how latent updates shape subsequent reasoning. We introduce GradCuit (gradient through circuit), which inserts optimizable latent states at a selected Transformer layer between the hidden representations of the prompt and the generated continuation. Causal self-attention provides every continuation-token log-probability with a differentiable path to every preceding latent state through the remaining Transformer blocks, enabling reward-weighted gradients from the entire continuation to be assigned directly to the latents. Across five instruction-tuned backbones, three reasoning benchmarks, and two answer formats, GradCuit achieves an average accuracy of 64.5%, outperforming chain-of-thought prompting by 6.6 percentage points and the strongest competing method by 2.4 points. GradCuit also demonstrates greater robustness: across seven learning-rate settings, it consistently outperforms LatentSeek while reducing the standard deviation of accuracy from 1.53 to 0.82, and even its random-walk variant remains competitive with LatentSeek. For interpretability, token-level gradient attribution reveals that latent influence concentrates on reasoning-connector tokens, while layer analysis identifies early-to-middle Transformer layers as the most effective optimization space. By directly optimizing internal reasoning from outcome feedback, GradCuit opens a new axis of robust and interpretable test-time scaling, where LLMs adapt how they reason rather than merely regenerate, sample, or rerank outputs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02585",
+        "external_id": "2608.02585"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02585",
+        "external_id": "2608.02585"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Yuzhaoxin946/GradCuit",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhaoxin Yu",
+      "Qi Shen",
+      "Hengli Li",
+      "Zhaowei Zhang",
+      "Song-Chun Zhu",
+      "Chi Zhang",
+      "Zilong Zheng"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210823Z",
+    "dedup_keys": [
+      "arxiv:2608.02585",
+      "title:and assigned credit enables flow gradcuit gradient interpretable latent reasoning robust test time",
+      "github:yuzhaoxin946/gradcuit"
+    ],
+    "signals": {
+      "hf_upvotes": 19,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 36.287,
+    "score_breakdown": {
+      "hf_upvotes": 23.966,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "d4ee45d9c51f10d4",
+    "kind": "paper",
+    "title": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
+    "summary_en": "Reinforcement learning (RL) post-training of Vision-Language-Action (VLA) models has shown strong promise for robotic manipulation. Among RL methods, critic-based approaches rely on a value estimator that predominantly operates on single-frame observations or single-frame VLM backbone latents, which is a fundamental mismatch with the partially observable nature of robot control. A naive approach to incorporate observation history into the critic incurs exponential complexity with high-dimensional visual space, and still fails because pure scalar-return regression provides insufficient supervision for learning cross-temporal dynamics. We identify the root cause as a state approximation problem: without an explicit world modeling objective, the critic's representation cannot capture the temporal structure needed for accurate value estimation. To address this, we propose the World Critic Model (WCM), built on a lightweight LeJEPA architecture; WCM jointly predicts future latent state and estimates values, such that the critic's representation is explicitly trained to capture temporal dynamics rather than merely regress scalar returns. WCM integrates seamlessly into both on-policy and off-policy training pipelines and is compatible with state-of-the-art VLA backbones including Pi0, Pi0.5, and OpenVLA-OFT. Extensive experiments on 149 tasks across four benchmarks demonstrate that WCM consistently achieves state-of-the-art performance in both in-distribution and out-of-distribution settings, with particularly strong generalization gains. We further validate WCM on seven real-world manipulation tasks using OpenVLA-OFT and Pi0.5 with off-policy RL, confirming stable deployment across diverse settings.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.29613",
+        "external_id": "2607.29613"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.29613",
+        "external_id": "2607.29613"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/sylvestf/WCM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Senyu Fei",
+      "Xiaopeng Yu",
+      "Siyin Wang",
+      "Xianzhong Zhao",
+      "Jingjing Gong",
+      "Xipeng Qiu"
+    ],
+    "published_at": "2026-07-31T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210767Z",
+    "dedup_keys": [
+      "arxiv:2607.29613",
+      "title:action critic for language learning model reinforcement vision wcm world",
+      "github:sylvestf/wcm"
+    ],
+    "signals": {
+      "hf_upvotes": 21,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 17,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 6,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.557,
+    "score_breakdown": {
+      "hf_upvotes": 24.728,
+      "github_stars": 5.781,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.952
+    }
+  },
+  {
+    "id": "9151c735e361e2c4",
+    "kind": "paper",
+    "title": "3DZip: Spatial-Aware Feature Diversity-Guided Token Compression for 3D Question Answering",
+    "summary_en": "Recent 3D vision-language models (3D VLMs) construct geometry aware tokens by projecting 2D visual features into world coordinates, enabling spatial reasoning for tasks such as 3D question answering. However, this design generates thousands of tokens per scene, resulting in substantial computational and memory overhead. While token compression has been extensively studied in 2D VLMs, existing approaches rely on semantic relevance or attention-based selection that overlook the structured spatial nature of 3D tokens. Moreover, redundancy in 3D representations cannot be resolved by spatial proximity alone, as object-level token imbalance persists even after spatial aggregation. To address this, we propose 3DZip, a three-stage token compression framework that first applies coarse voxelization to remove point-level redundancy, then selects anchor tokens based on feature-space diversity via a Determinantal Point Process, and finally merges remaining tokens under spatial constraints to preserve geometric coherence. Experiments on three 3D question answering benchmarks demonstrate that 3DZip consistently outperforms existing compression methods, retaining 94.7% of the original performance with only 128 tokens, achieving a 1.92times faster inference speed.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01185",
+        "external_id": "2608.01185"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01185",
+        "external_id": "2608.01185"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/cvsp-lab/3DZip",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Changwoo Baek",
+      "Kyeongbo Kong"
+    ],
+    "published_at": "2026-08-02T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210966Z",
+    "dedup_keys": [
+      "arxiv:2608.01185",
+      "title:3dzip answering aware compression diversity feature for guided question spatial token",
+      "github:cvsp-lab/3dzip"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 13,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.99,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "github_stars": 5.278,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.952
+    }
+  },
+  {
+    "id": "a713dc47736d036c",
+    "kind": "release",
+    "title": "Generate Trajectories, Reasoning Traces, and Auto-Labels with NVIDIA Alpamayo 2 Super",
+    "summary_en": "Autonomous vehicle (AV) development often relies on separate models for trajectory generation, high-level intent prediction, scene understanding, and data...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/generate-trajectories-reasoning-traces-and-auto-labels-with-nvidia-alpamayo-2-super/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-08-04T15:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:36.769494Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/generate-trajectories-reasoning-traces-and-auto-labels-with-nvidia-alpamayo-2-super",
+      "title:alpamayo and auto generate labels nvidia reasoning super traces trajectories with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.986,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.014
+    }
+  },
+  {
+    "id": "68f6710fcc628577",
+    "kind": "paper",
+    "title": "SKT: Skill-Use Training at Scale via Verified Synthetic Data Generation",
+    "summary_en": "Agent skills have become an important mechanism for equipping language-model agents with reusable procedural knowledge. However, providing skills alone does not guarantee that current models can effectively identify, apply, and coordinate them. To improve skill-use capabilities, we introduce SKT, a verified data synthesis pipeline that constructs skill-grounded tasks and executable trajectories from large collections of agent skills. SKT selects suitable single-skill and multi-skill configurations, synthesizes tasks through rule-based and agent-based verification with feedback-guided repair, and retains only successful trajectories that substantially use every required skill. Using 2,000 public skills, SKT produces 4,000 task packages and 27,164 verified trajectories. Based on the same pipeline and a disjoint test pool, we further construct SkillEval, a held-out executable benchmark for evaluating skill use. Experiments across diverse models, benchmarks, and agent harnesses show that supervised fine-tuning on SKT-generated trajectories consistently improves skill-use performance. Verification ablations, cross-harness evaluation, and scaling experiments further demonstrate that these gains depend on high-quality supervision, extend beyond a single agent interface, and increase with broader skill coverage. Together, these results establish verified data synthesis as an effective and scalable approach for skill-use training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02287",
+        "external_id": "2608.02287"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02287",
+        "external_id": "2608.02287"
+      }
+    ],
+    "actors": [
+      "Zelin Tan",
+      "Yiqun Zhang",
+      "Hao Li",
+      "Zhiyao Cui",
+      "Hejia Geng",
+      "Shao Zhang",
+      "Hangfan Zhang",
+      "Yang Chen",
+      "Xiaosong Wang",
+      "Lilong Wang",
+      "Zhenfei Yin",
+      "Shuyue Hu",
+      "Chen Zhang",
+      "Lei Bai"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210713Z",
+    "dedup_keys": [
+      "arxiv:2608.02287",
+      "title:data generation scale skill skt synthetic training use verified via"
+    ],
+    "signals": {
+      "hf_upvotes": 25,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.613,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "a6486dc9619f79d7",
+    "kind": "paper",
+    "title": "DeepVoyager-VL: Incentivizing Vision-in-the-Loop Search for Long-Horizon Multimodal Agents",
+    "summary_en": "Multimodal large language models (MLLMs) have advanced visual understanding and reasoning, yet their static parametric knowledge limits their ability to address knowledge-intensive and dynamically evolving open-world problems. To move beyond this limitation, multimodal deep search has emerged as a key direction for open-world information access, evolving from single-turn factual retrieval toward long-horizon, multi-turn search guided by visual evidence. However, existing methods typically confine vision to the input or answer stage, overlooking its role in intermediate reasoning, and lack designs tailored to long-horizon interaction. Consequently, visual evidence rarely drives continued retrieval, constraining both interaction depth and reasoning span. To address these limitations, we propose DeepVoyager-VL, a long-horizon multimodal deep-search framework for vision-in-the-loop search. Specifically, we construct a multimodal event graph to drive data synthesis, yielding problems with intermediate visual dependencies and long reasoning chains. We then design an agent framework for active visual acquisition and on-demand image loading. Finally, we fine-tune models on the synthesized data without reinforcement learning. Extensive experiments across ten multimodal search benchmarks demonstrate the effectiveness of our method.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01827",
+        "external_id": "2608.01827"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01827",
+        "external_id": "2608.01827"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Halcyon-Zhang/DeepVoyager-VL",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Huanyao Zhang",
+      "Jiepeng Zhou",
+      "Runhao Zhao",
+      "Yanzhe Shan",
+      "Jiaoyang Chen",
+      "Bowen Zhou",
+      "Bo Li",
+      "Fang Wang",
+      "Jialong Wu",
+      "Zhengwei Tao",
+      "Lang Mei",
+      "Xiaohan Yu",
+      "Liyan Liu",
+      "Chong Chen",
+      "Wentao Zhang"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210935Z",
+    "dedup_keys": [
+      "arxiv:2608.01827",
+      "title:agents deepvoyager for horizon incentivizing long loop multimodal search the vision",
+      "github:halcyon-zhang/deepvoyager-vl"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.598,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "e857739ab2ae2061",
+    "kind": "release",
+    "title": "NVIDIA Vera Storage Benchmarks: Faster Encryption, Compression, Integrity Checking, and Recovery for AI-Native Storage",
+    "summary_en": "Storage is an active part of every agentic AI workflow. As agents retrieve enterprise knowledge, access persistent memory, reuse key-value (KV) cache data,...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/nvidia-vera-storage-benchmarks-faster-encryption-compression-integrity-checking-and-recovery-for-ai-native-storage/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-08-03T16:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:36.769601Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/nvidia-vera-storage-benchmarks-faster-encryption-compression-integrity-checking-and-recovery-for-ai-native-storage",
+      "title:and benchmarks checking compression encryption faster for integrity native nvidia recovery storage storage vera"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.548,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.452
+    }
+  },
+  {
+    "id": "30005316b0ba9228",
+    "kind": "release",
+    "title": "Orchard: An open framework for scalable agentic AI",
+    "summary_en": "Orchard is an open-source framework for the research community to train and evaluate AI agents across task types. It reduces complexity while supporting strong performance from smaller models by enabling researchers to reuse the same infrastructure. The post Orchard: An open framework for scalable agentic AI appeared first on Microsoft Research .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "microsoft_research"
+    ],
+    "published_at": "2026-08-03T16:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:37.410195Z",
+    "dedup_keys": [
+      "url:microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai",
+      "title:agentic for framework open orchard scalable"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.548,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.452
+    }
+  },
+  {
+    "id": "aada1d4770fd0599",
+    "kind": "release",
+    "title": "How we built a realtime system for responsive voice AI in six months",
+    "summary_en": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-03T07:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.627725Z",
+    "dedup_keys": [
+      "url:openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "title:built for how months realtime responsive six system voice"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.986,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.014
+    }
+  },
+  {
+    "id": "07a46887f52e08b7",
+    "kind": "paper",
+    "title": "CADENA: Stepwise CAD Reverse Engineering",
+    "summary_en": "Computer-Aided Design (CAD) underpins modern engineering, yet converting existing shapes into editable models still demands substantial expert effort. Most AI systems emit the entire CAD program in a single pass, never inspecting the intermediate geometry. In contrast, human engineers build a part feature by feature, checking after each operation what remains to be modeled. We introduce CADENA (Spanish for \"chain\"), a model that reconstructs a 3D mesh as a parametric CAD program, growing its sequence of operations one at a time and comparing the target with the currently predicted geometry at every step. We also address the lack of benchmarks for evaluating reverse-engineering methods on mechanical parts, introducing CADENA-Bench, a benchmark that measures performance across categories of mechanical parts. CADENA outperforms prior methods on CADENA-Bench and on the DeepCAD, Fusion 360, and MCB datasets. Code is available at https://github.com/zhemdi/cadena, model weights at https://huggingface.co/kulibinai/cadena, and CADENA-Bench at https://huggingface.co/datasets/kulibinai/cadena-bench.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.00799",
+        "external_id": "2608.00799"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.00799",
+        "external_id": "2608.00799"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zhemdi/cadena",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Soslan Kabisov",
+      "Gennadiy Savrasov",
+      "Maksim Elistratov",
+      "Antonio Rodriguez",
+      "Daniil Ignatiev",
+      "Nikita Gavrilov",
+      "Rustam Uzdenov",
+      "Alexey I. Boyko",
+      "Igor Pasechnik",
+      "Anton Konushin",
+      "Andrey Kuznetsov",
+      "Dmitrii Zhemchuzhnikov"
+    ],
+    "published_at": "2026-08-01T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210661Z",
+    "dedup_keys": [
+      "arxiv:2608.00799",
+      "title:cad cadena engineering reverse stepwise",
+      "github:zhemdi/cadena"
+    ],
+    "signals": {
+      "hf_upvotes": 27,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.592,
+    "score_breakdown": {
+      "hf_upvotes": 26.658,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -5.452
+    }
+  },
+  {
+    "id": "82f4791bbe5c4f46",
+    "kind": "paper",
+    "title": "Motion Beyond Morphology: Bootstrapping Cross-Category Motion Transfer from Abstract Motion Representations",
+    "summary_en": "Video motion transfer aims to animate a target object using dynamics from a reference video. Existing formulations largely rely on fixed structural correspondence, which becomes ill-defined when reference and target objects differ substantially in morphology, articulation, or deformation mechanisms. We introduce Motion Beyond Morphology, a perspective that seeks to transfer motion beyond fixed structural correspondence, by preserving dynamics that remain meaningful across different target morphologies. To realize this, we propose a two-stage framework. Stage~I learns complementary multi-granularity abstract motion views and uses them to bootstrap cross-category video pairs that preserve transferable dynamics across diverse morphologies. Stage~II internalizes this supervision into direct reference-video-conditioned generation, removing the need for explicit motion extraction at inference. We further introduce OpenVMT-Dataset and OpenVMT-Bench for training and evaluating image- and text-conditioned motion transfer across Same, Near, and Far category gaps, and plan to release both upon acceptance. Extensive experiments demonstrate state-of-the-art motion fidelity and target preservation. Project page: https://miniz233.github.io/MotionBeyondMorphology/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01628",
+        "external_id": "2608.01628"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01628",
+        "external_id": "2608.01628"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/miniz233/MBM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhixue Fang",
+      "Zhimin Zhang",
+      "Bi'an Du",
+      "Zijie Meng",
+      "Yan Zhou",
+      "Wei Hu",
+      "Guoxin Zhang",
+      "Pengfei Wan",
+      "Kun Gai"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210794Z",
+    "dedup_keys": [
+      "arxiv:2608.01628",
+      "title:abstract beyond bootstrapping category cross from morphology motion motion motion representations transfer",
+      "github:miniz233/mbm"
+    ],
+    "signals": {
+      "hf_upvotes": 20,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 29.904,
+    "score_breakdown": {
+      "hf_upvotes": 24.356,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "d84fbb0c7284b93f",
+    "kind": "paper",
+    "title": "Roomer: Reflective Object-Grounded Model Editing and Repair for 3D Indoor Layout Synthesis",
+    "summary_en": "Existing indoor layout generators produce globally plausible layouts yet may retain local violations such as collisions, out-of-bounds placements, obstructed openings, and blocked circulation. Most prior work focuses on full-scene synthesis or scene-level optimization, with limited support for identifying responsible objects and locally repairing affected regions. We present Roomer, a reflective repair framework that casts these violations as sparse, object-grounded repair problems. Roomer encodes layouts as ``RoState'' and uses ``RoReview'' to bind measured violations to implicated objects. A geometry-conditioned vision-language model planner proposes a structured local edit, while a deterministic solver validates it and generates a finite set of candidate edits when needed. Each candidate is committed only if full-scene verification confirms that it resolves the target violation without new hard violations or broken protected constraints. We train the planner on Roomer-CC, a controlled-corruption dataset that pairs faulty layouts with object-grounded violation evidence and known-feasible inverse StatePatches. Since existing benchmarks rarely assess whether physically valid layouts are usable, we introduce Roomer-Eval to assess distributional quality, physical validity, and practical usability. Experiments show that Roomer repairs residual violations while preserving valid regions, improves physical validity and usability, and transfers across external generators.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01973",
+        "external_id": "2608.01973"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01973",
+        "external_id": "2608.01973"
+      }
+    ],
+    "actors": [
+      "Lingwei Dang",
+      "Ziyan Qiu",
+      "Jiajia Cheng",
+      "Shishuo Shang",
+      "Zhenhao Zhang",
+      "Yufei Zhu",
+      "Qingxin Xiao",
+      "Pan Liu",
+      "Shenghui Huang",
+      "Yun Hao",
+      "Juntong Li",
+      "Qingyao Wu"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210879Z",
+    "dedup_keys": [
+      "arxiv:2608.01973",
+      "title:and editing for grounded indoor layout model object reflective repair roomer synthesis"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.214,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "f808e41e7473b94a",
+    "kind": "release",
+    "title": "Apple is getting this wrong",
+    "summary_en": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/apple-is-getting-this-wrong",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-03T22:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.627656Z",
+    "dedup_keys": [
+      "url:openai.com/index/apple-is-getting-this-wrong",
+      "title:apple getting this wrong"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.923,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.077
+    }
+  },
+  {
+    "id": "3c25b4fdf43dd0b0",
+    "kind": "release",
+    "title": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
+    "summary_en": "Running a dedicated Kubernetes cluster per team often results in more isolation than an organization requires. While one cluster can be successfully shared...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-08-03T16:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:36.769559Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure",
+      "title:clusters gpu how infrastructure isolated kubernetes run shared tenant"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.548,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.452
+    }
+  },
+  {
+    "id": "2ff702941dd4b171",
+    "kind": "paper",
+    "title": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
+    "summary_en": "To operate robustly in open-world environments, autonomous agents should be able to infer the behavior of unfamiliar systems through interaction alone, even in the absence of documentation. However, existing tool-use benchmarks expose semantic tool schemas in static environments, allowing agents to rely on prior knowledge rather than autonomous discovery. To address this limitation, we introduce ScrambleToolBench, an interactive terminal benchmark designed to isolate behavioral reasoning. By removing semantic cues and enforcing a continuous task curriculum, the benchmark requires agents to uncover hidden tool behaviors entirely through trial-and-error interaction. The benchmark further introduces dynamic challenges, including mapping drift, stochastic action failures, and temporal execution windows, to evaluate whether agents can revise and adapt their hypotheses as the environment changes. Our evaluation of state-of-the-art language models reveals that successful initial discovery does not translate into robust adaptation. When faced with structural changes such as mapping drift, agents fail to use deductive strategies such as cycle tracing, and instead exhibit belief inertia or fall back to exhaustive search. Increasing test-time reasoning only amplifies this expensive brute-force search rather than enabling deductive recovery. While equipping agents with persistent memory reduces compounding errors, they remain unable to efficiently infer structural changes, highlighting a gap in current agent reasoning.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02358",
+        "external_id": "2608.02358"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02358",
+        "external_id": "2608.02358"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/declare-lab/ScrambleToolBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Vernon Toh",
+      "Navonil Majumder",
+      "Zhengyuan Liu",
+      "Nancy F. Chen",
+      "Soujanya Poria"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.211300Z",
+    "dedup_keys": [
+      "arxiv:2608.02358",
+      "title:agents even exhaustively map next own points scrambletoolbench search step the their when",
+      "github:declare-lab/scrambletoolbench"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -896,13 +1581,276 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 15.798,
+    "score": 27.969,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 18.421,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.747
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "7c1c6609b49e6e98",
+    "kind": "release",
+    "title": "Circles powers telco personalization with OpenAI technology",
+    "summary_en": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/circles",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.627769Z",
+    "dedup_keys": [
+      "url:openai.com/index/circles",
+      "title:circles openai personalization powers technology telco with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.548,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "3955667214263450",
+    "kind": "model",
+    "title": "ai9stars/G9v3-39A5B",
+    "summary_en": "text-generation, transformers, g9v3, moe, long-context, tool-calling, preview",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/ai9stars/G9v3-39A5B",
+        "external_id": "ai9stars/G9v3-39A5B"
+      }
+    ],
+    "actors": [
+      "ai9stars"
+    ],
+    "published_at": "2026-07-21T17:04:40Z",
+    "first_seen_at": "2026-08-04T15:13:34.200599Z",
+    "dedup_keys": [
+      "hf:ai9stars/g9v3-39a5b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 38,
+      "hf_downloads": 37,
+      "hf_trending_score": 38.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 27.363,
+    "score_breakdown": {
+      "hf_trending": 21.981,
+      "hf_downloads": 7.275,
+      "hf_likes": 10.991,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -20.884
+    }
+  },
+  {
+    "id": "7332525d8b858b65",
+    "kind": "paper",
+    "title": "StyleForge: Indoor Furniture Styling by Counterfactual Reasoning in a Hypergraph Field",
+    "summary_en": "Fixed-layout indoor furniture styling requires selecting assets that form a coherent room without changing the prescribed furniture categories, positions, orientations, or scales. Existing approaches typically retrieve each asset independently or rely on static local relations, making them prone to shape, material, and color conflicts after scene composition. We introduce StyleForge, a scene-level structured selection framework built on a dynamic hypergraph style field. A frozen multimodal large language model extracts structured style priors from an open-ended style request and the fixed layout, while StyleForge maintains a learnable candidate distribution for each furniture slot. Conditioned on the target style, the dynamic hypergraph style field adaptively activates and weights layout-induced hyperedges to capture higher-order dependencies among furniture. Counterfactual style preference learning then treats each candidate as a local substitution in the current style field and evaluates its contextual compatibility using Mahalanobis energies. Training alternates between optimizing the style field and the candidate logits. At inference, the model remains frozen and test-time training updates only room-specific candidate logits, progressively correcting cross-slot style conflicts as the global scene context evolves. Experiments on 3D-FRONT demonstrate state-of-the-art furniture retrieval and scene-level style coherence, producing more coherent fixed-layout furniture arrangements than object- and scene-level retrieval baselines.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.01954",
+        "external_id": "2608.01954"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.01954",
+        "external_id": "2608.01954"
+      }
+    ],
+    "actors": [
+      "Lingwei Dang",
+      "Shishuo Shang",
+      "Pan Liu",
+      "Jiajia Cheng",
+      "Ziyan Qiu",
+      "Zhenhao Zhang",
+      "Yufei Zhu",
+      "Shenghui Huang",
+      "Qingxin Xiao",
+      "Yun Hao",
+      "Juntong Li",
+      "Qingyao Wu"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.211037Z",
+    "dedup_keys": [
+      "arxiv:2608.01954",
+      "title:counterfactual field furniture hypergraph indoor reasoning styleforge styling"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.068,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.452
+    }
+  },
+  {
+    "id": "90a7b084496cd659",
+    "kind": "paper",
+    "title": "DiffusionGemma Technical Report",
+    "summary_en": "We introduce DiffusionGemma, an experimental open-weight language model that uses discrete diffusion to generate text at exceptionally high speed. Rather than decoding one token at a time, DiffusionGemma iteratively refines blocks of 256 tokens in parallel, avoiding the sequential decoding bottleneck of conventional autoregressive (AR) large language models. Instead of training from scratch, we obtain DiffusionGemma by fine-tuning the mixture-of-experts Gemma 4 model with 3.8B activated and 25.2B total parameters. Our compute-efficient two-stage training pipeline uses fewer than 10% of the starting AR model's total training token budget. The first stage uses supervised fine-tuning to teach bidirectional denoising, while the second stage combines reinforcement learning with sampler distillation to jointly improve generation quality and inference efficiency. DiffusionGemma establishes a new Pareto frontier for the trade-off between generation speed and model capability. Averaged across our full evaluation suite, it generates around 20 tokens per forward pass and achieves roughly 1,500 output tokens per second on a single NVIDIA H100 GPU, which is substantially faster than AR models even with state-of-the-art speculative decoding. DiffusionGemma also retains the starting model's support for thinking mode, multimodal inputs, and long contexts. Despite diffusion fine-tuning, it remains capable of AR generation with only minor performance degradation, suggesting a path toward hybrid diffusion-AR decoding.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.00146",
+        "external_id": "2608.00146"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.00146",
+        "external_id": "2608.00146"
+      }
+    ],
+    "actors": [
+      "DiffusionGemma Team",
+      "Adrien Ali Taïga",
+      "James Assiene",
+      "Daniele Calandriello",
+      "Rahma Chaabouni",
+      "João Gante",
+      "Tamara von Glehn",
+      "Nate Keating",
+      "Chris Knutsen",
+      "Martin Kukla",
+      "Tianlin Liu",
+      "Ivan Lobov",
+      "Ofir Nabati",
+      "João Gabriel Oliveira",
+      "Nicolas Perez-Nieves",
+      "Nastasia Prutianova",
+      "Bobak Shahriari",
+      "Jean Tarbouriech",
+      "Pavel Tyletski",
+      "Çağlar Ünlü",
+      "Cindy Wu",
+      "Glenn Cameron",
+      "Jerome Connor",
+      "Sertan Girgin",
+      "Maarten Grootendorst",
+      "Alon Levkovitch",
+      "Eliya Nachmani",
+      "Omar Sanseviero",
+      "Piotr Stanczyk",
+      "Quentin Berthet",
+      "Andrew Campbell",
+      "Clément Crepy",
+      "Valentin De Bortoli",
+      "Arnaud Doucet",
+      "Romuald Elie",
+      "Alexandre Galashov",
+      "Klaus Greff",
+      "Alexis Jacq",
+      "David Ruhe",
+      "Yu-Han Wu",
+      "Sebastian Flennerhag",
+      "Brendan O'Donoghue",
+      "George Scrivener",
+      "Shantanu Thakoor"
+    ],
+    "published_at": "2026-07-31T00:00:00Z",
+    "first_seen_at": "2026-08-04T15:13:34.210848Z",
+    "dedup_keys": [
+      "arxiv:2608.00146",
+      "title:diffusiongemma report technical"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 25.604,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.952
     }
   },
   {
@@ -949,760 +1897,13 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 13.727,
+    "score": 13.022,
     "score_breakdown": {
       "hf_trending": 20.794,
       "hf_downloads": 14.387,
       "hf_likes": 12.788,
       "has_weights": 4.0,
-      "age_decay": -38.242
-    }
-  },
-  {
-    "id": "c2b1e5a6e379acdb",
-    "kind": "release",
-    "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-07-30T15:09:09Z",
-    "first_seen_at": "2026-08-04T03:56:41.832914Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/dharma-ai/gpu-management",
-      "title:aircraft are gpu gpus grounded idle management new the why"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 13.2,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -6.8
-    }
-  },
-  {
-    "id": "68f6710fcc628577",
-    "kind": "paper",
-    "title": "SKT: Skill-Use Training at Scale via Verified Synthetic Data Generation",
-    "summary_en": "Agent skills have become an important mechanism for equipping language-model agents with reusable procedural knowledge. However, providing skills alone does not guarantee that current models can effectively identify, apply, and coordinate them. To improve skill-use capabilities, we introduce SKT, a verified data synthesis pipeline that constructs skill-grounded tasks and executable trajectories from large collections of agent skills. SKT selects suitable single-skill and multi-skill configurations, synthesizes tasks through rule-based and agent-based verification with feedback-guided repair, and retains only successful trajectories that substantially use every required skill. Using 2,000 public skills, SKT produces 4,000 task packages and 27,164 verified trajectories. Based on the same pipeline and a disjoint test pool, we further construct SkillEval, a held-out executable benchmark for evaluating skill use. Experiments across diverse models, benchmarks, and agent harnesses show that supervised fine-tuning on SKT-generated trajectories consistently improves skill-use performance. Verification ablations, cross-harness evaluation, and scaling experiments further demonstrate that these gains depend on high-quality supervision, extend beyond a single agent interface, and increase with broader skill coverage. Together, these results establish verified data synthesis as an effective and scalable approach for skill-use training.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "rag",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.02287",
-        "external_id": "2608.02287"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.02287",
-        "external_id": "2608.02287"
-      }
-    ],
-    "actors": [
-      "Zelin Tan",
-      "Yiqun Zhang",
-      "Hao Li",
-      "Zhiyao Cui",
-      "Hejia Geng",
-      "Shao Zhang",
-      "Hangfan Zhang",
-      "Yang Chen",
-      "Xiaosong Wang",
-      "Lilong Wang",
-      "Zhenfei Yin",
-      "Shuyue Hu",
-      "Chen Zhang",
-      "Lei Bai"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440668Z",
-    "dedup_keys": [
-      "arxiv:2608.02287",
-      "title:data generation scale skill skt synthetic training use verified via"
-    ],
-    "signals": {
-      "hf_upvotes": 1,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 12.798,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "9eae8fe5fc159a43",
-    "kind": "paper",
-    "title": "Poplar: A Scalable Pipeline for Human-Centric Image Dataset Synthesis",
-    "summary_en": "Recent image generators can synthesize convincing human-centric images, yet producing a useful collection remains different from producing a single successful image. A human-centric dataset must cover varied people and contexts, avoid implausible attribute combinations, preserve an everyday photographic character, and expose quality-control decisions at scale. We present Poplar, a reproducible Specify--Render--Inspect pipeline for human-centric image dataset synthesis. Specify samples structured attributes under commonsense constraints and verbalizes them as photography-oriented prompts. Render uses a realism-adapted image generator across composition-aware aspect ratios and retries obvious technical failures. Inspect applies a single structured vision--language review to each candidate, preserving the original prompt while rejecting intrinsic image defects or material prompt mismatches. Using Poplar, we construct Poplar-9K: 9,401 curated human-centric image--text pairs retained from 11,765 reviewed candidates (79.9\\% acceptance). We release the dataset together with the pipeline, configurations, immutable generation prompts, and auditable inspection records as a compact resource for building customizable human-centric collections.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.00440",
-        "external_id": "2608.00440"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.00440",
-        "external_id": "2608.00440"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/choucisan/poplar",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Zhishan Zou"
-    ],
-    "published_at": "2026-08-01T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440611Z",
-    "dedup_keys": [
-      "arxiv:2608.00440",
-      "title:centric dataset for human image pipeline poplar scalable synthesis",
-      "github:choucisan/poplar"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 12.042,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -4.747
-    }
-  },
-  {
-    "id": "4850c111f1923cf0",
-    "kind": "release",
-    "title": "From CUDA to MLX: How K-Search Brings Decades of Kernel Expertise to Apple Silicon",
-    "summary_en": "Figure 1: CUDA-to-MLX optimization translation map. CUDA optimization knowledge can be translated into architecture-native MLX strategies rather than copied instruction-for-instruction. We face a new epoch in computing. Hardware is changing rapidly — not just faster GPUs, but a growing range of chips from different vendors, each with its own architecture and often tailored to specific AI workloads. Software is changing just as fast, and AI coding tools now generate in minutes what took months of effort a few years ago. With so much of computing now centered on AI, GPU kernels are a crucial com",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "bair",
-        "url": "http://bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "bair"
-    ],
-    "published_at": "2026-07-29T09:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:43.057247Z",
-    "dedup_keys": [
-      "url:bair.berkeley.edu/blog/2026/07/29/cuda-to-mlx-k-search",
-      "title:apple brings cuda decades expertise from how kernel mlx search silicon"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 11.316,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -8.684
-    }
-  },
-  {
-    "id": "d93a7d1655886bde",
-    "kind": "release",
-    "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-07-28T16:27:42Z",
-    "first_seen_at": "2026-08-04T03:56:41.832976Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/allenai/olmoearth-infrastructure",
-      "title:geospatial inference olmoearth planetary platform scale the"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 10.282,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -9.718
-    }
-  },
-  {
-    "id": "715751c693a30163",
-    "kind": "paper",
-    "title": "Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs",
-    "summary_en": "Recent Vision-Language-Action (VLA) models for autonomous driving (AD) increasingly utilize chain-of-thought (CoT) supervision to enhance the reasoning capabilities of their Vision-Language Model (VLM) components, yet existing annotation pipelines commonly expose the teacher model to the logged ground-truth (GT) future trajectory. We empirically show that this induces trajectory anchoring bias: teacher models rationalize the revealed outcome rather than infer a decision from scene evidence, producing less causally faithful CoTs and substantially more severe hallucinations, especially in causally challenging scenes. Removing the GT trajectory eliminates this shortcut, but open-ended trajectory generation entangles high-level decision-making with precise geometric synthesis and low-level dynamics. To make trajectory-level driving decisions verifiable without requiring open-ended trajectory synthesis, we introduce Autonomous-Driving Multiple-Choice Question (AD-MCQ), which casts planning as selection among explicit trajectory candidates. Taking this a step further, we propose Deferred Exposure of Future Trajectories for RLVR (DEFT-RLVR) to transform future trajectories from pre-decision anchors into post-decision verification targets. Experimental results show that DEFT-RLVR improves AD reasoning while preserving or even enhancing general visual capabilities. With VLM-only inference and controllable difficulty through candidate construction, AD-MCQ provides a flexible, scalable, and extensible foundation for future research on verifiable AD reasoning.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "multimodal",
-      "cv",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.01755",
-        "external_id": "2608.01755"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.01755",
-        "external_id": "2608.01755"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/hzx122/DEFT-RLVR",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Zixuan Huang",
-      "Yang Zhou",
-      "Kaixuan Wang",
-      "Guli Zhang",
-      "Hongyan Xie",
-      "Yakun Zhu",
-      "Hao Geng",
-      "Yikun Ban",
-      "Deqing Wang"
-    ],
-    "published_at": "2026-08-03T00:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.440697Z",
-    "dedup_keys": [
-      "arxiv:2608.01755",
-      "title:autonomous deferred driving exposure for future reasoning trajectories verifiable vlms",
-      "github:hzx122/deft-rlvr"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 10.253,
-    "score_breakdown": {
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.747
-    }
-  },
-  {
-    "id": "c6c70058528ccff8",
-    "kind": "release",
-    "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-07-28T15:01:45Z",
-    "first_seen_at": "2026-08-04T03:56:41.833012Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/liquidai/lfm2-5-encoders",
-      "title:context cpu encoders fast for inference lfm2 long"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 10.193,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -9.807
-    }
-  },
-  {
-    "id": "134a71e887308d00",
-    "kind": "paper",
-    "title": "Chain-of-Models: Cross-Model Auditing for Bias-Robust LLM Judges",
-    "summary_en": "LLMs increasingly serve as automated judges, but their judgments remain vulnerable to cognitive biases. Existing mitigations mostly rely on prompt-driven debiasing, which is brittle across bias types, or human evaluation, which does not scale. We study \\emph{Chain-of-Models} (CoM), an automated audit pipeline in which a second model inspects the first model's reasoning trace before producing the final judgment. The key design question is whether the auditor should be the same model, a same-family model, or a different-family model. Across 9 models from 6 families, 4 cognitive biases, and 4 factual datasets, we find that auditor identity matters in two ways. First, standalone bias resistance does not predict audit effectiveness: Kimi-K2.5 is the strongest standalone model on several biases, yet is a weak auditor for Qwen2.5-72B's biased traces. Second, the best auditor is bias-specific: GPT-4o is strongest on bandwagon, authority, and distraction, while GLM-5 is strongest on sycophancy. We operationalize these findings with a per-bias auditor selection rule that, given the bias type, scores candidates along functional diversity, per-bias standalone resistance, and calibrated audit effectiveness. Under a calibration/test split, the selector reaches the highest accuracy across the four biased slices ($0.884$ vs.\\ $0.824$ for the strongest single fixed auditor and $0.805$ for the no-audit baseline). We release data, configurations, and an LLM-agent skill at https://anonymous.4open.science/r/chain-of-models-B585 .",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.28636",
-        "external_id": "2607.28636"
-      }
-    ],
-    "actors": [
-      "Qian Wang",
-      "Zhanzhi Lou",
-      "Zhenheng Tang",
-      "Nuo Chen",
-      "Bingsheng He"
-    ],
-    "published_at": "2026-08-03T04:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.517680Z",
-    "dedup_keys": [
-      "arxiv:2607.28636",
-      "title:auditing bias chain cross for judges llm model models robust"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.503,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.497
-    }
-  },
-  {
-    "id": "60f96adfe4e31d35",
-    "kind": "paper",
-    "title": "Evaluating Federated Pre-Training: On the Reliability of Downstream Fine-Tuning and Intrinsic Evaluation",
-    "summary_en": "Federated pre-training offers a way to train foundation models on private or distributed data without centralizing the underlying datasets. However, evaluating federated pre-training remains challenging because differences in client participation and local data availability can make directly comparable evaluation difficult. Moreover, pre-training test perplexity is tied to the pre-training distribution, while downstream benchmarks introduce task-specific adaptation that may not faithfully reflect the test perplexity established during pre-training. In this work, we study which evaluation protocol more reliably reflects federated pre-training quality. Using a controlled set of centralized and federated-trained models of a 16M parameter transformer model trained on identical client data, we assess evaluation protocols by whether they preserve a reference ranking established on the same pre-training testset. We compare downstream fine-tuning on GLUE, including full, head-only, and reduced-data variants, with next-token prediction on GLUE text as an intrinsic evaluation signal. Our results show that downstream fine-tuning does not reliably preserve the pre-training ranking, whereas direct next-token prediction exhibits a strong correspondence with the pre-training test perplexity. These findings suggest that downstream fine-tuning alone can be misleading when comparing federated pre-trained models, and that evaluation signals closer to the original pre-training objective deserve greater attention.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.28658",
-        "external_id": "2607.28658"
-      }
-    ],
-    "actors": [
-      "Claudia Grosser",
-      "Maike Heuer",
-      "Denis Krompass",
-      "Thomas A. Runkler"
-    ],
-    "published_at": "2026-08-03T04:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.518204Z",
-    "dedup_keys": [
-      "arxiv:2607.28658",
-      "title:and downstream evaluating evaluation federated fine intrinsic pre reliability the training tuning"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.503,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.497
-    }
-  },
-  {
-    "id": "af866158c1074aa9",
-    "kind": "paper",
-    "title": "Learning Stateful Predictive Knowledge From Experience",
-    "summary_en": "As large language model (LLM) agents increasingly learn from experience, they primarily rely on trajectory-level reflection to extract insights. Viewed through the lens of predictive knowledge, we argue that this approach operates on episodic hindsight rather than predictive foresight, yielding brittle, path-dependent heuristics. To address this, we propose Stateful Knowledge Learning (SKL). SKL shifts the agent's focus from trajectory-level summarization to maintaining Stateful Knowledge: explicit, declarative predictive assessments anchored to state. We first demonstrate a motivating example showing how stateful knowledge provides granularity, enhances generalization, and enables knowledge bootstrapping. To further scale up the idea, we introduce two algorithms via self-distillation (SKL-SD) and reinforcement learning (SKL-RL), training agents to autonomously extract state-grounded predictive knowledge from experience and learn to leverage it for policy making. Experiments on interactive environments (WebShop, ScienceWorld) and a complex reasoning task (ChessPuzzles) demonstrate that equipping models with the inherent ability to learn stateful predictive knowledge significantly outpaces current reflection-based training paradigms.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.28638",
-        "external_id": "2607.28638"
-      }
-    ],
-    "actors": [
-      "Yan Song",
-      "Xidong Feng",
-      "Bo Liu",
-      "Xinyu Cui",
-      "Haotian Fu",
-      "Zichen Liu",
-      "Mengyue Yang",
-      "Cheng Deng",
-      "Jian Zhao",
-      "Jun Wang"
-    ],
-    "published_at": "2026-08-03T04:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.517860Z",
-    "dedup_keys": [
-      "arxiv:2607.28638",
-      "title:experience from knowledge learning predictive stateful"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.503,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.497
-    }
-  },
-  {
-    "id": "b0fe782914cd9bae",
-    "kind": "paper",
-    "title": "The Asymmetric Effects of Knowledge Distillation on Bias in Small Language Models",
-    "summary_en": "We show that knowledge distillation in small instruction-tuned language models has asymmetric effects on bias. On unambiguous tasks (BBQ-disambig), response-based distillation from a Gemma-2-9B teacher improves context-following: for the most biased baseline (SmolLM2-1.7B-Instruct), it cuts the context-overriding error rate from 44% to 24%. On ambiguous tasks (BBQ-ambig), the same distillation destroys per-item refusal calibration: 15% of items where the baseline correctly abstained instead receive stereotype answers, even when overall refusal rate is preserved. The pattern reproduces on a second student family (OLMo-2-1B-Instruct), with silence-loss of 8% and filled-silence accounting for 89% of new bias. Across the full 28-configuration grid, the magnitudes of silence-loss and filled-silence are uncorrelated (Spearman $\\rho=0.19$, n.s.), indicating that the two effects arise from distinct mechanisms. Aggregate stereotype metrics (CrowS-Pairs, overall BBQ Stereotype Reliance Score) average over both effects and conceal the per-item harm. We trace the calibration loss to a data-side mechanism: an audit of four training corpora finds <0.5% refusal-as-answer-shape. Supervised fine-tuning (SFT) with refusal injection either breaks parsing or over-corrects into a trivial-refuser regime (refusal rate 99.8%, disambig accuracy 0.2%) that aggregate metrics would call perfectly calibrated. We propose Per-Condition Calibration Diagnosis (PCCD), a three-step protocol that evaluates refusal calibration, context-following, and capability preservation. PCCD catches both the asymmetric harm and the trivial-refuser failure mode that aggregate evaluations miss.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.28639",
-        "external_id": "2607.28639"
-      }
-    ],
-    "actors": [
-      "Plawan Kumar Rath"
-    ],
-    "published_at": "2026-08-03T04:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.517955Z",
-    "dedup_keys": [
-      "arxiv:2607.28639",
-      "title:asymmetric bias distillation effects knowledge language models small the"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.503,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.497
-    }
-  },
-  {
-    "id": "78f1edcd253a6aae",
-    "kind": "paper",
-    "title": "The Formalism Trap: Are LLM-as-a-Judge Evaluators Blinded by Consensus Mimicry under Social Load?",
-    "summary_en": "We introduce the \\textit{Agentic Formalism Trap} and the Evaluative Dissonance Index ($D_E$), quantifying how LLM-as-a-Judge systems conflate structural proceduralism with semantic truth under adversarial load. Analyzing 22,500 trajectories across 3 domains (GAIA, SWE-bench, Multi-Challenge), we extract a semantic taxonomy of hallucination maneuvers, validated via deterministic lexical grounding ($p < 10^{-120}$). A logistic meta-evaluator isolates the exact syntactic triggers of this evaluator capture (ROC-AUC 0.8779), while a zero-shot Leave-One-Domain-Out transfer proves the vulnerability is universally domain-agnostic (mean ROC-AUC 0.7482). Architectural profiling reveals that distinct simulated swarm topologies induce mathematically disparate semantic blind spots, proving that unanchored closed-loop evaluation is unstable, systemically divergent and necessitates architecture-specific vigilance filters.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.28641",
-        "external_id": "2607.28641"
-      }
-    ],
-    "actors": [
-      "Dahlia Shehata",
-      "Ming Li"
-    ],
-    "published_at": "2026-08-03T04:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.518112Z",
-    "dedup_keys": [
-      "arxiv:2607.28641",
-      "title:are blinded consensus evaluators formalism judge llm load mimicry social the trap under"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.503,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.497
-    }
-  },
-  {
-    "id": "e512163a6fb22dcb",
-    "kind": "paper",
-    "title": "TokenSwap: Benchmarking and Reducing the Modality Gap in Multimodal LLMs",
-    "summary_en": "Multimodal large language models (MLLMs) should generate consistent responses given semantically equivalent inputs across modalities. However, we observe a systematic discrepancy in model predictions under such cross-modal variations. Specifically, we define the modality gap as the difference in model performance under semantically equivalent textual and multimodal inputs. We introduce TokenSwap, a method that constructs such inputs by replacing textual concepts with semantically aligned images, resulting in sequences where visual tokens are interleaved with text tokens. Based on TokenSwap, we transform existing text-based benchmarks such as MMLU into image-interleaved counterparts, resulting in TokenSwap-Bench. Across 42 MLLMs, we observe a pervasive modality gap, with performance decreasing by 4.2% to 47.4% when moving from text-only to image-interleaved inputs, averaging 19.6% +/- 3.3% across models. Notably, we observe that reasoning models exhibit consistently smaller gaps, achieving an average gap of 10.1% compared to 25.5% for non-reasoning models. In contrast, neither prompting strategies nor scaling training compute alone reliably reduces the modality gap. Finally, we demonstrate that incorporating TokenSwap during training effectively mitigates this gap while preserving strong text-only and vision-language performance.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.28640",
-        "external_id": "2607.28640"
-      }
-    ],
-    "actors": [
-      "Andong Hua",
-      "Colton Bishop",
-      "Igor Mordatch",
-      "Arian Hosseini",
-      "Jindong Gu",
-      "Aleksandra Faust",
-      "Rebecca Roelofs",
-      "Yao Qin"
-    ],
-    "published_at": "2026-08-03T04:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.518040Z",
-    "dedup_keys": [
-      "arxiv:2607.28640",
-      "title:and benchmarking gap llms modality multimodal reducing the tokenswap"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.503,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.497
-    }
-  },
-  {
-    "id": "f5feeb812528788c",
-    "kind": "paper",
-    "title": "ZeroR@CHiPSAL 2026: Two-Stage Vision-Language Adaptation with Contrastive Learning for Nepali Meme Classification",
-    "summary_en": "This paper presents our system for the CHiPSAL 2026 shared task on multimodal hate speech and sentiment detection in Nepali memes. We address both subtasks: binary hate speech classification and three-class sentiment analysis. Our approach adapts the Robust Adaptation of Hateful Meme Detection (RA-HMD) framework using Qwen3-VL-8B-Instruct, a state-of-the-art vision-language model with native Devanagari support. We employ a two-stage training pipeline: (1) LoRA fine-tuning with an MLP projection head for generative classification, and (2) contrastive backbone fine-tuning with supervised InfoNCE loss. We handle class imbalance through minority oversampling, image augmentation, and focal loss. At inference, we ensemble Stage 1 token probabilities with Stage 2 classifier scores using validation-tuned weights. Our end-to-end approach eliminates error propagation from separate OCR and translation pipelines by leveraging the model's native Devanagari understanding. Our system achieved \\textbf{2nd place} on hate speech detection (F1: 0.797) and \\textbf{4th place} on sentiment analysis (F1: 0.518). We provide detailed ablations, error analysis, and insights into adapting large vision-language models for low-resource South Asian languages.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "cv",
-      "speech",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2607.28637",
-        "external_id": "2607.28637"
-      }
-    ],
-    "actors": [
-      "Nitiz Khanal"
-    ],
-    "published_at": "2026-08-03T04:00:00Z",
-    "first_seen_at": "2026-08-04T03:56:40.517773Z",
-    "dedup_keys": [
-      "arxiv:2607.28637",
-      "title:2026 adaptation chipsal classification contrastive for language learning meme nepali stage two vision with zeror"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.503,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.497
+      "age_decay": -38.947
     }
   }
 ]
