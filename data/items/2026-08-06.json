@@ -1,0 +1,1854 @@
+[
+  {
+    "id": "7a882d9db53ea063",
+    "kind": "model",
+    "title": "larryvrh/MiniMax-H3-Turbo-Lora",
+    "summary_en": "text-to-video, text-to-audio, audio-video, lora, minimax-h3",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+        "external_id": "larryvrh/MiniMax-H3-Turbo-Lora"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+        "external_id": "Comfy-Org/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "larryvrh"
+    ],
+    "published_at": "2026-08-05T21:58:56Z",
+    "first_seen_at": "2026-08-06T03:56:53.799852Z",
+    "dedup_keys": [
+      "hf:larryvrh/minimax-h3-turbo-lora"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 59,
+      "hf_downloads": 0,
+      "hf_trending_score": 59.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 36.476,
+    "score_breakdown": {
+      "hf_trending": 24.566,
+      "hf_likes": 12.283,
+      "age_decay": -0.373
+    }
+  },
+  {
+    "id": "697fc3d67a71b154",
+    "kind": "model",
+    "title": "Kijai/MiniMax-H3-experimental",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Kijai/MiniMax-H3-experimental",
+        "external_id": "Kijai/MiniMax-H3-experimental"
+      }
+    ],
+    "actors": [
+      "Kijai"
+    ],
+    "published_at": "2026-08-05T07:58:56Z",
+    "first_seen_at": "2026-08-06T03:56:53.799940Z",
+    "dedup_keys": [
+      "hf:kijai/minimax-h3-experimental"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 55,
+      "hf_downloads": 0,
+      "hf_trending_score": 54.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 34.872,
+    "score_breakdown": {
+      "hf_trending": 24.044,
+      "hf_likes": 12.076,
+      "age_decay": -1.248
+    }
+  },
+  {
+    "id": "76298f8eae0a1300",
+    "kind": "paper",
+    "title": "ToolArtist: Tool-Using Unified Multimodal Models for Agentic Image Generation",
+    "summary_en": "Text-to-image (T2I) models can produce visually compelling images, yet they remain limited on open-world tasks that require complex semantic understanding, multi-step reasoning, and the integration of external world knowledge. Existing efforts introduce agent capabilities into image generation, but they either prescribe a fixed workflow or place only a subset of the open-world image generation process under agent control. Consequently, reasoning, tool invocation, and image generation are not coordinated by a single policy. We propose ToolArtist, a fully agentic image generation model obtained by post-training a Unified Multimodal Model (UMM). ToolArtist dynamically orchestrates reasoning, external tool use, and native image generation within one unified policy. During Supervised Fine-Tuning (SFT), we equip a teacher agent with search tools alongside an image-generation tool. We then convert the collected trajectories into a UMM compatible format, where the image-generation tool is concealed while the resulting generated images are retained. During Reinforcement Learning (RL), we develop an agentic RL infrastructure for UMMs and introduce Reason-Act-Draw GRPO (RAD-GRPO), which uses complementary intent and quality rewards to jointly optimize the model. Experiments show that placing the entire open-world image-generation process under an agent policy consistently outperforms approaches with fixed pipelines or only partially agent-controlled components. We release the training data and the complete post-training infrastructure.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04436",
+        "external_id": "2608.04436"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04436",
+        "external_id": "2608.04436"
+      }
+    ],
+    "actors": [
+      "Jiahao Zhao",
+      "Xiaomin Yu",
+      "Zhongxiang Sun",
+      "Fengwei Teng",
+      "Chengwei Qin",
+      "Xiaobin Hu",
+      "Jun Xu",
+      "Shuicheng Yan"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.794437Z",
+    "dedup_keys": [
+      "arxiv:2608.04436",
+      "title:agentic for generation image models multimodal tool toolartist unified using"
+    ],
+    "signals": {
+      "hf_upvotes": 29,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 34.463,
+    "score_breakdown": {
+      "hf_upvotes": 27.21,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "badd4afdf74a8eb4",
+    "kind": "paper",
+    "title": "The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads",
+    "summary_en": "Personalized LLMs with persistent memory are increasingly deployed, yet the faithfulness of their user models remains unexamined. We study over-inference (OI): the phenomenon where LLMs fabricate user attributes beyond what evidence supports. We introduce MirageBench, comprising 150 personas balanced across stereotypical, counter-stereotypical, and neutral profiles, 6 personalization tasks spanning an ``imagination gradient'', a four-way faithfulness taxonomy operationalized by an independent judge (validated against a blind human annotator on 400 claims: Cohen's kappa = 0.863 four-class, kappa = 0.900 binary), and a leaderboard of 12 models across 7 families on 143616 judged claims. We find that over-inference is pervasive: every one of the 12 models over-infers 35%--49% of its claims (cross-model mean 41.6%; claim-weighted 41.8%), with no model in this evaluation escaping it. Most strikingly, we surface a Self-Monitoring Inversion: at the model-selection level, models' self-assessed OI is negatively rank-correlated with their judge-measured OI (rho = -0.60, p = 0.044; exploratory, wide bootstrap CI [-0.90, +0.06], n = 12). The models that report the least over-inference tend to be flagged as fabricating the most, so self-reported confidence is a misleading signal for comparing models, even though within a single model self-audit still ranks that model's own claims moderately well (AUROC 0.58--0.83). We further show that OI is task-dependent (27%--59%) and that, in a multi-turn pilot, inferred attributes accumulate approximately linearly with little revision. MirageBench positions external verification, rather than model self-report, as a more reliable foundation for trustworthy personalization.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04570",
+        "external_id": "2608.04570"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04570",
+        "external_id": "2608.04570"
+      }
+    ],
+    "actors": [
+      "Yushi Sun",
+      "Yanjie Zhang",
+      "Rui Sheng"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.794529Z",
+    "dedup_keys": [
+      "arxiv:2608.04570",
+      "title:and fabricate how llms mirage misleads monitoring personalization profiles self the user why"
+    ],
+    "signals": {
+      "hf_upvotes": 25,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.318,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "d3c7026797aa151a",
+    "kind": "paper",
+    "title": "OneDayAgent: Towards a Long-Horizon Harness for Autonomous Agents",
+    "summary_en": "LLM agents are increasingly applied to open-ended everyday requests that span work, study, and life. These tasks are long-horizon, cross-environment, and multimodal, forcing the agent to preserve goals and constraints across many steps while navigating heterogeneous tools and attachments. While prior work has addressed individual failure modes such as goals drift, states loss, and context overflow, whether a single harness can manage them jointly and remain effective across backends has received less study. We present OneDayAgent, a long-horizon harness for autonomous agents. OneDayAgent turns an open-ended request into a managed execution process that decomposes tasks into bounded subtasks, maintains execution memory under context pressure, and verifies and repairs the final deliverable. We evaluate OneDayAgent on AgentIF-OneDay across 104 tasks. With the GLM-5.2 backend, OneDayAgent sets a new state of the art with an overall score of 0.821. The same harness runs across five backend LLMs from three model families, indicating the harness generalizes across backends without tuning, even as different models induce distinct execution styles under the same workflow.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05013",
+        "external_id": "2608.05013"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05013",
+        "external_id": "2608.05013"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zjunlp/OneDayAgent",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jingsheng Zheng",
+      "Xinyuan Fang",
+      "Jintian Zhang",
+      "Zhengke Gui",
+      "Huajun Chen",
+      "Ningyu Zhang"
+    ],
+    "published_at": "2026-08-04T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.794783Z",
+    "dedup_keys": [
+      "arxiv:2608.05013",
+      "title:agents autonomous for harness horizon long onedayagent towards",
+      "github:zjunlp/onedayagent"
+    ],
+    "signals": {
+      "hf_upvotes": 15,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.131,
+    "score_breakdown": {
+      "hf_upvotes": 22.181,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.247
+    }
+  },
+  {
+    "id": "a78662768b552edf",
+    "kind": "paper",
+    "title": "When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation",
+    "summary_en": "On-Policy distillation (OPD) transfers teacher capabilities by supervising student-sampled trajectories with dense token-level teacher signals. Recent selective OPD methods improve this process by prioritizing signals that are confident, informative, or learnable. However, the assumptions overlook a fundamental failure mode of language models: their token-level judgments can be driven by input-agnostic language priors, formatting conventions, or stereotyped reasoning templates rather than task-specific evidence. We refer to such optimization-relevant but weakly input-grounded supervision as spurious signals in OPD, which may produce large gradients while contributing little task-improving direction. To mitigate this issue, we propose SA-OPD, a Spurious-Signal-Aware On-Policy Distillation framework that identifies and filters misleading token-level supervision based on input-groundedness and optimization impact. SA-OPD introduces a lightweight input-groundedness proxy estimating whether a token-level distillation signal truly depends on the input. It then filters only tokens that simultaneously exhibit low input-groundedness and extreme distillation divergence, thereby removing high-impact spurious updates and achieving fine-grained OPD optimization. Extensive experiments on both large language model (LLM) and vision-language model (VLM) settings demonstrate that SA-OPD consistently outperforms Vanilla OPD and competitive selective methods. These results establish input-groundedness as a key dimension for OPD supervision selection and offer a simple, effective strategy for mitigating spurious updates.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.03632",
+        "external_id": "2608.03632"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.03632",
+        "external_id": "2608.03632"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/jjjyinuo/SA-OPD",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yinuo Jiang",
+      "Yongjie Ye",
+      "Zhou Tao",
+      "Xiang Zhuang",
+      "Qiang Zhang",
+      "Huajun Chen",
+      "Tiankai Li"
+    ],
+    "published_at": "2026-08-04T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.794852Z",
+    "dedup_keys": [
+      "arxiv:2608.03632",
+      "title:aware distillation mislead policy signal spurious teachers when",
+      "github:jjjyinuo/sa-opd"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.659,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.247
+    }
+  },
+  {
+    "id": "a176807d8d685831",
+    "kind": "paper",
+    "title": "Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes",
+    "summary_en": "Vision offers a critical axis for advancing foundation models, driving a shift towards natively unified multimodal pretraining. Despite this momentum, the design space and the fundamental mechanisms of how modalities interact during unified training remain underexplored. We provide empirical clarity through a systematic exploration of multimodal pretraining. Our controlled experiments on both synthetic and large-scale real-world datasets yield four key insights into the physics of multimodal pretraining: (i) Knowledge Flow: We disentangle how language, visual understanding, and visual generation transfer knowledge across modalities, revealing distinct patterns of influence and asymmetry; (ii) Synergy vs. Competition: We show that data \"complexity\" largely determines whether modalities are synergistic, identify architectural choices that promote synergy: such as shared attention and normalization with modality-specific feed-forward layers, and find that these behaviors generalize across different visual tokenizer designs; (iii) Early Unification: Unifying modalities from the very early stages and training them jointly is shown to be more effective than late alignment or sequential training. This process uncovers a vision laziness phenomenon, where delayed integration leads models to rely on language priors; (iv) Recipes: We derive efficient pretraining recipes that achieve strong generative performance using only 5% of the compute budget. These core findings are subsequently validated at scale by training multiple 13.5B MoE models on 2T tokens. We hope this study provides a principled foundation for understanding and scaling multimodal pretraining.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05000",
+        "external_id": "2608.05000"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05000",
+        "external_id": "2608.05000"
+      }
+    ],
+    "actors": [
+      "Junlin Han",
+      "Shengbang Tong",
+      "David Fan",
+      "Minghao Chen",
+      "Philip Torr",
+      "Filippos Kokkinos",
+      "Mike Lewis"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.794576Z",
+    "dedup_keys": [
+      "arxiv:2608.05000",
+      "title:and early flow knowledge modality multimodal physics pretraining recipes synergy towards unification"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.919,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "87c258632883fee8",
+    "kind": "paper",
+    "title": "UniWorld-View: Large-Baseline View Synthesis via Video Diffusion Models",
+    "summary_en": "The abundance of casually captured monocular videos and images on social media provides a valuable source for immersive content creation, where generating novel views from such sparse observations can greatly enhance user experiences. However, producing photorealistic and geometrically consistent views with precise camera control remains challenging when input coverage is extremely limited. Reconstruction-based approaches such as NeRF and 3D Gaussian Splatting (3DGS) deteriorate severely under sparse inputs and fail to explicitly handle occlusions. Generative methods ease data requirements but still struggle with large-baseline view synthesis due to inaccurate or implicit geometric guidance. To overcome these limitations, we introduce UniWorld-View, a unified framework for controllable large-baseline novel view synthesis from monocular inputs. UniWorld-View integrates explicit 3D guidance with generative diffusion modeling to enable precise camera control and geometrically consistent view generation. The geometric guidance is obtained through an occlusion-aware point cloud rendering strategy that resolves visibility ambiguities and provides accurate priors for diffusion-based synthesis. By coupling this rendering strategy with powerful video diffusion backbones, UniWorld-View achieves high-fidelity novel view generation even under extreme camera motions and wide-baseline changes, and can further provide multi-view videos for downstream dynamic 3DGS reconstruction. Experiments on the WorldScore benchmark and zero-shot NVS benchmarks demonstrate the effectiveness of UniWorld-View in controllability, geometric consistency, and visual fidelity.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04701",
+        "external_id": "2608.04701"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04701",
+        "external_id": "2608.04701"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/PKU-YuanGroup/UniWorld-View",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haiyang Zhou",
+      "Wangbo Yu",
+      "Chaoran Feng",
+      "Xunyu Zhou",
+      "Yonghong Tian",
+      "Li Yuan"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795317Z",
+    "dedup_keys": [
+      "arxiv:2608.04701",
+      "title:baseline diffusion large models synthesis uniworld via video view view",
+      "github:pku-yuangroup/uniworld-view"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 92,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 24.863,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 9.065,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "9a4d520de0f0a66b",
+    "kind": "paper",
+    "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
+    "summary_en": "Long-horizon reasoning in recent LLMs demands that the model switch between distinct skills inside a reasoning chain, such as first doing a math derivation, then using the result to plan a schedule. We call such problems cross-skill long-horizon tasks: multi-step tasks whose steps require different reasoning skills and depend on earlier outputs. Existing benchmarks often evaluate individual skills, lacking a principled way to measure how well a model switches between skills. We address this gap from both the evaluation and training sides. We introduce Skill Entropy, a measure of the difficulty of switching from one skill to another. We then propose Skill^2-Bench, a benchmark of cross-skill long-horizon tasks built over 558 skills across 9 verifiable and open-ended domains. Each task is assigned a task-level skill-entropy score and grouped into three difficulty levels. Evaluating 8 frontier and 4 open-source models on Skill^2-Bench reveals a skill-switching gap: accuracy decreases on higher-entropy tasks. We then turn skill entropy from a benchmark scale into a training signal. We propose Skill-Entropy RL, an RL framework where the model predicts not only the answer at each step but also the skill used to produce it. The reward combines step-level correctness with a skill-entropy reward that measures the alignment between the model-predicted skill sequence and the gold skill sequence. On Qwen3-4B-Instruct and Qwen3-1.7B, Skill-Entropy RL improves the Skill^2-Bench score from 34.4% to 68.4% and from 14.6% to 40.1%, respectively, outperforming competitive baselines. The same pipeline can be applied to off-the-shelf training data such as OpenR1-Math, indicating that skill entropy is a reusable training signal. Code available at: https://github.com/Gen-Verse/Skill-Entropy-RL",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05139",
+        "external_id": "2608.05139"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05139",
+        "external_id": "2608.05139"
+      }
+    ],
+    "actors": [
+      "Yinghui He",
+      "Ling Yang",
+      "Jiarui Liu",
+      "Yongjin Yang",
+      "Lechen Zhang",
+      "Yingcheng Wu",
+      "Zhenfei Yin",
+      "Mengdi Wang",
+      "Sanjeev Arora"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.794906Z",
+    "dedup_keys": [
+      "arxiv:2608.05139",
+      "title:and benchmarking entropy for horizon llms long native reasoning skill skill toward training"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 24.831,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "16e11ca75575a611",
+    "kind": "paper",
+    "title": "When Memory Lies: An Empirical Study of Spatial Memory Staleness in VLM Agents",
+    "summary_en": "Memory-augmented VLM agents act on persistent spatial knowledge, yet that knowledge silently goes stale as the environment changes. We ask what happens when an agent must reconcile a confident memory claim with a contradicting observation, and whether current models can catch the conflict before it becomes a safety-relevant mistake. Using a dynamic FrozenLake testbed, we pair a staleness-detection task with a downstream navigation task across three closed-source models and three open-weight VLMs under both text and image inputs (1,800 detection runs, and 12,000 text-mode navigation episodes over four LLM navigators at a shared 50-seed scale). Three findings emerge. First, text solvability does not imply visual grounding: models that flag stale entries reliably from text nonetheless span vision F1 from 0.887 down to 0.067 on the identical grids, and the weakest keeps making fluent, confident decisions that ignore the image. Second, consuming stale memory without an audit is a safety liability: in our primary GPT-4o setting, an agent that trusts raw memory dies more than twice as often as the same agent given no memory at all. Third, auditing helps but does not close the gap: a transparent read-time filter removes much of the safety cost in text mode, yet even oracle stale labels bring no further significant gain on the current grid size, and when visual auditing is unreliable, filtering yields no consistent benefit. Together these results frame spatial-memory staleness as a safety failure mode and isolate reliable visual grounding and action selection under memory--observation conflict as the central open challenges for memory-augmented agents.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04574",
+        "external_id": "2608.04574"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04574",
+        "external_id": "2608.04574"
+      }
+    ],
+    "actors": [
+      "Yushi Sun",
+      "Yanjie Zhang"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.794982Z",
+    "dedup_keys": [
+      "arxiv:2608.04574",
+      "title:agents empirical lies memory memory spatial staleness study vlm when"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 22.82,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "b307c7bc1cd6cb5e",
+    "kind": "paper",
+    "title": "HelloWorld: Enabling Socially Interactive Characters in Video World Models",
+    "summary_en": "Despite the remarkable recent progress of video world models, social interaction between users and the characters within these worlds remains unsupported. To fill this gap, we present HelloWorld, a video world model that enables social interaction with in-world characters. With a single button press, users can prompt the on-screen character to respond toward the camera, e.g., turning to the viewer, waving, nodding, or speaking a short greeting. To make these interactions natural, we propose a self-distillation pipeline that finetunes the video generation model on data synthesized by itself. Each synthesized clip contains both social interactions and camera motion, allowing the model to learn camera-pose conditioning without degrading interaction quality. At inference, we further introduce a training-free module that determines when the interaction occurs. Upon a button press, it modulates the cross-attention masks of the DiT so that the interaction-related text prompt attends only to the frames within the press window, temporally localizing the character's response. We further build HelloWorldBench, a 400-sample benchmark with three social interaction metrics alongside three conventional metrics, for evaluation. Experiments demonstrate that HelloWorld surpasses a variety of baselines in interaction quality, while maintaining state-of-the-art picture aesthetics and camera-pose following. Project page: https://github.com/AlayaLab/HelloWorld",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05070",
+        "external_id": "2608.05070"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05070",
+        "external_id": "2608.05070"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AlayaLab/HelloWorld",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Liangyang Ouyang",
+      "Ruicong Liu",
+      "Xuangeng Chu",
+      "Kaipeng Zhang",
+      "Yoichi Sato"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795117Z",
+    "dedup_keys": [
+      "arxiv:2608.05070",
+      "title:characters enabling helloworld interactive models socially video world",
+      "github:alayalab/helloworld"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 18.729,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "5fe7de9316d6245a",
+    "kind": "paper",
+    "title": "WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models",
+    "summary_en": "Interactive video world models are essential for long-horizon planning and exploration, yet they suffer from compounding errors. Post-training methods such as reinforcement learning (RL) can improve these models, but they hit a verification bottleneck: for arbitrary action sequences, no ground-truth future state exists to measure long-term drift. Our key insight is that reversible action cycles make this verification possible: a sequence composed with its inverse must analytically return to the initial state, yielding annotation-free supervision on long-horizon correctness. Building on this, we introduce WorldCycle, a self-verifiable RL framework that constructs closed action cycles and their repeated executions from ordinary action sequences, and optimizes two complementary rewards: a spatial closure reward enforcing symmetry between mirrored forward and reverse segments, and a temporal consistency reward aligning states across repeated cycle executions. These rewards force the model to learn actions as consistent state operators rather than memorized temporal patterns, and extend naturally to out-of-distribution composite action cycles that the base model handles poorly. We further release CycleBench, a diagnostic benchmark for state-returning ability under complex action structures. WorldCycle reduces state returning drift by up to 44% and lifts composite-action accuracy nearly 4x over the base model, providing a vital foundation for physically grounded world models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04964",
+        "external_id": "2608.04964"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04964",
+        "external_id": "2608.04964"
+      }
+    ],
+    "actors": [
+      "Bohai Gu",
+      "Yueyang Yuan",
+      "Taiyi Wu",
+      "Dazhao Du",
+      "Jian Liu",
+      "Xiaoyi Pang",
+      "Jie Zhang",
+      "Xiaocheng Lu",
+      "Haobin Zhong",
+      "Xiaotong Zhao",
+      "Alan Zhao",
+      "Song Guo"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795075Z",
+    "dedup_keys": [
+      "arxiv:2608.04964",
+      "title:for horizon learning long models reinforcement self verifiable video world worldcycle"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 18.343,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "fc106dde3e3fb5df",
+    "kind": "paper",
+    "title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
+    "summary_en": "Learning generalizable robot manipulation policies requires large-scale and diverse demonstration data. Egocentric human manipulation videos offer rich scene and task diversity, and prior work has shown that retargeting and rendering such videos into robot-format data can yield effective per-task policies at small scale. However, whether this approach can provide pretraining benefits for vision-language-action models at scale remains unexplored. We present Ego2Robot, a scalable pipeline that converts egocentric human manipulation videos into robot training data through action retargeting, robot-arm visual synthesis, and multi-level quality curation. Ego2Robot supports both curated datasets and in-the-wild videos, producing 18,561 hours of robot training data spanning 15 robot morphologies, making it the largest ego-to-robot dataset to date. To evaluate generalization, we extend RoboTwin2.0 with disentangled perturbation axes covering visual appearance, scene layout, embodiment morphology, and task semantics. Experiments show that joint pretraining on Ego2Robot-synthesized and robot data consistently improves out-of-distribution generalization across multiple perturbation types, with benefits validated on real-robot deployment. Project page: https://www-ye.github.io/ego2robot_blog/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02580",
+        "external_id": "2608.02580"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02580",
+        "external_id": "2608.02580"
+      }
+    ],
+    "actors": [
+      "Ye Wang",
+      "Pei Lin",
+      "Xiong-Hui Chen",
+      "Haoqi Yuan",
+      "Zhixuan Liang",
+      "Yiyang Huang",
+      "Anzhe Chen",
+      "Zixing Lei",
+      "Jie Zhang",
+      "Tao Zhang",
+      "Haoyang Li",
+      "Tong Zhang",
+      "Chenxi Xiao",
+      "Ziyuan Jiao",
+      "Qin Jin"
+    ],
+    "published_at": "2026-08-03T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795030Z",
+    "dedup_keys": [
+      "arxiv:2608.02580",
+      "title:data data ego2robot egocentric from human robot scalable synthesis"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 17.129,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.747
+    }
+  },
+  {
+    "id": "34cdeeee3ca51c53",
+    "kind": "paper",
+    "title": "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation",
+    "summary_en": "Leveraging pre-trained vision-language models (VLMs) to construct vision-language-action (VLA) models has emerged as a promising paradigm for 3D robot manipulation. However, existing 3D VLA methods remain data-hungry, exhibit limited generalization under distribution shifts, and lack explicit memory of past observations. These limitations hinder their application to data-scarce, open-world, and memory-dependent manipulation scenarios. Our previous work, BridgeVLA, improves data efficiency and generalization by preserving the input--output alignment of a pre-trained VLM during 3D action learning: raw point clouds are projected into multi-view images, and intermediate heatmaps are predicted before generating robot actions. In this work, we develop BridgeVLA++ by equipping BridgeVLA with a unified spatio-temporal memory architecture that models persistent spatial context and temporal interaction history. The resulting memory-augmented framework can reason over observation histories while preserving BridgeVLA's data efficiency and generalization capabilities. Extensive experiments show that our framework achieves strong performance on spatial manipulation tasks while exhibiting robust generalization. BridgeVLA++ further achieves state-of-the-art performance on two challenging memory-dependent manipulation benchmarks without sacrificing the data efficiency and generalization of the original BridgeVLA. In addition, BridgeVLA++ performs effectively in bimanual manipulation settings and is validated on an additional real-world robotic platform, demonstrating its scalability across tasks, environments, and robotic platforms. These results establish BridgeVLA++ as a unified 3D vision-language-action framework that simultaneously supports data-efficient learning, robust generalization, and effective memory-aware robot manipulation. Project website: https://bridgevla-plus.github.io/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05042",
+        "external_id": "2608.05042"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05042",
+        "external_id": "2608.05042"
+      }
+    ],
+    "actors": [
+      "Peiyan Li",
+      "Yuze Zhu",
+      "Yixiang Chen",
+      "Qisen Ma",
+      "Yuan Xu",
+      "Jiabing Yang",
+      "He Guan",
+      "Yan Huang",
+      "Hongtao Wu",
+      "Xiao Ma",
+      "Tao Kong",
+      "Liang Wang",
+      "Tieniu Tan"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795164Z",
+    "dedup_keys": [
+      "arxiv:2608.05042",
+      "title:action and augmented bridgevla data efficient for framework generalizable language manipulation memory vision"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 16.042,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "eb1d9d79b0f5805c",
+    "kind": "paper",
+    "title": "NOLLI: A Difficulty-Calibrated Puzzle Benchmark for Diagnosing the English-Korean Performance Gap",
+    "summary_en": "We introduce NOLLI, a procedurally generated English-Korean puzzle benchmark designed to diagnose where Korean performance gaps arise. It comprises 15 puzzle types (25 tasks; 7,500 items), with every instance seed-regenerable, verified to have a unique solution, and scored deterministically. Rather than equating harder with bigger, we calibrate difficulty behaviorally, tuning each generator until a fixed reference model lands in target accuracy bands. Its three-level design combines matched direct translations, script adaptations over Hangul jamo (sub-syllabic letters), and Korean-only tasks grounded in Korean culture or orthography. We evaluate 15 frontier, open-weight, and Korean-developed models; among the 12 above a 3% overall-accuracy floor, matched English-Korean accuracy is statistically equivalent within a +/- 10 pp margin (TOST), suggesting little cost from presentation language alone. Writing-system-intensive tasks show sharper gaps: Korean Cipher falls behind English by up to 68.7 pp, whereas Cryptarithmetic over the same jamo shows no systematic penalty, and Jamo Composition accuracy predicts Korean Cipher accuracy. These contrasts are diagnostic rather than causal, consistent with difficulty in multi-step sub-syllabic execution. Korean-only tasks separate rule-application deficits, which vary in sign, from a Kinship deficit positive in all 12. Finally, a salient size measure fails to grow from Easy to Hard in 7 of 15 types, making structural size an unreliable proxy for empirical difficulty.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04397",
+        "external_id": "2608.04397"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04397",
+        "external_id": "2608.04397"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/HAE-RAE/NOLLI",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Dasol Choi",
+      "Joonyong Park",
+      "Daegon Yu",
+      "Soo Yong Kim",
+      "Youngsook Song",
+      "Seunghyeok Hong"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795269Z",
+    "dedup_keys": [
+      "arxiv:2608.04397",
+      "title:benchmark calibrated diagnosing difficulty english for gap korean nolli performance puzzle the",
+      "github:hae-rae/nolli"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 13.995,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "4c6d44829ae431f2",
+    "kind": "paper",
+    "title": "K-EXAONE 2.0 Technical Report",
+    "summary_en": "This technical report presents K-EXAONE 2.0, an open-weight multilingual foundation model developed by LG AI Research as a step in our effort toward global frontier-scale foundation models. Rather than training from scratch, we upcycle K-EXAONE and expand its architecture, yielding a Mixture-of-Experts (MoE) model with 750B total parameters and approximately 37B activated per token---more than three times the capacity of its predecessor. K-EXAONE 2.0 supports context lengths of up to 256K tokens and expands multilingual coverage from six to ten languages. Its training pipeline combines continual pre-training, difficulty-focused mid-training, and post-training to strengthen reasoning, agentic coding, multilingual capability, and safety grounded in Korean sociocultural contexts. Across nine evaluation categories selected to reflect the conditions of practical use, K-EXAONE 2.0 improves over K-EXAONE and remains competitive with open-weight models, showing its largest gains in agentic coding and long-context understanding and its clearest strengths in long-context retrieval and safety. Released under the Apache 2.0 license, K-EXAONE 2.0 enables the wider AI ecosystem to evaluate, deploy, adapt, and build upon it, while marking the beginning---rather than the endpoint---of our challenge toward the global frontier.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04505",
+        "external_id": "2608.04505"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04505",
+        "external_id": "2608.04505"
+      }
+    ],
+    "actors": [
+      "Eunbi Choi",
+      "Kibong Choi",
+      "Sehyun Chun",
+      "Seokhee Hong",
+      "Junwon Hwang",
+      "Hyojin Jeon",
+      "Ahra Jo",
+      "Hyunjik Jo",
+      "Yeonsik Jo",
+      "Minhyeok Jung",
+      "Doyoung Kim",
+      "Heegyu Kim",
+      "Joonkee Kim",
+      "Seonghwan Kim",
+      "Soyeon Kim",
+      "Sunkyoung Kim",
+      "Yireun Kim",
+      "Yongil Kim",
+      "Byungoh Ko",
+      "Changhun Lee",
+      "Dohaeng Lee",
+      "Haeju Lee",
+      "Jinsik Lee",
+      "Kyungmin Lee",
+      "Minwoo Lee",
+      "Wonkee Lee",
+      "Sangha Park",
+      "Sungjune Park",
+      "Kwangrok Ryoo",
+      "Kijung Seo",
+      "Minju Seo",
+      "Yongwoo Song",
+      "Sejong Yang",
+      "Heuiyeen Yeen",
+      "Stanley Jungkyu Choi",
+      "Yemuk Choi",
+      "Yongchan Chun",
+      "Jiwon Ham",
+      "Dasol Hong",
+      "Sujeong Im",
+      "Kijeong Jeon",
+      "Gerrard Jeongwon Jo",
+      "Hyeongjun Jo",
+      "Yujin Jo",
+      "Jiyeon Jung",
+      "Naeun Kang",
+      "Daeseong Kim",
+      "Euisoon Kim",
+      "Hayeon Kim",
+      "Hyosang Kim",
+      "Myoungshin Kim",
+      "Unsol Kim",
+      "Youchul Kim",
+      "Chaeeun Lee",
+      "ChaeYoon Lee",
+      "Edward Hwayoung Lee",
+      "Honglak Lee",
+      "Hwansoo Lee",
+      "Minkyung Lee",
+      "Sangeun Lee",
+      "Solji Lim",
+      "Woohyung Lim",
+      "Chanwoo Moon",
+      "Jueun Mun",
+      "Jimin Park",
+      "Seojeong Park",
+      "Yongmin Park",
+      "Hyerin Seo",
+      "Donghyeon Shin",
+      "Donghyun Son",
+      "Eunyong Son",
+      "Kaehyun Um",
+      "Sihoon Yang",
+      "Chang En Yea",
+      "Sihyuk Yi",
+      "Kyungjae Yoo",
+      "Chansik Yoon"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795220Z",
+    "dedup_keys": [
+      "arxiv:2608.04505",
+      "title:exaone report technical"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.798,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "7558b4a18a248227",
+    "kind": "paper",
+    "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
+    "summary_en": "On-Policy Self-Distillation (OPSD) has become a standard post-training approach for improving visual reasoning in multimodal large language models (MLLMs). Existing methods draw privileged information from diverse input sources to guide self-distillation. Yet these designs overlook Modality Imbalance, a challenge inherent to MLLM reasoning. When textual information dominates generation, the model cannot fully integrate its multimodal input. Consequently, carefully designed privileged information remains underused, limiting the effectiveness of OPSD. To examine this limitation, we construct a Positive Teacher with the Zoom-In Image and a Negative Teacher with the Mask Image, which exhibit different degrees of Modality Imbalance. Changes in their reasoning correctness and token logits reveal that Modality Balance can itself serve as privileged information. Motivated by this finding, we introduce OPD-V, a visual OPSD paradigm that instantiates such information through the Positive Teacher and Negative Teacher. Positive Modality-Balance Logits Margins define a Modality-Balance Trust Region that selects the on-policy tokens used for self-distillation. Experiments across 6 benchmarks, 4 MLLM backbones, and 5 post-training methods show that OPD-V consistently improves reasoning performance while reducing training cost.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05131",
+        "external_id": "2608.05131"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05131",
+        "external_id": "2608.05131"
+      }
+    ],
+    "actors": [
+      "Aniri",
+      "Jinhe Bi",
+      "Peng Liao",
+      "Zengjie Jin",
+      "Volker Tresp",
+      "Fei Shen",
+      "Yunpu Ma",
+      "Tat-Seng Chua"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795415Z",
+    "dedup_keys": [
+      "arxiv:2608.05131",
+      "title:balance distillation modality opd policy self visual with"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.798,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "ef6c6ed189230580",
+    "kind": "paper",
+    "title": "TriGlue: a Biology-Inspired Generative Model for Generating Molecular Glue-Induced Ternary Complex",
+    "summary_en": "Molecular glue degraders have emerged as a promising strategy for targeted protein degradation by inducing ternary complex formation between an E3 ubiquitin ligase and a target protein. Despite their therapeutic potential, computational design of molecular glues remains largely unexplored. Unlike conventional structure-based drug design, molecular glue design is governed by the unknown protein-protein interface and requires the simultaneous modeling of ligand generation, protein-protein docking, and ternary complex assembly. In this work, we formulate molecular glue design as a ternary complex generation problem and propose a biology-inspired generative framework, TriGlue. Motivated by the mechanism of molecular glue action, we decompose ternary complex generation into two coupled stages: interface estimation and interface-conditioned complex generation. First, we develop an SE(3)-equivariant interface estimation module that predicts a geometrically constrained protein-protein interface from unbound monomer structures. Second, we introduce an interface-conditioned ternary flow matching network that jointly generates the molecular glue and predicts the rigid-body transformation required to assemble the ternary complex. Extensive experiments demonstrate that TriGlue generates chemically valid molecules and produces plausible ternary complexes, which highlight the potential of biology-inspired generative modeling for accelerating molecular glue discovery. Our code is available at https://github.com/yuliangyan0807/molecular-glue-design.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.22143",
+        "external_id": "2607.22143"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.22143",
+        "external_id": "2607.22143"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yuliangyan0807/molecular-glue-design",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuliang Yan",
+      "Shuo Yan",
+      "Haochun Tang",
+      "Yiqin Sun",
+      "Enyan Dai"
+    ],
+    "published_at": "2026-08-04T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795465Z",
+    "dedup_keys": [
+      "arxiv:2607.22143",
+      "title:biology complex for generating generative glue induced inspired model molecular ternary triglue",
+      "github:yuliangyan0807/molecular-glue-design"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 11.684,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -3.247
+    }
+  },
+  {
+    "id": "41981631e4bafe7e",
+    "kind": "paper",
+    "title": "SKILL-KD: Contrastive Skill Distillation for LLM Agents",
+    "summary_en": "Skill-based prompting has become a practical mechanism for improving large language model (LLM) agents, yet existing skill acquisition methods often treat skills as experience summaries, memory entries, or direct summaries of successful demonstrations. This creates a mismatch for weaker student agents: when a student fails because it lacks task knowledge or operational strategy, its failed trajectory may not contain enough evidence to infer the missing behavior, while the teacher trajectory may be too implicit to be internalized as reusable guidance. We propose SKILL-KD, a contrastive skill distillation framework that treats skills as an explicit distillation medium between agents of different capabilities. Given a student failure and the teacher trajectory on the same task, SKILL-KD distills their actionable discrepancy into a textual skill patch, evaluates the patch by re-running the student, and iteratively refines the patch when the student still fails. To prevent repeated local updates from causing skill drift, SKILL-KD further maintains trace-linked edit histories and performs Drift-Aware Skill Consolidation, deciding whether each patch should add a new rule, delete or modify an existing rule, or be skipped. Across five agent benchmarks and two student settings, SKILL-KD consistently improves frozen student agents over fixed-model adaptation baselines.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2607.28048",
+        "external_id": "2607.28048"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2607.28048",
+        "external_id": "2607.28048"
+      }
+    ],
+    "actors": [
+      "Qiming Shi",
+      "Yibo Dou",
+      "Jiawen Zhu",
+      "Yulong Tao",
+      "Linbo Jin",
+      "Zhaolu Kang",
+      "Yunfan Zhou",
+      "Di Weng"
+    ],
+    "published_at": "2026-08-04T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795500Z",
+    "dedup_keys": [
+      "arxiv:2607.28048",
+      "title:agents contrastive distillation for llm skill skill"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 11.298,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.247
+    }
+  },
+  {
+    "id": "06ff0707914a4114",
+    "kind": "paper",
+    "title": "Poly-OPD: Heterogeneous Multi-Teacher On-Policy Distillation for Capability-Selectable Flow Models",
+    "summary_en": "Leading open text-to-image models often carry complementary strengths: one may lead on preference-aligned aesthetics while another follows compositional instructions more faithfully. However, differences in their autoencoders and noise schedules make it difficult to transfer these strengths across models. In this paper, we present Poly-OPD, a framework that can consolidate complementary strengths of heterogeneous teachers into a single compact flow-matching student. To bridge the incompatible latent spaces of different teachers, Poly-OPD performs on-policy distillation through a pixel bridge. Each student-generated image is re-encoded by a selected teacher's encoder and refined from a noise level matched by magnitude under the teacher's noise schedule. The resulting target is further matched to the student in frozen DINOv2 space, enabling supervision across incompatible latent spaces. To retain complementary capabilities without cross-teacher interference, Poly-OPD uses a gradient compatibility diagnostic to organize its adapters: attention LoRA modules are shared across teachers, whereas feed-forward adapters remain teacher-specific. During distillation, a gap-aware curriculum devotes more training to compositional categories where the student still falls short of the teacher. As each gap narrows, training shifts toward categories with larger remaining gaps. By distilling FLUX.1-dev and Z-Image into a 2.5B SD3.5-Medium student, Poly-OPD improves GenEval from 67.3 to 73.3, surpassing both larger teachers, and raises DrawBench HPSv3 from 9.34 to 11.35, consolidating both strengths within a switchable model.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04349",
+        "external_id": "2608.04349"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04349",
+        "external_id": "2608.04349"
+      }
+    ],
+    "actors": [
+      "Siming Fu",
+      "Haojun Xu",
+      "Ruizhe He",
+      "Zheming Fu",
+      "Hualiang Wang",
+      "Jie Huang",
+      "Xiaoxiao Ma",
+      "Mingchen Zhong",
+      "Weihu Huang",
+      "Xiaoxuan He",
+      "Linjiang Huang",
+      "Si Liu"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795366Z",
+    "dedup_keys": [
+      "arxiv:2608.04349",
+      "title:capability distillation flow for heterogeneous models multi opd policy poly selectable teacher"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 8.798,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "e2edc4cca24419ba",
+    "kind": "paper",
+    "title": "Distill Where You Fail: Recovering Learning Signals of Negative RL-Groups from Adaptive Teacher Guidance",
+    "summary_en": "Reinforcement learning with verifiable rewards (RLVR) has become a standard paradigm for post-training large language models (LLMs). While Group Relative Policy Optimization (GRPO) is widely adopted, it suffers from sparse reward signals and loses gradients entirely when all responses within a group receive identical rewards. On-policy distillation (OPD) offers a natural remedy by providing dense, token-level supervision from a teacher model. However, naively combining GRPO with OPD leads to degraded performance, due to three underlying causes: not all samples benefit from distillation; fitting too quickly to the teacher undermines the exploratory capacity of RL; and OPD's advantages are asymmetric, suppressing most tokens. To address these challenges, we propose RSTG (Recovering Learning Signals via Adaptive Teacher Guidance), which applies distillation selectively and precisely where it matters most. At the sample level, OPD is restricted to negative zero-variance prompts with each sample weighted by the teacher's confidence score. At the token level, distillation targets only tokens with high student entropy or large teacher-student divergence. We further augment training with SFT on correct trajectories generated by the teacher model, injecting positive gradient signals where RL yields none. Experiments demonstrate that RSTG substantially outperforms naive GRPO+OPD by +4.02% on math and +3.05% on code.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.00782",
+        "external_id": "2608.00782"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.00782",
+        "external_id": "2608.00782"
+      }
+    ],
+    "actors": [
+      "Zhuowen Han",
+      "Jinwei Xiao",
+      "Zhengxi Lu",
+      "Renren Jin",
+      "Zhiyuan Yao",
+      "Yuxin Liu",
+      "Hongyan Hao",
+      "Yueqing Sun",
+      "Yu Yang",
+      "Qi GU",
+      "Xunliang Cai",
+      "Deyi Xiong"
+    ],
+    "published_at": "2026-08-01T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795547Z",
+    "dedup_keys": [
+      "arxiv:2608.00782",
+      "title:adaptive distill fail from groups guidance learning negative recovering signals teacher where you"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 6.798,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -7.747
+    }
+  },
+  {
+    "id": "3bf9acb3609b0395",
+    "kind": "paper",
+    "title": "Consistency-Driven Co-Evolution for Self-Supervised Cross-Representation Learning",
+    "summary_en": "As chart images, tabular data, and visualization code play increasingly important roles across diverse domains, cross-representation understanding across these modalities poses fundamental challenges for AI systems: the relationships across representations are inherently one-to-many, supervision is ambiguous and costly, and model optimization lacks a principled signal that is both direction-adaptive and representation-generalizable beyond task-specific objectives. We introduce CoCoEvolve to improve consistency across chart, table, and code representations. Instead of treating cross-representation mapping as a one-to-many problem, we define explicit one-to-one correspondences and optimize models using agreement between representations, without additional annotations. During training, CoCoEvolve@Train performs co-evolution across the chart-table-code cycle, while CoCoEvolve@Test applies the same consistency objective at inference time for test-time co-optimization. We also present CoCoEvolve@Eval, an evaluation suite covering all six cross-representation tasks. Across four benchmarks, CoCoEvolve improves performance in both training-time and test-time settings. Our project page: https://xhguo7.github.io/CoCoEvolve/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.04926",
+        "external_id": "2608.04926"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04926",
+        "external_id": "2608.04926"
+      }
+    ],
+    "actors": [
+      "Xuehang Guo",
+      "Pengyuan Li",
+      "Tom Hope",
+      "Tirthankar Ghosal",
+      "Manling Li",
+      "Qingyun Wang"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:53.795593Z",
+    "dedup_keys": [
+      "arxiv:2608.04926",
+      "title:consistency cross driven evolution for learning representation self supervised"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.253,
+    "score_breakdown": {
+      "is_daily_paper": 5.0,
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "3290adcff07fd2ff",
+    "kind": "paper",
+    "title": "BBOWP-Bench: Evaluating LLMs on Black-Box Optimization Word Problems",
+    "summary_en": "Formulating an optimization problem strongly affects the quality of the final solution, yet good formulations usually require substantial expertise. Recent studies have therefore examined how to automatically derive optimization problems from natural-language descriptions, but existing benchmarks focus on settings where objectives and constraints can be written explicitly as mathematical expressions. Many practically important problems are naturally treated as black-box optimization (BBO) problems, in which only objective values are observable, and the functional form is unavailable. In BBO, the search space design, a part of the problem formulation, and the selection of the optimization algorithm are crucial for problem-solving. Automating these processes with large language models (LLMs) is a significant challenge. This paper introduces Black-Box Optimization Word Problems (BBOWP), a novel problem setting in which a system must infer both a search space and an optimization algorithm from a natural-language description of a black-box optimization task. To support research on this setting, we establish the BBOWP Benchmark Suite (BBOWP-Bench), a dataset and evaluation framework for BBOWP. Each instance combines a natural-language problem description, an executable evaluation environment, and a human-designed baseline formulation, allowing evaluation of both search-space design and algorithm selection. Using this benchmark, we provide the first evaluation of LLMs and show that current LLMs are capable of selecting suitable algorithms based on the given evaluation budget. However, they sometimes struggle with search space design, particularly in identifying important variables and balancing their ranges when the problem description is less informative or the search space is highly problem-specific. Our code and dataset are available at https://github.com/shiralab/bbowp-bench.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02612",
+        "external_id": "2608.02612"
+      }
+    ],
+    "actors": [
+      "Yutaro Yamada",
+      "Kei Hiroshima",
+      "Nozomu Yoshinari",
+      "Kento Uchida",
+      "Shinichi Shirakawa"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.260544Z",
+    "dedup_keys": [
+      "arxiv:2608.02612",
+      "title:bbowp bench black box evaluating llms optimization problems word"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  },
+  {
+    "id": "15917c4d66590aed",
+    "kind": "paper",
+    "title": "Evaluating OpenAI's Privacy Filter: Cross-Lingual, Cross-Domain PII Detection Across 42 Benchmarks",
+    "summary_en": "We present the first independent, systematic evaluation of OpenAI's Privacy Filter (OPF), a 1.5B-parameter bidirectional PII detector, across 42 synthetic benchmarks spanning 22 languages and 5 domains. Zero-shot, OPF achieves F1=0.855 on AI4Privacy and 0.464 on SPY medical, outperforming Presidio (0.431, 0.273) and XLM-RoBERTa (0.269, 0.111) on PII-annotated benchmarks; on multilingual NER, XLM-RoBERTa leads OPF on all 13 Indic and non-Latin languages. GPT-4o leads on medical, legal, and financial PII (SPY: 0.643 avg, Gretel: 0.527), while OPF leads on structured synthetic PII (0.71 avg) and customer support (0.60). OPF degrades sharply when PII is embedded in narrative prose: F1=0.04--0.57 on NER benchmarks and collapse for non-Latin scripts (Arabic: 0.04, Cyrillic: 0.03). Error analysis shows OPF is strongest on structurally regular PII types (email: 0.78, phone: 0.76) and weakest on culturally variable ones (person: 0.40, address: 0.49), and is recall-biased on customer-support and medical/legal PII (P=0.31--0.54, R=0.70--0.85); global precision spans 0.31--0.86 across all domains.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02616",
+        "external_id": "2608.02616"
+      }
+    ],
+    "actors": [
+      "Rohith Uppala"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.260830Z",
+    "dedup_keys": [
+      "arxiv:2608.02616",
+      "title:across benchmarks cross cross detection domain evaluating filter lingual openai pii privacy"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  },
+  {
+    "id": "040869d9f50094eb",
+    "kind": "paper",
+    "title": "JudgeArena: A Unified Framework for Reproducible LLM-Judge Evaluation",
+    "summary_en": "LLM-as-a-judge evaluation has become a dominant paradigm for ranking language models, yet the ecosystem remains fragmented: most benchmarks ship their own code base, hardcode a specific closed-model judge, and support a single evaluation protocol. This fragmentation makes it difficult to study how design choices--the benchmark, the judge model, the prompt, the inference backend--affect the conclusions we draw about model quality. We introduce JudgeArena, an open-source framework that unifies major LLM-judge benchmarks (AlpacaEval, Arena-Hard, MT-Bench, and m-Arena-Hard) under a single interface with swappable judges and comprehensive metadata logging for increased transparency in reporting and reproducibility. It enables systematic studies of judge choices, as any model accessible via vLLM, llama.cpp, or OpenRouter can serve as both candidate and judge. Furthermore, JudgeArena ships with tuned judge configurations for open models that match or outperform closed-model judges, validated on human preference datasets in both English and multilingual settings, reducing the reliance on opaque closed models. Finally, by combining existing human annotations with LLM-judge evaluations of a target model, JudgeArena can simulate LMArena Elo scores with high accuracy offering a practical, open, and low-cost alternative to large-scale human annotation campaigns.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02620",
+        "external_id": "2608.02620"
+      }
+    ],
+    "actors": [
+      "Erlis Lushtaku",
+      "Bora Kargi",
+      "Ali Elganzory",
+      "Fabio Ferreira",
+      "Alejandro R. Salamanca",
+      "Julia Kreutzer",
+      "David Salinas"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.261037Z",
+    "dedup_keys": [
+      "arxiv:2608.02620",
+      "title:evaluation for framework judge judgearena llm reproducible unified"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  },
+  {
+    "id": "9a70bdbc6a70a54a",
+    "kind": "paper",
+    "title": "Knowing the Form, Not the Function: Automatically Auditing Answer--Authority Decoupling in Legal Benchmarks",
+    "summary_en": "Legal benchmarks typically score final answers even when models also state legal authority. We test whether answer correctness can serve as a proxy for authority grounding. Under ordinary reasoning prompts that did not request statutory citations, four LLMs spontaneously produced authority markers across 238 Taiwan bar-examination items. Because each item has a verified governing provision, we automatically audit answer correctness and authority grounding jointly. The two dimensions dissociate in both directions. In criminal law, 24.0--42.4\\% of valid responses were answer-correct but missed the gold authority, while 15.2--21.7\\% were answer-incorrect but cited it. A separate statutory-retrieval probe and a permissive citation-abstention intervention further show that answer and citation behavior can move separately at the output level. Because this mismatch arises without adversarial or inconsistency-inducing prompting, answer-only scoring treats naturally occurring gold-authority misses as complete benchmark successes. Because statutory authority is structurally extractable and externally verifiable, the failure can be measured automatically. A preliminary PRC civil-law extension also observes citation-unrequested authority marking, motivating a full cross-jurisdictional joint audit. We therefore propose joint answer--authority evaluation for statute-grounded legal benchmarks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02621",
+        "external_id": "2608.02621"
+      }
+    ],
+    "actors": [
+      "Hsien-Jyh Liao"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.261129Z",
+    "dedup_keys": [
+      "arxiv:2608.02621",
+      "title:answer auditing authority automatically benchmarks decoupling form function knowing legal not the the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  },
+  {
+    "id": "3cfb8e6b27f3418d",
+    "kind": "paper",
+    "title": "MemArena: An Ego-Centric Benchmark for On-Device Agentic Personal Memory Assistants at Scale",
+    "summary_en": "Edge-deployed personal memory assistants must handle private interpersonal conversations on-device with open-weight models. Yet, existing memory benchmarks often under-test the combination of activity-dense interaction, ego-centric perspective, and coherent multi-session worlds. MemArena fills these gaps with a single-world conversational benchmark built with its MASim agent simulator, for 50 agents over 15 days (10.3M dialog-text tokens, 24.1K text-only ego-observed tokens/agent/day). With the interaction history, it co-generates ground truth over six recall, reasoning, and trustworthiness evaluation dimensions. We evaluate five open-weight readers with Vanilla context, BM25-RAG, Oracle retrieval, Memobase, and MemSearch as memory backends. Three results stand out: (1) Memory-backend choice matters more for content accuracy: At Qwen3-0.6B, Memobase-to-MemSearch gains +32.5/+19.2 pp, exceeding MemSearch reader scaling (+10.6/+6.8 pp). (2) Permission-aware access fails universally, with Oracle leaking heavily and other backends too timid to disclose. (3) Search latency bites only at very small reader: on a Spark GB10 edge node, memory-search adds a moderate and fixed 87/7/48 ms (BM25-RAG/Memobase/MemSearch) that composes a small part of TTFT for most reader-backend combinations. Code, the MASim simulator, and the MemArena-L benchmark will be released upon acceptance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02613",
+        "external_id": "2608.02613"
+      }
+    ],
+    "actors": [
+      "Jiadong Zhang",
+      "Xiaosong Ma"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.260639Z",
+    "dedup_keys": [
+      "arxiv:2608.02613",
+      "title:agentic assistants benchmark centric device ego for memarena memory personal scale"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  },
+  {
+    "id": "bd522efe0d3b6613",
+    "kind": "paper",
+    "title": "OncoTriad-QA: A Patient-Level Radiology-Pathology-Genomics Benchmark for Pan-Cancer Reasoning",
+    "summary_en": "Cancer diagnosis and characterization require integrating complementary evidence from radiology, pathology, genomics, and clinical metadata. However, most medical large language model (LLM) and vision-language model (VLM) benchmarks focus on isolated modalities or narrow image-text tasks, leaving patient-level oncology assessment across multiple evidence streams largely untested. We introduce OncoTriad-QA, a patient-level radiology-pathology-genomics benchmark for pan-cancer question answering. OncoTriad-QA contains 86.1k semantic questions across 9,281 TCGA patient cases from 32 cancer cohorts, aligning CT/MRI radiology, whole-slide histopathology, somatic mutations, copy-number alterations, DNA methylation, bulk RNA-seq, and clinical metadata. Case-specific annotations are constructed through a source-grounded LLM-assisted pipeline using curated labels, diagnostic reports, molecular profiles, and modality-derived evidence as primary sources of truth, with automated consistency checks and clinician review. We also introduce OncoVLM, a reference multimodal model that maps modality-native radiology, pathology, DNA methylation, and RNA-seq evidence into an LLM interface through learned projectors. Experiments show that existing general-purpose and medical LLMs remain limited on comprehensive pan-cancer QA, especially when questions require integrating imaging findings, tumor morphology, and molecular evidence. After fine-tuning on OncoTriad-QA, OncoVLM exceeds MedGemma-4B by an average of 10.7 points when using MCQ accuracy and BERTScore-F1, with consistent gains across multiple-choice and open-ended questions under radiology-only, pathology-only, and all-available settings. These results demonstrate the benchmark's value for training and evaluating models for integrated cancer question answering.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02615",
+        "external_id": "2608.02615"
+      }
+    ],
+    "actors": [
+      "Ahnaf Munir",
+      "Dannong Wang",
+      "Michael W. McDonald",
+      "Mubarak Shah",
+      "Pegah Khosravi",
+      "Yu Tian"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.260749Z",
+    "dedup_keys": [
+      "arxiv:2608.02615",
+      "title:benchmark cancer for genomics level oncotriad pan pathology patient radiology reasoning"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  },
+  {
+    "id": "3d7b1595c845a3ed",
+    "kind": "paper",
+    "title": "Preferred, Not Safer: Pairwise Preference Is a Poor Proxy for Clinical Safety",
+    "summary_en": "We evaluate whether clinician pairwise preferences provide a reliable signal of clinical safety in large language model (LLM) evaluation using expert feedback from MOOVE (Massive Open Online Validation and Evaluation), a clinician-led platform collecting blinded pairwise preferences alongside multi-criterion rubric ratings. Clinicians assign scores on a discrete $[-2, +2]$ scale, where negative values indicate clinically unsafe or misleading content. Using 26{,}804 pairwise judgments across outputs from 13 LLMs, contributed by more than 736 clinicians across 28+ countries, we find that clinician preference is a poor proxy for safety-critical performance. Models ranking highly under pairwise preference can still exhibit substantial rates of clinically meaningful failures ($\\leq -1$) on dimensions such as \\emph{Harmlessness} and \\emph{Accuracy}. These failures are unevenly distributed across specialties, creating domain-specific ``no-go zones'' not visible in aggregate rankings or single-number leaderboards. We further analyze contributing factors including prompt length, refusal and escalation behavior, and the relative contributions of safety-critical versus surface-level features. A substantial fraction of preference votes carry no positive safety signal, while feature decomposition shows that surface-level characteristics explain slightly more preference variation than safety-critical rubric differences. Finally, we introduce a clinically adjusted preference ranking combining pairwise preference with rubric-derived feedback, producing a more safety-aware ordering than raw Bradley--Terry strength alone. Our findings support evaluation practices that separate preference from safety, report safety-critical failure rates directly, and incorporate clinically grounded adjustments when ranking LLMs for clinical decision making.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02617",
+        "external_id": "2608.02617"
+      }
+    ],
+    "actors": [
+      "Fay Elhassan",
+      "David Sasu",
+      "Alexandra Kulinkina",
+      "Lars Henning Klein",
+      "Mary-Anne Hartley"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.260950Z",
+    "dedup_keys": [
+      "arxiv:2608.02617",
+      "title:clinical for not pairwise poor preference preferred proxy safer safety"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  },
+  {
+    "id": "8fe732e1fcb8e2b6",
+    "kind": "paper",
+    "title": "TabletCraft: Bridging a 4,000-Year Cultural Gap with Bidirectional Akkadian NMT and Cuneiform Rendering",
+    "summary_en": "Half a million cuneiform clay tablets survive in museums worldwide, yet modern users can neither read nor write in the world's oldest writing system, leaving a 4,000-year cultural barrier that existing NLP tools have only partially addressed. Prior work enables one-way, scholar-oriented translation from Akkadian to English, but offers no path in the reverse direction: non-specialist users cannot compose new content in cuneiform, and therefore remain passive consumers of ancient culture rather than active participants. We present TabletCraft, the first open-source system that enables bidirectional interaction with Mesopotamian writing. Users can read ancient tablets (Akkadian to English) and compose new messages as cuneiform clay tablets (English to Akkadian to cuneiform to rendered tablet). The system integrates a ByT5-based translation model trained on 116K bidirectional samples, a cuneiform sign converter with 14,240 mappings (95.3% coverage), and a visual tablet renderer, packaged as a pip-installable toolkit with CLI and web demo. On the held-out Akkademia validation split (2,812 samples), we report 49.1 BLEU for Akkadian-to-English and 48.5 BLEU for English-to-Akkadian, the first published quantitative result in the reverse direction.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02609",
+        "external_id": "2608.02609"
+      }
+    ],
+    "actors": [
+      "Zhaohui Wang"
+    ],
+    "published_at": "2026-08-05T04:00:00Z",
+    "first_seen_at": "2026-08-06T03:56:54.260393Z",
+    "dedup_keys": [
+      "arxiv:2608.02609",
+      "title:000 akkadian and bidirectional bridging cultural cuneiform gap nmt rendering tabletcraft with year"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.503,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.497
+    }
+  }
+]
