@@ -1,0 +1,1692 @@
+[
+  {
+    "id": "3ac3f7908144e854",
+    "kind": "model",
+    "title": "Akahsizrr/fuse-1-Lite",
+    "summary_en": "text-generation, transformers, fuse3, mixture-of-experts, MoE, coding, python",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Akahsizrr/fuse-1-Lite",
+        "external_id": "Akahsizrr/fuse-1-Lite"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+        "external_id": "LiquidAI/LFM2.5-2.6B"
+      }
+    ],
+    "actors": [
+      "Akahsizrr"
+    ],
+    "published_at": "2026-08-05T14:51:09Z",
+    "first_seen_at": "2026-08-07T03:42:36.626517Z",
+    "dedup_keys": [
+      "hf:akahsizrr/fuse-1-lite"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 54,
+      "hf_downloads": 0,
+      "hf_trending_score": 54.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 41.762,
+    "score_breakdown": {
+      "hf_trending": 24.044,
+      "hf_likes": 12.022,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.304
+    }
+  },
+  {
+    "id": "7311e1cade90bb8f",
+    "kind": "model",
+    "title": "badtheorylabs/BTL-4",
+    "summary_en": "text-generation, transformers, qwen3_5_moe, image-text-to-text, agentic, tool-use, code, reasoning",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/badtheorylabs/BTL-4",
+        "external_id": "badtheorylabs/BTL-4"
+      }
+    ],
+    "actors": [
+      "badtheorylabs"
+    ],
+    "published_at": "2026-08-05T19:56:05Z",
+    "first_seen_at": "2026-08-07T03:42:36.626557Z",
+    "dedup_keys": [
+      "hf:badtheorylabs/btl-4"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 51,
+      "hf_downloads": 0,
+      "hf_trending_score": 51.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 41.575,
+    "score_breakdown": {
+      "hf_trending": 23.707,
+      "hf_likes": 11.854,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -1.986
+    }
+  },
+  {
+    "id": "7171c570eb56edb1",
+    "kind": "paper",
+    "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+    "summary_en": "Reinforcement learning (RL) with verifiable rewards constructs trajectory-level advantage estimates, yet it often fails to credit the few pivotal decisions that determine outcomes in long-horizon, multi-turn agentic tasks. Recent work introduces privileged self-distillation for credit assignment, providing denser supervision, but it remains unclear how such local signals should represent sequential credit. We propose AgentOPSD, a critic-free, recursive method for turn-level credit assignment in agentic reinforcement learning. AgentOPSD aggregates token-level teacher-student log-probability gaps into turn-level evidence and recursively updates a Bayesian belief state in log-odds space. This yields a principled reweighting scheme that converts sparse outcome supervision into turn-level credit signals and identifies pivotal turns through the marginal belief revision between consecutive states. The method is fully compatible with standard policy optimization and requires neither an additional critic nor extra rollouts. We evaluate AgentOPSD on ALFWorld, WebShop, and Search-QA using Qwen2.5 models at two scales (3B and 7B). AgentOPSD outperforms GRPO and strong self-distillation baselines, achieving 89.1% success on ALFWorld with Qwen2.5-7B. Ablation studies attribute the gains to turn-level aggregation and history-dependent recursive belief updates.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05987",
+        "external_id": "2608.05987"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05987",
+        "external_id": "2608.05987"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ZethWang/AgentOPSD",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zi-Han Wang",
+      "Zhengxi Lu",
+      "Zhiyuan Yao",
+      "Jinyang Wu",
+      "Jie Wu",
+      "Zhengzhou Cai",
+      "Yueqing Sun",
+      "Ziang Ye",
+      "Linji Hao",
+      "Qi Gu",
+      "Xunliang Cai",
+      "Yongliang Shen",
+      "Yujiu Yang"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622222Z",
+    "dedup_keys": [
+      "arxiv:2608.05987",
+      "title:agentic agentopsd distillation for learning recursive reinforcement self",
+      "github:zethwang/agentopsd"
+    ],
+    "signals": {
+      "hf_upvotes": 29,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.675,
+    "score_breakdown": {
+      "hf_upvotes": 27.21,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "a80732680a54c919",
+    "kind": "paper",
+    "title": "Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval",
+    "summary_en": "Unified multimodal retrieval aims to identify candidates that satisfy complex user intent expressed through heterogeneous inputs. Although Large Vision-Language Model (LVLM)-based retrievers are efficient and scalable, directly encoding raw multimodal inputs often misses fine-grained discriminative cues, leading to confusion among semantically similar candidates. Recent methods mitigate this limitation by generating Chain-of-Thought (CoT) rationales to enrich the query representation. However, such reasoning is typically derived from the query alone: it explains what the query describes, but not what the retriever misunderstands. We argue that effective retrieval reasoning should instead be conditioned on retrieval feedback. Based on this insight, we introduce UniME-R1, an embedder-adviser framework that learns to reason over initially retrieved candidates and generate Retrieval-Centric Chain-of-Thought (RC-CoT). The adviser analyzes candidates individually to identify the discriminative cues confused by the embedder. If the target appears in the initial top-k set, UniME-R1 directly reranks the candidates; otherwise, it generates RC-CoT to refine the retrieval direction and performs full-corpus re-retrieval with a dual-mode embedder. To train the framework, we mine hard negatives to simulate realistic retrieval failures, jointly optimize direct retrieval and RC-CoT-augmented retrieval, and align the adviser with retrieval outcomes through supervised learning and retrieval-oriented reinforcement learning. Extensive experiments on MMEB-V2 and a diverse set of general multimodal retrieval benchmarks demonstrate that UniME-R1 consistently improves retrieval performance over strong baselines.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.06060",
+        "external_id": "2608.06060"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.06060",
+        "external_id": "2608.06060"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/deepglint/UniME-R1",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zelong Sun",
+      "Jun Wang",
+      "Kaicheng Yang",
+      "Tiancheng Gu",
+      "Ziyong Feng",
+      "Zhiwu Lu"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622369Z",
+    "dedup_keys": [
+      "arxiv:2608.06060",
+      "title:centric cot failures for from hard learning multimodal negatives retrieval retrieval unified via",
+      "github:deepglint/unime-r1"
+    ],
+    "signals": {
+      "hf_upvotes": 21,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.769,
+    "score_breakdown": {
+      "hf_upvotes": 24.728,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "be26529398c1755b",
+    "kind": "model",
+    "title": "internlm/Intern-S2-Mobius",
+    "summary_en": "image-text-to-text, transformers, interns2_mobius, conversational, custom_code",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/internlm/Intern-S2-Mobius",
+        "external_id": "internlm/Intern-S2-Mobius"
+      }
+    ],
+    "actors": [
+      "internlm"
+    ],
+    "published_at": "2026-07-29T13:07:51Z",
+    "first_seen_at": "2026-08-07T03:42:36.626888Z",
+    "dedup_keys": [
+      "hf:internlm/intern-s2-mobius"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 35,
+      "hf_downloads": 23,
+      "hf_trending_score": 35.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 33.697,
+    "score_breakdown": {
+      "hf_trending": 21.501,
+      "hf_downloads": 6.356,
+      "hf_likes": 10.751,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -12.911
+    }
+  },
+  {
+    "id": "44b873a9ab9701f1",
+    "kind": "paper",
+    "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
+    "summary_en": "Training large language model agents for long-horizon tool use typically relies on interactions with real or synthesized executable environments, whose construction and verification are costly, or on external simulators that are difficult to ground. We introduce EnvACE, an agentic reinforcement learning method that replaces external environment interaction during training with world rehearsal. The policy alternates between acting and rehearsal: it first generates a tool call, then plays the role of the environment to produce the response induced by that action, and conditions subsequent decisions on the rehearsed response. Both roles are jointly optimized end-to-end using task-success rewards. Through world rehearsal, the policy internalizes the relationship between actions and their environment responses in its parameters, yielding an agent world model that directly supports decision making. Across BFCL-v4, tau^2-Bench, VitaBench, and FinMCP-Bench, EnvACE achieves strong and transferable performance, outperforming environment-scaling baselines in the overall evaluation. Controlled studies further show that world rehearsal consistently improves policy learning across model scales. At test time, the internalized world model enables private rehearsal before committed execution, yielding further gains under a moderate rehearsal budget without additional external interaction. Our findings establish world rehearsal as a new path toward scaling LLM agent training beyond the constraints of external environments. Our code is publicly available at https://github.com/Within-yao/EnvACE.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "mcp",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.06197",
+        "external_id": "2608.06197"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.06197",
+        "external_id": "2608.06197"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Within-yao/EnvACE",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zishan Xu",
+      "Zhiyuan Yao",
+      "Yuxin Chen",
+      "Yifu Guo",
+      "Zhengxi Lu",
+      "Yuquan Lu",
+      "Jinyang Huang",
+      "Yan Xu",
+      "Yasheng Wang",
+      "Weinan Zhang",
+      "Xingshan Zeng",
+      "Weiwen Liu"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622489Z",
+    "dedup_keys": [
+      "arxiv:2608.06197",
+      "title:agentic dynamics envace environment for internalizing learning rehearsal reinforcement via world",
+      "github:within-yao/envace"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.92,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "82b4a045cd15fad3",
+    "kind": "release",
+    "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+    "summary_en": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-06T10:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:37.000939Z",
+    "dedup_keys": [
+      "url:openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "title:access and chatgpt expanding for free gpt gpt improving luna sol users"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.893,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.107
+    }
+  },
+  {
+    "id": "b977b60f806779ba",
+    "kind": "paper",
+    "title": "ChronoVision: Temporal Reasoning via Latent State Reconstruction",
+    "summary_en": "Multimodal large language models excel at passive perception but struggle with complex visual cognitive tasks requiring multi-step temporal reasoning. This degradation largely stems from the inherent ambiguity of language-based reasoning, which often fails to accurately articulate continuous visual transformations. To address this, we propose ChronoVision, a multimodal framework designed to align visual logic with latent imagery. During supervised fine-tuning, a Reconstructive Visual Head predicts the latent representation of the final transformed state, while an ROI Attention Locating module focuses the model on key visual evidence via semantic span queries. In post-training, we apply reinforcement learning with an implicit process grounding mechanism, guided by a composite reward function that evaluates outcome correctness, latent process alignment, and unsupervised visual focus. Furthermore, we introduce Vbvr-VQA, a novel dataset that evaluates temporal tracking by reformulating video reasoning into a strict image-ordering task. Experiments demonstrate that ChronoVision achieves state-of-the-art performance on Vbvr-VQA with 74.8% in-domain and 71.6% out-of-domain accuracy, alongside a strong 55.0% accuracy on IntPhys2, a highly challenging cross-domain benchmark.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05631",
+        "external_id": "2608.05631"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05631",
+        "external_id": "2608.05631"
+      }
+    ],
+    "actors": [
+      "Yifan Shen",
+      "Jian Xu",
+      "Boyi Li",
+      "Yuner Zhang",
+      "Tianjiao Yu",
+      "Bingxuan Li",
+      "Houze Yang",
+      "Rushi Wang",
+      "Xu Cao"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622335Z",
+    "dedup_keys": [
+      "arxiv:2608.05631",
+      "title:chronovision latent reasoning reconstruction state temporal via"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.352,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "d364515ade2c03b5",
+    "kind": "release",
+    "title": "From asking to doing: How the world is putting ChatGPT to work",
+    "summary_en": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:37.001075Z",
+    "dedup_keys": [
+      "url:openai.com/index/how-the-world-is-putting-chatgpt-to-work",
+      "title:asking chatgpt doing from how putting the work world"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.268,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "974df5aef8dc371d",
+    "kind": "model",
+    "title": "TenStrip/10Eros-Max",
+    "summary_en": "image-text-to-video, text-to-video, image-to-video",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/TenStrip/10Eros-Max",
+        "external_id": "TenStrip/10Eros-Max"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "TenStrip"
+    ],
+    "published_at": "2026-08-04T03:15:02Z",
+    "first_seen_at": "2026-08-07T03:42:36.626735Z",
+    "dedup_keys": [
+      "hf:tenstrip/10eros-max"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 37,
+      "hf_downloads": 0,
+      "hf_trending_score": 37.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.21,
+    "score_breakdown": {
+      "hf_trending": 21.826,
+      "hf_likes": 10.913,
+      "topic_match": 4.0,
+      "age_decay": -4.529
+    }
+  },
+  {
+    "id": "8e2a24fa17a14cc5",
+    "kind": "paper",
+    "title": "WorldClaw: Agentic 3D Open-World Generation at Scale",
+    "summary_en": "Generating large-scale, freely explorable 3D worlds from open-ended text remains challenging because a system must jointly maintain global spatial coherence, rich local content, and explicit assets suitable for downstream editing and reuse. We present WorldClaw, a fully agentic, coarse-to-fine framework for open-world 3D scene generation. Planning agents translate a text prompt into a structured specification of regions, terrain, assets, materials, and spatial relations. WorldClaw then builds a globally coherent terrain foundation from semantic layouts, reusable assets, generative or procedural materials, and a region-aware height field. For detail-demanding regions, it generates terrain-conditioned compositions, reconstructs editable textured meshes, and recovers their placement on the terrain; render-based agents further refine terrain, objects, appearance, and contacts. Across diverse open-world prompts, WorldClaw produces large-scale scenes with coherent spatial organization, visually compelling local content, and editable instance-level assets while preserving a consistent global terrain structure.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05248",
+        "external_id": "2608.05248"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05248",
+        "external_id": "2608.05248"
+      }
+    ],
+    "actors": [
+      "Chunchao Guo",
+      "Jinpeng Li",
+      "Yang Li",
+      "Zilong Huang"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622306Z",
+    "dedup_keys": [
+      "arxiv:2608.05248",
+      "title:agentic generation open scale world worldclaw"
+    ],
+    "signals": {
+      "hf_upvotes": 24,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.519,
+    "score_breakdown": {
+      "hf_upvotes": 25.751,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.232
+    }
+  },
+  {
+    "id": "32732a3af253ed76",
+    "kind": "paper",
+    "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+    "summary_en": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not reveal how a task behaves relative to a given solver setting. In this paper, we present CalibForge, an autonomous terminal-task synthesis system that uses verified solver behavior to revise candidate tasks through adversarial solver calibration. Multi-solver calibration targets disagreement within a heterogeneous solver pool, whereas contrastive solver calibration targets a designated strong-pass/weak-fail relation; both operationalize a solver-relative learnable zone anchored in demonstrated solvability. Using CalibForge, we construct 5,431 calibrated terminal tasks. Our ablations show that both strategies yield more effective supervision than authoring and validation alone or ordinary single-solver feedback. Models trained on the full collection achieve 32.58% and 47.57% on Terminal-Bench 2.0. The largest improvements over the corresponding base model reach 24.71 percentage points on Terminal-Bench 2.0, 27.68 points on SWE-bench Pro, and 30.04 points on Doc2Repo. Together, these results support solver-relative learnability as a practical target for constructing effective and transferable agent training data.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.06352",
+        "external_id": "2608.06352"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.06352",
+        "external_id": "2608.06352"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AweAI-Team/CalibForge",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Fanzhe Meng",
+      "Guoxin Chen",
+      "Jiale Zhao",
+      "Shuang Sun",
+      "Zhiyu Lin",
+      "Wayne Xin Zhao",
+      "Ruihua Song",
+      "Ji-Rong Wen",
+      "Kai Jia"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622540Z",
+    "dedup_keys": [
+      "arxiv:2608.06352",
+      "title:adversarial calibforge calibration for learnable scaling solver tasks terminal",
+      "github:aweai-team/calibforge"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.123,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "027344aec14eb1f9",
+    "kind": "paper",
+    "title": "HarnessOpt-Bench: Evaluating LLMs at Harness Optimization",
+    "summary_en": "As LLMs are increasingly deployed within agentic systems, their capabilities depend not only on the model weights but also on the harness: the prompts, tools, control flow, memory, and orchestration code surrounding them. This makes automated harness optimization -- the iterative and evaluation-guided improvement of a harness by an AI system -- both an important route to improving AI systems and a demanding capability for AI systems themselves. Yet the community lacks a common protocol for measuring how well frontier LLMs perform at this task. We introduce HarnessOpt-Bench, a benchmark for end-to-end harness optimization under expensive and stochastic evaluation. An optimizer, an LLM paired with a coding harness, receives a target agent's seed harness, graded evaluation feedback, and a fixed target-evaluation budget. It edits the harness and nominates a final candidate, which is scored by its normalized gain over the seed on a held-out test partition that remains inaccessible throughout search. A trusted execution environment enforces the evaluation boundary, meters target-agent resource use, and preserves candidate versions for audit. We evaluate 5 frontier LLMs as optimizers both under a shared coding harness and under their native harnesses across 4 downstream tasks, over 111 scored runs. Experiment results show that optimizer models separate more than the coding harnesses they act through, native harnesses are not consistently superior, and gains vary substantially across tasks and seed regimes. These results establish harness optimization as a measurable and discriminative capability with large space for improvement.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.06301",
+        "external_id": "2608.06301"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.06301",
+        "external_id": "2608.06301"
+      }
+    ],
+    "actors": [
+      "Varun Ursekar",
+      "Apaar Shanker",
+      "Yash Maurya",
+      "Shehab Yasser",
+      "Vijay S. Kalmath",
+      "Veronica Chatrath",
+      "Yuan Xue"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622412Z",
+    "dedup_keys": [
+      "arxiv:2608.06301",
+      "title:bench evaluating harness harnessopt llms optimization"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.934,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "360dcda2be44faec",
+    "kind": "paper",
+    "title": "On-Policy Delta Distillation for Multilingual Math Reasoning",
+    "summary_en": "On-Policy Distillation (OPD) is emerging as a promising alternative to reinforcement learning for LLM post-training, yet its effectiveness in multilingual settings remains underexplored. We study OPD and its advanced variant, On-Policy Delta Distillation (OPD^2), for mathematical reasoning in English, Korean, and Japanese. OPD^2 improves OPD by using the probability gap between a post-trained teacher and its base model as the learning signal. Experiments with Qwen3 show that OPD^2 consistently outperforms the original OPD, with particularly strong improvements in Korean and Japanese, and generally narrows the English-Korean performance gap. We further find that English-only OPD can also increase performance for Korean and Japanese, but often shifts the responses toward English, highlighting the importance of multilingual data to preserving target-language responses.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05802",
+        "external_id": "2608.05802"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05802",
+        "external_id": "2608.05802"
+      }
+    ],
+    "actors": [
+      "Byeongho Heo",
+      "Jaehui Hwang",
+      "Sangdoo Yun",
+      "Dongyoon Han"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622390Z",
+    "dedup_keys": [
+      "arxiv:2608.05802",
+      "title:delta distillation for math multilingual policy reasoning"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.934,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "68519a22cb6dcbbe",
+    "kind": "release",
+    "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-08-06T15:06:15Z",
+    "first_seen_at": "2026-08-07T03:42:37.489175Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones",
+      "title:achieves breakthrough cyclones forecasting model weathernext"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.212,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.788
+    }
+  },
+  {
+    "id": "cea9dc6425df97e5",
+    "kind": "paper",
+    "title": "DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation",
+    "summary_en": "Vision-Language-Action (VLA) models have become a powerful paradigm for robot manipulation, but training a single generalist policy for heterogeneous robot embodiments remains an open problem. Existing methods have two main limitations. First, they underuse dynamics priors shared across diverse visual and interaction data, limiting cross-embodiment transfer. Second, they require extensive manual preprocessing to convert embodiment-specific actions into a common format. To overcome these limitations, we propose DyPES-VLA, a cross-embodiment VLA that learns shared Dynamics Priors and Embodiment-Specific control. First, we learn shared dynamics priors by training the vision-language model (VLM) with a future-prediction objective on cross-embodiment data, driving the shared query representation to capture object motion, contact, and interaction-induced scene changes. Second, an embodiment-specific Mixture-of-Experts (MoE) action head translates these shared dynamics priors into executable controls directly in each embodiment's native action space, without manually pre-aligning heterogeneous actions into a common format. This head shares attention layers to capture common temporal action structures, while its embodiment-specific feed-forward experts resolve the unique kinematic constraints and control semantics of distinct embodiments. As a generalist policy, our \\ourmethod achieves state-of-the-art performance across simulation and real-world evaluations, reaching 98.0% success on LIBERO, 59.25% on RoboCasa-GR1, and 89.02% on RoboTwin~2.0.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.06374",
+        "external_id": "2608.06374"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.06374",
+        "external_id": "2608.06374"
+      }
+    ],
+    "actors": [
+      "Junfeng Li",
+      "Junjie He",
+      "Zhide Zhong",
+      "Yangyang Zheng",
+      "Pingyue Sheng",
+      "Jiayu Dong",
+      "Ruixin Li",
+      "Haodong Yan",
+      "Jiaguan Zhu",
+      "Tianran Zhang",
+      "Runze Yu",
+      "Wen Chen",
+      "Liuqing Yang",
+      "Yuxiang Gao",
+      "Haoang Li"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622462Z",
+    "dedup_keys": [
+      "arxiv:2608.06374",
+      "title:and control cross dynamics dypes embodiment embodiment for learning manipulation priors shared specific vla"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.932,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "b10a116e3c69a236",
+    "kind": "paper",
+    "title": "GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?",
+    "summary_en": "Spatial intelligence is fundamental to embodied agents, yet existing benchmarks focus on local spatial perception from single or few viewpoints, overlooking global spatial awareness over continuous, long-horizon visual streams. To address this limitation, we introduce the Global-Spatial-Temporal Benchmark (GST-Bench), a VQA benchmark for global spatial intelligence in video understanding, comprising human-verified questions derived from 6,790 minutes of synthetically generated video. It requires models to perform accurate spatial inference from novel viewpoints unseen in the input video and to map egocentric observations onto global top-down images. A comprehensive evaluation of 22 state-of-the-art VLMs exposes a striking gap between models and humans: the strongest zero-shot model attains only 42.68, far below the human score of 79.08. To probe the cause of this gap, we construct GST-Bench-Local and find that models, despite strong local spatial understanding under the same task formulation, still fail to consolidate long-horizon observations into a globally consistent scene representation. We further provide GST-Train, a dataset for global spatial reasoning, as a complementary resource to facilitate future research on this challenge.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05747",
+        "external_id": "2608.05747"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05747",
+        "external_id": "2608.05747"
+      }
+    ],
+    "actors": [
+      "Qifeng Zhang",
+      "Kaixiang Huang",
+      "Heng Dong",
+      "Huang Fang",
+      "Junting Chen",
+      "Junjie Zhu",
+      "Yonghang Chen",
+      "Zhiyu Zhang",
+      "Wei Li"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622436Z",
+    "dedup_keys": [
+      "arxiv:2608.05747",
+      "title:awareness bench can develop from global gst spatial video vlms"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.932,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.732
+    }
+  },
+  {
+    "id": "86aad06dccc60f91",
+    "kind": "model",
+    "title": "joeygambino/MiniMax-H3-Multishot-Workflow",
+    "summary_en": "text-to-video, comfyui, workflow, video, audio, minimax-h3",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/joeygambino/MiniMax-H3-Multishot-Workflow",
+        "external_id": "joeygambino/MiniMax-H3-Multishot-Workflow"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "joeygambino"
+    ],
+    "published_at": "2026-08-04T11:48:41Z",
+    "first_seen_at": "2026-08-07T03:42:36.626835Z",
+    "dedup_keys": [
+      "hf:joeygambino/minimax-h3-multishot-workflow"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 38,
+      "hf_downloads": 0,
+      "hf_trending_score": 36.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.663,
+    "score_breakdown": {
+      "hf_trending": 21.666,
+      "hf_likes": 10.991,
+      "age_decay": -3.994
+    }
+  },
+  {
+    "id": "2fd0996f8fe7e947",
+    "kind": "release",
+    "title": "Working with the American Psychological Association on youth mental health and AI",
+    "summary_en": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-06T06:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:37.001028Z",
+    "dedup_keys": [
+      "url:openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "title:american and association health mental psychological the with working youth"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.643,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.357
+    }
+  },
+  {
+    "id": "00a0964bfb3a18df",
+    "kind": "paper",
+    "title": "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
+    "summary_en": "Vision-language-action (VLA) models often treat main-view and wrist-view observations as parallel visual inputs, overlooking their distinct roles in robot manipulation. Fine-grained manipulation, however, benefits from anticipating how wrist-local interactions may evolve under the global task context. To address this limitation, we present World-to-Wrist VLA (W2-VLA), a VLA model for fine-grained robot manipulation with task-conditioned future wrist modeling. Given current multi-view observations and a task instruction, W2-VLA contextualizes a set of latent modeling tokens as a compact interface between the vision-language model and the wrist predictor. Conditioned on this interface and the observed wrist history, the predictor forecasts future wrist latents, which are transformed into future-aware context for action prediction. In addition, we introduce W2-CoT, a synthesis pipeline that produces structured annotations describing manipulation progress, physical transition cues, and wrist-local evidence. These annotations provide auxiliary supervision that shapes the task-conditioned latent interface. Experiments on LIBERO, RoboTwin 2.0, and real-world manipulation tasks demonstrate improved fine-grained and contact-sensitive manipulation across both single-arm and bimanual settings, while maintaining action-generation rates above 80 Hz.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05369",
+        "external_id": "2608.05369"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05369",
+        "external_id": "2608.05369"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yyyyu120/W2-VLA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuhao Pan",
+      "Haosong Peng",
+      "Zhengshen Zhang",
+      "Zhengyang Yan",
+      "Yalun Dai",
+      "Fushuo Huo",
+      "Chujie Wang",
+      "Tianyu Qi",
+      "Xiucheng Wang",
+      "Nan Cheng",
+      "Wenchao Xu"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622516Z",
+    "dedup_keys": [
+      "arxiv:2608.05369",
+      "title:conditioned fine for future grained manipulation modeling robot task world wrist wrist",
+      "github:yyyyu120/w2-vla"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.951,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.232
+    }
+  },
+  {
+    "id": "495957fb2f7bcd9d",
+    "kind": "paper",
+    "title": "SmartMage: Dynamic Modality Orchestration for 3D Scene Understanding",
+    "summary_en": "Understanding 3D scenes is fundamental to embodied intelligence, requiring joint reasoning over heterogeneous information from multiple modalities, including visual and geometric cues. However, the relevance of these modalities often varies across queries. Existing Multimodal Large Language Models (MLLMs) typically rely on fixed modality combinations, overlooking query-dependent modality needs. Such a rigid design can introduce semantic noise from irrelevant modalities while underutilizing more informative ones, leading to wasted computation and diluted reasoning. To address these challenges, this paper proposes SmartMage, a unified MLLM that dynamically orchestrates heterogeneous modalities for semantic-aware 3D scene understanding. Specifically, SmartMage incorporates: (1) a Semantic-guided Modality Adaptive RouTng (SMART) module that selects task-relevant modalities using semantic priors, text-modality alignment, and modality quality; and (2) a Modality-Aware Gating Expert (MAGE) module that leverages modality priors to guide expert activation, fostering adaptive specialization in multimodal reasoning. Empirically, SmartMage achieves state-of-the-art performance across five 3D scene understanding benchmarks, and attains competitive results on RGB-only video understanding benchmarks. In our diagnostic benchmark ScanFacet, tasks are divided into fine-grained semantic categories, enabling analysis of modality combinations preferred by each semantic type. The observed modality-semantic patterns provide further evidence of SmartMage's effectiveness. Project page: https://yuecheong.github.io/SmartMage/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.05137",
+        "external_id": "2608.05137"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.05137",
+        "external_id": "2608.05137"
+      }
+    ],
+    "actors": [
+      "Yue Zhang",
+      "Yingzhao Jian",
+      "Yunqiu Xu",
+      "Xiaoxiao Sun",
+      "Hehe Fan"
+    ],
+    "published_at": "2026-08-05T00:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.622561Z",
+    "dedup_keys": [
+      "arxiv:2608.05137",
+      "title:dynamic for modality orchestration scene smartmage understanding"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 18.644,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.232
+    }
+  },
+  {
+    "id": "e3e2b2616af319f5",
+    "kind": "paper",
+    "title": "Large Language Models for Low-Resource Languages: A Conceptual Framework for an Electronic Explanatory Dictionary of the Tajik Language",
+    "summary_en": "This paper presents a conceptual framework for developing an electronic explanatory dictionary of the Tajik language using large language models (LLMs). The relevance of the work stems from the absence of a comprehensive digital lexicographic resource for Tajik that is comparable in functionality to dictionaries for high-resource languages, and from the limited adaptation of modern natural language processing technologies to low-resource language systems. Based on a systematic survey of existing linguistic, statistical, and corpus resources, we propose a dictionary architecture that integrates modules for morphological analysis, lemmatization, semantic clustering, and dictionary entry generation using LLMs. The choice of subword tokenization is justified by the agglutinative nature of Tajik morphology and its high morphological variability, along with a parameter-efficient fine-tuning (PEFT) strategy suitable for limited annotated data. The novelty of the work lies in proposing the first holistic conceptual architecture of an explanatory dictionary for Tajik that unifies classical lexicographic methods, language statistics, and generative capabilities of LLMs into a single system. The practical significance of the study is the formation of a methodological foundation for developing a full-featured electronic dictionary that can serve both as a lexicographic tool and as a core resource for machine translation, automatic summarization, sentiment analysis, and other applied NLP tasks. The paper is intended for specialists in computational linguistics, lexicography, and developers of natural language processing systems working with low-resource languages.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04186",
+        "external_id": "2608.04186"
+      }
+    ],
+    "actors": [
+      "Mullosharaf K. Arabov",
+      "S. S. Pirov",
+      "B. Sultonov"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.711098Z",
+    "dedup_keys": [
+      "arxiv:2608.04186",
+      "title:conceptual dictionary electronic explanatory for for framework language language languages large low models resource tajik the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "19f4dc26ef4a5cac",
+    "kind": "paper",
+    "title": "Learning Sexism Detection Using Multi-Agent Perspectivist Preference Optimization",
+    "summary_en": "When people label text for sexism, they often disagree, and not because some of them are wrong: they genuinely perceive sexism differently. Most NLP systems discard this disagreement by collapsing it into a majority vote. We propose the Multi-Agent Perspectivist Preference Optimization (MAP-PO) framework to keep these different perspectives. On the EXIST 2024 dataset of labeled English and Spanish tweets, we first cluster annotators by their labeling behavior rather than their demographic attributes. We then fine-tune one Large Language Model agent per cluster to reproduce that cluster's annotation behavior, and coordinate the agents with preference optimization that combines individual and team-level rewards. We evaluate MAP-PO in four settings defined by two languages and two backbone language models, asking whether each agent reproduces the annotations of its own cluster and whether the agents together reproduce the majority label. Two findings hold in all four settings. First, without fine-tuning the agents behave almost identically, so cluster-specific training is necessary. Second, we show that training each agent only on the labels of its own cluster pushes the agents far beyond the clusters they should represent, while adding a shared team-level training signal consistently keeps each agent calibrated to its cluster.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04056",
+        "external_id": "2608.04056"
+      }
+    ],
+    "actors": [
+      "Hadi Mohammadi",
+      "Tina Shahedi",
+      "Robert A. Bagheri",
+      "Mehdi Dastani",
+      "Masoume M. Raeissi"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.710725Z",
+    "dedup_keys": [
+      "arxiv:2608.04056",
+      "title:agent detection learning multi optimization perspectivist preference sexism using"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "39cf72162e369e2e",
+    "kind": "paper",
+    "title": "Mind the Cap: Output-Budget Regimes Change the Measured Multilingual Reasoning Gap",
+    "summary_en": "Multilingual evaluations report accuracy at a single output-token cap, but languages need different numbers of tokens to express the same content, so the cap is a hidden experimental variable. We test whether the native-vs-translate gap on MGSM (German, Thai, Swahili) is a token-budget artifact for Qwen3-8B and Llama-3.1-8B-Instruct under four prompting strategies. The measured gap swings by up to 57 points across budgets, length normalization moves it by up to 38.9 points where the cap binds, and at tight caps normalization can reverse which strategy scores higher. We prospectively froze the sweep's three Qwen peaks and its near-zero value at 1024 and evaluated them on 540,000 independently hard-capped decodes: a second frozen family of six Holm-corrected tests rejects every null. The frozen test at $B^*=1024$ still fails to reject because native accuracy has already saturated there; above saturation, the residual difference is a strategy-performance gap, not an identified reasoning deficit. The same truncation channel prices a cost-ordered adaptation ladder: a cross-fitted Thai vocabulary extension closes 0.0 points of the gap at the frozen budget and 4.9 points where 19% of traces still truncate. A third frozen family varies only the announced budget at a fixed enforced cap; announcing 128 rather than 2048 tokens moves Thai native accuracy by 5.1 points, so accuracy is not a function of the enforced cap alone. A correct-emission timing identity computed from one long-cap run matches the three pre-specified MGSM peaks to 0.65 points and, in an exploratory Qwen-only analysis of three further benchmarks, tracks held-out items to 0.92 points, locating the peak exactly in five of seven cells. Treat the output cap as an independent variable and report accuracy across the budget regime, not at a single budget.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04160",
+        "external_id": "2608.04160"
+      }
+    ],
+    "actors": [
+      "Ankit Goyal",
+      "Jaideep Ray"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.710829Z",
+    "dedup_keys": [
+      "arxiv:2608.04160",
+      "title:budget cap change gap measured mind multilingual output reasoning regimes the the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "70a50cbfa40a0a4d",
+    "kind": "paper",
+    "title": "Patients-like-me: A Variational LM--GNN Framework for Explainable Clinical Prediction",
+    "summary_en": "Language models (LMs) offer strong textual representations for electronic health records (EHRs), but they encode patient sequences in isolation and provide limited explainability. Graph neural networks (GNNs) complement LMs by incorporating inter-patient relationships and enabling reference-patient attribution, yet they rely on high-quality patient representations. We propose Patients-like-me (PLM), a unified LM--GNN framework that integrates local patient semantics with global cohort structure. To train PLM efficiently, we introduce a Variational Expectation-Maximization algorithm that alternates LM and GNN updates under a supervised variational objective. Extensive experiments on MIMIC-III and MIMIC-IV show that PLM consistently outperforms state-of-the-art methods, with improvements generalizing across encoder-only and decoder-only LM backbones. These gains are achieved with only modest additional computational overhead. PLM also provides reference-patient explanations by retrieving influential similar patients, while edge-masking experiments confirm that the highest-ranked references have the greatest impact on model predictions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04193",
+        "external_id": "2608.04193"
+      }
+    ],
+    "actors": [
+      "Xinyu Wang",
+      "Yixuan Li",
+      "Hanwei Wu",
+      "Qincheng Lu",
+      "Chi-Kuang Yeh",
+      "Xiao-Wen Chang",
+      "Ziyang Song"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.711179Z",
+    "dedup_keys": [
+      "arxiv:2608.04193",
+      "title:clinical explainable for framework gnn like patients prediction variational"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "b0488b4813138b81",
+    "kind": "paper",
+    "title": "Reconstructing Persistent Worlds from Narratives for Narrative-Grounded Interactive Experiences",
+    "summary_en": "Designing narrative-grounded interactive experiences remains labor-intensive because interactive content must align with the underlying world implied by the narrative. Existing approaches formulate problems such as narrative planning, scene generation, and gameplay generation, each constructing computational representations tailored to specific downstream tasks rather than explicitly reconstructing and maintaining the persistent world that grounds them. We investigate reconstructing explicit persistent worlds from narrative descriptions as the central computational objective for narrative-grounded interactive realization. Rather than treating the world as an implicit by-product of downstream generation, our approach reconstructs and maintains persistent entities, locations, semantic relationships, and evolving world states while inferring only the contextual information required to support coherent interactive experiences. To investigate this perspective, we develop a reference prototype that reconstructs structured persistent world representations from narrative descriptions and subsequently instantiates playable tile-based environments. Through three representative case studies spanning a procedural scenario, an original fantasy narrative, and an adapted public-domain story, we demonstrate the feasibility of reconstructing persistent worlds and show how a shared world representation supports coherent gameplay while remaining grounded in the source narrative. By explicitly reconstructing persistent worlds prior to interactive realization, this work bridges computational narrative understanding and interactive content generation, providing a semantic foundation for AI-assisted game authoring, mixed-initiative design, educational simulations, and narrative-grounded interactive experiences.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04037",
+        "external_id": "2608.04037"
+      }
+    ],
+    "actors": [
+      "Yi-Chun Chen"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.710636Z",
+    "dedup_keys": [
+      "arxiv:2608.04037",
+      "title:experiences for from grounded interactive narrative narratives persistent reconstructing worlds"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "fd689630c257e1a6",
+    "kind": "paper",
+    "title": "Test, then Route: How Language Models Execute In-Context Conditional Rules Across Models and Languages",
+    "summary_en": "When a language model follows an in-context conditional rule such as \"if P(x) then A else B,\" does it assemble a runtime circuit with one module that tests the predicate and another that routes the answer? We probe this with activation patching under a four-donor design whose two swapped-rule donors make the condition and the answer word disagree, so each layer reveals which of the two it carries. Across three open models from two families and six languages sharing one fixed item bank, a mid-stack residual band carries the predicate's truth value: patching it reroutes the answer with predicate-outcome flip near 1.0 and mapping flip near 0.0, meeting a strict pre-specified isolation criterion in 17 of 18 cells, and the same localization holds across five predicate families. The router shows the opposite profile. A learned subspace flips A and B near-perfectly within the trained pair yet transfers to a new pair at approximately 0 in every model, while in Gemma-3-4B (the only model probed cross-lingually) it transfers at approximately 0.98 to the same pair in other languages. Under every probe we ran, the router direction is token-bound and non-transferable (largely answer-readout in Gemma, pair-specific in Qwen) rather than an abstract routing module. Test is modular; under these probes, route is not.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04183",
+        "external_id": "2608.04183"
+      }
+    ],
+    "actors": [
+      "Luxshan Thavarasa",
+      "Sivasuthan Sukumar"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.710998Z",
+    "dedup_keys": [
+      "arxiv:2608.04183",
+      "title:across and conditional context execute how language languages models models route rules test then"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "b259ffcd28e90499",
+    "kind": "paper",
+    "title": "Transfer Learning for Named Entity Recognition of Classical Latin through LLM Prompting",
+    "summary_en": "With the increase in digitized resources of Classical Latin texts and modern breakthroughs of Large Language Models (LLMs), I contribute to ancient language research by participating in EvaLatin 2026. This paper describes Team uOttawa's system description and results for the Named Entity Recognition (NER) shared task. The task is divided into two subtasks: coarse-grained NER with 11 classes and fine-grained NER with 28 classes, each evaluated under strict and fuzzy regimes. Through prompt engineering of commercial LLMs gemini-2.5-pro and claude-sonnet-4-5, I show that the underrepresented ancient Latin language can take advantage of cross-lingual transfer learning by using advancements made by the wider LLM development community. Overall, the methods discussed in this report demonstrate very strong results, placing first in both NER subtasks and achieving the best scores across all evaluation metrics and regimes among all submissions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04015",
+        "external_id": "2608.04015"
+      }
+    ],
+    "actors": [
+      "Callum Chan"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.710400Z",
+    "dedup_keys": [
+      "arxiv:2608.04015",
+      "title:classical entity for latin learning llm named prompting recognition through transfer"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "156e82e1aec3d01e",
+    "kind": "paper",
+    "title": "Visualizing Graph-to-Answer Mechanism Recovery in Materials-Science Hypothesis Generation",
+    "summary_en": "AI co-scientists can generate fluent materials-science hypotheses, but fluency does not show that an answer preserves a scientifically meaningful mechanism. We present a graph-to-answer mechanism-tracing case study for Graph-PRefLexOR-8B, a Qwen3-8B model adapted to expose distinct stages for brainstorming, graph construction, pattern extraction, and synthesis. We organize semantic backtracking, graph corruption, activation-based recovery measurements, and layer-by-token-region grids into a visual diagnostic workflow for inspecting this pathway. Across 100 open-ended materials-science questions, final answers remain closest to the model's own structured stages, especially synthesis. Under graph corruption, a full sweep over 37 residual-stream checkpoints, the embedding output and 36 transformer blocks, shows little mechanism recovery in the earlier transition region at layers 7--10, recovery instead concentrates in late synthesis and answer-start regions around layers 30 and 36. The workflow is intended to help scientists and model developers identify where a generated hypothesis loses or regains mechanism support before it is passed to downstream experimental planning.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04170",
+        "external_id": "2608.04170"
+      }
+    ],
+    "actors": [
+      "Shashwat Sourav",
+      "Subhadeep Pal",
+      "Markus J. Buehler",
+      "Sanjay Das",
+      "Fiona Y. Wang",
+      "Dominik Soos",
+      "Tirthankar Ghosal"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.710905Z",
+    "dedup_keys": [
+      "arxiv:2608.04170",
+      "title:answer generation graph hypothesis materials mechanism recovery science visualizing"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  },
+  {
+    "id": "eeb08053c82025cd",
+    "kind": "paper",
+    "title": "When More Becomes Less: Position-Dependent Repetition Effects in Language Models",
+    "summary_en": "Cloze-style probes that vary how often a target token appears implicitly assume that more copies of a target affect prediction the same way regardless of where the readout slot sits. We show this assumption fails. Our two-probe design holds a repeated-target prefix fixed and varies only the readout position: the adjacent probe places the slot immediately after the repeated block; the displaced probe places it inside a fresh sentence frame. Adjacent repetition behaves as priming intuition predicts: $P(\\text{target})$ climbs with $N$ and plateaus. Displaced repetition produces an inverted-U: $P(\\text{target})$ rises to an early peak and then declines as more copies are added. The displaced inverted-U shows a per-word drop with bootstrap CI excluding zero in all 13 open-access encoder and decoder models we test, and replicates across Spanish, Chinese, German, and French in 42 of 42 multilingual cells. A six-condition causal ablation isolates the effect to exact lexical repetition rather than length, generic redundancy, or semantic-neighbour exposure. A frame-pragmatics control rules out an artefact of the readout frame. Internally, per-target-token attention falls with $N$ while the total budget assigned to the repeated block grows in causal LMs but not in the masked LM we probe. Probes that vary repetition count cannot treat the readout position as orthogonal to what they measure.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.04021",
+        "external_id": "2608.04021"
+      }
+    ],
+    "actors": [
+      "Han-yu Wang"
+    ],
+    "published_at": "2026-08-06T04:00:00Z",
+    "first_seen_at": "2026-08-07T03:42:36.710532Z",
+    "dedup_keys": [
+      "arxiv:2608.04021",
+      "title:becomes dependent effects language less models more position repetition when"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 2.518,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -1.482
+    }
+  }
+]
