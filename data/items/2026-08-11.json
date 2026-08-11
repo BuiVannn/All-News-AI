@@ -1,232 +1,103 @@
 [
   {
-    "id": "df041d8c68806094",
-    "kind": "model",
-    "title": "inclusionAI/Ling-3.0-tiny",
-    "summary_en": "bailing_hybrid, custom_code",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
-        "external_id": "inclusionAI/Ling-3.0-tiny"
-      }
-    ],
-    "actors": [
-      "inclusionAI"
-    ],
-    "published_at": "2026-08-10T02:44:06Z",
-    "first_seen_at": "2026-08-11T02:57:57.332177Z",
-    "dedup_keys": [
-      "hf:inclusionai/ling-3.0-tiny"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 70,
-      "hf_downloads": 0,
-      "hf_trending_score": 70.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 40.85,
-    "score_breakdown": {
-      "hf_trending": 25.576,
-      "hf_likes": 12.788,
-      "has_weights": 4.0,
-      "age_decay": -1.514
-    }
-  },
-  {
-    "id": "4bc8b3e131d4fa18",
-    "kind": "model",
-    "title": "fal/MiniMax-H3-Realism-People-LoRA",
-    "summary_en": "text-to-video, lora, minimax, minimax-h3, h3, video",
+    "id": "4b8f53ea59f810bf",
+    "kind": "paper",
+    "title": "Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution",
+    "summary_en": "We present Ouroboros, a self-developing agent harness whose tools, prompts, context assembly, and core implementation improve through reviewed commits that become the runtime for later work. Core evolution proceeds in two modes. In recursive free evolution, improvement is itself a task, and completing one evolution cycle can schedule the next. In experience-driven core evolution, ordinary work and social interaction expose bugs, rough edges, and inefficient context construction that lead to reviewed structural changes.\n  On Terminal-Bench 2.1, an Opus 5 run scores 86.74%, the best result reported on the benchmark. On OSWorld-Verified, an Opus 5 run reaches 90.69%, exceeding the best previously reported score. A five-rollout CL-Bench campaign achieves a normalized reward of 0.2301, setting a new state of the art.\n  Hope is the longest-running publicly documented Ouroboros deployment. It is a 161-day living agent experiment in free evolution under governed human communication across seven surfaces. Human interaction surfaces faults and generates proposals, but the agent decides which changes to pursue. Because a self-developing agent may rewrite its own code and select new model APIs, operational safety becomes a primary design problem: guardrails must remain authoritative under evolutionary and public social pressure. Benchmark campaigns use frozen system snapshots, while Hope continues live evolution on a separate lineage.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "cv"
+      "agent",
+      "eval"
     ],
     "links": [
       {
-        "source": "hf_models",
-        "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA",
-        "external_id": "fal/MiniMax-H3-Realism-People-LoRA"
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.08311",
+        "external_id": "2608.08311"
       },
       {
-        "source": "hf_base_model:adapter",
-        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-        "external_id": "MiniMaxAI/MiniMax-H3"
-      }
-    ],
-    "actors": [
-      "fal"
-    ],
-    "published_at": "2026-08-10T16:51:40Z",
-    "first_seen_at": "2026-08-11T02:57:57.332272Z",
-    "dedup_keys": [
-      "hf:fal/minimax-h3-realism-people-lora"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 55,
-      "hf_downloads": 0,
-      "hf_trending_score": 55.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 39.596,
-    "score_breakdown": {
-      "hf_trending": 24.152,
-      "hf_likes": 12.076,
-      "has_weights": 4.0,
-      "age_decay": -0.632
-    }
-  },
-  {
-    "id": "2517476ab6b5ae1c",
-    "kind": "model",
-    "title": "Motif-Technologies/Motif-3",
-    "summary_en": "text-generation, transformers, Motif, feature-extraction, motif, motif-3, mixture-of-experts, moe",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/Motif-Technologies/Motif-3",
-        "external_id": "Motif-Technologies/Motif-3"
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.08311",
+        "external_id": "2608.08311"
       },
       {
-        "source": "hf_base_model:finetune",
-        "url": "https://huggingface.co/Motif-Technologies/Motif-3-Base",
-        "external_id": "Motif-Technologies/Motif-3-Base"
-      }
-    ],
-    "actors": [
-      "Motif-Technologies"
-    ],
-    "published_at": "2026-08-07T05:28:34Z",
-    "first_seen_at": "2026-08-11T02:57:57.332370Z",
-    "dedup_keys": [
-      "hf:motif-technologies/motif-3"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 45,
-      "hf_downloads": 0,
-      "hf_trending_score": 45.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 36.615,
-    "score_breakdown": {
-      "hf_trending": 22.972,
-      "hf_likes": 11.486,
-      "has_weights": 4.0,
-      "topic_match": 4.0,
-      "age_decay": -5.843
-    }
-  },
-  {
-    "id": "1b24140df44a76fc",
-    "kind": "release",
-    "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
-    "summary_en": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+        "source": "github",
+        "url": "https://github.com/razzant/ouroboros",
         "external_id": null
       }
     ],
     "actors": [
-      "openai"
+      "Anton Razzhigaev",
+      "Andrei Gritsaev",
+      "Andrei Kaznacheev",
+      "Nikita Dragunov",
+      "Roman Yampolskiy",
+      "Andrei Kuznetsov"
     ],
-    "published_at": "2026-08-10T10:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.653246Z",
+    "published_at": "2026-08-08T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289359Z",
     "dedup_keys": [
-      "url:openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-      "title:cyber daybreak defense expanding narrows the window"
+      "arxiv:2608.08311",
+      "title:agent coding core developing evolution frontier ouroboros reviewed self with",
+      "github:razzant/ouroboros"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 54,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
+      "is_daily_paper": true,
+      "github_stars": 1056,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
+      "num_comments": 2,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 32.94,
+    "score": 52.6,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
+      "hf_upvotes": 32.059,
+      "github_stars": 13.926,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.06
+      "age_decay": -5.385
     }
   },
   {
-    "id": "c9e11f3fc55795ae",
+    "id": "bf022b50896d9813",
     "kind": "model",
-    "title": "joyfox/MiniMax-H3-Turbo",
-    "summary_en": "image-to-video, comfyui, lora, minimax-h3, text-to-video, video-generation",
+    "title": "meta-models/Muse-Glimmer-30B-assistant",
+    "summary_en": "image-text-to-text, transformers, muse_glimmer_assistant, feature-extraction, endpoints_compatible",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
+      "llm",
+      "multimodal",
       "cv"
     ],
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/joyfox/MiniMax-H3-Turbo",
-        "external_id": "joyfox/MiniMax-H3-Turbo"
+        "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant",
+        "external_id": "meta-models/Muse-Glimmer-30B-assistant"
       }
     ],
     "actors": [
-      "joyfox"
+      "meta-models"
     ],
-    "published_at": "2026-08-10T04:20:19Z",
-    "first_seen_at": "2026-08-11T02:57:57.332444Z",
+    "published_at": "2026-08-09T17:55:23Z",
+    "first_seen_at": "2026-08-11T14:09:55.901259Z",
     "dedup_keys": [
-      "hf:joyfox/minimax-h3-turbo"
+      "hf:meta-models/muse-glimmer-30b-assistant"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 43,
+      "hf_likes": 40,
       "hf_downloads": 0,
-      "hf_trending_score": 43.0,
+      "hf_trending_score": 40.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -234,13 +105,87 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
+      "has_weights": true
+    },
+    "score": 48.657,
+    "score_breakdown": {
+      "hf_trending": 22.281,
+      "hf_likes": 11.141,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.765
+    }
+  },
+  {
+    "id": "f0c77a8a0f50254e",
+    "kind": "paper",
+    "title": "BDH-CQ: In-Context Learning with Recurrent Latent Reasoning",
+    "summary_en": "We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verbalizing its intermediate reasoning. We evaluate the model on the public ARC-AGI-1 evaluation set and use controlled ARC-like interventions to study what it learns from demonstrations, how consistently it applies an inferred transformation, and which concepts remain difficult. A 150M-parameter configuration reaches 29.5% pass@2 at a computed inference cost of \\$0.0007 per task. This operating point breaks through the previously reported ARC-AGI-1 cost-accuracy Pareto frontier, establishing a new state of the art in benchmark cost efficiency.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.09888",
+        "external_id": "2608.09888"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.09888",
+        "external_id": "2608.09888"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/pathwaycom/arc-task-gen",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Björn Engdahl",
+      "Adrian Kosowski",
+      "Jan Chorowski",
+      "Zuzanna Stamirowska",
+      "Przemysław Uznański",
+      "Junlin Jiang",
+      "Rohan Phadke",
+      "Remigiusz Kinas",
+      "Richard Zhong"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289313Z",
+    "dedup_keys": [
+      "arxiv:2608.09888",
+      "title:bdh context latent learning reasoning recurrent with",
+      "github:pathwaycom/arc-task-gen"
+    ],
+    "signals": {
+      "hf_upvotes": 78,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 32.644,
+    "score": 46.768,
     "score_breakdown": {
-      "hf_trending": 22.705,
-      "hf_likes": 11.353,
-      "age_decay": -1.414
+      "hf_upvotes": 34.956,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
     }
   },
   {
@@ -286,13 +231,13 @@
       "Xiaodong Gu"
     ],
     "published_at": "2026-08-10T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.326955Z",
+    "first_seen_at": "2026-08-11T14:09:56.289100Z",
     "dedup_keys": [
       "arxiv:2608.09802",
       "title:agents bench benchmarking code large multilingual promax refactoring scale swe"
     ],
     "signals": {
-      "hf_upvotes": 22,
+      "hf_upvotes": 113,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -305,45 +250,42 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 32.399,
+    "score": 44.505,
     "score_breakdown": {
-      "hf_upvotes": 25.084,
+      "hf_upvotes": 37.89,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.685
+      "age_decay": -2.385
     }
   },
   {
-    "id": "6750d5144af1ea16",
-    "kind": "release",
-    "title": "How Zapier transformed core marketing processes with ChatGPT Work",
-    "summary_en": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.",
+    "id": "df041d8c68806094",
+    "kind": "model",
+    "title": "inclusionAI/Ling-3.0-tiny",
+    "summary_en": "bailing_hybrid, custom_code",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "openai",
-        "url": "https://openai.com/index/zapier",
-        "external_id": null
+        "source": "hf_models",
+        "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+        "external_id": "inclusionAI/Ling-3.0-tiny"
       }
     ],
     "actors": [
-      "openai"
+      "inclusionAI"
     ],
-    "published_at": "2026-08-10T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.653349Z",
+    "published_at": "2026-08-10T02:44:06Z",
+    "first_seen_at": "2026-08-11T14:09:55.900627Z",
     "dedup_keys": [
-      "url:openai.com/index/zapier",
-      "title:chatgpt core how marketing processes transformed with work zapier"
+      "hf:inclusionai/ling-3.0-tiny"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 0,
+      "hf_likes": 114,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
+      "hf_trending_score": 114.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -351,111 +293,14 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": false
+      "has_weights": true
     },
-    "score": 32.315,
+    "score": 44.49,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.685
-    }
-  },
-  {
-    "id": "747c8957c9598bce",
-    "kind": "release",
-    "title": "Premium seats are coming to ChatGPT Business",
-    "summary_en": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/premium-seats-chatgpt-business",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-08-10T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.653313Z",
-    "dedup_keys": [
-      "url:openai.com/index/premium-seats-chatgpt-business",
-      "title:are business chatgpt coming premium seats"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.315,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.685
-    }
-  },
-  {
-    "id": "07cd8e5d86c4f218",
-    "kind": "release",
-    "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-    "summary_en": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-08-10T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.653386Z",
-    "dedup_keys": [
-      "url:openai.com/index/virgin-atlantic/chatgpt-work",
-      "title:atlantic chatgpt customer journeys sharpens virgin with work"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.315,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.685
+      "hf_trending": 28.47,
+      "hf_likes": 14.235,
+      "has_weights": 4.0,
+      "age_decay": -2.215
     }
   },
   {
@@ -560,13 +405,13 @@
       "Murphy Zhuang"
     ],
     "published_at": "2026-08-10T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.327024Z",
+    "first_seen_at": "2026-08-11T14:09:56.289168Z",
     "dedup_keys": [
       "arxiv:2608.09819",
       "title:and continual improvement learning lora macaron mixture open self towards with"
     ],
     "signals": {
-      "hf_upvotes": 21,
+      "hf_upvotes": 102,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -579,64 +424,19 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 32.043,
+    "score": 43.693,
     "score_breakdown": {
-      "hf_upvotes": 24.728,
+      "hf_upvotes": 37.078,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.685
+      "age_decay": -2.385
     }
   },
   {
-    "id": "3336765816ead5ae",
-    "kind": "release",
-    "title": "What building an AI-native finance function taught me",
-    "summary_en": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/building-an-ai-native-finance-function",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-08-10T17:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.653210Z",
-    "dedup_keys": [
-      "url:openai.com/index/building-an-ai-native-finance-function",
-      "title:building finance function native taught what"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.377,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.623
-    }
-  },
-  {
-    "id": "efc198a3fbbd8b54",
+    "id": "4bc8b3e131d4fa18",
     "kind": "model",
-    "title": "Mamad8/MiniMax-H3-Image-VAE",
-    "summary_en": "minimax-h3, vae, image, comfyui",
+    "title": "fal/MiniMax-H3-Realism-People-LoRA",
+    "summary_en": "text-to-video, lora, minimax, minimax-h3, h3, video",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -645,22 +445,79 @@
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE",
-        "external_id": "Mamad8/MiniMax-H3-Image-VAE"
+        "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA",
+        "external_id": "fal/MiniMax-H3-Realism-People-LoRA"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
       }
     ],
     "actors": [
-      "Mamad8"
+      "fal"
     ],
-    "published_at": "2026-08-08T21:53:40Z",
-    "first_seen_at": "2026-08-11T02:57:57.332538Z",
+    "published_at": "2026-08-10T16:51:40Z",
+    "first_seen_at": "2026-08-11T14:09:55.900711Z",
     "dedup_keys": [
-      "hf:mamad8/minimax-h3-image-vae"
+      "hf:fal/minimax-h3-realism-people-lora"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 94,
+      "hf_downloads": 0,
+      "hf_trending_score": 94.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.653,
+    "score_breakdown": {
+      "hf_trending": 27.323,
+      "hf_likes": 13.662,
+      "has_weights": 4.0,
+      "age_decay": -1.332
+    }
+  },
+  {
+    "id": "506868528fd96d2a",
+    "kind": "model",
+    "title": "webAI-Official/TwIL-LM3",
+    "summary_en": "text-generation, transformers, smollm3, formal-logic, reasoning, lora, model-merging",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/webAI-Official/TwIL-LM3",
+        "external_id": "webAI-Official/TwIL-LM3"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+        "external_id": "HuggingFaceTB/SmolLM3-3B"
+      }
+    ],
+    "actors": [
+      "webAI-Official"
+    ],
+    "published_at": "2026-08-03T20:53:55Z",
+    "first_seen_at": "2026-08-11T14:09:55.901373Z",
+    "dedup_keys": [
+      "hf:webai-official/twil-lm3"
     ],
     "signals": {
       "hf_upvotes": 0,
       "hf_likes": 36,
-      "hf_downloads": 0,
+      "hf_downloads": 289,
       "hf_trending_score": 36.0,
       "is_daily_paper": false,
       "github_stars": 0,
@@ -669,44 +526,53 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": false
+      "has_weights": true
     },
-    "score": 29.182,
+    "score": 40.26,
     "score_breakdown": {
       "hf_trending": 21.666,
+      "hf_downloads": 11.34,
       "hf_likes": 10.833,
-      "age_decay": -3.317
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -11.579
     }
   },
   {
-    "id": "1d7ed5be220b1f5c",
-    "kind": "release",
-    "title": "Putting frontier cyber models in more trusted hands",
-    "summary_en": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.",
+    "id": "2517476ab6b5ae1c",
+    "kind": "model",
+    "title": "Motif-Technologies/Motif-3",
+    "summary_en": "text-generation, transformers, Motif, feature-extraction, motif, motif-3, mixture-of-experts, moe",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
+    "topics": [
+      "llm"
+    ],
     "links": [
       {
-        "source": "openai",
-        "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-        "external_id": null
+        "source": "hf_models",
+        "url": "https://huggingface.co/Motif-Technologies/Motif-3",
+        "external_id": "Motif-Technologies/Motif-3"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Motif-Technologies/Motif-3-Base",
+        "external_id": "Motif-Technologies/Motif-3-Base"
       }
     ],
     "actors": [
-      "openai"
+      "Motif-Technologies"
     ],
-    "published_at": "2026-08-10T10:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.653277Z",
+    "published_at": "2026-08-07T05:28:34Z",
+    "first_seen_at": "2026-08-11T14:09:55.900936Z",
     "dedup_keys": [
-      "url:openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-      "title:cyber frontier hands models more putting trusted"
+      "hf:motif-technologies/motif-3"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 0,
+      "hf_likes": 63,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
+      "hf_trending_score": 63.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -714,13 +580,15 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": false
+      "has_weights": true
     },
-    "score": 28.94,
+    "score": 38.887,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.06
+      "hf_trending": 24.953,
+      "hf_likes": 12.477,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -6.543
     }
   },
   {
@@ -760,19 +628,19 @@
       "Yilun Zhao"
     ],
     "published_at": "2026-08-10T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.327219Z",
+    "first_seen_at": "2026-08-11T14:09:56.289459Z",
     "dedup_keys": [
       "arxiv:2608.09873",
       "title:and domains evaluating generation intensive knowledge reasoning sci science vbench video",
       "github:sci-vbench/sci-vbench"
     ],
     "signals": {
-      "hf_upvotes": 7,
+      "hf_upvotes": 22,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 3,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -780,13 +648,228 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 26.951,
+    "score": 37.472,
     "score_breakdown": {
-      "hf_upvotes": 16.636,
+      "hf_upvotes": 25.084,
+      "github_stars": 2.773,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.685
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "c2ab5a699707d230",
+    "kind": "release",
+    "title": "NVIDIA Nemotron 3.5 Lightning Delivers Fast, Accurate Specialized Task Execution for Long-Running Agents",
+    "summary_en": "Long-running AI agents spend most of their time on high-volume execution: tool calls, result validation, and subagent delegation. Using a frontier reasoning...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-08-11T13:01:07Z",
+    "first_seen_at": "2026-08-11T14:09:58.866070Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents",
+      "title:accurate agents delivers execution fast for lightning long nemotron nvidia running specialized task"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.928,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.072
+    }
+  },
+  {
+    "id": "95c32735cca37437",
+    "kind": "release",
+    "title": "Route AI Agent Workloads Across Models with NVIDIA NeMo Switchyard",
+    "summary_en": "Building an AI agent does not end with choosing a single model. Each model has its own strengths, weaknesses, and cost profile, which can shift from one...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-08-11T13:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:58.866146Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/route-ai-agent-workloads-across-models-with-nvidia-nemo-switchyard",
+      "title:across agent models nemo nvidia route switchyard with workloads"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.927,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.073
+    }
+  },
+  {
+    "id": "ea7095a0320d9533",
+    "kind": "paper",
+    "title": "Scaling Inherently Interpretable Language Models",
+    "summary_en": "Interpretability is often treated as a tax on capability: language models are trained as opaque systems, then explained after the fact, with methods whose reliability is difficult to establish. In this work, we challenge this premise. Rather than reverse-engineering a model, we make interpretability a constraint of the training pipeline, optimized alongside the language modeling objective. Across three orders of magnitude of compute, on both autoregressive and diffusion language models, interpretability scales with capability rather than against it. Surprisingly, model representations become more disentangled and aligned with human-understandable concepts with scale.\n  We instantiate the training-time recipe with Steerling-8B, a diffusion language model with a causal attention mask. For any group of generated tokens, Steerling-8B attributes the output to relevant input tokens, human-understandable concepts, and training data. This enables closed-loop intervention: diagnose an output through its concept or feature attribution, retrieve similar training data, and correct the behavior through concept steering without retraining. Steerling-8B remains competitive with open peer models trained on substantially 2-16x more compute, suggesting a different scaling paradigm: interpretability can be designed into training, and it improves with scale.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.07594",
+        "external_id": "2608.07594"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.07594",
+        "external_id": "2608.07594"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/guidelabs/steerling",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Guide Labs Team",
+      "Andreas Madsen",
+      "Aya Abdelsalam Ismail",
+      "Giang Nguyen",
+      "Isaac Plant",
+      "Muawiz Chaudhary",
+      "Nathaniel Monson",
+      "Saqib Azim",
+      "Zhichen Guo",
+      "Julius Adebayo"
+    ],
+    "published_at": "2026-08-06T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289604Z",
+    "dedup_keys": [
+      "arxiv:2608.07594",
+      "title:inherently interpretable language models scaling",
+      "github:guidelabs/steerling"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 238,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.751,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 10.953,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.385
+    }
+  },
+  {
+    "id": "c9e11f3fc55795ae",
+    "kind": "model",
+    "title": "joyfox/MiniMax-H3-Turbo",
+    "summary_en": "image-to-video, comfyui, lora, minimax-h3, text-to-video, video-generation",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/joyfox/MiniMax-H3-Turbo",
+        "external_id": "joyfox/MiniMax-H3-Turbo"
+      }
+    ],
+    "actors": [
+      "joyfox"
+    ],
+    "published_at": "2026-08-10T04:20:19Z",
+    "first_seen_at": "2026-08-11T14:09:55.901101Z",
+    "dedup_keys": [
+      "hf:joyfox/minimax-h3-turbo"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 49,
+      "hf_downloads": 0,
+      "hf_trending_score": 49.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.094,
+    "score_breakdown": {
+      "hf_trending": 23.472,
+      "hf_likes": 11.736,
+      "age_decay": -2.114
     }
   },
   {
@@ -844,13 +927,13 @@
       "Bokki Ryu"
     ],
     "published_at": "2026-08-10T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.327182Z",
+    "first_seen_at": "2026-08-11T14:09:56.289426Z",
     "dedup_keys": [
       "arxiv:2608.09119",
       "title:motif report technical"
     ],
     "signals": {
-      "hf_upvotes": 10,
+      "hf_upvotes": 25,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -863,12 +946,696 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 26.498,
+    "score": 32.68,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
+      "hf_upvotes": 26.065,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.685
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "7dae4e8b5b079424",
+    "kind": "paper",
+    "title": "RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States",
+    "summary_en": "Learning-based memory systems for self-evolving LLM agents face two tightly coupled challenges. First, trajectory-indexed utilities grow with the interaction history, thereby dispersing limited feedback over an ever-expanding state space. Second, because trajectory-level rewards are jointly assigned to co-retrieved memories, irrelevant experiences may receive misleading utility updates and consequently enter the memory-reward trap. To address these challenges, we introduce Reduced-Order Memory Reinforcement Learning (RoMeRL), which represents the growing trajectory-indexed utility space using a fixed-dimensional per-task memory state factorized by outcome polarity and memory dynamics. RoMeRL incorporates new experiences through a fixed set of semantic coordinates whose contents are updated or replaced over time, thereby concentrating feedback over a bounded utility support. Theoretically, we show that this reduced-order parameterization increases the average feedback received by each utility coordinate and characterize the steady-state occupancy of erroneous coordinates under a generic coordinate-transition model. Empirically, across ALFWorld and LifelongAgentBench, RoMeRL improves task performance, reduces the Cold-Q ratio by 80.0%, increases feedback density by approximately 6.0 times, reduces the maintained memory size by 84.4%, and cuts LLM calls by 21.1%. These results show that reduced-order utility states support efficient self-evolving agent memory while limiting persistent reward contamination. Code is available at: https://github.com/YOUNG-fnxm/RoMeRL",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.02508",
+        "external_id": "2608.02508"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.02508",
+        "external_id": "2608.02508"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/YOUNG-fnxm/RoMeRL",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yi Yang",
+      "Zhennan Chen",
+      "Yihong Zhuang",
+      "Tiehan Fan",
+      "Yinan Chen",
+      "Jian Li",
+      "Jian Yang",
+      "Ying Tai"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289637Z",
+    "dedup_keys": [
+      "arxiv:2608.02508",
+      "title:agent and balancing coverage evolving feedback memory memory order reduced reward romerl self states the trap utility via",
+      "github:young-fnxm/romerl"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 8,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.43,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 4.394,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "1b24140df44a76fc",
+    "kind": "release",
+    "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+    "summary_en": "Meet GPT-5.6-Cyber, OpenAI’s cybersecurity-specific model available through Daybreak Red for authorized vulnerability research, exploit validation, and security testing.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-10T10:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.281749Z",
+    "dedup_keys": [
+      "url:openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "title:cyber daybreak defense expanding narrows the window"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.24,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.76
+    }
+  },
+  {
+    "id": "5b1dc87ef021684e",
+    "kind": "paper",
+    "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
+    "summary_en": "Memory systems have shown promise for improving agent performance, but their potential remains largely unexplored for small language models, which struggle to generate sufficient successful trajectories on their own. We propose Agent Memory Distillation (AMD), a training-free framework that transfers structured knowledge from a large teacher agent to a small student agent through hierarchical memory. AMD constructs three complementary memory types from successful teacher trajectories: Workflow memory encodes task-level strategies, Subtask memory provides concrete behavioral examples at an intermediate granularity, and Function memory captures per-function calling conventions and common pitfalls. Workflow and Subtask memories are injected proactively at the start of each task, while Function memory is retrieved reactively upon tool-calling errors. We evaluate AMD on three tool-use benchmarks using four student models (4B-8B parameters) with GPT-5-mini as the teacher, achieving average accuracy gains of 27.2%p, 11.2%p, and 3.4%p on AppWorld, BFCL V3, and ToolSandbox, while consistently outperforming existing memory-based baselines. Further analysis shows that Subtask memory contributes the largest gains, teacher effectiveness depends on both teacher capability and student compatibility, and 4B-sized students benefit most from AMD.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.07169",
+        "external_id": "2608.07169"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.07169",
+        "external_id": "2608.07169"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/taeilkim2465/agentic_memory_distillation",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Taeil Kim",
+      "Kangsan Kim",
+      "Sung Ju Hwang"
+    ],
+    "published_at": "2026-08-07T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289395Z",
+    "dedup_keys": [
+      "arxiv:2608.07169",
+      "title:agent agents distillation empowering hierarchical llm memory memory small teacher with",
+      "github:taeilkim2465/agentic_memory_distillation"
+    ],
+    "signals": {
+      "hf_upvotes": 27,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.773,
+    "score_breakdown": {
+      "hf_upvotes": 26.658,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.885
+    }
+  },
+  {
+    "id": "6750d5144af1ea16",
+    "kind": "release",
+    "title": "How Zapier transformed core marketing processes with ChatGPT Work",
+    "summary_en": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/zapier",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.281855Z",
+    "dedup_keys": [
+      "url:openai.com/index/zapier",
+      "title:chatgpt core how marketing processes transformed with work zapier"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.615,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "747c8957c9598bce",
+    "kind": "release",
+    "title": "Premium seats are coming to ChatGPT Business",
+    "summary_en": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/premium-seats-chatgpt-business",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.281821Z",
+    "dedup_keys": [
+      "url:openai.com/index/premium-seats-chatgpt-business",
+      "title:are business chatgpt coming premium seats"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.615,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "07cd8e5d86c4f218",
+    "kind": "release",
+    "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+    "summary_en": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.281888Z",
+    "dedup_keys": [
+      "url:openai.com/index/virgin-atlantic/chatgpt-work",
+      "title:atlantic chatgpt customer journeys sharpens virgin with work"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.615,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "33ab5bd59b39cbeb",
+    "kind": "paper",
+    "title": "A^2E : An End-to-End Agent Auditing Engine",
+    "summary_en": "With the rapid advancement of large language models (LLMs), harnesses have become essential infrastructure for deploying agents across a wide range of domains. The fast-evolving harness ecosystem has also made rigorous capability evaluation increasingly important. However, efficiently building an end-to-end, systematic, and comprehensive evaluation pipeline remains a significant challenge. To address this challenge, we introduce A^2E (Agent Auditing Engine), an end-to-end evaluation engine designed for agent harnesses. A^2E leverages our newly proposed Agent Task Protocol (ATP) to enable the rapid integration of evaluation tasks with different harnesses. Through an automatically instrumented Monitor, it captures and generates standardized execution traces during experiments. In the Evaluation stage, A^2E systematically assesses harness capabilities using a suite of multidimensional metrics. Compared with correctness alone, these metrics provide a more fine-grained characterization of differences among harnesses in execution efficiency, tool use, task planning, and error recovery. Experiments conducted with A^2E further reveal that model-harness combinations exhibit substantial performance variation across different types of tasks, and that no single combination consistently outperforms all others across every task. These findings not only demonstrate the necessity of systematic evaluation but also provide useful guidance for the co-evolving of models and harnesses. Our code is available at https://github.com/datamllab/A2E.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.07346",
+        "external_id": "2608.07346"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.07346",
+        "external_id": "2608.07346"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/datamllab/A2E",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haoning Wang",
+      "Mingxun Zhang",
+      "Chenyue Yu",
+      "Yingjun Shang",
+      "Xia Hu",
+      "Guanchu Wang",
+      "Na Zou"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289749Z",
+    "dedup_keys": [
+      "arxiv:2608.07346",
+      "title:agent auditing end end engine",
+      "github:datamllab/a2e"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 20,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.038,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "github_stars": 6.089,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "4a4633abe6085ad7",
+    "kind": "paper",
+    "title": "RynnValue: Scaling Robotic Value Foundation Models with Temporal Distance",
+    "summary_en": "General-purpose reward models are increasingly the bottleneck for scaling robot learning, yet the recipe for learning value-related capabilities from large-scale heterogeneous corpora remains underexplored. Existing approaches tie supervision to task-internal anchors such as preferences or normalized progress, none of which transfer cleanly across embodiments and data sources. We introduce RynnValue, an open-source value foundation model for robotic manipulation that replaces these anchors with temporal distance, the directed cost-to-go from an observation to the language-specified goal. Because temporal-distance labels can be derived directly from timestamps, RynnValue scales to over 7,000 hours and roughly 3M instruction-conditioned clips without preference or progress annotations. To make temporal-value learning reliable at scale, we combine random temporal sampling, temporal-order shuffling, and value-isolation attention, suppressing shortcuts that would leave predictions insensitive to failures and regressions. Trained without preference labels, RynnValue attains an average Kendall's tau_a of 0.675 on RBM-EVAL-OOD, surpassing the fully preference-supervised state of the art (0.655) and more than doubling a progress-only counterpart (0.292), while generalizing zero-shot to unseen tasks, embodiments, and viewpoints. Converted into dense rewards via potential-based shaping, it raises real-world policy success from 52.5% to 72.5% online and from 63.8% to 82.5% offline. These results establish temporal distance as a scalable supervision target and practical reward interface for generalist robot policies.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.09853",
+        "external_id": "2608.09853"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.09853",
+        "external_id": "2608.09853"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/alibaba-damo-academy/RynnValue",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Dongchi Huang",
+      "Hongyin Zhang",
+      "Bohan Hou",
+      "Siteng Huang",
+      "Zhian Su",
+      "Hang Guo",
+      "Tong Lu",
+      "Zhaofeng Xu",
+      "Jiahao Tang",
+      "Jianfei Yang",
+      "Donglin Wang",
+      "Peixi Peng",
+      "Mingxiu Chen",
+      "Deli Zhao",
+      "Xin Li"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289724Z",
+    "dedup_keys": [
+      "arxiv:2608.09853",
+      "title:distance foundation models robotic rynnvalue scaling temporal value with",
+      "github:alibaba-damo-academy/rynnvalue"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 29.341,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
+    }
+  },
+  {
+    "id": "efc198a3fbbd8b54",
+    "kind": "model",
+    "title": "Mamad8/MiniMax-H3-Image-VAE",
+    "summary_en": "minimax-h3, vae, image, comfyui",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE",
+        "external_id": "Mamad8/MiniMax-H3-Image-VAE"
+      }
+    ],
+    "actors": [
+      "Mamad8"
+    ],
+    "published_at": "2026-08-08T21:53:40Z",
+    "first_seen_at": "2026-08-11T14:09:55.901305Z",
+    "dedup_keys": [
+      "hf:mamad8/minimax-h3-image-vae"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 38,
+      "hf_downloads": 0,
+      "hf_trending_score": 38.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.955,
+    "score_breakdown": {
+      "hf_trending": 21.981,
+      "hf_likes": 10.991,
+      "age_decay": -4.017
+    }
+  },
+  {
+    "id": "3336765816ead5ae",
+    "kind": "release",
+    "title": "What building an AI-native finance function taught me",
+    "summary_en": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/building-an-ai-native-finance-function",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-10T17:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.281702Z",
+    "dedup_keys": [
+      "url:openai.com/index/building-an-ai-native-finance-function",
+      "title:building finance function native taught what"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.677,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.323
+    }
+  },
+  {
+    "id": "1d7ed5be220b1f5c",
+    "kind": "release",
+    "title": "Putting frontier cyber models in more trusted hands",
+    "summary_en": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-10T10:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.281786Z",
+    "dedup_keys": [
+      "url:openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+      "title:cyber frontier hands models more putting trusted"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.24,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.76
+    }
+  },
+  {
+    "id": "ced8f8eaa7874bc9",
+    "kind": "paper",
+    "title": "Evo-Bench: Can Language Models Improve Agent Harness?",
+    "summary_en": "Large Language Models (LLMs) have driven rapid progress in autonomous agents, yet standard evaluations remain confined to static task solving. An emerging frontier is harness evolution---the agent's capacity to autonomously optimize its own operating harness. However, systematically benchmarking this capability remains challenging, as existing evaluations fail to isolate harness improvements from base model strength, prevent task-specific overfitting, or capture long-horizon iterative research. To address these challenges, we introduce Evo-Bench, the first benchmark designed to evaluate models' intrinsic harness-evolving capabilities across Search, Office, and General agent domains. To rigorously isolate this capability, Evo-Bench employs a novel harness-guided construction framework: it leverages auxiliary-task evolution to identify tasks genuinely sensitive to framework improvements, followed by sensitivity-aware stratified splitting to ensure robust cross-suite generalization. Extensive evaluations across nine frontier and open-weight models reveal that top models achieve massive absolute gains reaching 16.6 points, closely approaching state-of-the-art human-engineered baselines. Crucially, while autonomous evolution outpeforms artificial harness in General tasks and excels in Search tasks, it struggles in Office tasks that demand highly specific processing workflows. Furthermore, our analysis exposes critical temporal anomalies like early saturation, while demonstrating that the synthesized harnesses act as highly transferable reasoning structures, consistently boosting diverse policy models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.09096",
+        "external_id": "2608.09096"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.09096",
+        "external_id": "2608.09096"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/RUCAIBox/Evo-Bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Lisheng Huang",
+      "Chen Yang",
+      "Hao Zhou",
+      "Huatong Song",
+      "Zongchao Chen",
+      "Ran Le",
+      "Yang Song",
+      "Wayne Xin Zhao",
+      "Tao Zhang"
+    ],
+    "published_at": "2026-08-10T00:00:00Z",
+    "first_seen_at": "2026-08-11T14:09:56.289696Z",
+    "dedup_keys": [
+      "arxiv:2608.09096",
+      "title:agent bench can evo harness improve language models",
+      "github:rucaibox/evo-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.637,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.385
     }
   },
   {
@@ -911,14 +1678,14 @@
       "Zhongxiang Dai"
     ],
     "published_at": "2026-08-05T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.327153Z",
+    "first_seen_at": "2026-08-11T14:09:56.289515Z",
     "dedup_keys": [
       "arxiv:2608.04419",
       "title:and calibration distillation for outcome policy probing sparse spot",
       "github:quzikun/spot"
     ],
     "signals": {
-      "hf_upvotes": 14,
+      "hf_upvotes": 16,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -931,48 +1698,44 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 25.865,
+    "score": 26.167,
     "score_breakdown": {
-      "hf_upvotes": 21.664,
+      "hf_upvotes": 22.666,
       "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -9.185
+      "age_decay": -9.885
     }
   },
   {
-    "id": "7c20eb2973707d90",
-    "kind": "release",
-    "title": "Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS",
-    "summary_en": null,
+    "id": "1239f70f3542b49b",
+    "kind": "model",
+    "title": "Cactus-Compute/needle2",
+    "summary_en": "text-generation, cactus-needle, needle, tool-calling, function-calling, on-device, edge",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "agent",
-      "speech"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-        "external_id": null
+        "source": "hf_models",
+        "url": "https://huggingface.co/Cactus-Compute/needle2",
+        "external_id": "Cactus-Compute/needle2"
       }
     ],
     "actors": [
-      "huggingface"
+      "Cactus-Compute"
     ],
-    "published_at": "2026-08-10T16:25:36Z",
-    "first_seen_at": "2026-08-11T02:57:58.659601Z",
+    "published_at": "2026-07-29T16:11:52Z",
+    "first_seen_at": "2026-08-11T14:09:55.901194Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
-      "title:agents build control deployment full latency low magpie multilingual nvidia open tts voice weights with"
+      "hf:cactus-compute/needle2"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 0,
+      "hf_likes": 43,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
+      "hf_trending_score": 41.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -982,188 +1745,41 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 23.341,
+    "score": 14.406,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "topic_match": 4.0,
-      "age_decay": -0.659
+      "hf_trending": 22.426,
+      "hf_likes": 11.353,
+      "age_decay": -19.373
     }
   },
   {
-    "id": "8331866cb1fff3c3",
-    "kind": "paper",
-    "title": "Evidence-RL: Towards Evidence-intensive Visual Reasoning",
-    "summary_en": "Vision-Language Models (VLMs) should answer from concrete image evidence rather than language priors, dataset shortcuts, or irrelevant visual context. Existing perception-aware post-training methods encourage image use through global perturbations or attention proxies, but they do not test whether a sampled answer causally depends on the local evidence that supports it. We propose Counterfactual Evidence Disentanglement (CED), a training-time evidence audit for VLM grounding. For each response, CED neutralizes an object-centric Evidence Region and compares the resulting support drop against matched non-evidence Regions. We combine this signal with answer correctness inside GRPO, rewarding correct answers that rely on the evidence path rather than shortcut or nuisance paths. CED uses weak object-level proposals, requires no question-specific evidence annotations, and adds no inference-time overhead. Across nine public benchmarks and four backbones, CED outperforms prior RL-based post-training methods, with targeted analyses verifying its object-centric signal.",
+    "id": "b83848cf497ea088",
+    "kind": "model",
+    "title": "Comfy-Org/Wan-Animate-2",
+    "summary_en": "comfyui",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.08021",
-        "external_id": "2608.08021"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.08021",
-        "external_id": "2608.08021"
+        "source": "hf_models",
+        "url": "https://huggingface.co/Comfy-Org/Wan-Animate-2",
+        "external_id": "Comfy-Org/Wan-Animate-2"
       }
     ],
     "actors": [
-      "Haojie Huang",
-      "Xinlei Yu",
-      "Chengming Xu",
-      "Zhangquan Chen",
-      "Cheng Yang",
-      "Qingdong He",
-      "Yu Yang",
-      "Jiangning Zhang",
-      "Xiaobin Hu"
+      "Comfy-Org"
     ],
-    "published_at": "2026-08-08T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.327240Z",
+    "published_at": "2026-07-14T23:36:50Z",
+    "first_seen_at": "2026-08-11T14:09:55.901395Z",
     "dedup_keys": [
-      "arxiv:2608.08021",
-      "title:evidence evidence intensive reasoning towards visual"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 18.649,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -4.685
-    }
-  },
-  {
-    "id": "7dae4e8b5b079424",
-    "kind": "paper",
-    "title": "RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States",
-    "summary_en": "Learning-based memory systems for self-evolving LLM agents face two tightly coupled challenges. First, trajectory-indexed utilities grow with the interaction history, thereby dispersing limited feedback over an ever-expanding state space. Second, because trajectory-level rewards are jointly assigned to co-retrieved memories, irrelevant experiences may receive misleading utility updates and consequently enter the memory-reward trap. To address these challenges, we introduce Reduced-Order Memory Reinforcement Learning (RoMeRL), which represents the growing trajectory-indexed utility space using a fixed-dimensional per-task memory state factorized by outcome polarity and memory dynamics. RoMeRL incorporates new experiences through a fixed set of semantic coordinates whose contents are updated or replaced over time, thereby concentrating feedback over a bounded utility support. Theoretically, we show that this reduced-order parameterization increases the average feedback received by each utility coordinate and characterize the steady-state occupancy of erroneous coordinates under a generic coordinate-transition model. Empirically, across ALFWorld and LifelongAgentBench, RoMeRL improves task performance, reduces the Cold-Q ratio by 80.0%, increases feedback density by approximately 6.0 times, reduces the maintained memory size by 84.4%, and cuts LLM calls by 21.1%. These results show that reduced-order utility states support efficient self-evolving agent memory while limiting persistent reward contamination. Code is available at: https://github.com/YOUNG-fnxm/RoMeRL",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.02508",
-        "external_id": "2608.02508"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.02508",
-        "external_id": "2608.02508"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/YOUNG-fnxm/RoMeRL",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yi Yang",
-      "Zhennan Chen",
-      "Yihong Zhuang",
-      "Tiehan Fan",
-      "Yinan Chen",
-      "Jian Li",
-      "Jian Yang",
-      "Ying Tai"
-    ],
-    "published_at": "2026-08-04T00:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.327278Z",
-    "dedup_keys": [
-      "arxiv:2608.02508",
-      "title:agent and balancing coverage evolving feedback memory memory order reduced reward romerl self states the trap utility via",
-      "github:young-fnxm/romerl"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 8,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 16.799,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "github_stars": 4.394,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -10.685
-    }
-  },
-  {
-    "id": "80380478cd5eb9b4",
-    "kind": "paper",
-    "title": "Confidence Estimation for Financial Vision-Language Models in Chart and Document Understanding",
-    "summary_en": "LVLMs are increasingly used to read financial charts, tables, and documents, where a single misread figure can move a decision and the most authoritative-looking answer is sometimes one the model produced without reading the exhibit. The operational question is therefore trust, not accuracy: which answers can be acted on, and which escalated to a reviewer. We evaluate seven confidence estimators, three inference-only and four trained internal probes, across five open-weight LVLMs and four conditions from three financial visual question-answering benchmarks, one bilingual; every probe is trained only on natural images and applied to finance without adaptation, so the results measure out-of-distribution transfer. Three findings hold. First, the scarce property is calibration, not ranking: the inference baselines rank correct above incorrect answers competitively but are badly overconfident, calibration error far above what a threshold can tolerate, and only the trained probes produce a thresholdable score. Second, reliability is structured rather than global, along two axes a practitioner can read directly: the best estimator shifts with both model and task, none leading more than eight of twenty (model, condition) cells, and a controlled bilingual contrast exposes an apparent language robustness as a composition artifact that dissolves once models are read one at a time. Third, cast as deferral under an error budget, how much can be safely automated is set first by the model's competence and only narrowed by its confidence, so deferral clears a real share of the easiest condition and almost none of the hardest, near zero at a strict 5% budget. Two trained probes carry the calibration a deferral policy needs, and among them only the grounding-aware one lowers its confidence on answers a model gives without using the figure, separating detected non-grounding from a fluent guess.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06532",
-        "external_id": "2608.06532"
-      }
-    ],
-    "actors": [
-      "Reza Khanmohammadi",
-      "Simerjot Kaur",
-      "Charese H. Smiley",
-      "Ivan Brugere",
-      "Mohammad M. Ghassemi"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.841534Z",
-    "dedup_keys": [
-      "arxiv:2608.06532",
-      "title:and chart confidence document estimation financial for language models understanding vision"
+      "hf:comfy-org/wan-animate-2"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 0,
+      "hf_likes": 35,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
+      "hf_trending_score": 35.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -1173,521 +1789,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 2.565,
+    "score": -9.158,
     "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "159f57c9e68051f4",
-    "kind": "paper",
-    "title": "ConstructCIE: A Dataset for Extracting Causal Information from Construction Accident Narratives",
-    "summary_en": "Construction accident narratives contain rich causal information, but the evidence is often implicit, long-span, and distributed. We introduce ConstructCIE, a manually annotated dataset for Causal Information Extraction from OSHA construction accident reports. The dataset uses a hierarchical schema for accident types, causal factors, sub-causal factors, and supporting evidence spans. We evaluate supervised sequence taggers and instruction-tuned LLMs in an end-to-end hierarchical extraction setting. Results show that most evaluated models achieve strong accident-type prediction and recover broad causal meaning but remain limited in precise span-level extraction. JHE generally achieves stronger exact and soft matching, while IHE sometimes achieves higher keyword F1. Error distributions vary by extraction strategy, but evidence-selection and span-boundary errors remain common. These findings show that reliable Causal Information Extraction for construction accidents requires stronger domain grounding and more accurate evidence extraction.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06495",
-        "external_id": "2608.06495"
-      }
-    ],
-    "actors": [
-      "Hung Nguyen",
-      "Jaehoon Lee",
-      "Namgyun Kim",
-      "Kuan-Hao Huang"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.841144Z",
-    "dedup_keys": [
-      "arxiv:2608.06495",
-      "title:accident causal constructcie construction dataset extracting for from information narratives"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "0cd71af66f6ba509",
-    "kind": "paper",
-    "title": "Don't `Well, Actually' Me Unless You Know What You're Talking About: Weak Presupposition Verification Degrades General QA Performance",
-    "summary_en": "False-presupposition QA (FPQA) tests LLMs on their ability to identify false presuppositions in questions and abstain or correct them rather than reinforcing false assumptions. The common approach reduces the task to prompting LLMs to extract presuppositions and fact checking each presupposition. While the performance on dedicated benchmarks keeps improving, evaluation largely focuses on questions with false presuppositions (FPQs) while ignoring the performance on ``normal'' questions (TPQs). Since many benchmarks over-represent FPQs compared to their natural occurrence, the result is that performance on these benchmarks doesn't reflect real-world QA performance. Through extensive experiments across various model families, sizes, and benchmarks, we show that methods that perform better on FPQs tend to perform worse on TPQs. Our analysis reveals this is the result of weak fact checking modules that reject also true presuppositions. We hope our findings will help guide future work toward FPQA methods that generalize well to realistic settings.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06539",
-        "external_id": "2608.06539"
-      }
-    ],
-    "actors": [
-      "Shenran Wang",
-      "Vered Shwartz",
-      "Hila Gonen"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.841609Z",
-    "dedup_keys": [
-      "arxiv:2608.06539",
-      "title:about actually degrades don general know performance presupposition talking unless verification weak well what you you"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "ff77c6d8b49eb588",
-    "kind": "paper",
-    "title": "GRASP: Reinforcing Language Model Anonymizers with Group Relative Policy Optimization",
-    "summary_en": "Large language models can infer sensitive personal attributes, such as age, location, and occupation, from ordinary text, turning everyday writing into a privacy risk. Adversarial anonymization defends against this by rewriting a text with a capable language model that also plays the attacker, but it needs a powerful model at inference time and thus sends private text to a third party, the very exposure anonymization should prevent. Recent work distills this behavior into a small on-device model using supervised fine-tuning and direct preference optimization (DPO), but DPO only imitates the teacher's offline choices and never directly optimizes the privacy--utility objective we care about. We introduce \\textbf{GRASP} (\\textbf{G}roup-\\textbf{R}elative \\textbf{A}nonymization via \\textbf{S}elf-refinement \\textbf{P}olicy-optimization), which reinforces the local anonymizer online with Group Relative Policy Optimization. A single small model acts as anonymizer, adversary, and utility judge, trained against a self-generated reward that hides attributes while preserving meaning, with a design that guards against reward hacking. Trained on Llama-3.1-8B, \\ours{} improves the privacy--utility trade-off over the DPO-distilled baseline, consistently across three independent LLM judges. Against adversarial anonymization driven by frontier models such as Gemini~2.5~Flash and Claude, it achieves a comparable or better overall trade-off while removing substantially more private information, and it runs entirely on-device at roughly $1\\%$ of the GPT-4o teacher's cost.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06526",
-        "external_id": "2608.06526"
-      }
-    ],
-    "actors": [
-      "Sajjad Ghiasvand",
-      "Nader Sehatbakhsh"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.841346Z",
-    "dedup_keys": [
-      "arxiv:2608.06526",
-      "title:anonymizers grasp group language model optimization policy reinforcing relative with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "6117aaba2e501c7b",
-    "kind": "paper",
-    "title": "Lost in Interpolation: Why Predictive Feedback Fails in Diffusion Language Models",
-    "summary_en": "Soft-masking accelerates the convergence of Masked Diffusion Language Models (MDLMs). Existing formulations build this blend with linear interpolation (LERP) in the raw embedding space, which implicitly treats that space as Euclidean. We analyze the embedding space of MDLMs and find that the mask and predicted-token embeddings maintain a near-constant angle of (\\approx 73^\\circ) throughout training, while embedding norms remain essentially flat across vocabulary-frequency rank. These indicate a hyperspherical geometry, for which LERP is the wrong interpolation primitive. We introduce Spherical Soft-Masking (S-SM), a drop-in replacement that aggregates the top-(k) predictions with a Fr'echet mean on the hypersphere and blends this mean with the mask direction using spherical linear interpolation (SLERP), then restores the native mask norm. We evaluate S-SM on continued pre-training of a released 169M-parameter MDLM checkpoint across a wide range of inference-time step budgets, SLERP feedback avoids the training degradation that LERP feedback induces and delivers MAUVE gains of up to 2x over the vanilla MDLM baseline and 27.5-56.1% over TopK/LERP at various sampling budgets, alongside consistently lower generative perplexity (16.9-19.6% over the baseline), while leaving output entropy and convergence essentially unchanged.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06529",
-        "external_id": "2608.06529"
-      }
-    ],
-    "actors": [
-      "Lavanya Nigam",
-      "Ishaan Bansal",
-      "Aryan Sood",
-      "Vidit Aggarwal",
-      "Gaurav Kumar Nayak"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.841430Z",
-    "dedup_keys": [
-      "arxiv:2608.06529",
-      "title:diffusion fails feedback interpolation language lost models predictive why"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "5a5c0c0351f7cdf3",
-    "kind": "paper",
-    "title": "Measuring the Cross-Lingual Comprehension Gap: How the language of the evidence shapes what language models understand",
-    "summary_en": "Language models are often evaluated as though capabilities demonstrated in English remain equally available when the same content is presented in other languages. Traditional multilingual benchmarks rarely isolate language while holding content, question, reference answer, model, and evaluation unit constant. We define the Cross-Lingual Comprehension Gap (CLCG) as the reduction in response quality when the same content and question are presented in a target language rather than in English. Using ParallelQA-18, a professionally human-translated parallel corpus, we evaluate five models from five laboratories on a stratified sample of 150 articles across 18 languages (English reference; Portuguese high-resource baseline; 16 targets spanning Joshi et al. 2020 classes 0-4). A within-item design varies only passage language. The primary estimator contrasts English versus pooled target-language Token-F1 micro-means on higher-complexity open-ended questions, with article-cluster bootstrap intervals. The primary pooled CLCG is 0.078 (95% CI 0.072-0.084), about a 17% reduction relative to the English score; the equal-language macro summary is 0.077. Net of Portuguese, the macro gap is 0.016 (95% CI 0.013-0.020). Language-level CLCG is negatively associated with Joshi resource class (rho = -0.594, p = 0.015, n = 16). In blinded paired human evaluations, higher-resource responses are preferred in 61.6% of decisive judgments (estimated preference probability 0.655, 95% CI 0.558-0.741). Capabilities shown in English should not be assumed to transfer equally to other languages; English-centered evaluations may overestimate quality for users of low-resource languages.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06506",
-        "external_id": "2608.06506"
-      }
-    ],
-    "actors": [
-      "Rafael da Silva",
-      "Jeff Eicher"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.841249Z",
-    "dedup_keys": [
-      "arxiv:2608.06506",
-      "title:comprehension cross evidence gap how language language lingual measuring models shapes the the the understand what"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "32c184b4164798c8",
-    "kind": "paper",
-    "title": "NTDH: Complex Reasoning for Comprehensive Affective Analysis",
-    "summary_en": "Comprehensive affective analysis is challenging for two reasons: it spans heterogeneous prediction tasks with continuous, ordinal, and multi-label outputs, and affective meaning is context-dependent, requiring conflicting cues to be reconciled rather than mapped directly to labels. Existing methods learn this mapping directly and do not model the reconciliation explicitly. We recast the task as a complex-reasoning problem, which yields one output interface across heterogeneous label spaces and a trajectory over which a verifiable reward can be optimised; to our knowledge, this is the first such treatment covering both sentiment and emotion. The obstacle is on the data side: affective reasoning traces must be synthesised, and generic synthesis is misaligned with the targets, tolerances, and phenomena of affect, and discards or leaks its failure cases. We propose NTDH, which addresses these four failures. Naturalisation sets the training answer to the gold label, so it is correct by construction. A Tolerance-aware gate checks each answer against the task's own scoring margin. Domain-aware strategies refine the reasoning using ideas from affective science. Directional Hints report only the type and direction of an error, without exposing the target. We train Qwen3-8B with SFT and then GRPO under the same tolerance used for verification (up to a more permissive construction gate on the multi-label subtask), and a component ablation quantifies the data-quality effect of each part. Using 16,302 training records, about 14x fewer than comparable instruction-tuned systems, the final policy improves over its SFT checkpoint on five of six official-test metrics and achieves the strongest EI-reg result among the compared systems, at a Pearson correlation of 0.862.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06425",
-        "external_id": "2608.06425"
-      }
-    ],
-    "actors": [
-      "Tianlei Zhu",
-      "Zhiwei Liu",
-      "Yuyan Wang",
-      "Xiao-Yang Liu",
-      "Sophia Ananiadou"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.840852Z",
-    "dedup_keys": [
-      "arxiv:2608.06425",
-      "title:affective analysis complex comprehensive for ntdh reasoning"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "bc46279a679e9eb0",
-    "kind": "paper",
-    "title": "Recovering Lesion Parameters from Aphasic Picture Naming Error Profiles in Large Language Models",
-    "summary_en": "Interpretability methods for large language models (LLMs) describe internal state but do not directly test whether that state is causally sufficient to produce the observed behavior. In earlier work, we lesioned LLMs to produce error profiles in picture naming, a central task for assessing aphasia, and found that specific lesions produced errors resembling those of individual stroke survivors. Here we ask the inverse question: given an error profile, can the lesion parameters that produced it be recovered, and what does this inverse problem reveal about transformer computation? Lesions in LLaVA-Vicuna 13B were parameterized by layer index, modification percentage, and noise sigma across 4,840 configurations, and error profiles were characterized by a seven-category clinical taxonomy (correct, semantic, unrelated, formal, mixed, neologism, no-response). We trained a multi-task neural network to map error profiles back to perturbation parameters. The problem admitted a partial solution: across 10 independently trained inverse models, modification percentage and noise sigma were recoverable, whereas layer index was recoverable only within a neighborhood. In counterfactual validation, a fresh model instance perturbed with the recovered parameters reproduced the target behavior in 81.4% of cases. This dissociation between low layer recovery and high counterfactual fidelity is consistent with functional redundancy across transformer layers, a property not captured by standard interpretability methods. As an out-of-distribution test, we applied the trained model to picture-naming error profiles from 278 stroke survivors; recovered parameters were syndrome-discriminative, most strongly for perturbation intensity, indicating generalization beyond the training distribution. Counterfactual validation provides a general framework for LLM interpretability claims beyond inverse mapping.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06429",
-        "external_id": "2608.06429"
-      }
-    ],
-    "actors": [
-      "Yong Yang",
-      "Roger Newman-Norlund",
-      "Xiang Guan",
-      "Saeed Ahmadi",
-      "Regan Willis",
-      "Nadra Salman",
-      "Kalil Warren",
-      "Sophie Arheix-Parras",
-      "Srihari Nelakuditi",
-      "Leonardo Bonilha",
-      "Christopher Rorden",
-      "Rutvik H. Desai",
-      "Julius Fridriksson"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.840962Z",
-    "dedup_keys": [
-      "arxiv:2608.06429",
-      "title:aphasic error from language large lesion models naming parameters picture profiles recovering"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "9ca514fb2563de87",
-    "kind": "paper",
-    "title": "Separating Decision-Rule Misalignment from Readout-Coverage Limitations in Speech Language Models",
-    "summary_en": "Speech language models are increasingly evaluated on paralinguistic tasks by the accuracy of prompted answers, but answer accuracy combines failures at different stages of the audio-to-answer computation. We introduce a generation-aligned diagnostic ladder that compares the emitted answer, the option logits, an affine readout of those logits, and a linear readout of the hidden state at the same answer token. Successive differences separate endpoint, decision-rule, and readout-coverage gaps. Across five systems and two emotion corpora, state decoding exceeds generation by 27.8 accuracy points on average, and both the decision-rule and readout-coverage gaps are positive in all ten conditions. A label-free logit correction improves generated accuracy in every condition, showing that part of the decision-rule gap is actionable. In rank-matched comparisons, emotion information outside the native readout generalizes to held-out speakers and survives controls for measured acoustic descriptors, but replacing the selected readout-external directions usually has little effect on emitted answers. These results distinguish information availability from behavioral use and localize performance losses across the decision rule and the state-to-answer readout.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "speech",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06409",
-        "external_id": "2608.06409"
-      }
-    ],
-    "actors": [
-      "Linkai Peng",
-      "Baorian Nuchged"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.840721Z",
-    "dedup_keys": [
-      "arxiv:2608.06409",
-      "title:coverage decision from language limitations misalignment models readout rule separating speech"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "81cef885fd2035dd",
-    "kind": "paper",
-    "title": "TEXAS: Task-Expert-Aware Supervision for Downstream Mixture-of-Experts LLM Adaptation",
-    "summary_en": "Mixture-of-Experts (MoE) language models route each token through a small subset of experts, making routing patterns useful for identifying task-relevant experts during downstream adaptation. Yet current approaches have two limitations: task experts are typically identified from aggregate routing statistics that reflect usage rather than association with successful task completion, and task-expert activations remain underexplored as signals for supervision allocation. We introduce Task-Expert-Aware Supervision (TEXAS), which combines correctness-conditioned task expert discovery with token-level supervision allocation. TEXAS compares expert activations on instances that the base model solves successfully and those it fails to solve, and retains experts more strongly activated on successful instances. During fine-tuning, it upweights answer tokens in failed instances when they activate these experts. TEXAS therefore leverages existing routing behavior without restricting adaptation to a fixed expert subset or imposing an explicit target routing distribution. Across three MoE models and six benchmarks, TEXAS achieves the best or tied-best performance in 17 of 18 settings and improves over the strongest baseline by 1.3--1.5 points on average. Ablations and further analyses validate both the discovered experts and the resulting supervision strategy.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06396",
-        "external_id": "2608.06396"
-      }
-    ],
-    "actors": [
-      "Guanzhi Deng",
-      "Haibo Wang",
-      "Kuan Wu",
-      "Xiangru Jian",
-      "Shing Yin Wong",
-      "Sichun Luo",
-      "Zhuoran Wang",
-      "Linqi Song"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.840602Z",
-    "dedup_keys": [
-      "arxiv:2608.06396",
-      "title:adaptation aware downstream expert experts for llm mixture supervision task texas"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
-    }
-  },
-  {
-    "id": "74424e909b74ec71",
-    "kind": "paper",
-    "title": "TradeVerse: A Longitudinal Benchmark of Political Negotiation in International Trade",
-    "summary_en": "LLMs are increasingly being applied to tasks involving institutional and political texts, but existing benchmarks evaluate them on isolated documents or single tasks. In realpolitik, negotiations are longitudinal data, where participating parties can align or argue over multiple iterations and each turn is an outcome of the previous turns, hence, understanding one turn requires tracking everything before it. We introduce TradeVerse, a benchmark built from the World Trade Organisation (WTO) specific trade concerns, where member states challenge one another and exchange arguments over multiple rounds, sometimes for years. We, in TradeVerse, reconstruct minutes of $1170$ meetings, spanning across 5 groups and $89$ product groups and define three tasks: first, the system has to analyze the longitudinal meeting records and predict the harmonized system codes (HS chapters) of the products under discussion in the particular meeting, second, we examine whether the system, upon analyzing the anonymized content of the meeting, can guess the name of the responding country and third, we ask the system to play the role of the responding country and provide the statement for the very last round. All labels are recovered directly from the proceedings, requiring no manual annotation. Our experiments highlight the challenges these tasks pose for current LLMs. To the best of our knowledge, TradeVerseis the first benchmark to investigate potential of LLMs in understanding longitudinal political trade negotiations.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.06549",
-        "external_id": "2608.06549"
-      }
-    ],
-    "actors": [
-      "Debodeep Banerjee",
-      "Amitangshu Dasgupta"
-    ],
-    "published_at": "2026-08-10T04:00:00Z",
-    "first_seen_at": "2026-08-11T02:57:57.841696Z",
-    "dedup_keys": [
-      "arxiv:2608.06549",
-      "title:benchmark international longitudinal negotiation political trade tradeverse"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 2.565,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -1.435
+      "hf_trending": 21.501,
+      "hf_likes": 10.751,
+      "age_decay": -41.41
     }
   }
 ]
