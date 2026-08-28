@@ -1,5 +1,54 @@
 [
   {
+    "id": "9843503a2c0be872",
+    "kind": "model",
+    "title": "zai-org/GLM-5.3",
+    "summary_en": "text-generation, transformers, glm_moe_dsa, conversational, en, zh, eval-results",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/zai-org/GLM-5.3",
+        "external_id": "zai-org/GLM-5.3"
+      }
+    ],
+    "actors": [
+      "zai-org"
+    ],
+    "published_at": "2026-08-25T06:42:50Z",
+    "first_seen_at": "2026-08-28T22:45:19.934042Z",
+    "dedup_keys": [
+      "hf:zai-org/glm-5.3"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 1089,
+      "hf_downloads": 0,
+      "hf_trending_score": 1057.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 65.263,
+    "score_breakdown": {
+      "hf_trending": 41.785,
+      "hf_likes": 20.982,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -5.504
+    }
+  },
+  {
     "id": "b34f6202d55d2fdf",
     "kind": "model",
     "title": "tencent/Hy4-preview",
@@ -20,15 +69,15 @@
       "tencent"
     ],
     "published_at": "2026-08-27T08:52:40Z",
-    "first_seen_at": "2026-08-28T12:20:45.199171Z",
+    "first_seen_at": "2026-08-28T22:45:19.934112Z",
     "dedup_keys": [
       "hf:tencent/hy4-preview"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 178,
+      "hf_likes": 234,
       "hf_downloads": 0,
-      "hf_trending_score": 178.0,
+      "hf_trending_score": 234.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -38,141 +87,13 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 52.968,
+    "score": 54.768,
     "score_breakdown": {
-      "hf_trending": 31.124,
-      "hf_likes": 15.562,
+      "hf_trending": 32.758,
+      "hf_likes": 16.379,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -1.718
-    }
-  },
-  {
-    "id": "3473ad1e90105976",
-    "kind": "paper",
-    "title": "TTPO: Test-Time Policy Optimization",
-    "summary_en": "Recent prominent post-training methods, such as Reinforcement Learning (RL) and On-Policy Self-Distillation (OPSD), have driven rapid progress in mathematical reasoning for large language models, yet their reliance on ground-truth labels precludes test-time training (TTT). Replacing ground truth with majority-vote pseudo-labels is a natural alternative, yet it is fragile: an incorrect vote corrupts the teacher and misleads every token. We observe that this failure mode is asymmetric: rollouts that disagree with the pseudo-label are typically wrong regardless of whether the vote itself is correct. Building on this observation, we propose Test-Time Policy Optimization (TTPO), an asymmetric objective that distills agreeing rollouts via OPSD and penalizes disagreeing rollouts with Grouped RL. Token-level selection further refines both branches: distillation down-weights already-converged positions, while RL penalizes only confident errors. Both updates remain well-grounded even under frequent pseudo-label errors, and majority-vote routing yields tighter self-supervision as the model improves. Without any labels, TTPO matches label-supervised OPSD on five competition-level benchmarks, raises Qwen3-1.7B from 38.0% to 45.2% in TTT, yields +25.2% to +36.4% without thinking, and shows strong cross-task generalization.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.27448",
-        "external_id": "2608.27448"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.27448",
-        "external_id": "2608.27448"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/ZJU-REAL/TTPO",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Aozhe Wang",
-      "Zhengxi Lu",
-      "Jianze Wang",
-      "Shangke Lv",
-      "Ying Liu",
-      "Weiming Lu",
-      "Jun Xiao",
-      "Yueting Zhuang",
-      "Hua Yang",
-      "Qianglong Chen",
-      "Yongliang Shen"
-    ],
-    "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.211875Z",
-    "dedup_keys": [
-      "arxiv:2608.27448",
-      "title:optimization policy test time ttpo",
-      "github:zju-real/ttpo"
-    ],
-    "signals": {
-      "hf_upvotes": 50,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 8,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 45.576,
-    "score_breakdown": {
-      "hf_upvotes": 31.455,
-      "github_stars": 4.394,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.273
-    }
-  },
-  {
-    "id": "0ee5d8f54f816e5f",
-    "kind": "model",
-    "title": "incoai/GLM-5.3-Flash-DFlash2",
-    "summary_en": "text-generation, transformers, qwen3, dflash, dflash2, speculative-decoding, block-diffusion, draft-model",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2",
-        "external_id": "incoai/GLM-5.3-Flash-DFlash2"
-      },
-      {
-        "source": "hf_base_model:finetune",
-        "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
-        "external_id": "zai-org/GLM-5.3-Flash"
-      }
-    ],
-    "actors": [
-      "incoai"
-    ],
-    "published_at": "2026-08-27T21:41:29Z",
-    "first_seen_at": "2026-08-28T12:20:45.199795Z",
-    "dedup_keys": [
-      "hf:incoai/glm-5.3-flash-dflash2"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 68,
-      "hf_downloads": 0,
-      "hf_trending_score": 68.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 45.189,
-    "score_breakdown": {
-      "hf_trending": 25.405,
-      "hf_likes": 12.702,
-      "has_weights": 4.0,
-      "topic_match": 4.0,
-      "age_decay": -0.918
+      "age_decay": -2.369
     }
   },
   {
@@ -225,19 +146,19 @@
       "Zhuosheng Zhang"
     ],
     "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.211936Z",
+    "first_seen_at": "2026-08-28T22:45:19.943066Z",
     "dedup_keys": [
       "arxiv:2608.27456",
       "title:agency city from local perception real scale spatial urbanground",
       "github:urbanground/urbanground"
     ],
     "signals": {
-      "hf_upvotes": 37,
+      "hf_upvotes": 69,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 17,
+      "github_stars": 40,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -245,14 +166,343 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 44.609,
+    "score": 50.491,
     "score_breakdown": {
-      "hf_upvotes": 29.101,
-      "github_stars": 5.781,
+      "hf_upvotes": 33.988,
+      "github_stars": 7.427,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.273
+      "age_decay": -2.924
+    }
+  },
+  {
+    "id": "3473ad1e90105976",
+    "kind": "paper",
+    "title": "TTPO: Test-Time Policy Optimization",
+    "summary_en": "Recent prominent post-training methods, such as Reinforcement Learning (RL) and On-Policy Self-Distillation (OPSD), have driven rapid progress in mathematical reasoning for large language models, yet their reliance on ground-truth labels precludes test-time training (TTT). Replacing ground truth with majority-vote pseudo-labels is a natural alternative, yet it is fragile: an incorrect vote corrupts the teacher and misleads every token. We observe that this failure mode is asymmetric: rollouts that disagree with the pseudo-label are typically wrong regardless of whether the vote itself is correct. Building on this observation, we propose Test-Time Policy Optimization (TTPO), an asymmetric objective that distills agreeing rollouts via OPSD and penalizes disagreeing rollouts with Grouped RL. Token-level selection further refines both branches: distillation down-weights already-converged positions, while RL penalizes only confident errors. Both updates remain well-grounded even under frequent pseudo-label errors, and majority-vote routing yields tighter self-supervision as the model improves. Without any labels, TTPO matches label-supervised OPSD on five competition-level benchmarks, raises Qwen3-1.7B from 38.0% to 45.2% in TTT, yields +25.2% to +36.4% without thinking, and shows strong cross-task generalization.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.27448",
+        "external_id": "2608.27448"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.27448",
+        "external_id": "2608.27448"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ZJU-REAL/TTPO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Aozhe Wang",
+      "Zhengxi Lu",
+      "Jianze Wang",
+      "Shangke Lv",
+      "Ying Liu",
+      "Weiming Lu",
+      "Jun Xiao",
+      "Yueting Zhuang",
+      "Hua Yang",
+      "Qianglong Chen",
+      "Yongliang Shen"
+    ],
+    "published_at": "2026-08-27T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.943095Z",
+    "dedup_keys": [
+      "arxiv:2608.27448",
+      "title:optimization policy test time ttpo",
+      "github:zju-real/ttpo"
+    ],
+    "signals": {
+      "hf_upvotes": 62,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 18,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 48.11,
+    "score_breakdown": {
+      "hf_upvotes": 33.145,
+      "github_stars": 5.889,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.924
+    }
+  },
+  {
+    "id": "0ee5d8f54f816e5f",
+    "kind": "model",
+    "title": "incoai/GLM-5.3-Flash-DFlash2",
+    "summary_en": "text-generation, transformers, qwen3, dflash, dflash2, speculative-decoding, block-diffusion, draft-model",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2",
+        "external_id": "incoai/GLM-5.3-Flash-DFlash2"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+        "external_id": "zai-org/GLM-5.3-Flash"
+      }
+    ],
+    "actors": [
+      "incoai"
+    ],
+    "published_at": "2026-08-27T21:41:29Z",
+    "first_seen_at": "2026-08-28T22:45:19.934639Z",
+    "dedup_keys": [
+      "hf:incoai/glm-5.3-flash-dflash2"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 78,
+      "hf_downloads": 0,
+      "hf_trending_score": 78.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 45.757,
+    "score_breakdown": {
+      "hf_trending": 26.217,
+      "hf_likes": 13.108,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -1.568
+    }
+  },
+  {
+    "id": "b91d8cef423275a6",
+    "kind": "paper",
+    "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+    "summary_en": "Recent video generation models are increasingly framed as world models. Many physical processes can unfold in more than one valid way. Therefore, a world model should reproduce not only a plausible trajectory, but also the distribution of possible behaviors under the same initial observation and action. We call this distribution-level requirement probabilistic alignment. However, existing evaluations largely assess individual-video plausibility and do not test whether repeated generations recover the correct distribution. This raises a central question: how far are current video generators from probabilistically aligned world modeling? To answer it, we formalize probabilistic alignment as a distributional criterion for world models and introduce PAWBench, a benchmark for evaluating video generators as stochastic samplers of world dynamics. We further introduce PAWEval, an outcome-level protocol that converts repeated video rollouts into empirical distributions over possible physical behaviors. Across 50 scenarios and eleven current systems, no model consistently matches the reference probabilities while recovering the range of valid behaviors. Having established this gap, we test whether language prompts, initial noise sampling, or model training can reshape the model's predictive distribution. We believe our work can serve as a foundation for future efforts to move towards probabilistically aligned world modeling.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.27345",
+        "external_id": "2608.27345"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.27345",
+        "external_id": "2608.27345"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Andrew0613/PAWBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuandong Pu",
+      "Le Zhuo",
+      "Sayak Paul",
+      "Gabriel Jorge Menezes",
+      "Avram Đorđević",
+      "Shiyang Li",
+      "Yifan Zhou",
+      "Bin Fu",
+      "Wenlong Zhang",
+      "Junjun He",
+      "Yu Qiao",
+      "Yihao Liu",
+      "Jingbo Xing",
+      "Xi Chen"
+    ],
+    "published_at": "2026-08-27T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.943023Z",
+    "dedup_keys": [
+      "arxiv:2608.27345",
+      "title:aligned are far from how modeling pawbench probabilistically world",
+      "github:andrew0613/pawbench"
+    ],
+    "signals": {
+      "hf_upvotes": 73,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 6,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 43.401,
+    "score_breakdown": {
+      "hf_upvotes": 34.433,
+      "github_stars": 3.892,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.924
+    }
+  },
+  {
+    "id": "951dd14229971776",
+    "kind": "paper",
+    "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
+    "summary_en": "A common strategy for scaling world models is to train on more crawled video with more compute. We argue that this strategy is inefficient: scaling world models also requires a recursive data engine that offers grounded reward signals. The success of code agents illustrates why this matters. As code is executable, compilers and runtimes can provide high-quality rewards for Reinforcement Learning (RL) post-training of LLMs. By contrast, spatial generation still relies largely on fuzzy proxies such as CLIP scores. These signals are fuzzy and biased, making them hard to support RL post-training. Compared with these, game development provides a missing reward environment for spatial world models. A scene encoded by a game engine is an executable world specification: the engine can efficiently check collision, physics, navigability and bounded playability, while the developer provides the global verification signal by judging whether the scene should be accepted. Game development also provides real-world long-horizon trajectory data for RL post-training. We therefore propose Reinforcement Learning with Human-Engine Verification (RLHEV), a post-training paradigm that combines dense engine signals with implicit human acceptance feedback from the development process.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.25518",
+        "external_id": "2608.25518"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.25518",
+        "external_id": "2608.25518"
+      }
+    ],
+    "actors": [
+      "Pengfei Zhou",
+      "Hexin Wang",
+      "Zhengfeiyang Zhang",
+      "Yixing Ma",
+      "Zhenglin Wan",
+      "Kaipeng Zhang",
+      "Wangbo Zhao",
+      "Yang You"
+    ],
+    "published_at": "2026-08-26T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.942854Z",
+    "dedup_keys": [
+      "arxiv:2608.25518",
+      "title:agentic data development engine for game models scaling trajectory verifiable world"
+    ],
+    "signals": {
+      "hf_upvotes": 118,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 42.809,
+    "score_breakdown": {
+      "hf_upvotes": 38.233,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.424
+    }
+  },
+  {
+    "id": "1e2f8037aae764fe",
+    "kind": "paper",
+    "title": "GameWAM: A World Action Model for Video Games",
+    "summary_en": "Modern video games combine first-person perception, rapid visual changes, persistent world state, and heterogeneous native controls. Existing game agents map visual and task context directly to actions but lack explicit world dynamics modeling, whereas interactive game world models predict visual futures from supplied actions but do not serve as task policies. World-Action Models (WAMs) unify these objectives, but remain largely unexplored under the dynamics and open-ended interaction of video games. We introduce GameWAM, to our knowledge the first WAM for native closed-loop gameplay and GUI control. GameWAM jointly generates future visual observations and executable keyboard-mouse trajectories through parallel visual and action generative processes with block-causal conditioning and flow matching. To support joint world-action learning, we construct synchronized gameplay and GUI trajectories. To handle heterogeneous native control, GameWAM predicts a gameplay/GUI mode at each action step and generates actions with mode-specific prediction distributions and continuous-action normalization. For long-horizon interaction, block-cycle control predicts beyond the committed horizon, executes only a short action prefix, and replans from new observations, while fine-grained within-cycle context and hierarchical cross-cycle history preserve temporal continuity. Experiments demonstrate competitive task success with fewer executed native actions than the compared agents. We further uncover Low-Frequency Action Source Imprinting (LASI), in which low-frequency components of the sampled action source systematically steer coarse generated camera motion under fixed conditioning, revealing a source-sensitivity failure mode in generative control. Project page is available at https://yunncheng.github.io/GameWAM/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.26200",
+        "external_id": "2608.26200"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.26200",
+        "external_id": "2608.26200"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yunncheng/GameWAM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuncheng Guo",
+      "Zhanqiu Zhang",
+      "Yiwen Guo",
+      "Weijia Li"
+    ],
+    "published_at": "2026-08-25T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.943194Z",
+    "dedup_keys": [
+      "arxiv:2608.26200",
+      "title:action for games gamewam model video world",
+      "github:yunncheng/gamewam"
+    ],
+    "signals": {
+      "hf_upvotes": 37,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 22,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.448,
+    "score_breakdown": {
+      "hf_upvotes": 29.101,
+      "github_stars": 6.271,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.924
     }
   },
   {
@@ -301,7 +551,7 @@
       "Yinghao Xu"
     ],
     "published_at": "2026-08-26T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212032Z",
+    "first_seen_at": "2026-08-28T22:45:19.943245Z",
     "dedup_keys": [
       "arxiv:2608.26103",
       "title:action context ended for from generalization human modeling open task videos wam world zero",
@@ -313,7 +563,7 @@
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 100,
+      "github_stars": 127,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -321,69 +571,62 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 40.123,
+    "score": 39.946,
     "score_breakdown": {
       "hf_upvotes": 22.666,
-      "github_stars": 9.23,
+      "github_stars": 9.704,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.773
+      "age_decay": -4.424
     }
   },
   {
-    "id": "b91d8cef423275a6",
+    "id": "fc6b2e7532f0be75",
     "kind": "paper",
-    "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
-    "summary_en": "Recent video generation models are increasingly framed as world models. Many physical processes can unfold in more than one valid way. Therefore, a world model should reproduce not only a plausible trajectory, but also the distribution of possible behaviors under the same initial observation and action. We call this distribution-level requirement probabilistic alignment. However, existing evaluations largely assess individual-video plausibility and do not test whether repeated generations recover the correct distribution. This raises a central question: how far are current video generators from probabilistically aligned world modeling? To answer it, we formalize probabilistic alignment as a distributional criterion for world models and introduce PAWBench, a benchmark for evaluating video generators as stochastic samplers of world dynamics. We further introduce PAWEval, an outcome-level protocol that converts repeated video rollouts into empirical distributions over possible physical behaviors. Across 50 scenarios and eleven current systems, no model consistently matches the reference probabilities while recovering the range of valid behaviors. Having established this gap, we test whether language prompts, initial noise sampling, or model training can reshape the model's predictive distribution. We believe our work can serve as a foundation for future efforts to move towards probabilistically aligned world modeling.",
+    "title": "Self-OPD: On-Policy Distillation for Flow Matching Models without Teacher",
+    "summary_en": "On-policy distillation (OPD), which leverages a pre-trained, specialized teacher model to provide dense supervisory signals, has achieved significant success in Large Language Models (LLMs) and has recently been adapted to flow matching models. However, this paradigm suffers from two major issues: First, training a separate, task-specific teacher for every new objective incurs high computational costs. Second, the discrepancy between teacher and student distributions often leads to compounding errors along the generation trajectory. In this paper, we introduce Self-OPD, a teacher-free OPD framework for flow matching models that turns the student's own self-exploration into step-wise supervision. At each timestep, Self-OPD branches the deterministic next-state prediction into K stochastic SDE candidates, rolls them out with the ODE sampler, and compares their rewards against a deterministic self-reference baseline to obtain normalized advantages. The velocity field is optimized with an all-branch pull-push objective, where high-advantage branches attract the student and low-advantage branches repel it under direction-aware attenuation and SDE-variance normalization. For multi-objective alignment, Self-OPD fuses normalized scores at the reward level, avoiding direct gradient conflict. Experiments on single and mixed reward benchmarks show that Self-OPD outperforms prior RL and OPD methods without task-specific teachers.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
+      "llm",
+      "rag",
       "cv",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.27345",
-        "external_id": "2608.27345"
+        "url": "https://huggingface.co/papers/2608.26872",
+        "external_id": "2608.26872"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.27345",
-        "external_id": "2608.27345"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Andrew0613/PAWBench",
-        "external_id": null
+        "url": "https://arxiv.org/abs/2608.26872",
+        "external_id": "2608.26872"
       }
     ],
     "actors": [
-      "Yuandong Pu",
-      "Le Zhuo",
-      "Sayak Paul",
-      "Gabriel Jorge Menezes",
-      "Avram Đorđević",
-      "Shiyang Li",
-      "Yifan Zhou",
-      "Bin Fu",
-      "Wenlong Zhang",
-      "Junjun He",
-      "Yu Qiao",
-      "Yihao Liu",
-      "Jingbo Xing",
-      "Xi Chen"
+      "Shiyi Zhang",
+      "Mushui Liu",
+      "Yunze Tong",
+      "Wanggui He",
+      "Siyu Zou",
+      "Jinlong Liu",
+      "Yunlong Yu",
+      "Jian Song",
+      "Hao Jiang",
+      "Pipei Huang",
+      "Bo Zheng"
     ],
     "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.211787Z",
+    "first_seen_at": "2026-08-28T22:45:19.943121Z",
     "dedup_keys": [
-      "arxiv:2608.27345",
-      "title:aligned are far from how modeling pawbench probabilistically world",
-      "github:andrew0613/pawbench"
+      "arxiv:2608.26872",
+      "title:distillation flow for matching models opd policy self teacher without"
     ],
     "signals": {
-      "hf_upvotes": 69,
+      "hf_upvotes": 55,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -392,16 +635,16 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 39.715,
+    "score": 38.279,
     "score_breakdown": {
-      "hf_upvotes": 33.988,
+      "hf_upvotes": 32.203,
       "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -2.273
+      "topic_match": 4.0,
+      "age_decay": -2.924
     }
   },
   {
@@ -446,13 +689,13 @@
       "Weiwen Liu"
     ],
     "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.211840Z",
+    "first_seen_at": "2026-08-28T22:45:19.943145Z",
     "dedup_keys": [
       "arxiv:2608.27260",
       "title:ace agentic agents data data for generation good lens llm makes what"
     ],
     "signals": {
-      "hf_upvotes": 52,
+      "hf_upvotes": 55,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -465,460 +708,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 38.489,
+    "score": 38.279,
     "score_breakdown": {
-      "hf_upvotes": 31.762,
+      "hf_upvotes": 32.203,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -2.273
-    }
-  },
-  {
-    "id": "1e2f8037aae764fe",
-    "kind": "paper",
-    "title": "GameWAM: A World Action Model for Video Games",
-    "summary_en": "Modern video games combine first-person perception, rapid visual changes, persistent world state, and heterogeneous native controls. Existing game agents map visual and task context directly to actions but lack explicit world dynamics modeling, whereas interactive game world models predict visual futures from supplied actions but do not serve as task policies. World-Action Models (WAMs) unify these objectives, but remain largely unexplored under the dynamics and open-ended interaction of video games. We introduce GameWAM, to our knowledge the first WAM for native closed-loop gameplay and GUI control. GameWAM jointly generates future visual observations and executable keyboard-mouse trajectories through parallel visual and action generative processes with block-causal conditioning and flow matching. To support joint world-action learning, we construct synchronized gameplay and GUI trajectories. To handle heterogeneous native control, GameWAM predicts a gameplay/GUI mode at each action step and generates actions with mode-specific prediction distributions and continuous-action normalization. For long-horizon interaction, block-cycle control predicts beyond the committed horizon, executes only a short action prefix, and replans from new observations, while fine-grained within-cycle context and hierarchical cross-cycle history preserve temporal continuity. Experiments demonstrate competitive task success with fewer executed native actions than the compared agents. We further uncover Low-Frequency Action Source Imprinting (LASI), in which low-frequency components of the sampled action source systematically steer coarse generated camera motion under fixed conditioning, revealing a source-sensitivity failure mode in generative control. Project page is available at https://yunncheng.github.io/GameWAM/.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.26200",
-        "external_id": "2608.26200"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26200",
-        "external_id": "2608.26200"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/yunncheng/GameWAM",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yuncheng Guo",
-      "Zhanqiu Zhang",
-      "Yiwen Guo",
-      "Weijia Li"
-    ],
-    "published_at": "2026-08-25T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.211961Z",
-    "dedup_keys": [
-      "arxiv:2608.26200",
-      "title:action for games gamewam model video world",
-      "github:yunncheng/gamewam"
-    ],
-    "signals": {
-      "hf_upvotes": 31,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 35.839,
-    "score_breakdown": {
-      "hf_upvotes": 27.726,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -5.273
-    }
-  },
-  {
-    "id": "fc6b2e7532f0be75",
-    "kind": "paper",
-    "title": "Self-OPD: On-Policy Distillation for Flow Matching Models without Teacher",
-    "summary_en": "On-policy distillation (OPD), which leverages a pre-trained, specialized teacher model to provide dense supervisory signals, has achieved significant success in Large Language Models (LLMs) and has recently been adapted to flow matching models. However, this paradigm suffers from two major issues: First, training a separate, task-specific teacher for every new objective incurs high computational costs. Second, the discrepancy between teacher and student distributions often leads to compounding errors along the generation trajectory. In this paper, we introduce Self-OPD, a teacher-free OPD framework for flow matching models that turns the student's own self-exploration into step-wise supervision. At each timestep, Self-OPD branches the deterministic next-state prediction into K stochastic SDE candidates, rolls them out with the ODE sampler, and compares their rewards against a deterministic self-reference baseline to obtain normalized advantages. The velocity field is optimized with an all-branch pull-push objective, where high-advantage branches attract the student and low-advantage branches repel it under direction-aware attenuation and SDE-variance normalization. For multi-objective alignment, Self-OPD fuses normalized scores at the reward level, avoiding direct gradient conflict. Experiments on single and mixed reward benchmarks show that Self-OPD outperforms prior RL and OPD methods without task-specific teachers.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.26872",
-        "external_id": "2608.26872"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26872",
-        "external_id": "2608.26872"
-      }
-    ],
-    "actors": [
-      "Shiyi Zhang",
-      "Mushui Liu",
-      "Yunze Tong",
-      "Wanggui He",
-      "Siyu Zou",
-      "Jinlong Liu",
-      "Yunlong Yu",
-      "Jian Song",
-      "Hao Jiang",
-      "Pipei Huang",
-      "Bo Zheng"
-    ],
-    "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.211981Z",
-    "dedup_keys": [
-      "arxiv:2608.26872",
-      "title:distillation flow for matching models opd policy self teacher without"
-    ],
-    "signals": {
-      "hf_upvotes": 25,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.792,
-    "score_breakdown": {
-      "hf_upvotes": 26.065,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -2.273
-    }
-  },
-  {
-    "id": "0f6c4c0b2ab18f87",
-    "kind": "paper",
-    "title": "PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
-    "summary_en": "Long-horizon agent runs generate experience that can improve both the current run and future work. Most self-improvement methods process this experience only after execution ends, so they cannot redirect the active run or immediately apply and validate lessons learned from it. We argue that self-improvement should instead be live, using emerging experience both to redirect the active run and to update the persistent harness. Existing agent architectures do not fully support this goal. Single-agent self-correction combines task execution and trajectory assessment within one context, while subagent delegation separates execution but typically cannot redirect an active subagent. We present PILOT, a supervisor-worker harness for live self-improvement through two coupled mechanisms: (1) live steering lets a separate supervisor redirect or abort the active worker during execution; and (2) live self-evolution distils procedures and failure modes revealed during execution into reusable skills and memory. Across two frozen backbones and three benchmarks, PILOT ranks first in five of six configurations. On Terminal-Bench 2.0, PILOT outperforms counterpart harnesses by up to 9.8 percentage points. In the self-improvement setting, PILOT gains 14.6 points with GLM-5.1 and 12.4 points with Kimi-K2.6. Mean output tokens fall by 42.9% and 47.4%, while successful evaluations per million output tokens rise by 110.3% and 134.0%, respectively.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.26530",
-        "external_id": "2608.26530"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26530",
-        "external_id": "2608.26530"
-      }
-    ],
-    "actors": [
-      "Yang Xiao",
-      "Yusong Sun",
-      "Haoyi Wu",
-      "Wenyang Hui",
-      "Wen Da",
-      "Zhaokai Luo",
-      "Mu Chuan",
-      "Yao Hu",
-      "Wenjie Li",
-      "Chengyue Jiang"
-    ],
-    "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212002Z",
-    "dedup_keys": [
-      "arxiv:2608.26530",
-      "title:agents for horizon improvement live long loop pilot self the"
-    ],
-    "signals": {
-      "hf_upvotes": 22,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 31.811,
-    "score_breakdown": {
-      "hf_upvotes": 25.084,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -2.273
-    }
-  },
-  {
-    "id": "fe49b908fca723bf",
-    "kind": "model",
-    "title": "aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI",
-    "summary_en": "text-to-video, minimax-h3, comfyui, lora, video, audio, distillation",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "speech"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI",
-        "external_id": "aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI"
-      },
-      {
-        "source": "hf_base_model:adapter",
-        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-        "external_id": "MiniMaxAI/MiniMax-H3"
-      }
-    ],
-    "actors": [
-      "aptech0081"
-    ],
-    "published_at": "2026-08-26T15:03:46Z",
-    "first_seen_at": "2026-08-28T12:20:45.200271Z",
-    "dedup_keys": [
-      "hf:aptech0081/minimax-h3-acc-loras-comfyui"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 37,
-      "hf_downloads": 0,
-      "hf_trending_score": 37.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.907,
-    "score_breakdown": {
-      "hf_trending": 21.826,
-      "hf_likes": 10.913,
-      "age_decay": -2.832
-    }
-  },
-  {
-    "id": "150ecffd88257dec",
-    "kind": "release",
-    "title": "Supporting Thailand’s next generation of AI startups",
-    "summary_en": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-08-28T02:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.571596Z",
-    "dedup_keys": [
-      "url:openai.com/index/supporting-next-generation-ai-startups-thailand",
-      "title:generation next startups supporting thailand"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.352,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.648
-    }
-  },
-  {
-    "id": "cf9f381b99653003",
-    "kind": "release",
-    "title": "Planetary prediction engine: Automating global models via Earth AI",
-    "summary_en": "Earth AI",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "google_research",
-        "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "google_research"
-    ],
-    "published_at": "2026-08-27T17:37:20Z",
-    "first_seen_at": "2026-08-28T12:20:46.360624Z",
-    "dedup_keys": [
-      "url:research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai",
-      "title:automating earth engine global models planetary prediction via"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.828,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.172
-    }
-  },
-  {
-    "id": "5b2a74c79988e6c8",
-    "kind": "paper",
-    "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
-    "summary_en": "AI-powered digital avatar streamers must answer product questions, engage viewers, and execute marketing strategies in real time, demanding low latency, frequent strategy updates, and accurate yet effective responses. Evolvable Harnesses, whose Skills, Hooks, prompts, and tools can be updated independently of model weights, enable rapid iteration but expose a trade-off: large models adapt zero-shot yet are too slow, whereas compact models meet latency targets but overfit to fixed Harness configurations. We propose Harness-Aware Training (HAT), which trains compact models to adapt to changing Harnesses. Its key component, Harness-State Augmentation (HSA), applies task-preserving transformations to Skill identifiers and content, tool schemas, prompt structures, and Hook functions. Training proceeds in three stages: HSA-SFT learns reasoning and tool use from strong-model trajectories across diverse environments; General On-Policy Distillation restores generalization lost during SFT; and HSA-RL improves robustness to changing Harnesses through reinforcement learning in augmented environments. Across four evaluation sets, HAT achieves 94.8 on Live-Stream QA (base: 80.3; strongest general LLM: 93.0) and 94.6 on Harness-Variant QA (base: 75.4). Unlike Fixed-Harness SFT, which lowers IFEval by 7.7 points from the base model, HAT avoids this regression and reaches 83.5. On one NVIDIA H20 GPU, the optimized system delivers P50 and P95 latencies of 3.4 s and 8.1 s. Deployed in Taobao Live's digital-avatar service, it also yields positive online A/B test results for GMV and item-page views.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.15763",
-        "external_id": "2608.15763"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.15763",
-        "external_id": "2608.15763"
-      }
-    ],
-    "actors": [
-      "TaoLive AIGC LLM Team",
-      "Yuhan Sun",
-      "Wenhao Lin",
-      "Yongdong Luo",
-      "Yibo Hu",
-      "Meiguang Jin",
-      "Junfeng Ma",
-      "Weihang Pan",
-      "Jiaxin Zhao",
-      "Zulong Chen"
-    ],
-    "published_at": "2026-08-22T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.211900Z",
-    "dedup_keys": [
-      "arxiv:2608.15763",
-      "title:agent agents avatar digital evolve harness report taolive technical their training with"
-    ],
-    "signals": {
-      "hf_upvotes": 39,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.738,
-    "score_breakdown": {
-      "hf_upvotes": 29.511,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -9.773
-    }
-  },
-  {
-    "id": "8c597b1e6e688b26",
-    "kind": "release",
-    "title": "Piloting the world's first double-blind AI evaluations",
-    "summary_en": "Piloting the world's first double-blind AI evaluations",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "deepmind",
-        "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "deepmind"
-    ],
-    "published_at": "2026-08-27T12:59:16Z",
-    "first_seen_at": "2026-08-28T12:20:45.990569Z",
-    "dedup_keys": [
-      "url:deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
-      "title:blind double evaluations first piloting the world"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.538,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.462
+      "age_decay": -2.924
     }
   },
   {
@@ -963,19 +758,19 @@
       "Yao Yao"
     ],
     "published_at": "2026-08-26T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212093Z",
+    "first_seen_at": "2026-08-28T22:45:19.943311Z",
     "dedup_keys": [
       "arxiv:2608.26238",
       "title:agentic control modeling procedura procedural with",
       "github:spatiaos/procedura"
     ],
     "signals": {
-      "hf_upvotes": 4,
+      "hf_upvotes": 7,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 40,
+      "github_stars": 63,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -983,39 +778,156 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 28.53,
+    "score": 32.53,
     "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "github_stars": 7.427,
+      "hf_upvotes": 16.636,
+      "github_stars": 8.318,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.773
+      "age_decay": -4.424
     }
   },
   {
-    "id": "88d959692c1dea7c",
-    "kind": "release",
-    "title": "Expanding OpenAI’s presence in Brazil",
-    "summary_en": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
+    "id": "0f6c4c0b2ab18f87",
+    "kind": "paper",
+    "title": "PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
+    "summary_en": "Long-horizon agent runs generate experience that can improve both the current run and future work. Most self-improvement methods process this experience only after execution ends, so they cannot redirect the active run or immediately apply and validate lessons learned from it. We argue that self-improvement should instead be live, using emerging experience both to redirect the active run and to update the persistent harness. Existing agent architectures do not fully support this goal. Single-agent self-correction combines task execution and trajectory assessment within one context, while subagent delegation separates execution but typically cannot redirect an active subagent. We present PILOT, a supervisor-worker harness for live self-improvement through two coupled mechanisms: (1) live steering lets a separate supervisor redirect or abort the active worker during execution; and (2) live self-evolution distils procedures and failure modes revealed during execution into reusable skills and memory. Across two frozen backbones and three benchmarks, PILOT ranks first in five of six configurations. On Terminal-Bench 2.0, PILOT outperforms counterpart harnesses by up to 9.8 percentage points. In the self-improvement setting, PILOT gains 14.6 points with GLM-5.1 and 12.4 points with Kimi-K2.6. Mean output tokens fall by 42.9% and 47.4%, while successful evaluations per million output tokens rise by 110.3% and 134.0%, respectively.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
+    "topics": [
+      "agent",
+      "eval"
+    ],
     "links": [
       {
-        "source": "openai",
-        "url": "https://openai.com/index/expanding-our-presence-in-brazil",
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.26530",
+        "external_id": "2608.26530"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.26530",
+        "external_id": "2608.26530"
+      }
+    ],
+    "actors": [
+      "Yang Xiao",
+      "Yusong Sun",
+      "Haoyi Wu",
+      "Wenyang Hui",
+      "Wen Da",
+      "Zhaokai Luo",
+      "Mu Chuan",
+      "Yao Hu",
+      "Wenjie Li",
+      "Chengyue Jiang"
+    ],
+    "published_at": "2026-08-27T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.943218Z",
+    "dedup_keys": [
+      "arxiv:2608.26530",
+      "title:agents for horizon improvement live long loop pilot self the"
+    ],
+    "signals": {
+      "hf_upvotes": 25,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.141,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.924
+    }
+  },
+  {
+    "id": "fe49b908fca723bf",
+    "kind": "model",
+    "title": "aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI",
+    "summary_en": "text-to-video, minimax-h3, comfyui, lora, video, audio, distillation",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI",
+        "external_id": "aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "aptech0081"
+    ],
+    "published_at": "2026-08-26T15:03:46Z",
+    "first_seen_at": "2026-08-28T22:45:19.935219Z",
+    "dedup_keys": [
+      "hf:aptech0081/minimax-h3-acc-loras-comfyui"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 41,
+      "hf_downloads": 0,
+      "hf_trending_score": 41.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 30.157,
+    "score_breakdown": {
+      "hf_trending": 22.426,
+      "hf_likes": 11.213,
+      "age_decay": -3.482
+    }
+  },
+  {
+    "id": "60bfeebe7a0f87a7",
+    "kind": "release",
+    "title": "Deploy an Open Model from Checkpoint to Inference in Two Commands with NVIDIA TensorRT Model Connect",
+    "summary_en": "Open AI models are evolving faster than ever, but bringing them into native applications can still require model-specific conversion, preprocessing,...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect/",
         "external_id": null
       }
     ],
     "actors": [
-      "openai"
+      "nvidia"
     ],
-    "published_at": "2026-08-27T03:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.571746Z",
+    "published_at": "2026-08-28T17:06:28Z",
+    "first_seen_at": "2026-08-28T22:45:21.693807Z",
     "dedup_keys": [
-      "url:openai.com/index/expanding-our-presence-in-brazil",
-      "title:brazil expanding openai presence"
+      "url:developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect",
+      "title:checkpoint commands connect deploy from inference model model nvidia open tensorrt two with"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1031,11 +943,213 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 27.914,
+    "score": 29.645,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -2.086
+      "age_decay": -0.355
+    }
+  },
+  {
+    "id": "5b2a74c79988e6c8",
+    "kind": "paper",
+    "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
+    "summary_en": "AI-powered digital avatar streamers must answer product questions, engage viewers, and execute marketing strategies in real time, demanding low latency, frequent strategy updates, and accurate yet effective responses. Evolvable Harnesses, whose Skills, Hooks, prompts, and tools can be updated independently of model weights, enable rapid iteration but expose a trade-off: large models adapt zero-shot yet are too slow, whereas compact models meet latency targets but overfit to fixed Harness configurations. We propose Harness-Aware Training (HAT), which trains compact models to adapt to changing Harnesses. Its key component, Harness-State Augmentation (HSA), applies task-preserving transformations to Skill identifiers and content, tool schemas, prompt structures, and Hook functions. Training proceeds in three stages: HSA-SFT learns reasoning and tool use from strong-model trajectories across diverse environments; General On-Policy Distillation restores generalization lost during SFT; and HSA-RL improves robustness to changing Harnesses through reinforcement learning in augmented environments. Across four evaluation sets, HAT achieves 94.8 on Live-Stream QA (base: 80.3; strongest general LLM: 93.0) and 94.6 on Harness-Variant QA (base: 75.4). Unlike Fixed-Harness SFT, which lowers IFEval by 7.7 points from the base model, HAT avoids this regression and reaches 83.5. On one NVIDIA H20 GPU, the optimized system delivers P50 and P95 latencies of 3.4 s and 8.1 s. Deployed in Taobao Live's digital-avatar service, it also yields positive online A/B test results for GMV and item-page views.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.15763",
+        "external_id": "2608.15763"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.15763",
+        "external_id": "2608.15763"
+      }
+    ],
+    "actors": [
+      "TaoLive AIGC LLM Team",
+      "Yuhan Sun",
+      "Wenhao Lin",
+      "Yongdong Luo",
+      "Yibo Hu",
+      "Meiguang Jin",
+      "Junfeng Ma",
+      "Weihang Pan",
+      "Jiaxin Zhao",
+      "Zulong Chen"
+    ],
+    "published_at": "2026-08-22T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.943173Z",
+    "dedup_keys": [
+      "arxiv:2608.15763",
+      "title:agent agents avatar digital evolve harness report taolive technical their training with"
+    ],
+    "signals": {
+      "hf_upvotes": 43,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.85,
+    "score_breakdown": {
+      "hf_upvotes": 30.274,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -10.424
+    }
+  },
+  {
+    "id": "150ecffd88257dec",
+    "kind": "release",
+    "title": "Supporting Thailand’s next generation of AI startups",
+    "summary_en": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-28T02:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:20.365415Z",
+    "dedup_keys": [
+      "url:openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "title:generation next startups supporting thailand"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.701,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.299
+    }
+  },
+  {
+    "id": "cf9f381b99653003",
+    "kind": "release",
+    "title": "Planetary prediction engine: Automating global models via Earth AI",
+    "summary_en": "Earth AI",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "google_research",
+        "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "google_research"
+    ],
+    "published_at": "2026-08-27T17:37:20Z",
+    "first_seen_at": "2026-08-28T22:45:21.210620Z",
+    "dedup_keys": [
+      "url:research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai",
+      "title:automating earth engine global models planetary prediction via"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.177,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.823
+    }
+  },
+  {
+    "id": "8c597b1e6e688b26",
+    "kind": "release",
+    "title": "Piloting the world's first double-blind AI evaluations",
+    "summary_en": "Piloting the world's first double-blind AI evaluations",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-08-27T12:59:16Z",
+    "first_seen_at": "2026-08-28T22:45:20.841307Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
+      "title:blind double evaluations first piloting the world"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.888,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -2.112
     }
   },
   {
@@ -1075,13 +1189,13 @@
       "Zhenkun Wang"
     ],
     "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212055Z",
+    "first_seen_at": "2026-08-28T22:45:19.943265Z",
     "dedup_keys": [
       "arxiv:2608.27351",
       "title:broader coverage evolution for grpo llm reasoning reasoning strategies than understanding"
     ],
     "signals": {
-      "hf_upvotes": 11,
+      "hf_upvotes": 14,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1094,12 +1208,57 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 26.606,
+    "score": 27.74,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
+      "hf_upvotes": 21.664,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -2.273
+      "age_decay": -2.924
+    }
+  },
+  {
+    "id": "88d959692c1dea7c",
+    "kind": "release",
+    "title": "Expanding OpenAI’s presence in Brazil",
+    "summary_en": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/expanding-our-presence-in-brazil",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-08-27T03:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:20.365556Z",
+    "dedup_keys": [
+      "url:openai.com/index/expanding-our-presence-in-brazil",
+      "title:brazil expanding openai presence"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.264,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -2.736
     }
   },
   {
@@ -1145,14 +1304,14 @@
       "Chongyi Li"
     ],
     "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212124Z",
+    "first_seen_at": "2026-08-28T22:45:19.943423Z",
     "dedup_keys": [
       "arxiv:2608.26809",
       "title:agentic consistent editing multi reasoning shot shots thinking video with",
       "github:wucy0519/mmlve"
     ],
     "signals": {
-      "hf_upvotes": 3,
+      "hf_upvotes": 4,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1165,105 +1324,55 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 23.014,
+    "score": 24.149,
     "score_breakdown": {
-      "hf_upvotes": 11.09,
+      "hf_upvotes": 12.876,
       "github_stars": 2.197,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.273
+      "age_decay": -2.924
     }
   },
   {
-    "id": "8cf373ff0a8f1d5e",
-    "kind": "release",
-    "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag"
-    ],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/train-multi-vector-encoder",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-08-26T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:46.514160Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/train-multi-vector-encoder",
-      "title:and embedding finetuning models multi sentence training transformers vector with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 20.227,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "topic_match": 4.0,
-      "age_decay": -3.773
-    }
-  },
-  {
-    "id": "a212daab72ff5f77",
+    "id": "ce5da4636c667d71",
     "kind": "paper",
-    "title": "Magpie: Real-Time World Renderer for Interactive Games",
-    "summary_en": "Modern game development relies heavily on conventional graphics pipelines. High-quality visual content requires modeling, material authoring, animation, lighting, effects, and runtime optimization, making asset production expensive and extending the development cycle of game prototypes. Recently, video foundation models are beginning to change film and video production, but games differ from linear media, they require not only continuous and realistic imagery, but also stable and reproducible gameplay rules, object states, and interaction outcomes. We present Magpie, a real-time generative world-rendering system for interactive games. Magpie separates gameplay execution from visual generation. Designers define scenes and rules in a game engine. At runtime, the Game Engine resolves player actions and maintains world state, while an independent Render Server generates visual output from white-box frames produced by the engine. Magpie provides a system-level implementation path for applying generative models to real-time game rendering. It preserves gameplay designability and reproducibility, and reduces the dependence of early game prototypes on complete visual assets.",
+    "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+    "summary_en": "Agent skills package specialized knowledge and workflows into reusable resources that extend AI agent capabilities. Recent work automatically discovers such skills from agent experience, which enables agents to progressively adapt through interaction. However, the insights that guide skill development typically remain scattered across optimization histories, limiting their systematic reuse across iterations. We introduce WikiSkill, a framework that co-evolves agent skills with a persistent knowledge base (wiki). At a high level, WikiSkill separates raw execution experience, accumulated knowledge, and executable skills, while continuously consolidating experience into the wiki, which subsequent skill updates can build on. Across diverse benchmarks and models, WikiSkill consistently outperforms state-of-the-art skill-evolution methods and improves over no-skill baselines in most model-benchmark settings. We find that skill evolution complements model scaling: larger models generally benefit more from evolved skills, while smaller models with skills can outperform substantially larger models without them. We also find that evolved skills transfer effectively across models and model families, and skills evolved by other models can outperform self-evolved skills. Finally, our ablation studies confirm that persistent knowledge accumulation in the wiki is critical for effective skill evolution. These results demonstrate the benefits of systematically accumulating and refining agent experience for developing reusable and transferable skills.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "cv"
+      "agent",
+      "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.27168",
-        "external_id": "2608.27168"
+        "url": "https://huggingface.co/papers/2608.27454",
+        "external_id": "2608.27454"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.27168",
-        "external_id": "2608.27168"
+        "url": "https://arxiv.org/abs/2608.27454",
+        "external_id": "2608.27454"
       }
     ],
     "actors": [
-      "Xiaoyu Zhan",
-      "Xinyu Wang",
-      "Xiaohong Zhang",
-      "Huanjie Zhu",
-      "Tengjiao Sun",
-      "Pengcheng Fang",
-      "Jiaxing Yu",
-      "Yanwen Guo",
-      "Dongjie Fu"
+      "Liyan Tang",
+      "Cyrus Rashtchian",
+      "Chun-Sung Ferng",
+      "Andrew Tomkins",
+      "Da-Cheng Juan",
+      "Tu Vu"
     ],
     "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212072Z",
+    "first_seen_at": "2026-08-28T22:45:19.943286Z",
     "dedup_keys": [
-      "arxiv:2608.27168",
-      "title:for games interactive magpie real renderer time world"
+      "arxiv:2608.27454",
+      "title:agent compiling evolution experience for into knowledge persistent skill wikiskill"
     ],
     "signals": {
-      "hf_upvotes": 5,
+      "hf_upvotes": 8,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1276,11 +1385,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 17.061,
+    "score": 23.654,
     "score_breakdown": {
-      "hf_upvotes": 14.334,
+      "hf_upvotes": 17.578,
       "is_daily_paper": 5.0,
-      "age_decay": -2.273
+      "topic_match": 4.0,
+      "age_decay": -2.924
     }
   },
   {
@@ -1322,14 +1432,14 @@
       "Yi Chang"
     ],
     "published_at": "2026-08-26T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212184Z",
+    "first_seen_at": "2026-08-28T22:45:19.943373Z",
     "dedup_keys": [
       "arxiv:2608.25500",
       "title:agent caskg causal counterfactual for graphs retrieval scalable skill skill",
       "github:zhiyuanli218/caskg"
     ],
     "signals": {
-      "hf_upvotes": 2,
+      "hf_upvotes": 5,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1342,134 +1452,13 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 17.016,
+    "score": 21.91,
     "score_breakdown": {
-      "hf_upvotes": 8.789,
+      "hf_upvotes": 14.334,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.773
-    }
-  },
-  {
-    "id": "951dd14229971776",
-    "kind": "paper",
-    "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
-    "summary_en": "A common strategy for scaling world models is to train on more crawled video with more compute. We argue that this strategy is inefficient: scaling world models also requires a recursive data engine that offers grounded reward signals. The success of code agents illustrates why this matters. As code is executable, compilers and runtimes can provide high-quality rewards for Reinforcement Learning (RL) post-training of LLMs. By contrast, spatial generation still relies largely on fuzzy proxies such as CLIP scores. These signals are fuzzy and biased, making them hard to support RL post-training. Compared with these, game development provides a missing reward environment for spatial world models. A scene encoded by a game engine is an executable world specification: the engine can efficiently check collision, physics, navigability and bounded playability, while the developer provides the global verification signal by judging whether the scene should be accepted. Game development also provides real-world long-horizon trajectory data for RL post-training. We therefore propose Reinforcement Learning with Human-Engine Verification (RLHEV), a post-training paradigm that combines dense engine signals with implicit human acceptance feedback from the development process.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.25518",
-        "external_id": "2608.25518"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.25518",
-        "external_id": "2608.25518"
-      }
-    ],
-    "actors": [
-      "Pengfei Zhou",
-      "Hexin Wang",
-      "Zhengfeiyang Zhang",
-      "Yixing Ma",
-      "Zhenglin Wan",
-      "Kaipeng Zhang",
-      "Wangbo Zhao",
-      "Yang You"
-    ],
-    "published_at": "2026-08-26T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212143Z",
-    "dedup_keys": [
-      "arxiv:2608.25518",
-      "title:agentic data development engine for game models scaling trajectory verifiable world"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 16.317,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.773
-    }
-  },
-  {
-    "id": "ce5da4636c667d71",
-    "kind": "paper",
-    "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
-    "summary_en": "Agent skills package specialized knowledge and workflows into reusable resources that extend AI agent capabilities. Recent work automatically discovers such skills from agent experience, which enables agents to progressively adapt through interaction. However, the insights that guide skill development typically remain scattered across optimization histories, limiting their systematic reuse across iterations. We introduce WikiSkill, a framework that co-evolves agent skills with a persistent knowledge base (wiki). At a high level, WikiSkill separates raw execution experience, accumulated knowledge, and executable skills, while continuously consolidating experience into the wiki, which subsequent skill updates can build on. Across diverse benchmarks and models, WikiSkill consistently outperforms state-of-the-art skill-evolution methods and improves over no-skill baselines in most model-benchmark settings. We find that skill evolution complements model scaling: larger models generally benefit more from evolved skills, while smaller models with skills can outperform substantially larger models without them. We also find that evolved skills transfer effectively across models and model families, and skills evolved by other models can outperform self-evolved skills. Finally, our ablation studies confirm that persistent knowledge accumulation in the wiki is critical for effective skill evolution. These results demonstrate the benefits of systematically accumulating and refining agent experience for developing reusable and transferable skills.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.27454",
-        "external_id": "2608.27454"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.27454",
-        "external_id": "2608.27454"
-      }
-    ],
-    "actors": [
-      "Liyan Tang",
-      "Cyrus Rashtchian",
-      "Chun-Sung Ferng",
-      "Andrew Tomkins",
-      "Da-Cheng Juan",
-      "Tu Vu"
-    ],
-    "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212163Z",
-    "dedup_keys": [
-      "arxiv:2608.27454",
-      "title:agent compiling evolution experience for into knowledge persistent skill wikiskill"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 15.516,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -2.273
+      "age_decay": -4.424
     }
   },
   {
@@ -1513,14 +1502,14 @@
       "Niloy Ganguly"
     ],
     "published_at": "2026-08-24T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212210Z",
+    "first_seen_at": "2026-08-28T22:45:19.943352Z",
     "dedup_keys": [
       "arxiv:2608.23172",
       "title:cargo causal comprehension graph humor improves multimodal reasoning thought",
       "github:abhi1nandy2/cargo-t"
     ],
     "signals": {
-      "hf_upvotes": 2,
+      "hf_upvotes": 6,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1533,57 +1522,104 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 14.016,
+    "score": 20.143,
     "score_breakdown": {
-      "hf_upvotes": 8.789,
+      "hf_upvotes": 15.567,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.773
+      "age_decay": -7.424
     }
   },
   {
-    "id": "916941ff37dd2e21",
-    "kind": "paper",
-    "title": "Aphanta: Diagnosing Task-Aligned Image-Edited Intermediates for Multimodal Reasoning",
-    "summary_en": "Explicit visual intermediates can help multimodal large language models (MLLMs) externalize spatial evidence and updated visual states, but their utility depends on whether an image editor can faithfully realize the required transformation. We introduce Aphanta, an automated task-discovery and closed-loop diagnostic framework for the MLLM -> image editor -> MLLM pipeline. Aphanta evaluates three conditions---direct reasoning, reasoning with an editor-generated intermediate, and reasoning with an idealized reference intermediate---to separate potential visual headroom from the practical utility of current editors. Across 20 candidate tasks and multiple editor--MLLM combinations, we find that utility is strongly task-conditioned. Gains concentrate in visual cue injection, grounding, and counterfactual state realization, whereas intermediates requiring symbol-sensitive construction or structural extrapolation are substantially less reliable. On the selected positive-task subset, our consolidated Qwen pipeline improves the mean task score from 0.343 to 0.445 (+10.2 points; +29.7% relative), while the full study also retains filtered and unsuccessful tasks to expose the boundary. These results position image editing as a specialized visual workspace rather than a universal reasoning mechanism, and establish Aphanta as a reusable protocol for measuring task--representation alignment, editor realization, and downstream pipeline utility.",
+    "id": "8cf373ff0a8f1d5e",
+    "kind": "release",
+    "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+    "summary_en": null,
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "multimodal",
-      "cv",
-      "eval"
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-08-26T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:21.383661Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/train-multi-vector-encoder",
+      "title:and embedding finetuning models multi sentence training transformers vector with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.576,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "topic_match": 4.0,
+      "age_decay": -4.424
+    }
+  },
+  {
+    "id": "2571151d709bd13a",
+    "kind": "paper",
+    "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+    "summary_en": "Recent advances in inference-time scaling have significantly improved the reasoning performance of large language models (LLMs). However, these methods typically rely on repeated generation or external verification. To address this limitation, we introduce CritICL, a novel inference-time framework that improves reasoning while maintaining high efficiency. Our key insight is that LLM failure modes exhibit structured patterns across model scales within the same family. Instead of treating failures as undesirable outputs, CritICL leverages them as a source of guidance. Specifically, we utilize failure modes derived from weaker models and incorporate them into inference through critique-based in-context examples. We propose two variants: CritICL-dynamic, which adaptively predicts input-specific failure modes and retrieves critiques, and CritICL-static, which uses a global failure mode profile to provide stable guidance. Experimental results show that CritICL consistently outperforms standard in-context learning and achieves performance competitive with or superior to test-time scaling methods, while requiring significantly fewer generations and lower token cost. Code available at: https://github.com/umwyf/CRITICL",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.26993",
-        "external_id": "2608.26993"
+        "url": "https://huggingface.co/papers/2608.27455",
+        "external_id": "2608.27455"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26993",
-        "external_id": "2608.26993"
+        "url": "https://arxiv.org/abs/2608.27455",
+        "external_id": "2608.27455"
       }
     ],
     "actors": [
-      "Hengyuan Xu",
-      "Wei Cheng",
-      "Yumeng Ji",
-      "Xuanyang Zhang",
-      "Xianfang Zeng",
-      "Gang Yu",
-      "Xingjun Ma"
+      "Yufan Wu",
+      "Yinghui He",
+      "Zhengyi Hu",
+      "Lang Wei",
+      "Ruichen Li",
+      "Qifan Yang",
+      "Ting Zhu"
     ],
     "published_at": "2026-08-27T00:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.212228Z",
+    "first_seen_at": "2026-08-28T22:45:19.943402Z",
     "dedup_keys": [
-      "arxiv:2608.26993",
-      "title:aligned aphanta diagnosing edited for image intermediates multimodal reasoning task"
+      "arxiv:2608.27455",
+      "title:criticl failure from generalization inference language model modes small strong time weak"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 4,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1596,90 +1632,40 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 12.272,
+    "score": 18.952,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 12.876,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -2.273
+      "age_decay": -2.924
     }
   },
   {
-    "id": "e6744b6b313ca327",
-    "kind": "paper",
-    "title": "Can a Model Catch Its Own Hallucinations for Free?: Label-Free Doubt Signals Hold Their Own Against a Labelled Dataset for Abstention",
-    "summary_en": "Large language models state false facts as fluently as true ones, yet a model often \"knows\" internally when it is on shaky ground: the probability it assigns to its own answer tends to dip on the facts it gets wrong. The usual way to act on this, teaching a model to abstain rather than guess, requires a labelled dataset of right and wrong answers. We ask whether the model's own confidence, which is free and needs no labels, can do that job instead. We fine-tune each model (with LoRA) to answer when its frozen confidence is high and to say \"I'm not sure\" when it is low, using the signal alone and no correctness labels. Across six open-weights models (1B-8B, two families) on short-form factual question answering, with correctness adjudicated by an independent judge model, this label-free recipe holds its own against label-supervised abstention-tuning: at matched coverage we find no statistically detectable difference between the two. A control that drills hard examples instead of abstaining does not help, indicating the gain comes from calibration, not rote memorization. The signal's one blind spot is confidently wrong facts, which it cannot flag. A model's own doubt is thus a near-free substitute for a labelled dataset when teaching it when to abstain. Code and artifacts are available on request.",
+    "id": "5d34597a202e97b7",
+    "kind": "release",
+    "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+    "summary_en": null,
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "rag"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26121",
-        "external_id": "2608.26121"
-      }
-    ],
-    "actors": [
-      "Ali Asaria",
-      "Tony Salomone",
-      "Deep Gandhi"
-    ],
-    "published_at": "2026-08-28T04:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.699053Z",
-    "dedup_keys": [
-      "arxiv:2608.26121",
-      "title:abstention against can catch dataset doubt for for free free hallucinations hold its label labelled model own own signals their"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.477,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.523
-    }
-  },
-  {
-    "id": "46327934aaa0ed43",
-    "kind": "paper",
-    "title": "DeflectBench: A Benchmark for Evaluating Rhetorical Fallacy Generation in LLMs",
-    "summary_en": "Whether large language models can be prompted to generate rhetorical fallacies on demand, and whether current safety post-training constrains this behavior, has received less attention than the related question of detecting fallacies in existing text. We close this gap with DeflectBench, evaluating 23,990 generations from four frontier models across three deflection strategies (whataboutism, ad hominem, red herring), seven prompt framings, and 80 claims spanning four controversy levels. Refusal is governed primarily by request structure rather than claim content. Per claim refusal varies by only 11 percentage points across the 80 claims, while a single prompt frame change can swing within model refusal by nearly 100 percentage points and switching the requested fallacy type can swing it by over 80 percentage points within explicit framings. An educational debate coach prompt framing collapses refusal to near zero across all four model families, but the bypassed behavior is not clean compliance. Models typically produce labeled compliance, naming the requested manipulation in the same response that contains it. The four models distribute differently across refusal, labeled compliance, soft refusal, and clean compliance. The code and dataset are released at https://github.com/ArtKanke/DeflectBench.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "robotics",
+      "speech",
       "eval"
     ],
     "links": [
       {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26119",
-        "external_id": "2608.26119"
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+        "external_id": null
       }
     ],
     "actors": [
-      "Art Kanke"
+      "huggingface"
     ],
-    "published_at": "2026-08-28T04:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.698886Z",
+    "published_at": "2026-08-28T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:21.383598Z",
     "dedup_keys": [
-      "arxiv:2608.26119",
-      "title:benchmark deflectbench evaluating fallacy for generation llms rhetorical"
+      "url:huggingface.co/blog/open-asr-leaderboard-global-south",
+      "title:adds asr first global its language leaderboard open south the"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1695,106 +1681,122 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 3.477,
+    "score": 18.576,
     "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.523
+      "kind_base": 20.0,
+      "age_decay": -1.424
     }
   },
   {
-    "id": "3da86b8f16861aab",
+    "id": "617e272b0f12a124",
     "kind": "paper",
-    "title": "Recipes for Steering and Scaling LLMs via Sampling",
-    "summary_en": "Large Language Models (LLMs) are probabilistic models, typically defined by an autoregressive factorization. While recent work has begun to study richer target distributions beyond the base model, the sampling strategies remain highly inefficient. In this paper, we present a flexible and theoretically grounded framework for steering and scaling autoregressive LLMs with sampling. Within this framework, we describe two algorithms -- one based on Sequential Monte Carlo (SMC) and one based on Replica Exchange (RE) -- that steer generation toward powering, product or tilting of the base model distribution. We illustrate this framework through scaling the generation quality of LLMs without external supervision or reward models. Experimental results demonstrate our methods scale more favorably than Best-of-N and standard MCMC baselines. Overall, this paper offers a systematic recipe for probabilistic inference with LLMs via sampling.",
+    "title": "EditaLive! Unified Character Video Editing for Live Streaming",
+    "summary_en": "Conventional video editing primarily focuses on scene-level content, whereas live streaming places greater emphasis on the human subject. However, directly applying existing video-editing methods to human-centric live streaming remains challenging, as they may introduce facial-expression inconsistencies and typically depend on multiple offline inference steps, making them unsuitable for real-time interaction. We propose EditaLive, a novel framework for real-time streaming character video editing. In detail, we start from a pretrained image animation model (Wan-Animate), which naturally decouples appearance from motion, and repurpose it as the base model for instruction-based human-centric video editing by reference frame editing and video reconstruction via the collected CharEdit-50K dataset. Besides, we adapt the model from offline bidirectional to causal streaming generation, and design an aligned self-rollout distillation strategy that compresses the model into a two-step sampler, where fixed RoPE and align forcing reduce training--inference discrepancies, and first-frame preserved sparse attention filters redundant historical information to mitigate appearance drift. Extensive experiments demonstrate that EditaLive delivers state-of-the-art editing performance with faithful preservation of facial expressions and low-latency real-time streaming inference.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
       "cv",
       "infra"
     ],
     "links": [
       {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.27123",
+        "external_id": "2608.27123"
+      },
+      {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26120",
-        "external_id": "2608.26120"
+        "url": "https://arxiv.org/abs/2608.27123",
+        "external_id": "2608.27123"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/GVCLab/EditaLive",
+        "external_id": null
       }
     ],
     "actors": [
-      "Jiajun He",
-      "Zongyu Guo",
-      "Jos\\'e Miguel Hern\\'andez-Lobato",
-      "Yuanqi Du"
+      "Zhiyuan Li",
+      "Chi-Man Pun",
+      "Peng-Tao Jiang",
+      "Bo Li",
+      "Xiaodong Cun"
     ],
-    "published_at": "2026-08-28T04:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.698960Z",
+    "published_at": "2026-08-27T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.943718Z",
     "dedup_keys": [
-      "arxiv:2608.26120",
-      "title:and for llms recipes sampling scaling steering via"
+      "arxiv:2608.27123",
+      "title:character editalive editing for live streaming unified video",
+      "github:gvclab/editalive"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 2,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
+      "is_daily_paper": true,
+      "github_stars": 6,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
+      "num_comments": 1,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 3.477,
+    "score": 17.757,
     "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.523
+      "hf_upvotes": 8.789,
+      "github_stars": 3.892,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.924
     }
   },
   {
-    "id": "42c30319099f824f",
+    "id": "a212daab72ff5f77",
     "kind": "paper",
-    "title": "TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding",
-    "summary_en": "Speculative decoding accelerates large language model inference through a draft-then-verify paradigm. Building on this, tree-structured methods improve inference by organizing proposals into multiple candidate paths, increasing the accepted length. However, existing tree-structured methods use a single drafter for all drafting steps, creating a dilemma: a smaller drafter is fast but yields lower-quality trees, whereas a larger drafter improves tree quality but suffers from high latency. To address this, we propose TreeGraft, a multi-drafter framework in which drafters of different costs jointly construct a shared draft tree. TreeGraft uses the stronger drafter to rescore candidates by updating scores assigned by the weaker drafter, reselect grafting positions, and recover promising paths left unexplored. It also integrates stronger drafter expansions non-destructively, preserving existing branches that may still be accepted by the target model. Together, these designs improve the quality of the shared draft tree. To control the drafting cost, TreeGraft introduces a lightweight scheduler distilled from an offline value system to decide when to call the stronger drafter. Across 10 model pairs and 6 benchmarks, TreeGraft outperforms the better of the two fixed single-drafter endpoint strategies by 15.1% on average, reaching a maximum gain of 26.6%. Our code is available at https://anonymous.4open.science/r/TreeGraft-E983.",
+    "title": "Magpie: Real-Time World Renderer for Interactive Games",
+    "summary_en": "Modern game development relies heavily on conventional graphics pipelines. High-quality visual content requires modeling, material authoring, animation, lighting, effects, and runtime optimization, making asset production expensive and extending the development cycle of game prototypes. Recently, video foundation models are beginning to change film and video production, but games differ from linear media, they require not only continuous and realistic imagery, but also stable and reproducible gameplay rules, object states, and interaction outcomes. We present Magpie, a real-time generative world-rendering system for interactive games. Magpie separates gameplay execution from visual generation. Designers define scenes and rules in a game engine. At runtime, the Game Engine resolves player actions and maintains world state, while an independent Render Server generates visual output from white-box frames produced by the engine. Magpie provides a system-level implementation path for applying generative models to real-time game rendering. It preserves gameplay designability and reproducibility, and reduces the dependence of early game prototypes on complete visual assets.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "rag",
-      "eval",
-      "infra"
+      "cv"
     ],
     "links": [
       {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.27168",
+        "external_id": "2608.27168"
+      },
+      {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.26112",
-        "external_id": "2608.26112"
+        "url": "https://arxiv.org/abs/2608.27168",
+        "external_id": "2608.27168"
       }
     ],
     "actors": [
-      "Jiaming Fan",
-      "Daming Cao",
-      "Canchen Huang",
-      "Jiale Fu",
-      "Jin Zhang",
-      "Junjie Gao",
-      "Kai Yang",
-      "Xiangzhong Luo",
-      "Xu Yang"
+      "Xiaoyu Zhan",
+      "Xinyu Wang",
+      "Xiaohong Zhang",
+      "Huanjie Zhu",
+      "Tengjiao Sun",
+      "Pengcheng Fang",
+      "Jiaxing Yu",
+      "Yanwen Guo",
+      "Dongjie Fu"
     ],
-    "published_at": "2026-08-28T04:00:00Z",
-    "first_seen_at": "2026-08-28T12:20:45.698662Z",
+    "published_at": "2026-08-27T00:00:00Z",
+    "first_seen_at": "2026-08-28T22:45:19.943330Z",
     "dedup_keys": [
-      "arxiv:2608.26112",
-      "title:adaptive based decoding drafter for grafting multi speculative tree treegraft"
+      "arxiv:2608.27168",
+      "title:for games interactive magpie real renderer time world"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 6,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": false,
+      "is_daily_paper": true,
       "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
@@ -1803,10 +1805,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 3.477,
+    "score": 17.643,
     "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.523
+      "hf_upvotes": 15.567,
+      "is_daily_paper": 5.0,
+      "age_decay": -2.924
     }
   }
 ]
