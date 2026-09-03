@@ -41,14 +41,133 @@
       "Zheng Liu"
     ],
     "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653383Z",
+    "first_seen_at": "2026-09-03T16:43:37.054355Z",
     "dedup_keys": [
       "arxiv:2609.02749",
       "title:ai4ai distilling github into repo repositories skill skills",
       "github:vectorspacelab/arex-skill"
     ],
     "signals": {
-      "hf_upvotes": 104,
+      "hf_upvotes": 356,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 56.475,
+    "score_breakdown": {
+      "hf_upvotes": 47.022,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.547
+    }
+  },
+  {
+    "id": "eba1efc81982bde5",
+    "kind": "model",
+    "title": "microsoft/VibeVoice-ASR-Streaming-7B",
+    "summary_en": "automatic-speech-recognition, transformers, vibevoice, ASR, Transcription, Speech-to-Text, Streaming",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
+        "external_id": "microsoft/VibeVoice-ASR-Streaming-7B"
+      }
+    ],
+    "actors": [
+      "microsoft"
+    ],
+    "published_at": "2026-09-02T15:46:22Z",
+    "first_seen_at": "2026-09-03T16:43:36.901458Z",
+    "dedup_keys": [
+      "hf:microsoft/vibevoice-asr-streaming-7b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 42,
+      "hf_downloads": 8,
+      "hf_trending_score": 41.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 54.543,
+    "score_breakdown": {
+      "hf_trending": 22.426,
+      "hf_downloads": 4.394,
+      "hf_likes": 11.284,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.561
+    }
+  },
+  {
+    "id": "0109db0f290fc245",
+    "kind": "paper",
+    "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+    "summary_en": "Evaluating LLM agents is essential for guiding their development, yet it has grown prohibitively expensive: a single pass of a frontier model over an agentic benchmark can cost hundreds to thousands of dollars, a price paid repeatedly across iterative development cycles. Prior efforts, centered on benchmark distillation, reduce the number of evaluation tasks but leave the cost of executing each retained task untouched. In this work, we introduce early outcome prediction, a complementary axis of efficiency that instead cuts cost within each task. Our key insight is that an agent's final outcome is often evident from its intermediate behavior well before execution completes. We instantiate this idea in EarlyEval, a lightweight framework that trains a pair of LightGBM success and failure classifiers over behavioral, textual, and reference-solution features, and halts an agent run the moment either classifier crosses a calibrated confidence threshold, adding negligible per-step overhead. Across three benchmarks, SWE-bench Verified, TerminalBench, and Toolathlon, EarlyEval can eliminate 13%-26% of agent steps and up to 44.1% input tokens and 29.4% output tokens at 89%-97% prediction accuracy, while perturbing per-agent resolve rates by only one to two percentage points on average.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.02783",
+        "external_id": "2609.02783"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.02783",
+        "external_id": "2609.02783"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/inphotoo/earlyeval",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuling Shi",
+      "Zhensu Sun",
+      "Junsen Dong",
+      "Chengcheng Wan",
+      "David Lo",
+      "Xiaodong Gu"
+    ],
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054485Z",
+    "dedup_keys": [
+      "arxiv:2609.02783",
+      "title:agent cheaper early earlyeval evaluation outcome prediction via",
+      "github:inphotoo/earlyeval"
+    ],
+    "signals": {
+      "hf_upvotes": 109,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -61,13 +180,68 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 47.4,
+    "score": 47.057,
     "score_breakdown": {
-      "hf_upvotes": 37.232,
+      "hf_upvotes": 37.604,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.832
+      "age_decay": -2.547
+    }
+  },
+  {
+    "id": "048c78f344995ddb",
+    "kind": "model",
+    "title": "prithivMLmods/MiniMax-H3-Facial-Realism-CloseUp",
+    "summary_en": "image-text-to-video, minimax-h3, lora, face-realism, minimax, h3, video",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/prithivMLmods/MiniMax-H3-Facial-Realism-CloseUp",
+        "external_id": "prithivMLmods/MiniMax-H3-Facial-Realism-CloseUp"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "prithivMLmods"
+    ],
+    "published_at": "2026-08-31T08:57:47Z",
+    "first_seen_at": "2026-09-03T16:43:36.901491Z",
+    "dedup_keys": [
+      "hf:prithivmlmods/minimax-h3-facial-realism-closeup"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 37,
+      "hf_downloads": 265,
+      "hf_trending_score": 37.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 46.919,
+    "score_breakdown": {
+      "hf_trending": 21.826,
+      "hf_downloads": 11.167,
+      "hf_likes": 10.913,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -4.987
     }
   },
   {
@@ -97,15 +271,15 @@
       "KennethFal"
     ],
     "published_at": "2026-08-31T19:13:44Z",
-    "first_seen_at": "2026-09-03T05:16:38.646322Z",
+    "first_seen_at": "2026-09-03T16:43:36.901357Z",
     "dedup_keys": [
       "hf:kennethfal/vh5tape-vhs-lora-minimax-h3"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 43,
-      "hf_downloads": 52,
-      "hf_trending_score": 42.0,
+      "hf_likes": 45,
+      "hf_downloads": 601,
+      "hf_trending_score": 44.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -115,13 +289,65 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 42.231,
+    "score": 46.782,
     "score_breakdown": {
-      "hf_trending": 22.567,
-      "hf_downloads": 7.941,
-      "hf_likes": 11.353,
+      "hf_trending": 22.84,
+      "hf_downloads": 12.801,
+      "hf_likes": 11.486,
       "topic_match": 4.0,
-      "age_decay": -3.63
+      "age_decay": -4.345
+    }
+  },
+  {
+    "id": "4ea83fcacd8b0de0",
+    "kind": "model",
+    "title": "OpenVDN/vdn-minimax-h3",
+    "summary_en": "text-to-video, diffusers",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/OpenVDN/vdn-minimax-h3",
+        "external_id": "OpenVDN/vdn-minimax-h3"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "OpenVDN"
+    ],
+    "published_at": "2026-09-02T05:03:41Z",
+    "first_seen_at": "2026-09-03T16:43:36.900860Z",
+    "dedup_keys": [
+      "hf:openvdn/vdn-minimax-h3"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 123,
+      "hf_downloads": 0,
+      "hf_trending_score": 123.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 45.152,
+    "score_breakdown": {
+      "hf_trending": 28.922,
+      "hf_likes": 14.461,
+      "has_weights": 4.0,
+      "age_decay": -2.231
     }
   },
   {
@@ -173,14 +399,14 @@
       "Li Jiang"
     ],
     "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653436Z",
+    "first_seen_at": "2026-09-03T16:43:37.054414Z",
     "dedup_keys": [
       "arxiv:2609.02886",
       "title:and data for horizon long models open scalable solarwm training video world",
       "github:junchao-cs/solarwm"
     ],
     "signals": {
-      "hf_upvotes": 76,
+      "hf_upvotes": 125,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -193,512 +419,12 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 40.918,
+    "score": 44.143,
     "score_breakdown": {
-      "hf_upvotes": 34.75,
+      "hf_upvotes": 38.69,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
-      "age_decay": -1.832
-    }
-  },
-  {
-    "id": "4ea83fcacd8b0de0",
-    "kind": "model",
-    "title": "OpenVDN/vdn-minimax-h3",
-    "summary_en": "text-to-video, diffusers",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/OpenVDN/vdn-minimax-h3",
-        "external_id": "OpenVDN/vdn-minimax-h3"
-      },
-      {
-        "source": "hf_base_model:finetune",
-        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-        "external_id": "MiniMaxAI/MiniMax-H3"
-      }
-    ],
-    "actors": [
-      "OpenVDN"
-    ],
-    "published_at": "2026-09-02T05:03:41Z",
-    "first_seen_at": "2026-09-03T05:16:38.646066Z",
-    "dedup_keys": [
-      "hf:openvdn/vdn-minimax-h3"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 63,
-      "hf_downloads": 0,
-      "hf_trending_score": 63.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 39.915,
-    "score_breakdown": {
-      "hf_trending": 24.953,
-      "hf_likes": 12.477,
-      "has_weights": 4.0,
-      "age_decay": -1.515
-    }
-  },
-  {
-    "id": "0109db0f290fc245",
-    "kind": "paper",
-    "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
-    "summary_en": "Evaluating LLM agents is essential for guiding their development, yet it has grown prohibitively expensive: a single pass of a frontier model over an agentic benchmark can cost hundreds to thousands of dollars, a price paid repeatedly across iterative development cycles. Prior efforts, centered on benchmark distillation, reduce the number of evaluation tasks but leave the cost of executing each retained task untouched. In this work, we introduce early outcome prediction, a complementary axis of efficiency that instead cuts cost within each task. Our key insight is that an agent's final outcome is often evident from its intermediate behavior well before execution completes. We instantiate this idea in EarlyEval, a lightweight framework that trains a pair of LightGBM success and failure classifiers over behavioral, textual, and reference-solution features, and halts an agent run the moment either classifier crosses a calibrated confidence threshold, adding negligible per-step overhead. Across three benchmarks, SWE-bench Verified, TerminalBench, and Toolathlon, EarlyEval can eliminate 13%-26% of agent steps and up to 44.1% input tokens and 29.4% output tokens at 89%-97% prediction accuracy, while perturbing per-agent resolve rates by only one to two percentage points on average.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.02783",
-        "external_id": "2609.02783"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.02783",
-        "external_id": "2609.02783"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/inphotoo/earlyeval",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yuling Shi",
-      "Zhensu Sun",
-      "Junsen Dong",
-      "Chengcheng Wan",
-      "David Lo",
-      "Xiaodong Gu"
-    ],
-    "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653472Z",
-    "dedup_keys": [
-      "arxiv:2609.02783",
-      "title:agent cheaper early earlyeval evaluation outcome prediction via",
-      "github:inphotoo/earlyeval"
-    ],
-    "signals": {
-      "hf_upvotes": 37,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 39.269,
-    "score_breakdown": {
-      "hf_upvotes": 29.101,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.832
-    }
-  },
-  {
-    "id": "8423bd7a2fdd5134",
-    "kind": "paper",
-    "title": "It Takes Two to Match: Co-Evolving Generative Retriever with Reinforcement Learning",
-    "summary_en": "Retrieval is the first stage of modern search and advertising systems, selecting a candidate set from a large item universe for downstream ranking and auction. Recent work increasingly leverages LLMs to improve retrieval through query expansion, data synthesis, and retrieval-feedback training. However, the generative component is typically used for query-side augmentation, while final matching is still delegated to a downstream retriever. We introduce CoGR, a retrieval framework that instead trains LLMs to directly construct retrieval representations on both query and item sides. Each generator produces a compact set of keywords, which are matched directly through an inverted index, preserving compatibility with existing keyword-based retrieval infrastructure. CoGR uses a two-stage training pipeline. Supervised fine-tuning first establishes an aligned keyword space, after which co-evolving reinforcement learning alternately optimizes the query- and item-side generators with GRPO against the opposite side's frozen index. Both sides optimize the same query-to-item retrieval F_1 objective: the query side receives retrieval F_1 directly, while the item side receives a counterfactual marginal reward measuring the change in query-side F_1 caused by its generated keywords. Across 10 representative sparse, dense, and generative baselines, CoGR achieves the best performance on both an internal APP Marketplace dataset and the public WANDS benchmark, improving F_1 over the strongest baseline by 10.9% and 36.1%, respectively. Further analysis shows stable co-evolution and increasingly aligned query--item keyword spaces over training.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.00638",
-        "external_id": "2609.00638"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.00638",
-        "external_id": "2609.00638"
-      }
-    ],
-    "actors": [
-      "Runpeng Dai",
-      "Kaili Huang",
-      "Changsung Kang",
-      "Ciya Liao"
-    ],
-    "published_at": "2026-09-01T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653494Z",
-    "dedup_keys": [
-      "arxiv:2609.00638",
-      "title:evolving generative learning match reinforcement retriever takes two with"
-    ],
-    "signals": {
-      "hf_upvotes": 32,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.64,
-    "score_breakdown": {
-      "hf_upvotes": 27.972,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.332
-    }
-  },
-  {
-    "id": "d92e296c1a145dd5",
-    "kind": "paper",
-    "title": "Language Models Can Control Their Own Attention",
-    "summary_en": "Language models spend most of their attention on a small fraction of context, yet they read the entire KV cache to find the few tokens that matter. If the user asks about a previous detail in a 1M-token conversation, global attention layers must scan the full context to generate each token of the reply. A prominent approach mitigates this cost by pre-selecting relevant tokens via lightweight proxy scores, but this extrinsic scoring still incurs O(N) per step. We take an intrinsic approach motivated by the simple question: wouldn't the model already know which parts of the context are relevant? To this end, we introduce Declarative Attention (DA), a protocol that elicits the model to declare where it needs to attend within its chain-of-thought, partitioning generation into three modes: <global> (full context), <focus> (a specific region), and <local> (recent output only). The inference engine parses these declarations like tool calls and skips most of the KV cache read. Under zero-shot evaluation across 15 long-context tasks, DA on off-the-shelf models (Gemma-4-31B, Qwen-3.6-27B) significantly reduces total attended tokens during decoding (52.0%, 31.1%) with modest accuracy drops (1.27pp, 2.75pp) that shrink with model scale. DA unlocks a new axis of sparse attention, with further potential under training-based methods that future work can explore.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.02737",
-        "external_id": "2609.02737"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.02737",
-        "external_id": "2609.02737"
-      }
-    ],
-    "actors": [
-      "Namgyu Ho",
-      "Huzama Ahmad",
-      "Woosung Koh",
-      "Se-Young Yun",
-      "Tal Schuster",
-      "Cicero Nogueira dos Santos"
-    ],
-    "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653513Z",
-    "dedup_keys": [
-      "arxiv:2609.02737",
-      "title:attention can control language models own their"
-    ],
-    "signals": {
-      "hf_upvotes": 24,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.919,
-    "score_breakdown": {
-      "hf_upvotes": 25.751,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.832
-    }
-  },
-  {
-    "id": "544bdf39d0d52251",
-    "kind": "release",
-    "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
-    "summary_en": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/atv-big-air-tour",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-09-02T12:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.967554Z",
-    "dedup_keys": [
-      "url:openai.com/index/atv-big-air-tour",
-      "title:air atv big chatgpt days hours into tour turned with work"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.918,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.082
-    }
-  },
-  {
-    "id": "587c56af6b6f2f07",
-    "kind": "paper",
-    "title": "Cliff: Learning Process Rewards from the First Mistake",
-    "summary_en": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a powerful paradigm for large language model (LLM) post-training, but its reliance on coarse outcome rewards leads to limited guidance on intermediate reasoning processes. Existing approaches such as process reward modeling and on-policy distillation introduce additional constraints, such as reliance on a specialized reward model or assuming identical reasoning patterns between teacher and student. Nevertheless, we observe that once a reasoning process first goes wrong, evaluating the subsequent reasoning provides limited additional information, as it is already conditioned on an invalid prefix. Therefore, we propose Cliff, a reward shaping strategy that utilizes an off-the-shelf LLM as a teacher to identify the first mistake in each rollout. As a result, the rollout is naturally decomposed into two parts: a correct prefix and an incorrect suffix. Cliff then converts this signal into token-level advantages, assigning positive advantages for the correct prefix and negative feedback afterward. Experiments across 12 different scenarios demonstrate that Cliff consistently improves reasoning performance, outperforming on-policy distillation by 15% and standard GRPO by 7%, even with teachers of modest capability. Furthermore, we analyse the role of ``ground truth'' in Cliff and investigate its training dynamics. These results establish Cliff as a simple, general and effective approach for improving RLVR with richer, fine-grained supervision.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.02817",
-        "external_id": "2609.02817"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.02817",
-        "external_id": "2609.02817"
-      }
-    ],
-    "actors": [
-      "Peixuan Han",
-      "Runhui Wang",
-      "Ketan Ramaneti",
-      "Jie Hao",
-      "Gerald Friedland",
-      "Chris Kong"
-    ],
-    "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653559Z",
-    "dedup_keys": [
-      "arxiv:2609.02817",
-      "title:cliff first from learning mistake process rewards the"
-    ],
-    "signals": {
-      "hf_upvotes": 15,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.349,
-    "score_breakdown": {
-      "hf_upvotes": 22.181,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.832
-    }
-  },
-  {
-    "id": "58989e348e0bf352",
-    "kind": "release",
-    "title": "The Modern CUDA Toolbox in Practice: A Step-by-Step Optimization Walkthrough",
-    "summary_en": "NVIDIA CUDA remains the foundation of GPU-accelerated computing, powering everything from scientific simulations to large-scale AI training. But writing...",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "nvidia"
-    ],
-    "published_at": "2026-09-02T17:15:57Z",
-    "first_seen_at": "2026-09-03T05:16:40.528977Z",
-    "dedup_keys": [
-      "url:developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough",
-      "title:cuda modern optimization practice step step the toolbox walkthrough"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.248,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.752
-    }
-  },
-  {
-    "id": "df4872157acd588c",
-    "kind": "paper",
-    "title": "On the Design Fundamentals of Pixel Text Representation Learning",
-    "summary_en": "Text-rich visual inputs require models that can read, retrieve, and compress language directly in pixel space, yet existing pixel-text encoders struggle with fixed resolution pretraining, visual shortcut learning, weak visual grounding, and multilingual visual text understanding. In this work, we investigate the fundamental design principles required for robust visual text representation learning. Through systematic controlled ablations, we identify four critical components: variable image resolutions and rendered font sizes provide spatial proxies for high-resolution document generalization; natural image-text pairs are indispensable for grounding and prevent text-only collapse; layout-aware rendering helps prevent pixel-level shortcuts; and a two-stage multilingual curriculum enables effective cross-lingual alignment. By integrating these principles into a scalable training recipe, we train Pixel Linguist II, a native-resolution vision encoder trained with on-the-fly rendering, unified contrastive grounding, and a multilingual curriculum over 280M training examples. Pixel Linguist II sets new state-of-the-art results on English, cross-lingual, and multilingual Visual STS and ViDoRe, while also enabling better MLLM downstream evaluation. Notably, Pixel Linguist II remains robust under 80\\% visual token compression, showing great promise for optical context compression. Our code and resources are available at https://github.com/Pixel-Linguist/Pixel-Linguist-II.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.01147",
-        "external_id": "2609.01147"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01147",
-        "external_id": "2609.01147"
-      }
-    ],
-    "actors": [
-      "Chaohao Yuan",
-      "Ruifeng Yuan",
-      "Zhuoxu Huang",
-      "Yu Rong",
-      "Hong Cheng",
-      "Hou Pong Chan",
-      "Chenghao Xiao"
-    ],
-    "published_at": "2026-09-01T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653538Z",
-    "dedup_keys": [
-      "arxiv:2609.01147",
-      "title:design fundamentals learning pixel representation text the"
-    ],
-    "signals": {
-      "hf_upvotes": 17,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.791,
-    "score_breakdown": {
-      "hf_upvotes": 23.123,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.332
-    }
-  },
-  {
-    "id": "b471d670e2e67f40",
-    "kind": "model",
-    "title": "DANNY621/H3-World",
-    "summary_en": "image-to-video, video, world-model, interactive-world-model, lora, diffusion",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/DANNY621/H3-World",
-        "external_id": "DANNY621/H3-World"
-      }
-    ],
-    "actors": [
-      "DANNY621"
-    ],
-    "published_at": "2026-08-31T08:31:49Z",
-    "first_seen_at": "2026-09-03T05:16:38.646455Z",
-    "dedup_keys": [
-      "hf:danny621/h3-world"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 38,
-      "hf_downloads": 0,
-      "hf_trending_score": 37.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.519,
-    "score_breakdown": {
-      "hf_trending": 21.826,
-      "hf_likes": 10.991,
-      "age_decay": -4.298
+      "age_decay": -2.547
     }
   },
   {
@@ -747,13 +473,13 @@
       "Wenxuan Zhang"
     ],
     "published_at": "2026-09-01T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653579Z",
+    "first_seen_at": "2026-09-03T16:43:37.054445Z",
     "dedup_keys": [
       "arxiv:2609.01437",
       "title:agent and can create evolve harness harnessdev llms own their"
     ],
     "signals": {
-      "hf_upvotes": 13,
+      "hf_upvotes": 111,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -762,80 +488,16 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": false,
       "has_weights": false
     },
-    "score": 26.78,
+    "score": 42.701,
     "score_breakdown": {
-      "hf_upvotes": 21.112,
+      "hf_upvotes": 37.748,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -3.332
-    }
-  },
-  {
-    "id": "6fa02b004a2fe99e",
-    "kind": "paper",
-    "title": "PaperCompiler: Faithful Paper-to-Code Generation via Repository-Level Specification Compilation",
-    "summary_en": "Faithfully translating research papers into repository-level implementations remains challenging because papers often describe methods at a high level, leave implementation assumptions implicit, and require generated repositories to preserve method logic, evaluation protocols, and cross-file consistency. Despite recent advances in paper-to-code agents, their intermediate outputs are often presented as free-form plans or summaries that downstream coding agents may ignore, reinterpret, or compress, leading to algorithmic simplification and inconsistent repository structure. To address these challenges, we introduce PaperCompiler, a paper-to-code generation framework that compiles paper-grounded evidence into explicit repository-level implementation specifications. PaperCompiler grounds implementation-relevant evidence while preserving source provenance and distinguishing paper-supported, inferred, externally delegated, and unresolved information. The resulting specifications encode non-degradation requirements, ownership assignments, cross-file dependencies, and file-level constraints. Repository generation proceeds under these compiled specifications while retaining flexibility over local engineering choices not fixed by the paper. PaperCompiler outperforms strong baselines on Paper2CodeBench, achieving a 13.8% relative improvement in reference-based fidelity (from 3.64 to 4.15) and reducing high-severity evaluator critiques (from 13.2% to 6.1%).",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.02272",
-        "external_id": "2609.02272"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.02272",
-        "external_id": "2609.02272"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Daethalous/PaperCompiler",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yunhao Liu",
-      "Hong Phuc Pham",
-      "Jaehong Yoon"
-    ],
-    "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653692Z",
-    "dedup_keys": [
-      "arxiv:2609.02272",
-      "title:code compilation faithful generation level paper papercompiler repository specification via",
-      "github:daethalous/papercompiler"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 24.502,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.832
+      "age_decay": -4.047
     }
   },
   {
@@ -886,13 +548,13 @@
       "Ge Zhang"
     ],
     "published_at": "2026-08-31T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653598Z",
+    "first_seen_at": "2026-09-03T16:43:37.054509Z",
     "dedup_keys": [
       "arxiv:2608.31111",
       "title:aspire can evolve from goals models self vague"
     ],
     "signals": {
-      "hf_upvotes": 10,
+      "hf_upvotes": 96,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -905,12 +567,526 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 23.351,
+    "score": 40.051,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
+      "hf_upvotes": 36.598,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -4.832
+      "age_decay": -5.547
+    }
+  },
+  {
+    "id": "a355b14ad237d3e7",
+    "kind": "model",
+    "title": "F16/krea2-turbo-sda",
+    "summary_en": "text-to-image, diffusers, lora, krea2, diversity, sda",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/F16/krea2-turbo-sda",
+        "external_id": "F16/krea2-turbo-sda"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/krea/Krea-2-Turbo",
+        "external_id": "krea/Krea-2-Turbo"
+      }
+    ],
+    "actors": [
+      "F16"
+    ],
+    "published_at": "2026-08-30T18:45:45Z",
+    "first_seen_at": "2026-09-03T16:43:36.901535Z",
+    "dedup_keys": [
+      "hf:f16/krea2-turbo-sda"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 37,
+      "hf_downloads": 729,
+      "hf_trending_score": 36.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 39.891,
+    "score_breakdown": {
+      "hf_trending": 21.666,
+      "hf_downloads": 13.186,
+      "hf_likes": 10.913,
+      "age_decay": -5.874
+    }
+  },
+  {
+    "id": "f0251af716c67e7e",
+    "kind": "model",
+    "title": "IFM/K2-Horizon-MoVA-36B-A4B",
+    "summary_en": "text-generation, transformers, k2_horizon, k2-horizon, 36b, mova, moe",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+        "external_id": "IFM/K2-Horizon-MoVA-36B-A4B"
+      }
+    ],
+    "actors": [
+      "IFM"
+    ],
+    "published_at": "2026-09-01T23:01:25Z",
+    "first_seen_at": "2026-09-03T16:43:36.901509Z",
+    "dedup_keys": [
+      "hf:ifm/k2-horizon-mova-36b-a4b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 37,
+      "hf_downloads": 0,
+      "hf_trending_score": 37.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 38.131,
+    "score_breakdown": {
+      "hf_trending": 21.826,
+      "hf_likes": 10.913,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.608
+    }
+  },
+  {
+    "id": "8423bd7a2fdd5134",
+    "kind": "paper",
+    "title": "It Takes Two to Match: Co-Evolving Generative Retriever with Reinforcement Learning",
+    "summary_en": "Retrieval is the first stage of modern search and advertising systems, selecting a candidate set from a large item universe for downstream ranking and auction. Recent work increasingly leverages LLMs to improve retrieval through query expansion, data synthesis, and retrieval-feedback training. However, the generative component is typically used for query-side augmentation, while final matching is still delegated to a downstream retriever. We introduce CoGR, a retrieval framework that instead trains LLMs to directly construct retrieval representations on both query and item sides. Each generator produces a compact set of keywords, which are matched directly through an inverted index, preserving compatibility with existing keyword-based retrieval infrastructure. CoGR uses a two-stage training pipeline. Supervised fine-tuning first establishes an aligned keyword space, after which co-evolving reinforcement learning alternately optimizes the query- and item-side generators with GRPO against the opposite side's frozen index. Both sides optimize the same query-to-item retrieval F_1 objective: the query side receives retrieval F_1 directly, while the item side receives a counterfactual marginal reward measuring the change in query-side F_1 caused by its generated keywords. Across 10 representative sparse, dense, and generative baselines, CoGR achieves the best performance on both an internal APP Marketplace dataset and the public WANDS benchmark, improving F_1 over the strongest baseline by 10.9% and 36.1%, respectively. Further analysis shows stable co-evolution and increasingly aligned query--item keyword spaces over training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.00638",
+        "external_id": "2609.00638"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.00638",
+        "external_id": "2609.00638"
+      }
+    ],
+    "actors": [
+      "Runpeng Dai",
+      "Kaili Huang",
+      "Changsung Kang",
+      "Ciya Liao"
+    ],
+    "published_at": "2026-09-01T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054533Z",
+    "dedup_keys": [
+      "arxiv:2609.00638",
+      "title:evolving generative learning match reinforcement retriever takes two with"
+    ],
+    "signals": {
+      "hf_upvotes": 61,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 37.97,
+    "score_breakdown": {
+      "hf_upvotes": 33.017,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.047
+    }
+  },
+  {
+    "id": "d92e296c1a145dd5",
+    "kind": "paper",
+    "title": "Language Models Can Control Their Own Attention",
+    "summary_en": "Language models spend most of their attention on a small fraction of context, yet they read the entire KV cache to find the few tokens that matter. If the user asks about a previous detail in a 1M-token conversation, global attention layers must scan the full context to generate each token of the reply. A prominent approach mitigates this cost by pre-selecting relevant tokens via lightweight proxy scores, but this extrinsic scoring still incurs O(N) per step. We take an intrinsic approach motivated by the simple question: wouldn't the model already know which parts of the context are relevant? To this end, we introduce Declarative Attention (DA), a protocol that elicits the model to declare where it needs to attend within its chain-of-thought, partitioning generation into three modes: <global> (full context), <focus> (a specific region), and <local> (recent output only). The inference engine parses these declarations like tool calls and skips most of the KV cache read. Under zero-shot evaluation across 15 long-context tasks, DA on off-the-shelf models (Gemma-4-31B, Qwen-3.6-27B) significantly reduces total attended tokens during decoding (52.0%, 31.1%) with modest accuracy drops (1.27pp, 2.75pp) that shrink with model scale. DA unlocks a new axis of sparse attention, with further potential under training-based methods that future work can explore.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.02737",
+        "external_id": "2609.02737"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.02737",
+        "external_id": "2609.02737"
+      }
+    ],
+    "actors": [
+      "Namgyu Ho",
+      "Huzama Ahmad",
+      "Woosung Koh",
+      "Se-Young Yun",
+      "Tal Schuster",
+      "Cicero Nogueira dos Santos"
+    ],
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054552Z",
+    "dedup_keys": [
+      "arxiv:2609.02737",
+      "title:attention can control language models own their"
+    ],
+    "signals": {
+      "hf_upvotes": 47,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 37.423,
+    "score_breakdown": {
+      "hf_upvotes": 30.97,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.547
+    }
+  },
+  {
+    "id": "0772d10c92818662",
+    "kind": "release",
+    "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+    "summary_en": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents....",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-03T16:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:39.343255Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network",
+      "title:available compute expands inference local network nvidia pair router virtual your"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.953,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.047
+    }
+  },
+  {
+    "id": "544bdf39d0d52251",
+    "kind": "release",
+    "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+    "summary_en": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/atv-big-air-tour",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-02T12:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.354818Z",
+    "dedup_keys": [
+      "url:openai.com/index/atv-big-air-tour",
+      "title:air atv big chatgpt days hours into tour turned with work"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.203,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.797
+    }
+  },
+  {
+    "id": "df4872157acd588c",
+    "kind": "paper",
+    "title": "On the Design Fundamentals of Pixel Text Representation Learning",
+    "summary_en": "Text-rich visual inputs require models that can read, retrieve, and compress language directly in pixel space, yet existing pixel-text encoders struggle with fixed resolution pretraining, visual shortcut learning, weak visual grounding, and multilingual visual text understanding. In this work, we investigate the fundamental design principles required for robust visual text representation learning. Through systematic controlled ablations, we identify four critical components: variable image resolutions and rendered font sizes provide spatial proxies for high-resolution document generalization; natural image-text pairs are indispensable for grounding and prevent text-only collapse; layout-aware rendering helps prevent pixel-level shortcuts; and a two-stage multilingual curriculum enables effective cross-lingual alignment. By integrating these principles into a scalable training recipe, we train Pixel Linguist II, a native-resolution vision encoder trained with on-the-fly rendering, unified contrastive grounding, and a multilingual curriculum over 280M training examples. Pixel Linguist II sets new state-of-the-art results on English, cross-lingual, and multilingual Visual STS and ViDoRe, while also enabling better MLLM downstream evaluation. Notably, Pixel Linguist II remains robust under 80\\% visual token compression, showing great promise for optical context compression. Our code and resources are available at https://github.com/Pixel-Linguist/Pixel-Linguist-II.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.01147",
+        "external_id": "2609.01147"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.01147",
+        "external_id": "2609.01147"
+      }
+    ],
+    "actors": [
+      "Chaohao Yuan",
+      "Ruifeng Yuan",
+      "Zhuoxu Huang",
+      "Yu Rong",
+      "Hong Cheng",
+      "Hou Pong Chan",
+      "Chenghao Xiao"
+    ],
+    "published_at": "2026-09-01T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054571Z",
+    "dedup_keys": [
+      "arxiv:2609.01147",
+      "title:design fundamentals learning pixel representation text the"
+    ],
+    "signals": {
+      "hf_upvotes": 26,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.32,
+    "score_breakdown": {
+      "hf_upvotes": 26.367,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.047
+    }
+  },
+  {
+    "id": "2d54dff88f62fbb6",
+    "kind": "release",
+    "title": "A connectomics milestone: Mapping the complete male fruit fly brain",
+    "summary_en": "General Science",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "google_research",
+        "url": "https://research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "google_research"
+    ],
+    "published_at": "2026-09-03T16:00:03Z",
+    "first_seen_at": "2026-09-03T16:43:38.214972Z",
+    "dedup_keys": [
+      "url:research.google/blog/a-connectomics-milestone-mapping-the-complete-male-fruit-fly-brain",
+      "title:brain complete connectomics fly fruit male mapping milestone the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.953,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.047
+    }
+  },
+  {
+    "id": "b59c63dd2482bb5d",
+    "kind": "release",
+    "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-09-03T15:02:08Z",
+    "first_seen_at": "2026-09-03T16:43:37.861426Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
+      "title:accurate advanced and global introducing model most our weather weathernext"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.893,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.107
+    }
+  },
+  {
+    "id": "b471d670e2e67f40",
+    "kind": "model",
+    "title": "DANNY621/H3-World",
+    "summary_en": "image-to-video, video, world-model, interactive-world-model, lora, diffusion",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/DANNY621/H3-World",
+        "external_id": "DANNY621/H3-World"
+      }
+    ],
+    "actors": [
+      "DANNY621"
+    ],
+    "published_at": "2026-08-31T08:31:49Z",
+    "first_seen_at": "2026-09-03T16:43:36.901298Z",
+    "dedup_keys": [
+      "hf:danny621/h3-world"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 48,
+      "hf_downloads": 0,
+      "hf_trending_score": 46.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.762,
+    "score_breakdown": {
+      "hf_trending": 23.101,
+      "hf_likes": 11.675,
+      "age_decay": -5.014
     }
   },
   {
@@ -961,13 +1137,13 @@
       "Ge Zhang"
     ],
     "published_at": "2026-08-31T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653623Z",
+    "first_seen_at": "2026-09-03T16:43:37.054620Z",
     "dedup_keys": [
       "arxiv:2608.31100",
       "title:and can improvement into judging llms s3gym self self self testing turn"
     ],
     "signals": {
-      "hf_upvotes": 10,
+      "hf_upvotes": 25,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -980,19 +1156,19 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 23.351,
+    "score": 29.518,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
+      "hf_upvotes": 26.065,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -4.832
+      "age_decay": -5.547
     }
   },
   {
-    "id": "97ff795d3221e0fb",
+    "id": "1cdbbd7c84c2e4aa",
     "kind": "paper",
-    "title": "Influence-Directed Distillation: Solving the Diversity Bottleneck in Sampled-Token On-Policy Distillation",
-    "summary_en": "Sampled-token on-policy distillation (OPD) efficiently transfers capabilities from teacher to student using student-generated tokens, requiring teacher probabilities only for sampled tokens. Yet it frequently suffers from diversity distillation failure: the student's pass@1 improves while its pass@k plateaus, failing to inherit the teacher's diversity. To explain this, we introduce First-Order Local Entropy Influence, a signed first-order proxy that decouples each update's entropy effect into the teacher--student log-probability gap and the student's local probability structure, and empirically links entropy contraction to negative-influence positions. Motivated by this, we propose Influence-Directed Adaptive On-Policy Distillation (IDA-OPD): rather than relying on costly full-vocabulary Forward-KL objectives, it preserves entropy-expanding updates while replacing entropy-contracting ones with divergence-adaptive advantage shrinkage, using only the teacher's sampled-token log-probability. Experiments on reasoning-oriented distillation show IDA-OPD consistently improves pass@k, inheriting the teacher's diversity through distillation, matches the strongest teacher-informed methods at strictly lower cost, and broadly maintains vanilla OPD's pass@1, all without full-vocabulary teacher information.",
+    "title": "ZipTok3D: High-Fidelity 3D Tokenization with Compact Token Prefixes",
+    "summary_en": "Compact token sequences are essential for efficient 3D generation. However, existing 3D tokenizers typically organize latent representations either over spatial regions or as fixed-size sets of global tokens, both suffering sharp reconstruction degradation when compressed to extremely low token budgets. In this paper, we present ZipTok3D, a 3D tokenizer designed for high-fidelity reconstruction from extremely short token sequences. Its key idea is to organize object geometry into progressively informative global-token prefixes and unfold these compact representations through iterative decoding. Specifically, nested dropout randomly truncates the latent sequence after encoding during training and requires each retained prefix to reconstruct the complete object, thereby prioritizing essential geometric information in the leading tokens. The decoder then repeatedly applies a parameter-shared Transformer block to recover fine-grained geometry from each prefix without a separate generative sampling stage. With the same token dimension, ZipTok3D achieves reconstruction quality comparable to the 32-token COD-VAE baseline using only one token on ShapeNet and four on TRELLIS, yielding 32times and 8times shorter token sequences, respectively.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -1001,33 +1177,35 @@
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.29846",
-        "external_id": "2608.29846"
+        "url": "https://huggingface.co/papers/2609.01740",
+        "external_id": "2609.01740"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.29846",
-        "external_id": "2608.29846"
+        "url": "https://arxiv.org/abs/2609.01740",
+        "external_id": "2609.01740"
       }
     ],
     "actors": [
-      "Run Yang",
-      "Runpeng Dai",
-      "Jie Sun",
-      "Jielei Zhang",
-      "Fan Zhou",
-      "Hongtu Zhu",
-      "Peiyi Li",
-      "Longwen Gao"
+      "Mingda Lin",
+      "Weijie Wang",
+      "Zeyu Zhang",
+      "Bowen Cui",
+      "Yefei He",
+      "Haoyu Zhao",
+      "Yuanyu He",
+      "Donny Y. Chen",
+      "Feng Chen",
+      "Bohan Zhuang"
     ],
-    "published_at": "2026-08-30T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653649Z",
+    "published_at": "2026-09-01T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054640Z",
     "dedup_keys": [
-      "arxiv:2608.29846",
-      "title:bottleneck directed distillation distillation diversity influence policy sampled solving the token"
+      "arxiv:2609.01740",
+      "title:compact fidelity high prefixes token tokenization with ziptok3d"
     ],
     "signals": {
-      "hf_upvotes": 10,
+      "hf_upvotes": 19,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1040,52 +1218,54 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 21.851,
+    "score": 28.919,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
+      "hf_upvotes": 23.966,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -6.332
+      "age_decay": -4.047
     }
   },
   {
-    "id": "ef26da8a1d054228",
+    "id": "587c56af6b6f2f07",
     "kind": "paper",
-    "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
-    "summary_en": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). Using 22,000 curated problems, we train Nemotron-3-Nano-CC (30B-A3B) with SFT and RL and Nemotron-3-Ultra-CC (550B-A55B) with SFT alone. We further introduce GenCorrect, a feedback-driven test-time compute strategy that iteratively generates, evaluates, and refines diverse solutions. On IOI 2025, Nano-CC improves from 130 points to 291 after post-training and to 468 with GenCorrect, exceeding the gold threshold of 438.3 while Ultra-CC reaches 502. Guided by these results, we develop a competition-specific Ultra-CC system and evaluate it prospectively during IOI 2026. Under the same time, internet-access, and submission constraints as human contestants, it scores 535.4 out of 600, exceeding both the gold threshold of 361.12 and the top human score of 498.27. To our knowledge, this is the first AI system to outscore the highest-scoring human contestant on an IOI problem set.",
+    "title": "Cliff: Learning Process Rewards from the First Mistake",
+    "summary_en": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a powerful paradigm for large language model (LLM) post-training, but its reliance on coarse outcome rewards leads to limited guidance on intermediate reasoning processes. Existing approaches such as process reward modeling and on-policy distillation introduce additional constraints, such as reliance on a specialized reward model or assuming identical reasoning patterns between teacher and student. Nevertheless, we observe that once a reasoning process first goes wrong, evaluating the subsequent reasoning provides limited additional information, as it is already conditioned on an invalid prefix. Therefore, we propose Cliff, a reward shaping strategy that utilizes an off-the-shelf LLM as a teacher to identify the first mistake in each rollout. As a result, the rollout is naturally decomposed into two parts: a correct prefix and an incorrect suffix. Cliff then converts this signal into token-level advantages, assigning positive advantages for the correct prefix and negative feedback afterward. Experiments across 12 different scenarios demonstrate that Cliff consistently improves reasoning performance, outperforming on-policy distillation by 15% and standard GRPO by 7%, even with teachers of modest capability. Furthermore, we analyse the role of ``ground truth'' in Cliff and investigate its training dynamics. These results establish Cliff as a simple, general and effective approach for improving RLVR with richer, fine-grained supervision.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
+      "cv",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.02849",
-        "external_id": "2609.02849"
+        "url": "https://huggingface.co/papers/2609.02817",
+        "external_id": "2609.02817"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.02849",
-        "external_id": "2609.02849"
+        "url": "https://arxiv.org/abs/2609.02817",
+        "external_id": "2609.02817"
       }
     ],
     "actors": [
-      "Aleksander Ficek",
-      "Sean Narenthiran",
-      "Mehrzad Samadi",
-      "Somshubra Majumdar",
-      "Boris Ginsburg"
+      "Peixuan Han",
+      "Runhui Wang",
+      "Ketan Ramaneti",
+      "Jie Hao",
+      "Gerald Friedland",
+      "Chris Kong"
     ],
     "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653667Z",
+    "first_seen_at": "2026-09-03T16:43:37.054686Z",
     "dedup_keys": [
-      "arxiv:2609.02849",
-      "title:coding competitions for gold language medal models performance post training"
+      "arxiv:2609.02817",
+      "title:cliff first from learning mistake process rewards the"
     ],
     "signals": {
-      "hf_upvotes": 5,
+      "hf_upvotes": 15,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1094,41 +1274,41 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
+      "num_comments": 1,
       "has_code": false,
       "has_weights": false
     },
-    "score": 21.502,
+    "score": 28.634,
     "score_breakdown": {
-      "hf_upvotes": 14.334,
+      "hf_upvotes": 22.181,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.832
+      "age_decay": -2.547
     }
   },
   {
-    "id": "45b41ba72cc46069",
+    "id": "58989e348e0bf352",
     "kind": "release",
-    "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
-    "summary_en": null,
+    "title": "The Modern CUDA Toolbox in Practice: A Step-by-Step Optimization Walkthrough",
+    "summary_en": "NVIDIA CUDA remains the foundation of GPU-accelerated computing, powering everything from scientific simulations to large-scale AI training. But writing...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/ibm-research/real-time-intelligence",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough/",
         "external_id": null
       }
     ],
     "actors": [
-      "huggingface"
+      "nvidia"
     ],
-    "published_at": "2026-09-02T13:49:14Z",
-    "first_seen_at": "2026-09-03T05:16:40.072092Z",
+    "published_at": "2026-09-02T17:15:57Z",
+    "first_seen_at": "2026-09-03T16:43:39.343323Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/ibm-research/real-time-intelligence",
-      "title:confluent ibm intelligence models real series time time with"
+      "url:developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough",
+      "title:cuda modern optimization practice step step the toolbox walkthrough"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1144,225 +1324,52 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 19.032,
+    "score": 28.532,
     "score_breakdown": {
       "kind_base": 20.0,
-      "age_decay": -0.968
+      "known_org": 10.0,
+      "age_decay": -1.468
     }
   },
   {
-    "id": "64941eb37ee13815",
+    "id": "9683b495e20af382",
     "kind": "paper",
-    "title": "ExecRetrieval: Measuring the Functional-Correctness Gap in Code-Embedding Retrieval",
-    "summary_en": "Embedding-based code retrieval is a core component of coding agents and retrieval-augmented code generation, where retrieving correct code matters more than retrieving lexically similar code. Existing code-retrieval benchmarks do not plant controlled, execution-verified single-edit variants of each query's canonical implementation in the search pool, leaving the question of whether embeddings can functionally discriminate correct from near-clone-but-incorrect code unanswered in a retrieval setting. Resolving this requires a benchmark whose search pool itself contains the relevant counterfactuals -- execution-verified buggy variants near-identical to each canonical -- so that a retriever's rank ordering can be directly tested for functional discrimination rather than topical or identity overlap. We introduce ExecRetrieval, 939 Python tasks each paired with one execution-verified canonical implementation and up to four execution-verified buggy distractors, each generated by a mechanical mutation making a single targeted edit, and evaluate 23 dense embedding configurations plus BM25 under provider-native invocation with paired McNemar tests and query-level bootstrap intervals. With near-clone counterfactuals in the pool, the top hosted system reaches exec@10 = 1.00 but only exec@1 = 0.331; rank-1 misses are paired buggy variants 91.5-99.4% of the time across the four leading systems, and the canonical scores below at least one of its four paired distractors in 67-78% of queries on the leading systems. The full dataset, execution oracle, embedding matrices, environment snapshot, and pairwise statistical tests are released at the URL in Appendix D.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.01865",
-        "external_id": "2609.01865"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01865",
-        "external_id": "2609.01865"
-      }
-    ],
-    "actors": [
-      "Aaryan Kapoor",
-      "Md Abdullah Al Hafiz Khan"
-    ],
-    "published_at": "2026-09-01T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653749Z",
-    "dedup_keys": [
-      "arxiv:2609.01865",
-      "title:code correctness embedding execretrieval functional gap measuring retrieval the"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 16.758,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.332
-    }
-  },
-  {
-    "id": "2bf2f91d85f42955",
-    "kind": "paper",
-    "title": "CRISP: Cliff-awaRe Input-adaptive Sparse Prefilling with Structural-Mass-Motivated Routing",
-    "summary_en": "The attention prefilling phase of long-context LLM inference scales quadratically, making self-attention a severe computational bottleneck. Traditional sparse attention methods mitigate this through fixed patterns or offline profiling, but lack the flexibility to adapt to input-dependent attention structure. Recent dynamic methods address this by routing heads to sparse patterns in real-time, but rely on indirect routing proxies with overhead and budget allocation mechanisms that overlook the post-softmax mass hierarchy. We present CRISP (Cliff-awaRe Input-adaptive Sparse Prefilling), which identifies and addresses two structural challenges in this dynamic routing paradigm. First, we show that the routing decision can be read directly off the structure of the proxy attention map. We replace the Jensen-Shannon Divergence (JSD) routing with C_struct, a structural proxy that measures mass at Vertical-Slash compatible positions and reproduces JSD's routing decisions while eliminating both the pooled matmul and subsequent KL divergence overhead. Second, we formalize the post-softmax mass cliff and demonstrate theoretically that strictly cumulative coverage thresholds accumulate O(n) background noise at long contexts. CRISP navigates this via a sink-aware threshold grounded in the noise floor. Empirically, across InfiniteBench, RULER and LongBench on two model families, CRISP is the strongest sparse method overall and matches or exceeds exact dense attention on retrieval-heavy benchmarks, recovering up to +28.0 pp on retrieval tasks over baselines and achieving up to a 5.30x attention speedup at 512k tokens, driven primarily by our O(n) noise elimination during selection while preserving structural integrity.",
+    "title": "NeoMME: A Single-Tower Multimodal-Native Multilingual Foundation Encoder for Efficient Fine-Tuning and Inference",
+    "summary_en": "Multimodal models often build on architectures designed for generative vision-language modeling, typically combining separately pretrained vision encoders with causal language models. Visual document retrievers such as ColPali repurpose these models as encoders, carrying over the parameter and compute overhead of a VLM for a non-generative task.\n  We introduce NeoMME, a family of 260M and 800M-parameter Multimodal and Multilingual bidirectional Encoders that process multilingual text and raw image patches in a single bidirectional Transformer encoder. Both models are pretrained from scratch with a masked discrete-diffusion text objective, conditioned on visible image patches for multimodal examples. Both support a 16,384-token context, enough to encode up to two standard 4K UHD images.\n  To demonstrate its downstream capabilities, we fine-tune NeoMME with jointly trained dense and late-interaction heads. On the ViDoRe v3 benchmark, the resulting NeoMME-Retriever 260M outperforms all evaluated models strictly below 800M parameters with 0.523 nDCG@10, while NeoMME-Retriever 800M reaches 0.556. At a matched 2048x2048 image input size on an NVIDIA L40S, NeoMME-260M encodes pages with about 2x the throughput of ColModernVBERT. Hierarchical token pooling and asymmetric quantization compress late-interaction multimodal document embeddings by 255x while preserving over 95% of baseline nDCG@10. We contribute NeoMME to Hugging Face Transformers and release the pretrained backbone and retrieval-compatible checkpoints under Apache 2.0 at https://hf.co/collections/Hcompany/neomme.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
       "rag",
+      "multimodal",
+      "cv",
       "eval",
       "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.01925",
-        "external_id": "2609.01925"
+        "url": "https://huggingface.co/papers/2609.01657",
+        "external_id": "2609.01657"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01925",
-        "external_id": "2609.01925"
+        "url": "https://arxiv.org/abs/2609.01657",
+        "external_id": "2609.01657"
       }
     ],
     "actors": [
-      "Huu Huy Nguyen",
-      "Chien Van Nguyen",
-      "Franck Dernoncourt",
-      "Ryan A. Rossi",
-      "Linh Ngo Van",
-      "Jieyang Chen",
-      "Thien Huu Nguyen"
-    ],
-    "published_at": "2026-09-01T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653774Z",
-    "dedup_keys": [
-      "arxiv:2609.01925",
-      "title:adaptive aware cliff crisp input mass motivated prefilling routing sparse structural with"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 14.457,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.332
-    }
-  },
-  {
-    "id": "b21e00c1cb5572ea",
-    "kind": "paper",
-    "title": "Kirin: Animal Motion Generation from In-the-Wild Video",
-    "summary_en": "Understanding animal motion is fundamental to modeling animal behavior and biomechanics, yet progress in this area lags far behind human motion research due to the scarcity of high-quality motion data. While human motion can be captured in controlled environments, it is impractical for most animal species, resulting in small, domain-limited datasets that restrict downstream applications such as animation. To address this challenge, we introduce Kirin, a framework that reconstructs motion from video, learns motion priors at scale, and generates realistic motion that can be directly applied to animated assets. Using large collections of in-the-wild animal videos, we reconstruct 3D motion sequences and pair them with captions to create AiM3D, the first large-scale dataset offering aligned video-text-motion tuples for quadruped animals. Building on this dataset, we develop a visual-guided motion generation model that conditions on both text and image to guide the generation of realistic motion across diverse animal species. Finally, by leveraging an off-the-shelf image-to-3D model, we automatically rig and animate 3D meshes using generated motion, producing ready-to-render animated animals. Together, our dataset and framework establish a new foundation for large-scale, text and image conditioned animal motion generation and animation. Project page: https://kirin-ani.github.io/.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.01823",
-        "external_id": "2609.01823"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01823",
-        "external_id": "2609.01823"
-      }
-    ],
-    "actors": [
-      "Brian Nlong Zhao",
-      "Zhuoyang Pan",
-      "James M. Rehg",
-      "Jiajun Wu",
-      "Shangzhe Wu"
-    ],
-    "published_at": "2026-09-01T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653791Z",
-    "dedup_keys": [
-      "arxiv:2609.01823",
-      "title:animal from generation kirin motion the video wild"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 14.457,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.332
-    }
-  },
-  {
-    "id": "0f14814bc633e0ca",
-    "kind": "paper",
-    "title": "MULTI3IR: A Benchmark for Multi-perspective Multi-domain Multi-modal Information Retrieval",
-    "summary_en": "Information retrieval (IR) increasingly targets open-ended queries that admit diverse perspectives. Existing IR benchmarks, however, focus primarily on closed-ended queries, while even open-ended benchmarks largely consist of queries whose supporting documents span a single subject domain and modality. We introduce Multi^3IR, a benchmark that evaluates how well retrievers cover the multifaceted perspectives of open-ended queries across diverse domains and modalities. It comprises 104.9K Stack Exchange queries, each annotated with perspective descriptions that capture the query's implicit viewpoints. We further propose SPIN, a parameter- and label-efficient method that learns noise vectors to steer embeddings toward diverse yet meaningful semantic directions. Experiments show that existing multimodal retrievers suffer from single-perspective bias, while SPIN substantially improves perspective coverage on Multi^3IR and generalizes well to unseen open-ended IR benchmarks. The dataset and experimental code are available at https://github.com/seokwon99/Multi3IR.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "multimodal",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2608.30949",
-        "external_id": "2608.30949"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2608.30949",
-        "external_id": "2608.30949"
-      }
-    ],
-    "actors": [
-      "Seokwon Song",
-      "Sohyeon Kim",
-      "Gunhee Kim"
+      "Aurélien Lac",
+      "Tony Wu"
     ],
     "published_at": "2026-08-31T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653812Z",
+    "first_seen_at": "2026-09-03T16:43:37.054661Z",
     "dedup_keys": [
-      "arxiv:2608.30949",
-      "title:benchmark domain for information modal multi multi multi multi3ir perspective retrieval"
+      "arxiv:2609.01657",
+      "title:and efficient encoder fine for foundation inference multilingual multimodal native neomme single tower tuning"
     ],
     "signals": {
-      "hf_upvotes": 2,
+      "hf_upvotes": 19,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1375,12 +1382,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 12.957,
+    "score": 27.419,
     "score_breakdown": {
-      "hf_upvotes": 8.789,
+      "hf_upvotes": 23.966,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -4.832
+      "age_decay": -5.547
     }
   },
   {
@@ -1423,13 +1430,13 @@
       "Seunghyun Yoon"
     ],
     "published_at": "2026-09-01T00:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:38.653831Z",
+    "first_seen_at": "2026-09-03T16:43:37.054710Z",
     "dedup_keys": [
       "arxiv:2609.00591",
       "title:all captioning fine glance grained image need pass simloss single with you"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 15,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1442,285 +1449,24 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 11.213,
+    "score": 27.134,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 22.181,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -3.332
+      "age_decay": -4.047
     }
   },
   {
-    "id": "a9cffe0c94808485",
+    "id": "a7340efbaf565a40",
     "kind": "paper",
-    "title": "Disentangling Statistical Preemption from Entrenchment in Language Models' Avoidance of Overgeneralization",
-    "summary_en": "How do learners avoid overgeneralizations such as Tom laughed me without explicit negative evidence? Constructionists have posited two proposals that describe indirect negative evidence against overgeneralizations: preemption (which privileges exposure to near-synonymous construction---e.g., she made him laugh) vs. entrenchment (all exposures to a verb's grammatical usages, including cases like He laughed). We disentangle these hypotheses by running controlled rearing experiments on LMs trained on child-caregiver conversations, where we systematically remove preemptive vs. non-preemptive evidence. We find that while LMs avoid overgeneralizations, they do not show preemption at a verb-specific level, instead showing weak but non-zero evidence of abstract preemption. Combined with results from analyzing the LMs' training dynamics, we find that LMs treat competing structures as indirect positive---as opposed to negative---evidence in the verb-specific condition. Insofar as preemption is the more plausible route to avoiding overgeneralizations in humans, our results point the need for there to be sensitivities to indirect negative evidence in neural network learners, and suggest new human experiments to test abstract preemption.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01794",
-        "external_id": "2609.01794"
-      }
-    ],
-    "actors": [
-      "Yixuan Wang",
-      "Freda Shi",
-      "Kanishka Misra"
-    ],
-    "published_at": "2026-09-03T04:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:39.184251Z",
-    "dedup_keys": [
-      "arxiv:2609.01794",
-      "title:avoidance disentangling entrenchment from language models overgeneralization preemption statistical"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.918,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.082
-    }
-  },
-  {
-    "id": "22a27c54bc00e2c6",
-    "kind": "paper",
-    "title": "How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?",
-    "summary_en": "Large language models (LLMs) are increasingly deployed on mobile devices, making energy efficiency a key deployment constraint, yet the energy impact of prompt design remains underexplored. This paper aims to understand how two prompt properties, cognitive load and phrasing pattern, shape the energy behavior of on-device LLM inference. We conduct a broad empirical study covering prompt properties, datasets, models, and devices, with phase-level profiling that separates prefill and decode energy. We find that cognitive load primarily affects the energy cost per token, while phrasing pattern affects energy largely through token usage. Our energy-quality analysis further shows that prompt design reshapes the attainable frontier differently across models, highlighting the need for model-aware prompt design in energy-efficient on-device LLM inference. Code, datasets, and scripts are available at https://amai-gsu.github.io/PromptProperty/.",
+    "title": "VibeVoice-ASR-Streaming Technical Report",
+    "summary_en": "Traditional speaker-attributed ASR systems treated ASR and speaker diarization as two separate tasks. Recently, end-to-end models such as VibeVoice-ASR have unified the two tasks within a single model. However, existing unified models still mainly support offline recognition, making it difficult to meet the low-latency requirements of real-time voice assistants and agents. To tackle this issue, we present VibeVoice-ASR-Streaming, one of the first LLM-based end-to-end approaches to streaming speaker-attributed ASR. It interleaves fixed-size audio chunks, a small amount of lookahead audio and previous text. This allows the model to produce ''who said what'' as speech arrives, without a separate diarization stage. For transcription accuracy, our 7B model achieves the lowest average WER/CER across five evaluation sets. For speaker attribution, it achieves the best or tied-best on 12 of 13 evaluation settings. We release the 1.5B and 7B model weights together with inference code.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01798",
-        "external_id": "2609.01798"
-      }
-    ],
-    "actors": [
-      "Wei Hu",
-      "Xiaolong Tu",
-      "Dawei Chen",
-      "Yitao Chen",
-      "Kyungtae Han",
-      "Haoxin Wang"
-    ],
-    "published_at": "2026-09-03T04:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:39.184321Z",
-    "dedup_keys": [
-      "arxiv:2609.01798",
-      "title:affect consumption device energy how llms prompt variations"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.918,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.082
-    }
-  },
-  {
-    "id": "77dd082279b4daf5",
-    "kind": "paper",
-    "title": "MemeCULT-1K: Benchmarking South Asian Cultural Context and Humor Understanding of Multimodal Models",
-    "summary_en": "Meme understanding goes beyond recognizing visual content or literal text; it requires implicit cultural knowledge and pragmatic inference that most vision-language models still lack. We introduce MemeCULT-1K, a multilingual benchmark of 1,000 South Asian memes in Bengali, English, and Hindi, where each meme is paired with a cultural context note and three human-written explanations, along with a supplementary set of 54 Bengali regional dialect memes. We evaluate thirteen popular Vision Language Models (VLMs) under two settings: meme-only and context-aware. Providing minimal cultural context yields consistent gains across all models and languages: mean SBERT similarity improves from 44.6 to 56.4 (+11.8), BLEURT from 37.3 to 42.3 (+5.0), and LLM-as-a-Judge scores from 2.57 to 3.43 out of 5 (+0.86). Fine-grained error analysis reveals that closed-source models fail mainly on entity and reference misidentification, while open-source models are bottlenecked by broader cultural knowledge gaps, with linguistic and phonological failures proving the most context-resistant across both. These results highlight the difficulty of culturally grounded meme understanding and motivate future work on explicit cultural knowledge integration. Our dataset and code are publicly available at TawsifDipto17/MemeCULT-1K.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01772",
-        "external_id": "2609.01772"
-      }
-    ],
-    "actors": [
-      "Tawsif Tashwar Dipto",
-      "Mehedi Ahamed",
-      "Radib Bin Kabir",
-      "Mueeze Al Mushabbir",
-      "Mohammed Saidul Islam",
-      "Mir Rayat Imtiaz Hossain",
-      "Md Tahmid Rahman Laskar",
-      "Sabbir Ahmed"
-    ],
-    "published_at": "2026-09-03T04:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:39.184088Z",
-    "dedup_keys": [
-      "arxiv:2609.01772",
-      "title:and asian benchmarking context cultural humor memecult models multimodal south understanding"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.918,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.082
-    }
-  },
-  {
-    "id": "373286fd81e328a0",
-    "kind": "paper",
-    "title": "PRO-Step: Step-level Process Reward Optimization for Retrieval-Augmented Generation",
-    "summary_en": "Retrieval-Augmented Generation enhances Large Language Models by grounding responses in external knowledge, but multi-hop reasoning remains vulnerable to error propagation, where early retrieval failures confound subsequent steps. Standard outcome-based optimization only rewards the final answer, leaving intermediate retrieval and reasoning errors undetected. While existing process-based methods introduce step-level signals, they still score each step against the final answer, rewarding spurious successes where flawed retrieval coincidentally produces the correct answer. Step-level supervision in RAG requires evaluating both logical validity and evidential grounding at each step. We introduce PRO-STEP: we train a generative PRM that evaluates both dimensions, employ PRM-guided value tree search to construct preference pairs contrasting valid steps against flawed ones, and optimize the policy via step-level Direct Preference Optimization. Experiments on single and multi-hop QA datasets demonstrate that PRO-STEP achieves the best average EM and F1 across five benchmarks. Code, models, and training data are publicly available at https://github.com/keemminnke/PRO-Step.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01658",
-        "external_id": "2609.01658"
-      }
-    ],
-    "actors": [
-      "MinKeon Kim",
-      "Namjun Lee",
-      "Jaekwang Kim"
-    ],
-    "published_at": "2026-09-03T04:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:39.183751Z",
-    "dedup_keys": [
-      "arxiv:2609.01658",
-      "title:augmented for generation level optimization pro process retrieval reward step step"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.918,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.082
-    }
-  },
-  {
-    "id": "36dce610e3992c56",
-    "kind": "paper",
-    "title": "TalkFa: A Unified Benchmark for Farsi Dialogue Generation and Understanding",
-    "summary_en": "Farsi, spoken by more than 120 million people, lacks a comprehensive benchmark for dialogue generation and understanding. We introduce TALKFA, a unified benchmark comprising three complementary datasets: (1) WIKI-FADIAL, 4.2K Wikipedia-grounded dialogues for knowledge-grounded generation; (2) DAILYDIALOG-FA, 6.6K dialogues annotated for dialogue acts and emotions; and (3) PLAYDIAL-FA, 2.1K theatrical dialogues with sentiment labels. While LLMs assist data construction, every dialogue undergoes multi-stage review and revision by native Farsi speakers, and only the final human-approved dialogues are released. Experiments with six LLAMA and MISTRAL models show that LoRA substantially improves dialogue generation while requiring only 25-50% of the training data to recover over 90% of the final performance gains. Across classification tasks, FABERT achieves the best dialogue-act performance, LORA-MISTRAL-7B performs best on emotion recognition, and MISTRAL-24B achieves the highest sentiment score. Human evaluation and independent external validation demonstrate the reliability of the benchmark, while comparisons with GPT-4.1 as an LLM judge reveal that automatic metrics substantially overestimate dialogue quality. Zero-shot evaluation with frontier LLMs further shows that TalkFa remains a challenging benchmark. We will release all datasets, annotation guidelines, code, and checkpoints.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01810",
-        "external_id": "2609.01810"
-      }
-    ],
-    "actors": [
-      "Neda Jamshidi",
-      "Kamyar Zeinalipour",
-      "Fahimeh Akbari",
-      "Monica Bianchini",
-      "Marco Maggini",
-      "Marco Gori"
-    ],
-    "published_at": "2026-09-03T04:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:39.184411Z",
-    "dedup_keys": [
-      "arxiv:2609.01810",
-      "title:and benchmark dialogue farsi for generation talkfa understanding unified"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.918,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.082
-    }
-  },
-  {
-    "id": "e4e3648dc0affd02",
-    "kind": "paper",
-    "title": "VakyArth: Evaluating Pragmatic Competence in LLMs across Indic Languages",
-    "summary_en": "Real-world communication often requires pragmatic reasoning: interpreting meanings implied through context and cultural convention rather than stated literally. Existing pragmatic evaluation remains largely limited to English and high-resource languages, leaving Indic languages unexplored despite their linguistic and cultural diversity. We introduce VakyArth, the first pragmatic benchmark for Indic languages, designed as a diagnostic evaluation covering Hindi, Punjabi, Tamil, and Malayalam. VakyArth evaluates models across five phenomena: deixis, speech acts, implicature, social pragmatics, and coherence; through multiple-choice questions, natural language inference, and translation, with all items authored by native speakers. Across multilingual large language models (LLMs) of varying families and sizes, we find consistent failures on pragmatic meanings rooted in Indic linguistic and cultural conventions. Our analysis shows systematic differences across languages and tasks: MCQ accuracy exceeds NLI accuracy in all model-language combinations, translation performance does not reliably track pragmatic understanding, and Indo-Aryan languages show a translation advantage over Dravidian languages. We further show that automatic translation metrics can miss fluent but pragmatically unfaithful outputs, especially for implicature and deixis.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
+      "agent",
       "rag",
       "speech",
       "eval",
@@ -1728,25 +1474,148 @@
     ],
     "links": [
       {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.02812",
+        "external_id": "2609.02812"
+      },
+      {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.01788",
-        "external_id": "2609.01788"
+        "url": "https://arxiv.org/abs/2609.02812",
+        "external_id": "2609.02812"
       }
     ],
     "actors": [
-      "Usneek Singh",
-      "Poorvaja Veera Balaji Kumar",
-      "Parth Nanda",
-      "Anand Madhusoodanan",
-      "Geyang Guo",
-      "Wei Xu",
-      "Junyi Jessy L"
+      "Yujie Tu",
+      "Zhiliang Peng",
+      "Jianwei Yu",
+      "Li Dong",
+      "Songchen Xu",
+      "Yaoyao Chang",
+      "Wenhui Wang",
+      "Zilong Wang",
+      "Zehua Wang",
+      "Yan Xia",
+      "Jiajun Zhang",
+      "Xie Chen",
+      "Furu Wei"
     ],
-    "published_at": "2026-09-03T04:00:00Z",
-    "first_seen_at": "2026-09-03T05:16:39.184171Z",
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054753Z",
     "dedup_keys": [
-      "arxiv:2609.01788",
-      "title:across competence evaluating indic languages llms pragmatic vakyarth"
+      "arxiv:2609.02812",
+      "title:asr report streaming technical vibevoice"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 25.636,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.547
+    }
+  },
+  {
+    "id": "6fa02b004a2fe99e",
+    "kind": "paper",
+    "title": "PaperCompiler: Faithful Paper-to-Code Generation via Repository-Level Specification Compilation",
+    "summary_en": "Faithfully translating research papers into repository-level implementations remains challenging because papers often describe methods at a high level, leave implementation assumptions implicit, and require generated repositories to preserve method logic, evaluation protocols, and cross-file consistency. Despite recent advances in paper-to-code agents, their intermediate outputs are often presented as free-form plans or summaries that downstream coding agents may ignore, reinterpret, or compress, leading to algorithmic simplification and inconsistent repository structure. To address these challenges, we introduce PaperCompiler, a paper-to-code generation framework that compiles paper-grounded evidence into explicit repository-level implementation specifications. PaperCompiler grounds implementation-relevant evidence while preserving source provenance and distinguishing paper-supported, inferred, externally delegated, and unresolved information. The resulting specifications encode non-degradation requirements, ownership assignments, cross-file dependencies, and file-level constraints. Repository generation proceeds under these compiled specifications while retaining flexibility over local engineering choices not fixed by the paper. PaperCompiler outperforms strong baselines on Paper2CodeBench, achieving a 13.8% relative improvement in reference-based fidelity (from 3.64 to 4.15) and reducing high-severity evaluator critiques (from 13.2% to 6.1%).",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.02272",
+        "external_id": "2609.02272"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.02272",
+        "external_id": "2609.02272"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Daethalous/PaperCompiler",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yunhao Liu",
+      "Hong Phuc Pham",
+      "Jaehong Yoon"
+    ],
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054838Z",
+    "dedup_keys": [
+      "arxiv:2609.02272",
+      "title:code compilation faithful generation level paper papercompiler repository specification via",
+      "github:daethalous/papercompiler"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 25.02,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.547
+    }
+  },
+  {
+    "id": "636885f093d88ab2",
+    "kind": "release",
+    "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/Hcompany/neomme",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-09-03T13:13:48Z",
+    "first_seen_at": "2026-09-03T16:43:38.418675Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/hcompany/neomme",
+      "title:and efficient encoder multilingual multimodal native neomme"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1762,10 +1631,129 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 3.918,
+    "score": 23.78,
     "score_breakdown": {
+      "kind_base": 20.0,
       "topic_match": 4.0,
-      "age_decay": -0.082
+      "age_decay": -0.22
+    }
+  },
+  {
+    "id": "97ff795d3221e0fb",
+    "kind": "paper",
+    "title": "Influence-Directed Distillation: Solving the Diversity Bottleneck in Sampled-Token On-Policy Distillation",
+    "summary_en": "Sampled-token on-policy distillation (OPD) efficiently transfers capabilities from teacher to student using student-generated tokens, requiring teacher probabilities only for sampled tokens. Yet it frequently suffers from diversity distillation failure: the student's pass@1 improves while its pass@k plateaus, failing to inherit the teacher's diversity. To explain this, we introduce First-Order Local Entropy Influence, a signed first-order proxy that decouples each update's entropy effect into the teacher--student log-probability gap and the student's local probability structure, and empirically links entropy contraction to negative-influence positions. Motivated by this, we propose Influence-Directed Adaptive On-Policy Distillation (IDA-OPD): rather than relying on costly full-vocabulary Forward-KL objectives, it preserves entropy-expanding updates while replacing entropy-contracting ones with divergence-adaptive advantage shrinkage, using only the teacher's sampled-token log-probability. Experiments on reasoning-oriented distillation show IDA-OPD consistently improves pass@k, inheriting the teacher's diversity through distillation, matches the strongest teacher-informed methods at strictly lower cost, and broadly maintains vanilla OPD's pass@1, all without full-vocabulary teacher information.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.29846",
+        "external_id": "2608.29846"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.29846",
+        "external_id": "2608.29846"
+      }
+    ],
+    "actors": [
+      "Run Yang",
+      "Runpeng Dai",
+      "Jie Sun",
+      "Jielei Zhang",
+      "Fan Zhou",
+      "Hongtu Zhu",
+      "Peiyi Li",
+      "Longwen Gao"
+    ],
+    "published_at": "2026-08-30T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054733Z",
+    "dedup_keys": [
+      "arxiv:2608.29846",
+      "title:bottleneck directed distillation distillation diversity influence policy sampled solving the token"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 23.617,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -7.047
+    }
+  },
+  {
+    "id": "ef26da8a1d054228",
+    "kind": "paper",
+    "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+    "summary_en": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). Using 22,000 curated problems, we train Nemotron-3-Nano-CC (30B-A3B) with SFT and RL and Nemotron-3-Ultra-CC (550B-A55B) with SFT alone. We further introduce GenCorrect, a feedback-driven test-time compute strategy that iteratively generates, evaluates, and refines diverse solutions. On IOI 2025, Nano-CC improves from 130 points to 291 after post-training and to 468 with GenCorrect, exceeding the gold threshold of 438.3 while Ultra-CC reaches 502. Guided by these results, we develop a competition-specific Ultra-CC system and evaluate it prospectively during IOI 2026. Under the same time, internet-access, and submission constraints as human contestants, it scores 535.4 out of 600, exceeding both the gold threshold of 361.12 and the top human score of 498.27. To our knowledge, this is the first AI system to outscore the highest-scoring human contestant on an IOI problem set.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.02849",
+        "external_id": "2609.02849"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.02849",
+        "external_id": "2609.02849"
+      }
+    ],
+    "actors": [
+      "Aleksander Ficek",
+      "Sean Narenthiran",
+      "Mehrzad Samadi",
+      "Somshubra Majumdar",
+      "Boris Ginsburg"
+    ],
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-03T16:43:37.054794Z",
+    "dedup_keys": [
+      "arxiv:2609.02849",
+      "title:coding competitions for gold language medal models performance post training"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 23.089,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.547
     }
   }
 ]
