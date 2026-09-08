@@ -1,0 +1,228 @@
+[
+  {
+    "id": "a1da525ecab1a101",
+    "kind": "model",
+    "title": "openbmb/MiniCPM5-2B-GGUF",
+    "summary_en": "text-generation, transformers, minicpm, minicpm5, llama, long-context, tool-calling",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/openbmb/MiniCPM5-2B-GGUF",
+        "external_id": "openbmb/MiniCPM5-2B-GGUF"
+      }
+    ],
+    "actors": [
+      "openbmb"
+    ],
+    "published_at": "2026-09-05T01:44:34Z",
+    "first_seen_at": "2026-09-08T05:25:01.200332Z",
+    "dedup_keys": [
+      "hf:openbmb/minicpm5-2b-gguf"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 73,
+      "hf_downloads": 2,
+      "hf_trending_score": 69.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.869,
+    "score_breakdown": {
+      "hf_trending": 25.491,
+      "hf_downloads": 2.197,
+      "hf_likes": 12.912,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -4.731
+    }
+  },
+  {
+    "id": "f6257559c5201ae5",
+    "kind": "model",
+    "title": "lvladikov/Krea2-Turbo-Distill-4step-LoRA",
+    "summary_en": "text-to-image, diffusers, lora, distillation, step-distillation, krea-2",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA",
+        "external_id": "lvladikov/Krea2-Turbo-Distill-4step-LoRA"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/krea/Krea-2-Turbo",
+        "external_id": "krea/Krea-2-Turbo"
+      }
+    ],
+    "actors": [
+      "lvladikov"
+    ],
+    "published_at": "2026-08-20T07:04:06Z",
+    "first_seen_at": "2026-09-08T05:25:01.200668Z",
+    "dedup_keys": [
+      "hf:lvladikov/krea2-turbo-distill-4step-lora"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 94,
+      "hf_downloads": 19012,
+      "hf_trending_score": 37.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.796,
+    "score_breakdown": {
+      "hf_trending": 21.826,
+      "hf_downloads": 19.706,
+      "hf_likes": 13.662,
+      "age_decay": -28.398
+    }
+  },
+  {
+    "id": "4ff173ff01ac0596",
+    "kind": "paper",
+    "title": "Verify Before You Distill: Prompt-Level Teacher Gating for On-Policy Distillation",
+    "summary_en": "On-policy distillation (OPD) accelerates post-training by providing dense token-level supervision from a frozen teacher on the student's own rollouts. Vanilla OPD applies this supervision uniformly across prompts, without checking whether the teacher is reliable for each prompt. Because reverse KL is mode-seeking, a confidently wrong teacher can induce a strong yet misleading update. Distributional proxies, such as entropy or teacher-student likelihood agreement, measure uncertainty or agreement but do not directly verify outcome correctness. We introduce Teacher-Gated On-Policy Distillation (TGOPD), built on the principle that teacher reliability should be verified at the prompt level before dense supervision is admitted. TGOPD estimates reliability from a small set of verifier-scored teacher probes and routes each prompt exclusively to dense OPD when the reliability check passes or to verifier-grounded GRPO otherwise. Across 4B and 35B students in mathematics, code, and instruction following, TGOPD outperforms Vanilla OPD in all six single-domain settings and achieves higher seven-benchmark averages at both scales under multi-domain training. By using otherwise-idle teacher capacity for reliability estimation, TGOPD also reduces teacher-side compute waste in asynchronous OPD, increasing teacher-node GPU utilization from 9.8% to 78.9% in the measured 4B single-domain run.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.02998",
+        "external_id": "2609.02998"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.02998",
+        "external_id": "2609.02998"
+      }
+    ],
+    "actors": [
+      "Zhiwei Zhang",
+      "Zechen Sun",
+      "Fei Zhao",
+      "Kang Peng",
+      "Bin Liang",
+      "Huayu Deng",
+      "Yao Hu",
+      "Kam-Fai Wong",
+      "Mu Chuan"
+    ],
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-08T05:25:01.199043Z",
+    "dedup_keys": [
+      "arxiv:2609.02998",
+      "title:before distill distillation for gating level policy prompt teacher verify you"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.536,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -9.34
+    }
+  },
+  {
+    "id": "4dbf5d555f265f19",
+    "kind": "paper",
+    "title": "What Else Needs Fixing? Exploring Cost-Effective Test-Time Compute for Revision Propagation in Artifacts Generated Through Conversation",
+    "summary_en": "Large Language Models (LLMs) often help users generate artifacts through iterative cycles of generation and revision in conversation. A challenge here is that, when users specify only a local change during revision, LLMs must instead identify the relevant dependencies and propagate the revision to all affected parts of the artifact. This paper studies this ability of LLMs on conversationally generated artifacts, where the artifact context and its dependencies may be embedded in the conversation history. Toward practical use, we also explore cost-effective test-time compute for this new setting. Specifically, we introduce a new benchmark for this setting, and evaluate nine revision methods, including sequential reflection and parallel sampling variants, using gpt-oss-20b/120b, gpt-5.4-mini, and qwen3.5-9b/27b/122b on the benchmark. The results show that baselines achieve accuracies of 68.3--93%, and the most cost-effective method is selecting from three parallel samples using either LLM-based or medoid selection, which improves accuracy by 2.2--9.7%. Our code and dataset are available at https://github.com/ntt-dkiku/llm-revision-propagation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.03254",
+        "external_id": "2609.03254"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.03254",
+        "external_id": "2609.03254"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ntt-dkiku/llm-revision-propagation",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Daisuke Kikuta"
+    ],
+    "published_at": "2026-09-03T00:00:00Z",
+    "first_seen_at": "2026-09-08T05:25:01.199181Z",
+    "dedup_keys": [
+      "arxiv:2609.03254",
+      "title:artifacts compute conversation cost effective else exploring fixing for generated needs propagation revision test through time what",
+      "github:ntt-dkiku/llm-revision-propagation"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 9.705,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.84
+    }
+  }
+]
