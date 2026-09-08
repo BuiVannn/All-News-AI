@@ -20,15 +20,15 @@
       "openbmb"
     ],
     "published_at": "2026-09-05T01:44:34Z",
-    "first_seen_at": "2026-09-08T05:25:01.200332Z",
+    "first_seen_at": "2026-09-08T16:52:57.866568Z",
     "dedup_keys": [
       "hf:openbmb/minicpm5-2b-gguf"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 73,
-      "hf_downloads": 2,
-      "hf_trending_score": 69.0,
+      "hf_likes": 107,
+      "hf_downloads": 7760,
+      "hf_trending_score": 102.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -38,14 +38,615 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 43.869,
+    "score": 62.32,
     "score_breakdown": {
-      "hf_trending": 25.491,
-      "hf_downloads": 2.197,
-      "hf_likes": 12.912,
+      "hf_trending": 27.808,
+      "hf_downloads": 17.914,
+      "hf_likes": 14.046,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -4.731
+      "age_decay": -5.448
+    }
+  },
+  {
+    "id": "6e705fbed3dfe000",
+    "kind": "model",
+    "title": "microsoft/VibeVoice-ASR-Streaming-1.5B",
+    "summary_en": "automatic-speech-recognition, transformers, vibevoice, ASR, Transcription, Speech-to-Text, Streaming",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B",
+        "external_id": "microsoft/VibeVoice-ASR-Streaming-1.5B"
+      }
+    ],
+    "actors": [
+      "microsoft"
+    ],
+    "published_at": "2026-09-02T15:51:38Z",
+    "first_seen_at": "2026-09-08T16:52:57.870560Z",
+    "dedup_keys": [
+      "hf:microsoft/vibevoice-asr-streaming-1.5b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 44,
+      "hf_downloads": 1959,
+      "hf_trending_score": 42.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 58.082,
+    "score_breakdown": {
+      "hf_trending": 22.567,
+      "hf_downloads": 15.161,
+      "hf_likes": 11.42,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -9.066
+    }
+  },
+  {
+    "id": "8a128cfde5f58973",
+    "kind": "model",
+    "title": "Jackrong/Qwopus3.8-27B-Flash",
+    "summary_en": "image-text-to-text, transformers, qwen3_5, llama.cpp, vision, multimodal, text-generation-inference",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash",
+        "external_id": "Jackrong/Qwopus3.8-27B-Flash"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "external_id": "Qwen/Qwen3.8-27B"
+      }
+    ],
+    "actors": [
+      "Jackrong"
+    ],
+    "published_at": "2026-09-03T11:30:30Z",
+    "first_seen_at": "2026-09-08T16:52:57.870655Z",
+    "dedup_keys": [
+      "hf:jackrong/qwopus3.8-27b-flash"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 38,
+      "hf_downloads": 923,
+      "hf_trending_score": 38.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 46.791,
+    "score_breakdown": {
+      "hf_trending": 21.981,
+      "hf_downloads": 13.657,
+      "hf_likes": 10.991,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -7.838
+    }
+  },
+  {
+    "id": "14b96ac15ffe050e",
+    "kind": "paper",
+    "title": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+    "summary_en": "Large Language Models (LLMs) owe much of their success to next-token prediction (NTP), but their autoregressive (AR) structure requires slow, sequential token generation. To overcome this bottleneck, we introduce diffusion-augmented LLMs, a new class of models that defines an AR model distribution while using diffusion to draw multiple tokens in parallel from that distribution. We decouple the parameters of these models into two sets: AR weights, trained using the standard NTP objective, and lightweight diffusion weights, trained to generate multiple tokens simultaneously. The diffusion weights are learned through a simple Diffusion Distillation phase that adds negligible overhead to existing LLM training pipelines. We also introduce Ψ-Spec, a family of samplers that enables lossless acceleration and inference-time scaling at a fixed context length. Unlike speculative decoding, our method requires no separate draft model. Unlike diffusion LLMs (d-LLMs), it accelerates generation without sacrificing the quality of the underlying AR model. The resulting models, called Uno, can be trained from scratch or built by augmenting existing open-weight AR LLMs. Uno achieves higher throughput than leading speculative-decoding methods at every evaluated batch size and delivers up to 3times speedups over the base AR model, including at the largest batch size supported by the device. Notably, our 8B Uno model outperforms the leading open d-LLM, the 26B DiffusionGemma, and the proprietary Mercury 2 across all evaluated benchmarks in agentic tool use, coding, and long-context reasoning. We release code and checkpoints at: https://s-sahoo.github.io/uno/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.04010",
+        "external_id": "2609.04010"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.04010",
+        "external_id": "2609.04010"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ifm-ai/uno",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Subham Sekhar Sahoo",
+      "Lingjie Chen",
+      "Khiem Pham",
+      "Jonathan Geuter",
+      "Chaitanya Dwivedi",
+      "Varad Pimpalkhute",
+      "Yash Akhauri",
+      "Alexander Moreno",
+      "Mikhail Yurochkin",
+      "Zhenting Wang",
+      "Mostafa Elhoushi",
+      "Nolan Dey",
+      "Shane Bergsma",
+      "Joel Hestness",
+      "John Thickstun",
+      "Eric Xing",
+      "Zhengzhong Liu"
+    ],
+    "published_at": "2026-09-03T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:57.872855Z",
+    "dedup_keys": [
+      "arxiv:2609.04010",
+      "title:diffusion discrete llms lossless speedups unlocking via",
+      "github:ifm-ai/uno"
+    ],
+    "signals": {
+      "hf_upvotes": 55,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 44,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 6,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 43.259,
+    "score_breakdown": {
+      "hf_upvotes": 32.203,
+      "github_stars": 7.613,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.557
+    }
+  },
+  {
+    "id": "059b18ea6be47d6c",
+    "kind": "paper",
+    "title": "ENEAS: Embedding-guided Neural Ensemble for Adaptive Segmentation",
+    "summary_en": "We present ENEAS, a unified, text-promptable method for instance tracking and semantic discovery. Text-promptable segmentation models, including the latest foundation models such as SAM 3, still suffer from temporal hallucinations, spatial fragmentation, and semantic misclassification: they fail to report target absence when an object leaves the field of view, segment local textures instead of the complete object during extreme close-ups, and prioritize visual features over ontological reality, so that visually similar artifacts such as statues, paintings, or reflections are segmented as target entities.\n  ENEAS works two ways from a single method: precise tracking and high-quality segmentation of a unique instance, and open-concept discovery of every instance a text query names, resolved by a semantic verification layer. For tracking, we extend the geometrically robust SeC architecture, previously limited to point interactions, with a text-prompting adapter and leverage its temporal memory, so that the target is held through disappearance without drifting to distractors and kept whole even when it fills the entire view. For discovery, the verification layer combines high-speed visual embedding matching with conditional VLM refinement, invoking semantic reasoning only for ambiguous candidates, which filters out the ontological errors that visual-only models cannot distinguish while keeping latency low. Designed with 3D reconstruction in mind, where a single misclassified distractor corrupts the asset, ENEAS unlocks high-quality semantic tracking and segmentation of video, of broad libraries, and of collections of temporally or spatially unordered data, together with the discrimination to tell true instances from their doppelgangers: things that look alike but are not the same. The code and models are available at https://github.com/speridlabs/eneas",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.03756",
+        "external_id": "2609.03756"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.03756",
+        "external_id": "2609.03756"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/speridlabs/eneas",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Javier del Pino",
+      "Salvador Rodríguez",
+      "Alejandro Garabito",
+      "Javier Álvarez",
+      "Chema Garabito"
+    ],
+    "published_at": "2026-09-03T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:57.872944Z",
+    "dedup_keys": [
+      "arxiv:2609.03756",
+      "title:adaptive embedding eneas ensemble for guided neural segmentation",
+      "github:speridlabs/eneas"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 41,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.041,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "github_stars": 7.475,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.557
+    }
+  },
+  {
+    "id": "eb58cdc426af0ee3",
+    "kind": "model",
+    "title": "vpakarinen/better-human-motion-h3-lora",
+    "summary_en": "text-to-video, minimax, h3, t2v, i2v, lora, video-generation",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/vpakarinen/better-human-motion-h3-lora",
+        "external_id": "vpakarinen/better-human-motion-h3-lora"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "vpakarinen"
+    ],
+    "published_at": "2026-09-02T08:24:16Z",
+    "first_seen_at": "2026-09-08T16:52:57.870694Z",
+    "dedup_keys": [
+      "hf:vpakarinen/better-human-motion-h3-lora"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 38,
+      "hf_downloads": 156,
+      "hf_trending_score": 37.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.397,
+    "score_breakdown": {
+      "hf_trending": 21.826,
+      "hf_downloads": 10.112,
+      "hf_likes": 10.991,
+      "age_decay": -9.532
+    }
+  },
+  {
+    "id": "97af5124a981c164",
+    "kind": "paper",
+    "title": "FlowBalance: Verifier-Grounded Self-Improvement from On-Policy Reasoning Experience",
+    "summary_en": "A reasoning model can improve from its own on-policy experience, but this inner loop is fragile: terminal verifiers provide reliable yet sparse supervision, while dense same-model guidance can reinforce false confidence or overconcentrate learning on a narrow solution mode. We introduce FlowBalance, a verifier-grounded self-improvement method that learns a normalized distribution over complete responses. For each on-policy trajectory, a frozen training-time view of the same policy uses privileged context to produce token-level log-probability gains, which are aggregated into a trajectory-level self-guidance score. FlowBalance calibrates this score with the verifier-derived group advantage: guidance is retained on positive-advantage trajectories, reversed on negative-advantage trajectories, and disabled when the rollout group provides no outcome preference. The resulting energy exponentially reweights a reference policy, and profiled trajectory balance fits the normalized target with one log-partition estimate per rollout group. This realizes outcome-calibrated self-guidance via trajectory balance, without a separate token-level imitation loss. Our analysis establishes within-group contrast preservation, a minimum-change reverse-KL characterization, monotonic verifier control of target reward, and an exact correction against false-positive self-guidance on rejected responses. On mathematical reasoning, FlowBalance improves average performance over FlowRL on both Qwen3-4B and Qwen3-8B, while also improving training speed and stability, avoiding direct OPSD's response-length collapse, and exhibiting higher correct-strategy diversity in a controlled AIME24 diagnostic.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.03241",
+        "external_id": "2609.03241"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.03241",
+        "external_id": "2609.03241"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/alexhuang13/FlowBalance",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zixun Huang",
+      "Kishan Panaganti",
+      "Haitao Mi",
+      "Leowei Liang"
+    ],
+    "published_at": "2026-09-03T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:57.872910Z",
+    "dedup_keys": [
+      "arxiv:2609.03241",
+      "title:experience flowbalance from grounded improvement policy reasoning self verifier",
+      "github:alexhuang13/flowbalance"
+    ],
+    "signals": {
+      "hf_upvotes": 38,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.751,
+    "score_breakdown": {
+      "hf_upvotes": 29.308,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.557
+    }
+  },
+  {
+    "id": "acc68914fb66b0ec",
+    "kind": "release",
+    "title": "Called to serve: Tech, research, and positive impact with Chris White",
+    "summary_en": "Lab Director Chris White has worked on research challenges with real-world implications—from new approaches to wartime data analysis to tools for combating human trafficking. He talks to program manager Weishung Liu about the influences that led to the work and more. The post Called to serve: Tech, research, and positive impact with Chris White appeared first on Microsoft Research .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "microsoft_research"
+    ],
+    "published_at": "2026-09-08T16:45:12Z",
+    "first_seen_at": "2026-09-08T16:52:59.635316Z",
+    "dedup_keys": [
+      "url:microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white",
+      "title:and called chris impact positive research serve tech white with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.99,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.01
+    }
+  },
+  {
+    "id": "52e65223c6c7d2a7",
+    "kind": "release",
+    "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+    "summary_en": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-09-08T14:00:15Z",
+    "first_seen_at": "2026-09-08T16:52:58.450083Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
+      "title:alphagenome atlas change dna every genome human letter map possible predictive the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.818,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.182
+    }
+  },
+  {
+    "id": "5f7057fcab9a99f8",
+    "kind": "release",
+    "title": "The Work Now Within Reach",
+    "summary_en": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/the-work-now-within-reach",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-08T13:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:58.224317Z",
+    "dedup_keys": [
+      "url:openai.com/index/the-work-now-within-reach",
+      "title:now reach the within work"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.756,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.244
+    }
+  },
+  {
+    "id": "6ddce4876d323825",
+    "kind": "release",
+    "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
+    "summary_en": "In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-08T12:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:59.099129Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels",
+      "title:cuda for gpu introducing kernels rust tracks two writing"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.693,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.307
+    }
+  },
+  {
+    "id": "969068f3262228cd",
+    "kind": "release",
+    "title": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+    "summary_en": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-08T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:58.224390Z",
+    "dedup_keys": [
+      "url:openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+      "title:classrooms expands from initiatives journalism newsrooms openai support"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.943,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.057
     }
   },
   {
@@ -74,15 +675,15 @@
       "lvladikov"
     ],
     "published_at": "2026-08-20T07:04:06Z",
-    "first_seen_at": "2026-09-08T05:25:01.200668Z",
+    "first_seen_at": "2026-09-08T16:52:57.870540Z",
     "dedup_keys": [
       "hf:lvladikov/krea2-turbo-distill-4step-lora"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 94,
-      "hf_downloads": 19012,
-      "hf_trending_score": 37.0,
+      "hf_likes": 103,
+      "hf_downloads": 20324,
+      "hf_trending_score": 43.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -92,12 +693,201 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 26.796,
+    "score": 27.362,
     "score_breakdown": {
-      "hf_trending": 21.826,
-      "hf_downloads": 19.706,
-      "hf_likes": 13.662,
-      "age_decay": -28.398
+      "hf_trending": 22.705,
+      "hf_downloads": 19.839,
+      "hf_likes": 13.933,
+      "age_decay": -29.115
+    }
+  },
+  {
+    "id": "8e1596e2f6cc6569",
+    "kind": "paper",
+    "title": "EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents",
+    "summary_en": "Vision-language-action (VLA) models map visual observations and language instructions directly to robot actions, but long-horizon tasks require more than action prediction. An agent must coordinate perception, planning, execution, progress verification, and recovery as the physical state evolves. An action prediction or a model-generated skill decision does not, by itself, guarantee that the proposed operation is valid in the current state or that its outcome will be verified. We propose EmbodiedSkills, a unified framework that treats each skill decision as an execution proposal: the runtime checks its prerequisites before execution and verifies the outcome afterward. A shared executable-skill interface connects high-level skill selection, bounded low-level VLA execution, and post-action verification within a single agent loop. Because this interface remains fixed, low-level VLA policies can be replaced or adapted without changing the agent loop. The interface also records planning, execution, verification, and recovery events as structured trajectories, which provide supervision for individual components and can support optional online adaptation when interactive feedback is available. We instantiate EmbodiedSkills with Qwen3-VL and OpenPI/pi0.5 on RoboTwin 2.0 and LIBERO. Task-adapted low-level VLA policies achieve an average success rate of 86.20% across 50 RoboTwin 2.0 tasks and 97.40% across the four LIBERO suites. These results establish the execution performance of the task-adapted low-level VLA policies used in EmbodiedSkills. On four memory-dependent RMBench tasks, the same task-adapted execution approach achieves 12.5% average success. The framework provides a trainable and inspectable agent layer for turning these policies into closed-loop embodied systems.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.01281",
+        "external_id": "2609.01281"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.01281",
+        "external_id": "2609.01281"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/DCDmllm/EmbodiedSkills",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Wei Wang",
+      "Wenqiao Zhang",
+      "Yutong Lin",
+      "Yuqian Yuan",
+      "Tianwei Lin",
+      "Jinhao Mao",
+      "Zhenxuan Fan",
+      "Mingjian Gao",
+      "Yang Dai",
+      "Wentong Li",
+      "Zheqi Lv",
+      "Zheng Dong",
+      "Yingjie Niu",
+      "Jiaqi Zhu",
+      "Jun Xiao",
+      "Chao Li",
+      "Yueting Zhuang"
+    ],
+    "published_at": "2026-09-01T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:57.872972Z",
+    "dedup_keys": [
+      "arxiv:2609.01281",
+      "title:agents and deploying embodiedskills for framework orchestrating training unified vla",
+      "github:dcdmllm/embodiedskills"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 26,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.218,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 6.592,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -11.557
+    }
+  },
+  {
+    "id": "74bb957e8e221d8f",
+    "kind": "release",
+    "title": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-09-08T14:23:07Z",
+    "first_seen_at": "2026-09-08T16:52:58.803794Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/multiversecomputingcai/safety-for-whom",
+      "title:for not refusing right safety subset the the topic topic whole whom"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.842,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.158
+    }
+  },
+  {
+    "id": "47789f3425614958",
+    "kind": "paper",
+    "title": "Causal Foundation Models",
+    "summary_en": "Causal inference is the practice of estimating the effect of a treatment or intervention from data. It traditionally requires a bespoke pipeline for every new problem: first proposing a causal mechanism, selecting a compatible estimator, and finally training it. Meanwhile, across diverse settings and modalities, much of machine learning has shifted to the paradigm of foundation models: networks pretrained once at scale and applied to new tasks without fine-tuning. Causal foundation models (CFMs) bring this paradigm to causal inference. CFMs are pretrained neural networks that estimate causal quantities, such as the average treatment effect, on entirely new datasets using in-context learning without requiring model updates. This work provides a practical introduction to this emerging area. We summarize the necessary background in causal inference and machine learning before discussing CFMs. Throughout, we include example code and Jupyter notebooks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.03003",
+        "external_id": "2609.03003"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.03003",
+        "external_id": "2609.03003"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/layer6ai-labs/cfms",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Christopher Stith",
+      "Hossein Rahmani",
+      "Jesse C. Cresswell"
+    ],
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:57.873118Z",
+    "dedup_keys": [
+      "arxiv:2609.03003",
+      "title:causal foundation models",
+      "github:layer6ai-labs/cfms"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 10,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 17.829,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 4.796,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -10.057
     }
   },
   {
@@ -136,13 +926,13 @@
       "Mu Chuan"
     ],
     "published_at": "2026-09-02T00:00:00Z",
-    "first_seen_at": "2026-09-08T05:25:01.199043Z",
+    "first_seen_at": "2026-09-08T16:52:57.873016Z",
     "dedup_keys": [
       "arxiv:2609.02998",
       "title:before distill distillation for gating level policy prompt teacher verify you"
     ],
     "signals": {
-      "hf_upvotes": 4,
+      "hf_upvotes": 8,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -155,12 +945,78 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 12.536,
+    "score": 16.521,
     "score_breakdown": {
-      "hf_upvotes": 12.876,
+      "hf_upvotes": 17.578,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -9.34
+      "age_decay": -10.057
+    }
+  },
+  {
+    "id": "58baa0c6948f9e48",
+    "kind": "paper",
+    "title": "Unifying Conformal Language Tasks with In-Context Ensembles",
+    "summary_en": "Many NLP tasks, such as summarization and extractive question answering, reduce to retrieving relevant content from documents under two constraints: coverage, retaining enough pertinent information to achieve some goal, and conciseness, removing as much irrelevant information as possible. Conformal prediction methods have been used to guarantee coverage, and must be optimized for conciseness through design of a score function. State-of-the-art scoring functions use hand-engineered LLM prompts asking the model to rate the importance of content, but manual prompt engineering is labor-intensive and task-specific. We introduce the Conformal Relevance framework which uses in-context learning example curation and ensembling to create a score function which maintains coverage while improving conciseness with minimal manual input. We demonstrate this framework's application on seven NLP tasks, and also theoretically study the impact of diversity for ensembled conformal scores, giving a complementarity condition that characterizes when ensembling improves worst-case sentence scores, and a saturation bound on ensemble improvement.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.03005",
+        "external_id": "2609.03005"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.03005",
+        "external_id": "2609.03005"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/layer6ai-labs/conformal-relevance",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xiao Shi Huang",
+      "Chen-Yuan Lin",
+      "Bruce Kuwahara",
+      "Kin Kwan Leung",
+      "Jesse C. Cresswell"
+    ],
+    "published_at": "2026-09-02T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:57.873084Z",
+    "dedup_keys": [
+      "arxiv:2609.03005",
+      "title:conformal context ensembles language tasks unifying with",
+      "github:layer6ai-labs/conformal-relevance"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 15.23,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -10.057
     }
   },
   {
@@ -196,14 +1052,14 @@
       "Daisuke Kikuta"
     ],
     "published_at": "2026-09-03T00:00:00Z",
-    "first_seen_at": "2026-09-08T05:25:01.199181Z",
+    "first_seen_at": "2026-09-08T16:52:57.873064Z",
     "dedup_keys": [
       "arxiv:2609.03254",
       "title:artifacts compute conversation cost effective else exploring fixing for generated needs propagation revision test through time what",
       "github:ntt-dkiku/llm-revision-propagation"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 3,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -216,13 +1072,68 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 9.705,
+    "score": 14.533,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 11.09,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -7.84
+      "age_decay": -8.557
+    }
+  },
+  {
+    "id": "dc1fcec88a2c18b3",
+    "kind": "paper",
+    "title": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
+    "summary_en": "On-policy distillation trains a language model on its own generations while a teacher scores them token by token. It combines the dense supervision of imitation learning with the on-policy sampling of reinforcement learning. But it requires a second, larger model to act as teacher. On-Policy Self-Distillation (OPSD) removes that cost. The teacher is the model itself, conditioned on privileged information the student will not have at test time, such as a reference solution, a plan, or environment feedback. The teacher is no stronger than the student, only better informed. Early results were promising, with accuracy comparable to reinforcement learning at a fraction of the generated tokens. But the same asymmetry that produces the signal also biases it. One failure mode now dominates the field: collapse, the progressive narrowing of the set of reasoning paths the model can produce. Collapse is not specific to OPSD, though privileged information aggravates it. This review treats collapse as a symptom governed by three levers: (i) where the signal is applied, that is, how tokens are weighted; (ii) what the teacher is shown, that is, the nature of the privileged information; and (iii) when the signal changes, that is, the teacher's dynamics and the decay of guidance. We restrict our scope to mathematical reasoning, where the method originated and where its failure modes are best documented. We report no new experiments. The contribution is structural: a shared vocabulary for phenomena named differently across papers, and a clear line between what is settled and what is still disputed.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.25936",
+        "external_id": "2608.25936"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.25936",
+        "external_id": "2608.25936"
+      }
+    ],
+    "actors": [
+      "Justin Robert",
+      "Raheel Qader"
+    ],
+    "published_at": "2026-08-26T00:00:00Z",
+    "first_seen_at": "2026-09-08T16:52:57.872993Z",
+    "dedup_keys": [
+      "arxiv:2608.25936",
+      "title:critical distillation levers one policy review self symptom three"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 7.626,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -20.557
     }
   }
 ]
