@@ -1,0 +1,1755 @@
+[
+  {
+    "id": "69e8e8e8ce9a9872",
+    "kind": "paper",
+    "title": "Programmable World Model",
+    "summary_en": "Recent video world models generate increasingly realistic and interactive visual experiences, yet lack reliable mechanisms for maintaining persistent world state and enforcing programmable rules over extended interactions. We introduce Programmable World Model, a framework that decouples world-state evolution from visual observation generation. An agent translates natural-language instructions into executable programs that specify entity states and state-transition rules, enabling direct control over individual entities and their interactions. A lightweight engine executes these programs to update and maintain an explicit, persistent global world state, including off-screen entities and non-visual attributes. To connect world state with visual generation, we introduce state-augmented 3D oriented bounding boxes (OBBs) as an intermediate representation. This representation, together with the target camera trajectory, is deterministically compiled into pixel-aligned spatiotemporal conditioning signals for a pretrained video model serving as the generative renderer. This design allows users to create playable games with predefined mechanics, direct control over individual entities, and persistent world state throughout gameplay. We further introduce CombatStateBench, a benchmark for evaluating programmable world models. On CombatStateBench, our method achieves 94% Count Accuracy and 98% State Accuracy, substantially outperforming existing interactive video world models while supporting coherent long-horizon generation. These results demonstrate the effectiveness of separating explicit state evolution from generative rendering for building persistent, programmable worlds.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.10540",
+        "external_id": "2609.10540"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.10540",
+        "external_id": "2609.10540"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AlayaLab/pwm",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zheng-Hui Huang",
+      "Guixu Lin",
+      "Jiacheng Lin",
+      "Yi-Chuan Huang",
+      "Ruihan Yu",
+      "Muyao Niu",
+      "Siqi Yang",
+      "Yu-Lun Liu",
+      "Yung-Yu Chuang",
+      "Kaipeng Zhang",
+      "Zhixiang Wang"
+    ],
+    "published_at": "2026-09-09T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.233828Z",
+    "dedup_keys": [
+      "arxiv:2609.10540",
+      "title:model programmable world",
+      "github:alayalab/pwm"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 37,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.519,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 7.275,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.84
+    }
+  },
+  {
+    "id": "5e680e7ff3b23e97",
+    "kind": "model",
+    "title": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
+    "summary_en": "image-text-to-text, transformers, deepseek_v4, text-generation, abliterated, deepseek, deepseek-v4, uncensored",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
+        "external_id": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+        "external_id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+      }
+    ],
+    "actors": [
+      "orcarouter"
+    ],
+    "published_at": "2026-09-02T03:23:09Z",
+    "first_seen_at": "2026-09-10T05:24:48.236047Z",
+    "dedup_keys": [
+      "hf:orcarouter/deepseek-v4-flash-vision-uncensored"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 39,
+      "hf_downloads": 814,
+      "hf_trending_score": 35.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 41.846,
+    "score_breakdown": {
+      "hf_trending": 21.501,
+      "hf_downloads": 13.406,
+      "hf_likes": 11.067,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -12.128
+    }
+  },
+  {
+    "id": "f7b48cddf0917ad2",
+    "kind": "paper",
+    "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+    "summary_en": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to \"play\" robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning. We further develop GUMI (GUI Manipulation Interface), which extends the same semantic action space to GUI-based demonstration collection, allowing humans and agents to \"play\" robots across embodiments without specialized teleoperation hardware. Extensive experiments show that Show-Harness-equipped VLM agents generalize robustly across tasks, embodiments, and environments, outperforming representative agentic and VLA paradigms. These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.10522",
+        "external_id": "2609.10522"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.10522",
+        "external_id": "2609.10522"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/showlab/Show-Harness",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yanzhe Chen",
+      "Zechen Bai",
+      "Zhijun Cao",
+      "Wenzheng Zeng",
+      "Kevin Qinghong Lin",
+      "Yiqi Lin",
+      "Guoqiang Liang",
+      "Kevin Yuchen Ma",
+      "Qiming Huang",
+      "Mike Zheng Shou"
+    ],
+    "published_at": "2026-09-09T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.233774Z",
+    "dedup_keys": [
+      "arxiv:2609.10522",
+      "title:agent can harness just play robots show vlm",
+      "github:showlab/show-harness"
+    ],
+    "signals": {
+      "hf_upvotes": 32,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 40.329,
+    "score_breakdown": {
+      "hf_upvotes": 27.972,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.84
+    }
+  },
+  {
+    "id": "45abc42af5bf2e5a",
+    "kind": "model",
+    "title": "inclusionAI/Ling-3.0-flash-VL",
+    "summary_en": "text-generation, bailing_moe_v3_vl, conversational, custom_code",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
+        "external_id": "inclusionAI/Ling-3.0-flash-VL"
+      }
+    ],
+    "actors": [
+      "inclusionAI"
+    ],
+    "published_at": "2026-09-04T15:24:37Z",
+    "first_seen_at": "2026-09-10T05:24:48.235903Z",
+    "dedup_keys": [
+      "hf:inclusionai/ling-3.0-flash-vl"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 41,
+      "hf_downloads": 42,
+      "hf_trending_score": 41.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 36.784,
+    "score_breakdown": {
+      "hf_trending": 22.426,
+      "hf_downloads": 7.522,
+      "hf_likes": 11.213,
+      "has_weights": 4.0,
+      "age_decay": -8.377
+    }
+  },
+  {
+    "id": "40bb97afd4cf34da",
+    "kind": "release",
+    "title": "When to Use Encode-Prefill-Decode Disaggregation to Accelerate Multimodal Model Serving",
+    "summary_en": "Encode-prefill-decode (EPD) disaggregation is an inference optimization technique for multimodal models that separates the vision encoder stage from the prefill...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-09T20:31:04Z",
+    "first_seen_at": "2026-09-10T05:24:50.336623Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving",
+      "title:accelerate decode disaggregation encode model multimodal prefill serving use when"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.442,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.558
+    }
+  },
+  {
+    "id": "55afad3f68d74cb9",
+    "kind": "release",
+    "title": "GPT-6 Astra: The next generation in intelligence for work",
+    "summary_en": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-09T11:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.226521Z",
+    "dedup_keys": [
+      "url:openai.com/index/gpt-6-astra-next-generation-work",
+      "title:astra for generation gpt intelligence next the work"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.847,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.153
+    }
+  },
+  {
+    "id": "8509cf0c5ceb3dc1",
+    "kind": "release",
+    "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
+    "summary_en": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-09T20:24:12Z",
+    "first_seen_at": "2026-09-10T05:24:50.336694Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus",
+      "title:adds and arm control cuda gpus greater over shared support toolkit windows"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.435,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.565
+    }
+  },
+  {
+    "id": "a0b4e24dee2c6194",
+    "kind": "paper",
+    "title": "Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?",
+    "summary_en": "Large language models (LLMs) have demonstrated remarkable capabilities in reasoning and code generation, raising the prospect that they could assist in developing and optimizing the very infrastructure that powers them. However, existing benchmarks mainly focus on isolated kernels, predefined operators, or pre-specified optimization targets, and therefore fail to evaluate the ability of LLMs to perform open-ended, long-horizon LLM infrastructure engineering. To address this gap, we present Φ-Bench, a benchmark for systematically evaluating LLMs on engineering the LLM infrastructure stack. Derived from optimization problems studied in frontier research and grounded in real-world code repositories, Φ-Bench provides broad coverage of the LLM infrastructure stack and spans tasks of varying complexity, ranging from localized kernel-level function completion to long-horizon implementation and end-to-end system optimization. Extensive experiments on frontier LLMs reveal their current capabilities and limitations in engineering complex LLM infrastructure, offering insights into the challenges that remain on the path toward autonomous optimization of future AI infrastructure.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.10226",
+        "external_id": "2609.10226"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.10226",
+        "external_id": "2609.10226"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/one2piece2hello/faibench_Frontier_InfraBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Leilei Ding",
+      "Shumin Wang",
+      "Yuting Huang",
+      "Fanqi Wan",
+      "Yinmin Zhang",
+      "Qi Han",
+      "Yiming Xu",
+      "Feiyuan Zhang",
+      "Xiaomeng Chu",
+      "Guoliang You",
+      "Wuyang Zhang",
+      "Daxin Jiang",
+      "Yanyong Zhang"
+    ],
+    "published_at": "2026-09-09T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.234006Z",
+    "dedup_keys": [
+      "arxiv:2609.10226",
+      "title:bench can engineer infrastructure language large models powers that the them",
+      "github:one2piece2hello/faibench_frontier_infrabench"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 54,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 29.265,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 8.015,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.84
+    }
+  },
+  {
+    "id": "3d1b9d191e7299ea",
+    "kind": "release",
+    "title": "Paul Christiano joins OpenAI Foundation Board",
+    "summary_en": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-09T17:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.226564Z",
+    "dedup_keys": [
+      "url:openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "title:board christiano foundation joins openai paul"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.222,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.778
+    }
+  },
+  {
+    "id": "79f5371de41555e5",
+    "kind": "paper",
+    "title": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+    "summary_en": "Recent advances in wearable sensing enable continuous monitoring of physiological and behavioral signals, yet existing benchmarks rarely evaluate whether AI systems can reason over a real user's longitudinal wearable record. We introduce WearableQA, a benchmark comprising 4,084 10-option multiple-choice questions constructed from the wearable time series, blood biomarkers, and demographics of 200 real users, each with up to 500 days of daily measurements. WearableQA preserves authentic wearable distributions that include device noise and inter-individual variability. To evaluate distinct reasoning capabilities, we introduce 16 question types organized along two complementary axes: data versus health reasoning, which distinguishes computation over longitudinal measurements from physiological interpretation; and single- versus cross-signal reasoning, which separates reasoning about individual signals from the integration of multiple signals. To construct reliable questions at scale, we adopt a dual-grounding framework that combines literature-grounded physiological findings with statistically validated population-grounded physiological patterns. This enables the capture of meaningful relationships observed in real-world wearable data. Evaluation of 14 proprietary and open-source LLMs demonstrates that WearableQA effectively differentiates model capabilities, with performance ranging from 19.6% to 72.9% against a 10% chance baseline. Moreover, WearableQA remains far from solved: most models achieve accuracies below 60%. Overall, WearableQA provides a realistic and diagnostic benchmark for evaluating LLM reasoning over real-world wearable data.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.05405",
+        "external_id": "2609.05405"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.05405",
+        "external_id": "2609.05405"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/facebookresearch/WearableQA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ji Soo Lee",
+      "Xilun Chen",
+      "Pierce Chuang",
+      "Ashish Shenoy",
+      "Jason Wei",
+      "Dohwan Ko",
+      "Hyunwoo J. Kim",
+      "Benoit Corda"
+    ],
+    "published_at": "2026-09-04T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.233865Z",
+    "dedup_keys": [
+      "arxiv:2609.05405",
+      "title:benchmark data for health over real reasoning wearable wearableqa world",
+      "github:facebookresearch/wearableqa"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 6,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 29.218,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 3.892,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -9.34
+    }
+  },
+  {
+    "id": "a3831ce13842a457",
+    "kind": "release",
+    "title": "The AI policy window is open. We need to act.",
+    "summary_en": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/ai-policy-window",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-09T13:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.226378Z",
+    "dedup_keys": [
+      "url:openai.com/index/ai-policy-window",
+      "title:act need open policy the window"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.972,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.028
+    }
+  },
+  {
+    "id": "5bcc65d4b4724d2a",
+    "kind": "paper",
+    "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+    "summary_en": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Bench to evaluate whether AI agents can act as scientists utilizing SAE tools for autonomous mechanistic discovery. Given a target concept, an agent designs contrastive probes and navigates a Gemma Scope dictionary of 131K+ features in Gemma-2-9B-IT to discover the optimal feature, evaluated against curated expert reference features anchored on Neuronpedia across activation rank, concept selectivity on contrastive texts, and causal steering. Across 10 agent configurations and 20 tasks, frontier agents demonstrate genuine discovery capabilities and lead different evaluation dimensions, but remain well behind the expert baseline, approaching expert levels on separating target concepts from contrastive controls while lagging substantially in causal generation steering. Further analysis reveals that although agents can design contrasts to rule out spurious candidates, they frequently misinterpret experimental measurements. These results establish experimental model understanding as a measurable capability for closed-loop autonomous AI R&D. Our code is available at https://github.com/Trae1ounG/SAEScientist.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.09113",
+        "external_id": "2609.09113"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09113",
+        "external_id": "2609.09113"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Trae1ounG/SAEScientist",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuqiao Tan",
+      "Shizhu He",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "published_at": "2026-09-08T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.233917Z",
+    "dedup_keys": [
+      "arxiv:2609.09113",
+      "title:agents autonomous bench can conduct interpretability research sae saescientist",
+      "github:trae1oung/saescientist"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.493,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.34
+    }
+  },
+  {
+    "id": "fa16a390888ba7d5",
+    "kind": "paper",
+    "title": "Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents",
+    "summary_en": "AI research agents combine prior knowledge, public sources, and experimental feedback to produce useful results. The Discovery Certification Protocol (DCP) turns claims about these results into executable recovery and feedback tests. Gate 1 validates useful improvement on sealed evaluation. Gate 2 gives matched agents the registered starting information and observed Web content while withholding the target research history. Every valid method reaching the numerical target supplies a recovery witness and triggers the Core veto. DCP Core requires adequate controls, zero observed recoveries, and a finite-sample bound on recovery in one fresh registered episode. Optional Gate 3 measures the average effect of truthful feedback relative to a specified neutral policy from a shared checkpoint. DCP Evidence adds this effect after independent null calibration and a registered effect margin. Two controlled audits exercise the complete protocol in SQLite optimization and virtual catalyst control under different models. Each produced zero recoveries in 96 episodes, with an upper bound of 0.0468. Each paired study yielded 30 truthful recoveries and zero neutral recoveries, with passing 60-pair null studies. Additional cases exercise Core, recovered, and audit-incomplete decisions. A deterministic, LLM-free verifier reproduces the decisions from frozen evidence. DCP provides a common evidence language for useful outcomes, alternative routes, and feedback effects across AI research.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.09219",
+        "external_id": "2609.09219"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09219",
+        "external_id": "2609.09219"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/cxcscmu/Discovery-Certification-Protocol",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jingjie Ning",
+      "Shanshan Zhong",
+      "Xiaochuan Li",
+      "Ji Zeng"
+    ],
+    "published_at": "2026-09-07T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.233892Z",
+    "dedup_keys": [
+      "arxiv:2609.09219",
+      "title:agents alone auditing certification discovery discovery for not protocol prove research scores the",
+      "github:cxcscmu/discovery-certification-protocol"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.039,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.84
+    }
+  },
+  {
+    "id": "c84a671c65948238",
+    "kind": "paper",
+    "title": "Revisiting Complete Reasoning Traces for Post-Training",
+    "summary_en": "Large language models (LLMs) are often post-trained on pre-collected reasoning trajectories to improve their reasoning capability. Such trajectories tend to be long due to complex, interwoven paths, which often include detours on the path toward the answer. However, it has been underexplored whether LLMs indeed benefit from learning complete trajectories in post-training, such as supervised fine-tuning (SFT). Starting from our pilot study, we find that full trajectories provide only limited benefit, while partial trajectories are effective even under heavy truncation. We analyze redundancy in reasoning trajectories through attention-based analyses and controlled token-removal studies, both of which show that intermediate tokens contribute minimally to final reasoning quality. This suggests that avoiding redundant information may allow LLMs to internally infer coherent alternatives by inferring missing steps from their internal knowledge, given known trajectory endpoints. Furthermore, we show that training LLMs using endpoints leads to consistent changes in reasoning behavior, and that it also benefits post-training methods based on reinforcement learning or on-policy distillation, highlighting the need to revisit complete reasoning traces. Code is available at https://github.com/naver-ai/revisiting-trace.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.07103",
+        "external_id": "2609.07103"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.07103",
+        "external_id": "2609.07103"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/naver-ai/revisiting-trace",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jaehui Hwang",
+      "Sangdoo Yun",
+      "Byeongho Heo",
+      "Dongyoon Han"
+    ],
+    "published_at": "2026-09-07T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.233943Z",
+    "dedup_keys": [
+      "arxiv:2609.07103",
+      "title:complete for post reasoning revisiting traces training",
+      "github:naver-ai/revisiting-trace"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 23.691,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.84
+    }
+  },
+  {
+    "id": "7a7db16de8afd137",
+    "kind": "release",
+    "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-09-09T15:36:24Z",
+    "first_seen_at": "2026-09-10T05:24:49.517278Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "title:commercial friendly granite ibm license model patchtst releases series sota time with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.135,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.865
+    }
+  },
+  {
+    "id": "96bb5fbfddfa84a2",
+    "kind": "paper",
+    "title": "DianShi-RxnDB: A Large-Scale, Fine-Grained Organic Reaction Data Platform Built via a Fully Automated Pipeline for Researchers and AI Agents",
+    "summary_en": "High-quality structured organic reaction data are essential for developing artificial intelligence for chemistry (AI4Chem), yet much of this knowledge remains dispersed across patent text, images, and reaction schemes. We present DianShi-RxnDB, a large-scale, fine-grained organic reaction data platform built via a fully automated extraction and normalization pipeline integrating patent text, images, and reaction schemes. Its corpus covers organic synthesis patents from the USPTO and EPO published between 1976 and 2025, yielding approximately 24 million reaction instances, of which approximately 14.8 million (61.7%) pass automated qualification checks. Each instance represents a specific single-step experiment recording participants, roles, quantities, temperatures, reaction times, yields, experimental procedures, and provenance links to source patents. In a manual evaluation of 1,300 sampled qualified instances, the micro-averaged field-level accuracy was 92.95%. A matched comparison with Pistachio further indicated advantages in deduplicated record counts, representation granularity, and field-level exact agreement. The platform provides a Web research workbench for searching, filtering, comparing, and source-verifying records, and a Model Context Protocol (MCP) service offering AI agents composable structured retrieval tools. DianShi-RxnDB is available at https://dianshi.opendatalab.org.cn/ .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "mcp",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.06703",
+        "external_id": "2609.06703"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.06703",
+        "external_id": "2609.06703"
+      }
+    ],
+    "actors": [
+      "Yubin Wang",
+      "Xingjian Wei",
+      "Jiang Wu",
+      "Yinfan Wang",
+      "Boyu Zhu",
+      "Lin Zhang",
+      "Jianing Yu",
+      "Huazheng Zeng",
+      "Ruiyi Ding",
+      "Junyuan Gao",
+      "Jiaxing Sun",
+      "Lingli Ge",
+      "Haote Yang",
+      "Jingchao Wang",
+      "Aijia Guo",
+      "Qian Jiang",
+      "Yurui Zhao",
+      "Wenjian Zhang",
+      "Chen Zhu",
+      "Lijun Wu",
+      "Xiaolei Yang",
+      "Haodong Chen",
+      "Junjie Yuan",
+      "Zichao Ye",
+      "Shaowei Hou",
+      "Jing Ye",
+      "Jia Yu",
+      "Shan Wang",
+      "Lijun Wu",
+      "Jiantao Qiu",
+      "Chao Xu",
+      "Yuqiang Li",
+      "Guangyu Wang",
+      "Bowen Zhou",
+      "Dahua Lin",
+      "Conghui He"
+    ],
+    "published_at": "2026-09-06T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.233978Z",
+    "dedup_keys": [
+      "arxiv:2609.06703",
+      "title:agents and automated built data dianshi fine for fully grained large organic pipeline platform reaction researchers rxndb scale via"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 15.536,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.34
+    }
+  },
+  {
+    "id": "58f2458a0efb0685",
+    "kind": "paper",
+    "title": "RESCUE-BENCH: Towards Relation-Aware Multi-Party Emotional Support Conversation Systems",
+    "summary_en": "Existing emotional support conversation systems mainly focus on one-on-one seeker-supporter interactions and individual emotional states, leaving interpersonal relations in multi-party scenarios underexplored. In this work, we introduce relation-aware emotional support conversation, a new task that evaluates whether LLMs can capture and utilize the evolving dynamics of relationships to offer more effective emotional support. We construct RESCUE (Relation-aware Emotional Support Conversation Understanding and Evaluation Benchmark) from real couple and family interview conversations, containing 191 samples, 7,079 annotated turns, and 1,064.8 minutes of video. Based on rich annotations of socio-emotional and support-related dynamics, RESCUE defines six tasks that evaluate two core capabilities required for relation-aware emotional support: Relational Understanding and Relation-Sensitive Support. Experiments with ten LLMs show that current models perform relatively well on tasks relying on local emotional or intervention cues, but struggle with relation-intensive tasks such as relation pattern prediction, viewpoint prediction, and support strategy prediction. These findings reveal the limitations of current LLMs in modeling interpersonal relations and making relation-sensitive support decisions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.09657",
+        "external_id": "2609.09657"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09657",
+        "external_id": "2609.09657"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Tomsawyerhu/RESCUE-bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haichuan Hu",
+      "Yang Xiao",
+      "Mingni Tang",
+      "Jiawen Duan",
+      "Quanjun Zhang",
+      "Congqing He",
+      "Hao Zhang",
+      "Jiashuo Wang",
+      "Johan F. Hoorn",
+      "Wenjie Li"
+    ],
+    "published_at": "2026-09-09T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.234126Z",
+    "dedup_keys": [
+      "arxiv:2609.09657",
+      "title:aware bench conversation emotional multi party relation rescue support systems towards",
+      "github:tomsawyerhu/rescue-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 11.546,
+    "score_breakdown": {
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.84
+    }
+  },
+  {
+    "id": "2597da20ef6e60b5",
+    "kind": "paper",
+    "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
+    "summary_en": "Agent harnesses (the system prompt, tool set, execution hooks, and context-management scaffolding around a model) are a critical determinant of agentic task success. Automated harness evolution can enable smaller models to perform well on domain-specific tasks at a fraction of frontier-model cost. Since both the harness and model weights shape behavior, we ask how harness evolution and lightweight fine-tuning should be combined. Across seven enterprise agent tasks, we first evolve a harness with the weaker model, then find that a stronger expert often uses it more effectively, suggesting expert supervision could close the remaining gap. However, training the weaker model on the expert's complete trajectories under the evolved harness backfires: performance regresses on all seven tasks by 4 to 30 points across Qwen3-Coder and Gemma 4, even though the same procedure helps under the unevolved harness. Our analysis shows that imitation transfers knowledge and increases scaffold usage, but disrupts model-harness fit: the weaker model adopts the expert's planning strategy without the competence to execute it and no longer matches the harness evolved around its native planning style. We therefore develop an on-policy expert-correction pipeline, automated by a meta-level MLE agent, that localizes the failing turn in the weaker model's own rollout and asks the expert to rewrite only that turn. This preserves the model's planning style and combines the gains of harness evolution and model adaptation. Our results identify and resolve a source of contention between harness and weight updates, yielding a compatibility-preserving recipe for economical co-evolution on domain-specific enterprise tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.09134",
+        "external_id": "2609.09134"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09134",
+        "external_id": "2609.09134"
+      }
+    ],
+    "actors": [
+      "Zhou Yu",
+      "Bin Bi",
+      "Shiva Kumar Pentyala",
+      "Shubham Mehrotra",
+      "Sougata Chaudhuri",
+      "Shilpa Bhagavath",
+      "Zeyuan Chen",
+      "Ran Xu",
+      "Phil Mui",
+      "James Zhu",
+      "Sitaram Asur"
+    ],
+    "published_at": "2026-09-08T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.234053Z",
+    "dedup_keys": [
+      "arxiv:2609.09134",
+      "title:and catch correction evolving fails harnesses helps imitation models models policy weaker where"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 11.205,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.34
+    }
+  },
+  {
+    "id": "8a499f5848c85c93",
+    "kind": "paper",
+    "title": "Diffs vs. Whole Files: An Empirical Comparison of Iterative Edit-Based and Direct Generation for Flutter/Dart Code Models",
+    "summary_en": "Large language models used for code editing can be trained and deployed in at least two output regimes: direct generation, where the model emits the entire modified file in one shot, and iterative diff-based generation (\"steps\"), where the model emits a sequence of localized search/replace edits applied one at a time until it signals completion or a step budget is exhausted. The diff-based regime is attractive because it mirrors how developers edit code and should require far fewer generated tokens per turn. We train two code models - a 100M-parameter model trained from scratch (Rainbow-Pony-100M) and a fine-tuned Qwen2.5-Coder-0.5B - in both regimes on a shared Flutter/Dart dataset, and evaluate all four resulting models on a held-out set of approx 1,790 tasks per model. Direct generation substantially outperforms diff-based generation on every metric we measure - compilation/static-analysis pass rate, bits-per-byte, character-level similarity to the reference, and blinded LLM-judge ratings of goal fulfillment, correctness, and code quality - and the gap persists after controlling for task difficulty via a matched-ID comparison and when restricting to code that compiles on both sides. We then identify a single, architecture-independent mechanism behind the conditions where diff-based generation does win: it is competitive on short, spatially localized edits, and its category-level wins concentrate in exactly the two task categories - refactoring and error-handling/edge-case fixes - with the lowest mean edit-step count in our dataset. We term this task locality and discuss its implications for when an edit-based training regime is and is not the right choice for a code-editing model.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.05779",
+        "external_id": "2609.05779"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.05779",
+        "external_id": "2609.05779"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/bbidpa/rainbow-pony",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Andrej Andrejev"
+    ],
+    "published_at": "2026-09-05T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.234080Z",
+    "dedup_keys": [
+      "arxiv:2609.05779",
+      "title:and based code comparison dart diffs direct edit empirical files flutter for generation iterative models whole",
+      "github:bbidpa/rainbow-pony"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 9.705,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.84
+    }
+  },
+  {
+    "id": "1156d98b724545f7",
+    "kind": "paper",
+    "title": "Difficulty-Adaptive Tree-Structured Policy Optimization for Expanding Reasoning Coverage in RLVR",
+    "summary_en": "Reinforcement Learning with Verifiable Rewards (RLVR) has been central to the recent success of Large Reasoning Models. However, while RLVR significantly improves single-sample accuracy, it often fails to expand the model's intrinsic reasoning coverage (pass@k) due to limited exploration during training. To address this, we optimize the structural design of train-time rollouts to enhance pass@k. Our analysis identifies three key design principles: (1) difficulty-adaptive rollout can play an important role in expanding pass@k, beyond serving as an efficiency heuristic; (2) tree-based rollout outperforms parallel sampling in discovering correct answers; and (3) sentence-entropy-guided forking overcomes the localization phenomenon of token-level branching to maximize semantic diversity. Building on these insights, we propose DATPO (Difficulty-Adaptive Sentence-entropy-guided Tree-structured Policy Optimization). DATPO integrates difficulty-adaptive tree search with a sibling-diversity advantage term, explicitly promoting semantic diversity to expand reasoning coverage during training. Experiments on mathematical reasoning benchmarks demonstrate that DATPO outperforms baselines especially in pass@k, which directly translates to superior test-time scaling performance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.08650",
+        "external_id": "2609.08650"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.08650",
+        "external_id": "2609.08650"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/colin31472/DATPO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Youngjun Yu",
+      "Sanghwan Jang",
+      "Hwanjo Yu"
+    ],
+    "published_at": "2026-09-08T00:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.234154Z",
+    "dedup_keys": [
+      "arxiv:2609.08650",
+      "title:adaptive coverage difficulty expanding for optimization policy reasoning rlvr structured tree",
+      "github:colin31472/datpo"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 8.66,
+    "score_breakdown": {
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.34
+    }
+  },
+  {
+    "id": "6bca1e80ff391b64",
+    "kind": "paper",
+    "title": "Auditable Emergency Triage for Maternal and Newborn Care in India",
+    "summary_en": "At Noora Health, our nurses answer more than 50,000 medical queries per month on our WhatsApp-based service that provides caregivers with on-demand support. Their most time-critical task is emergency triage: deciding which queries need immediate in-person attention. To support them, we built a system that uses a large language model (LLM) to classify whether a message is an emergency and provide a rationale for interpretability. But the system was opaque: analyzing mistakes meant reading reasoning chains for each message, which is infeasible at our scale. Prompt changes meant re-running a full evaluation to prevent regressions, which was both costly and operationally challenging. Clinicians follow a decision tree to make this call, but it was never documented or passed to the model, which relied on a flat list of danger signs. To address these issues, we decomposed triage into two steps: an LLM extracts canonical symptoms and patient context from the query using a clinician-authored vocabulary, and a deterministic rule engine captures the scenarios that indicate an emergency. We show that the new system raised recall from 0.565 to 0.810 and F1 from 0.606 to 0.702, with structured rules driving most of the accuracy gains while the decomposition provides auditability: clinical experts can inspect each stage of the new system to see whether the query was mistranslated, symptoms were incorrectly extracted, patient context was wrongly inferred, or the necessary rules were missing. They can add new rules independently without causing regressions and avoid running costly evaluations. Since deployment, the new system has triaged 152,421 patient queries and flagged 28,535 (18.7%) as emergencies. The over-escalation rate has been 17.8%, without any increase in missed emergencies. Clinicians have also added 48 new rules since deployment, evidence of the faster correction loop we set out to build.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09356",
+        "external_id": "2609.09356"
+      }
+    ],
+    "actors": [
+      "Shobhit Jagga",
+      "Aman Dalmia",
+      "Niharika Priyadarshini",
+      "Neelima Devadas",
+      "Amrita K Prasen",
+      "Nikhil Nalin",
+      "Santhosh SJ",
+      "Sreeram Nurani Ramasubramanian",
+      "Muhammed Afeer K",
+      "Anubhav Arora"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534591Z",
+    "dedup_keys": [
+      "arxiv:2609.09356",
+      "title:and auditable care emergency for india maternal newborn triage"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "3378934a63df541b",
+    "kind": "paper",
+    "title": "Benchmarking Hybrid Deep Research Across Database Querying and Web Search",
+    "summary_en": "While autonomous agents have made significant strides in \"deep research\" by iteratively navigating the open web to synthesize information, real-world problem-solving is rarely confined to a single environment. Complex analytical tasks inherently require agents to weave together evidence from both ambiguous unstructured text (e.g., the open web) and highly precise structured data (e.g., relational databases). However, existing benchmarks evaluate these modalities in isolation, failing to capture the critical \"handoff\" - the ability to preserve constraints when moving evidence between systems. We introduce HybridDeepResearch, to our knowledge the first deep-research benchmark that requires both web search and SQL to form a complete, verifiable answer. The benchmark contains 380 tool-dependent tasks grounded in LiveSQLBench-Base-Lite databases and public web corpora, validated through automated checks and human review, and covering three reasoning patterns: SQL2S, S2SQL, and Parallel. Evaluations across proprietary and open-weight models under various agentic scaffolds reveal that even state-of-the-art models like GLM-5.2, Claude-Sonnet-4.6 and GPT-5 achieve only about 50-54% Pass@8 on the hard subset. Notably, results show that directional reasoning is substantially more difficult than parallel intersection, highlighting that bridging structured and unstructured information spaces without losing constraints remains a major open challenge for agentic systems. Code and datasets are publicly available at GitHub (https://github.com/Snowflake-AI-Research/HybridDeepResearch) and Hugging Face (https://huggingface.co/datasets/Snowflake/HybridDeepResearch).",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09410",
+        "external_id": "2609.09410"
+      }
+    ],
+    "actors": [
+      "Ruofan Wu",
+      "Peiran Xu",
+      "Xiaolong Li",
+      "Fan Shu",
+      "Soyoung Yoon",
+      "Yite Wang",
+      "Xiaodong Yu",
+      "Boyi Liu",
+      "Feng Yan",
+      "Debiao Li",
+      "Yuxiong He",
+      "Zhewei Yao"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534763Z",
+    "dedup_keys": [
+      "arxiv:2609.09410",
+      "title:across and benchmarking database deep hybrid querying research search web"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "949854cf84e7180e",
+    "kind": "paper",
+    "title": "Do LLMs Make More Mistakes If They Do Not Believe the Input Data?",
+    "summary_en": "Large language models (LLMs) are prone to hallucinating or misinterpreting facts, which impairs their usability in retrieval-augmented generation or data-to-text systems. We analyse how faithfulness of LLMs to provided context depends on how plausible they perceive the context to be (context-memory conflict). To better identify error patterns, we make use of the increased difficulty of non-English and low-resource language text generation and input data based on local knowledge, only partially captured in models' parametric knowledge. We let the models generate text in English, Czech, Slovak and Upper Sorbian from factual (FA), counterfactual (CFA) and fictional (FI) RDF triples containing local Czech and Slovak data. Contrary to our expectations, we observe only a weak context-memory conflict on the human-annotated sample. For Kimi K3 as an LLM judge, which agrees well with human annotations on the sample, counterfactual inputs receive only slightly lower faithfulness scores than factual ones (-0.05 on a 1-5 scale). We also find that a suboptimal choice of LLM judge would lead to overestimating the strength of the context-memory conflict.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09363",
+        "external_id": "2609.09363"
+      }
+    ],
+    "actors": [
+      "Peter Kochelka",
+      "Ale\\v{s} Manuel Pap\\'a\\v{c}ek",
+      "Vojt\\v{e}ch Dvo\\v{r}\\'ak",
+      "Ond\\v{r}ej Du\\v{s}ek"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534669Z",
+    "dedup_keys": [
+      "arxiv:2609.09363",
+      "title:believe data input llms make mistakes more not the they"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "8d0e800e4140397d",
+    "kind": "paper",
+    "title": "Edu-QuRating: Multi-Dimensional Educational Data Curation with Distilled Pairwise Judgements",
+    "summary_en": "Educational data filters have become a practical way to improve language-model pre-training, but most filters treat educational value as a single scalar property. This may be too broad for some applications, especially if the data set already features a high density of educational material. Useful learning material needs to be accurate, engaging, well structured, and appropriate for the intended audience and application (e.g. learner- vs teacher-facing). Following QuRating (Wettig et al. 2024), we introduce Edu-QuRating: a pipeline for multi-dimensional educational data scoring and curation. Edu-QuRating defines education-specific rubrics, uses an LLM judge to label sampled document pairs and distills those pairwise preferences into reusable Edu-QuRaters, which can score individual text chunks on a set of educational criteria. Across two sequence-classification base models and six educational criteria, the best Edu-QuRater recovers held-out GPT-4.1-mini pairwise judgements with mean accuracy 0.917. We then apply the resulting scorers in two applications. First, we investigate the potential of Edu-QuRaters for corpus filtering to improve pretraining of small language models. We scored 322.25M FineWeb-Edu-Fortified documents to obtain a filtered pre-training mixture. In matched single-run pre-training comparisons, models trained with Edu-QuRating-based mixtures reached higher observed aggregate accuracy across nine benchmarks than the FineWeb-Edu baseline, with gains concentrated in particular tasks. Second, we used Edu-QuRater scores as reward terms for GRPO post-training. In held-out pairwise judge evaluations, combining Edu-QuRater and answer-structure rewards produced responses preferred to the Qwen3-4B base model on both pedagogical quality and instruction following.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09425",
+        "external_id": "2609.09425"
+      }
+    ],
+    "actors": [
+      "Oliver G. B. Garrod",
+      "Robin A. A. Ince",
+      "Meng Liu",
+      "Mohamed Huti",
+      "Moritz Boos",
+      "Amy Waldock",
+      "Dominic Andrews",
+      "Paul Atherton"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534864Z",
+    "dedup_keys": [
+      "arxiv:2609.09425",
+      "title:curation data dimensional distilled edu educational judgements multi pairwise qurating with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "c31836b8567b9a9d",
+    "kind": "paper",
+    "title": "Osprey: Target-agnostic Pre-training Makes Stronger Drafters in Speculative Decoding",
+    "summary_en": "Speculative decoding is critical for accelerating LLM inference. However, the speedup is fragile: drafters are typically trained against a narrow distribution for a single target model, and their acceptance rate collapses under workload shifts. This is a striking inversion of modern LLM development, where target models are valued precisely for the broad generalization they acquire through large-scale pretraining. We argue that the natural remedy, pretraining, has been hard to apply to drafters because existing recipes are target-specific: the drafter consumes the target's hidden states and is distilled on the target's logits, so pretraining must be repeated for each target. We introduce Osprey, which instead bootstraps drafters from off-the-shelf pretrained small language models, treating broad pretraining as a reusable, target-agnostic asset and reducing per-target work to a lightweight adaptation step. Realizing this requires overcoming two challenges: small LMs are far deeper than a latency-bound drafter can afford, and their pretrained computation must remain intact while the drafter learns to ingest target hidden states and emit tokens in the target's vocabulary. Osprey addresses both by pruning to a shallow backbone, restoring its language-modeling capability with target-agnostic next-token pretraining, and adapting it to each target through vocabulary alignment, zero-initialized QKV expansion, and distillation from the target model's output distribution. Empirically, a single pretrained Osprey backbone transfers across targets and improves mean acceptance length by 16.1% for Qwen3-8B, 21.2% for Llama-3.3-70B-Instruct, and 22.7% for the 229B MiniMax-M2.5 (with 17.5% higher tokens per second), with the largest gains on out-of-domain and multilingual data. Our code is available at https://github.com/LeanModels/Osprey.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09338",
+        "external_id": "2609.09338"
+      }
+    ],
+    "actors": [
+      "Fengxiang Bie",
+      "Yuqing Jian",
+      "Yifan Yu",
+      "Zhongzhu Zhou",
+      "Zelei Shao",
+      "Ben Athiwaratkun",
+      "Shuaiwen Leon Song",
+      "Chenfeng Xu",
+      "Xiaoxia Wu",
+      "Tianyi Zhang"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534394Z",
+    "dedup_keys": [
+      "arxiv:2609.09338",
+      "title:agnostic decoding drafters makes osprey pre speculative stronger target training"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "0e2895687b9d70a2",
+    "kind": "paper",
+    "title": "SWORD: Wikidata-based Distortions Reveal Hidden Cross-Lingual Inconsistencies in LLM Factual Error Rejection",
+    "summary_en": "Modern LLMs demonstrate impressive multilingual performance, yet standard benchmarks primarily reward selecting correct answers rather than evaluating genuine factual understanding. We introduce Systematic Wikidata-based Object-Relation Distortion (SWORD), a benchmark that evaluates whether models consistently reject factual errors across languages. SWORD generates syntactically well-formed but factually incorrect statements in eight widely spoken languages through controlled perturbations of Wikidata triples, ranging from random entity substitutions to semantically plausible property-based selections. Our distortion-based evaluation surfaces two critical insights that remain entirely obscured by conventional benchmarks. First, models counterintuitively achieve higher accuracy on semantically plausible distortions than on nonsensical random substitutions, suggesting reliance on distributional familiarity rather than genuine factual verification. Second, models exhibiting comparable baseline accuracy across languages show substantial performance degradation specifically on (East) Asian languages when presented with distorted statements, with cross-lingual performance gaps reaching up to 28 percentage points (49\\% relative reduction) in some models. These findings demonstrate that multilingual factual reasoning involves asymmetric capabilities that aggregate accuracy metrics systematically obscure.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09349",
+        "external_id": "2609.09349"
+      }
+    ],
+    "actors": [
+      "Sanghyeok Park",
+      "Minji Kang",
+      "Hosung Kwak",
+      "Jinhyuk Yun"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534481Z",
+    "dedup_keys": [
+      "arxiv:2609.09349",
+      "title:based cross distortions error factual hidden inconsistencies lingual llm rejection reveal sword wikidata"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "a118011c7c000650",
+    "kind": "paper",
+    "title": "StochBench: A Domain-Specific Benchmark for Stochastic Processes in Lean",
+    "summary_en": "Leading benchmarks for formal theorem proving with large language models are small collections drawn from competition math, such as the IMO and Putnam, that poorly represent field-specific applications. We introduce StochBench, a Lean 4 benchmark of 450 graduate stochastic-processes problems at varying abstraction levels, each paired with its natural-language source. Addressing a field underrepresented in Mathlib, it covers finite and countable Markov chains, renewal processes, random walks, martingales, stopping times, queues, Brownian motion, stochastic calculus, weak convergence, and Poisson and continuous-time Markov processes. Our Opus 4.8-based agent achieves a 34.9% proof rate (157/450) under a 15-minute per-problem limit. StochBench better represents domain-specific applied mathematics while remaining challenging for advanced provers.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09264",
+        "external_id": "2609.09264"
+      }
+    ],
+    "actors": [
+      "Idan Davidovich",
+      "Debargha Ganguly",
+      "Vikash Singh",
+      "Vipin Chaudhary"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534278Z",
+    "dedup_keys": [
+      "arxiv:2609.09264",
+      "title:benchmark domain for lean processes specific stochastic stochbench"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "f2018ca2e8511ec1",
+    "kind": "paper",
+    "title": "TEFM: Token-Efficient Faithful Modeling for Structured Data",
+    "summary_en": "In this paper, we solve two fundamental obstacles in applying LLMs to critical domains: token efficiency and faithfulness. To address both constraints jointly, we present TEFM (Token-Efficient Faithful Modeling), a framework designed for structured data analysis in critical domains. TEFM achieves token efficiency by compressing lengthy structured observations into compact Behavioral Code tokens, dramatically reducing token consumption with minimal information loss. Moreover, TEFM enables faithful rationalization through a dual-fidelity objective that jointly optimizes code-level reconstruction and prediction-level fidelity, identifying minimal sufficient feature subsets grounded in input data. Comprehensive experiments across various domain datasets and model backbones (Qwen3, Gemma-2, Phi-4) show that TEFM achieves competitive classification accuracy with dramatic token reduction (approximately 1\\% token retention in clinical and 2\\% in security domains) while producing faithful rationales.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09552",
+        "external_id": "2609.09552"
+      }
+    ],
+    "actors": [
+      "Zhichao Hou",
+      "Lingdao Sha",
+      "Xueyu Mao",
+      "Yang Liu",
+      "Peijie Qiu",
+      "Rui Song"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.535023Z",
+    "dedup_keys": [
+      "arxiv:2609.09552",
+      "title:data efficient faithful for modeling structured tefm token"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "7f198dba8f07ffda",
+    "kind": "paper",
+    "title": "The Mutations of Machine Speech",
+    "summary_en": "Algorithmic outputs now populate the digital environments through which contemporary life is organized. The role of law in facilitating and constituting (rather than merely responding to) these processes is gaining increasing traction across scholarly accounts. This inquiry traces the evolution of algorithmic outputs attending to their legal underpinnings and social implications, surfacing the mutations of machine speech. The first mutation redefined speech as data to be queried: search engines transformed the web from a space of information retrieval into an economic regime of algorithmic visibility. The second mutation reframed speech as engagement: social media platforms fused moderation with amplification, turning expression into a metric of attention, governed by corporate architectures. The third mutation emerges in conversational systems and interfaces, where generative text displaces information retrieval, bringing with it dense technolegal entanglements and profound epistemic consequences. Scholars of freedom of expression, informational privacy, and communication studies have long grappled with these dynamics, yet their implications for broader legal thought have also become urgent. This piece seeks to organize and clarify the evolving debate around algorithmic speech, making this critical but often fragmented discourse more accessible to wider legal and interdisciplinary audiences. In doing so, it bridges the gap between observing technological transformation and critically assessing the constitutive role of law within it, offering a conceptual resource for researchers, students, policymakers, and practitioners navigating and contesting this evolving landscape.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "speech",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09496",
+        "external_id": "2609.09496"
+      },
+      {
+        "source": "doi",
+        "url": "https://doi.org/10.1007/978-3-031-87993-7_188-1",
+        "external_id": "10.1007/978-3-031-87993-7_188-1"
+      }
+    ],
+    "actors": [
+      "Mauricio Figueroa"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534954Z",
+    "dedup_keys": [
+      "arxiv:2609.09496",
+      "title:machine mutations speech the",
+      "doi:10.1007/978-3-031-87993-7_188-1"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  },
+  {
+    "id": "a4ae8894c89646f7",
+    "kind": "paper",
+    "title": "X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding",
+    "summary_en": "This paper investigates collaborative speculative decoding (CoSD), a distributed large language model (LLM) inference framework in which an on-device small language model (SLM) drafts candidate tokens and a server LLM verifies them. Existing CoSD methods assume a shared vocabulary between the SLM and the LLM and incur substantial communication load because residual resampling requires token distribution exchange between the user device and the edge server. To address these limitations, we propose cross-vocabulary CoSD (X-CoSD), a lossless and communication-efficient CoSD framework for heterogeneous SLM-LLM vocabularies. X-CoSD is built on hybrid resampling (HR), which splits residual resampling across the common-vocabulary region on the device and the LLM-only region on the server, so that distribution transmission is required only for the common-vocabulary region. We further propose X-CoSD-E, an enhanced variant based on server resampling with device verification (SR-DV), in which the server sends only replacement candidates sampled from the server LLM and their corresponding probabilities for local verification at the device. We prove that both X-CoSD and X-CoSD-E preserve the server LLM distribution, and experiments show that they significantly improve token generation speed while maintaining generation quality comparable to that of the server LLM.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.09166",
+        "external_id": "2609.09166"
+      }
+    ],
+    "actors": [
+      "Jaeduk Lee",
+      "Wan Choi"
+    ],
+    "published_at": "2026-09-10T04:00:00Z",
+    "first_seen_at": "2026-09-10T05:24:48.534148Z",
+    "dedup_keys": [
+      "arxiv:2609.09166",
+      "title:collaborative communication cosd cross decoding efficient speculative vocabulary"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.91,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.09
+    }
+  }
+]
