@@ -1,0 +1,1671 @@
+[
+  {
+    "id": "197c28f43d141920",
+    "kind": "paper",
+    "title": "Breaking the Vision-Action Shortcut: Latent Interface Training for Generalizable Robotics Foundation Models",
+    "summary_en": "Robot foundation models achieve strong in-distribution performance but often degrade under visual distribution shifts. When learning to generate actions from pretrained visual representations, models may exploit task-irrelevant visual cues that correlate with demonstrated actions within the training distribution. Such vision-action shortcuts can undermine generalization when these correlations change under distribution shifts. Mitigating these shortcuts requires constraining how visual information is used for action generation while preserving task-relevant spatial information. We propose Latent Interface Training (LIT), a framework-agnostic two-stage strategy that first establishes a spatial-goal-conditioned action prior without images, then constrains visual conditioning through a pose-supervised latent interface. Stage 1 trains the action expert to generate action chunks conditioned on language, robot state, and each demonstrated chunk's terminal SE(3) end-effector pose, learning goal-directed action generation independently of visual cues. Stage 2 introduces a latent interface that aggregates visual and semantic representations and serves as the pretrained action expert's only visual conditioning pathway. The interface is supervised to reconstruct the terminal pose previously used to condition Stage 1, encouraging it to retain the goal-relevant spatial information needed for action generation. Across four vision-language-action and world-action architectures (Pi0.5, MolmoAct2, FAST-WAM, and ImageWAM), LIT improves overall LIBERO-Plus success by 3.87-10.70 percentage points while preserving or improving average LIBERO success. Real-world evaluations show 13.30-16.70 percentage-point gains in success aggregated across three tasks under unseen camera configurations, lighting variations, and distractors.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.12641",
+        "external_id": "2609.12641"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12641",
+        "external_id": "2609.12641"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/MAGICLAB-NUS/LIT",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jianman Lin",
+      "Shailesh Shailesh",
+      "Zhongyi Luo",
+      "Jiafei Duan"
+    ],
+    "published_at": "2026-09-11T00:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.371396Z",
+    "dedup_keys": [
+      "arxiv:2609.12641",
+      "title:action breaking for foundation generalizable interface latent models robotics shortcut the training vision",
+      "github:magiclab-nus/lit"
+    ],
+    "signals": {
+      "hf_upvotes": 27,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 24,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 40.248,
+    "score_breakdown": {
+      "hf_upvotes": 26.658,
+      "github_stars": 6.438,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.848
+    }
+  },
+  {
+    "id": "8aecb86b2c79f23a",
+    "kind": "paper",
+    "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+    "summary_en": "Large language model (LLM) agents can benefit from reusable skills distilled from prior task experience, yet existing skill optimization methods often rely on costly execution-based evaluation and substantial task data. We introduce COBRA-Skills, an efficient framework that formulates skill optimization as budgeted sequential optimization over a dynamically evolving candidate space. COBRA-Skills couples contextual-bandit-guided prioritization with evidence-grounded skill evolution, selectively allocating evaluations to promising or informative candidates while continually refining the skill population from execution feedback. Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark. Further analyses show that COBRA-Skills remains robust to changes in the agent harness and performs effectively when the target model itself is used for skill generation and refinement.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.11682",
+        "external_id": "2609.11682"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.11682",
+        "external_id": "2609.11682"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Jerry-LuP/COBRA-Skills",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Pingchen Lu",
+      "Xiangyi Wang",
+      "Xiang Li",
+      "Jie Mao",
+      "Zikun Qu",
+      "Junfeng Luo",
+      "Yao Shu",
+      "Bryan Kian Hsiang Low",
+      "Zhongxiang Dai"
+    ],
+    "published_at": "2026-09-10T00:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.371442Z",
+    "dedup_keys": [
+      "arxiv:2609.11682",
+      "title:agent bandit cobra contextual evolution for guided optimization skill skills",
+      "github:jerry-lup/cobra-skills"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.359,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.348
+    }
+  },
+  {
+    "id": "b071c8c5980644e8",
+    "kind": "paper",
+    "title": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
+    "summary_en": "Post-training attention sparsification reduces the quadratic cumulative attention cost of pretrained Transformers by selecting a small set of context units (tokens or blocks) for each query. Existing trainable methods usually use a lightweight selector to score context units, followed by hard Top-K selection that blocks gradients from the language modeling loss. Consequently, these methods commonly distill layer-wise dense attention distributions. Although this encourages the selector to rank context units by dense attention weights in the original model, the ranking is not directly aligned with their impact on predictions under a fixed attention budget (i.e., the number of attended context units per query), potentially wasting the limited budget on less useful units. To address this misalignment, we propose Simple Attention Sparsification (SAS), a gated sparse attention mechanism that optimizes context ranking end-to-end with the language modeling loss. The key idea is to inject the selector's continuous scores into attention logits during training, allowing the loss to update the selector through standard backpropagation. We identify several choices crucial for this simple design to work well in practice: placing the gate inside the attention softmax in log form, using normalized softmax gates to calibrate historical context against the always-retained current block, and preserving continuous selector scores so the model learns relative priorities rather than only hard selections. To support long-sequence training, we implement a memory-efficient Triton kernel that integrates SAS into FlashAttention-style computation. Across reasoning, long-context understanding, and agentic tasks, SAS consistently outperforms trainable sparse attention baselines across attention budgets, with especially large gains under tight budgets, demonstrating more effective context ranking for downstream tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13141",
+        "external_id": "2609.13141"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13141",
+        "external_id": "2609.13141"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Tencent-Hunyuan/Simple-Attention-Sparsification",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhiwei Li",
+      "Lei Zhu",
+      "Hao Gu",
+      "Xiang Hu",
+      "Yan Wang",
+      "Haitao Mi",
+      "Sirui Han",
+      "Leo Liang",
+      "Zhijiang Guo"
+    ],
+    "published_at": "2026-09-11T00:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.371460Z",
+    "dedup_keys": [
+      "arxiv:2609.13141",
+      "title:attention context end end optimization ranking sas simple sparsification via",
+      "github:tencent-hunyuan/simple-attention-sparsification"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 25.492,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.848
+    }
+  },
+  {
+    "id": "8d8e2c4774b1e38f",
+    "kind": "paper",
+    "title": "PLC-DPO: Posterior Label Correction in Noisy and Ambiguous Preference Optimization",
+    "summary_en": "Direct Preference Optimization (DPO) simplifies alignment through pairwise comparisons but assumes all observed preferences are reliable. Real data often violates this assumption, leading to reversed, weak, or ambiguous labels that cause harmful policy updates. To address this, we propose Posterior Label Correction DPO (PLC-DPO) to robustly optimize preferences by routing each pair's training signal as a clean, flip, or tie case. The key idea is to use the calibrated policy-reference margin as online evidence to take appropriate correction actions. This reframes noisy preference learning as actively correcting supervision direction and strength rather than merely filtering suspicious examples. Across 57 dataset-model-benchmark cells, PLC-DPO obtains the best mean win rate against DPO (60.5 vs. 55.5 for the next-best method). Injected-noise and tie stress tests, human disagreement analysis, and self-confirmation diagnostics further show that the routing remains stable and distinguishes flipped from weakly directional pairs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2608.30597",
+        "external_id": "2608.30597"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2608.30597",
+        "external_id": "2608.30597"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/VennTum99/PLC-DPO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Boryeong Cho",
+      "Sumyeong Ahn",
+      "Se-Young Yun"
+    ],
+    "published_at": "2026-08-31T00:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.371424Z",
+    "dedup_keys": [
+      "arxiv:2608.30597",
+      "title:ambiguous and correction dpo label noisy optimization plc posterior preference",
+      "github:venntum99/plc-dpo"
+    ],
+    "signals": {
+      "hf_upvotes": 20,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 11.008,
+    "score_breakdown": {
+      "hf_upvotes": 24.356,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -21.348
+    }
+  },
+  {
+    "id": "0ba8e2fec40388f9",
+    "kind": "paper",
+    "title": "SNAP3D: Physically Grounded 3D Parts for Assembly from a Single Image",
+    "summary_en": "Part-aware 3D asset generation enables applications such as editing, articulation, simulation, and fabrication, yet existing methods can generate visually complete individual parts without ensuring that they form a valid physical assembly. Consequently, generated neighboring parts may interpenetrate, lack valid connections, or collapse under gravity. We propose a physics-guided framework for improving single-image part-aware 3D generation with physically compatible geometry and stable connections. Our method resolves inter-part penetration, recovers a contact graph between neighboring parts, and introduces parameterized connectors at their contact surfaces. Using feedback from physical simulation, we refine connector placement, orientation, and dimensions to improve assembly stability while preserving the generated geometry. We further introduce a physics-based evaluation protocol that complements conventional geometric metrics by directly testing assembly validity and stability under gravity. Experiments comparing against multiple part-aware 3D generators show substantial improvements in physical realizability and stability while maintaining geometric quality. We additionally validate the resulting parts through 3D printing and real-world assembly.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13146",
+        "external_id": "2609.13146"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13146",
+        "external_id": "2609.13146"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/LucyTuan/SNAP3D",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yu-Rou Tuan",
+      "Hao-Tang Tsui",
+      "Nicolas Ugrinovic",
+      "Kris Kitani",
+      "Xiaoxuan Ma"
+    ],
+    "published_at": "2026-09-11T00:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.371475Z",
+    "dedup_keys": [
+      "arxiv:2609.13146",
+      "title:assembly for from grounded image parts physically single snap3d",
+      "github:lucytuan/snap3d"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 10.083,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.848
+    }
+  },
+  {
+    "id": "c6a13733b7a009a2",
+    "kind": "paper",
+    "title": "SCOPE-OPSD: Fisher-Conditioned Privileged Subspaces for On-Policy Self-Distillation",
+    "summary_en": "On-policy self-distillation (OPSD) scores student-generated prefixes with a solution-conditioned self-teacher, yet transfers supervision only through next-token probabilities. We ask whether the aligned final-layer discrepancy offers a useful second channel, and how to test that channel without confusing its geometry with auxiliary strength. SCOPE-OPSD projects the privileged teacher-student residual onto a frozen rank-64 factor estimated from residual covariance and language-model-head Fisher sensitivity. It reuses the forwards already required by OPSD and adds neither rollouts nor inference-time modules. A matched Random control preserves the structured factor's rank and nonzero spectrum and uses per-arm gradient-RMS calibration, isolating the effect of the data-dependent orientation. Across the complete 25/50/75/100-step trajectories for Qwen3-1.7B, 4B, and 8B, Structured is never below Pure OPSD, with strict gains in 11 of the 12 model-checkpoint combinations and an exact tie at 4B step 25. Structured also exceeds matched Random in 10 of the 12 combinations. At step 75 on Qwen3-1.7B, Structured exceeds matched Random by 1.39 Macro Avg@12 points in each of two independent training reruns. A cross-fitted diagnostic also shows 4.40 times greater held-out privileged-gap capture than the matched random orientation. The results support a compact, Fisher-conditioned privileged subspace for short-budget OPSD.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12579",
+        "external_id": "2609.12579"
+      }
+    ],
+    "actors": [
+      "Yunmeng Chen (Chongqing Ant Consumer Finance Co.",
+      "Ltd)",
+      "Kunyu Wang (Alibaba Cloud Computing Co.",
+      "Ltd)",
+      "Peihan Li (Chongqing Ant Consumer Finance Co.",
+      "Ltd)",
+      "Yi Wang (Chongqing Ant Consumer Finance Co.",
+      "Ltd)",
+      "Shuyin Xia (Chongqing University of Posts and Telecommunications)",
+      "Yi Liu (Chongqing Ant Consumer Finance Co.",
+      "Ltd)",
+      "Xinyong Cheng (Alibaba Cloud Computing Co.",
+      "Ltd)",
+      "Dehui Wang (Alibaba Cloud Computing Co.",
+      "Ltd)",
+      "Xiangyong Zhai (Alibaba Cloud Computing Co.",
+      "Ltd)",
+      "Yanxing Liu (Chongqing Ant Consumer Finance Co.",
+      "Ltd)",
+      "Song Liu (Chongqing Ant Consumer Finance Co."
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.882283Z",
+    "dedup_keys": [
+      "arxiv:2609.12579",
+      "title:conditioned distillation fisher for opsd policy privileged scope self subspaces"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 9.902,
+    "score_breakdown": {
+      "known_org": 10.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "b5fff09059acee8c",
+    "kind": "paper",
+    "title": "AMDKernelVault: Large-Scale Datasets and Agentic Training for AMD GPU Kernel Optimization",
+    "summary_en": "We introduce AMDKernelVault, an open HIP and Triton kernel corpus and training framework for recent AMD CDNA GPUs. Existing LLM-based kernel agents are largely CUDA/NVIDIA-centric and often depend on repeated frontier-LLM calls for generation, reflection, and optimization. To address this gap, we develop HIPKernelGen and TritonKernelGen, agent-driven pipelines that transform PyTorch references into HIP or Triton kernels, compile and validate candidates under ROCm, and latency-profile them on AMD hardware. The corpus contains 62,153 execution-verified HIP kernel samples, 2,377 production-grounded ROCm Libraries QA entries, and 39,893 Triton kernels. We further train Qwen3-8B with supervised fine-tuning and execution-aware reinforcement learning as a demonstration of the corpus's utility. Under fixed evaluation budgets, it achieves the highest correctness among the compared models on PyTorch-to-HIP (34.0% Pass@1), TritonBench-G (33.2% Corr@3), and ROCmBench (41.94% Corr@3), but does not uniformly lead compilation or speed metrics. The corpus and documentation are available at https://huggingface.co/datasets/amd/AIG-Datasets, and the associated training and kernel-generation code is available at https://github.com/AMD-AGI/hip_kernel_llm_lab.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12471",
+        "external_id": "2609.12471"
+      }
+    ],
+    "actors": [
+      "Ji Liu",
+      "Saptarshi Majumder",
+      "Yiqing Huang",
+      "Wenwen Ouyang",
+      "Umang Pandey",
+      "Zeping Li",
+      "Chushi Chen",
+      "Zihao An",
+      "Puyuan Yang",
+      "Zekai Li",
+      "Sina Rafati",
+      "Ziqiong Liu",
+      "Pratik Prabhanjan Brahma",
+      "Dong Li",
+      "Zicheng Liu",
+      "Sharon Zhou",
+      "Emad Barsoum"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470457Z",
+    "dedup_keys": [
+      "arxiv:2609.12471",
+      "title:agentic amd amdkernelvault and datasets for gpu kernel large optimization scale training"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "003901bec768fc33",
+    "kind": "paper",
+    "title": "Automated Detection and Structuring of Social Tipping Point Evidence in Climate related Documents: A Modular AI Framework",
+    "summary_en": "The climate literature has grown faster than review teams can read it. That gap matters most for a concept like the environmental social tipping point, the threshold at which a small change triggers rapid, self-reinforcing change in a social system. Evidence of this kind of shift is usually contained in one or two paragraphs within a longer document. As a result, existing text mining tools-which categorize entire documents by topic or highlight isolated claims-leave an expanding set of important evidence without any systematic method for discovery or organization. This paper presents an open and modular transformer-based framework that detects and structures social tipping point evidence at the passage level. The framework joins five components into a single deployable workflow: a DistilBERT boundary splitter for segmentation, an iteratively augmented RoBERTa classifier for detection, a Mistral 7B model that rewrites each detected passage for clarity, a LLaMA 3.2 3B model that rates the passage against five published social tipping point criteria, and a Milvus vector store for semantic retrieval. The system is wrapped in a Streamlit interface backed by MinIO object storage. Evaluated on a 163-passage benchmark labelled by GPT-4.1 and a 51-passage set reviewed by experts, the splitter surpassed three competing methods on a nine-metric composite score (6.137). The tuned RoBERTa model achieved 71.4 percent accuracy with a Cohen's kappa of 0.337 on the full benchmark, and 87.5 percent accuracy with a kappa of 0.742 on passages with labels, outperforming both a climate-focused model and untuned language models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12254",
+        "external_id": "2609.12254"
+      }
+    ],
+    "actors": [
+      "Kavindu Perera",
+      "Mohammad Abaeiani",
+      "Ekaterina Gilman",
+      "Lauri Loven",
+      "Mourad Oussalah",
+      "Tassos Kanellos",
+      "Beatrice Gobbo",
+      "Dante Adami",
+      "Nicol\\`o Ferriani",
+      "Maximiliano Romero",
+      "Pierre Rossel",
+      "Marc Bonazountas",
+      "Christina Deligianni",
+      "Nikos Xyderis",
+      "Artur Bogucki",
+      "Lampros Argyriou",
+      "Prasasthy Balasubramanian"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469770Z",
+    "dedup_keys": [
+      "arxiv:2609.12254",
+      "title:and automated climate detection documents evidence framework modular point related social structuring tipping"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "1aeb1cad42e2e720",
+    "kind": "paper",
+    "title": "Breaking the Token Ceiling: Distilling Smaller, Stronger Byte Models",
+    "summary_en": "Small models are made more capable through distillation from a larger one that shares their tokenization scheme. However, do distilled byte and token models behave similarly in terms of scaling trends as compute and data increases? To enable this comparison, we introduce two variants to efficiently convert token logits to Byte Logits: 1) approximate: Marginalize-It, and 2) exact: End-Of-Token. We then present the first large scale study of overtraining decoder-only dense transformer models varying two dimensions simultaneously: the tokenization scheme (Tokens, Bytes, Bytes w/ eot) and the training objective (Distillation vs. Cross-Entropy), sweeping layer-parameter-matched models with roughly 1 billion parameters up to 1 trillion bytes of data. Across eight benchmarks spanning three categories: Multiple Choice QA, Language Generation, and Machine Translation, we find that Token-1B models outperform byte models (End-Of-Token-1B and Bytes-1B) in the low-FLOP regime but eventually plateau; byte models start worse yet surpass Token-1B models with more compute, reaching a higher downstream task performance ceiling. Extrapolating the average top-1 error vs. validation BPB scaling laws predicts that, asymptotically, distilled End-Of-Token-1B outperforms distilled Token-1B by up to 4%. They are also far more data efficient, matching the performance of distilled Token-1B using only one-sixth of the training data. Moreover, by operating over a small vocabulary of 256 bytes instead of on the order of 100K tokens, they circumvent the need for top-k truncation during logit dumping, while also reducing logit storage costs to roughly one-fifth. Finally, our downstream performance scaling laws predict that our distilled End-Of-Token-1B models asymptotically surpass the Llama 3.2-1B, Gemma-3-1B-pt, and Gemma 2B models on averaged downstream tasks by up to 6.5%, 8.1%, and 2.1%, respectively.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12303",
+        "external_id": "2609.12303"
+      }
+    ],
+    "actors": [
+      "Kalyani Marathe",
+      "Artidoro Pagnoni",
+      "Tomasz Limisiewicz",
+      "Margaret Li",
+      "Mike Lewis",
+      "Luke Zettlemoyer",
+      "Srinivasan Iyer"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469967Z",
+    "dedup_keys": [
+      "arxiv:2609.12303",
+      "title:breaking byte ceiling distilling models smaller stronger the token"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "a0e209935451e960",
+    "kind": "paper",
+    "title": "Chopthin-Consensus Power Sampling: A Diversity-Preserving Approach to LLM Decoding",
+    "summary_en": "Inference-time power sampling via Sequential Monte Carlo (SMC) can substantially improve large language model (LLM) reasoning without requiring post-training. However, many existing SMC approaches rely on equal-weight resampling, which can aggressively prune low-weight trajectories, discarding potentially correct reasoning paths and degrading the genealogical diversity of the search space. To address this, we introduce Chopthin-Consensus Power Sampling (CCPS). Our method applies the Chopthin resampler to LLM decoding: rather than equalizing weights and forcing unnecessary particle duplication, it enforces an upper bound on the ratio between the largest and smallest weights and carries the unequal weights forward. This targeted intervention preserves a richer set of distinct reasoning paths, keeps the weighted SMC approximation unchanged in conditional expectation, and guarantees a lower bound on the post-resampling effective sample size (ESS). To fully exploit this enriched population, we employ a semantic-majority selection mechanism that merges token-identical final trajectories, clusters semantically equivalent answers, and returns the answer supported by the largest number of distinct trajectories. Evaluating across three open-weight models and five reasoning benchmarks, we show that Chopthin increases oracle coverage in 13 of 15 settings. Combined with semantic-majority selection, CCPS matches or exceeds the final-answer accuracy of the Power-SMC baseline in 14 of 15 settings, delivering absolute gains of up to 10.6 percentage points. These findings demonstrate that diversity-preserving resampling and diversity-aware selection are complementary mechanisms for training-free LLM reasoning. Code is available at github.com/MinooAhmadii/chopthin-consensus-power-sampling.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12243",
+        "external_id": "2609.12243"
+      }
+    ],
+    "actors": [
+      "Minoo Ahmadi",
+      "Seyedarmin Azizi",
+      "Erfan Baghaei Potraghloo",
+      "Mehdi Kamal",
+      "Massoud Pedram"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469700Z",
+    "dedup_keys": [
+      "arxiv:2609.12243",
+      "title:approach chopthin consensus decoding diversity llm power preserving sampling"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "e9d68abac2ab5a8f",
+    "kind": "paper",
+    "title": "CueMem: Cue-Guided Context Reconstruction for Long-Term Conversational Memory",
+    "summary_en": "Long-term conversational agents must answer user queries by recalling information from extended dialogue histories, yet directly using the full history is costly and often unreliable, while compressed memory units may lose fine-grained evidence needed for question answering. Motivated by the reconstructive view of autobiographical memory, we propose CueMem, a cue-guided framework that treats extracted memory records as retrieval cues rather than self-contained evidence and reconstructs query-relevant dialogue context from their source turns. During memory construction, CueMem extracts fine-grained memory cues from dialogue turns and links each cue to its source turn. At query time, it retrieves query-relevant cues, maps them to source-turn anchors, and expands from these anchors over a turn graph that captures temporal proximity and semantic relatedness, reconstructing a compact evidence context from the original dialogue for LLM answer generation. Experiments on LoCoMo and LongMemEval show that CueMem consistently outperforms representative long-term memory baselines. Further analyses show that graph-based context reconstruction helps recover supporting dialogue evidence while reducing query-time input tokens and latency compared with the full-history LLM setting. These results highlight retrieval cues as an effective alternative to self-contained memory evidence for long-term conversational question answering.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12354",
+        "external_id": "2609.12354"
+      }
+    ],
+    "actors": [
+      "Changjian Wang",
+      "Rongzhen Li",
+      "Weili Guan",
+      "Shuming Shi",
+      "Quan Lu",
+      "Ning Jiang"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470172Z",
+    "dedup_keys": [
+      "arxiv:2609.12354",
+      "title:context conversational cue cuemem for guided long memory reconstruction term"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "ad6fe808eb0e70fd",
+    "kind": "paper",
+    "title": "EAR: Entity-Aware Partitioning Approach for Retrieval-Augmented Generation Development",
+    "summary_en": "Retrieval-augmented generation (RAG) can improve knowledge-intensive question answering, but the first design choice is easy to overlook: how should the source corpus be partitioned into retrievable units? Fixed-size chunks often return long passages whose relation to the question is only implicit. We introduce EAR, an Entity-Aware Partitioning approach for multiple-choice question answering (MCQA). EAR extracts normalized surface anchors from the question, answer options, and corpus; retrieves local windows around matching corpus anchors; and can attach a larger parent passage through an extractive summary. We evaluate EAR on a cleaned Massive Multitask Language Understanding (MMLU)-style subset of 153 questions selected by an automatic corpus-support heuristic and using decontaminated public textbook text. Across same-protocol top-k = 3 and top-k = 8 sweeps with Mistral, Gemma, and DeepSeek, EAR entity-window reduces retrieved words by 37.5-40.2% relative to chunks. Observed accuracy changes are +5.2, +1.3, and -3.9 points at top-k = 3, and +5.9, -3.3, and -4.6 points at top-k = 8; none of the entity-window differences is statistically significant. The scoped contribution is methodological: EAR provides a compact and inspectable retrieval unit, while its rule-based anchor extractor remains domain-specific and requires separate validation before transfer.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12268",
+        "external_id": "2609.12268"
+      }
+    ],
+    "actors": [
+      "Cenab Batu Bora",
+      "Oylum Alatl{\\i}",
+      "Sebnem Bora",
+      "Oguz Dikenelli"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469900Z",
+    "dedup_keys": [
+      "arxiv:2609.12268",
+      "title:approach augmented aware development ear entity for generation partitioning retrieval"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "36de556ff04d9b2a",
+    "kind": "paper",
+    "title": "ESTS at WMT26: Routing-Informed Expert Pruning for Model Compression",
+    "summary_en": "We describe six submissions under the team name ESTS to the unconstrained WMT26 Model Compression Shared Task for English--Simplified Chinese and English--Egyptian Arabic. We submit three compression operating points per translation direction, all derived from GPT-OSS-20B. We use task-specific routing mass to rank experts and cross-lingual routing divergence to allocate retained capacity across layers, then physically remove low-importance experts. The resulting specialists are recovery-tuned on GPT-5.1-generated synthetic translation data and further compressed by applying MXFP4 quantization to the retained expert projection weights. We additionally implement a robust inference system for the instruction-conditioned WMT26 setting, including category inference, output validation, retries, segmented fallback, and source-owned JSON reconstruction. Across our six submissions, parameter counts range from 4.186B to 7.770B and packed artifact sizes from 4.55 to 6.33~GiB. Internal xCOMET-XL evaluation using GPT-5.1 pseudo-references provides an internal comparison across the submitted compression operating points.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12310",
+        "external_id": "2609.12310"
+      }
+    ],
+    "actors": [
+      "Liu O. Martin",
+      "Lucas Bandarkar",
+      "Nanyun Peng"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470014Z",
+    "dedup_keys": [
+      "arxiv:2609.12310",
+      "title:compression ests expert for informed model pruning routing wmt26"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "bb75c1d7c2b8a062",
+    "kind": "paper",
+    "title": "Extracting Dataset Mentions in Forced Displacement and FCV Documents: A Weakly Supervised Framework with LLM-Based Label Refinement",
+    "summary_en": "Development and humanitarian organizations produce and support surveys, administrative registries, and other data resources to inform research, policy, and operations, yet systematically identifying where these datasets are referenced remains difficult. Such references are dispersed across research papers, project documents, humanitarian reports, and other unstructured text, limiting both the ability to trace data use and to identify potential gaps in data availability or dissemination. We present a weakly supervised framework for adapting dataset extraction to forced displacement and Fragile, Conflict, and Violence (FCV) documents without first constructing a large manually labeled training corpus. A lightweight model trained on general research literature generates candidate dataset mentions from unlabeled domain documents, which a frontier large language model (LLM) reviews in context, validating or rejecting candidates and correcting their extraction boundaries. The resulting annotations are supplemented with targeted synthetic and contrastive examples and used to fine-tune the lightweight model for large-scale extraction. We evaluate the resulting model on an independent gold-standard benchmark of 1,706 text passages spanning research, humanitarian, and operational documents. Across the full benchmark, the model achieves 74.1\\% precision and 70.5\\% recall at the mention level; among passages containing dataset references, precision reaches 89.5\\%. At the passage level, the model achieves 88.2\\% accuracy and 88.6\\% specificity in distinguishing passages with dataset references from those without them. These results demonstrate a practical approach for constructing domain-specific supervision when labeled data are limited, and provide a technical foundation for larger-scale analysis of data use and potential gaps in the displacement data landscape.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12107",
+        "external_id": "2609.12107"
+      }
+    ],
+    "actors": [
+      "Rafael Macalaba",
+      "Aivin V. Solatorio",
+      "Patrick Michael Brock",
+      "Olivier Dupriez"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469261Z",
+    "dedup_keys": [
+      "arxiv:2609.12107",
+      "title:and based dataset displacement documents extracting fcv forced framework label llm mentions refinement supervised weakly with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "56ef20a44c39fe36",
+    "kind": "paper",
+    "title": "GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents",
+    "summary_en": "Comparing and selecting task-oriented LLM agents increasingly relies on a low-cost offline evaluation gate: persona-driven LLM user-simulators converse with each candidate, an LLM-as-a-judge scores the transcripts, and the higher-scoring agent is promoted. We introduce GAUGE, a reusable offline protocol that measures whether this gate's ranking matches a grounded verifiable reward across 25 agents from six providers on the $\\tau^2$-bench and SimulatorArena benchmarks, separating two kinds of evaluation validity that release practices conflate: ranking validity and construct validity. First, a satisfaction-success gap: satisfaction carries essentially no information about task success, as conversations rated satisfied by our blind panel are decorrelated from actual success, with 57.5% of them failing the customer's task, a pattern consistent across five rater populations, both benchmarks, and every subjective dimension we rated. Second, while the gate's ranking is robust across the broad capability span, it loses resolution among the near-equal strong agents: this decision-disagreement rate jumps from $<$1% on wide-reward pairs to 31% on close pairs. The gate is thus human-validated yet mis-anchored. As a remedy, we propose a calibrate-then-trust cadence in which a judge-free completion bit is a zero-cost tripwire for truncation regressions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12191",
+        "external_id": "2609.12191"
+      }
+    ],
+    "actors": [
+      "Umesh Bodhwani",
+      "Thanh Tran",
+      "Kai Wei"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469573Z",
+    "dedup_keys": [
+      "arxiv:2609.12191",
+      "title:agents evaluation gauge judge llm not oriented simulated task trust user when"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "7ef4bcbc50ea2df3",
+    "kind": "paper",
+    "title": "GraphProfiler: Source-Linked Sensitive Attribute Inference via Personal Knowledge Graphs",
+    "summary_en": "Sensitive attributes such as age, income, and occupation can be inferred from user-generated content by aggregating indirect cues across many ordinary posts. LLM-based profilers can perform this aggregation automatically and with high accuracy, which makes large-scale personal attribute inference a major privacy threat. Existing LLM-based profilers, however, offer limited insight into which specific posts, concepts, and relationships made an inference possible, which is key to targeted privacy mitigation, i.e., redacting or rewriting only the few posts that actually leak an attribute, rather than perturbing entire histories. We introduce GraphProfiler, an auditable LLM-based profiler that represents each user's post history as a source-linked personal knowledge graph where nodes and edges trace back to the originating post and resolves attribute predictions to cited graph records and source texts. GraphProfiler reaches 86.7% attack success rate on the eight-attribute SynthPAI benchmark, within two points of strong text-only baselines, and 84.6% on PANDORA, while citing supporting evidence for over 98% of predictions. Our controlled ablation experiments provide evidence that the cited posts contribute to attack success, as removing them reduces the attack success rate substantially more than removing an equal number of random posts.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12448",
+        "external_id": "2609.12448"
+      }
+    ],
+    "actors": [
+      "Ahmed Sohair Khan",
+      "Estrid He",
+      "Chenglong Ma",
+      "Monica Wachowicz",
+      "Elham Naghizade"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470334Z",
+    "dedup_keys": [
+      "arxiv:2609.12448",
+      "title:attribute graphprofiler graphs inference knowledge linked personal sensitive source via"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "661a8bc8b9ab3f00",
+    "kind": "paper",
+    "title": "HypoKG: Evidence-Disciplined Biomedical Hypothesis Generation Beyond Endpoint Knowledge",
+    "summary_en": "Large language models (LLMs) can generate biomedical hypotheses, but it remains unclear whether they truly reason from scientific evidence or simply produce convincing-sounding ideas. To study this, we combine three major biological databases: the Kyoto Encyclopedia of Genes and Genomes (KEGG), Rhea, and UniProt, into a unified biochemical knowledge graph and construct a benchmark of 550 paths connecting enzyme sources to rare disease endpoints, yielding 13,200 hypotheses from six LLMs under four conditions varying the biological information each model receives: source enzyme only, full biological path, or source and disease endpoint only. Hypotheses are scored using an expert-derived five-criterion rubric on a 1-5 scale per criterion. We find that models given both the source and disease endpoint often produce the highest-scoring hypotheses, showing that LLMs can generate compelling ideas from minimal information. However, these hypotheses are less grounded in the evidence. In contrast, models given the full biological path generate hypotheses more consistent with known mechanistic relationships. We call this evidence-disciplined reasoning. To confirm this effect, we shuffled intermediate path steps while keeping endpoints fixed. Evidence grounding dropped significantly (delta = -0.793, p < 0.001), confirming models genuinely used path structure during reasoning. Our findings show that knowledge graphs support hypothesis generation in two ways: they identify biological endpoint pairs absent from the literature, and their mechanistic paths guide how LLMs reason between them.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12260",
+        "external_id": "2609.12260"
+      }
+    ],
+    "actors": [
+      "Dominic Okonkwo",
+      "Adetayo Okunoye",
+      "Ismailcem Budak Arpinar"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469830Z",
+    "dedup_keys": [
+      "arxiv:2609.12260",
+      "title:beyond biomedical disciplined endpoint evidence generation hypokg hypothesis knowledge"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "4b2c838105990253",
+    "kind": "paper",
+    "title": "I Am No One: Style-Aware Paraphrasing for Text Anonymization",
+    "summary_en": "Authorship attribution models can re-identify users from seemingly anonymized text by exploiting stable stylistic fingerprints, even after explicit identifiers are removed, posing a growing privacy risk for text publishing and analytics. This risk extends to speech-derived text such as ASR transcripts of meetings and call-center conversations, where stylometric leakage can persist even after acoustic anonymization. Differential privacy-based anonymization often severely degrades text quality and utility. We propose a style-aware, prompt-driven anonymization approach that uses pretrained large language models to construct compact stylistic profiles from minimal samples and rewrite text to suppress identifiable style markers while preserving meaning. Across blog and review datasets, our approach reduces authorship attribution F1 by 60-70% while maintaining content quality and readability, substantially outperforming DP-based and non-DP baselines.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12341",
+        "external_id": "2609.12341"
+      }
+    ],
+    "actors": [
+      "Ahmed Sohair Khan",
+      "Estrid He",
+      "Monica Wachowicz",
+      "Elham Naghizade"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470061Z",
+    "dedup_keys": [
+      "arxiv:2609.12341",
+      "title:anonymization aware for one paraphrasing style text"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "2d0eea0fc01de1b7",
+    "kind": "paper",
+    "title": "Local Edits, Global Ripples: Replay-Informed Policy Adaptation for Workflow Synthesis",
+    "summary_en": "Prompt-policy editing offers a practical way to improve agents that synthesize executable workflows without updating the underlying model. However, persistent prompt editing has two coupled properties. First, edit locality does not imply effect locality: an edit confined to one policy segment can ripple through downstream execution, altering behavior beyond the edited segment. Second, edit effects are composition-sensitive: edits that work in isolation can interfere after composition, causing one or both to lose their benefit or become harmful. Persistent adaptation must therefore support two distinct decisions: identifying where the policy should change from execution feedback, and determining whether the resulting edit remains safe to persist after composition. To address these challenges, we introduce RIPPLE (Replay-Informed Persistent Policy Localization and Editing), which separates where an edit is made from whether it remains safe after composition. It diagnoses failed trajectories, maps each actionable failure to a predefined policy segment, and restricts the correction to that part of the policy. RIPPLE then evaluates candidates against the same iteration-start policy to compare their isolated gains, before replaying promising edits after previously accepted updates to expose downstream effects and interactions. Only edits that remain safe under composition are retained. We evaluate RIPPLE on Flow-HO, a synthetic held-out benchmark for executable workflow synthesis. RIPPLE improves validation success by up to 23.1% and yields positive gains on two additional frozen language-model backbones, while maintaining edit efficiency and low execution cost. Targeted interaction analysis further demonstrates both properties: a segment-local tool-use edit changes downstream resource resolution and validation, while an edit beneficial in isolation becomes harmful after composition.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12127",
+        "external_id": "2609.12127"
+      }
+    ],
+    "actors": [
+      "Manqing Mao",
+      "Hong Wang",
+      "Samson Koelle",
+      "Jie Yuan",
+      "Zhuoer Wang",
+      "James Feng",
+      "Yanjun Lin",
+      "Daniel Edmiston",
+      "Nikki Lijing Kuang",
+      "Zhecheng Sheng",
+      "Wei Niu"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469462Z",
+    "dedup_keys": [
+      "arxiv:2609.12127",
+      "title:adaptation edits for global informed local policy replay ripples synthesis workflow"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "5ad68226f246e6c0",
+    "kind": "paper",
+    "title": "Not All Speech Is Intent: Adaptive Self-Correcting Inference Layer for Post-ASR False Wake-Up",
+    "summary_en": "False wake-up activations remain a persistent challenge in conversational AI. Speech phonetically similar to a device's wake word can produce a syntactically valid and semantically coherent ASR transcript that the assistant incorrectly executes. Most existing systems make a single intent decision in isolation, without a mechanism to learn from recurring errors over time or adapt to individual users through personalized learning. We introduce the Feedback-Driven Adaptive Self-Correcting Inference Layer (ASCIL), a complementary post-ASR correction framework that re-evaluates wake-up intent before response generation by fusing acoustic embeddings, linguistic cues, device context, and patterns from past misclassifications. ASCIL interprets implicit signals, including hesitation, disengagement, and silence, and explicit signals, including cancellation and repetition, as automatically inferred, noisy behavioral indicators of potential misclassification. These signals drive online pattern updates without manual annotation, whereas the intentional/unintentional reference labels used for offline evaluation are human-annotated. It generalizes from prior errors, applies corrective adjustments at inference time, and continuously updates in parallel with natural-language execution. Evaluated on a proprietary dataset of 3,667 interactions with human-annotated intentional/unintentional reference labels spanning 14 acoustic and contextual conditions, ASCIL achieves 54.27% relative error reduction on a session-disjoint subset constructed from baseline failures, and up to 24.39% relative error reduction at threshold 0.90 on the issue-tagged evaluation slice. These gains are achieved while improving intentional acceptance rates, with a median added latency below 60 ms in the reported benchmark.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "speech",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12469",
+        "external_id": "2609.12469"
+      }
+    ],
+    "actors": [
+      "Preeti Saraswat",
+      "Divya Neelagiri",
+      "Anil Yadav"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470405Z",
+    "dedup_keys": [
+      "arxiv:2609.12469",
+      "title:adaptive all asr correcting false for inference intent layer not post self speech wake"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "8afd072a662ef413",
+    "kind": "paper",
+    "title": "ORQA: An Occupation-Realistic Question and Answer Framework for LLM Professional Knowledge",
+    "summary_en": "We present ORQA, a method for testing occupation-level knowledge in large language models. Prior methods either map abstract LLM skills to occupations via task definitions or utilize expert knowledge which is difficult to obtain at scale and expensive. ORQA complements both of these methods by connecting O*NET occupations to trusted occupation-specific websites (such as regulatory agencies, licensing bodies, professional organizations, and government publications) and converting these into source-traceable question-answer pairs. A combination of an automated pipeline and human review produces a set of high quality questions about occupations. The question set created via our method covers 116 occupations from all 21 major groups in the SOC, with 480 questions sourced from 187 different websites. Each question is designed to probe a real-world skill question that is relevant to the occupation in question. We test 15 state-of-the-art frontier and open-weight models via this method. Claude Opus 4.6, GPT-5.4 and Claude Sonnet 4.6 all perform the best at approximately 58-62% while smaller open-weight models achieve approximately 33-41% performance. Performance varies significantly across occupations. Healthcare-related occupations achieve the highest performance (78%) while Office and Administrative Support achieve approximately 40%. Performance on individual occupations (e.g. Sheet Metal Workers and Fish and Game Wardens) is essentially zero. We also find that open-ended questions and weighting by wage bill do not significantly affect the ranking of models on this benchmark. We believe that leveraging existing trusted occupation-specific information to test LLM knowledge in professional domains may be a scalable and useful method for evaluating occupation-level AI performance in the future. Results and data are available at orqabench.org.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12366",
+        "external_id": "2609.12366"
+      }
+    ],
+    "actors": [
+      "Shreyas Krishnan",
+      "Serina Chang",
+      "Abhishek Nagaraj"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470235Z",
+    "dedup_keys": [
+      "arxiv:2609.12366",
+      "title:and answer for framework knowledge llm occupation orqa professional question realistic"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "e166aedb26423ed4",
+    "kind": "paper",
+    "title": "Quantifying Consonant Contributions to Word Intelligibility via Acoustic Masking",
+    "summary_en": "Consonants contribute unequally to whether a word is understood. Given the limited time available for therapy, ranking consonants by contribution to intelligibility helps prioritize intervention targets in motor speech disorders. However, measuring this contribution relies on perceptual studies that are difficult to scale. This paper presents a scalable method that measures consonant contribution using acoustic masking. We silence one consonant at a time in an isolated word and test whether an automatic speech recognition (ASR) model still recognizes the word. We define a consonant's contribution score as the proportion of its masked instances for which the word becomes misrecognized, which we refer to as the mask-induced misrecognition rate (MMR). We validate MMR against two linguistic factors previously reported to correlate with consonant contribution, namely phoneme frequency and functional load. We apply this analysis across four languages, English, Spanish, German, and Czech, using three ASR architectures, MMS (encoder-only), Whisper (encoder-decoder), and Qwen3-ASR (LLM-based). Using partial Spearman correlations, we find that phoneme frequency correlates negatively with MMR while functional load correlates positively. In other words, more frequent consonants are less disruptive when masked, whereas consonants carrying more lexical contrast are more disruptive. Further cross-language analysis shows that consonant rankings are not consistent, indicating that consonant contribution is language-dependent.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12122",
+        "external_id": "2609.12122"
+      }
+    ],
+    "actors": [
+      "Eunjung Yeo",
+      "Kwanghee Choi",
+      "Krupaben Kothadia",
+      "Visar Berisha",
+      "Julie M. Liss",
+      "David R. Mortensen",
+      "David Harwath"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469385Z",
+    "dedup_keys": [
+      "arxiv:2609.12122",
+      "title:acoustic consonant contributions intelligibility masking quantifying via word"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "c0160d24820a2595",
+    "kind": "paper",
+    "title": "R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration",
+    "summary_en": "Large language models are increasingly used for automated fact checking, but end-to-end prompting often entangles evidence retrieval, reasoning, and uncertainty estimation, making failures difficult to diagnose and confidence difficult to trust. We present R2VC, a modular retrieve, reason, verify, calibrate architecture for evidence-grounded fact checking with citations and abstention. R2VC combines hybrid sparse+dense retrieval over Wikipedia, a supervised fine-tuned and DPO-aligned generator that produces diverse structured verdict candidates, an external NLI cross-encoder for evidence-based candidate selection, and a lightweight sequence-level calibrator for confidence estimation and selective abstention. On FEVER, an 8B backbone with R2VC achieves 13.74% higher accuracy than baseline. Ablation studies show that verifier-based candidate selection and confidence calibration are the largest contributors to performance. Removing candidate selection drops FEVER accuracy to 76.24%, while removing calibration nearly doubles the Brier score to 0.161. A manual analysis of 250 errors further shows that retrieval failures, especially wrong-entity evidence, remain the dominant bottleneck. Together, these results show that modular fact-checking pipelines can substantially improve both predictive accuracy and confidence reliability in open-domain verification.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.11955",
+        "external_id": "2609.11955"
+      }
+    ],
+    "actors": [
+      "Dhruv Dixit",
+      "Paritosh Pandey"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469092Z",
+    "dedup_keys": [
+      "arxiv:2609.11955",
+      "title:and calibration checking confidence fact modular r2vc retrieval verification with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "4ffb31292282199c",
+    "kind": "paper",
+    "title": "Repair Before Reinforce: Context-Augmented Knowledge Graph Reasoning for Multi-Hop Question Answering",
+    "summary_en": "Question-answering often requires reasoning across multiple connected facts rather than retrieving a single isolated relation. Knowledge graphs (KGs) provide a structured way to represent such facts, but training large language models (LLMs) only on isolated KG head-relation-tail triples may limit their ability to learn the surrounding context needed for multi-hop reasoning. In this work, we propose a context-augmented training framework for multi-hop question-answering. Although generally applicable, we validate the framework in the context of disease-specific KGs, extracted using a reliable KG extraction framework called GraphMERT, for Gastroparesis and Diabetes. For each primary KG triple, we attach supporting triples extracted from the same source text chunk to form a context graph (CG). This creates two supervision settings: KG-grounded supervision, which uses only the target KG triple or path, and CG-grounded supervision, which uses the target KG triple or path together with supporting context triples. We train the Qwen3-14B model using supervised fine-tuning (SFT) under both settings, producing KGModel and CGModel variants. To strengthen the lower-hop factual foundation of the models, we introduce an LLM-judged, history-aware adaptive repair pipeline that identifies unresolved one-hop failures, continually fine-tunes on targeted repair examples, and removes or quarantines problematic noisy triples. This repair stage enables the models to reach 100% accuracy on the cleaned retained one-hop validation sets. Finally, we employ reinforcement learning (RL) using lower-hop question-answer items and evaluate generalization on harder 3-hop, 4-hop, and 5-hop tasks. Across both diseases, context-augmented supervision consistently improves multi-hop performance over KG-only supervision. RL initialized from repaired SFT checkpoints yields larger and more stable gains.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12230",
+        "external_id": "2609.12230"
+      }
+    ],
+    "actors": [
+      "Tharaka D. Fonseka",
+      "Niraj K. Jha"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469639Z",
+    "dedup_keys": [
+      "arxiv:2609.12230",
+      "title:answering augmented before context for graph hop knowledge multi question reasoning reinforce repair"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "665c8cbcbf3f39a6",
+    "kind": "paper",
+    "title": "Representation-based Masked Diffusion Model",
+    "summary_en": "Masked Diffusion Models (MDMs) have emerged as a compelling paradigm for language modeling, offering the capability for efficient parallel text generation. However, existing parallel sampling methods typically update multiple masked tokens independently and ignore the complex mutual dependencies among the masked tokens. This independent updating mechanism lacks global coordination and might lead to incoherent outputs. To address this limitation, we propose Representation-based Masked Diffusion Model (RMDM), a framework that leverages the text representation to explicitly encode global semantics and help to parallel update tokens more precisely. Specifically, we first encode text into a continuous semantic space using a pretrained encoder and learn an invertible transformation that normalizes the representation distribution to a Gaussian prior, facilitating efficient sampling during generation. Conditioned on this latent semantic representation, we train a masked diffusion model to learn the conditional text distribution, where the representation serves as global semantic guidance to coordinate parallel token updates and faithfully approximate the target distribution. Empirical results demonstrate that RMDM significantly improves generation quality, particularly in aggressive few-step sampling regimes.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12382",
+        "external_id": "2609.12382"
+      }
+    ],
+    "actors": [
+      "Yangrong Hu",
+      "Ding Huang",
+      "Xueyu Zhou",
+      "Jian Huang"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470283Z",
+    "dedup_keys": [
+      "arxiv:2609.12382",
+      "title:based diffusion masked model representation"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "70e7dad89fa13e85",
+    "kind": "paper",
+    "title": "SynthSentry: Detecting Synthetic Data Contamination in Language Model Training Data",
+    "summary_en": "Large language models trained recursively on their own or other models' outputs undergo model collapse, in which distributional tails and factual accuracy deteriorate while fluency survives. Prior work diagnoses collapse after training; the actionable problem is screening a corpus of unknown provenance before training. We introduce SynthSentry, a corpus-level, model-agnostic contamination signal requiring no access to the generating model, no generation history, and no synthetic labels. The score is a distributional divergence over three statistics: lexical diversity collapse, n-gram tail truncation, and perplexity variance across reference models. We evaluate on corpora contaminated by small open-weight generators and an instruction-tuned open-weight model under a leave-one-generator-out protocol. A domain-stratified study measures false positives on naturally repetitive human text (legal, clinical, source code). The score ranks corpora by severity with little loss when whole generator families are held out. Per-domain calibration holds near its nominal false-positive budget once covariance shrinkage and a bootstrap threshold replace a naive quantile, which runs four times over budget. A downstream fine-tuning check showed no contamination-driven accuracy deficit at our scale, so whether pruning recovers one remains open; the same run shows over-pruning risk once pruning exceeds the true contamination fraction. We frame screening as a data-curation defense rather than a post-hoc diagnosis and release the scoring toolkit. All results are small-scale; scope is English-language, batch-mode corpus screening. Contamination sources are single-generation or hand-authored rather than recursively generated, so results speak to synthetic contamination generally and not to recursion depth.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12353",
+        "external_id": "2609.12353"
+      }
+    ],
+    "actors": [
+      "Praveen Kumar Myakala",
+      "Ravichandra Namburi",
+      "Sowmya Keragodu Jayaramu",
+      "Sooraj George Thomas"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470120Z",
+    "dedup_keys": [
+      "arxiv:2609.12353",
+      "title:contamination data data detecting language model synthetic synthsentry training"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "62d5869448bb62a7",
+    "kind": "paper",
+    "title": "The Cost of Compression: A Rate-Distortion Limit on Factual Hallucination",
+    "summary_en": "Factual hallucination in closed-book question answering is often treated as a coverage problem: a model fails because the relevant fact is absent from its internal memory. This view misses a second source of error. Even when a fact has been observed, finite memory may force it to be stored only approximately. We study this effect through a simple coverage--compression model of factual recall. We consider an unstructured question-answering task with $N$ possible queries and $K$ possible answers. A learner observes $M$ training facts, compresses them into at most $B$ bits, and answers uniformly drawn test queries without retrieval. For a uniformly random ground-truth mapping, we prove $\\mathcal{E} \\geq \\frac{M}{N}\\delta^\\star\\!\\left(\\frac{B}{M}\\right) + \\left(1-\\frac{M}{N}\\right)\\left(1-\\frac{1}{K}\\right)$, where $\\delta^\\star(r)$ is the inverse rate-distortion function of a uniform $K$-ary source under zero-one loss. The two terms separate compression distortion on observed facts from missing coverage on unobserved facts. The bound gives a compact way to reason about selective memory, forced compression, structure, retrieval, abstention, and long-context organization. We study the predicted signatures with theory-implied simulations and controlled fact-injection probes in modern language models that vary fact load and effective trainable memory. The result is not a complete theory of hallucination, but an information-theoretic account of a separable failure mode: lossy recall of observed facts under finite memory.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12111",
+        "external_id": "2609.12111"
+      }
+    ],
+    "actors": [
+      "Xi Wang",
+      "Shijia Xu",
+      "Rongfeng Guo"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469324Z",
+    "dedup_keys": [
+      "arxiv:2609.12111",
+      "title:compression cost distortion factual hallucination limit rate the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "f62be3dc265e6ad1",
+    "kind": "paper",
+    "title": "The House with a Million Windows: Interactive Fiction for Narrative Restorying",
+    "summary_en": "AI-assisted writing can flatten meaning in human storytelling, enabling the production of homogeneous outputs without the intentional effort and sense-making writing entails. To address this challenge, we present The House with a Million Windows (HWAMW), an LLM-based interactive fiction system designed to help users explore both the breadth and depth of potential meanings within their personal stories -- drawing on a psychological paradigm called the restorying intervention. In HWAMW, users play through a text-based narrative in which they tell a story, then encounter a set of LLM-generated \"windows\" reframing it according to different literary styles. Empirical evidence shows that HWAMW increases users' sense of narrative identity, while an expert review explores how this effect is achieved. Our findings suggest that HWAMW facilitates restorying and offers a valuable paradigm for AI-assisted writing, wherein LLMs do not tell our stories but rather help us see greater potential in the stories we tell.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12537",
+        "external_id": "2609.12537"
+      }
+    ],
+    "actors": [
+      "Cody Kommers",
+      "Sarah G Immel",
+      "Drew Hemment",
+      "Mina Lee"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470549Z",
+    "dedup_keys": [
+      "arxiv:2609.12537",
+      "title:fiction for house interactive million narrative restorying the windows with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "05578375af9a8bba",
+    "kind": "paper",
+    "title": "What Counts as a Mistake? Annotating Recitation Events in Quran Memorization Transcripts",
+    "summary_en": "Checking Quran recitation from an ASR transcript requires distinguishing unresolved mistakes from repetitions, repairs, opening formulas and accepted spelling differences. We report a completed human annotation of 100 production recording cases: 348 scored units and 162 localized events across ten combined labels. An executable evaluator scores labels and word positions together. A plain diff reaches label-aware F1 0.525 and localization F1 0.826; adapted production cleaner/alignment components reach 0.518 and 0.786, with exact-span F1 0.505 for both. Correcting the adapter's word coordinates recovers all five annotated repetition events, showing why annotation interfaces must be checked before interpreting baseline failures. In a preliminary pilot, eight single 20-minute runs across three coding agents and eight models span label-aware F1 0.143 to 0.892: seven land far above every baseline, and one collapses below the naive diff from a missing normalization step. Across the six, 970 of 972 gold-event instances draw an overlapping prediction, so what remains is not detection but convention: span extent, and the labels whose boundary is stipulated by adjudication rather than visible in the text. Seven of 162 events defeat all six same-day runs, five of them one orthographic rule, and the strongest run still misses the same ones. No run annotated before building, so the pilot measures the algorithm half of the task only.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12085",
+        "external_id": "2609.12085"
+      }
+    ],
+    "actors": [
+      "Mohamad Al Mdfaa",
+      "Nursultan Askarbekuly",
+      "Ahmed Helaly",
+      "Ubai Sandouk",
+      "Manuel Mazzara"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.469184Z",
+    "dedup_keys": [
+      "arxiv:2609.12085",
+      "title:annotating counts events memorization mistake quran recitation transcripts what"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "0f55271427098cd0",
+    "kind": "paper",
+    "title": "Zipbench: Low-Cost Framework for Compressing Comprehensive Benchmarks of Large Language Models",
+    "summary_en": "Comprehensive benchmark suites are essential for improving large language models (LLMs), but many widely used benchmarks are redundant, making evaluation unnecessarily expensive. Although recent benchmark compression methods (BCMs) can mitigate this cost, many strong BCMs rely on large collections of per-sample evaluation results from numerous LLMs to identify representative samples. Building such collections is also expensive unless they are already public, making these methods difficult to extend to newly released benchmarks. To address this challenge, we present ZipBench, a simple and low-cost BCM with theoretical error and rank-consistency guarantees. ZipBench evaluates only a small set of anchor LLMs, synthesizes pseudo evaluation results to broaden coverage, learns compact sample representations, and selects a small yet representative subset. Building on it, we create ZipBench Zoo, a collection of compact versions of 100+ benchmark proxies spanning text, multimodal, and agent tasks. These benchmark achieve mean absolute errors of 0.002--0.02 and average Spearman correlations of ~0.98 with the full benchmarks. Overall, ZipBench reduces the cost of both LLM evaluation and compact benchmark construction, lowering the barrier to broad LLM research for compute-constrained researchers. The code has been released in https://github.com/MilkThink-Lab/ZipBench.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "multimodal",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12475",
+        "external_id": "2609.12475"
+      }
+    ],
+    "actors": [
+      "Zhongzhan Huang",
+      "Junxin Li",
+      "Guoming Ling",
+      "Yupei Lin",
+      "Shanshan Zhong",
+      "Hefeng Wu"
+    ],
+    "published_at": "2026-09-14T04:00:00Z",
+    "first_seen_at": "2026-09-14T05:32:28.470505Z",
+    "dedup_keys": [
+      "arxiv:2609.12475",
+      "title:benchmarks comprehensive compressing cost for framework language large low models zipbench"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  }
+]
