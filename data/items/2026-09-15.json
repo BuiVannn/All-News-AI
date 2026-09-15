@@ -1,0 +1,2117 @@
+[
+  {
+    "id": "dc37a18818462816",
+    "kind": "paper",
+    "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+    "summary_en": "As AI agents become participants in the development of their successors, they reshape both the production of intelligence and the role of human researchers. We introduce Atria Dawn Preview, a foundation agentic language model designed for scientific research and engineering workflows, with the goal of expanding the frontier of agent productivity in the real world. This model is trained via a Verifiable Experience Pipeline that connects tool-mediated interactions to executable environments and externally verified outcomes. Across 16 benchmarks spanning real-world research, engineering, and digital work, Atria Dawn Preview is competitive with frontier agents and achieves the highest reported score on five of them. Beyond standalone performance, we examine the real research-and-development process behind this model as a case study of human--AI collaboration, analyzing 769 task records from 56 participants together with agent logs. When asked to evaluate completed tasks under comparable conditions, participants rated about one-third of completed AI-assisted tasks as infeasible without AI. More strikingly, agents frequently propose methods and implement revisions, while humans retain most final decisions and guide exploration through judgment and feedback. These observations indicate a shift from task-level execution to project-level partnership, with human effort concentrating on what is worth pursuing and how evidence should guide research. Progress toward more autonomous AI research must therefore advance both the capacity for discovery and the capacity for meaningful human oversight, preserving accountable human authority over the risks and direction of continued development.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15818",
+        "external_id": "2609.15818"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15818",
+        "external_id": "2609.15818"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/atria-asi/Atria-Dawn-Preview",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Honglin Guo",
+      "Tao Gui",
+      "Yicheng Chen",
+      "Guanting Dong",
+      "Qiming Ge",
+      "Yuyang Hu",
+      "Zixian Huang",
+      "Jiajie Jin",
+      "Alexander Lam",
+      "Yining Li",
+      "Jiahang Lin",
+      "Yanjiang Liu",
+      "Xinyu Lu",
+      "Haijun Lv",
+      "Junlin Shang",
+      "Qisheng Su",
+      "Guoqiang Wang",
+      "Rui Wang",
+      "Zhecan Wang",
+      "Hao Xiang",
+      "Xinchen Xie",
+      "Shuhao Xing",
+      "Xiaoyu Xing",
+      "Wanghan Xu",
+      "Xinyu Yang",
+      "Yajie Yang",
+      "Chengfeng Zhao",
+      "Haoran Zhao",
+      "Ruojun Zhou",
+      "Yunhua Zhou",
+      "Yicheng Zou",
+      "Kun Cai",
+      "Qiye Cai",
+      "Xinmeng Che",
+      "Haodong Chen",
+      "Jiabei Chen",
+      "Jiahao Chen",
+      "Jiayi Chen",
+      "Yujia Chen",
+      "Lizhi Cui",
+      "Youheng Dai",
+      "Xin Deng",
+      "Yi Dong",
+      "Shihan Dou",
+      "Chenya Gu",
+      "Xu Guo",
+      "Ding Han",
+      "Feiyang Hao",
+      "Haotan He",
+      "Jie Hou",
+      "Binze Hu",
+      "Zijian Hu",
+      "Junhao Huang",
+      "Huicheng Jiang",
+      "Jiazhen Jiang",
+      "Shufan Jiang",
+      "Jiahao Kuang",
+      "Bowen Lai",
+      "Bo Li",
+      "Jiaqiang Li",
+      "Peng Li",
+      "Qilong Li",
+      "Zhuoqun Li",
+      "Jiaxiang Liu",
+      "Shuainan Liu",
+      "Tong Liu",
+      "Yi Liu",
+      "Zhonghang Lu",
+      "Jianwen Luo",
+      "Yanyi Luo",
+      "Huijie Lv",
+      "Ningsheng Ma",
+      "Zerun Ma",
+      "Houcheng Min",
+      "Chengjun Pan",
+      "Qiyuan Peng",
+      "Xiaoxuan Peng",
+      "Jianmin Qian",
+      "Jiantao Qiu",
+      "Wanying Ren",
+      "Huayu Sha",
+      "Jifei Shan",
+      "Zixin Shang",
+      "Bing Shao",
+      "Zhuohui Sheng",
+      "Jiayang Shi",
+      "Yang Shu",
+      "Aierpanjiang Simayi",
+      "Sirui Song",
+      "Yuxiao Song",
+      "Zhe Sun",
+      "Zhichao Sun",
+      "Wenzhe Tan",
+      "Wenhui Tian",
+      "Zhongbo Tian",
+      "Hanchen Wang",
+      "Pengbo Wang",
+      "Rui Wang",
+      "Yiding Wang",
+      "Yuhui Wang",
+      "Zhiheng Xi",
+      "Caijun Xu",
+      "Chao Xu",
+      "Yongfeng Xu",
+      "Xiaolei Yang",
+      "Zhixiong Yang",
+      "Qian Yao",
+      "Shihong Yi",
+      "Yuankai Ying",
+      "Jia Yu",
+      "Dingbo Yuan",
+      "Hao Yuan",
+      "Junjie Yuan",
+      "Bo Zhang",
+      "Caixian Zhang",
+      "Qiuyinzhe Zhang",
+      "Jiyuan Zhao",
+      "Penghao Zhao",
+      "Ying Zhao",
+      "Pujun Zheng",
+      "Xiaoxue Zhong",
+      "Xiaohao Zhou",
+      "Xinyu Zhou",
+      "Dongsheng Zhu",
+      "Guanru Zhu",
+      "Yulun Zhu",
+      "Yaojie Lu",
+      "Tao Ji",
+      "Hongyu Lin",
+      "Yutao Zhu",
+      "Pengfei Cao",
+      "Guoxiu He",
+      "Xianpei Han",
+      "Ben He",
+      "Zhicheng Dou",
+      "Kang Liu",
+      "Qi Zhang",
+      "Le Sun",
+      "Jun Zhao",
+      "Ji-Rong Wen",
+      "Xuanjing Huang",
+      "Yu-Gang Jiang",
+      "Bowen Zhou"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787554Z",
+    "dedup_keys": [
+      "arxiv:2609.15818",
+      "title:agentic atria dawn dawn superintelligence the",
+      "github:atria-asi/atria-dawn-preview"
+    ],
+    "signals": {
+      "hf_upvotes": 57,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 121,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 52.244,
+    "score_breakdown": {
+      "hf_upvotes": 32.484,
+      "github_stars": 9.608,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "4c9ce361df4d9a5f",
+    "kind": "paper",
+    "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+    "summary_en": "Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that accumulated discovery history can serve as a replay simulator over the realized search space. By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations. The improved policy is subsequently redeployed online to drive further discovery, continuously expanding the simulator pool in a self-improving loop. Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.14858",
+        "external_id": "2609.14858"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.14858",
+        "external_id": "2609.14858"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zhengkid/Dream-RSI",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Tong Zheng",
+      "Xidong Wu",
+      "Zheng Zhang",
+      "Zhankui He",
+      "Chaoyi Zhang",
+      "Benjamin Coleman",
+      "Ruoqiao Wei",
+      "Di Bai",
+      "Haolin Liu",
+      "Rui Liu",
+      "Xue Wang",
+      "Yue Zhuan",
+      "Wang-Cheng Kang",
+      "Renkai Xiang",
+      "Heng Huang",
+      "Xinwu Cheng",
+      "Yunsong Guo"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787494Z",
+    "dedup_keys": [
+      "arxiv:2609.14858",
+      "title:dream evolving improvement recursive rsi self through worlds",
+      "github:zhengkid/dream-rsi"
+    ],
+    "signals": {
+      "hf_upvotes": 76,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 48.121,
+    "score_breakdown": {
+      "hf_upvotes": 34.75,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "91b63156782f7769",
+    "kind": "paper",
+    "title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models",
+    "summary_en": "We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience. Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash. It achieves the best open-source results on 14 benchmarks while retaining general multimodal capabilities. Beyond these understanding evaluations, qualitative examples show the model's ability to produce end-effector trajectories and predict future scenes through spatially aligned RGB, depth, and robot-mask outputs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.14973",
+        "external_id": "2609.14973"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.14973",
+        "external_id": "2609.14973"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/DeepCybo-PhysAI/PhysBrain-1.5",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "DeepCybo Team",
+      "Yu Bin",
+      "Haipeng Cao",
+      "Zheng Chang",
+      "Kai Chen",
+      "Youning Chen",
+      "Kailin Deng",
+      "Yichao Du",
+      "Xiaotong Fu",
+      "Haoyang Ge",
+      "Yunlong Guo",
+      "Chenliu Hao",
+      "Jiyan He",
+      "Xuguo He",
+      "Yakun Hou",
+      "Kai Hu",
+      "Cong Huang",
+      "Tuopusen Huang",
+      "Yu Huang",
+      "Hong Li",
+      "Peize Li",
+      "Shijie Lian",
+      "Xiaopeng Lin",
+      "Yun Lin",
+      "Haibao Liu",
+      "Haochen Liu",
+      "Qiuzhi Liu",
+      "Shengcai Liu",
+      "Zhiqiang Liu",
+      "Tao Luo",
+      "Peng Ren",
+      "Shuo Ren",
+      "Chaoyi Ruan",
+      "Zhaolong Shen",
+      "Yukun Shi",
+      "Qiyuan Su",
+      "Yuxuan Tian",
+      "Yining Wang",
+      "Changti Wu",
+      "Hao Wu",
+      "Xueyin Xu",
+      "Ruoqi Yang",
+      "Zhaoyang Yang",
+      "Hang Yuan",
+      "Zhaoyang Zeng",
+      "Hanwen Zhang",
+      "Ruimeng Zhang",
+      "Yao Zhang",
+      "Yibo Zhang",
+      "Yuxiang Zhang",
+      "Zhirui Zhang",
+      "Ziyi Zhang",
+      "Zubin Zheng",
+      "Zishen Zhuang"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787580Z",
+    "dedup_keys": [
+      "arxiv:2609.14973",
+      "title:foundation from language models models physbrain physical vision",
+      "github:deepcybo-physai/physbrain-1.5"
+    ],
+    "signals": {
+      "hf_upvotes": 52,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 14,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 47.33,
+    "score_breakdown": {
+      "hf_upvotes": 31.762,
+      "github_stars": 5.416,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "ca52589e58ed3e0b",
+    "kind": "paper",
+    "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+    "summary_en": "In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture & System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum & MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&D workflow where agent swarms autonomously manage cluster operations, data curation, and rapid diagnostic evaluation. Extensive evaluations show that ZGCM-1-7B is competitive across 7B model family on general benchmarks. On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1. We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss. Across the full development lifecycle, we distill eight actionable empirical findings-spanning architectural scaling, SFT quality pruning, long-context generalization, and agentic co-training dynamics. To facilitate community research, we open-source model weights from the pre-training, mid-training, and post-training stages, intermediate checkpoints, training code, per-stage data and data recipes, and W&B logs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13356",
+        "external_id": "2609.13356"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13356",
+        "external_id": "2609.13356"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zgcagi/ZGCM-1",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jiyan He",
+      "Guang Liang",
+      "Hao Liu",
+      "Haoxiang Guan",
+      "Jinbo Sun",
+      "Junyi Guo",
+      "Wenjun Feng",
+      "Yantai Xie",
+      "Yifei Shen",
+      "Bin Shao",
+      "Chuyang Wei",
+      "Kai Chen",
+      "Kexin Zhou",
+      "Minghang Zhu",
+      "Shuxin Zheng",
+      "Tie-Yan Liu",
+      "Taine Zhao",
+      "Wenhui Zhu",
+      "Xueyin Xu",
+      "Xiaoqing Zhang",
+      "Yatao Li",
+      "Yuxuan Ren"
+    ],
+    "published_at": "2026-09-11T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787522Z",
+    "dedup_keys": [
+      "arxiv:2609.13356",
+      "title:agentic and and efficient extremely for foundation fully math model open search zgcm",
+      "github:zgcagi/zgcm-1"
+    ],
+    "signals": {
+      "hf_upvotes": 58,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 75,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 46.933,
+    "score_breakdown": {
+      "hf_upvotes": 32.62,
+      "github_stars": 8.661,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.348
+    }
+  },
+  {
+    "id": "3ea5c010687c9c69",
+    "kind": "paper",
+    "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+    "summary_en": "We present Vidu S2, which comprises Vidu S2-Avatar, a real-time interactive digital-character model, and Vidu S2-Editing, a real-time video editing model. Moreover, we explore the feasibility of real-time spatial video generation for both Vidu S2-Avatar and Vidu S2-Editing. Compared with Vidu S1, Vidu S2-Avatar supports real-time 720p video generation, generation with dynamic references that can be updated at any moment, and stronger instruction following, such as dancing. Vidu S2-Editing supports editing a video stream in real time, including style rendering, clothing replacement, character replacement, and background replacement. Experiments show that Vidu S2 outperforms all baselines. A playable online demo is available at https://vidu.com/vidu-stream.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.11638",
+        "external_id": "2609.11638"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.11638",
+        "external_id": "2609.11638"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/shengshu-ai/Vidu-S",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jintao Zhang",
+      "Kai Jiang",
+      "Jintao Chen",
+      "Xu Wang",
+      "Deyuan Liu",
+      "Jungang Li",
+      "Dechuang Chen",
+      "Ming Lin",
+      "Jingjiang Zhou",
+      "Haopeng Jin",
+      "Qi Jia",
+      "Xiaohang Wang",
+      "Yaole Wang",
+      "Zhanqiang Zhang",
+      "Ran Li",
+      "Zhengkun Huang",
+      "Shuyue Xiong",
+      "Yuji Wang",
+      "Zikun Dai",
+      "Hui He",
+      "Yang Luo",
+      "Mang Ning",
+      "Weiqi Feng",
+      "Chengyang Ye",
+      "Xinyue Lin",
+      "Min Zhao",
+      "Hongzhou Zhu",
+      "Hengkai Tan",
+      "Zeyuan Wang",
+      "Chendong Xiang",
+      "Kaiwen Zheng",
+      "Zhijie Deng",
+      "Fan Bao",
+      "Jianfei Chen",
+      "Jun Zhu"
+    ],
+    "published_at": "2026-09-10T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787451Z",
+    "dedup_keys": [
+      "arxiv:2609.11638",
+      "title:and editable generation interactive real spatial time video vidu",
+      "github:shengshu-ai/vidu-s"
+    ],
+    "signals": {
+      "hf_upvotes": 82,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 253,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 46.578,
+    "score_breakdown": {
+      "hf_upvotes": 35.351,
+      "github_stars": 11.075,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -7.848
+    }
+  },
+  {
+    "id": "0a6cdf511af7d28c",
+    "kind": "model",
+    "title": "Mothersuperior/yue2-mothersuperior-realaudio-tokenizer-v4",
+    "summary_en": "audio, music, yue2, tokenizer, lora",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Mothersuperior/yue2-mothersuperior-realaudio-tokenizer-v4",
+        "external_id": "Mothersuperior/yue2-mothersuperior-realaudio-tokenizer-v4"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/m-a-p/MERT-v2-FullSong",
+        "external_id": "m-a-p/MERT-v2-FullSong"
+      }
+    ],
+    "actors": [
+      "Mothersuperior"
+    ],
+    "published_at": "2026-09-13T21:54:51Z",
+    "first_seen_at": "2026-09-15T05:32:44.784894Z",
+    "dedup_keys": [
+      "hf:mothersuperior/yue2-mothersuperior-realaudio-tokenizer-v4"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 86,
+      "hf_downloads": 0,
+      "hf_trending_score": 86.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 38.214,
+    "score_breakdown": {
+      "hf_trending": 26.795,
+      "hf_likes": 13.398,
+      "age_decay": -1.979
+    }
+  },
+  {
+    "id": "14c74f4783866daf",
+    "kind": "paper",
+    "title": "BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender",
+    "summary_en": "Multimodal agents can create complex videos in software such as Blender by coding without relying on diffusion models. Yet video understanding benchmarks still evaluate models mainly through question answering. If an agent truly understands a video, it can reconstruct it programmatically. We introduce BVB, Blender-VideoBench, a benchmark that tests this ability by asking agents to reconstruct real-world videos as animated Blender scenes. To ensure fair comparison, each agent programs the reconstruction through a lightweight harness, Mini-BVB, in an identical sandbox under a shared cost limit. The benchmark renders each reconstruction from its animated camera and evaluates it on two axes: (1) Dual VQA measures how many spatiotemporal facts the reconstruction preserves. (2) Latent Similarity measures how closely the reconstruction matches the source video perceptually. Our overall score, a square-root mean, favors balanced performance. We evaluate 51 configurations from 10 model families and analyze semantic retention, perceptual similarity, reasoning effort, and cost. The best model reaches 88.6 Latent Similarity but retains only 53.7% of the source-correct spatiotemporal answers. Additional reasoning improves visual similarity but does not close this gap in factual accuracy. In a blind study with 15 raters and five configurations, Latent Similarity correlates strongly with human preference. These results show that programmatic reconstruction is a viable test of agentic video understanding, and that semantic retention remains the main challenge.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15478",
+        "external_id": "2609.15478"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15478",
+        "external_id": "2609.15478"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yunlong10/BVB",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yolo Y. Tang",
+      "Daiki Shimada",
+      "Jiayue Meng",
+      "Jing Bi",
+      "Pinxin Liu",
+      "Yicheng Wang",
+      "Yunzhong Xiao",
+      "Zhangyun Tan",
+      "Zeliang Zhang",
+      "Chao Huang",
+      "Susan Liang",
+      "Qianxiang Shen",
+      "Luchuan Song",
+      "Ali Vosoughi",
+      "Mingqian Feng",
+      "Melika Filvantorkaman",
+      "Chenliang Xu"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787615Z",
+    "dedup_keys": [
+      "arxiv:2609.15478",
+      "title:agentic benchmarking blender bvb programmatic reconstruction understanding via video",
+      "github:yunlong10/bvb"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 36.977,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "247cf6f85cfc868c",
+    "kind": "model",
+    "title": "internlm/Atria-Dawn-Preview",
+    "summary_en": "glm_moe_dsa, zh, en",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/internlm/Atria-Dawn-Preview",
+        "external_id": "internlm/Atria-Dawn-Preview"
+      }
+    ],
+    "actors": [
+      "internlm"
+    ],
+    "published_at": "2026-09-11T08:27:05Z",
+    "first_seen_at": "2026-09-15T05:32:44.785117Z",
+    "dedup_keys": [
+      "hf:internlm/atria-dawn-preview"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 66,
+      "hf_downloads": 0,
+      "hf_trending_score": 66.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 36.022,
+    "score_breakdown": {
+      "hf_trending": 25.228,
+      "hf_likes": 12.614,
+      "has_weights": 4.0,
+      "age_decay": -5.82
+    }
+  },
+  {
+    "id": "39489f359afeaa30",
+    "kind": "paper",
+    "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+    "summary_en": "Foundation models have progressed from learning and reasoning over existing knowledge, to increasingly learning through action, tool use, and outcome feedback. We argue that the next frontier is a further transition: from solving and acting within problems specified by humans to participating in the process by which new problems, representations, explanations, and knowledge are created. We refer to this capability as Discovery Intelligence. We formulate Discovery Foundation Models (DFMs) as general-purpose model systems for open-ended discovery. A DFM operates over a revisable research state and supports seven coupled capabilities spanning problem discovery, formulation, representation construction, hypothesis formation, intervention, evidence-grounded revision, and continual discovery improvement. We instantiate this framework with Zetema, which couples explicit research-state dynamics, verification and experimental gating, external grounding, and cross-task Discovery Skill evolution. We further ground the framework with GALILEO, a real therapeutic-discovery system in which Dry-Lab reasoning, robotic and hands-on Wet-Lab experimentation, external biological evidence, and iterative hypothesis and design revision form a closed physical discovery loop. We then formulate a unified approach to capability formation and process-centered evaluation, enabling discovery behavior to be trained, improved, and measured beyond final-answer performance. Together, these components establish discovery as a learnable, executable, and evaluable capability of foundation-model systems. We view this shift as a broader progression in intelligence scaling: from learning over existing knowledge, to learning from action outcomes, and ultimately to participating in the construction, testing, and revision of the structures through which new knowledge is discovered. Code: https://github.com/Gen-Verse/DFM-Plans",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15973",
+        "external_id": "2609.15973"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15973",
+        "external_id": "2609.15973"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Gen-Verse/DFM-Plans",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ling Yang",
+      "Zhenfei Yin",
+      "Yingcheng Wu"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787598Z",
+    "dedup_keys": [
+      "arxiv:2609.15973",
+      "title:discovery discovery ended foundation intelligence models open toward",
+      "github:gen-verse/dfm-plans"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.472,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "17cd3b2771a91456",
+    "kind": "paper",
+    "title": "Kaininja: Extending Native 3D Generators to the Part Level",
+    "summary_en": "Native 3D generators turn one image into a single mesh. TRELLIS.2 and its peers deliver high-fidelity non-watertight geometry with materials, but the output is one fused object, while downstream work such as editing, rigging and simulation operates on part-level assets. A naive idea is to run a 3D segmentation network on the fused mesh that TRELLIS.2 generates, but such pipelines are slow and bounded by the accuracy of the segmentation. We want a simple way to extend an existing native 3D generator to the part level. But we face a critical problem: the O-Voxel grid stores one sheet of surface per voxel, so a single volume cannot represent the interface where two parts touch, at any resolution. We introduce a dual-volume representation to solve this problem and put forward KaiNinja, a part-level extension of TRELLIS.2 built on a dual-volume form of its O-Voxel representation. KaiNinja keeps the generation speed and quality of TRELLIS.2 while extending it to the part level, with no mask or segmenter in the pipeline. Its training data come from sources of many kinds, including CAD models and assets authored by an LLM-driven agent; to our knowledge it is the first 3D generative model trained on agent-authored part data. Surprisingly, we also find that whole-object fidelity improves over the same backbone fine-tuned on the same dataset. Against part generation pipelines of different paradigms, it lowers whole-object Chamfer distance by 40% and raises strict part F-score by 16%.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15659",
+        "external_id": "2609.15659"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15659",
+        "external_id": "2609.15659"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AlayaLab/KaiNinja",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ruihan Yu",
+      "Lian Fu",
+      "Muyao Niu",
+      "Zheng-hui Huang",
+      "Yu-Ju Tsai",
+      "Sho Kuno",
+      "Fengbo Lan",
+      "Yonghao Yu",
+      "Erwin Wu",
+      "Ming-Hsuan Yang",
+      "Kaipeng Zhang",
+      "Zhixiang Wang"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787630Z",
+    "dedup_keys": [
+      "arxiv:2609.15659",
+      "title:extending generators kaininja level native part the",
+      "github:alayalab/kaininja"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 8,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.425,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "github_stars": 4.394,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "41892571694f64f7",
+    "kind": "paper",
+    "title": "Omni-Streaming Thinking",
+    "summary_en": "Streaming omni-modal models must decide what and when to answer from the video chunks and synchronized audio observed so far. Visual cues often support an interpretation before an utterance or sound event is complete. If that interpretation enters memory as a fact, later reasoning can keep relaying it even after audio contradicts it. We call this failure premature cross-modal commitment. We propose Omni-Streaming Thinking (OST), which generates structured outputs that include evidence observed so far, forecasts of future evidence, and claims based on this evidence. Each claim is initially marked as pending and linked to a future verification interval. Audio and visual evidence are stored separately, and OST checks a claim against the evidence from the specified modality at the end of the verification interval. When contradictory evidence is detected, a refutation process reduces the influence of the claim and its dependent states, and then guides a state update using the new evidence. An answer gate decides whether the answer-critical claims meet the conditions for giving a response. Using a frozen Qwen3-Omni-30B-A3B-Instruct backbone with lightweight adaptation, OST outperforms the strongest open baselines on five streaming and audio-visual benchmarks by more than 10% relative on average. We also introduce OST-DiagBench, which holds video fixed and edits audio to test agreement, absence, contradiction, coexistence, and subtitle-speech conflict. OST reaches d-prime = 2.95, compared with at most 1.38 for open baselines, while reducing vision-induced auditory hallucinations.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15128",
+        "external_id": "2609.15128"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15128",
+        "external_id": "2609.15128"
+      }
+    ],
+    "actors": [
+      "Enjun Du",
+      "Siyi Liu",
+      "Ziyu Zheng",
+      "Jingyu Li",
+      "Yiwen Guo",
+      "Yongqi Zhang",
+      "Difan Zou"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787646Z",
+    "dedup_keys": [
+      "arxiv:2609.15128",
+      "title:omni streaming thinking"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.031,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "697e14685d329eae",
+    "kind": "paper",
+    "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+    "summary_en": "Digital agents must often adapt to new environments whose interfaces, tools, and failure modes are not fully captured by pretrained models. We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences. It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies. The resulting memory is frozen and can be directly reused for downstream tasks without updating model parameters. Experiments on OSWorld-v2 and Agent's Last Exam show that RSIAgent substantially improves strong open-source models, enabling Kimi-K3 and GLM-5.3 to outperform frontier closed-source models including GPT-6.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15364",
+        "external_id": "2609.15364"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15364",
+        "external_id": "2609.15364"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AetherLabsAI/RSIAgent",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Sibo Zhu",
+      "Shicheng Fan",
+      "Xinyue Wang",
+      "Wenyi Wu",
+      "Kun Zhou",
+      "Biwei Huang"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787665Z",
+    "dedup_keys": [
+      "arxiv:2609.15364",
+      "title:autonomous environments exploration for improvement new recursive rsiagent self",
+      "github:aetherlabsai/rsiagent"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 25.719,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "04521f415e77f497",
+    "kind": "paper",
+    "title": "LLaDA-UI: Bringing Block-wise Diffusion to Vision-Language GUI Agents",
+    "summary_en": "Diffusion large language models (dLLMs) achieve high decoding efficiency through block-parallel, arbitrary-order generation, making them attractive for latency-sensitive applications. GUI agents represent a natural testbed for this paradigm, as they must repeatedly perceive screen states and emit structured, spatially grounded actions in real time. However, whether dLLMs can be extended into capable multimodal GUI agents while preserving their parallel decoding advantage remains an open question. We present LLaDA-UI, a 16.7B-parameter MoE-based, block-wise diffusion vision-language GUI agent. LLaDA-UI follows a two-stage training pipeline: general multimodal pre-training aligns a native-resolution vision encoder with the LLaDA2.0-mini-base diffusion language backbone, followed by GUI-agent supervised fine-tuning on diverse mobile, desktop, web, and grounding data. Across widely adopted grounding benchmarks and navigation benchmarks spanning multiple platforms, LLaDA-UI substantially outperforms Qwen2.5-VL-7B and surpasses Qwen3-VL-8B on four of six reported GUI benchmarks. These results establish block-wise diffusion as a practical generative paradigm for multimodal GUI agents.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13287",
+        "external_id": "2609.13287"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13287",
+        "external_id": "2609.13287"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/inclusionAI/LLaDA-UI",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhangxuan Gu",
+      "Haoxing Chen",
+      "Qi Qin",
+      "Yi Xin",
+      "Kai Gan",
+      "Lin Liu",
+      "Long Cui",
+      "Xiaomei Wang",
+      "Beitong Zhou",
+      "Yunzhu Zhang",
+      "Zhengwen Zeng",
+      "Changlong Gao",
+      "Weizhi Chen",
+      "Rongchao Zhang",
+      "Haoyuan Wu",
+      "Shuheng Shen",
+      "Changhua Meng",
+      "Weiqiang Wang",
+      "Jianguo Li",
+      "Zhenzhong Lan"
+    ],
+    "published_at": "2026-09-09T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787684Z",
+    "dedup_keys": [
+      "arxiv:2609.13287",
+      "title:agents block bringing diffusion gui language llada vision wise",
+      "github:inclusionai/llada-ui"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 9,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 22.824,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 4.605,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -9.348
+    }
+  },
+  {
+    "id": "47da920b793fb29d",
+    "kind": "paper",
+    "title": "When Agents Slow Down: Understanding LLM Agents' Test-Time Strategies via Elo-per-token Analysis",
+    "summary_en": "Large language model (LLM) agents allocate test-time compute adaptively as they revise solutions, use tools, explore alternatives, and decide when to stop. This test-time strategy makes it difficult to measure how agent performance scales. We study open-ended tasks that provide continuous scores for intermediate submissions, making progress observable throughout long trajectories. We propose Elo-per-token analysis, which tracks the best solution found at each token budget and uses a Bradley-Terry model to aggregate within-task orderings into Elo ratings across tasks with different score scales. We apply it to four general-purpose agents on four open-ended benchmarks, with sessions of up to 100M tokens, and to three feedback-driven LLM optimization harnesses in controlled single-task interventions. Independent sampling provides a theoretically characterized reference, for which Elo grows linearly with log compute. Against this reference, agents can initially convert tokens into Elo faster than independent sampling, but their marginal gains diminish and eventually fall below the reference. In contrast, the strongest historical human contestants improve superlinearly over contest time on shared AtCoder Heuristic Contest tasks, providing evidence of continual learning and substantial headroom after agents slow down. We define the scaling inflection point as the per-session budget where marginal Elo gains match the independent-sampling reference. Using this point as the per-session budget, we split 100M tokens across parallel sessions on FrontierCS Polyomino Packing, gaining +264 Elo over one long session and +355 over ten short sessions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15309",
+        "external_id": "2609.15309"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15309",
+        "external_id": "2609.15309"
+      }
+    ],
+    "actors": [
+      "Kaiyuan Liu",
+      "Qiuyang Mang",
+      "Bo Peng",
+      "Wenhao Chai",
+      "Hanchen Li",
+      "Shreyas Pimpalgaonkar",
+      "Luke Zettlemoyer",
+      "Alex Dimakis",
+      "Alvin Cheung"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787701Z",
+    "dedup_keys": [
+      "arxiv:2609.15309",
+      "title:agents agents analysis down elo llm per slow strategies test time token understanding via when"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 21.486,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "c8959c2dd61d6c16",
+    "kind": "paper",
+    "title": "Not All Prompts Are Equal: Exploration-Guided Prompt Scaffolding for Multimodal Reinforcement Post-Training",
+    "summary_en": "Training prompts in online reinforcement learning (RL) differ substantially in how informative they are for the current policy: some are already saturated while others are too difficult to yield reliable learning signals, yet both receive equal rollout budget under standard training. We propose an exploration-guided prompt scaffolding framework that adapts the training prompt distribution dynamically throughout RL post-training of multimodal large language models (MLLMs). Central to our approach is the Exploration Potential Score (EPS), a lightweight rollout-based proxy for prompt utility derived from KL-regularized policy improvement theory, computable directly from on-policy rollout statistics without additional overhead. Rather than discarding low-utility prompts, we use a teacher model to generate scaffolded rewrites that preserve the original task intent while making subsequent training more informative, reframing teacher supervision as training-data refinement rather than output imitation. Integrated with GRPO on Geo3K and MMK12, our method consistently outperforms the baseline on both in-domain and out-of-distribution benchmarks, achieving up to 9.7\\% relative improvement in-domain and gains of 11.5\\% on MathVision and 11.1\\% on MMMU-Pro.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15051",
+        "external_id": "2609.15051"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15051",
+        "external_id": "2609.15051"
+      }
+    ],
+    "actors": [
+      "Yuanhao Yue",
+      "Qianli Ma",
+      "Chengyu Wang",
+      "Haoting Wang",
+      "Lei Shen",
+      "Jun Huang"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787717Z",
+    "dedup_keys": [
+      "arxiv:2609.15051",
+      "title:all are equal exploration for guided multimodal not post prompt prompts reinforcement scaffolding training"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 20.028,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "d7af35d6d6eee941",
+    "kind": "paper",
+    "title": "HazardAuditor: From Executable Threats to Safer Computer-Use Agents",
+    "summary_en": "Computer-use agents increasingly interact with browsers, terminals, file systems, and external services, introducing safety risks that emerge through runtime behavior rather than generated content alone. Existing guard models target static prompts and responses and are poorly suited to agent execution; existing executable safety platforms produce evaluation verdicts rather than the normalized supervision a guard model needs to learn across heterogeneous agent frameworks. We introduce HazardAuditor, an execution-grounded framework that closes both gaps. Its infrastructure runs heterogeneous agents (Claude Code, Codex, Hermes, and OpenClaw) in controlled environments and normalizes their interactions into a canonical event representation for cross-framework supervision. We further observe that token-level post-training objectives create a structural mismatch for generative guards, causing longer rationales to dominate gradient updates. Guard Policy Optimization (GuardPO) addresses this by converting deterministic safety outcomes into sequence-level advantages and normalizing rationale and verdict regions, making the safety decision the effective unit of optimization. Across multiple benchmarks and heterogeneous computer-use systems, HazardAuditor improves accuracy by up to 16.5 percentage points over the strongest prior guard. Code, models, and evaluation artifacts will be available at https://yunhao-feng.github.io/HazardAuditor/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15134",
+        "external_id": "2609.15134"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15134",
+        "external_id": "2609.15134"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Yunhao-Feng/HazardAuditor",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yunhao Feng",
+      "Ruixiao Lin",
+      "Ming Wen",
+      "Yanming Guo",
+      "Xingjun Ma",
+      "Yutao Wu",
+      "Xinhao Deng",
+      "Shouling Ji"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787750Z",
+    "dedup_keys": [
+      "arxiv:2609.15134",
+      "title:agents computer executable from hazardauditor safer threats use",
+      "github:yunhao-feng/hazardauditor"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 18.47,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "f4635495c4ebe12a",
+    "kind": "paper",
+    "title": "Pick Your Poison: Learning to Select Poison Sets for Stronger LLM Backdoor Attacks",
+    "summary_en": "Backdoor poisoning attacks add poisoned examples to otherwise-clean finetuning data, pairing a trigger with a target behavior that the model learns to produce when the trigger appears. Existing evaluations typically fix the number of poisoned examples and sample them at random from a candidate pool. We show that this can severely underestimate worst-case vulnerability: across three LLaMA-3-8B backdoor settings, holding the model, clean data, and poison count fixed, attack success ranges from 3% to 80% depending only on which poison set is chosen.\n  We formalize poison selection as oracle-budgeted set optimization and introduce SAILS (Set-level Audit-Informed Iterative Learned Selection), which learns a set scorer from a few hundred finetune-and-evaluate runs, ranks millions of candidate sets, and audits only a small shortlist. SAILS improves held-out attack success by 30 percentage points on average over the strongest influence baselines, transfers from small-scale to full-scale finetuning, and extends to code-generation, agentic, and API-only backdoors.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15029",
+        "external_id": "2609.15029"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15029",
+        "external_id": "2609.15029"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/aashiqmuhamed/poison-set-selection",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Aashiq Muhamed",
+      "Mona T. Diab",
+      "Virginia Smith",
+      "Andrew Ilyas",
+      "Matthew Jagielski"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787766Z",
+    "dedup_keys": [
+      "arxiv:2609.15029",
+      "title:attacks backdoor for learning llm pick poison poison select sets stronger your",
+      "github:aashiqmuhamed/poison-set-selection"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 17.894,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "032ae39a7b474333",
+    "kind": "paper",
+    "title": "Realtime-Venus: A full-duplex interaction system with asynchronous delegation",
+    "summary_en": "Natural interaction in digital and physical environments requires continuous perception and timely responses. Spoken dialogue relies on acoustic and linguistic cues, while video interaction also requires grounding the conversation in evolving visual context. We present Realtime-Venus, a proactive full-duplex interaction system with two separately trained 9B models: Realtime-Venus-Omni for audio-visual interaction and Realtime-Venus-Audio for spoken interaction. Each model serves as a complete conversational frontend, integrating continuous perception, conversational control, and native speech generation through a shared causal timeline for user inputs, model outputs, and delegation events.\n  A dual-loop runtime coordinates live interaction with background reasoning and tool execution. Foreground interaction continues while Realtime-Venus-Harness executes tasks asynchronously and returns results for integration into the ongoing dialogue.\n  Both models follow a common post-training recipe combining offline understanding, proactive full-duplex trajectories, and delegation workflows.\n  Among the evaluated online models, Realtime-Venus-Omni achieves the highest scores on six of eight video benchmarks, including StreamingBench (70.2%), OVO-Bench (64.7%), and Daily-Omni (81.3%). Across eight audio understanding and spoken question answering benchmarks, Realtime-Venus-Audio leads the compared models on MMAU (78.0%), MMAU-Pro (63.2%), Llama Questions (83.8%), and Speech CMMLU (67.8%), while matching the best VoiceBench AlpacaEval score of 4.81. On Full-Duplex-Bench v1.5, Realtime-Venus-Audio responds to 75% of user interruptions and achieves continuation rates of 97%, 88%, and 86% under backchannels, other-directed speech, and background speech, respectively, exceeding Gemini 3.1 Live and GPT-4o on all three continuation metrics.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13814",
+        "external_id": "2609.13814"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13814",
+        "external_id": "2609.13814"
+      }
+    ],
+    "actors": [
+      "Ruixiang Zhao",
+      "Hualei Wang",
+      "Renhe Sun",
+      "Enzhi Zhou",
+      "Jincenzi Wu",
+      "Xujie Song",
+      "Kexin Shi",
+      "Zihang Liu",
+      "Pengcheng Zhu",
+      "Jiayi Zhou",
+      "Baoyue Zhang",
+      "Changhao Zhang",
+      "Zitong Wang",
+      "Jinhong Wang",
+      "Tong Niu",
+      "Jingjing Liu",
+      "Junan Lin",
+      "Haolin He",
+      "Hengshuo Chu",
+      "Yuhui Chen",
+      "Jian Liu",
+      "Yuge Huang",
+      "Junliang Xing",
+      "Yuntao Wang",
+      "Weiqiang Wang",
+      "Chun Yu",
+      "Yuanchun Shi"
+    ],
+    "published_at": "2026-09-12T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787735Z",
+    "dedup_keys": [
+      "arxiv:2609.13814",
+      "title:asynchronous delegation duplex full interaction realtime system venus with"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 15.242,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.848
+    }
+  },
+  {
+    "id": "d06395e01fd0b27b",
+    "kind": "paper",
+    "title": "HarnessBandit: Joint Learnability-Transferability Scheduling for Multi-Harness Agentic Reinforcement Learning",
+    "summary_en": "Language-model agents are increasingly deployed through diverse harnesses that differ in system prompts, tool schemas, control loops, and trajectory formats. The same model can perform unevenly across these interfaces, making robustness to harness variation an important objective. A natural approach is to train a shared policy through multiple harnesses, but doing so introduces a scheduling problem: each training step should favor a harness that currently provides a useful learning signal while also producing an update that benefits the other harnesses. We develop HarnessBandit, an online scheduler that selects one harness per optimizer step. After a group-relative policy optimization (GRPO) update, it observes learnability -- the mean absolute advantage on the batch -- and transferability -- the cosine between a low-dimensional gradient sketch of the current harness and exponential moving averages of the remaining harnesses. The two signals are fused after pooled sliding-window min-max normalization and sampled with a visit-dependent bonus and an explicit exploration floor. We train Qwen3.5-2B across six harnesses on ClawGym and evaluate on PinchBench (held-out tasks, in-distribution OpenClaw) and ClawEval (held-out tasks and harness). HarnessBandit improves over mixed-batch multi-harness training on both benchmarks, while training diagnostics indicate that learnability and transferability provide distinct, evolving signals.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13739",
+        "external_id": "2609.13739"
+      }
+    ],
+    "actors": [
+      "Hongliang Wei (Harbin Institute of Technology",
+      "Alibaba Cloud)",
+      "Xiaobing Tu (Alibaba Cloud)",
+      "Yinggui Wang (Alibaba Cloud)",
+      "Zhengxi Liu (Alibaba Cloud)",
+      "Rongkun Xue (Alibaba Cloud)",
+      "Jinkui Ren (Alibaba Cloud)",
+      "Xiantao Zhang (Alibaba Cloud)",
+      "Debin Zhao (Harbin Institute of Technology)",
+      "Xiaopeng Fan (Harbin Institute of Technology)"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.362420Z",
+    "dedup_keys": [
+      "arxiv:2609.13739",
+      "title:agentic for harness harnessbandit joint learnability learning multi reinforcement scheduling transferability"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 13.902,
+    "score_breakdown": {
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "4cd078ad1e9d686e",
+    "kind": "paper",
+    "title": "Enabling Creative Exploration for Vibe Design Agents",
+    "summary_en": "Vibe design agents turn natural-language briefs into rendered interfaces and frontend code. Yet a useful design agent should do more than produce one valid page: it should help users explore coherent alternatives. Increasing token-level temperature is a blunt solution because it varies aesthetic decisions and syntax-sensitive code at the same time. We instead separate exploration from implementation through an inference architecture that makes design direction an explicit intermediate decision. Inspired by Verbalized Sampling, a pre-pass proposes structured design specifications with typicality scores, an external selector samples one, and the downstream generator realizes the selected specification together with the original request under fixed settings. We apply this approach to UI themes and visual-asset prompts. Across 168 prompts, with 1,255 paired comparisons per temperature for each intervention, theme sampling broadens observed selection coverage and screenshot variation, while LLM-judge preferences vary across interventions, prompt complexity, and viewport. In an online experiment with more than 300,000 tasks, the observed code-export increase remains statistically uncertain, while fewer negative feedback events coexist with more correction interactions and modest operational costs. Together, these findings identify structured design specifications as a practical control point for exploring alternative UI concepts while keeping downstream generation settings fixed.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15078",
+        "external_id": "2609.15078"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15078",
+        "external_id": "2609.15078"
+      }
+    ],
+    "actors": [
+      "Yifan Zhang",
+      "Nghi D. Q. Bui",
+      "Georgios Evangelopoulos",
+      "Arnaud Benard"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787782Z",
+    "dedup_keys": [
+      "arxiv:2609.15078",
+      "title:agents creative design enabling exploration for vibe"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.697,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.848
+    }
+  },
+  {
+    "id": "86acae5fac5114b3",
+    "kind": "paper",
+    "title": "Attention-DP3: Spatially Object-aware 3D Diffusion Policy via Geometry-aligned Attentional Conditioning",
+    "summary_en": "3D point-cloud observations are inherently ambiguous in complex, cluttered manipulation scenes, where target objects may be partially occluded or tightly intermingled with visually similar distractors. As a result, standard 3D diffusion policies often struggle to localize and exploit task-relevant geometry as scene complexity grows. We propose Attention-DP3, a spatially object-aware 3D diffusion policy that injects object-level geometric cues via attention while keeping the DP3 diffusion backbone unchanged. Our pipeline performs open-vocabulary 2D segmentation on RGB images, then lifts predicted target masks into 3D using calibrated camera geometry to obtain object-centric geometric priors. We incorporate these cues through Tri-field Attentional Conditioning, which constructs three complementary fields: (i) a targetness field to anchor the target object, (ii) an intra-target saliency field to emphasize task-relevant geometry within the target, and (iii) a backgroundness field to suppress distractors and clutter. Experiments on Adroit, DexArt, MetaWorld, and the real-world SO101 platform show consistent improvements over DP3, achieving state-of-the-art performance across benchmarks. Notably, as distractor objects increase, DP3 drops sharply, whereas Attention-DP3 remains stable and outperforms DP3 by up to 31\\% under heavy clutter. The code is publicly available at https://github.com/zhangzhongbo2213/Attention-DP3.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13318",
+        "external_id": "2609.13318"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13318",
+        "external_id": "2609.13318"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zhangzhongbo2213/Attention-DP3",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Changbo Yan",
+      "Zhongbo Zhang",
+      "Zaibin Zhang",
+      "Yifan Wang",
+      "Lijun Wang",
+      "Huchuan Lu"
+    ],
+    "published_at": "2026-09-10T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787813Z",
+    "dedup_keys": [
+      "arxiv:2609.13318",
+      "title:aligned attention attentional aware conditioning diffusion dp3 geometry object policy spatially via",
+      "github:zhangzhongbo2213/attention-dp3"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 8.916,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -7.848
+    }
+  },
+  {
+    "id": "7794969f4ea16555",
+    "kind": "paper",
+    "title": "Agent as Policy for Robotic Manipulation",
+    "summary_en": "We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training. We introduce Agent as Policy (AGP), which places task planning and execution under the agent's control. Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes. This brings the agent's reasoning and programming capabilities into continuous interaction with the physical world. We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects. These include assembly from human videos, block construction from goal images, die reorientation, targeted throwing, and bimanual towel folding. AGP achieves success rates of 100%, 100%, and 80% on three block construction configurations. These findings establish a path for general-purpose agents to act as robotic policies, extending their autonomy to physical manipulation through runtime reasoning, programming, and interaction.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.12541",
+        "external_id": "2609.12541"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.12541",
+        "external_id": "2609.12541"
+      }
+    ],
+    "actors": [
+      "Mengzhao Jia",
+      "Yang Lin",
+      "Xixin Zhang",
+      "Zhihan Zhang",
+      "Xiaobai Liu",
+      "Meng Jiang"
+    ],
+    "published_at": "2026-09-11T00:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:44.787795Z",
+    "dedup_keys": [
+      "arxiv:2609.12541",
+      "title:agent for manipulation policy robotic"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 8.197,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.348
+    }
+  },
+  {
+    "id": "ba93ba5f0ef752c4",
+    "kind": "paper",
+    "title": "A Hybrid Hierarchical 1D-CNN-BiLSTM Framework for Extractive Summarization of Biomedical and Clinical Text",
+    "summary_en": "Large language models have made abstractive summarization remarkably fluent, but generated summaries can hallucinate facts, posing serious risks in biomedical and clinical domains. We address this by removing generation from the pipeline and framing summarization as extractive sentence selection. Our Hybrid Hierarchical CNN-LSTM Summarizer uses stacked multi-kernel convolutions to compose sentence-level embeddings into richer inter-sentence representations, followed by a bidirectional LSTM to model long-range dependencies across the document. A lightweight scoring head assigns per-sentence importance scores and is trained end-to-end with binary cross-entropy against oracle extractive labels. At inference, a dynamic mean-plus-standard-deviation threshold with a top-3 fallback selects sentences directly from the source and chronologically reorders them into the final summary. Since every output sentence is copied from the input, the model avoids generation-induced factual drift. On PubMed, our architecture outperforms isolated CNN and LSTM baselines, while ablations show that wider convolutional receptive fields improve sentence scoring. On MIMIC-CXR and MIMIC-IV BHC, the model performs well on unstructured narratives but defaults toward positional baselines on highly templated reports. These results suggest that structural constraints can provide a reliable path toward factually grounded summarization systems that are trustworthy by design rather than by correction.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13481",
+        "external_id": "2609.13481"
+      }
+    ],
+    "actors": [
+      "Saad Bin Ather",
+      "Muhammad Saif",
+      "Ali Hassan Khan",
+      "Manzer Abbas",
+      "Hajra Waheed"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.353371Z",
+    "dedup_keys": [
+      "arxiv:2609.13481",
+      "title:and bilstm biomedical clinical cnn extractive for framework hierarchical hybrid summarization text"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "dbe4038db4fdb163",
+    "kind": "paper",
+    "title": "Causal Analysis and Mitigation of Spurious Onsets in Full-Duplex Speech LLMs",
+    "summary_en": "Speech-to-speech LLMs like Moshi, and its derivative PersonaPlex, can listen and speak concurrently through full-duplex generation. However, they can begin speaking inappropriately during prolonged user silence: under digital-zero input, Moshi and PersonaPlex initiate speech in 12/40 and 11/40 five-minute continuations, respectively. What causes this spurious speech? We investigate two hypotheses: either repeated sampling selects speech despite persistently low onset probabilities, or conditioning on the model's nonspeech outputs causes an abrupt spike in onset probability. We find that, at every observed onset, speech probability spikes by over nine orders of magnitude in one 80-ms frame, supporting the latter hypothesis. Then, to suppress these onsets without blocking genuine responses, we ask a causal counterfactual question: is the model responding to user speech, or would its next-token distribution remain similar if the preceding user input were muted? Accordingly, we suppress onsets whose distributions change little under this intervention. Across 40 held-out trials per model with realistic microphone noise, our method suppresses 13/13 Moshi and 9/9 PersonaPlex spurious onsets, while preserving 40/40 genuine responses per model. Our inference-time method requires no retraining and runs in real-time, with 95th-percentile decision time below 61 ms, within the 80-ms frame budget. Our code is available at https://github.com/KentoNishi/icassp27-spurious-onsets.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13445",
+        "external_id": "2609.13445"
+      }
+    ],
+    "actors": [
+      "Kento Nishi"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.353239Z",
+    "dedup_keys": [
+      "arxiv:2609.13445",
+      "title:analysis and causal duplex full llms mitigation onsets speech spurious"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "f10f82777e22c425",
+    "kind": "paper",
+    "title": "Clinical Reasoning Under a Partially Observed Objective in Cone Beam CT Report Generation",
+    "summary_en": "Maxillofacial report generation from cone beam computed tomography is scored here by a composite objective placing 80% of its weight on a large language model judgement of factual entailment and 20% on lexical overlap, of which only the lexical fifth is visible during development. The grader's BLEU-4 and METEOR routines are reproduced in pure Python and match the reference to machine precision, and an offline entailment surrogate, which tells a report written for one patient from one written for another at an area under the curve of 0.987, makes the composite objective cheap enough to optimise directly. Over the 622-case public release, a report selected against the visible lexical ranking scores 0.2909, whereas one selected against the composite objective scores 0.4122, because pursuing n-gram overlap drives entailment precision from 0.522 down to 0.266. A 29 million parameter encoder fine-tuned on the release reaches a prevalence-weighted out-of-fold area under the curve of 0.486 over 985 statements, indistinguishable from the corpus prior, while nine numbers read from the image header reach 0.945 for mandible coverage and 0.872 for condyle coverage, and acquisition centre alone predicts sentence choice at 0.718 against 0.663 for the image-derived model, identifying dictation convention rather than anatomy as the quantity the lexical metrics reward. The delivered system emits eight unconditional statements and five gated on header geometry under polarity, laterality and tooth-level consistency constraints, and reaches METEOR 0.3542 over 50 held-out cases from an unseen centre. The dataset and code are available at https://github.com/GIND123/CBCT-Clinical-Reasoner",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13238",
+        "external_id": "2609.13238"
+      }
+    ],
+    "actors": [
+      "Ajo Babu George",
+      "Govind Arun",
+      "Sidharth N Krishna",
+      "Uma Ranjan"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.353068Z",
+    "dedup_keys": [
+      "arxiv:2609.13238",
+      "title:beam clinical cone generation objective observed partially reasoning report under"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "bda7bce545bf7138",
+    "kind": "paper",
+    "title": "Hindsight Bias in Clinical Temporal Reasoning: How Future Data Exposure Affects Large Language Model Judgment",
+    "summary_en": "Clinical decisions are prospective, but clinical language models are often evaluated on retrospective records that reveal the final diagnosis, treatment response, and outcome. Such evaluations may reward the use of future information rather than reasoning under the uncertainty present at the decision point. We introduce a paired benchmark for measuring outcome-conditioned shifts consistent with hindsight bias in clinical temporal reasoning. It contains 171 case reports from the PubMed Central Open Access Subset---40 sepsis and 131 GLP-1/diabetes cases---represented as both textual narratives and human-annotated and LLM-generated textual time series (TTS). For each case, questions are tied to a clinically meaningful cutoff and paired with a prospective reference answer and an outcome-consistent \\emph{hindsight trap}. Models answer each question using either a TTS truncated at the cutoff or the complete timeline; additional conditions vary the narrative source (original or synthetic) and TTS annotation source (human or LLM). We evaluate accuracy (Acc), hindsight trap rate (HTR), answer instability rate (AIR), and hindsight bias rate (HBR), each of which captures different signals of hindsight bias. Across GPT 5.6 Sol, Gemma 4, GLM 5.2, and Opus 5, full timeline exposure produces consistent hindsight-sensitive shifts, while temporal masking reduces bias without lowering accuracy.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13454",
+        "external_id": "2609.13454"
+      }
+    ],
+    "actors": [
+      "Misaki Matsuura",
+      "Sayantan Kumar",
+      "Ojas Kadam",
+      "Jeremy C. Weiss"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.353303Z",
+    "dedup_keys": [
+      "arxiv:2609.13454",
+      "title:affects bias clinical data exposure future hindsight how judgment language large model reasoning temporal"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "314ba71e9bd6a442",
+    "kind": "paper",
+    "title": "Lexical Prompt Compression for Large Language Models: A Training-Free, Deterministic Pipeline with Empirical Pareto Analysis Across Eleven Task Categories",
+    "summary_en": "Recent advances in large language models (LLMs) have made prompts increasingly large and complex. Techniques such as chain-of-thought reasoning (Wei et al., 2022) and in-context learning (Brown et al., 2020) frequently push real-world prompts past several thousand tokens, increasing inference cost and latency. Learned compression methods such as LLMLingua (Jiang et al., 2023) and Selective Context (Li et al., 2023) achieve high compression ratios but require auxiliary language models and are non-deterministic. We ask a complementary question: how far can a training-free, fully deterministic, CPU-only pipeline based on classical lexical NLP be pushed before output quality degrades significantly? Eleven toggleable lexical transformations - stopword removal, filler-phrase deletion, contraction and abbreviation substitution, part-of-speech-based pruning, lemmatization, WordNet-driven synonym shortening, and named-entity preservation - are assembled into a configurable pipeline. Fifteen configurations are evaluated on 1,242 English-only prompts from six sources (Dolly-15k, LMSYS-Chat-1M, WildChat-1M, MMLU, GSM8K, HellaSwag), spanning eleven automatically derived task categories, yielding 18,630 paired GPT-4o-mini completions. Output preservation is measured using BLEU, ROUGE-1/2/L, BERTScore-F1, and SentenceBERT cosine similarity. The most aggressive configuration achieves a mean token reduction of 40.3% (sigma = 9.2) at a BERTScore-F1 of 0.876 against the original-prompt output; a stopword-only configuration achieves 29.6% reduction at 0.913. The compression-versus-fidelity Pareto frontier is characterized per task category, with commonsense reasoning a systematic failure mode under aggressive compression. All code, prompts, and per-cell results are released for reproducibility.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13154",
+        "external_id": "2609.13154"
+      }
+    ],
+    "actors": [
+      "Shamin Chokshi"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.352917Z",
+    "dedup_keys": [
+      "arxiv:2609.13154",
+      "title:across analysis categories compression deterministic eleven empirical for free language large lexical models pareto pipeline prompt task training with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "fe7ed262f354f495",
+    "kind": "paper",
+    "title": "PhysMent: An Interactive Approach For LLM Reasoning In Physics Problems",
+    "summary_en": "Large language models (LLMs) perform strongly on static science benchmarks, yet their ability to reason about the physical world through active experimentation remains poorly understood. We introduce PhysMent, a benchmark that evaluates LLM physical reasoning via iterative, toolmediated interaction with a MuJoCo physics simulator. Unlike static benchmarks that supply all quantities upfront, PhysMent requires models to discover information by applying forces, querying object states, advancing time, and modifying scene geometry before answering. The benchmark comprises 105 scenes of classical mechanics, organized across four difficulty regimes (Easy/Hard and Single/Multi), three scene modalities (standard, object creation, hidden objects), and a scene-manipulation category, evaluated with a six-dimensional scoring framework. Results show that current models perform reasonably well on qualitative single-concept tasks (up to 80% accuracy) but degrade substantially on quantitative tasks that demand precise, multi-step experimental procedures: most models fall below 30% on the hardest single-concept category, where the bottleneck is procedural (adaptive multi-step tool use) rather than conceptual load. Across the seven models, accuracy ranges from 25% to 67%, with failures due to premature answer submission, inefficient exploration, and inconsistent grounding in simulator feedback rather than conceptual gaps.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13152",
+        "external_id": "2609.13152"
+      }
+    ],
+    "actors": [
+      "Joseph Chan",
+      "Utkarsh Jha",
+      "Xiyin Yang",
+      "Abhinav Jarajapu",
+      "Anik Sahai",
+      "Eddie Hu",
+      "Robin Jeshua Deepak",
+      "Stefano Saravalle",
+      "Aditya Shah"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.352833Z",
+    "dedup_keys": [
+      "arxiv:2609.13152",
+      "title:approach for interactive llm physics physment problems reasoning"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "653ff6bf191919d5",
+    "kind": "paper",
+    "title": "RFCLLM: Evaluating LLMs' Reasoning Ability of Network Protocol State Machines",
+    "summary_en": "Mapping textual specifications into formal representations is essential for ensuring the correctness of protocol designs and implementations. LLM-generated mappings, used for networking security or testing, are assumed to capture a perfect understanding of the specification, which may not hold in practice. The goal of this paper is to assess the extent to which LLMs can interpret the specification correctly. We examine the degree to which an LLM's implicit representation of a finite-state transition system-defined via natural language descriptions-aligns with a manually generated ground-truth model. We designed 4 tasks and 1482 task queries for 16 protocols. We evaluated different judge biases, observed the inherent difficulty gaps between tasks, looked into the effect of 4 context types, and the influence of protocol characteristics. Our work contributes to a step toward verifying whether LLMs can really be trusted in FSM (Finite State Machine) reasoning of protocol specifications.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13389",
+        "external_id": "2609.13389"
+      }
+    ],
+    "actors": [
+      "Anqi Chen",
+      "Dan Goldwasser",
+      "Cristina Nita-Rotaru"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.353123Z",
+    "dedup_keys": [
+      "arxiv:2609.13389",
+      "title:ability evaluating llms machines network protocol reasoning rfcllm state"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  },
+  {
+    "id": "17a01adf1ca17860",
+    "kind": "paper",
+    "title": "TestHallVQA: Exploring LVLMs' Document-Level Reasoning under Redundant Contexts from Scientific Exams",
+    "summary_en": "Large Vision--Language Models (LVLMs) are increasingly expected to perform visual question answering (VQA) over planar media. However, existing planar VQA benchmarks typically emphasize isolated challenges: some emphasize long-document understanding with limited reasoning depth, while others require complex visual reasoning but remain restricted to single-page, noise-free settings. Moreover, through theoretical analysis, we identify the impact of irrelevant visual tokens, which leads to measurable performance degradation but has received little attention with respect to systematic quantification. To address these limitations, we introduce TestHallVQA, a multi-image VQA benchmark that simultaneously embodies document-level scale and the difficulty of human examinations, while providing comprehensive task coverage. Leveraging TestHallVQA's ability to controllably inject multi-level contextual redundancy, we further propose a novel metric, F1-R\\textsuperscript{2}, which jointly quantifies LVLMs' computational reasoning capability and their evidence retrieval robustness against document-level redundancy. Extensive experiments and analyses on mainstream LVLMs reveal their latent deficiencies across multiple dimensions, offering concrete insights and directions for future research. The associated datasets, code, and complete theoretical derivations are available at https://github.com/yqyu2317/TestHallVQA-benchmark.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13158",
+        "external_id": "2609.13158"
+      }
+    ],
+    "actors": [
+      "Yongqi Yu",
+      "Yu Zhang"
+    ],
+    "published_at": "2026-09-15T04:00:00Z",
+    "first_seen_at": "2026-09-15T05:32:45.352994Z",
+    "dedup_keys": [
+      "arxiv:2609.13158",
+      "title:contexts document exams exploring from level lvlms reasoning redundant scientific testhallvqa under"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.902,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.098
+    }
+  }
+]
