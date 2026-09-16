@@ -1,0 +1,1744 @@
+[
+  {
+    "id": "735f0b18ba93fccb",
+    "kind": "paper",
+    "title": "Continual Learning Mechanisms Compose for Long-Horizon Memorization",
+    "summary_en": "Language models may need to internalize information that arrives over time and retain it through many subsequent updates. To study this challenge, we introduce long-horizon memorization, a setting in which a model learns 100 query-answer tasks through continual supervised fine-tuning without retaining earlier training examples or receiving task identifiers at inference. Sequential updates cause catastrophic forgetting, and no single continual learning mechanism we evaluate maintains strong retention at this horizon. We hypothesize that mechanisms addressing complementary sources of forgetting will be more effective when composed. We organize these compositions along two design dimensions. Data, function, and weight anchors specify what prior information each update should preserve, while low-rank allocation rules determine where successive updates are retained. To test this hypothesis systematically, we construct three distinct 100-task memorization datasets. We introduce task-level successive halving to search the combinatorial design space and use a factorial experiment to measure individual and interaction effects. Our best method combines all three anchors with merged LoRA, ranks among the top 3 methods in all datasets, and raises average final retention from 1.2% under naive sequential fine-tuning to 34.9%, a 28-fold improvement. The data anchor and merged LoRA provide the largest average gains and interact super-additively on all three datasets. Together, these results show that composing complementary mechanisms substantially improves long-horizon memorization beyond what any individual mechanism achieves.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.06986",
+        "external_id": "2609.06986"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.06986",
+        "external_id": "2609.06986"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/cozheyuanzhangde/compose-cl",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zheyuan Zhang",
+      "Alvin Zhang",
+      "Daniel Khashabi",
+      "Tianmin Shu"
+    ],
+    "published_at": "2026-09-07T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.858854Z",
+    "dedup_keys": [
+      "arxiv:2609.06986",
+      "title:compose continual for horizon learning long mechanisms memorization",
+      "github:cozheyuanzhangde/compose-cl"
+    ],
+    "signals": {
+      "hf_upvotes": 270,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 46.195,
+    "score_breakdown": {
+      "hf_upvotes": 44.817,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -13.841
+    }
+  },
+  {
+    "id": "0037edaee7f7f0f1",
+    "kind": "paper",
+    "title": "AI for Games in the Foundation Model Era",
+    "summary_en": "Foundation models, alongside advances in learned game-world models, are reshaping AI across the game lifecycle. Beyond playing games, recent systems model players and game dynamics, support design and development, adapt player-facing experiences at runtime, and evaluate resulting artifacts. Yet these directions have evolved largely separately, obscuring which capabilities transfer across settings and which remain tied to particular games, engines, interfaces, or player populations. We organize the literature into six roles according to the immediate use of AI output: playing and acting; modeling players and games; designing games; building and maintaining games; generating and adapting at runtime; and testing and evaluating games. For each role, we examine what structure is supplied by the game or workflow, what AI learns or produces, which capabilities and artifacts transfer across settings and roles, and what evidence supports the claims. We identify cross-role connections: trajectories train world models, learned environments provide experience for agents, design specifications drive executable implementations, and play or testing feedback guides revision. However, control schemes, rules, engine interfaces, state representations, and player contexts often remain setting-specific, so downstream claims require validation in the target setting. Evaluation is most standardized for bounded game playing and selected learned environments, while persistent state in learned worlds, repeated software revision, validated player modeling, sustained runtime adaptation, and representative automated testing remain less established. The central challenge is to reuse or transfer outputs and capabilities across roles while re-establishing evidence for effectiveness in the game-specific contexts where they are used.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.16679",
+        "external_id": "2609.16679"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16679",
+        "external_id": "2609.16679"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Eurekaleo/awesome-ai-for-games",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Meng Luo",
+      "Yanlin Li",
+      "Hao Li",
+      "Hongzhan Lin",
+      "Pengfei Zhou",
+      "Tianjie Ju",
+      "Ran Zhang",
+      "Yeying Jin",
+      "Mong-Li Lee",
+      "Wynne Hsu"
+    ],
+    "published_at": "2026-09-15T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.858949Z",
+    "dedup_keys": [
+      "arxiv:2609.16679",
+      "title:era for foundation games model the",
+      "github:eurekaleo/awesome-ai-for-games"
+    ],
+    "signals": {
+      "hf_upvotes": 39,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 23,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 46.026,
+    "score_breakdown": {
+      "hf_upvotes": 29.511,
+      "github_stars": 6.356,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.841
+    }
+  },
+  {
+    "id": "bd8488d4c4d73110",
+    "kind": "paper",
+    "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+    "summary_en": "Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs, then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, experience-acquisition autonomy, and environment-adaptation autonomy, to recursive meta-improvement. Next we examine RSI across scenarios (e.g., scientific discovery, embodied intelligence, software engineering), highlighting their distinct requirements and development speeds. Drawing on diverse industry practices and preliminary empirical evidence, we connect RSI research with practical systems and identify key challenges to achieving genuine RSI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.11873",
+        "external_id": "2609.11873"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.11873",
+        "external_id": "2609.11873"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/theseus-labs-rsi/awesome-rsi",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yi Duan",
+      "Ying Liu",
+      "Zirui Tang",
+      "Haodong Chen",
+      "Jun Zhou",
+      "Yumou Liu",
+      "Bangrui Xu",
+      "Yukai Wu",
+      "Sidi Chen",
+      "Yuhan Zhou",
+      "Haoyu Wang",
+      "Xiaoyou Yu",
+      "Shaokun Han",
+      "Xuzhou Zhu",
+      "Le Zhou",
+      "Bolin Lu",
+      "Wei Zhou",
+      "Jiachen Liu",
+      "Nuozhou Fang",
+      "Jiaxin Tian",
+      "Ruoyu Chen",
+      "Yuxuan Li",
+      "Kai Zuo",
+      "Kaiyan Zhang",
+      "Jiantao Qiu",
+      "Conghui He",
+      "Guoliang Li",
+      "Bowen Zhou",
+      "Zhiyuan Liu",
+      "Zhoufutu Wen",
+      "Jihua Kang",
+      "Xuanhe Zhou",
+      "Fan Wu"
+    ],
+    "published_at": "2026-09-10T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.858910Z",
+    "dedup_keys": [
+      "arxiv:2609.11873",
+      "title:built genuine humans improvement last recursive self the toward",
+      "github:theseus-labs-rsi/awesome-rsi"
+    ],
+    "signals": {
+      "hf_upvotes": 82,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 47,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 45.752,
+    "score_breakdown": {
+      "hf_upvotes": 35.351,
+      "github_stars": 7.742,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -9.341
+    }
+  },
+  {
+    "id": "e315e47d10c491f1",
+    "kind": "paper",
+    "title": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+    "summary_en": "We introduce and release ScienceBuddy, an interactive scientific research workspace that brings continually improving scientific agents into researchers' everyday workflows. ScienceBuddy supports researchers in carrying out scientific tasks while transforming their requests, feedback, and execution evidence into tasks and evaluation rubrics for continual learning. At its core is recursive-in-recursive self-improvement, a paradigm that couples harness evolution with model reinforcement learning: the inner recursion improves the harness with the model fixed, while the outer recursion trains the model under the improved harness. Harness evolution shapes training experience, and model learning creates new opportunities for harness adaptation. We present case studies of researcher interaction, harness refinement, and model learning, with the benchmark cases spanning four scientific task families. By releasing ScienceBuddy as a research product, we make this paradigm available to the scientific community and take a step toward discovery intelligence: scientific AI that advances through sustained collaboration with researchers and evolves alongside the research it supports. Website: http://science-buddy.io",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.17523",
+        "external_id": "2609.17523"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.17523",
+        "external_id": "2609.17523"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Gen-Verse/ScienceBuddy",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shuhan Xue",
+      "Jianyuan Zhong",
+      "Ziyuan Nan",
+      "Wenbin Li",
+      "Zhaochen Yu",
+      "Jinchao Ding",
+      "Qiang Gao",
+      "Pengyu Zhan",
+      "Yuntong Zhang",
+      "Tian Cheng",
+      "Zhenfei Yin",
+      "Yingcheng Wu",
+      "Ling Yang"
+    ],
+    "published_at": "2026-09-15T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.858984Z",
+    "dedup_keys": [
+      "arxiv:2609.17523",
+      "title:agents for improvement interactive recursive recursive sciencebuddy scientific self",
+      "github:gen-verse/sciencebuddy"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 36.409,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.841
+    }
+  },
+  {
+    "id": "5839057e020316e9",
+    "kind": "model",
+    "title": "audnai/penclaw-GLM-5.3-abliterated",
+    "summary_en": "text-generation, transformers, glm_moe_dsa, abliterated, uncensored, warlock, audn",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated",
+        "external_id": "audnai/penclaw-GLM-5.3-abliterated"
+      }
+    ],
+    "actors": [
+      "audnai"
+    ],
+    "published_at": "2026-09-01T17:52:24Z",
+    "first_seen_at": "2026-09-16T05:25:14.856461Z",
+    "dedup_keys": [
+      "hf:audnai/penclaw-glm-5.3-abliterated"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 65,
+      "hf_downloads": 142,
+      "hf_trending_score": 55.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 32.924,
+    "score_breakdown": {
+      "hf_trending": 24.152,
+      "hf_downloads": 9.926,
+      "hf_likes": 12.569,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -21.723
+    }
+  },
+  {
+    "id": "713ad6d6bd0a83b1",
+    "kind": "release",
+    "title": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
+    "summary_en": "Algorithms & Theory",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "google_research",
+        "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "google_research"
+    ],
+    "published_at": "2026-09-15T20:00:35Z",
+    "first_seen_at": "2026-09-16T05:25:16.817965Z",
+    "dedup_keys": [
+      "url:research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train",
+      "title:accelerating bottlenecks bypassing complex for inference retrieve search train with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.41,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.59
+    }
+  },
+  {
+    "id": "c801f673b5486b3a",
+    "kind": "paper",
+    "title": "Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States",
+    "summary_en": "As language models become more capable, long-term collaboration in learning, reasoning, and decision-making calls for a deeper understanding of the people they serve. Yet training such human-aware language models faces a fundamental supervision gap because current datasets for LLM assistant training contain few if any well-informed responses explicitly grounded in users' unspoken beliefs and goals. Scaling such supervision is inherently constrained, as users' underlying states are not directly observable. We thus propose the Mind2Dialogue framework to mitigate this gap by simulating users' mental states and turning them into privileged supervision for human-aware training. Specifically, we first propose a psychology-guided simulator that preserves personal characteristics while updating mental states through interaction to generate coherent conversations. The key idea is to enforce a shared evolving mental state that drives user behavior and guides an Oracle assistant's responses. Our privileged distillation then trains models on the Oracle's well-informed responses to assist users without direct access to their mental states at deployment. Moreover, we propose to evaluate human-aware learning by combining personalization and theory of mind, examining how models understand people and act on that understanding. Training on the full Mind2Dialogue corpus improves every reported personalization metric over the corresponding Qwen, Llama, and OLMo instruction-tuned baselines, including gains of 26.6 to 40.9 percentage points in preference-following generation. The gains extend to belief and action reasoning on Qwen and Llama, beyond personalized assistance. Looking forward, Mind2Dialogue makes user simulation a foundation for genuine AI collaborators that understand beliefs and intentions behind people's words and support their long-term goals across education, work, and everyday life.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15972",
+        "external_id": "2609.15972"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15972",
+        "external_id": "2609.15972"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/wannabeyourfriend/mind2dialogue",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zixuan Wang",
+      "Yufan Zhou",
+      "Jinzhou Tang",
+      "Xinle Yu",
+      "Chengjun Wu",
+      "Lyumanshan Ye",
+      "Zhaoxiang Feng",
+      "Letian Peng",
+      "Adyasha Patra",
+      "Fan Bai",
+      "Enze Ma",
+      "Zhengding Hu",
+      "Jianyang Gu",
+      "Zhao Wang",
+      "Yufei Ding",
+      "Jingbo Shang",
+      "Tianmin Shu",
+      "Zhiting Hu",
+      "Zhen Wang"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859015Z",
+    "dedup_keys": [
+      "arxiv:2609.15972",
+      "title:aware human language mental mind2dialogue models simulating states training user",
+      "github:wannabeyourfriend/mind2dialogue"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 22,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.02,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 6.271,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.341
+    }
+  },
+  {
+    "id": "f0667a79824e0115",
+    "kind": "paper",
+    "title": "Disentangling Representation Evolution in Transformers through Directional Decomposition",
+    "summary_en": "Transformer representations evolve through learned additive transformations that either preserve their current direction or redirect it. We study this evolution as a functional geometry, decomposing learned updates into parallel and perpendicular components. Across pretrained models, we find substantial parallel components beyond the residual identity path. We then apply the decomposition in two spaces: to attention and MLP updates relative to the hidden state, and to attention value aggregation relative to the current token's value. Targeted edits reveal a strongly space-dependent asymmetry: exclude-self value-space parallel manipulation is markedly more robust than residual-space and perpendicular counterparts, preserving the direct self message while scaling only the non-self aggregate. The same decomposition gives a component-resolved description of compression-induced update error: perpendicular error separates compression methods more clearly than parallel error. Extensive experiments further demonstrate that full-aggregate parallel suppression during from-scratch pretraining lowers validation-loss trajectories and improves downstream averages, with the value-space variant strongest. Together, these results connect representation geometry to editing robustness, compression diagnosis, and training-time intervention. Code is available in the https://github.com/Shwai-He/Transformer-Geometry{project repository}.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "robotics",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15975",
+        "external_id": "2609.15975"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15975",
+        "external_id": "2609.15975"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Shwai-He/Transformer-Geometry",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shwai He",
+      "Haichao Zhang",
+      "Shen Yan"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859043Z",
+    "dedup_keys": [
+      "arxiv:2609.15975",
+      "title:decomposition directional disentangling evolution representation through transformers",
+      "github:shwai-he/transformer-geometry"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 21.946,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.341
+    }
+  },
+  {
+    "id": "7f43b7b71fd474e9",
+    "kind": "paper",
+    "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+    "summary_en": "Skills extend an LLM agent beyond its parametric knowledge, and the gain they promise rests on picking the right one. Deployed harnesses route by preloading every skill's metadata into the context, which disperses the agent's attention and caps the library size. Retrieval pipelines move the selection out of the context, but also out of the agent's capability. We show that the frozen agent LLM already carries the routing signal in its own forward passes, and that two linear maps suffice to read it out with no skill text in the context. Gavel (Glance And Verdict from a frozen LLM) reads it in two steps. A glance projects the task's and each skill's mid-layer states through the two maps, the only parameters trained, and scores the full library against compact per-skill banks that one forward pass builds at installation. A verdict then resumes the shortlisted skills' forward passes and reads the model's own likelihood and yes/no judgment, fused with the glance as a product of experts. Trained once, Gavel transfers zero-shot to three public benchmarks and SkillTraj, our new benchmark of 372 simulated agent trajectories. On Qwen3-32B it outperforms progressive disclosure and retrieve-and-rerank pipelines that add 1.2B to 16B external parameters, by up to 13.4 points on written tasks and up to 21.9 when the need for a skill arises mid-rollout. Routing accuracy improves as the backbone does, and in a bash-agent harness the same 32B triggers the correct skill on Skill-Use more often than far larger frontier models running in Codex.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.15982",
+        "external_id": "2609.15982"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15982",
+        "external_id": "2609.15982"
+      }
+    ],
+    "actors": [
+      "Ruishuo Chen",
+      "Xun Wang",
+      "Yu Chen",
+      "Zhuoran Li",
+      "Longbo Huang"
+    ],
+    "published_at": "2026-09-14T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859067Z",
+    "dedup_keys": [
+      "arxiv:2609.15982",
+      "title:eliciting from frozen llm native router routing skill the within"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 16.749,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.341
+    }
+  },
+  {
+    "id": "59d6ebf3de41c852",
+    "kind": "paper",
+    "title": "Modality-Autoregressive World-Action Models",
+    "summary_en": "World-action models (WAMs) jointly model future observations and actions, typically predicting the future as RGB images. Other visual modalities such as depth, pretrained visual features, and point tracks can more efficiently capture geometric, semantic, and motion features. However, how best to combine these modalities within WAMs remains an open question. We introduce ModAR, the first WAM to autoregressively denoise multiple future modalities before predicting actions. This allows each prediction to condition on previously generated modalities. We train from scratch to systematically study how training-data mixtures, predicted modalities, and WAM formulations affect performance. In our evaluations, WAMs benefit from predicting point tracks, DINO features, and depth maps, while additionally predicting future RGB does not provide a consistent benefit. We also find that ModAR's sequential generation outperforms existing WAM formulations, with the highest average success rate at all evaluated data scales. We also fine-tune the video-model-initialized WAM Flex-π on the same data; ModAR achieves a slightly higher observed average success rate (75% vs. 72%) while using approximately 20times fewer training FLOPs and no pretraining. On three real-world bimanual tasks, ModAR outperforms baselines and improves with human videos.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.17524",
+        "external_id": "2609.17524"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.17524",
+        "external_id": "2609.17524"
+      }
+    ],
+    "actors": [
+      "Adam Hung",
+      "Bardienus P. Duisterhof",
+      "Deva Ramanan",
+      "Jeffrey Ichnowski"
+    ],
+    "published_at": "2026-09-15T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859093Z",
+    "dedup_keys": [
+      "arxiv:2609.17524",
+      "title:action autoregressive modality models world"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 15.948,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.841
+    }
+  },
+  {
+    "id": "78838eac3766e9fd",
+    "kind": "paper",
+    "title": "PhysStream: Streaming Physics-Grounded Video Generation with Structured Scene Memory and Fine-Grained Motion Control",
+    "summary_en": "Interactive control for video generation is moving from coarse prompts toward fine-grained, physically meaningful manipulation of dynamic scenes. Yet existing controllable methods either require the full control schedule before generation starts, or use pixel-space signals that dictate object positions rather than physical dynamics. To address these limitations, we propose PhysStream, an autoregressive model for physics-grounded image-to-video synthesis that incorporates structured scene memory---positional maps and object tracking maps derived online from previously generated frames---and supports fine-grained motion control via sparse velocity-increment signals that encode physical quantities, letting the model learn the underlying dynamics. We train our model in two stages: a bidirectional model is first finetuned with motion-control conditioning, then a causal autoregressive model is trained with additional structured scene memory, further improving physical consistency. PhysStream enables interactive, mid-generation control over multi-object tabletop rigid-body scenes---a capability not supported by prior methods---reducing motion distribution distance (FVMD) by 33% and trajectory error by 12% over the strongest baselines on synthetic benchmarks, and is preferred by human evaluators in over 85% of in-the-wild comparisons. Please check our website for more details: https://czzzzh.github.io/PhysStream",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.17521",
+        "external_id": "2609.17521"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.17521",
+        "external_id": "2609.17521"
+      }
+    ],
+    "actors": [
+      "Chuhao Chen",
+      "Peter Wonka",
+      "Chaoyang Wang",
+      "Chen Wang",
+      "Qiao Feng",
+      "Sergey Tulyakov",
+      "Lingjie Liu"
+    ],
+    "published_at": "2026-09-15T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859116Z",
+    "dedup_keys": [
+      "arxiv:2609.17521",
+      "title:and control fine generation grained grounded memory motion physics physstream scene streaming structured video with"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 11.948,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "age_decay": -1.841
+    }
+  },
+  {
+    "id": "ce1dc42965affcd4",
+    "kind": "paper",
+    "title": "Training Specialist Models without Reasoning Trajectories for Domain Expert Distillation",
+    "summary_en": "Specialist distillation effectively transfers domain expertise to student models via teacher-generated reasoning trajectories. However, when these specialists are trained solely on question--answer pairs without explicit reasoning supervision, what governs the trajectories they generate? In this work, we show that specialist optimization implicitly selects from this latent trajectory space. To isolate and observe this latent distribution, we leverage student distillation not as a downstream goal, but as an agnostic probe---since students inherit no parameterization or optimization constraints from the specialist, inheriting only the sampled trajectories themselves. Through this probe, our empirical analysis unveils a tight governing relationship: across 27 specialist--student pairings, their specialization--generalization profiles correlate exceptionally strongly. Crucially, explicitly controlling the specialist's distributional drift systematically shifts both the teacher and its distilled student along a controllable trade-off between domain precision and general-capability retention. Across chemistry, physics, and multilingual settings, distilled students systematically reflect these specialist-induced profiles, even across divergent model families. Our findings establish a new view of specialist training: when gold reasoning is absent, tuning choices directly control the latent supervision passed to downstream models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13770",
+        "external_id": "2609.13770"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13770",
+        "external_id": "2609.13770"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/CONE-MT/DCO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yilei Tu",
+      "Zihao Li",
+      "Shaoxiong Ji",
+      "Jörg Tiedemann",
+      "Fei Yuan"
+    ],
+    "published_at": "2026-09-12T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859165Z",
+    "dedup_keys": [
+      "arxiv:2609.13770",
+      "title:distillation domain expert for models reasoning specialist training trajectories without",
+      "github:cone-mt/dco"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 11.204,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.341
+    }
+  },
+  {
+    "id": "06dea5bdd0d443e8",
+    "kind": "paper",
+    "title": "Drift-Constrained Optimization: Only Direction Matters in Fine-Tuning Instruct Models",
+    "summary_en": "Fine-tuning instruct models often improves target performance while inducing behavioral drift from the reference model, which can degrade existing capabilities. Rather than treating this drift as an uncontrolled consequence of optimization, we specify a behavioral drift budget before optimization and ask how to boost the target-task performance within it. Locally, behavioral drift induces a shared geometry anchored at the reference model, with the drift budget defining a boundary within this space. In this space, drift determines distance from the reference, leaving update direction as the remaining degree of freedom. Fine-tuning updates can therefore be compared through their directional efficiency, naturally reformulating fine-tuning as a direction-selection problem. This reformulation makes a concrete prediction: changing the accessible directions can qualitatively alter the outcome of fine-tuning. We test this prediction in a stringent QA-only setting, where strong instruct models are fine-tuned only on final answers but must still generate multi-step reasoning at inference. Despite this mismatch, a coarse layer-selective probe reverses the failure of QA-only fine-tuning and reveals the existence of effective directions, with multiple neighboring configurations improving target performance while preserving reasoning and general capabilities. Across Qwen3-8B and Qwen3-14B, these directions substantially improve scientific reasoning and multilingual translation. Over more than 100 languages, the resulting models match or outperform dedicated translation systems and provide a stronger initialization for subsequent reinforcement learning. Our results suggest that fine-tuning is not just about how much a model changes, but how that change is spent. https://github.com/CONE-MT/DCO and https://huggingface.co/collections/LLaMAX/dco",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.13680",
+        "external_id": "2609.13680"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.13680",
+        "external_id": "2609.13680"
+      }
+    ],
+    "actors": [
+      "Fei Yuan",
+      "Changjiang Gao",
+      "Yilei Tu",
+      "Yifeng Liu",
+      "Shujian Huang",
+      "Yu Qiao"
+    ],
+    "published_at": "2026-09-12T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859141Z",
+    "dedup_keys": [
+      "arxiv:2609.13680",
+      "title:constrained direction drift fine instruct matters models only optimization tuning"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 8.204,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.341
+    }
+  },
+  {
+    "id": "13c97184623b11fb",
+    "kind": "paper",
+    "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+    "summary_en": "As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.17320",
+        "external_id": "2609.17320"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.17320",
+        "external_id": "2609.17320"
+      }
+    ],
+    "actors": [
+      "Deepak Akkil",
+      "Tamer Abuelsaad",
+      "Karthik Vikram",
+      "Matthew Pace",
+      "Aditya Vempaty",
+      "Saahir Beotra",
+      "Ravi Kokku",
+      "Satya Nitta"
+    ],
+    "published_at": "2026-09-15T00:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:14.859189Z",
+    "dedup_keys": [
+      "arxiv:2609.17320",
+      "title:adversarial agent emergence horizon long multi stress systems testing world"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 7.159,
+    "score_breakdown": {
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.841
+    }
+  },
+  {
+    "id": "142a7a5accda0733",
+    "kind": "paper",
+    "title": "Are We Grading Properly? Understanding Failure Modes in Medical Benchmarks",
+    "summary_en": "Medical evaluation is shifting from static option-based questioning to realistic clinical scenarios with open-ended output modes. Grading these at scale naively, however, is expensive, and rubric-based evaluation has become the dominant scalable alternative. We ask what happens when the rubrics themselves are not airtight, and whether such flaws can be detected and corrected. We apply RIFT, a global rubric failure taxonomy, to two clinical benchmarks (HealthBench Professional and LiveMedBench), and find failure modes are meaningful: on HealthBench Professional an LLM judge flags 29.6% of criteria as non-atomic and 65.4% as misaligned/rigid. Then, we show that these flaws are meaningful and not simply cosmetic. As an example, rewriting bundled criteria of the form \"at least one of / all of the following\" as equally weighted children and regrading identical responses shifts scores by up to 15.9 percentage points on affected conversations, with disjunctive bundles inflating scores and conjunctive bundles deflating them. We also find that RIFT generally under-detects bundling on clinical rubrics, flagging 3.3% of LiveMedBench criteria as non-atomic where surface-form analysis finds structure in 25.8%.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16023",
+        "external_id": "2609.16023"
+      }
+    ],
+    "actors": [
+      "Prithvi Dixit",
+      "Pedram Hosseini"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.420120Z",
+    "dedup_keys": [
+      "arxiv:2609.16023",
+      "title:are benchmarks failure grading medical modes properly understanding"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "85faa3c431f36bd3",
+    "kind": "paper",
+    "title": "Comment on arXiv:2607.01233: Survivorship Bias in Published-Paper Baselines for Research-Idea Distributions",
+    "summary_en": "Chen, Zhao, and Cohan introduce a valuable distributional evaluation of LLM-generated research ideas. This comment raises a narrower identification concern: their human baseline consists of published papers, whereas the LLM baseline consists of one-shot proposals. If bridge-like or synthesis-like ideas are relatively easy to generate but relatively unlikely to survive publication, then the published human baseline will understate their prevalence in the unseen human idea pool. The observed human--LLM gap may therefore be partly, or even largely, a consequence of survivorship bias.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15996",
+        "external_id": "2609.15996"
+      }
+    ],
+    "actors": [
+      "Fredrik A. Dahl"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419565Z",
+    "dedup_keys": [
+      "arxiv:2609.15996",
+      "title:01233 2607 arxiv baselines bias comment distributions for idea paper published research survivorship"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "b8377792b8e97e90",
+    "kind": "paper",
+    "title": "Crash Narrative-Guided Countermeasure Recommendation Using Large Language Models: A Retrieval-Augmented Generation Framework for Intersection Safety",
+    "summary_en": "Improving safety at intersections requires identifying crash mechanisms and recommending appropriate countermeasures. However, this process traditionally relies on expert judgment, making it labor-intensive, difficult to scale, and dependent on the availability of experienced traffic safety engineers. Although crash narratives contain rich description of crash mechanisms, this unstructured information remains largely underutilized in safety analyses. This study presents a crash narrative-guided retrieval-augmented generation (RAG) framework that translates narrative-derived crash mechanisms into site-specific countermeasure recommendations. Key mechanism attributes including traffic control, signal indication, driver fault, vehicle movement, and travel direction were extracted from crash narratives and linked to evidence-based treatments from the FHWA Proven Safety Countermeasures and the CMF Clearinghouse. The framework integrates embedding-based retrieval of historically similar intersections, association-rule mining, statistical guidance on the expected number of relevant countermeasures, and an engineering reasoning guidance that directs LLM through a domain-consistent decision process before selecting countermeasures. Evaluated on 312 fatal and serious-injury crashes across 115 intersections in Lake and Sumter Counties, Florida, using five-fold cross-validation, the framework achieved a precision of 0.82, recall of 0.85, and F1-score of 0.82, while recommending an average of 3.91 countermeasures per location with 3.14 matching, closely matching the actual average (3.86). Overall, the proposed framework demonstrates the potential of retrieval-augmented LLMs as an interpretable and scalable decision-support tool for transportation agencies for translating crash narratives into countermeasure recommendations.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15997",
+        "external_id": "2609.15997"
+      }
+    ],
+    "actors": [
+      "Abu Saif Md Nasim Uddin",
+      "Mohamed Abdel-Aty",
+      "Zubayer Islam",
+      "Parvez Anowar",
+      "Chenzhu Wang"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419672Z",
+    "dedup_keys": [
+      "arxiv:2609.15997",
+      "title:augmented countermeasure crash for framework generation guided intersection language large models narrative recommendation retrieval safety using"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "66c30933c307ab12",
+    "kind": "paper",
+    "title": "Efficient Multimodal Generative Recommendation with Latent Narrative Reasoning",
+    "summary_en": "Generative recommendation reformulates item prediction as semantic identifier generation, yet episodic content introduces a fundamentally different setting where the target is determined by narrative evolution rather than user preference. This task requires models to understand multimodal storyline progression while addressing the efficiency challenges caused by redundant visual contexts and costly explicit reasoning generation. We propose \\textbf{NarraLite}, an efficient multimodal generative recommendation framework that jointly compresses perception and reasoning. Specifically, Progressive Spectral Compression selectively distills long visual contexts into compact narrative-relevant evidence, preserving transition-critical information while reducing redundant visual computation. Latent Narrative Reasoning introduces context-routed latent reasoning tokens and aligns their contextualized representations with future continuation semantics, enabling implicit narrative inference without autoregressively decoding textual rationales. We further establish a user-agnostic multimodal benchmark for short-form drama continuation across UGC, PGC, and OOD settings. Extensive experiments demonstrate that NarraLite consistently improves continuation accuracy, narrative coherence, and robustness over existing approaches, while achieving a favorable accuracy--efficiency trade-off.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16070",
+        "external_id": "2609.16070"
+      }
+    ],
+    "actors": [
+      "Chenxing Wang",
+      "Nantao Zheng",
+      "Hao Miao",
+      "Juyuan Wang",
+      "Xinke Jiang",
+      "Yuchen Fang",
+      "Aolin Li",
+      "Haijun Wu"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.420536Z",
+    "dedup_keys": [
+      "arxiv:2609.16070",
+      "title:efficient generative latent multimodal narrative reasoning recommendation with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "b127ce12cf51cc3c",
+    "kind": "paper",
+    "title": "Few-Shot Degradation Is Not What It Seems: Behavioral Evidence, Representation Analysis, and a Random-Text Control Across 12 Models, 2 Tasks, and 2 Architectures",
+    "summary_en": "Few-shot prompting sometimes degrades language models instead of helping them, but why this happens is unknown. We evaluate 12 open-weight models on two Ukrainian tasks news classification and legal case outcome prediction and find that the effect is strongly task-dependent: the same models that gain +24 pp on news show only +3.4 pp on legal text, with two models degrading. To understand why, we look inside the models. Prior work measures how much hidden states shift between zero-shot and few-shot modes, but few-shot prompts are much longer, and that length difference alone moves representations. We propose a simple fix: replace demonstrations with length-matched random text to measure the shift caused by prompt length, then subtract it. The resulting metric content delta isolates how much the model's representations change because of what the demonstrations say, not how long they are. This changes the picture entirely: raw shift does not predict whether few-shot helps or hurts (r = 0.20), but content delta does (rho = +0.65, p = 0.043). Models that restructure representations more from demonstration content benefit more the opposite of the intuitive \"distortion\" explanation. Masking demonstrations in Llama 3.3 70B confirms the finding causally, recovering accuracy above the zero-shot baseline.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15990",
+        "external_id": "2609.15990"
+      }
+    ],
+    "actors": [
+      "Volodymyr Ovcharov"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.418936Z",
+    "dedup_keys": [
+      "arxiv:2609.15990",
+      "title:across analysis and and architectures behavioral control degradation evidence few models not random representation seems shot tasks text what"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "f732479c75e4f396",
+    "kind": "paper",
+    "title": "Latent Undertow: How Ordinary Typos Break Probes",
+    "summary_en": "LLMs handle ordinary typing variation fluently: a typo or missing punctuation leaves both user intent and the model's response substantively unchanged. Yet probes that detect malicious prompts by reading the model's hidden states tell a different story: the same edit rotates the readout vector by 43--56 at the perturbed token, decaying below 15% within ~10 downstream tokens. Stacking ~3 common typos per message cuts a single-position prompt-injection probe's TPR@FPR$=1% by 12.0pp, a gap recalibration alone cannot close. Multi-position aggregation cures localized perturbations (<= 0.5 loss) but only attenuates distributed ones, where even attention- and max-based aggregators still drop ~3.8pp. For single-position probes, we introduce a KV-cache fork: a short fixed suffix appended after the user message lets the probe read a few tokens downstream of the perturbation, exploiting its rapid spatial decay. This closes 95% of the gap (-0.6pp residual) -- an order of magnitude better than perturbation-augmented training (-3.7pp). The rotation-and-decay geometry replicates on Llama-3.1-8B, Qwen3-8B, and Gemma-4-E4B; probe evaluation is on Llama-3.1-8B. Code: https://github.com/eladd-ai/latent-undertow",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15994",
+        "external_id": "2609.15994"
+      }
+    ],
+    "actors": [
+      "Elad David",
+      "Max Fomin",
+      "Amit LeVi"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419380Z",
+    "dedup_keys": [
+      "arxiv:2609.15994",
+      "title:break how latent ordinary probes typos undertow"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "d15b5b9ae5c0dd09",
+    "kind": "paper",
+    "title": "NepKANUN: A RAG-Based Nepali Legal Assistant",
+    "summary_en": "Accessing legal information in Nepal is difficult due to complex terminology, limited resources, and misinformation. We introduce an AI-powered legal assistant that is tailored for Nepali legal texts and is built on a fine-tuned large language model. The technology provides precise, streamlined answers to natural language legal inquiries when integrated into a Retrieval-Augmented Generation (RAG) framework. It was trained using a custom dataset of high-quality question-answer pairs, and according to BERTScore, it obtained strong F1 scores of 0.82 (simple), 0.77 (moderate), and 0.71 (complex). Its usability is further confirmed by expert reviews. Our method shows how merging generation and retrieval can effectively democratize access to legal knowledge in Nepal by focusing on customized legal data and incorporating RAG.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15999",
+        "external_id": "2609.15999"
+      }
+    ],
+    "actors": [
+      "Bhabuk Thapa",
+      "Prasiddha Koirala",
+      "Ranjit Raut",
+      "Sunil Regmi",
+      "Bal Krishna Bal"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419848Z",
+    "dedup_keys": [
+      "arxiv:2609.15999",
+      "title:assistant based legal nepali nepkanun rag"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "28b4133e4044589c",
+    "kind": "paper",
+    "title": "Nepali Legal Expertise through Generative and Extractive Pre-trained Transformers (NepLEGiT)",
+    "summary_en": "The complexity of legal language and limited accessibility to legal information pose significant challenges to justice delivery in Nepal. Traditional legal services remain inaccessible to many citizens due to language barriers, information fragmentation, and a critical shortage of legal expertise, particularly in rural areas. We present NepLEGiT (Nepali Legal Expertise through Generative and Extractive Pre-trained Transformers), a specialized small language model (SLM) designed to democratize legal knowledge and enhance legal-service delivery in Nepal. We pre-train a decoder-based GPT-2 SLM from scratch on a curated corpus of ~4 million tokens of Nepali legal text, covering constitutional law, civil and criminal codes, and administrative regulations. The model comprises ~30 million parameters in a 6-layer, 6-head, 384-dimensional transformer trained with warmup cosine-decay scheduling, gradient accumulation, and mixed-precision arithmetic. On a held-out validation split, NepLEGiT attains a cross-entropy loss of 0.5684, a perplexity of 1.8, and a next-token prediction accuracy of 82.9%. We further evaluate continual masked-language-model pre-training of mBERT and MuRIL on the same corpus; mBERT achieves a perplexity of 2.35 (eval loss 0.8565), outperforming MuRIL (perplexity 6.07, eval loss 1.8026), providing a strong encoder baseline complementary to NepLEGiT's generative orientation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16010",
+        "external_id": "2609.16010"
+      }
+    ],
+    "actors": [
+      "Ranjit Raut",
+      "Tishya Dhakal",
+      "Aaryan Shakya",
+      "Bhabuk Thapa",
+      "Prasiddha Koirala",
+      "Bal Krishna Bal"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419937Z",
+    "dedup_keys": [
+      "arxiv:2609.16010",
+      "title:and expertise extractive generative legal nepali neplegit pre through trained transformers"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "a2ead02256029a22",
+    "kind": "paper",
+    "title": "Optimal Model Activation Policies for Inference Networks of Large Language Models",
+    "summary_en": "Recent advances in large language models (LLMs) have rendered them necessary for Natural Language Processing (NLP) tasks, and their high inference cost motivates the study of cost-performance trade-offs. In practice, several expert LLMs are used in synergy for inference, either in an ensemble mode or in series, yet without a principled approach on how to best use the available models. An adaptive approach can route simple queries to cheaper LLMs and complex ones to more capable, costly models. However, a clear understanding on how to best leverage available expert models is missing. We introduce inference networks, a graph-based framework, where nodes denote different LLMs, and links denote conditional model activations. The inference network design problem is to determine the best topology, namely the best way to use the models that best addresses the cost-performance trade-off. We start from the basic topology of a series of LLM experts, each of which has a different cost and a different level of expertise, which is captured via model confidence. We formulate the problem of optimal activation of these models so as to minimize the expected inference cost subject to a target performance constraint. For this special class of inference networks, we prove that the optimal activation policy has a threshold structure: query the lowest-cost LLM first, and invoke the more expensive LLM only if the confidence falls below a defined threshold. For discriminative tasks, the optimal policy consists of a set of thresholds, one threshold for each class, while for generative tasks, it consists of a single threshold. We provide a structured method to compute the thresholds, and practical confidence estimation mechanisms for both task types. Experiments with open-source LLMs show substantial cost reductions while meeting the specified performance budget.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15992",
+        "external_id": "2609.15992"
+      }
+    ],
+    "actors": [
+      "Foivos Charalampakos",
+      "Md Ibrahim Ibne Alam",
+      "Iordanis Koutsopoulos",
+      "Koushik Kar"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419187Z",
+    "dedup_keys": [
+      "arxiv:2609.15992",
+      "title:activation for inference language large model models networks optimal policies"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "46b56dbe4a98ca04",
+    "kind": "paper",
+    "title": "Retrieval-Driven Memory Reconsolidation for Long-Term LLM Agents",
+    "summary_en": "Long-term memory is essential for LLM-based agents operating over extended interactions. Existing memory systems primarily update memory when new information arrives, treating retrieval as the endpoint of memory access rather than a driver of memory evolution. Consequently, retrieval feedback is rarely exploited to reorganize memory for future access continuously. Moreover, most existing approaches rely on predefined memory structures together with fixed retrieval pipelines, limiting the agent's ability to organize and evolve its own memory autonomously. Inspired by memory reconsolidation in cognitive neuroscience, we propose \\textbf{REALM}, a \\textbf{r}econsolidation-\\textbf{e}volution \\textbf{a}gentic \\textbf{l}ong-term \\textbf{m}emory framework. It models long-term memory as a continual lifecycle by autonomously organizing memories into a heterogeneous cognitive graph, retrieving evidence via adaptively composed graph-search atoms, and continually reconsolidating memories based on retrieval feedback. REALM achieves an average accuracy of 75.97\\% on LoCoMo and 65.11\\% on LongMemEval, outperforming the strongest baselines by 7.17 and 1.31 points respectively. Ablation studies confirm that memory reconsolidation consistently boosts performance, with further analyses revealing that it progressively reorganizes related memory units into more coherent local structures for collective evidence recall and utilization during reasoning. These results suggest that retrieval-driven memory reconsolidation provides an effective mechanism for continually evolving long-term memory in LLM agents.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16053",
+        "external_id": "2609.16053"
+      }
+    ],
+    "actors": [
+      "Yuanyi Song",
+      "Yukai Wang",
+      "Xinbei Ma",
+      "Zhihui Fu",
+      "Jianghao Lin",
+      "Weiwen Liu",
+      "Jun Wang",
+      "Huarong Deng",
+      "Yong Yu",
+      "Weinan Zhang"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.420212Z",
+    "dedup_keys": [
+      "arxiv:2609.16053",
+      "title:agents driven for llm long memory reconsolidation retrieval term"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "76ec535250b6393a",
+    "kind": "paper",
+    "title": "Self-reported archetypes and behavioral failures in Large Language Models",
+    "summary_en": "Every large language model (LLM) has behavioral traits and moral preferences that comprise its character. Whether by design or as an emergent property of training, these systems exhibit persistent dispositions that shape how they interact, comply, resist, and err, yet the structure of LLM character remains poorly understood. We map the self-reported personality archetypes of 22 LLMs spanning closed-source frontier systems (GPT-4.0-5.2, Grok-3/4, Gemini 2.5 Pro/Flash, Claude Sonnet 4.5/4.6) and open-source models (Llama, DeepSeek, OLMo, and Qwen series). Each model self-rated across 464 bipolar semantic-differential trait pairs, and the resulting profiles were projected into a six-dimensional archetypal space derived from crowd-sourced ratings of 2,000 fictional characters using the Archetypometrics framework. Closed-source models' self-rating traits align with the empirical trait co-occurrence structure of human-rated fictional characters, suggesting coherent, human-like self-representations organized around combinations of four recurring archetypal dimensions: Hero, Angel, Traditionalist, and Geek. Their closest analogues include Data, Vision, and Janet. Open-source models show weaker, noisier, and internally contradictory self-representations, occupying a diffuse region of archetype space with weak structure. Cross-referencing self-reported profiles with developer constitutions reveals a consequential gap between claimed character and enacted behavior: hallucination undermines claimed precision, sycophancy complicates claimed kindness, and agentic failures contradict claimed obedience. These self-ratings should therefore be interpreted not as neutral measurements of model character, but as structured outputs of the same optimization processes that shape model behavior. This work provides a reproducible, character-grounded framework for evaluating what LLMs are, not just what they do.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15998",
+        "external_id": "2609.15998"
+      }
+    ],
+    "actors": [
+      "Tabia Tanzin Prama",
+      "Calla Glavin Beauregard",
+      "Christopher M. Danforth",
+      "Peter Sheridan Dodds"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419776Z",
+    "dedup_keys": [
+      "arxiv:2609.15998",
+      "title:and archetypes behavioral failures language large models reported self"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "c3a00754ca9a5392",
+    "kind": "paper",
+    "title": "Single Document Extractive Summarization using Domination in Hypergraph",
+    "summary_en": "Automatic Text Summarization (ATS) in Natural Language Processing has been an important task in Information Retrieval. It compresses a document to create a summary that captures all the relevant and important information conveyed in the document. This study explores Hypergraph for extractive text summarization of single documents. Objective: This study explores a novel method of leveraging the property of domination in hypergraphs to generate an extractive summary and compare its performance with state of the art graph based methods. Method: Our work aims to generate an extractive summary by creating a sentence hypergraph where each sentence represents a node and the edge is a keyword or a named entity that contains the sentences in which it occurs. We generate a hypergraph where each edge is a keyword or an important topic and the nodes are sentences containing those keywords. Then we apply a greedy algorithm to find the dominating set of the hypergraph which will contain sentences that will form the extractive summary.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15993",
+        "external_id": "2609.15993"
+      }
+    ],
+    "actors": [
+      "Aamir Miyajiwala",
+      "Aabha Pingle",
+      "Sheetal Sonawane",
+      "Surajit Kr. Nath"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419271Z",
+    "dedup_keys": [
+      "arxiv:2609.15993",
+      "title:document domination extractive hypergraph single summarization using"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "ad354932a2c40d80",
+    "kind": "paper",
+    "title": "State of Thought Enables Endogenous Reasoning",
+    "summary_en": "Test-time compute has emerged as a major approach to improving the capabilities of Large Language Models (LLMs). However, existing test-time reasoning paradigms rely heavily on externally imposed control, either through fixed reasoning programs or through costly expansion in constrained search spaces, limiting both generalization and efficiency. We propose State of Thought (SoT), a new reasoning paradigm that enables endogenous reasoning in LLMs, with the model's internal reasoning state governing how reasoning unfolds. Concretely, SoT extracts a compact dynamics-geometric state from the model's internal information transfer and uses a 582-parameter controller on frozen backbones to selectively activate historical reasoning support useful under the current reasoning state, framing reasoning as a state-conditioned process over evidence rather than an externally prescribed token chain. Across quantitative (1.34x), general (1.62x), symbolic-and-code (1.76x), and long-context (2.51x) reasoning on 3 LLMs and 16 datasets, SoT consistently improves mean-baseline accuracy while reducing generated tokens by 62.6% and end-to-end latency by 44.6%. Across 2 VLM scales and 3 reasoning tasks, it improves mean accuracy by 3.8 points over reasoning baselines, with 74.9% fewer completion tokens and 73.5% lower latency than search-based methods. Under constrained access, SoT retains 38.2%/36.5% mean accuracy gains in training-free/embedding-only settings, while trajectory-only judging reaches 84.1% agreement across 3 API models. Together, endogenous state-driven reasoning provides a generalizable and efficient alternative.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16055",
+        "external_id": "2609.16055"
+      }
+    ],
+    "actors": [
+      "Zhiren Gong",
+      "Yikun Hou",
+      "Zihao Zeng",
+      "Ming Xiao",
+      "Chau Yuen",
+      "Wei Yang Bryan Lim"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.420303Z",
+    "dedup_keys": [
+      "arxiv:2609.16055",
+      "title:enables endogenous reasoning state thought"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "a7b7cbe47eaa1217",
+    "kind": "paper",
+    "title": "The Functionalizer: Lossless Functional Decomposition for Subword Tokenization",
+    "summary_en": "Standard subword tokenizers either treat every orthographic variation of a word (such as hello, Hello, HELLO, and H\\'ello) as unrelated vocabulary entries, which fragments the embedding space, or discard this variation through lossy normalization. We present the Functionalizer, a lossless pre-tokenizer framework that factors orthographic and structural variations into a compositional opcode/operand prefix stream before tokenization: a canonical base token (operand) prefixed by parametric transformation operators (opcodes) encoded in the Unicode Private Use Area. We introduce operators covering casing (CAPITALIZE), diacritics (13 dedicated opcodes), and character repetition (REPEAT, MULTIREPEAT), which are fully reversible. Across six natural language and code corpora, the Functionalizer enables complete corpus coverage with significantly smaller vocabularies under unconstrained conditions, reducing actual vocabulary slot requirements by up to 16%. When looking at sequence lengths, we observe a sharp domain-dependent tradeoff: it compresses indentation-heavy code sequences but inflates natural-language prose sequences. Preliminary downstream evaluations on 25M parameter GPT-2 scale models show that at this scale, the Functionalizer drastically improves code syntax validity and improves code character perplexity while maintaining similar text coherence on prose. These findings demonstrate that functional decomposition can be an effective mechanism for vocabulary-efficient, structurally aware language modeling, and motivate further validation at production scale.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.15991",
+        "external_id": "2609.15991"
+      }
+    ],
+    "actors": [
+      "Connor Makowski",
+      "Willem Guter"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.419062Z",
+    "dedup_keys": [
+      "arxiv:2609.15991",
+      "title:decomposition for functional functionalizer lossless subword the tokenization"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "51a2c98aa6171cb9",
+    "kind": "paper",
+    "title": "Towards Scalable RLVR: Multimodal Instruction Following Data Synthesis and Distillation",
+    "summary_en": "Multimodal instruction following (MMIF) is crucial for building generalist agents. However, current training paradigms rely heavily on Supervised Fine-Tuning (SFT), which often leads to surface-level pattern matching and degrades general capabilities. While Reinforcement Learning with Verifiable Rewards (RLVR) offers a promising alternative, its scalability in MMIF is severely bottlenecked by the scarcity of high-quality, RL-ready multimodal data. To bridge this gap, we present MIFS (\\textbf{M}ultimodal \\textbf{I}nstruction \\textbf{F}ollowing \\textbf{S}ynthesis), a systematic pipeline designed to generate RL-ready multimodal data. Specifically, MIFS introduces a generative constraint protocol to synthesize diverse raw samples, followed by a learnability-aware distillation mechanism that filters data based on RL training dynamics to ensure stable policy optimization. Furthermore, a code-based verifier provides high-precision reward signals for policy learning. The resulting dataset comprises 90k samples across 8 constraint categories and 14 task domains. Empirical evaluations demonstrate that MIFS-trained MLLMs achieve an average improvement of 8.13\\% on four MMIF benchmarks and a 3$\\times$ faster training convergence compared to using raw data. Crucially, our approach mitigates the generalization trade-offs typical of SFT, preserving core visual capabilities while significantly boosting instruction-following precision.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "multimodal",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16059",
+        "external_id": "2609.16059"
+      }
+    ],
+    "actors": [
+      "Yirong Zeng",
+      "Zhang Sai",
+      "Yuxian Wang",
+      "Yutai Hou",
+      "Yufei Liu",
+      "Xiao Ding",
+      "Bibo Cai"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.420432Z",
+    "dedup_keys": [
+      "arxiv:2609.16059",
+      "title:and data distillation following instruction multimodal rlvr scalable synthesis towards"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  },
+  {
+    "id": "beaaa9195fe45d87",
+    "kind": "paper",
+    "title": "ViCo: Visual-oriented Coding with Self-Reflection for Chart Replication",
+    "summary_en": "This paper addresses the challenge of generating high-quality academic charts that match the visual standards of human-authored papers. While existing AI agents can produce well-structured text and code, their generated visualizations often lack the stylistic and semantic fidelity of human designs. Advanced coding agents that employ self-reflection mechanisms exhibit poor visual reasoning and limited reflection following, resulting in sparse reward signals that severely undermine their reinforcement learning (RL). We propose ViCo, a training framework for visual-oriented coding that employs iterative reflections to align generated chart images progressively with the reference. We first introduce a self-supervised warm-up stage, which augments Monte Carlo Tree Search with consistency-based pruning to synthesize high-quality reflection trajectories, ensuring that each coding step strictly follows the outcomes of prior reflections. A multi-step RL algorithm is then developed, using counterfactual baselines to estimate advantage for reflection and action steps within each refinement cycle, thereby addressing the reward sparsity. To enable efficient reward in massive training, we propose an automatic, multifaceted evaluation framework that assesses charts' style, layout, and semantic consistency via a hierarchical heterogeneous layout graph structure. Experiments on three public benchmarks demonstrate that ViCo, trained on an 8B model, achieves performance close to proprietary LLMs with adequate reflection capabilities.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.16014",
+        "external_id": "2609.16014"
+      }
+    ],
+    "actors": [
+      "Jiaxin Duan",
+      "Dian Jiao Shuai Zhao",
+      "Jiabing Leng",
+      "Yiran Zhang",
+      "Feng Huang"
+    ],
+    "published_at": "2026-09-16T04:00:00Z",
+    "first_seen_at": "2026-09-16T05:25:15.420035Z",
+    "dedup_keys": [
+      "arxiv:2609.16014",
+      "title:chart coding for oriented reflection replication self vico visual with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.909,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.091
+    }
+  }
+]
