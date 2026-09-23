@@ -1,5 +1,58 @@
 [
   {
+    "id": "6a4c7c4dbd16f17c",
+    "kind": "model",
+    "title": "Viggle/Qwen-Image-2.1-viggle-turbo",
+    "summary_en": "text-to-image, diffusers, lora, image-to-image, image-editing, distillation",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo",
+        "external_id": "Viggle/Qwen-Image-2.1-viggle-turbo"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+        "external_id": "Qwen/Qwen-Image-2.1"
+      }
+    ],
+    "actors": [
+      "Viggle"
+    ],
+    "published_at": "2026-09-22T04:14:56Z",
+    "first_seen_at": "2026-09-23T17:31:46.509628Z",
+    "dedup_keys": [
+      "hf:viggle/qwen-image-2.1-viggle-turbo"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 108,
+      "hf_downloads": 1507,
+      "hf_trending_score": 108.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 58.529,
+    "score_breakdown": {
+      "hf_trending": 28.148,
+      "hf_downloads": 14.637,
+      "hf_likes": 14.074,
+      "has_weights": 4.0,
+      "age_decay": -2.33
+    }
+  },
+  {
     "id": "24627609bc2254bf",
     "kind": "model",
     "title": "WarmBloodAban/Qwen-Image-2.1-LoRAs",
@@ -25,15 +78,15 @@
       "WarmBloodAban"
     ],
     "published_at": "2026-09-20T22:48:04Z",
-    "first_seen_at": "2026-09-23T05:21:01.666028Z",
+    "first_seen_at": "2026-09-23T17:31:46.509840Z",
     "dedup_keys": [
       "hf:warmbloodaban/qwen-image-2.1-loras"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 60,
-      "hf_downloads": 1167,
-      "hf_trending_score": 58.0,
+      "hf_likes": 66,
+      "hf_downloads": 2608,
+      "hf_trending_score": 64.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -43,12 +96,83 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 47.515,
+    "score": 49.222,
     "score_breakdown": {
-      "hf_trending": 24.465,
-      "hf_downloads": 14.126,
-      "hf_likes": 12.333,
-      "age_decay": -3.409
+      "hf_trending": 25.046,
+      "hf_downloads": 15.733,
+      "hf_likes": 12.614,
+      "age_decay": -4.171
+    }
+  },
+  {
+    "id": "f0ae490dc2095340",
+    "kind": "paper",
+    "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+    "summary_en": "LLM agents increasingly work on long-horizon tasks, and the decisions they make along the way, such as which hypothesis to test or which implementation to build on, determine the outcome of the whole run. Making these decisions well is becoming a key capability for both engineering and research agents. We refer to the ability to make good long-horizon decisions as the taste of an agent. While existing benchmarks measure the end-to-end success of agents on long-horizon tasks, none of them measures the taste of an agent. To address this problem, we build Taste-Bench, a benchmark of taste questions constructed automatically from trajectories that agents produced in engineering and research tasks. Each question presents a decision fork, a point in a trajectory where multiple directions are available and one of them leads to a better outcome, and the evaluated model chooses among these directions without seeing what happens after the fork. We mine these forks automatically from parallel attempts at the same task and from detours inside a single trajectory, without needing human annotation. We evaluate frontier models on Taste-Bench and find that the best model answers only 59.7% of the questions correctly. We further find that forks whose deciding evidence appears later in the trajectory are much harder for every model, and that a larger reasoning budget does not improve the accuracy. Finally, we show that taste can be trained. We distill the judgment of a teacher that has seen the outcome into a student model, and the student makes better decisions on unseen tasks and improves end-to-end success on held-out SWE-bench Pro tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.25804",
+        "external_id": "2609.25804"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.25804",
+        "external_id": "2609.25804"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/wbopan/tastebench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Wenbo Pan",
+      "Zhichao Liu",
+      "Shujie Liu",
+      "Jingying Zeng",
+      "Chin-Yew Lin",
+      "Xianfeng Tang",
+      "Yan Lu",
+      "Qi He",
+      "Xiaohua Jia"
+    ],
+    "published_at": "2026-09-22T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.527125Z",
+    "dedup_keys": [
+      "arxiv:2609.25804",
+      "title:agent and horizon improving long measuring tasks taste tasteful the",
+      "github:wbopan/tastebench"
+    ],
+    "signals": {
+      "hf_upvotes": 111,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 4,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 48.538,
+    "score_breakdown": {
+      "hf_upvotes": 37.748,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.596
     }
   },
   {
@@ -78,15 +202,15 @@
       "akhilaaa3"
     ],
     "published_at": "2026-09-20T21:43:20Z",
-    "first_seen_at": "2026-09-23T05:21:01.665634Z",
+    "first_seen_at": "2026-09-23T17:31:46.509603Z",
     "dedup_keys": [
       "hf:akhilaaa3/jev-omni"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 92,
+      "hf_likes": 123,
       "hf_downloads": 0,
-      "hf_trending_score": 91.0,
+      "hf_trending_score": 121.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -96,60 +220,13 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 45.252,
+    "score": 47.047,
     "score_breakdown": {
-      "hf_trending": 27.131,
-      "hf_likes": 13.598,
+      "hf_trending": 28.824,
+      "hf_likes": 14.461,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -3.477
-    }
-  },
-  {
-    "id": "b57c869929f11712",
-    "kind": "model",
-    "title": "inclusionAI/Ming-Image-0.1-Design",
-    "summary_en": "text-to-image, diffusers, image-generation, graphic-design, text-rendering, rgba",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/inclusionAI/Ming-Image-0.1-Design",
-        "external_id": "inclusionAI/Ming-Image-0.1-Design"
-      }
-    ],
-    "actors": [
-      "inclusionAI"
-    ],
-    "published_at": "2026-09-17T07:17:31Z",
-    "first_seen_at": "2026-09-23T05:21:01.665421Z",
-    "dedup_keys": [
-      "hf:inclusionai/ming-image-0.1-design"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 120,
-      "hf_downloads": 0,
-      "hf_trending_score": 120.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 38.283,
-    "score_breakdown": {
-      "hf_trending": 28.775,
-      "hf_likes": 14.387,
-      "has_weights": 4.0,
-      "age_decay": -8.879
+      "age_decay": -4.238
     }
   },
   {
@@ -190,19 +267,137 @@
       "Yuan Liu"
     ],
     "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668148Z",
+    "first_seen_at": "2026-09-23T17:31:46.527183Z",
     "dedup_keys": [
       "arxiv:2609.24981",
       "title:consistent for gae generation geometry latent learning native space world",
       "github:tencentarc/gae-geometricautoencoder"
     ],
     "signals": {
-      "hf_upvotes": 19,
+      "hf_upvotes": 38,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 120,
+      "github_stars": 208,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 43.897,
+    "score_breakdown": {
+      "hf_upvotes": 29.308,
+      "github_stars": 10.685,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.096
+    }
+  },
+  {
+    "id": "b57c869929f11712",
+    "kind": "model",
+    "title": "inclusionAI/Ming-Image-0.1-Design",
+    "summary_en": "text-to-image, custom, diffusers, image-generation, graphic-design, text-rendering",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/inclusionAI/Ming-Image-0.1-Design",
+        "external_id": "inclusionAI/Ming-Image-0.1-Design"
+      }
+    ],
+    "actors": [
+      "inclusionAI"
+    ],
+    "published_at": "2026-09-17T07:17:31Z",
+    "first_seen_at": "2026-09-23T17:31:46.509515Z",
+    "dedup_keys": [
+      "hf:inclusionai/ming-image-0.1-design"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 169,
+      "hf_downloads": 0,
+      "hf_trending_score": 169.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 40.582,
+    "score_breakdown": {
+      "hf_trending": 30.815,
+      "hf_likes": 15.407,
+      "has_weights": 4.0,
+      "age_decay": -9.64
+    }
+  },
+  {
+    "id": "0a6b71085dff4c00",
+    "kind": "paper",
+    "title": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
+    "summary_en": "Multilingual scene text recognition (STR) remains challenging due to the scarcity of training data for most languages and the difficulty of serving diverse scripts within a single model. Existing solutions either deploy one recognizer per language, inflating cost and introducing error accumulation, or rely on massive vision-language models (VLMs) that are expensive and still inaccurate on many scripts. In this work, we pursue an all-in-one multilingual recognizer that is simpler than per-language experts, lighter than VLMs, and more accurate than both. First, we construct TextMuSS-10M, a large-scale synthetic scene text dataset spanning 10 scripts and 229 languages. It provides balanced and sufficient supervision where real data is unavailable. Second, we propose ScriptMoE, a script-aware Mixture-of-Experts (MoE) architecture. It shares a single visual encoder and replaces the dense decoder with a sparse MoE block, which consists of an image-level router dispatches each image to the top-2 script-aligned experts and a shared expert absorbs cross-script knowledge. Extensive experiments on our assembled TextMuSS-Bench (10 scripts, 10,899 images) show that ScriptMoE achieves the highest accuracy of 82.06%, outperforming the strongest STR baseline by 1.31%. On the CC-OCR end-to-end multilingual task, replacing only the recognizer in PP-OCRv5 with ScriptMoE lifts F1 score from 65.71% to 80.89%, slightly surpassing the best VLM (80.73%) at a fraction of the parameter count.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.24058",
+        "external_id": "2609.24058"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.24058",
+        "external_id": "2609.24058"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/YesianRohn/ScriptMoE",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xingsong Ye",
+      "Yongkun Du",
+      "Jiaxin Zhang",
+      "Zhixian Li",
+      "Chong Sun",
+      "Chen Li",
+      "Jing Lyu",
+      "Lianwen Jin",
+      "Zhineng Chen"
+    ],
+    "published_at": "2026-09-21T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.527204Z",
+    "dedup_keys": [
+      "arxiv:2609.24058",
+      "title:all aware experts mixture multilingual one recognition scene script text with",
+      "github:yesianrohn/scriptmoe"
+    ],
+    "signals": {
+      "hf_upvotes": 35,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 6,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -210,13 +405,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 38.224,
+    "score": 40.464,
     "score_breakdown": {
-      "hf_upvotes": 23.966,
-      "github_stars": 9.592,
+      "hf_upvotes": 28.668,
+      "github_stars": 3.892,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
-      "age_decay": -3.334
+      "topic_match": 4.0,
+      "age_decay": -4.096
     }
   },
   {
@@ -263,238 +459,34 @@
       "Qi Tian"
     ],
     "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668287Z",
+    "first_seen_at": "2026-09-23T17:31:46.527273Z",
     "dedup_keys": [
       "arxiv:2609.25186",
       "title:companions from health language large mental models pattern personalized recognizers survey",
       "github:emo-gml/awesome-mental-health-llms"
     ],
     "signals": {
-      "hf_upvotes": 10,
+      "hf_upvotes": 15,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 126,
+      "github_stars": 127,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 37.537,
+    "score": 39.789,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "github_stars": 9.688,
+      "hf_upvotes": 22.181,
+      "github_stars": 9.704,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.334
-    }
-  },
-  {
-    "id": "2cdbc709a912259b",
-    "kind": "paper",
-    "title": "RULER: Instance-aware Rubric Rewards for SVG Generation",
-    "summary_en": "Generating Scalable Vector Graphics (SVG) code from natural-language instructions is an open-ended task without absolute visual ground truth, leaving both evaluation and policy optimization without a faithful signal. Scalar metrics (CLIP, Aesthetic) calibrated on natural images transfer poorly to stylized vector content, and reusing them as RL rewards triggers reward hacking. We address both limitations with rubric-based scoring. We first establish empirically that prompting a vision-language judge with a multi-axis rubric correlates with human judgments far better than scalar metrics, both across samples and within instructions. Building on this finding, we introduce RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware rubric of six items spanning semantic, visual, and stylistic axes; a judge VLM scores rendered rollouts item-by-item, and the weighted satisfactions form a fine-grained reward optimized via Group Relative Policy Optimization. Because the rubric is derived from text alone, RULER requires neither paired SVG ground truth nor human preference labels. On MMSVG-Illustration and MMSVG-Icon, RULER lifts the rubric score from 0.432/0.395 to 0.693/0.683, surpassing dedicated SVG specialists and matching the substantially larger DeepSeek-V3, with ablations identifying rubric design as the active lever for RL on open-ended SVG generation. The project page is available at https://hangyuran.github.io/RULER/.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.25270",
-        "external_id": "2609.25270"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25270",
-        "external_id": "2609.25270"
-      }
-    ],
-    "actors": [
-      "Hangyu Ran",
-      "Yuhao Zheng",
-      "Yingying Zhang",
-      "Kevin Qinghong Lin",
-      "Han Peng"
-    ],
-    "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.667981Z",
-    "dedup_keys": [
-      "arxiv:2609.25270",
-      "title:aware for generation instance rewards rubric ruler svg"
-    ],
-    "signals": {
-      "hf_upvotes": 38,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 34.974,
-    "score_breakdown": {
-      "hf_upvotes": 29.308,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.334
-    }
-  },
-  {
-    "id": "9da00c6112b5c4e4",
-    "kind": "release",
-    "title": "Better prompt caching for GPT-6",
-    "summary_en": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-09-22T21:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.123356Z",
-    "dedup_keys": [
-      "url:openai.com/index/better-prompt-caching-for-gpt-6",
-      "title:better caching for gpt prompt"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.478,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.522
-    }
-  },
-  {
-    "id": "5e3c87aedddffc22",
-    "kind": "release",
-    "title": "Introducing GPT-6 Sol and Luna",
-    "summary_en": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-09-22T18:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.123463Z",
-    "dedup_keys": [
-      "url:openai.com/index/introducing-gpt-6-sol-and-luna",
-      "title:and gpt introducing luna sol"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.291,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.709
-    }
-  },
-  {
-    "id": "a605005457bb3d7f",
-    "kind": "release",
-    "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
-    "summary_en": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated...",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "nvidia"
-    ],
-    "published_at": "2026-09-22T17:27:41Z",
-    "first_seen_at": "2026-09-23T05:21:03.838258Z",
-    "dedup_keys": [
-      "url:developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing",
-      "title:computing confidential enabling high inference nvidia performance private production with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.257,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.743
+      "age_decay": -4.096
     }
   },
   {
@@ -533,19 +525,19 @@
       "Embedding Team"
     ],
     "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668313Z",
+    "first_seen_at": "2026-09-23T17:31:46.527259Z",
     "dedup_keys": [
       "arxiv:2609.25165",
       "title:embedding embeddings frontiers modal omni ovis pushing the universal",
       "github:ath-maas/ovis-omni-embedding"
     ],
     "signals": {
-      "hf_upvotes": 9,
+      "hf_upvotes": 19,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 19,
+      "github_stars": 23,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -553,63 +545,134 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 33.078,
+    "score": 38.226,
     "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "github_stars": 5.991,
+      "hf_upvotes": 23.966,
+      "github_stars": 6.356,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.334
+      "age_decay": -4.096
     }
   },
   {
-    "id": "fe7b7033801ba241",
-    "kind": "release",
-    "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-    "summary_en": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+    "id": "2cdbc709a912259b",
+    "kind": "paper",
+    "title": "RULER: Instance-aware Rubric Rewards for SVG Generation",
+    "summary_en": "Generating Scalable Vector Graphics (SVG) code from natural-language instructions is an open-ended task without absolute visual ground truth, leaving both evaluation and policy optimization without a faithful signal. Scalar metrics (CLIP, Aesthetic) calibrated on natural images transfer poorly to stylized vector content, and reusing them as RL rewards triggers reward hacking. We address both limitations with rubric-based scoring. We first establish empirically that prompting a vision-language judge with a multi-axis rubric correlates with human judgments far better than scalar metrics, both across samples and within instructions. Building on this finding, we introduce RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware rubric of six items spanning semantic, visual, and stylistic axes; a judge VLM scores rendered rollouts item-by-item, and the weighted satisfactions form a fine-grained reward optimized via Group Relative Policy Optimization. Because the rubric is derived from text alone, RULER requires neither paired SVG ground truth nor human preference labels. On MMSVG-Illustration and MMSVG-Icon, RULER lifts the rubric score from 0.432/0.395 to 0.693/0.683, surpassing dedicated SVG specialists and matching the substantially larger DeepSeek-V3, with ablations identifying rubric design as the active lever for RL on open-ended SVG generation. The project page is available at https://hangyuran.github.io/RULER/.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "agent"
+      "multimodal",
+      "cv",
+      "eval"
     ],
     "links": [
       {
-        "source": "openai",
-        "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-        "external_id": null
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.25270",
+        "external_id": "2609.25270"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.25270",
+        "external_id": "2609.25270"
       }
     ],
     "actors": [
-      "openai"
+      "Hangyu Ran",
+      "Yuhao Zheng",
+      "Yingying Zhang",
+      "Kevin Qinghong Lin",
+      "Han Peng"
     ],
-    "published_at": "2026-09-22T12:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.123523Z",
+    "published_at": "2026-09-21T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.527157Z",
     "dedup_keys": [
-      "url:openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "title:and astra cost cut gpt half parallel research time with"
+      "arxiv:2609.25270",
+      "title:aware for generation instance rewards rubric ruler svg"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 59,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": false,
+      "is_daily_paper": true,
       "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
+      "num_comments": 2,
       "has_code": false,
       "has_weights": false
     },
-    "score": 32.916,
+    "score": 37.659,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
+      "hf_upvotes": 32.755,
+      "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.084
+      "age_decay": -4.096
+    }
+  },
+  {
+    "id": "48a6e1ce570b0042",
+    "kind": "paper",
+    "title": "Lean Pool: An AI-Maintained Archive of Formalized Mathematics",
+    "summary_en": "Lean Pool is a repository of formalized mathematics. It is grown, maintained and optimized by AI agents.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.25199",
+        "external_id": "2609.25199"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.25199",
+        "external_id": "2609.25199"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Vilin97/lean-pool",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Vasily Ilin"
+    ],
+    "published_at": "2026-09-21T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.527337Z",
+    "dedup_keys": [
+      "arxiv:2609.25199",
+      "title:archive formalized lean maintained mathematics pool",
+      "github:vilin97/lean-pool"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 113,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.255,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "github_stars": 9.472,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.096
     }
   },
   {
@@ -648,19 +711,19 @@
       "Zhiqiang Shen"
     ],
     "published_at": "2026-09-22T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668253Z",
+    "first_seen_at": "2026-09-23T17:31:46.527310Z",
     "dedup_keys": [
       "arxiv:2609.26796",
       "title:and aware caching decoding diffusion dllm efficient fast flash for llms memory parallel",
       "github:vila-lab/flash-dllm"
     ],
     "signals": {
-      "hf_upvotes": 11,
+      "hf_upvotes": 13,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 8,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -668,172 +731,43 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 32.242,
+    "score": 34.91,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 2.197,
+      "hf_upvotes": 21.112,
+      "github_stars": 4.394,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.834
+      "age_decay": -2.596
     }
   },
   {
-    "id": "48a6e1ce570b0042",
-    "kind": "paper",
-    "title": "Lean Pool: An AI-Maintained Archive of Formalized Mathematics",
-    "summary_en": "Lean Pool is a repository of formalized mathematics. It is grown, maintained and optimized by AI agents.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.25199",
-        "external_id": "2609.25199"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25199",
-        "external_id": "2609.25199"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Vilin97/lean-pool",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Vasily Ilin"
-    ],
-    "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668438Z",
-    "dedup_keys": [
-      "arxiv:2609.25199",
-      "title:archive formalized lean maintained mathematics pool",
-      "github:vilin97/lean-pool"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 99,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.966,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "github_stars": 9.21,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.334
-    }
-  },
-  {
-    "id": "0a6b71085dff4c00",
-    "kind": "paper",
-    "title": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
-    "summary_en": "Multilingual scene text recognition (STR) remains challenging due to the scarcity of training data for most languages and the difficulty of serving diverse scripts within a single model. Existing solutions either deploy one recognizer per language, inflating cost and introducing error accumulation, or rely on massive vision-language models (VLMs) that are expensive and still inaccurate on many scripts. In this work, we pursue an all-in-one multilingual recognizer that is simpler than per-language experts, lighter than VLMs, and more accurate than both. First, we construct TextMuSS-10M, a large-scale synthetic scene text dataset spanning 10 scripts and 229 languages. It provides balanced and sufficient supervision where real data is unavailable. Second, we propose ScriptMoE, a script-aware Mixture-of-Experts (MoE) architecture. It shares a single visual encoder and replaces the dense decoder with a sparse MoE block, which consists of an image-level router dispatches each image to the top-2 script-aligned experts and a shared expert absorbs cross-script knowledge. Extensive experiments on our assembled TextMuSS-Bench (10 scripts, 10,899 images) show that ScriptMoE achieves the highest accuracy of 82.06%, outperforming the strongest STR baseline by 1.31%. On the CC-OCR end-to-end multilingual task, replacing only the recognizer in PP-OCRv5 with ScriptMoE lifts F1 score from 65.71% to 80.89%, slightly surpassing the best VLM (80.73%) at a fraction of the parameter count.",
+    "id": "126d6d4a840cfe76",
+    "kind": "release",
+    "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+    "summary_en": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "multimodal",
-      "cv",
-      "infra"
+      "agent",
+      "speech"
     ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.24058",
-        "external_id": "2609.24058"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.24058",
-        "external_id": "2609.24058"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/YesianRohn/ScriptMoE",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Xingsong Ye",
-      "Yongkun Du",
-      "Jiaxin Zhang",
-      "Zhixian Li",
-      "Chong Sun",
-      "Chen Li",
-      "Jing Lyu",
-      "Lianwen Jin",
-      "Zhineng Chen"
-    ],
-    "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668345Z",
-    "dedup_keys": [
-      "arxiv:2609.24058",
-      "title:all aware experts mixture multilingual one recognition scene script text with",
-      "github:yesianrohn/scriptmoe"
-    ],
-    "signals": {
-      "hf_upvotes": 8,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 2,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.441,
-    "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "github_stars": 2.197,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.334
-    }
-  },
-  {
-    "id": "f0675d5919fcd3bc",
-    "kind": "release",
-    "title": "Priorities and principles for effective third party assessments",
-    "summary_en": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
     "links": [
       {
         "source": "openai",
-        "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+        "url": "https://openai.com/index/ringg",
         "external_id": null
       }
     ],
     "actors": [
       "openai"
     ],
-    "published_at": "2026-09-22T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.123572Z",
+    "published_at": "2026-09-24T12:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847804Z",
     "dedup_keys": [
-      "url:openai.com/index/priorities-principles-third-party-assessments",
-      "title:and assessments effective for party principles priorities third"
+      "url:openai.com/index/ringg",
+      "title:agents calls customer openai resolve ringg with"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -849,70 +783,256 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 28.166,
+    "score": 34.0,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -1.834
+      "topic_match": 4.0,
+      "age_decay": -0.0
     }
   },
   {
-    "id": "9ff19838fcebc709",
-    "kind": "paper",
-    "title": "Circuit Hypernetworks for Quantum-Augmented Diffusion Language Models",
-    "summary_en": "Language models can be adapted by changing the computations applied to individual tokens. Quantum circuits offer one such approach, but evaluating wider circuits inside a large model can be computationally demanding. Here we introduce HyperQ, which adds token-conditioned quantum residual branches to a frozen masked-diffusion language model. A quantum residual branch is a module in each transformer block that reads a token's hidden state, emits the coordinates of that token's circuit, executes it, and adds the measured values back through a residual connection. The backbone remains frozen, and only the added branches are trained. Within each branch, a lightweight circuit hypernetwork emits token-specific rotation angles, coupling strengths, and measurement axes in a shared sparse circuit structure. The required expectation values have an exact classical expression whose evaluation cost grows linearly with the qubit count, enabling circuits from 16 to 64 qubits to be trained within a 1.1-billion-parameter backbone. Across downstream benchmarks, increasing circuit width raises the average score from 47.65 to 54.30. At 64 qubits, HyperQ exceeds the backbone and its low-rank-adapted counterpart by 4.71 and 3.67 points, respectively. HyperQ is fine-tuned on 20,000 prompt-response pairs, compared with 200,000 for the classical baselines. These findings support token-conditioned circuit emission as a tractable architectural approach to quantum-augmented language modelling.",
+    "id": "a12c7b151d1f382e",
+    "kind": "release",
+    "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
+    "summary_en": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval"
+      "agent",
+      "eval",
+      "infra"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.24657",
-        "external_id": "2609.24657"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.24657",
-        "external_id": "2609.24657"
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
+        "external_id": null
       }
     ],
     "actors": [
-      "Xiaoqiang Wang",
-      "Mengyang Xiong",
-      "Jun Dai",
-      "Bang Liu"
+      "nvidia"
     ],
-    "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668184Z",
+    "published_at": "2026-09-23T16:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:48.491582Z",
     "dedup_keys": [
-      "arxiv:2609.24657",
-      "title:augmented circuit diffusion for hypernetworks language models quantum"
+      "url:developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving",
+      "title:and between exposes gap how live local serve serving swe tests the"
     ],
     "signals": {
-      "hf_upvotes": 15,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
+      "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 0,
       "has_code": false,
       "has_weights": false
     },
-    "score": 27.847,
+    "score": 33.904,
     "score_breakdown": {
-      "hf_upvotes": 22.181,
-      "is_daily_paper": 5.0,
+      "kind_base": 20.0,
+      "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -3.334
+      "age_decay": -0.096
+    }
+  },
+  {
+    "id": "9da00c6112b5c4e4",
+    "kind": "release",
+    "title": "Better prompt caching for GPT-6",
+    "summary_en": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-22T21:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847925Z",
+    "dedup_keys": [
+      "url:openai.com/index/better-prompt-caching-for-gpt-6",
+      "title:better caching for gpt prompt"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.717,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.283
+    }
+  },
+  {
+    "id": "5e3c87aedddffc22",
+    "kind": "release",
+    "title": "Introducing GPT-6 Sol and Luna",
+    "summary_en": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-22T18:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847944Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-gpt-6-sol-and-luna",
+      "title:and gpt introducing luna sol"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.529,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.471
+    }
+  },
+  {
+    "id": "a605005457bb3d7f",
+    "kind": "release",
+    "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+    "summary_en": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-22T17:27:41Z",
+    "first_seen_at": "2026-09-23T17:31:48.491638Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing",
+      "title:computing confidential enabling high inference nvidia performance private production with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.496,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.504
+    }
+  },
+  {
+    "id": "fe7b7033801ba241",
+    "kind": "release",
+    "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+    "summary_en": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-22T12:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847967Z",
+    "dedup_keys": [
+      "url:openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "title:and astra cost cut gpt half parallel research time with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.154,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.846
     }
   },
   {
@@ -949,13 +1069,13 @@
       "Xinggang Wang"
     ],
     "published_at": "2026-09-22T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668366Z",
+    "first_seen_at": "2026-09-23T17:31:46.527245Z",
     "dedup_keys": [
       "arxiv:2609.26774",
       "title:for guidelines practical quantized stable stablevq tokenizer training vector"
     ],
     "signals": {
-      "hf_upvotes": 7,
+      "hf_upvotes": 20,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -968,50 +1088,564 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 23.802,
+    "score": 30.76,
     "score_breakdown": {
-      "hf_upvotes": 16.636,
+      "hf_upvotes": 24.356,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.834
+      "age_decay": -2.596
     }
   },
   {
-    "id": "59d41d27ae673fd1",
+    "id": "9ff19838fcebc709",
     "kind": "paper",
-    "title": "Recursive self-improvement of AI research agents",
-    "summary_en": "AI agents are beginning to automate research and development across the AI stack, from improving training efficiency to optimizing inference. A natural next step is to improve the research efficiency of the agents themselves. When an AI research agent's own code is the object of optimization, each accepted rewrite becomes the agent that the next round edits. We refer to this loop as recursive self-improvement. Its significance lies in a long-standing trend, in which increased cumulative spending on R&D yields diminishing returns. Sustained self-improvement offers a way to counter this trend. We present AIDE^2, a system that implements this loop for a frontier AI research agent. It proposes changes to its own code, benchmarks modified versions of itself on a suite of AI R&D tasks, and keeps the changes that perform best on hidden evaluations. In an autonomous 8-day run, AIDE^2 discovered seven successive improvements, ranging from a new search policy to memory mechanisms that compress and manage the agent's growing context. These gains generalize to four held-out benchmarks spanning machine learning engineering, heuristic algorithm engineering, and physics-based weather forecasting, the last of which is out of distribution from the selection tasks. On all four, the strongest discovered agent matches or exceeds a human-engineered production research agent that ranks among the strongest on FML-Bench. On a separate held-out task family, the discovered agents also exhibit reduced reward hacking, a property the loop never explicitly optimized for: the rate falls from 55% to 32% during the run, 7 percentage points below the human-engineered agent. Together, these results show that an AI research agent can improve its own research efficiency through recursive self-improvement, and that these gains transfer to tasks and domains the loop never encountered.",
+    "title": "Circuit Hypernetworks for Quantum-Augmented Diffusion Language Models",
+    "summary_en": "Language models can be adapted by changing the computations applied to individual tokens. Quantum circuits offer one such approach, but evaluating wider circuits inside a large model can be computationally demanding. Here we introduce HyperQ, which adds token-conditioned quantum residual branches to a frozen masked-diffusion language model. A quantum residual branch is a module in each transformer block that reads a token's hidden state, emits the coordinates of that token's circuit, executes it, and adds the measured values back through a residual connection. The backbone remains frozen, and only the added branches are trained. Within each branch, a lightweight circuit hypernetwork emits token-specific rotation angles, coupling strengths, and measurement axes in a shared sparse circuit structure. The required expectation values have an exact classical expression whose evaluation cost grows linearly with the qubit count, enabling circuits from 16 to 64 qubits to be trained within a 1.1-billion-parameter backbone. Across downstream benchmarks, increasing circuit width raises the average score from 47.65 to 54.30. At 64 qubits, HyperQ exceeds the backbone and its low-rank-adapted counterpart by 4.71 and 3.67 points, respectively. HyperQ is fine-tuned on 20,000 prompt-response pairs, compared with 200,000 for the classical baselines. These findings support token-conditioned circuit emission as a tractable architectural approach to quantum-augmented language modelling.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent",
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.24657",
+        "external_id": "2609.24657"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.24657",
+        "external_id": "2609.24657"
+      }
+    ],
+    "actors": [
+      "Xiaoqiang Wang",
+      "Mengyang Xiong",
+      "Jun Dai",
+      "Bang Liu"
+    ],
+    "published_at": "2026-09-21T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.527230Z",
+    "dedup_keys": [
+      "arxiv:2609.24657",
+      "title:augmented circuit diffusion for hypernetworks language models quantum"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.988,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.096
+    }
+  },
+  {
+    "id": "dae0c3a7c8407e5b",
+    "kind": "release",
+    "title": "Offloaded inference for real-world physical AI robotics",
+    "summary_en": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads. The post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "microsoft_research"
+    ],
+    "published_at": "2026-09-23T16:01:36Z",
+    "first_seen_at": "2026-09-23T17:31:49.228169Z",
+    "dedup_keys": [
+      "url:microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics",
+      "title:for inference offloaded physical real robotics world"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.906,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.094
+    }
+  },
+  {
+    "id": "4ca3759865f89566",
+    "kind": "release",
+    "title": "Advancing Private AI Compute with secure, server-side memory",
+    "summary_en": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-09-23T16:00:57Z",
+    "first_seen_at": "2026-09-23T17:31:47.572614Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+      "title:advancing compute memory private secure server side with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.905,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.095
+    }
+  },
+  {
+    "id": "ba952acc9e853b61",
+    "kind": "release",
+    "title": "Two years of OpenAI Academy",
+    "summary_en": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/two-years-of-openai-academy",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T16:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847854Z",
+    "dedup_keys": [
+      "url:openai.com/index/two-years-of-openai-academy",
+      "title:academy openai two years"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.904,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.096
+    }
+  },
+  {
+    "id": "bbced99d1c952fd1",
+    "kind": "release",
+    "title": "Gemini 3.8 text-to-speech says hello",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-09-23T15:25:14Z",
+    "first_seen_at": "2026-09-23T17:31:47.572657Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+      "title:gemini hello says speech text"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.868,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.132
+    }
+  },
+  {
+    "id": "1be2da47bc934ccf",
+    "kind": "release",
+    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+    "summary_en": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T13:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847879Z",
+    "dedup_keys": [
+      "url:openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "title:access civilian cyber defense extends for openai ukraine"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.717,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.283
+    }
+  },
+  {
+    "id": "33072392cf07a525",
+    "kind": "release",
+    "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+    "summary_en": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847901Z",
+    "dedup_keys": [
+      "url:openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "title:and asia bring grab openai practical skills southeast"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.904,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.096
+    }
+  },
+  {
+    "id": "9426c41d7ef077c8",
+    "kind": "paper",
+    "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+    "summary_en": "LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other's work, and receive rewards. We introduce realistic constraints that make compliance with the verification protocol incompatible with reward maximization, and find that agents increasingly deviate from the protocol over repeated interactions. Collusion emerges in 94% of trajectories across 10 models, and more capable models within the same family reach it earlier. Controlled peer interventions show that collusion is shaped by peer behavior, while ablations reveal additional effects of reward structure, the verification feedback agents receive, and their interaction history. In particular, restricting the amount and scope of interaction history available to agents reduces collusion. Overall, our findings show that long-horizon interaction can reshape how agents coordinate in ways that create safety risks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.24967",
+        "external_id": "2609.24967"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.24967",
+        "external_id": "2609.24967"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/SALT-NLP/agent-collusion",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xinrui Shi",
+      "Yanzhe Zhang",
+      "Diyi Yang"
+    ],
+    "published_at": "2026-09-21T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.527361Z",
+    "dedup_keys": [
+      "arxiv:2609.24967",
+      "title:agent collusion emergent horizon interaction llm long",
+      "github:salt-nlp/agent-collusion"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.63,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.096
+    }
+  },
+  {
+    "id": "f0675d5919fcd3bc",
+    "kind": "release",
+    "title": "Priorities and principles for effective third party assessments",
+    "summary_en": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-22T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.847988Z",
+    "dedup_keys": [
+      "url:openai.com/index/priorities-principles-third-party-assessments",
+      "title:and assessments effective for party principles priorities third"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.404,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -2.596
+    }
+  },
+  {
+    "id": "d050cffedc15b60c",
+    "kind": "paper",
+    "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
+    "summary_en": "LLM-as-a-judge enables evaluation across diverse tasks, but inference cost and confidence reliability become critical at scale. We study whether a decision-only judge can provide an economical first pass and identify when stronger evaluation is needed. Comparing jev-as-a-judge with sixteen generative and reward-model judges, with blinded human adjudication, we find it within three percentage points of a state-of-the-art LLM judge, our strongest comparator, on ordinary preference and evidence-grounded factuality at 0.36% of the comparator's fee. Larger gaps arise when judgments require checking a derivation or resisting an elaborately written wrong answer. On several benchmarks, JEV's gap to this comparator is concentrated in low-confidence decisions. A frozen cascade that accepts confident verdicts and escalates uncertain ones retains 99% of the comparator's accuracy at lower cost.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
       "eval",
       "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.26457",
-        "external_id": "2609.26457"
+        "url": "https://huggingface.co/papers/2609.26550",
+        "external_id": "2609.26550"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.26457",
-        "external_id": "2609.26457"
+        "url": "https://arxiv.org/abs/2609.26550",
+        "external_id": "2609.26550"
       }
     ],
     "actors": [
-      "Dhruv Srikanth",
-      "Bingchen Zhao",
-      "Dixing Xu",
-      "Yuxiang Wu",
-      "Zhengyao Jiang"
+      "Yubo Li",
+      "Yidi Miao",
+      "Ramayya Krishnan",
+      "Rema Padman"
     ],
     "published_at": "2026-09-22T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668407Z",
+    "first_seen_at": "2026-09-23T17:31:46.527324Z",
     "dedup_keys": [
-      "arxiv:2609.26457",
-      "title:agents improvement recursive research self"
+      "arxiv:2609.26550",
+      "title:accept confident escalate jev judge unsure when when"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.924,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.596
+    }
+  },
+  {
+    "id": "3ce253f071c062a9",
+    "kind": "paper",
+    "title": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
+    "summary_en": "Modern embodied agents achieve impressive success rates, yet their actual instruction-following ability is far weaker than these numbers suggest. We trace this illusion to a structural property we term low scene entropy: when a visual scene admits only one valid task, language becomes redundant and a policy can score highly while barely using it. We introduce RoboFollow, a diagnostic benchmark with three principles: (1) High Scene Entropy: each training scene supports multiple kinematically distinct task branches, making vision alone insufficient and forcing reliance on language. (2) Hierarchical Diagnostic Protocol: a four-level protocol (L0--L3) progressively perturbs visual layout and semantics, probing whether equivalent instructions yield consistent behavior and distinct ones yield discriminable behavior across spatial relations, attributes, trajectory constraints, and logic. (3) Confound-Controlled Diagnosis: we simplify interaction objects, restrict actions to the trained repertoire and report stage-wise Intent and Execution scores, isolating comprehension from motor execution. Evaluation of nine VLA and WAM policies shows that strong L0 performance, where attained, does not reliably transfer to L1--L3 under our fine-tuning setup. Representative mitigations, including stronger VLM backbones, QA co-training, LangForce, and Classifier-Free Guidance, all fail to close this gap. RoboFollow exposes genuine instruction following as a critical, overlooked bottleneck. Code and dataset are available at https://github.com/AutoLab-SAI-SJTU/RoboFollow and https://huggingface.co/datasets/AutoLab-SJTU/robofollow-data.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.25636",
+        "external_id": "2609.25636"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.25636",
+        "external_id": "2609.25636"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AutoLab-SAI-SJTU/RoboFollow",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chang Guo",
+      "Yukun Xie",
+      "Bohan Tan",
+      "Zheng Chang",
+      "Zhaokai Yin",
+      "Qianli Ma",
+      "Yingqiao Wang",
+      "Chao Liang",
+      "Zhipeng Zhang"
+    ],
+    "published_at": "2026-09-22T00:00:00Z",
+    "first_seen_at": "2026-09-23T17:31:46.527391Z",
+    "dedup_keys": [
+      "arxiv:2609.25636",
+      "title:agents embodied following instruction mirage robofollow the unveiling",
+      "github:autolab-sai-sjtu/robofollow"
     ],
     "signals": {
       "hf_upvotes": 4,
@@ -1019,654 +1653,22 @@
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 2,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
+      "num_comments": 1,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 20.042,
+    "score": 24.477,
     "score_breakdown": {
       "hf_upvotes": 12.876,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.834
-    }
-  },
-  {
-    "id": "2c2c98f5726b0ad4",
-    "kind": "release",
-    "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/evaleval-aisi",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-09-22T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:03.407131Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/evaleval-aisi",
-      "title:aisi and are benchmark evaleval how making reproducible results"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 18.166,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -1.834
-    }
-  },
-  {
-    "id": "d6fc5112f539bca7",
-    "kind": "release",
-    "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/omlx",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-09-22T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:03.407243Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/omlx",
-      "title:and community creator face hugging joins jun kim maintainer mlx omlx support the"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 18.166,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -1.834
-    }
-  },
-  {
-    "id": "d0ad331146f99f38",
-    "kind": "paper",
-    "title": "Bellman Policy Optimization",
-    "summary_en": "Reinforcement learning with verifiable rewards (RLVR) improves the reasoning capabilities of large language models (LLMs). We introduce Bellman Policy Optimization (BPO), a critic-free method derived from Policy Mirror Descent (PMD). For autoregressive generation with terminal rewards, BPO uses the Bellman equations to reformulate PMD as a trajectory-level objective. The reformulation avoids estimating state values at intermediate states. We prove that it has the same unique optimal solution as the original PMD objective. We derive the practical BPO loss by approximating this objective. Its mismatch-correction weight is a smoothed ratio of complementary token probabilities. Experiments on mathematical reasoning benchmarks demonstrate the effectiveness of BPO.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.15987",
-        "external_id": "2609.15987"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.15987",
-        "external_id": "2609.15987"
-      }
-    ],
-    "actors": [
-      "Zhuoqing Song",
-      "Haotian Xu",
-      "Xikun Zhang",
-      "Lidong Bing"
-    ],
-    "published_at": "2026-09-14T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668220Z",
-    "dedup_keys": [
-      "arxiv:2609.15987",
-      "title:bellman optimization policy"
-    ],
-    "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 15.045,
-    "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -13.834
-    }
-  },
-  {
-    "id": "f7a4832f850dac6b",
-    "kind": "paper",
-    "title": "Domain-Adaptive Pretraining Enhances Water Treatment Semantic Representation for Large-Scale Structured Literature Mining",
-    "summary_en": "Water treatment research is expanding rapidly, but much of the knowledge acquired from this research remains scattered across unstructured literature. The field still lacks a dedicated language model that can efficiently capture water treatment-specific domain semantics for large-scale literature mining. Here, we address this by developing WaterBERT, a domain-adapted encoder model designed for semantic representation and structured information extraction from water treatment texts. WaterBERT was developed by continual pretraining on a large-scale water treatment corpus comprising about 2.97 billion tokens. Three fine-tuned models based on WaterBERT were systematically evaluated on downstream tasks, achieving the best overall performance among general-purpose and domain-specific BERT models, with F1 scores of 90.12% for multiclass treatment process classification, 79.50% for named entity recognition, and 74.04% for relation extraction. Beyond these benchmark tasks, we further demonstrated WaterBERT's advantages for large-scale literature processing. Applied to 5,144 Environmental Science & Technology articles, WaterBERT-BERTopic identified coherent, diverse, and domain-specific research topics without predefined categories. Building on WaterBERT, we processed 693,211 abstracts at substantially lower cost than commercial LLMs while retaining competitive extraction performance to construct a structured water treatment knowledge graph. The knowledge graph was then integrated with lexical and dense retrieval to develop a Water Knowledge-Enhanced Retrieval System (WaterKERS), which achieved a relevance score of 77.7, substantially outperforming text-based retrieval baselines (54.7-64.5). Through WaterBERT, this study provides a compact and scalable semantic foundation for large-scale information processing and evidence mapping in water treatment research.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.26034",
-        "external_id": "2609.26034"
-      }
-    ],
-    "actors": [
-      "Mudi Zhai (UNSW Water Research Centre",
-      "School of Civil and Environmental Engineering",
-      "The University of New South Wales",
-      "Sydney",
-      "NSW 2052",
-      "Australia)",
-      "Ruihong Qiu (School of Electrical Engineering and Computer Science",
-      "The University of Queensland",
-      "Brisbane",
-      "QLD 4072",
-      "Australia)",
-      "Qingyun Zeng (Microsoft Copilot Studio AI",
-      "Redmond",
-      "WA 98052",
-      "United States",
-      "Departments of Mathematics & Department of Computer and Information Science",
-      "University of Pennsylvania",
-      "Philadelphia",
-      "PA 19104",
-      "United States)"
-    ],
-    "published_at": "2026-09-23T04:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.246845Z",
-    "dedup_keys": [
-      "arxiv:2609.26034",
-      "title:adaptive domain enhances for large literature mining pretraining representation scale semantic structured treatment water"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 13.916,
-    "score_breakdown": {
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.084
-    }
-  },
-  {
-    "id": "ccb9c1fe6ff18298",
-    "kind": "paper",
-    "title": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
-    "summary_en": "We introduce Qwen3.8-Omni-Flash, a natively multimodal agentic model for real-world multimodal productivity. Compared with previous omni models, which primarily emphasized perception and interaction, Qwen3.8-Omni-Flash substantially improves multimodal understanding and reasoning, as well as performance on long-horizon agentic tasks. These capabilities are supported by a native multimodal co-training strategy that preserves strong text-domain capabilities while facilitating the transfer of agentic capabilities from text to audio and video tasks. The model inherits the sparse mixture-of-experts (MoE) architecture of Qwen3.8-Next and extends the context window to one million tokens, supporting long-context multimodal reasoning and long-horizon planning. These advances enable integration into production workflows as a primary agent or a specialized sub-agent, supporting video editing, long-form audio and video translation, music-conditioned music video or movie generation, and video-based note or omni-skill creation. To address the lack of native audio and video support in existing agent harnesses, we release Qwen-MM-Plugins, a lightweight open-source plugin framework for multimodal productivity. We further frame real-time multimodal interaction as a system-level challenge requiring orchestration of context and memory management, tool use, and sub-agent delegation. Accordingly, we release Qwen-Live-Harness, an open-source framework for building responsive, real-time multimodal agents based on Qwen3.8-Omni-Flash. Extensive evaluations demonstrate that Qwen3.8-Omni-Flash achieves strong performance across multimodal understanding, reasoning, long-horizon agentic execution, and video productivity tasks. These results and the accompanying open-source tools support Qwen3.8-Omni-Flash as a practical foundation for deploying natively multimodal agents in research and production.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "multimodal",
-      "cv",
-      "speech",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25611",
-        "external_id": "2609.25611"
-      }
-    ],
-    "actors": [
-      "Qwen Team"
-    ],
-    "published_at": "2026-09-23T04:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.245824Z",
-    "dedup_keys": [
-      "arxiv:2609.25611",
-      "title:agents modal native omni omni qwen3 towards"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 13.916,
-    "score_breakdown": {
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.084
-    }
-  },
-  {
-    "id": "91b972931b1396a1",
-    "kind": "paper",
-    "title": "Geometric and Semantic Coupling for Interaction Understanding in 3D Scenes",
-    "summary_en": "Interaction understanding in 3D scenes requires a joint description of movable parts, their motion, and the regions through which they can be operated. We present Segment-Snap, which connects these outputs through the physical relationship between parts and handles. Learned predictors identify broad part surfaces and small handles. A geometric decoder uses planar and upright priors to constrain motion, then selects hinge lines using predicted handle locations, without training a motion regressor. Conversely, a joint part-and-handle predictor supplies additional handle candidates, whose motion classes are refined using containing parts. Each information transfer is applied once, without iterative feedback. On Articulate3D validation, handle guidance raises motion-gated AP from 13.74% to 40.98% at fixed masks and axes. Additional handle candidates raise handle AP from 24.63% to 29.65%; part-based class correction adds 0.98 points, and full context reaches 30.99%. Repeated training, learned-decoder controls and paired visualizations establish the benefits and limitations of combining geometric and semantic evidence for interaction understanding.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.25247",
-        "external_id": "2609.25247"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25247",
-        "external_id": "2609.25247"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/HyoKong/Segment-Snap",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Hanyang Kong",
-      "Xingyi Yang"
-    ],
-    "published_at": "2026-09-21T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668467Z",
-    "dedup_keys": [
-      "arxiv:2609.25247",
-      "title:and coupling for geometric interaction scenes semantic understanding",
-      "github:hyokong/segment-snap"
-    ],
-    "signals": {
-      "hf_upvotes": 1,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 11.597,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -3.334
-    }
-  },
-  {
-    "id": "f0ae490dc2095340",
-    "kind": "paper",
-    "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
-    "summary_en": "LLM agents increasingly work on long-horizon tasks, and the decisions they make along the way, such as which hypothesis to test or which implementation to build on, determine the outcome of the whole run. Making these decisions well is becoming a key capability for both engineering and research agents. We refer to the ability to make good long-horizon decisions as the taste of an agent. While existing benchmarks measure the end-to-end success of agents on long-horizon tasks, none of them measures the taste of an agent. To address this problem, we build Taste-Bench, a benchmark of taste questions constructed automatically from trajectories that agents produced in engineering and research tasks. Each question presents a decision fork, a point in a trajectory where multiple directions are available and one of them leads to a better outcome, and the evaluated model chooses among these directions without seeing what happens after the fork. We mine these forks automatically from parallel attempts at the same task and from detours inside a single trajectory, without needing human annotation. We evaluate frontier models on Taste-Bench and find that the best model answers only 59.7% of the questions correctly. We further find that forks whose deciding evidence appears later in the trajectory are much harder for every model, and that a larger reasoning budget does not improve the accuracy. Finally, we show that taste can be trained. We distill the judgment of a teacher that has seen the outcome into a student model, and the student makes better decisions on unseen tasks and improves end-to-end success on held-out SWE-bench Pro tasks.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.25804",
-        "external_id": "2609.25804"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25804",
-        "external_id": "2609.25804"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/wbopan/tastebench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Wenbo Pan",
-      "Zhichao Liu",
-      "Shujie Liu",
-      "Jingying Zeng",
-      "Chin-Yew Lin",
-      "Xianfeng Tang",
-      "Yan Lu",
-      "Qi He",
-      "Xiaohua Jia"
-    ],
-    "published_at": "2026-09-22T00:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:01.668498Z",
-    "dedup_keys": [
-      "arxiv:2609.25804",
-      "title:agent and horizon improving long measuring tasks taste tasteful the",
-      "github:wbopan/tastebench"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 11.552,
-    "score_breakdown": {
-      "github_stars": 1.386,
+      "github_stars": 2.197,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.834
-    }
-  },
-  {
-    "id": "1bf0f8a11960e974",
-    "kind": "paper",
-    "title": "A Computational Approach to Measuring Semantic Change in Sanskrit Literature",
-    "summary_en": "Diachronic word embeddings have become the modern standard for tracking semantic change, yet they have been largely validated on modern, high-resource, and well-segmented languages. This paper tests whether the paradigm transfers to Sanskrit, an ancient, low-resource language whose phonological fusion (sandhi), morphological inflection, compounding, and polysemy pose a unique challenge. I assemble a 2.7M-token corpus spanning four canonical periods, recover word boundaries with a neural byte-level sandhi splitter and lemmatizer, and train per-period embeddings across configurations. To evaluate the system, I curate a validation set from historical scholarship and test recovery directionally with anchor displacement. Of 21 testable shifts, 19 move in the philologically attested direction (sign test, p=0.00011). I further show which configuration the language forces and comment on opportunities for improvement.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25012",
-        "external_id": "2609.25012"
-      }
-    ],
-    "actors": [
-      "Tanay Agrawal"
-    ],
-    "published_at": "2026-09-23T04:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.243170Z",
-    "dedup_keys": [
-      "arxiv:2609.25012",
-      "title:approach change computational literature measuring sanskrit semantic"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.916,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.084
-    }
-  },
-  {
-    "id": "ab119f6f4f6e9d5d",
-    "kind": "paper",
-    "title": "From Tone to Trajectory: Continuous Sentiment and the Shape of Monetary Policy Communication",
-    "summary_en": "Central bank press conferences are not merely information releases --- they are structured narratives. We study whether the shape of sentiment within a statement, not just its average tone, carries policy-relevant signals. Constructing sentiment arcs for ECB and Fed press conferences along three dimensions --- monetary stance, economic outlook, and uncertainty --- we assess their predictive content for policy rate changes, inflation expectations, and forecaster disagreement. Our findings show that arc shape robustly predicts rate decisions beyond lexicon-based benchmarks at both institutions --- it is not merely whether a statement sounds hawkish or economically optimistic on average, but how these sentiments are sequenced and emphasized across the statement, that carries the policy signal. Arc features also shape how professional forecasters update inflation expectations and how much they disagree, pointing to a receiver-side effect distinct from the direct policy signal. These findings suggest that communication design --- the sequencing and emphasis of policy language across a statement --- is a first-order feature of the policy signal, not a second-order refinement.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25034",
-        "external_id": "2609.25034"
-      }
-    ],
-    "actors": [
-      "Martin Feldkircher",
-      "M\\'arton Kardos",
-      "Kristoffer Laigaard Nielbo"
-    ],
-    "published_at": "2026-09-23T04:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.243351Z",
-    "dedup_keys": [
-      "arxiv:2609.25034",
-      "title:and communication continuous from monetary policy sentiment shape the tone trajectory"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.916,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.084
-    }
-  },
-  {
-    "id": "47bed1c4bc9cbe75",
-    "kind": "paper",
-    "title": "Same Quantity, Different Answer: Numerical Representation Invariance in Language Models",
-    "summary_en": "Numerically equivalent word problems should yield the same canonical answer whether a quantity is written as a decimal, fraction, percentage, number word, scientific notation, or an exactly converted unit. We generate 3,600 exact-rational problems and 8,600 prompts spanning five identity-preserving transformation families, and evaluate five open-weight systems. After a fixed syntax audit that normalizes common answer forms without an LLM judge, canonical accuracy is 0.969-0.996, but orbit correctness falls to 0.848-0.981 and orbit invariance to 0.851-0.981; invariant-but-wrong orbits account for at most 0.003. Most of the broad strict-parser collapse arises because multiplication-form scientific notation lies outside the implemented number grammar, illustrating how evaluator interfaces can masquerade as reasoning failures. A distinct semantic pathology remains: Mistral Small 4 scores 0.699 on unit-converted inputs and produces 265 errors differing from the label by exact powers of ten. In a separate 9,000-call experiment that allocates equal calls to the compared arms, representation consensus does not outperform paraphrase consensus on a low-error subset and produces substantially more false alarms. The accompanying ancillary archive contains the frozen benchmark, evaluation and audit records, consensus raw responses, manifests, analysis code, and a one-command paper build.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25009",
-        "external_id": "2609.25009"
-      }
-    ],
-    "actors": [
-      "Ephraim Atta-Duncan"
-    ],
-    "published_at": "2026-09-23T04:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.243085Z",
-    "dedup_keys": [
-      "arxiv:2609.25009",
-      "title:answer different invariance language models numerical quantity representation same"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.916,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.084
-    }
-  },
-  {
-    "id": "40122321f2ed9e25",
-    "kind": "paper",
-    "title": "Training a Language Model End-to-End in Rust: An Experience Report",
-    "summary_en": "I pretrained a language model end-to-end in Rust - alone, with no team, no PyTorch, and no Python in the training path - for $164 in rented GPU time. I report that as an achievement, not a recommendation: the more useful contribution is a measured failure taxonomy of the two leading Rust ML frameworks, Candle and Burn, as training (not inference) backends in 2026. I document five Candle defects, including fused kernels that silently produce no gradient, and three Burn defects, including a backward pass at roughly 3% of theoretical GPU throughput and a kernel-fusion path that segfaults mid-training at multi-billion-parameter scale. Every one passed ordinary loss-curve inspection; none announced itself. I describe the verification discipline that caught six such silent failures, centered on a gradient-flow arbiter: a test that runs one forward/backward pass and asserts every trainable parameter receives a finite, nonzero gradient, generalizable to any framework. The trained model (roughly 0.4B parameters, Bangla-first) shows strong Bangla language-modeling signal - a per-token negative log-likelihood of 0.93 against 12.60 for a random-initialized twin - while scoring at chance on English commonsense multiple-choice, the expected outcome of a deliberately small, Bangla-weighted budget (about 2 billion tokens, 54.6 hours, one rented H100). I also report a tokenizer-fertility trap in Bengali script: naive byte-level tokenization collapsed Bangla to roughly 1.4 characters per token against English's 3.9, silently inverting the corpus's language balance; fixing it reached roughly 4.1. To my knowledge, this is among the first documented end-to-end LM pretraining runs in pure Rust. After this run I moved training to PyTorch and kept Rust for on-device serving: in my hands, Rust is not yet a competitive place to train a language model, though it may be a good place to serve one.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25008",
-        "external_id": "2609.25008"
-      }
-    ],
-    "actors": [
-      "Arif Adito"
-    ],
-    "published_at": "2026-09-23T04:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.242976Z",
-    "dedup_keys": [
-      "arxiv:2609.25008",
-      "title:end end experience language model report rust training"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.916,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.084
-    }
-  },
-  {
-    "id": "4fb96b6e8065cacc",
-    "kind": "paper",
-    "title": "What Does 99% Accuracy Measure? A Reproducible Audit of Shortcut Learning in a Widely Used Fake News Corpus",
-    "summary_en": "Text classifiers trained on the ISOT/Kaggle \"Fake and Real News\" corpus routinely report accuracy and F1 above 0.98, a level of performance that sits uneasily beside the difficulty of assessing veracity. Using a transparent TF-IDF and linear-classifier pipeline as a measurement instrument, we audit the corpus along three leakage channels and two distribution-shift protocols, releasing all code and derived numbers. First, the benchmark is partly degenerate: a classifier given only the subject metadata field, with the article text discarded, attains F1 = 1.000, since the two classes have disjoint subjects. Second, removing all three leakage channels, metadata, a newswire source tag present in 99.2% of real articles, and 6,251 duplicate documents contaminating 19.4% of a naive test split, lowers F1 by only 1.21 points (0.9935 to 0.9814); the residual signal is diffuse editorial style rather than a few giveaway tokens, since deleting the 1,000 highest-weight unigrams still leaves F1 = 0.926. Third, this style signal does not transfer: under a topic-disjoint protocol, average precision falls from 0.9995 to 0.9475 and deployed F1 from 0.9905 to 0.8067, with a prior-matched analysis confirming a genuine 5.2-point loss of discrimination, while temporal transfer is nearly lossless. A fine-tuned DistilBERT is stronger in-distribution (F1 = 0.9993) but degrades far more under topic shift, losing 12.9 average-precision points against the linear model's 5.2. Transferred to the independent LIAR benchmark, all three models fall to near-chance ranking (ROC-AUC 0.54-0.57), none beating a majority-class baseline. We conclude that within-corpus scores here quantify source and topic separability rather than veracity, that added capacity exploits the shortcut rather than avoiding it, and we recommend metadata-only, small-sample, and topic-disjoint baselines as inexpensive diagnostics for future work.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.25006",
-        "external_id": "2609.25006"
-      }
-    ],
-    "actors": [
-      "Yuvraj Verma"
-    ],
-    "published_at": "2026-09-23T04:00:00Z",
-    "first_seen_at": "2026-09-23T05:21:02.242819Z",
-    "dedup_keys": [
-      "arxiv:2609.25006",
-      "title:accuracy audit corpus does fake learning measure news reproducible shortcut used what widely"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.916,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.084
+      "age_decay": -2.596
     }
   }
 ]
