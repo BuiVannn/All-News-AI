@@ -1,0 +1,1893 @@
+[
+  {
+    "id": "6da821c5a0f119d9",
+    "kind": "model",
+    "title": "apple/LensVLM-9B",
+    "summary_en": "image-text-to-text, transformers, qwen3_5, vision-language-model, long-context, visual-text-compression, conversational",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/apple/LensVLM-9B",
+        "external_id": "apple/LensVLM-9B"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "external_id": "Qwen/Qwen3.5-9B"
+      }
+    ],
+    "actors": [
+      "apple"
+    ],
+    "published_at": "2026-09-21T18:18:20Z",
+    "first_seen_at": "2026-09-24T05:36:31.022964Z",
+    "dedup_keys": [
+      "hf:apple/lensvlm-9b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 130,
+      "hf_downloads": 233,
+      "hf_trending_score": 130.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 59.081,
+    "score_breakdown": {
+      "hf_trending": 29.251,
+      "hf_downloads": 10.911,
+      "hf_likes": 14.626,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -3.707
+    }
+  },
+  {
+    "id": "3f98de7863f65231",
+    "kind": "model",
+    "title": "Edge0/Audio8-ASR-Infinite",
+    "summary_en": "automatic-speech-recognition, transformers, audio8_asr_infinite, text-generation, streaming, realtime, speech-recognition, audio",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
+        "external_id": "Edge0/Audio8-ASR-Infinite"
+      }
+    ],
+    "actors": [
+      "Edge0"
+    ],
+    "published_at": "2026-09-21T15:03:21Z",
+    "first_seen_at": "2026-09-24T05:36:31.023003Z",
+    "dedup_keys": [
+      "hf:edge0/audio8-asr-infinite"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 128,
+      "hf_downloads": 0,
+      "hf_trending_score": 121.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 47.493,
+    "score_breakdown": {
+      "hf_trending": 28.824,
+      "hf_likes": 14.579,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -3.91
+    }
+  },
+  {
+    "id": "42339b682d747c37",
+    "kind": "paper",
+    "title": "The Past Frames the Future: Memory for Autoregressive Video Generation",
+    "summary_en": "Advances in generative models have improved video fidelity, enabling long-horizon generation, interactive world modeling, and evolving visual environments. Autoregressive (AR) video generation extends visual sequences through causal rollouts. However, a fundamental bottleneck emerges: as the generated sequence expands, practical models must operate under strictly bounded context windows, storage, and computational limits. Consequently, critical historical information, e.g., entity identities, dynamic states, and intervention-induced causal changes, often leaves the active context long before its relevance diminishes. Overcoming this limitation and maintaining temporal persistence constitutes a fundamental memory problem. We present a systematic and comprehensive review of memory mechanisms in AR video generation. We formulate memory operationally as persistent historical information maintained across outer AR steps, capable of influencing future generation even after the originating evidence is no longer locally accessible. Building upon this unified framework, we organize the literature through five complementary perspectives: (I) Forms, the representational carriers of history; (II) Functions, the specific semantic and physical information requiring preservation; (III) Operations, the lifecycle of writing, reading, updating, managing, and integrating memory; (IV) Learning, the optimization of memory behaviors under closed-loop rollouts; and (V) Evaluation, the paradigms for diagnosing genuine memory capabilities. We conclude by synthesizing open challenges, including composable and resource-aware memory architectures, trustworthy state updating, self-rollout learning, and standardized evaluation. By bridging representations, mechanisms, and learning paradigms, this paper establishes a structured foundation for developing reliable, memory-conditioned video generation systems.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.28466",
+        "external_id": "2609.28466"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.28466",
+        "external_id": "2609.28466"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/HaroldChen19/Awesome-AR-Video-Memory",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Harold Haodong Chen",
+      "Rongjin Guo",
+      "Disen Lan",
+      "Wen-Jie Shu",
+      "Hongfei Zhang",
+      "Hanzhe Hu",
+      "Shengtao Yao",
+      "Zixin Zhang",
+      "Guibin Zhang",
+      "Zhefan Rao",
+      "Jinxiu Liu",
+      "Yexin Liu",
+      "Rui Peng",
+      "Yuhao Liu",
+      "Bin Ren",
+      "Shuai Yang",
+      "Yukang Chen",
+      "Salman Khan",
+      "Ying-Cong Chen",
+      "Ser-Nam Lim",
+      "Rynson W. H. Lau",
+      "Nicu Sebe",
+      "Yu Cheng",
+      "Ming-Hsuan Yang",
+      "Qifeng Chen"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.031853Z",
+    "dedup_keys": [
+      "arxiv:2609.28466",
+      "title:autoregressive for frames future generation memory past the the video",
+      "github:haroldchen19/awesome-ar-video-memory"
+    ],
+    "signals": {
+      "hf_upvotes": 27,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 30,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 43.675,
+    "score_breakdown": {
+      "hf_upvotes": 26.658,
+      "github_stars": 6.868,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "5894cfc1db7fb782",
+    "kind": "paper",
+    "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+    "summary_en": "Long-term conversational memory in multi-party settings requires more than retrieving relevant content from long-term conversations: it must distinguish who said what, whom each statement concerns, how individuals perceive one another, what information is shared by the group, and how states change over time. Recent studies on multi-party dialogue benchmarks show that existing general-purpose LLM memory systems tend to lose person and group relations or struggle to integrate clues distributed across members, groups, and time. Together, these issues reveal two core bottlenecks: message attribution and relational understanding in multi-party dialogue, and state reconstruction from interleaved histories. To address both, we propose SpeakerMem-R1: its dual-track memory stores speaker-labeled verbatim messages and derived states organized into person-level and group-level views, then combines evidence from both tracks by entity, event, and time at query time. To reduce attribution and update errors during structured memory construction while enabling local deployment, we train Writer-R1 with SpeakerLevenshtein and speaker-conditioned GRPO. On GroupMemBench, SocialMemBench, and EverMemBench, SpeakerMem-R1 achieves binary accuracies of 47.9%, 69.2%, and 61.9%, respectively. On the publicly reported EverMemBench leaderboard from EverMind-AI, we achieves 62.33%, the best reported result among the latest state-of-the-art frameworks. It also achieves 70.85% on all 1,986 LoCoMo questions, which we use as a two-person long-term conversation boundary test. In a controlled evaluation of 305 questions, RL raises the SFT Writer's mean accuracy from 57.38% to 68.20%. We report both binary accuracy and token-F1, and ablations show that the verbatim and structured tracks, as well as person-level and group-level views, are complementary under the standardized evaluation interface.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.26780",
+        "external_id": "2609.26780"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.26780",
+        "external_id": "2609.26780"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/2022hpsk/SpeakerMemR1",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haobo Zheng",
+      "Tan Tang",
+      "Yan Chen",
+      "Weijie Wang",
+      "Yingcai Wu"
+    ],
+    "published_at": "2026-09-22T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.031942Z",
+    "dedup_keys": [
+      "arxiv:2609.26780",
+      "title:centered dialogue dual for memory multi party speaker speakermem track",
+      "github:2022hpsk/speakermemr1"
+    ],
+    "signals": {
+      "hf_upvotes": 19,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 70,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.14,
+    "score_breakdown": {
+      "hf_upvotes": 23.966,
+      "github_stars": 8.525,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.351
+    }
+  },
+  {
+    "id": "467c5d571bc4ef19",
+    "kind": "release",
+    "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of-Thought Reasoning",
+    "summary_en": "Radiology AI has made remarkable strides in detecting abnormalities across chest X-rays, pathology slides, and 2D scans. Yet one of the most clinically rich and...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-23T22:54:56Z",
+    "first_seen_at": "2026-09-24T05:36:33.032443Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning",
+      "title:chain for introducing open radiologist reason reasoning thought vlm"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.582,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.418
+    }
+  },
+  {
+    "id": "5518ac02ca59e851",
+    "kind": "release",
+    "title": "Manage Kubernetes Node Fleets with NodeWright",
+    "summary_en": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-23T18:25:49Z",
+    "first_seen_at": "2026-09-24T05:36:33.032557Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright",
+      "title:fleets kubernetes manage node nodewright with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.301,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.699
+    }
+  },
+  {
+    "id": "8ba6d226912d2d1e",
+    "kind": "release",
+    "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+    "summary_en": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T12:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.488153Z",
+    "dedup_keys": [
+      "url:openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "title:astra context drafts gpt harvey into legal stronger turns with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.899,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.101
+    }
+  },
+  {
+    "id": "fca7883139a01966",
+    "kind": "release",
+    "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+    "summary_en": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T12:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.488195Z",
+    "dedup_keys": [
+      "url:openai.com/index/invideo-builds-with-gpt-6-astra",
+      "title:astra color gpt grading how improves invideo with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.899,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.101
+    }
+  },
+  {
+    "id": "04dbe6bc4e72176c",
+    "kind": "model",
+    "title": "nvidia/Nemotron-3-Diarization",
+    "summary_en": "voice-activity-detection, nemo, nemotron3_diarization, audio-frame-classification, speaker-diarization, streaming-sortformer, speaker-tagging",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+        "external_id": "nvidia/Nemotron-3-Diarization"
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-01T13:16:57Z",
+    "first_seen_at": "2026-09-24T05:36:31.022810Z",
+    "dedup_keys": [
+      "hf:nvidia/nemotron-3-diarization"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 163,
+      "hf_downloads": 27,
+      "hf_trending_score": 159.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 32.395,
+    "score_breakdown": {
+      "hf_trending": 30.451,
+      "hf_downloads": 6.664,
+      "hf_likes": 15.3,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "age_decay": -34.02
+    }
+  },
+  {
+    "id": "302bb988caaec5c6",
+    "kind": "release",
+    "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
+    "summary_en": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T02:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.488315Z",
+    "dedup_keys": [
+      "url:openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
+      "title:ads and asia chatgpt expands southeast taiwan"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.274,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.726
+    }
+  },
+  {
+    "id": "5dfa5ac0bfd498bb",
+    "kind": "release",
+    "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+    "summary_en": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/airbnb-gpt-6-astra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T01:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.488351Z",
+    "dedup_keys": [
+      "url:openai.com/index/airbnb-gpt-6-astra",
+      "title:access airbnb and astra frontier gpt models openai widens"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.212,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.788
+    }
+  },
+  {
+    "id": "9661bbdb794b742e",
+    "kind": "release",
+    "title": "Validate GPU Cluster Readiness Before AI Workloads Land",
+    "summary_en": "A GPU cluster can pass every health check and still fail to run an AI workload. Even when every GPU, network link, and pod reports healthy, a 512-GPU training...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-23T19:45:19Z",
+    "first_seen_at": "2026-09-24T05:36:33.032514Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/validate-gpu-cluster-readiness-before-ai-workloads-land",
+      "title:before cluster gpu land readiness validate workloads"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.384,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.616
+    }
+  },
+  {
+    "id": "dbcba15e4576f2a7",
+    "kind": "release",
+    "title": "Sam Altman’s remarks at the United Nations Security Council",
+    "summary_en": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T12:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.488111Z",
+    "dedup_keys": [
+      "url:openai.com/index/sam-altman-un-security-council-remarks",
+      "title:altman council nations remarks sam security the united"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.899,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.101
+    }
+  },
+  {
+    "id": "17efd47543b5b298",
+    "kind": "paper",
+    "title": "HappyWorld-Bench",
+    "summary_en": "Evaluating world models requires assessing both the quality of the worlds they generate and their consistency and responsiveness under exploration, interaction, and modification. We introduce HappyWorld-Bench, a comprehensive benchmark that evaluates whether generated worlds remain reliable as agents interact with them. Our design is built on a hierarchical capability framework of six world capabilities (W1-W6), from generative construction to unified world modeling, instantiated across three independent evaluation tracks: video world models, spatial world models, and embodied world models. HappyWorld-Bench comprises 1,138 video prompts, 300 spatial scenes, and 254 embodied test cases. Across all three tracks, we build and operate HappyWorld-Arena to organize human A/B comparisons and derive model-level Elo ratings, which complement newly designed automated metrics that capture behavioral correctness. We evaluate 14 video world models, 9 spatial systems, and 8 embodied candidates under this unified framework. Results reveal remaining reliability gaps across all three tracks: video models exhibit reduced consistency during extended rollouts and revisits, spatial models achieve at best 70.14% placement accuracy and 73.33% edit execution, and embodied models struggle to preserve state across multi-step actions and respond precisely to altered action conditions and physical rules. These findings highlight the need to evaluate world models not only by visual quality, but also by state consistency and the correctness of their responses to actions and interventions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.24308",
+        "external_id": "2609.24308"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.24308",
+        "external_id": "2609.24308"
+      }
+    ],
+    "actors": [
+      "Zhiqi Bai",
+      "Junai Cai",
+      "Yixin Chen",
+      "Jingrun Du",
+      "Tao Feng",
+      "Wei Gong",
+      "Siyuan Huang",
+      "Xiao Lin",
+      "Jiaheng Liu",
+      "Jun Luo",
+      "Yongzhe Lyu",
+      "Liya Ma",
+      "Zenan Meng",
+      "Lin Qu",
+      "Wenbo Su",
+      "Jiaming Wang",
+      "Qinghe Wang",
+      "Shaofei Wang",
+      "Yanghai Wang",
+      "Zequn Wang",
+      "Ziming Wang",
+      "Hu Wei",
+      "Jiangtao Wu",
+      "Ruiqi Wu",
+      "Jiaxin Xie",
+      "Yuchi Xu",
+      "Ze Xu",
+      "Chengting Yu",
+      "Liangyu Yuan",
+      "Gang Zeng",
+      "Yawen Zeng",
+      "Xingyao Zhang",
+      "Zizheng Zhang",
+      "Bo Zheng",
+      "Jiancheng Zhu",
+      "Song-Chun Zhu"
+    ],
+    "published_at": "2026-09-21T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.031899Z",
+    "dedup_keys": [
+      "arxiv:2609.24308",
+      "title:bench happyworld"
+    ],
+    "signals": {
+      "hf_upvotes": 21,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.877,
+    "score_breakdown": {
+      "hf_upvotes": 24.728,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.851
+    }
+  },
+  {
+    "id": "88d269e60f7596d2",
+    "kind": "release",
+    "title": "Introducing MentalHealthBench",
+    "summary_en": "MentalHealthBench is an expert-informed benchmark for evaluating helpful and safe AI responses across realistic mental health conversations.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-mentalhealthbench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-23T10:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.488278Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-mentalhealthbench",
+      "title:introducing mentalhealthbench"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.774,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.226
+    }
+  },
+  {
+    "id": "0e17c27240ac5af1",
+    "kind": "paper",
+    "title": "MemBodied: Recurrent Associative Memory for Vision-Language-Action Models",
+    "summary_en": "Vision-Language-Action models provide a strong foundation for general-purpose robot control, yet a vast majority of policies do not preserve and leverage episode-level information beyond the current observation. This limitation is consequential in history-dependent manipulation tasks that depend on information available only in past observations. Retaining past observations in context can aid in recovering this information, but at the significant cost of ever-growing, bloated context and inference latency. We thus introduce MemBodied, a fixed-size episodic memory with two complementary components: an associative state that records interactions across policy calls and an episode anchor that preserves a compact representation of the initial scene as a reference. At each policy call, the model conditions action generation on the current input and the memory components, rather than directly using past observations. Across five evaluated RMBench tasks requiring memory, MemBodied achieves 7.81times the mean success rate of a stateless policy and 2.98times of vanilla recurrent memory, while outperforming the strongest memory-augmented baseline by 1.3times with 10times fewer added parameters. On the fully observable LIBERO-Long suite, it reached 90.6%, a 5.4% improvement over the stateless π_0 policy. These findings support MemBodied as a practical alternative to expanding the policy context for history-dependent manipulation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.28256",
+        "external_id": "2609.28256"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.28256",
+        "external_id": "2609.28256"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/declare-lab/MemBodied",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Tej Deep Pala",
+      "Navonil Majumder",
+      "Bryce Goh",
+      "Raphael Yee",
+      "Jianfei Yang",
+      "Liming Chen",
+      "Soujanya Poria"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032098Z",
+    "dedup_keys": [
+      "arxiv:2609.28256",
+      "title:action associative for language membodied memory models recurrent vision",
+      "github:declare-lab/membodied"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 28.171,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "5a06f4cb2e0ebcb6",
+    "kind": "paper",
+    "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+    "summary_en": "AI research agents need reliable knowledge of how their experiments change outcomes. We introduce WhatWorkedBench to measure experimental understanding, the accuracy of predictions about component changes after budgeted experimentation. Agents inspect code, select measurements, and submit a response surface, a table predicting scores for every configuration of component settings. Exhaustive CPU execution supplies reference effects for changing each component while holding the others fixed. These effects capture combinations of changes across 36 tasks from 30 data sources and 8 workflow types, with 1248 configuration records. Core evaluation combines 4,206 numerical-control records across all eight families and 108 agent episodes across the original six. At eight new measurements, pair-effect ridge selects an optimum on 15 of 22 sources and limits every effect error to 10% of score range on three. Fitting a Gaussian process (GP) to the same agent observations raises effect recovery, accuracy relative to true effect magnitude, from 0.632 to 0.698 in the original Flash cohort and from 0.621 to 0.720 in an additional cohort. On six completed beat-detection and graph submissions, the same-observation GP raises family-macro recovery from 0.303 to 0.455. On six workflows with six binary options at 20 new measurements, encoding code equivalences, configurations with identical behavior, raises GP recovery from 0.248 to 0.462. WhatWorkedBench supports research on experimental agents, adaptive experimental design, numerical inference, and use of program structure.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.27490",
+        "external_id": "2609.27490"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.27490",
+        "external_id": "2609.27490"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/EthanNing/WhatWorkedBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jingjie Ning",
+      "Xueqi Li",
+      "Yibo Kong",
+      "Dongting Li"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032127Z",
+    "dedup_keys": [
+      "arxiv:2609.27490",
+      "title:agents benchmarking experimental understanding whatworkedbench",
+      "github:ethanning/whatworkedbench"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 28.171,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "f25c546560955eab",
+    "kind": "paper",
+    "title": "PackLab: A Comprehensive Framework for Developing, Training, and Evaluating MLLMs in Robotic Bin Packing",
+    "summary_en": "Robotic bin packing requires long-horizon sequential decision-making, as each object placement affects the available space for subsequent packing. Existing methods primarily rely on hand-crafted geometric heuristics that optimize predefined objectives or reinforcement learning policies learned through trial and error over predefined training configurations. Despite recent advances in multimodal large language models (MLLMs) for this task, their potential for closed-loop sequential decisions across heterogeneous packing configurations remains underexplored. To address this gap, we introduce PackLab, a comprehensive framework for developing, training, and evaluating MLLMs for closed-loop robotic bin packing. PackLab-Suite provides a physics-based simulation platform for scalable generation of diverse training packing trajectories and evaluation of their physical outcomes. PackLab-VLM is a packing-specialized MLLM that understands the evolving object and container states to jointly select objects and predict placements in a closed-loop manner. PackLab-Bench provides standardized packing scenarios at multiple difficulty levels for systematic evaluation. Extensive experiments demonstrate that, on average, PackLab-VLM outperforms conventional packing heuristics, traditional reinforcement learning methods, and general-purpose MLLMs across object sets and container configurations, highlighting the potential of MLLMs for long-horizon robotic packing. The code, model, dataset, and benchmark are available at https://github.com/Correr-Zhou/PackLab .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.23784",
+        "external_id": "2609.23784"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.23784",
+        "external_id": "2609.23784"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Correr-Zhou/PackLab",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Donghao Zhou",
+      "Jia-Hui Pan",
+      "Fan Zhang",
+      "Xingyuan Bu",
+      "Shilong Li",
+      "Xiaojie Gao",
+      "Yun-Hui Liu",
+      "Chi-Wing Fu",
+      "Pheng-Ann Heng"
+    ],
+    "published_at": "2026-09-20T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032068Z",
+    "dedup_keys": [
+      "arxiv:2609.23784",
+      "title:and bin comprehensive developing evaluating for framework mllms packing packlab robotic training",
+      "github:correr-zhou/packlab"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 8,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.621,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "github_stars": 4.394,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.351
+    }
+  },
+  {
+    "id": "85f8a17f9ad40745",
+    "kind": "paper",
+    "title": "RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling",
+    "summary_en": "Reinforcement learning (RL) is vital for optimizing video generation models, with a robust reward model (RM) serving as the cornerstone. However, existing video reward models often produce unstable scalar scores because they directly map complex, subjective video quality into a single score without explicit evaluation criteria. This leads to scalar drift, where the scoring scale collapses or shifts across different prompts, making the reward unreliable for RL. Drawing inspiration from professional human annotation engineering, we address this problem with RewardVerse, a rubric-based video reward framework that introduces a dynamic rubric as an intermediate representation between the evaluation query and the scorer. Instead of unconstrained direct scoring, RewardVerse first generates explicit evaluation criteria and then performs rubric-guided scoring, providing a stable semantic anchor that mitigates scalar drift. To efficiently optimize this collaborative pipeline, we propose Rubric-Guided Policy Optimization (RGPO), a two-stage training algorithm. RGPO first warms up the scorer using self-evolving seed rubrics and then jointly optimizes the rubric generator to produce query-adaptive evaluation criteria while continuously aligning the scorer with human ratings. Extensive experiments on the 16-dimensional EvalVerse benchmark and external datasets demonstrate that RewardVerse mitigates scalar drift, achieves state-of-the-art performance on both pointwise and pairwise evaluation, and provides a robust and interpretable reward signal for RL in video generation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.22947",
+        "external_id": "2609.22947"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.22947",
+        "external_id": "2609.22947"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/2kxx/RewardVerse",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhenchen Tang",
+      "Yang Li",
+      "Songlin Yang",
+      "Bo Peng",
+      "Xiaotong Zhao",
+      "Shuai Li",
+      "Haotian Fan",
+      "Alan Zhao",
+      "Jing Dong"
+    ],
+    "published_at": "2026-09-19T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.031977Z",
+    "dedup_keys": [
+      "arxiv:2609.22947",
+      "title:for guided modeling optimization policy reward rewardverse rubric video",
+      "github:2kxx/rewardverse"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.045,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -7.851
+    }
+  },
+  {
+    "id": "f8860f7f7d6c194a",
+    "kind": "paper",
+    "title": "PACT: From Credit Assignment to Critic Alignment",
+    "summary_en": "Reinforcement learning has become a central component of large language model (LLM) post-training, yet token-level credit lacks a generally accepted mathematical definition, leaving its relationship to commonly used training signals unclear. We formulate three regularity conditions, namely Completeness, Prefix Consistency, and Neutrality, and prove that they uniquely determine token-level credit. This characterization provides a unified basis for explaining phenomena across existing algorithms and guides the development of an improved actor-critic training procedure. Through this lens, an ideal teacher in On-Policy Distillation (OPD) acts as an implicit critic, yielding an expected policy gradient proportional to that induced by token-level credit. Response-level REINFORCE Leave-One-Out (RLOO) signals match the expected policy-gradient contribution of token-level credit despite their coarser granularity. We further establish approximate credit sparsity under bounded outcome rewards and show how intermediate critic errors in Generalized Advantage Estimation (GAE) can become comparable to the underlying credit. These motivate Policy Aligned Critic Training (PACT), which adopts an Actor-then-Critic update order to apply importance sampling correction to critic training and better align the critic with the updated policy. In agentic mathematical reasoning, PACT achieves 72.87% average accuracy across four benchmarks, outperforming GRPO and PPO by 8.80 and 13.16 percentage points, respectively. On SWE-bench Verified, PACT achieves a pass rate of 67.4%, outperforming PPO, GRPO, and SAO by 2.4, 2.0, and 3.8 percentage points, respectively.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.26355",
+        "external_id": "2609.26355"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.26355",
+        "external_id": "2609.26355"
+      }
+    ],
+    "actors": [
+      "Jiayan Fu",
+      "Hang Xu",
+      "Yong Zhang",
+      "Zhaokai Luo",
+      "Yao Hu",
+      "Dongyan Zhao",
+      "Mu Chuan"
+    ],
+    "published_at": "2026-09-22T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032005Z",
+    "dedup_keys": [
+      "arxiv:2609.26355",
+      "title:alignment assignment credit critic from pact"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 25.528,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.351
+    }
+  },
+  {
+    "id": "e0cbe34785755a52",
+    "kind": "paper",
+    "title": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics",
+    "summary_en": "We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a single solution from coding agent into large diverse trajectories for training a VLA. VLA performance improves with more generated demonstrations, and agent-aided diversification improves generalization to held-out task variations. We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot. Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.27308",
+        "external_id": "2609.27308"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.27308",
+        "external_id": "2609.27308"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/EmbodiedSWE/EmbodiedSWE",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haoxiang You",
+      "Zeyu Shen",
+      "Yilang Liu",
+      "Zhicheng Zheng",
+      "Lihan Zha",
+      "Kashu Yamazaki",
+      "Mingtong Zhang",
+      "Suning Huang",
+      "Jiankai Sun",
+      "Qianzhong Chen",
+      "Lucy He",
+      "Kaiyuan Liu",
+      "Haoran Chang",
+      "Katerina Fragkiadaki",
+      "Dhruv Shah",
+      "Mac Schwager",
+      "Peter Henderson",
+      "Ian Abraham",
+      "Canwen Xu"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032244Z",
+    "dedup_keys": [
+      "arxiv:2609.27308",
+      "title:agents coding dexterous embodiedswe for horizon long robotics",
+      "github:embodiedswe/embodiedswe"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 16,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 24.604,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "github_stars": 5.666,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "f9f995ae01676850",
+    "kind": "paper",
+    "title": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents",
+    "summary_en": "Agentic memory systems reuse past experience to improve future performance, yet most existing designs curate memory at write time: once a task is completed, its trajectory is distilled into a fixed artifact, such as a reflection, workflow, skill, or reasoning strategy, that is later retrieved by similarity. This forces the system to decide what is worth remembering before the future query is known, irreversibly discarding information and producing a query-independent summary that must serve many possible downstream tasks. Learning such a write-time curator is also difficult because the value of a storage decision may only become apparent when a relevant query arrives, potentially many tasks later, creating a long-horizon credit-assignment problem. We instead retain raw trajectories and defer curation until read time, when the current task is known. Given the retrieved traces and the new task, a memory curator synthesizes a compact, task-adaptive payload tailored to the immediate need. Because this payload is consumed on the same task, the curator can be trained directly from immediate task success, avoiding delayed utility signals and the need to artificially group related tasks. Across ALFWorld, WebShop, and τ^2-bench, our Just-in-Time Memory (JitMem) consistently outperforms no-memory agents as well as heuristic and learned write-time memory methods, improving over the strongest baseline by 16.2, 16.3, and 3.9 absolute success-rate points, respectively. Notably, even an untrained curator is already competitive with or surpasses these baselines, showing that task-adaptive read-time curation itself is a major source of the gain; training the curator further compounds the improvement.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.27334",
+        "external_id": "2609.27334"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.27334",
+        "external_id": "2609.27334"
+      }
+    ],
+    "actors": [
+      "Yefan Zhou",
+      "Yang Li",
+      "Zeyu Leo Liu",
+      "Semih Yavuz",
+      "Shafiq Joty"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032149Z",
+    "dedup_keys": [
+      "arxiv:2609.27334",
+      "title:adaptive agents curate for just learning llm memory memory task time"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 22.716,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "64bb2d96c1e544d1",
+    "kind": "paper",
+    "title": "Hunyuan-A13B Technical Report",
+    "summary_en": "We present Hunyuan-A13B, an open-source large language model based on a Mixture-of-Experts architecture. It contains 80 billion total parameters but activates only 13 billion during inference, balancing model capability, computational efficiency, and deployment cost. The model is pretrained on a rigorously filtered 20T-token corpus with enhanced STEM data curation, improving factual reliability and reasoning ability. High-quality supervised fine-tuning and large-scale reinforcement learning further enhance its overall performance. Hunyuan-A13B also introduces a dual-mode Chain-of-Thought framework that adapts reasoning depth to task complexity: fast thinking for routine queries and slow thinking for complex, multi-step problems. Evaluations show competitive performance across mathematics, science, programming, general language understanding, and agent tasks, often approaching that of much larger models. Its high inference throughput makes it suitable for latency-sensitive applications. We release Hunyuan-A13B to support open research and practical LLM deployment.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.27284",
+        "external_id": "2609.27284"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.27284",
+        "external_id": "2609.27284"
+      }
+    ],
+    "actors": [
+      "Tencent Hunyuan Team",
+      "Ao Liu",
+      "Botong Zhou",
+      "Can Xu",
+      "Chayse Zhou",
+      "ChenChen Zhang",
+      "Chengcheng Xu",
+      "Chenhao Wang",
+      "Decheng Wu",
+      "Dengpeng Wu",
+      "Dian Jiao",
+      "Dong Du",
+      "Dong Wang",
+      "Feng Zhang",
+      "Fengzong Lian",
+      "Guanghui Xu",
+      "Guanwei Zhang",
+      "Hai Wang",
+      "Haipeng Luo",
+      "Han Hu",
+      "Huilin Xu",
+      "Jiajia Wu",
+      "Jianchen Zhu",
+      "Jianfeng Yan",
+      "Jiaqi Zhu",
+      "Jihong Zhang",
+      "Jinbao Xue",
+      "Jun Xia",
+      "Junqiang Zheng",
+      "Kai Liu",
+      "Kai Zhang",
+      "Kai Zheng",
+      "Kejiao Li",
+      "Keyao Wang",
+      "Lan Jiang",
+      "Lixin Liu",
+      "Lulu Wu",
+      "Mengyuan Huang",
+      "Peijie Yu",
+      "Peiqi Wang",
+      "Qian Wang",
+      "Qianbiao Xiang",
+      "Qibin Liu",
+      "Qingfeng Sun",
+      "Richard Guo",
+      "Ruobing Xie",
+      "Saiyong Yang",
+      "Shaohua Chen",
+      "Shihui Hu",
+      "Shuai Li",
+      "Shuaipeng Li",
+      "Shuang Chen",
+      "Suncong Zheng",
+      "Tao Yang",
+      "Tian Zhang",
+      "Tinghao Yu",
+      "Weidong Han",
+      "Weijie Liu",
+      "Weijin Zhou",
+      "Weikang Wang",
+      "Wesleye Chen",
+      "Xiao Feng",
+      "Xiaoqin Ren",
+      "Xingwu Sun",
+      "Xiong Kuang",
+      "Xuemeng Huang",
+      "Xun Cao",
+      "Yanfeng Chen",
+      "Yang Du",
+      "Zhen Yang",
+      "Yangyu Tao",
+      "Yaping Deng",
+      "Yi Shen",
+      "Yigeng Hong",
+      "Yiqi Chen"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032179Z",
+    "dedup_keys": [
+      "arxiv:2609.27284",
+      "title:a13b hunyuan report technical"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 20.025,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "dbeabc188ab94768",
+    "kind": "release",
+    "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-09-23T18:41:40Z",
+    "first_seen_at": "2026-09-24T05:36:32.613677Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "title:accelerate and and how learning mjwarp nvidia robotics simulation use warp workflows"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.318,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.682
+    }
+  },
+  {
+    "id": "2c8519964a02c33b",
+    "kind": "paper",
+    "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions",
+    "summary_en": "Physical intelligence requires more than predicting how the world may evolve: predictions must remain actionable as the world continues to change. We introduce InternW0, the first instantiation of the InternW physical world model series from Shanghai AI Laboratory, built around omnimodal interfaces, asynchronous multi-frequency processing, and local physical modeling under partial observations and external influences. InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale. Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and adapts it to newly observed states through observation-conditioned context routing. Domain-specific interfaces and soft prompts support heterogeneous embodiments, while contact-aware post-training incorporates force and tactile signals for contact-rich manipulation. We train InternW0 on approximately 7,200 hours of heterogeneous robot and egocentric data, including EgoLab, a 275-hour real-laboratory egocentric dataset. Evaluation spans simulation benchmarks and real-world scientific tasks, including a 15-stage metal--organic framework synthesis workflow and 5-stage contact- and force-aware dexterous manipulation for general-purpose quantitative pipetting. These results advance scalable, asynchronous, and science-native physical world models for universal and efficient real-world interactions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.27656",
+        "external_id": "2609.27656"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.27656",
+        "external_id": "2609.27656"
+      }
+    ],
+    "actors": [
+      "Jisong Cai",
+      "Yao Mu",
+      "Ganlin Yang",
+      "Zhe Cao",
+      "Zhangzheng Tu",
+      "Xing Gao",
+      "Kailin Li",
+      "Xinyu Zhan",
+      "Lixin Yang",
+      "Yangkun Zhu",
+      "Haoxiang Ma",
+      "Ming Zhou",
+      "Qiaojun Yu",
+      "Yufei Xue",
+      "Liqun He",
+      "Yifei Yao",
+      "Yifan Zhu",
+      "Long Ling",
+      "Bingqi Jiang",
+      "Haoyu Guo",
+      "Xueyue Zhu",
+      "Bowen Zhou",
+      "Bin Zhao",
+      "Tianfan Xue",
+      "Chunhua Shen",
+      "Weinan Zhang"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032210Z",
+    "dedup_keys": [
+      "arxiv:2609.27656",
+      "title:efficient for foundational interactions internw0 model physical real world world"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 18.239,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "0bc59c5a75afd9cd",
+    "kind": "paper",
+    "title": "Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms",
+    "summary_en": "Language-model agents increasingly face long-horizon tasks with evolving state, interdependent decisions, and delayed outcomes. Scaling their training requires diverse agentic environments, dependable outcome signals, and low extension cost. Existing generation pipelines commonly construct an environment before defining its outcome rule or annotating its trajectories, leaving dynamics and evaluation to be aligned post hoc. VHD-Play reverses this dependency by sampling and solving a mathematical model before a corpus-grounded setter renders its decision process as stateful tools. The executable dynamics and trajectory-scoring reference are inherited from the same solved model. The pipeline produces 3,300 diverse agentic environments at a cost of a few cents each. Training Qwen3.6-35B-A3B on three families raises its mean agentic score from 0.204 to 0.815 in a five-family diagnostic. Gains also appear on held-out instances from all three training families and eight unseen mechanism families, then extend beyond the generated substrate to external benchmarks for general function calling, travel planning, and 365-day e-commerce. On E-Commerce Bench, the trained checkpoint completes every run without bankruptcy and exceeds Qwen3.7-Max. We compare written-out problems with stateful versions that reveal or hide their parameters. The comparison shows that most of the learnable gap lies in stateful interaction rather than underlying problem solving. A frozen 35B setter realizes larger environments, and scale-matched training retains gains as mechanism size and horizon grow, indicating the potential for an evolving training substrate.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.27321",
+        "external_id": "2609.27321"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.27321",
+        "external_id": "2609.27321"
+      }
+    ],
+    "actors": [
+      "Xinjie Shen",
+      "Wei Fan",
+      "Xudong Guo",
+      "Jianhong Tu",
+      "Yang Su",
+      "Chuqiao Kuang",
+      "Yinger Zhang",
+      "Dayiheng Liu"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032266Z",
+    "dedup_keys": [
+      "arxiv:2609.27321",
+      "title:agentic dynamics environments from generating hidden mechanisms play solved verifiable"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 15.938,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "5ed4afa0c97c98b3",
+    "kind": "paper",
+    "title": "All modalities are equal, but video is more equal: Closing the Cross-Attention Gap in Joint Video Generation",
+    "summary_en": "Video is a rich representation of a physical event, capturing appearance, geometry, motion, and temporal evolution. Other modalities, such as 3D body motion or audio, encode narrower aspects of the same event. We find that joint multimodal diffusion transformers exhibit a corresponding asymmetry in cross-modal correspondence: companion modalities develop strong correspondences to video, but the reciprocal correspondences through which they constrain video remain substantially weaker. We express both directions as comparable correspondence distributions over video tokens and define their disagreement as the reciprocal correspondence gap. We introduce RecCAR, standing for Reciprocal Cross-modal Attention Regularization, a KL regularizer that uses the well-established video-to-modality correspondence as a fixed reference and aligns the weaker modality-to-video correspondence toward it. Across joint video-motion and video-audio generation, RecCAR improves the Human Anatomy score from 0.69 to 0.75 and reduces audio-video desynchronization from 0.804 to 0.752, while improving overall generation",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.27901",
+        "external_id": "2609.27901"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.27901",
+        "external_id": "2609.27901"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ohad204/RecCAR",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ohad Rahamim",
+      "Dvir Samuel",
+      "Idan Schwartz",
+      "Gal Chechik"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032292Z",
+    "dedup_keys": [
+      "arxiv:2609.27901",
+      "title:all are attention but closing cross equal equal gap generation joint modalities more the video video",
+      "github:ohad204/reccar"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 15.694,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "e898a82af6e553b1",
+    "kind": "paper",
+    "title": "StudentBench: AI and human tutoring yield equivalent GRE learning gains",
+    "summary_en": "Artificial intelligence offers an unprecedented opportunity to augment human capabilities, yet progress at the frontier has focused primarily on advancing model capabilities. We introduce StudentBench, a suite of AI teaching evaluations and a public platform that enables large-scale data collection with over 175,000 student-AI messages to study whether large language models (LLMs) produce learning gains equivalent to human tutoring. Using StudentBench, we measured learning gains on Quantitative and Verbal GRE questions across 2,383 human participants receiving AI tutoring, human tutoring, or no tutoring. We establish that AI tutoring is statistically equivalent to expert human tutoring for GRE learning gains (p = .015), and in five of the seven GRE domains, the best performing AI tutor surpassed the human tutor, on average. In a second study, expert human tutors compared LLM-generated lesson plans and practice problems through 2,028 pairwise rubric evaluations. Together, the two studies clearly separate AI tutors across: (1) lesson planning, (2) practice-problem creation, (3) conversational pedagogy, (4) cost, and (5) engagement. Surprisingly, one AI tutor achieved learning gains equivalent to human tutoring (p = .044) at 918 times lower cost (USD 0.0052 for AI versus USD 4.81 for human, per percentage point gained). For Quantitative GRE sessions, faster AI replies correlated with more student messages, more messages with more correct practice, and more correct practice with larger learning gains (all p < .002). The StudentBench platform is freely available at https://studentbench.org.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.28470",
+        "external_id": "2609.28470"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.28470",
+        "external_id": "2609.28470"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Handshake-AI-Research/studentbench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Curtis Northcutt",
+      "Inaara Hasmani",
+      "Kevin Feng",
+      "Trevor Khangi",
+      "Andreas Plesner",
+      "Jonas Mueller"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032349Z",
+    "dedup_keys": [
+      "arxiv:2609.28470",
+      "title:and equivalent gains gre human learning studentbench tutoring yield",
+      "github:handshake-ai-research/studentbench"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 5,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 11.535,
+    "score_breakdown": {
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.851
+    }
+  },
+  {
+    "id": "7e3ea183ce8e8f90",
+    "kind": "paper",
+    "title": "Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World",
+    "summary_en": "Spatial reasoning is essential for vision-language models (VLMs) to understand and act in the physical world. Reasoning in dynamic environments requires VLMs to perceive local state transitions caused by object motion and viewpoint changes and integrate them over long trajectories to maintain an updated spatial state, yet existing VLMs remain limited in both capabilities. Current spatial training primarily focuses on static questions about object attributes and spatial relations, providing limited direct supervision for state transitions; in contrast, interaction trajectories naturally connect a preceding observation, an action, and a subsequent observation, offering direct supervision for local state transitions, while complete trajectories reveal dependencies among consecutive transitions. We therefore introduce Spatial-Interactor, a framework that trains VLMs to model physical-world state transitions through interaction, organizing this learning process into a three-level curriculum covering L1 passive world-state transitions, L2 active self-state transitions, and L3 long-horizon interaction trajectories. Accordingly, we construct the Learning from Spatial Interaction dataset (LSI-108K) from simulated and real interaction trajectories, with tasks aligned with the objective of each level. Our two-stage training strategy applies Supervised Fine-Tuning (SFT) to L1 and L2 for local transition modeling, and On-Policy Distillation (OPD) then uses privileged self-distillation: a teacher branch given segment-level transition descriptions supervises the student's on-policy CoT, helping the student learn to integrate consecutive transitions over L3 long trajectories. Experiments across multiple VLMs and spatial benchmarks show consistent gains in local transition modeling and long-horizon integration.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.23038",
+        "external_id": "2609.23038"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.23038",
+        "external_id": "2609.23038"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ZJU-OmniAI/Spatial-Interactor",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kaixiang Yao",
+      "Xu Wang",
+      "Miao Pan",
+      "Hu Xiyue",
+      "Weishi Wang",
+      "Daniel Dahlmeier",
+      "Jintao Chen",
+      "Yongliang Shen",
+      "Xuhong Zhang",
+      "Wenqi Zhang"
+    ],
+    "published_at": "2026-09-19T00:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.032322Z",
+    "dedup_keys": [
+      "arxiv:2609.23038",
+      "title:interaction interactor learning observable physical reasoning spatial spatial the through with world",
+      "github:zju-omniai/spatial-interactor"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 6,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 8.041,
+    "score_breakdown": {
+      "github_stars": 3.892,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.851
+    }
+  },
+  {
+    "id": "006ed01b92e9bb4b",
+    "kind": "paper",
+    "title": "COMED: The Missing Middle Between Routing and Collaboration in Multi-LLM Inference",
+    "summary_en": "No single Large Language Model (LLM) is uniformly reliable across queries, motivating multi-model inference systems that either route among models or combine their outputs. However, routing stops after selecting an initial model, while dense collaboration invokes peers on every query. We show that collaboration is non-monotonic: peers can recover failures that no model solves alone, but can also corrupt initially correct answers. We introduce COMED (Controlled Model Escalation for Multi-LLM Deliberation), a post-anchor controller for selective cross-model collaboration. COMED uses anchor self-consistency, router margin, and a lightweight peer probe to accept confident answers, verify ambiguous cases, and escalate only when collaboration is likely beneficial. We formalize this trade-off with a rescue-harm decomposition showing that selective collaboration improves when rescued errors outweigh collaboration-induced harms. Across medical, scientific, and general reasoning benchmarks, COMED improves fixed and routed anchors in all 16 open-weight settings, with gains up to +10.7 percentage points on MedQA while invoking fewer models and using fewer decoded tokens than dense collaboration. On HLE with frontier models, COMED improves GPT-5.5 from 23.1% to 28.1%, outperforming dense collaboration and achieving the best results.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.26913",
+        "external_id": "2609.26913"
+      }
+    ],
+    "actors": [
+      "Norah Alballa",
+      "Wenxuan Zhang",
+      "Salma Kharrat",
+      "Fares Fourati",
+      "Zafar Ayyub Qazi",
+      "Mohamed Elhoseiny",
+      "Marco Canini"
+    ],
+    "published_at": "2026-09-24T04:00:00Z",
+    "first_seen_at": "2026-09-24T05:36:31.597919Z",
+    "dedup_keys": [
+      "arxiv:2609.26913",
+      "title:and between collaboration comed inference llm middle missing multi routing the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.899,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.101
+    }
+  }
+]
