@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "780ae7241e319734",
+    "kind": "paper",
+    "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+    "summary_en": "Representation autoencoders (RAEs) reuse features from a pretrained visual encoder as reconstruction and diffusion latents, integrating strong visual representations into image generation. However, RAEs still need to decide which encoder layers form the shared latent space for the generator and pixel decoder. This choice involves a trade-off. Shallower layers tend to preserve fine pixel details better, while deeper layers tend to yield better generation metrics. A fixed heuristic layer fusion therefore couples two stages that benefit from different information. We introduce FuseReg, which replaces heuristic feature selection with training over random subsets of encoder layers. We theoretically analyze the underlying mechanism: subset sampling explicitly penalizes sensitivity to cross-layer disagreement. On ImageNet-256 with DINOv3-L, a single FuseReg decoder reconstructs from full, sparse, and single-layer fusions without retraining, achieving higher PSNR than decoders specialized to fixed fusions. This flexibility also benefits generation: decoder replacement alone reduces unguided gFID by 27% with an unchanged RAEv2 DiT-XL generator. The same regularization principle extends to diffusion training, with joint regularization of both stages reducing unguided gFID by 29% on DiT-Base. These results show that training downstream models for layer-fusion robustness narrows the reconstruction-generation gap without modifying the pretrained encoder.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.31620",
+        "external_id": "2609.31620"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.31620",
+        "external_id": "2609.31620"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Hongyang-Du/FuseReg",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hongyang Du",
+      "Yunfei Xie",
+      "Junjie Ye",
+      "Jiawei Yang",
+      "Xiaoyan Cong",
+      "Haodong Zhang",
+      "Yongchao Huang",
+      "Haiyu Wu",
+      "Zongxia Li",
+      "Shihang Gui",
+      "Dawei Liu",
+      "Runhao Li",
+      "Jingcheng Ni",
+      "Chen Wei",
+      "Randall Balestriero",
+      "Yue Wang"
+    ],
+    "published_at": "2026-09-25T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491311Z",
+    "dedup_keys": [
+      "arxiv:2609.31620",
+      "title:autoencoders fusereg fusion gap generation layer mitigates reconstruction regularizing representation the",
+      "github:hongyang-du/fusereg"
+    ],
+    "signals": {
+      "hf_upvotes": 56,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.663,
+    "score_breakdown": {
+      "hf_upvotes": 32.344,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.878
+    }
+  },
+  {
+    "id": "4425718f5122d178",
+    "kind": "model",
+    "title": "NaiveAI/Naive-N0.5-Flash",
+    "summary_en": "text-generation, naive_n05_flash, moe, code, long-context, ai-research",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/NaiveAI/Naive-N0.5-Flash",
+        "external_id": "NaiveAI/Naive-N0.5-Flash"
+      }
+    ],
+    "actors": [
+      "NaiveAI"
+    ],
+    "published_at": "2026-09-27T14:14:32Z",
+    "first_seen_at": "2026-09-28T06:03:12.489137Z",
+    "dedup_keys": [
+      "hf:naiveai/naive-n0.5-flash"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 63,
+      "hf_downloads": 0,
+      "hf_trending_score": 61.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 36.252,
+    "score_breakdown": {
+      "hf_trending": 24.763,
+      "hf_likes": 12.477,
+      "age_decay": -0.988
+    }
+  },
+  {
+    "id": "2d1784e81264a320",
+    "kind": "release",
+    "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
+    "summary_en": "Every unused watt is capacity left on the table. AI factories are typically provisioned for the unlikely moment when every GPU reaches peak power, creating a...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-09-28T01:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:14.652608Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency",
+      "title:and dsx efficiency factory how maximizes maxlps nvidia throughput"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.684,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.316
+    }
+  },
+  {
+    "id": "392b14427ef5deb5",
+    "kind": "paper",
+    "title": "InternW0-Δ: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data",
+    "summary_en": "World Action Models (WAMs) jointly model visual dynamics and action generation for generalist robot manipulation. A central challenge is to integrate priors from large-scale pretrained models---including visual dynamics, scene semantics, geometry, and motion---into a unified framework for robot action generation. We introduce InternW0-Δ, a unified WAM pretrained on a heterogeneous corpus that outperforms prior methods across simulation benchmarks and real-robot platforms.\n  InternW0-Δ combines pretrained visual dynamics, scene-level semantics, 4D geometric and motion priors, and action generation within a Mixture-of-Transformers (MoT) framework. A pretrained video expert and an action expert interact under semantic guidance from a frozen VLM, while a pretrained 4D foundation model injects geometric and motion priors through training-only distillation. We further introduce Causal Imprint, which learns future-relevant scene changes from training-only future supervision and provides predictive representations directly to the action expert without future-video rollout at inference.\n  For large-scale joint training, we construct a heterogeneous corpus of robot demonstrations, UMI data, egocentric human demonstrations, and Ego2Robot data, curated and aligned under a common state-action representation. The resulting corpus contains over 20K hours of processed training data, to our knowledge the largest open-source corpus of its kind. We pretrain InternW0-Δ on this corpus and demonstrate strong performance across simulation benchmarks and real-robot platforms. We will open source the training code, model weights, infrastructure, data-processing pipeline, and processed data where licenses permit. Project page: https://internrobotics.github.io/InternW0-Delta/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.31394",
+        "external_id": "2609.31394"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.31394",
+        "external_id": "2609.31394"
+      }
+    ],
+    "actors": [
+      "Xingyu Miao",
+      "Zizun Li",
+      "Baole Fang",
+      "Kaiwen Song",
+      "Tenghui Wang",
+      "Hanxue Zhang",
+      "Yating Wang",
+      "Xudong Li",
+      "Yuping He",
+      "Xueyuan Wei",
+      "Chao Gao",
+      "Xijie Yang",
+      "Yingxiang Xu",
+      "Kerui Ren",
+      "Wenqi Guo",
+      "Jianjun Zhou",
+      "Xinzhe Wang",
+      "Weiguang Zhao",
+      "Ni Yang",
+      "Zetao Cai",
+      "Yufei Xue",
+      "Hengjie Li",
+      "Zeyu He",
+      "Yuanzhen Zhou",
+      "Rong Fu",
+      "Jianyang Zhang",
+      "Siwei Cui",
+      "Fuxian Huang",
+      "Yunsong Zhou",
+      "Xing Gao",
+      "Yifei Yao",
+      "Qiaojun Yu",
+      "Kailin Li",
+      "Ming Zhou",
+      "Mu Huang",
+      "Xinyue Li",
+      "Wenze Cui",
+      "Bingqi Jiang",
+      "Xueyue Zhu",
+      "Junting Dong",
+      "Haoyu Guo",
+      "Tao Lu",
+      "Mulin Yu",
+      "Bowen Zhou",
+      "Bin Zhao",
+      "Tianfan Xue",
+      "Weinan Zhang",
+      "Chunhua Shen"
+    ],
+    "published_at": "2026-09-25T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491369Z",
+    "dedup_keys": [
+      "arxiv:2609.31394",
+      "title:20k action actions and bridging data dynamics hours internw0 model open predictive with world"
+    ],
+    "signals": {
+      "hf_upvotes": 15,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.303,
+    "score_breakdown": {
+      "hf_upvotes": 22.181,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.878
+    }
+  },
+  {
+    "id": "28eaada6fbdd9f6f",
+    "kind": "paper",
+    "title": "Block Sparse Attention with Log-Linear Complexity",
+    "summary_en": "Scaling language models to long contexts is limited by the quadratic cost of self-attention. Block sparse attention offers an efficient alternative, but selecting the retained blocks remains a bottleneck. Conventional block selection requires scoring all query-block pairs and therefore remains quadratic in sequence length. To address this issue, we propose PISA, a block-sparse attention mechanism that employs a pyramid Top-K selection strategy. The main idea is to gradually narrow down the candidates across different levels, making it more efficient to find the most relevant keys. Specifically, we construct a coarse-to-fine hierarchy of keys and perform selection from the coarsest level. At each level, LogSumExp scoring is applied to a bounded candidate set to select candidates for the next finer level, continuing until the finest level is reached. Through pooling, we construct O(log N) levels of keys, yielding an overall complexity of O(Nlog N), where N denotes the sequence length. We develop hardware-aware Triton kernels for both training and inference, fusing hierarchical routing and LogSumExp scoring without materializing the query-key score matrix. We further evaluate our method on language modeling tasks. Compared with the baseline, our method achieves comparable performance on benchmarks such as commonsense reasoning while delivering better results on retrieval tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.31093",
+        "external_id": "2609.31093"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.31093",
+        "external_id": "2609.31093"
+      }
+    ],
+    "actors": [
+      "Bohao Tang",
+      "Zhen Qin",
+      "Yuqi Pan",
+      "Zheng Li",
+      "Pengfei Liu"
+    ],
+    "published_at": "2026-09-25T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491403Z",
+    "dedup_keys": [
+      "arxiv:2609.31093",
+      "title:attention block complexity linear log sparse with"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 24.642,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.878
+    }
+  },
+  {
+    "id": "2943e121e0806ed7",
+    "kind": "paper",
+    "title": "Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem",
+    "summary_en": "Jev is a fast, low-cost decision model that answers natural-language questions with choices, binary judgments, and scores. As its public ecosystem grows rapidly, it remains unclear how Jev is used across applications and how public attention relates to project distribution. To answer these questions, we conduct a large-scale, data-driven analysis of 2,170 publicly available Jev projects collected from GitHub as of September 22, 2026. We find rapid early growth in Jev's public ecosystem, with both new projects and integration into existing repositories. Across diverse domains, projects use Jev for multiple decision purposes and combine its interfaces. Attribute judgment and scoring are widely used, while the use of action selection, content filtering, and model and tool selection varies across domains. These patterns suggest that Jev serves as a reusable decision component whose functionality varies with the surrounding workflow. Meanwhile, public attention is concentrated in routing and interface agents and does not track project counts. Our findings provide a quantitative view of Jev's emerging ecosystem and inform the design and evaluation of general-purpose decision models across diverse application contexts.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.30216",
+        "external_id": "2609.30216"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30216",
+        "external_id": "2609.30216"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/godxue1/Jev_in_the_wild",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Guoming Ling",
+      "Muen Xue",
+      "Zijian Ye"
+    ],
+    "published_at": "2026-09-24T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491468Z",
+    "dedup_keys": [
+      "arxiv:2609.30216",
+      "title:analysis and applications data driven ecosystem functionality jev jev model the the wild",
+      "github:godxue1/jev_in_the_wild"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 18.498,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.378
+    }
+  },
+  {
+    "id": "7b8643148ef6f713",
+    "kind": "paper",
+    "title": "SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL",
+    "summary_en": "Tool-calling agents produce heterogeneous outputs, interleaving structured tool invocations with user-facing natural language summaries. This output heterogeneity presents a structural failure mode in standard on-policy Reinforcement Learning (RL): algorithms like GRPO indiscriminately broadcast a homogeneous trajectory-level scalar advantage to all tokens. Consequently, gradient noise from summary generation leaks into tool-decision tokens, causing cross-segment credit misattribution and brittle optimization. In this work, we propose SLCA-GRPO, a framework incorporating Segment-Locked Credit Assignment (SLCA). To enable scalable exploration without costly real APIs and stable training, we first construct the Schema-Guided LLM Simulator (SGLS) as foundational training infrastructure. Building on this, SLCA decouples advantage estimation at the structural segment level within a single group of rollouts, without requiring additional rollouts from intermediate states. Supported by Hierarchical Rewards (HierR), SLCA routes execution advantages to tool tokens and preference advantages to summary tokens, eliminating advantage contamination (the dominant cross-segment credit misattribution channel) within each policy update. On a 7B backbone, SLCA-GRPO accelerates convergence and outperforms standard GRPO, ToolPO, and RLTR by +2.53 pp on in-domain evaluation, +1.36 pp on the Berkeley Function-Calling Leaderboard (BFCL), and +9.15 pp on τ^2-Bench under the same training budgets, achieving higher accuracy with reduced tool redundancy and costs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.29050",
+        "external_id": "2609.29050"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.29050",
+        "external_id": "2609.29050"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/SLCA-GRPO/SLCA-GRPO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yan Zhan",
+      "Shaobo Liu",
+      "Qiunan Liu",
+      "Yuanjun Shi",
+      "Siqi Xu",
+      "WeiYi Hou",
+      "Xiang Xu",
+      "Zekang Li",
+      "Weizhou Pan",
+      "Jiahong Yan"
+    ],
+    "published_at": "2026-09-24T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491524Z",
+    "dedup_keys": [
+      "arxiv:2609.29050",
+      "title:calling credit cross grpo misattribution resolving segment slca tool",
+      "github:slca-grpo/slca-grpo"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 18.098,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.378
+    }
+  },
+  {
+    "id": "8715946778df5595",
+    "kind": "paper",
+    "title": "FoMo: Forking Moment in Generative Trajectory as a Perceptual Distance",
+    "summary_en": "Reference-based image quality assessment (IQA) metrics aim to reflect how humans perceive the perceptual distance between a pair of images. To learn how the human visual system (HVS) operates, recent reference-based IQA metrics heavily rely on human-annotated data. Mean opinion score (MOS)-based pointwise scoring, which assigns a scalar quality value per image, is preferable for annotation but is prohibitively expensive to collect at scale and is known to be noisy due to inconsistent human judgments. As an alternative, two-alternative forced choice (2AFC) pairwise labels have gained popularity due to their reliability and efficiency, but they capture only relative comparisons between pairs. In this paper, we propose a fully automated data generation pipeline that generates pointwise perceptual distance labels between image pairs without any human annotation. Our approach exploits the generative dynamics of diffusion models as a perceptual distance proxy, where the coarse structure of an image is generated in the early timesteps and the fine details are generated in the later timesteps. Images that fork early in the generation process share only coarse structure and are perceptually far apart; images that fork late differ only in fine detail. We demonstrate that the diffusion trajectory aligns well with the human visual system, and use this forking moment, FoMo, as a reference-grounded distance label to supervise the training of a reference-based IQA metric. The pointwise labels, which support universal comparison between arbitrary image pairs, enable an information-rich training objective. Extensive experiments across diverse backbone architectures confirm the effectiveness of our generation pipeline, outperforming human-annotated datasets in multiple benchmarks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.25716",
+        "external_id": "2609.25716"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.25716",
+        "external_id": "2609.25716"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/JHLew/FoMo",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jaihyun Lew",
+      "Mingi Jung",
+      "Minjun Park",
+      "Wooseok Song",
+      "Sungroh Yoon"
+    ],
+    "published_at": "2026-09-22T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491435Z",
+    "dedup_keys": [
+      "arxiv:2609.25716",
+      "title:distance fomo forking generative moment perceptual trajectory",
+      "github:jhlew/fomo"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 16.962,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -9.378
+    }
+  },
+  {
+    "id": "05f8bd02041ad071",
+    "kind": "paper",
+    "title": "Game Arena: Strategic LLM Evaluation in Competitive Environments",
+    "summary_en": "We introduce Kaggle Game Arena, an open and ever-expanding platform to evaluate large language models (LLMs) through competitive games. Different from static benchmarks, game arena enables models to play head-to-head matchups in structured environments where the gameplay strength naturally increases as models evolve, preventing performance saturation. This technical report details the infrastructure behind Game Arena and describes the three pilot game environments: Chess, Poker, and Werewolf. These environments span perfect information, imperfect information, and multiplayer game settings, enabling a systematic study of models' strategic planning, adaptation, and robustness under uncertainty. For each game, we provide a detailed description of the environment, evaluation metrics, and results from running full competitions across models. Through robust infrastructure and large-scale ground-truth based evaluation, Game Arena ensures reproducibility, transparency and generalizability to new games and variants over time.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.31473",
+        "external_id": "2609.31473"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.31473",
+        "external_id": "2609.31473"
+      }
+    ],
+    "actors": [
+      "Bovard Doerschuk-Tiberi",
+      "Yao Yan",
+      "Justin Chiu",
+      "Hann Wang",
+      "Timothy Chung",
+      "Martyna Plomecka",
+      "John Schultz",
+      "Jon Lipovetz",
+      "Clayton Drazner",
+      "Yuchen Zhuang",
+      "Jaimie Hwang",
+      "Nate Keating",
+      "Riley Jones",
+      "Andrew Lee",
+      "Oran Kelly",
+      "Ian Gemp",
+      "Michael Aaron",
+      "Laurel Prince",
+      "Kate Larson",
+      "Jeff Moser",
+      "Harrison Jobe",
+      "Chad Woodford",
+      "Siqi Liu",
+      "Andrew Wang",
+      "Bo Chang",
+      "Christopher D&#39;Mello",
+      "Diane Chaleff",
+      "Addison Howard",
+      "Johnny Yip",
+      "Chuck Sugnet",
+      "Antonio Gulli",
+      "Meghan O&#39;Connell",
+      "Will Cukierski",
+      "Nenad Tomasev",
+      "Dima Yeroshenko",
+      "Kinjal Parekh",
+      "Roxanne Daniel",
+      "Marc Lanctot",
+      "Domino Weir",
+      "Elsa Dong",
+      "Daniel Hennes",
+      "Melissa Nalubwama",
+      "Robert Fraser",
+      "Ryan Trostle",
+      "Jun Peng",
+      "Tom Mason",
+      "Lloyd Hightower",
+      "Chiamaka Chukwuka",
+      "Yuexiang Zhai",
+      "Phoebe Kirk",
+      "Yi Su",
+      "Yuting Han",
+      "Jie Ren",
+      "Chris Prichard",
+      "Sahand Sharifzadeh",
+      "Karim Hakimzadeh",
+      "DJ Sterling",
+      "Meg Risdal",
+      "Kate Olszewska",
+      "Ya Xu",
+      "Orhan Firat",
+      "Minmin Chen"
+    ],
+    "published_at": "2026-09-25T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491551Z",
+    "dedup_keys": [
+      "arxiv:2609.31473",
+      "title:arena competitive environments evaluation game llm strategic"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 15.212,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.878
+    }
+  },
+  {
+    "id": "5a4b3a478de908fa",
+    "kind": "paper",
+    "title": "AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs",
+    "summary_en": "Existing multi-agent benchmarks primarily test in competitive settings, short-horizon interactions under 20 steps, or simply aggregate individual performance, failing to isolate and highlight genuine collaboration capabilities of LLM-based agents. We introduce AgentWorld, a benchmark of 100 human-annotated tasks (with 100 augmented variants) for evaluating long-horizon, multi-agent collaboration. Tasks span 50+ interaction rounds across a rich MMORPG sandbox and require 3-20 agents with asymmetric roles and abilities to coordinate through communication, joint planning, and resource sharing under a blackbox setting where each agent acts independently without access to others' internal states. To quantify collaboration effectiveness in addition to conventional binary task success, we propose Causal Collaboration Effectiveness (CCE), a graph-based metric that traces causal dependencies between agent actions and measures what fraction of a team's effort actually contributed to the outcome. Experiments with Gemini 3 Flash, Claude Haiku 4.5, GPT-5 Mini, and DeepSeek R1-70B show that even the best model achieves only 52.0% task success, with systematic failure modes including communication breakdowns, role confusion, and inability to maintain shared plans across rounds. AgentWorld is fully open-source.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.31590",
+        "external_id": "2609.31590"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.31590",
+        "external_id": "2609.31590"
+      }
+    ],
+    "actors": [
+      "Raphael Shu",
+      "Yusen Zhang",
+      "Young Min Cho",
+      "Jin Mo Yang",
+      "Yuan Yuan",
+      "Wenliang Zheng",
+      "Sharath Chandra Guntuku",
+      "Lyle Ungar",
+      "Zhou Yu",
+      "Rui Zhang"
+    ],
+    "published_at": "2026-09-25T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491629Z",
+    "dedup_keys": [
+      "arxiv:2609.31590",
+      "title:agent agentworld benchmarking collaboration horizon llms long multi"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.911,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.878
+    }
+  },
+  {
+    "id": "4e6cd69e1a8f18a9",
+    "kind": "paper",
+    "title": "Morphometric Imitation: From Morphology and Contact Aware Hand Retargeting to Sim-to-Real Visuomotor Policy",
+    "summary_en": "Human hand-object interactions (HOIs) provide a rich source of demonstrations for dexterous manipulation, but learning directly from them presents challenges in bridging morphology gaps, ensuring dynamical feasibility, and sim-to-real deployment. We present Morphometric Imitation, a three-stage framework that transforms reconstructed HOIs into zero-shot sim-to-real visuomotor policies. First, morphometric optimization (MMO) kinematically retargets human motion across hand morphologies while preserving demonstrated contacts. Second, residual reinforcement learning (RL) refines the kinematic reference using object pose and contact information from the human motion to produce dynamically feasible robot demonstrations. Third, these demonstrations are distilled into visuomotor policies. Across three robot hands and ten HOIs, MMO improves contact F1 over the strongest of five baselines by at least 8 points for every hand, while also improving the success rate of downstream dynamic retargeting by as much as 35 points. Ablations on the residual RL show complementary benefits from using object pose and contact information. Finally, the visuomotor policies achieve 89.3% zero-shot success in 300 real-world trials on 30 objects. Project page: https://morphometricimitation.github.io{this https URL}",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.28660",
+        "external_id": "2609.28660"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.28660",
+        "external_id": "2609.28660"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/tsadja/morphometric",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Tara Sadjadpour",
+      "Siming He",
+      "C. K. Wolfe",
+      "Haozhi Qi",
+      "Lea Wilken",
+      "S. Shankar Sastry",
+      "Claire Tomlin",
+      "Jitendra Malik"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491655Z",
+    "dedup_keys": [
+      "arxiv:2609.28660",
+      "title:and aware contact from hand imitation morphology morphometric policy real retargeting sim visuomotor",
+      "github:tsadja/morphometric"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 10,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 10.463,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 4.796,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -7.878
+    }
+  },
+  {
+    "id": "14ec31f6067733e7",
+    "kind": "paper",
+    "title": "CARD: Cluster-level Adaptation with Reward-guided Decoding for Personalized Text Generation",
+    "summary_en": "Adapting large language models to individual users remains challenging due to the tension between fine-grained personalization and scalable deployment. We present CARD, a hierarchical framework that achieves effective personalization through progressive refinement. CARD first clusters users according to shared stylistic patterns and learns group-specific LoRA adapters, enabling robust generalization and strong low-resource performance. To capture individual differences within each cluster, we propose an implicit preference learning mechanism that contrasts user-authored text with cluster-level generations, allowing the model to infer user-specific style preferences without manual annotation. At inference time, CARD injects personalization exclusively at decoding via lightweight user preference vectors and low-rank logit corrections, while keeping the base model frozen. Experiments on the LaMP and LongLaMP benchmarks show that CARD achieves superior generation quality compared to baselines, while significantly improving efficiency and scalability for practical personalized text generation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2601.06352",
+        "external_id": "2601.06352"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2601.06352",
+        "external_id": "2601.06352"
+      }
+    ],
+    "actors": [
+      "Yutong Song",
+      "Jiang Wu",
+      "Weijia Zhang",
+      "Chengze Shen",
+      "Shaofan Yuan",
+      "Weitao Lu",
+      "Jian Wang",
+      "Yu Wang",
+      "Nikil Dutt",
+      "Amir M. Rahmani"
+    ],
+    "published_at": "2026-09-20T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491495Z",
+    "dedup_keys": [
+      "arxiv:2601.06352",
+      "title:adaptation card cluster decoding for generation guided level personalized reward text with"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 7.712,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -12.378
+    }
+  },
+  {
+    "id": "534ec2423215d377",
+    "kind": "paper",
+    "title": "TrackEverything: Long Horizon Dense Tracking via De-Duplicating 3D Scene Representations",
+    "summary_en": "Existing point tracking models face a fundamental tradeoff: they can either track a sparse set of query points over long horizons, or track all points across only short clips. We introduce TrackEverything, a 3D point tracker that breaks this trade-off by representing videos as persistent 3D scene tracks in world coordinates. Grounded in the insight that videos are 2D projections of an underlying 3D world, TrackEverything decouples model complexity from video duration, allowing it to scale with unique physical scene geometry instead. Our approach introduces three key innovations. First, we employ a voxelization-based de-duplication mechanism at sliding-window boundaries to merge co-located tracks, preventing repeated observations of the same surface from redundantly accumulating. Second, we decompose tracking into an endpoint refiner that predicts each point's destination and static-versus-dynamic classification, followed by a lightweight trajectory refiner that decodes dense trajectories exclusively for dynamic points. Third, we propose 3D WAFT, replacing memory-prohibitive 4D correlation volumes with efficient feature sampling in the scene cloud. To the best of our knowledge, TrackEverything is the first 3D tracker capable of tracking all visible points across videos exceeding 1000 frames within 40 GB of GPU memory. On TAPVid-3D, TrackEverything outperforms all open-source all-frame dense 3D trackers by more than 20% APD on short clips, while remaining competitive with state-of-the-art sparse trackers on long sequences, despite tracking far more points.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.30222",
+        "external_id": "2609.30222"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30222",
+        "external_id": "2609.30222"
+      }
+    ],
+    "actors": [
+      "Ayush Jain",
+      "Sreeharsha Paruchuri",
+      "Ishita Gupta",
+      "Fan Zhang",
+      "Tanner Schmidt",
+      "Jakob Engel",
+      "Katerina Fragkiadaki",
+      "Adam W. Harley"
+    ],
+    "published_at": "2026-09-24T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491604Z",
+    "dedup_keys": [
+      "arxiv:2609.30222",
+      "title:dense duplicating horizon long representations scene trackeverything tracking via"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 7.411,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "age_decay": -6.378
+    }
+  },
+  {
+    "id": "1f64f79d22cf9d4d",
+    "kind": "paper",
+    "title": "Do Implicit Personalization and Explicit Styles Conflict? PsPLUG: A Lightweight Plug-in for Balancing Personalization and Style in Customized LLMs",
+    "summary_en": "Personalized large language models are often expected to follow explicit style instructions, yet we find that such instructions can undermine the user-specific characteristics that personalization methods aim to preserve. We call this failure mode personalization collapse: explicit style control can conflict with implicit user preferences. To address this challenge, we propose PsPLUG, a lightweight plug-in that learns a user-specific residual after accounting for the requested style. PsPLUG also allows us to tune personalization strength at inference time. Our experiments show that explicit style instructions can diminish personalization in existing methods, whereas PsPLUG better preserves user preferences while providing precise control over the balance between personalization and style adherence.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2601.06362",
+        "external_id": "2601.06362"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2601.06362",
+        "external_id": "2601.06362"
+      }
+    ],
+    "actors": [
+      "Yutong Song",
+      "Jiang Wu",
+      "Shaofan Yuan",
+      "Chengze Shen",
+      "Jian Wang",
+      "Yu Wang",
+      "Nikil Dutt",
+      "Amir M. Rahmani"
+    ],
+    "published_at": "2026-09-20T00:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.491580Z",
+    "dedup_keys": [
+      "arxiv:2601.06362",
+      "title:and and balancing conflict customized explicit for implicit lightweight llms personalization personalization plug psplug style styles"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 5.411,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -12.378
+    }
+  },
+  {
+    "id": "e506a2172301de06",
+    "kind": "paper",
+    "title": "A Benchmark Framework for Screening Automation in Systematic Reviews",
+    "summary_en": "Systematic reviews (SR) are essential for evidence-based research, but their screening phase is highly time-consuming and labor-intensive. Large language models (LLMs) offer a promising opportunity to reduce this workload by assisting with article relevance classification. However, existing evaluation approaches often rely on traditional metrics that may be misleading for highly imbalanced SR screening datasets.This paper presents a benchmark dataset of $45\\,064$ labeled entries for evaluating LLM performance in SR screening across 32 curated secondary studies. It proposes an evaluation framework that accounts for class imbalance, i.e., the natural prevalence of excluded articles relative to included articles in SRs. It also introduces PromptSR, a tool designed to support prompt experimentation, experiment management, and result analysis for LLM-based screening. We also present a use case demonstrating the application of SRBench and PromptSR.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30298",
+        "external_id": "2609.30298"
+      }
+    ],
+    "actors": [
+      "Gauransh Kumar",
+      "Luciano Marchezan",
+      "Guillaume Genois",
+      "K\\'evin Delcourt",
+      "Eugene Syriani"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665740Z",
+    "dedup_keys": [
+      "arxiv:2609.30298",
+      "title:automation benchmark for framework reviews screening systematic"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "8d97ff8250d77f02",
+    "kind": "paper",
+    "title": "A Survey on Fake Review Detection: From Pre-trained Language Models to Large Language Models",
+    "summary_en": "Online reviews shape consumer decisions, platform governance, and corporate reputation.Fake reviews compromise this information channel by injecting deceptive evidence into rating systems, recommendation pipelines, and public trust mechanisms.The rise of large language models, or LLMs, has changed the problem in two directions.LLMs can generate fluent and context-aware deceptive reviews, while pre-trained language models, or PLMs, and LLMs also provide stronger semantic representations for detection.This survey reviews fake review detection from an information fusion perspective, covering 211 studies published from 2018 to early 2026.We organize existing work by evidence source and fusion level, covering review text, sentiment, rating behavior, temporal metadata, user-product graphs, multimodal content, external knowledge, and LLM-generated signals.We trace the development from traditional machine learning and deep learning to PLM-based and LLM-based methods, and examine how different approaches combine textual, behavioral, structural, and multimodal evidence.We also analyze reported performance trends on widely used Amazon, Yelp, and OpSpam benchmark families, while noting the limitations caused by different label construction procedures, data splits, and evaluation protocols.Finally, we identify open problems in adversarial generation, cross-domain transfer, uncertainty-aware fusion, missing-source robustness, interpretability, and trustworthy evaluation for AI-generated deceptive content.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30292",
+        "external_id": "2609.30292"
+      },
+      {
+        "source": "doi",
+        "url": "https://doi.org/10.1016/j.inffus.2026.104715",
+        "external_id": "10.1016/j.inffus.2026.104715"
+      }
+    ],
+    "actors": [
+      "Fanji Yang (Guizhou University of Finance and Economics)",
+      "Huiyao Chen (Harbin Institute of Technology)",
+      "Xi Yu (Guizhou University of Finance and Economics)",
+      "Meishan Zhang (Harbin Institute of Technology)",
+      "Xiaohong Xiao (Guizhou University of Commerce)",
+      "Mingsen Deng (Guizhou University of Finance and Economics)"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665292Z",
+    "dedup_keys": [
+      "arxiv:2609.30292",
+      "title:detection fake from language language large models models pre review survey trained",
+      "doi:10.1016/j.inffus.2026.104715"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "bf2a878513365534",
+    "kind": "paper",
+    "title": "All In Good Time: Causality-Aware Framework for LLM-Based Simultaneous Speech-to-Speech Translation",
+    "summary_en": "Large Language Models (LLMs) have shown strong performance in low-resource offline translation; however, extending them to simultaneous speech-to-speech translation (Simul-S2ST) remains challenging due to the scarcity of causally aligned training data with high cross-lingual speaker fidelity. In addition, existing approaches rely on fixed translation policy or confidence heuristics, leading to suboptimal quality and higher latency. We propose a causality-aware Simul-S2ST framework with a novel data pipeline that generates high-fidelity, causally aligned segments with improved voice transfer. The framework introduces (i) a factorized S2ST architecture (FAST), (ii) a causality-aware adaptive policy (CAP), and (iii) causality-aware latency metric. Experiments on CVSS Spanish, German, and French show that FAST-CAP consistently improves the quality-latency trade-off, achieving up to +1.2 BLEU and a 26% relative latency reduction over a fixed policy. Despite using substantially less training data than existing systems, FAST-CAP achieves state-of-the-art results in speech translation quality and speaker fidelity while yielding up to a 38.8% relative reduction in latency.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30416",
+        "external_id": "2609.30416"
+      }
+    ],
+    "actors": [
+      "Amir Hussein",
+      "Enas Albasiri",
+      "Travis M. Bartley",
+      "Nourchene Ferchichi",
+      "Ke Hu",
+      "Harishchandra Dubey",
+      "Myungjong Kim",
+      "Zhehuai Chen",
+      "Oluwatobi Olabiyi",
+      "Sanjeev Khudanpur"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665918Z",
+    "dedup_keys": [
+      "arxiv:2609.30416",
+      "title:all aware based causality for framework good llm simultaneous speech speech time translation"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "9833b7880afe797b",
+    "kind": "paper",
+    "title": "Auditing and Repairing LLM-as-Judge Failures in a Production Text-to-SQL Pipeline",
+    "summary_en": "Production text-to-SQL pipelines often end with an LLM-as-judge whose agreement with human annotators has never actually been measured. When we checked ours, the deployed gpt-4o-mini judge agreed with two-author gold at only Cohen's kappa = 0.04 on a disagreement-enriched set and 0.42 on a uniform-random spot-check, over-flagging 77.1% of the human-FAITHFUL cases in the enriched set. Most of its over-flags trace back to a single mechanism we call GRADE-HALLUCINATION. A self-hosted Qwen3.6-27B replacement (kappa = 0.72) lands in the same range as Claude Opus 4.7 (kappa = 0.71); the head-to-head is underpowered at n = 96, but for the deployment decision that hardly matters, since Qwen costs roughly 1/300 as much per call. Ensembling does not help for free. Pairing the weak judge with a stronger one degrades agreement, whereas three strong judges under unanimity routing reach kappa = 0.79 at 89.7% auto-coverage. Applied out-of-domain, the same audit recipe flags 25.5% of BIRD-financial's expert-authored gold SQLs as candidate gold-SQL issues under our annotation protocol. Code and pre-registration are at https://github.com/JamesL404/synca-audit.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30290",
+        "external_id": "2609.30290"
+      }
+    ],
+    "actors": [
+      "Haowei Liu",
+      "Hsin-Tai Wu",
+      "Yi Fang"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665145Z",
+    "dedup_keys": [
+      "arxiv:2609.30290",
+      "title:and auditing failures judge llm pipeline production repairing sql text"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "50c0172bb06b751e",
+    "kind": "paper",
+    "title": "Bootstrapping Conversational Recommendation Agents At Spotify: Synthetic Data Generation and Self-Improvement Loops",
+    "summary_en": "Conversational recommendation agents are a new paradigm for content discovery, enabling users to express complex intents through natural language (e.g., \"recommend Italian indie artists I haven't heard before\"). A central challenge in building such agents is optimizing agent planning -- deciding how to select, sequence, and invoke tools -- particularly in cold-start settings where real user interactions are not yet available. We introduce a pipeline for multi-turn synthetic data generation and a self-improvement loop to address this challenge. The synthetic data pipeline transforms single-turn prompts into realistic multi-turn conversations, enabling systematic evaluation before launch. The self-improvement loop combines variance-based contrastive optimization with iterative refinement through a coding agent, automatically identifying and fixing planning and tool-use errors. Our approach improves quality by +8% on top of a highly optimized manual prompt. The system has been productionized and significantly accelerated iteration cycles for the launch of a conversational recommendation agent at Spotify. Online A/B tests demonstrate its effectiveness, with +14% user listening, +5% increase in weekly active users, and a 5% reduction in skip rate compared to a prior experience supporting only session refinement. This work provides a practical framework for accelerating the development of conversational recommendation agents in industry.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30297",
+        "external_id": "2609.30297"
+      },
+      {
+        "source": "doi",
+        "url": "https://doi.org/10.1145/3773078.3831910",
+        "external_id": "10.1145/3773078.3831910"
+      }
+    ],
+    "actors": [
+      "Enrico Palumbo",
+      "Alexandre Tamborrino",
+      "Victor Ode",
+      "Ben Lacker",
+      "Adri\\`a Casas Escoda",
+      "Jeremy Hopple",
+      "Marcus Better",
+      "James Leoni",
+      "Hugo Galv\\~ao",
+      "Hugues Bouchard",
+      "Mounia Lalmas",
+      "Jos\\'e Luis Redondo Garc\\'ia",
+      "Abenezer Abebe",
+      "Ann Clifton",
+      "Anton Blomberg",
+      "Henrik Lindstr\\\"om",
+      "Dani Doro",
+      "Christine Doig Cardet"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665664Z",
+    "dedup_keys": [
+      "arxiv:2609.30297",
+      "title:agents and bootstrapping conversational data generation improvement loops recommendation self spotify synthetic",
+      "doi:10.1145/3773078.3831910"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "3087143d625203cc",
+    "kind": "paper",
+    "title": "Breaking Homogeneity: Diversifying Persona Sets for Creative LLM Outputs",
+    "summary_en": "Language models often produce homogeneous responses to open-ended tasks; such homogeneity can spawn groupthink-the convergence of ideas toward a singular and potentially suboptimal decision. We formulate persona diversification as a set-level conditioning problem and study two orthogonal design choices: selecting versus generating personas, and space-filling versus frontier-seeking diversity. We instantiate this design space with four methods spanning coverage and dispersion subset selections, uniform-coverage sampling, and evolutionary persona generation. Evaluations on the Alternative Uses Task (AUT), Infinity-Chat, and Divergent Association Task (DAT) show the benefits of the proposed methods across tasks and creativity objectives. On AUT, evolutionary persona generation increases response diversity by 78.8%, originality by 26.1%, flexibility by 49.5%, and holistic creativity by 13.9% over task-only prompting, while maintaining 98.5% validity; on Infinity-Chat, it nearly doubles persona-induced response separation relative to random personas. Moreover, evolutionary personas compose with creativity-optimized prompting, further increasing its response diversity by 18.6% and creativity by 6.3%. These results establish persona-set geometry as a task-agnostic mechanism for eliciting divergent LLM outputs, and support persona diversification as a reusable complement to prompt optimization.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30492",
+        "external_id": "2609.30492"
+      }
+    ],
+    "actors": [
+      "Sang Bin Moon",
+      "Nicole Cho",
+      "Daniel Borrajo",
+      "Sumitra Ganesh",
+      "Abolfazl Hashemi"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.666334Z",
+    "dedup_keys": [
+      "arxiv:2609.30492",
+      "title:breaking creative diversifying for homogeneity llm outputs persona sets"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "7eb7a84ea3cd252c",
+    "kind": "paper",
+    "title": "CARGO: Context-Aware Retrieval-Gated Evaluation of Agentic AI in Production",
+    "summary_en": "Reference-based LLM-as-a-judge evaluation assumes the reference answer is the target. In deployed agentic systems that operate over dynamic entities (support cases, assets, accounts), the closest available reference typically applies the correct procedure to a different entity, so a literal judge penalizes different identifiers, dates, and statuses as errors or hallucinations. We name this failure mode reference-instance divergence (RID). We propose CARGO, a framework that (i) treats retrieved references as procedural exemplars and grounds factual judgments in the live instance's observed context, (ii) assigns each claim a three-way status (supported, contradicted, unverifiable) and penalizes only contradictions, and (iii) gates evaluation by retrieval confidence, casting production evaluation as selective prediction. We introduce CARGO-Bench, a perturbation-based diagnostic suite with ground truth by construction that separates leniency from discrimination. On CARGO-Bench (246 items, two judge models, 7,872 judgments), the standard reference-based judge penalizes 100% of correct entity-transplanted answers and is uninformative (discrimination index DI ~ 0); supplying the live facts without reframing changes nothing. CARGO eliminates these false penalties (0/50) while retaining near-complete contradiction recall (50/50 and 49/50), raising DI to 0.58 [0.48, 0.68]; a rubric-swap control attributes most of the effect to context-grounded dimension definitions. CARGO also exposes a limitation of its own design: the leniency that protects entity values suppresses detection of procedural corruptions (20% recall). A post-hoc fix does not close the gap, and an LLM-as-annotator study with written guidelines and adjudication shows the same blind spot. We release a preregistered protocol for extending the evaluation to expert agreement, risk-coverage, and cost on production traffic.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30471",
+        "external_id": "2609.30471"
+      }
+    ],
+    "actors": [
+      "Mukul Chhabra",
+      "Shail Patel",
+      "Luigi Medrano"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.666240Z",
+    "dedup_keys": [
+      "arxiv:2609.30471",
+      "title:agentic aware cargo context evaluation gated production retrieval"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "75ceb15de02bc3a7",
+    "kind": "paper",
+    "title": "Cartograph: Federated Tool Discovery with Operator-Attested Retrieval for AI Agents",
+    "summary_en": "The Model Context Protocol (MCP) enables AI agents to discover and call tools, but loading every definition becomes expensive as connected catalogs grow. We present Cartograph, a federated MCP proxy that changes agent-visible tool discovery from $O(n)$ catalog traversal to $O(k)$ progressive disclosure. Cartograph combines three mechanisms: (1) operator-attested capability cards, Ed25519-signed descriptions generated under the deploying operator's control rather than ranked publisher copy; (2) Rift, a three-layer confusable-cluster analysis comprising density clustering, query-margin analysis, and token diagnosis; and (3) two-stage retrieval, which ranks servers before tools. On a 22-server, 374-tool deployment, Cartograph exposes three proxy tools instead of 374 definitions. A 49-query author-constructed benchmark yields R@5 of 0.816, compared with 0.592 for a Jaccard keyword baseline, while a measured top-5 discovery exchange uses 475 tokens rather than 42,450 under the stated full-catalog accounting. Rift identifies 49 confusable clusters, including four HIGH-risk clusters in bootstrap-generated cards. An exploratory comparison of 119 LLM-generated descriptions removes the observed zero-distance cluster but shows that mixing card-generation regimes can reduce R@5. Gateway measurements over ten trials add 5ms mean latency (0.8%) relative to direct stdio MCP calls. Cartograph is complementary to code-execution approaches: it controls which tool descriptions are surfaced and records the provenance of the descriptions used for ranking for each query.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "mcp",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30293",
+        "external_id": "2609.30293"
+      }
+    ],
+    "actors": [
+      "Justice Owusu Agyemang",
+      "Michael Agyare",
+      "Kwame Opuni-Boachie Obour Agyekum",
+      "Kwame Agyeman-Prempeh Agyekum",
+      "Francisca Adoma Acheampong",
+      "Jerry John Kponyo"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665396Z",
+    "dedup_keys": [
+      "arxiv:2609.30293",
+      "title:agents attested cartograph discovery federated for operator retrieval tool with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "ecd1f41b66b1e675",
+    "kind": "paper",
+    "title": "Feeding BabyLMs Macaroni: Code-Switching Curricula Cause Cross-Lingual Convergence",
+    "summary_en": "Children in multilingual communities often code-switch, using multiple languages in a single utterance. Can we induce cross-lingual alignment in language models by training on code-switched text? We pretrain small decoder-only transformers on two 100M-word multilingual corpora: a base corpus formed by mixing the English, Dutch, and Chinese BabyBabelLM datasets, and a corpus generated from it by inserting word- and sentence-level code-switching using an LLM. We find that training on code-switched data aligns the representations of parallel text, particularly across different scripts, and that this alignment persists through training on monolingual documents. Under a learning curriculum that progresses from word-level code-switching, to sentence-level code-switching, to monolingual documents, models trained on code-switched data outperform baselines trained without it on the BabyLM evaluation suite. Our work characterizes code-switching curriculum learning as an effective data augmentation method for multilingual pretraining. We release our code, data, and models at https://github.com/drooryck/multilingual-macaroni.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30535",
+        "external_id": "2609.30535"
+      }
+    ],
+    "actors": [
+      "Dries Rooryck",
+      "Alex Cai",
+      "Yonatan Belinkov",
+      "David Alvarez-Melis",
+      "Kiant\\'e Brantley"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.666503Z",
+    "dedup_keys": [
+      "arxiv:2609.30535",
+      "title:babylms cause code convergence cross curricula feeding lingual macaroni switching"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "7e8b33169ec9a63b",
+    "kind": "paper",
+    "title": "Inference-Time Target Speaker Unlearning in LLM-Based Automatic Speech Recognition",
+    "summary_en": "We introduce target-speaker unlearning ASR (TSU-ASR) task in a fully end-to-end framework for multi-speaker ASR and diarization. Given a multi-speaker utterance and a set of opt-out speakers who do not wish to have their speech transcribed, the task requires an ASR system to transcribe all speakers except the opt-out ones, while still indicating when those speakers are active. As a first step towards tackling this task, we introduce a novel, light-weight Enrollment-Conditioned Gating (ECG) module attachable to a frozen dual-stream speech LLM that enables ASR for new opt-out speakers dynamically during inference, even those who were not seen during initial ECG training phase. Our experiments on both AMI (English) and AliMeeting (Mandarin) datasets show that speech transcription accuracy for corresponding opt-out words or characters falls from 72.3% to 48.2% and from 73.6% to 27.3%, respectively, while retained speakers' transcription error rates maintain more or less the same. Our approach provides a practical solution for modern video conferencing platforms, allowing speakers to dynamically opt-out from automated AI transcriptions without forcefully leaving the meeting sessions, enabling a privacy-preserving interface for potentially millions of online meetings daily.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "speech",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30439",
+        "external_id": "2609.30439"
+      }
+    ],
+    "actors": [
+      "Bo Su",
+      "Yueru Yan",
+      "Thai Le"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.666009Z",
+    "dedup_keys": [
+      "arxiv:2609.30439",
+      "title:automatic based inference llm recognition speaker speech target time unlearning"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "187730e81f93a18f",
+    "kind": "paper",
+    "title": "Inquesto Score: A reliability Protocol For Voice Agents",
+    "summary_en": "Voice agents are increasingly deployed in workflows where failed interactions can affect transactions, access, and other consequential outcomes, creating a need for reproducible and interpretable evaluation. We introduce Inquesto Score (IS), a protocol for measuring voice-agent reliability as the percentage of calls in a fixed, versioned evaluation population that achieve the caller's goal without a functional failure or worse. Rather than combining heterogeneous metrics, IS defines explicit failure events and severity levels and evaluates the deployed voice pipeline. Timing failures, including talk-over and delayed responses, are measured directly from audio, while semantic and state-dependent failures are evaluated using scenario predicates, tool traces, and a pinned open-model judge. Diagnostic views of behavior, acoustic robustness, identity handling, and speaker groups accompany the score without being combined into it. Inquesto Score v0.1 evaluates 30 scenarios, three acoustic conditions, four speaker groups, and 306 calls per agent across 13 configurations of a reference voice-agent system. Our evaluation shows that reliable measurement requires evidence beyond transcripts, explicit treatment of deployment conditions, and validation of the evaluators used to determine outcomes. We release the protocol, reference implementation, and evaluation records.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30514",
+        "external_id": "2609.30514"
+      }
+    ],
+    "actors": [
+      "Massa Baali",
+      "Bhiksha Raj"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.666424Z",
+    "dedup_keys": [
+      "arxiv:2609.30514",
+      "title:agents for inquesto protocol reliability score voice"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "4e31ba3477ec3b53",
+    "kind": "paper",
+    "title": "Manifold Projection and Iterative Autoencoder Refinement for Masked Language Modeling",
+    "summary_en": "In Transformer-based masked language models, attention is the primary mechanism for context mixing, but there are other ways to mix data across tokens. Recent attention-free mixers replace attention with fixed or hypernetwork-generated MLPs, alternating their dynamic, content-dependent weighting for computational simplicity. We build an alternative that gets the same property from a low-rank bottleneck autoencoder. We replace attention with a stack of autoencoder-based mixing modules, one operating over local neighborhoods, one over the full sequence, and one across attention heads, each compressing and reconstructing its input through a bottleneck, and its width is a hyperparameter rather than a training effect. In masked positions, we introduce an iterative refinement procedure that has two distinct steps. A pulling step that pulls an embedding representation toward a weighted average of its neighbors, and a correcting step that projects the result back to the learned manifold via an autoencoder. Our architecture achieves a significant portion of attention's performance at about $1.9 \\times$ fewer FLOPs when pretrained on C4 and evaluated with parameter-matched BERT baselines. Our model equals parameter-matched BERT and TinyBERT baselines on the rarest-token frequency bucket using a frequency-aware training schedule that samples rare tokens more than uniformly for the masking tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30288",
+        "external_id": "2609.30288"
+      }
+    ],
+    "actors": [
+      "Narges Mokhtari",
+      "Farzan Haddadi",
+      "Ebrahim Rezaii"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.664937Z",
+    "dedup_keys": [
+      "arxiv:2609.30288",
+      "title:and autoencoder for iterative language manifold masked modeling projection refinement"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "6e526ec4a8627103",
+    "kind": "paper",
+    "title": "Not All Memories Are Equal: Hierarchical Collaborative Memory for Validity-Aware Retrieval in LLM Agents",
+    "summary_en": "In team collaboration scenarios, memory is heterogeneous and continually evolving. Team memories capture collective decisions, protocols, and current consensus, while individual memories preserve member-specific observations, execution traces, and intermediate progress. Existing memory-augmented systems typically retrieve from all stored memories as a flat pool, ranking them by semantic relevance, importance, or recency without modeling hierarchical structure or evolving validity. As a result, they often surface semantically relevant but outdated or conflicting memories, especially individual memories that no longer align with current team consensus, instead of prioritizing currently valid memories. This is particularly problematic when collaborative LLM agents answer user questions, since their responses should be grounded in valid memories. We propose HiCoMER, a framework for hierarchical collaborative memory management and validity-aware retrieval in LLM agents. HiCoMER first maintains the validity of team and individual memories and then retrieves memories that remain valid, rather than retrieving directly from all stored memories. It consists of three components: a Hierarchical Memory Conflict Updater, a Validity-Aware Memory Retriever, and a Memory-Grounded Answer Generator. To evaluate HiCoMER, we construct two new datasets for memory-grounded question answering in collaborative settings. Experiments on both datasets show that HiCoMER consistently outperforms strong baselines by reducing outdated retrieval, preserving current team consensus, and improving downstream QA quality.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30289",
+        "external_id": "2609.30289"
+      }
+    ],
+    "actors": [
+      "Yufei Shi",
+      "Rujing Yao",
+      "Ang Li",
+      "Yang Wu",
+      "Zhuoren Jiang",
+      "Xiaozhong Liu"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665054Z",
+    "dedup_keys": [
+      "arxiv:2609.30289",
+      "title:agents all are aware collaborative equal for hierarchical llm memories memory not retrieval validity"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "7e368be00c586ccc",
+    "kind": "paper",
+    "title": "SignTrace: Describe a Sign, Find the Word",
+    "summary_en": "Identifying an unfamiliar sign is difficult when a learner remembers its movement but does not know its meaning or formal feature codes. SignTrace addresses this longstanding reverse-lookup problem through natural-language access to a Chinese sign-language dictionary. The system integrates LLM-based dictionary enrichment, action extraction, dictionary-style rewriting, seven-channel retrieval, and candidate reranking over 6,699 entries. It has been deployed for user trials and has received positive informal feedback. Evaluation on a dictionary-derived benchmark of 500 movement-description queries yields 94.0% Hit@1, 97.4% Hit@9, and a mean reciprocal rank of 0.9540. Reranking increases Hit@1 from 71.8% to 94.0%, while component analyses show the contribution of enriched entry descriptions. Median query-processing time is 13.37 seconds with six concurrent queries. By connecting everyday movement descriptions to documented signs and meanings, SignTrace provides a practical tool for identifying unfamiliar signs. Dictionary-derived wording and prior selection within the benchmark limit generalization to descriptions independently produced by users.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30295",
+        "external_id": "2609.30295"
+      }
+    ],
+    "actors": [
+      "Zengji Tu",
+      "Xingye Zhu",
+      "Ningjing Wang",
+      "Tingyi Huang",
+      "Yangjunfeng Zhu",
+      "Dai Wan"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665566Z",
+    "dedup_keys": [
+      "arxiv:2609.30295",
+      "title:describe find sign signtrace the word"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "393183848d5ccaa5",
+    "kind": "paper",
+    "title": "SlideLab: Audience-Centered Scientific Slide Generation and Evaluation",
+    "summary_en": "Scientific presentations are more than summaries of research papers. They need to present the work in a coherent sequence, explain the main ideas clearly, and help the audience follow the presentation. We present SlideLab, a training-free multi-agent framework for generating scientific presentations from research papers. SlideLab first plans the presentation narrative, then builds and iteratively refines a shared slide deck using agents for content planning, visual generation, layout refinement, and grounding verification. In a blind human preference study, SlideLab was preferred over both open-source and commercial systems on 77% of papers while using roughly 4 times fewer inference tokens than the strongest open-source baseline. We also introduce ConfArena, an audience-oriented evaluation framework that simulates a conference room and assesses presentations slide by slide. ConfArena matches human system rankings and detects injected presentation problems, including falsified numbers, degraded figures, dropped slides, and shuffled slide order.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30294",
+        "external_id": "2609.30294"
+      }
+    ],
+    "actors": [
+      "Vidushee Vats",
+      "Karun Sharma",
+      "Yuxia Wang"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.665476Z",
+    "dedup_keys": [
+      "arxiv:2609.30294",
+      "title:and audience centered evaluation generation scientific slide slidelab"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  },
+  {
+    "id": "42f0249b2f34c15a",
+    "kind": "paper",
+    "title": "Where Does Retrieval-Based Open-Ended Evaluation Fail? Automatic Taxonomy Induction from Long-Form Medical Answer Factuality Verification",
+    "summary_en": "Retrieval-based factuality evaluation, where LLM-generated claims are verified against evidence from authoritative medical corpora, has become the dominant paradigm for scalable hallucination detection in high-stakes clinical settings. Despite the urgency of reliable and transparent medical fact verification, most systems measure performance with aggregate metrics like F1, which obscure where and why failures occur. Existing RAG diagnostics require gold answers or annotated gold evidence, neither of which exists in this regime. We introduce two comprehensive taxonomies, grounded in a case study on the open-ended MedExpert dataset and 3 closed-ended datasets, decomposing failures into retrieval-stage errors along five quality dimensions, and verifier-reasoning errors into six consecutive steps. We adapt an automatic pattern induction pipeline using LLM-as-Judge to label evidence quality and classify verifier reasoning errors at scale, and then stress-test our findings across 4 retrieval methods and 6 frontier verifier models. Our analysis reveals that scaling model size, adding reasoning effort, expanding to authoritative web sources, and applying medical fine-tuning do not resolve these failure modes, demonstrating that they represent fundamental limitations of the retrieve-then-verify paradigm in open-ended medical settings rather than artifacts of outdated systems. We release our code and data at https://anonymous.4open.science/r/Medical_RAG_eval-4AB5 for the full reproducibility of our results.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.30467",
+        "external_id": "2609.30467"
+      }
+    ],
+    "actors": [
+      "Heyuan Huang",
+      "Jirui Dai",
+      "Alexandra DeLucia",
+      "Sonal Joshi",
+      "Mahsa Yarmohammadi",
+      "Jie Gao",
+      "Bernal Jim\\'enez Guti\\'errez",
+      "Mark Dredze"
+    ],
+    "published_at": "2026-09-28T04:00:00Z",
+    "first_seen_at": "2026-09-28T06:03:12.666107Z",
+    "dedup_keys": [
+      "arxiv:2609.30467",
+      "title:answer automatic based does ended evaluation factuality fail form from induction long medical open retrieval taxonomy verification where"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.872,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.128
+    }
+  }
+]
