@@ -1,0 +1,1990 @@
+[
+  {
+    "id": "7e64f5da9c0526fc",
+    "kind": "model",
+    "title": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "summary_en": "image-text-to-text, transformers, qwen4_exp, qwen3_8, moe, reasoning, efficient-thinking",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next",
+        "external_id": "ukisai/Swift1.5-Qwen3.8-Flash-Next"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+        "external_id": "Qwen/Qwen3.8-Flash-Next"
+      }
+    ],
+    "actors": [
+      "ukisai"
+    ],
+    "published_at": "2026-09-22T08:54:04Z",
+    "first_seen_at": "2026-09-29T06:21:44.674265Z",
+    "dedup_keys": [
+      "hf:ukisai/swift1.5-qwen3.8-flash-next"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 53,
+      "hf_downloads": 445,
+      "hf_trending_score": 53.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 45.76,
+    "score_breakdown": {
+      "hf_trending": 23.934,
+      "hf_downloads": 12.201,
+      "hf_likes": 11.967,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -10.342
+    }
+  },
+  {
+    "id": "97e2b7f0082fbbd6",
+    "kind": "paper",
+    "title": "Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence",
+    "summary_en": "Vision-language-action (VLA) and world-action (WAM) models map observations and instructions directly to robot actions. This directness ties a policy to training: minor layout or viewpoint changes cause failure, and instructions generalize poorly. The root cause lies in representation: task requirements, conditions, progress, and failure recovery are implicitly encoded in action sequences, making them difficult to inspect or revise. Digital coding agents offer a precedent: LLMs call tools, verify results, and revise from feedback as executable code. The same working pattern of explicit state, manageable execution, and revisable procedures underlies generalization and long-horizon execution in the physical world, letting physical experience return as reusable programs, memory, or evidence. We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution. We build HexaAnything, which calls perception, planning, and control tools, including VLA/WAM policies, and makes in-the-loop decisions from external feedback. Verified traces become data and memory, enabling evolution from tools and Harness to model weights, architectures, and ultimately hardware and task design. On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution. On PhyBench and a dual-arm AgileX robot, the agent autonomously completes physics experiments and most tabletop tasks, often faster than published results. We observe data, model, and tool self-evolution; future work targets weight internalization, autonomous redesign of architectures, languages, representations, and tasks, and deployment in manufacturing and science.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.35432",
+        "external_id": "2609.35432"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.35432",
+        "external_id": "2609.35432"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/HexaFuture/PhysicalCoding",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hongcheng Gao",
+      "Jingjing Zhou",
+      "Zelin Zheng",
+      "Shijia Ge",
+      "Jay Zhu",
+      "Yazhe Wang",
+      "Jianshu Zeng",
+      "Xuan Shangguan",
+      "Di Wu",
+      "Lingyu He",
+      "Zhiqi Jia",
+      "Sihang Wu",
+      "Xiao He"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700727Z",
+    "dedup_keys": [
+      "arxiv:2609.35432",
+      "title:agents coding digital evolving from intelligence physical programs self world",
+      "github:hexafuture/physicalcoding"
+    ],
+    "signals": {
+      "hf_upvotes": 39,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 17,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 45.394,
+    "score_breakdown": {
+      "hf_upvotes": 29.511,
+      "github_stars": 5.781,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "198dc995d9f3e0a3",
+    "kind": "paper",
+    "title": "Improving Test-Time Scaling with Adaptive Looped Transformers",
+    "summary_en": "Looped transformers have demonstrated promising parameter efficiency by reusing layers for latent computation. Prior studies compare looped and non-looped models at matched parameters or per-token FLOPs. However, to the best of our knowledge, whether looping improves test-time scaling as outputs grow longer remains underexplored. Through post-training looped transformers, we study the accuracy-compute slope, measured as the accuracy gain per doubling of test-time decoding FLOPs. We find that existing looped transformers often yield steeper slopes than their non-looped baseline, yet underperform it at matched compute. While fixed-depth looping spends extra iterations on every token, our analysis shows that many tokens do not benefit from extra iterations. We therefore propose TaH2, which enables the model to focus extra iterations on the tokens that benefit from looping. It jointly post-trains the backbone and an iteration decider through lookahead depth supervision, which uses online labels indicating whether further iteration improves the prediction. TaH2 improves both the efficiency and attainable accuracy of test-time scaling. On challenging AIME benchmarks, TaH2 improves the accuracy-compute slope by 53% (2.74 vs. 1.79) over the non-looped baseline, exceeding the baseline's peak accuracy by about 3.4 points at matched test-time compute. As the maximum iteration depth increases, existing looped models largely plateau, while TaH2's gain over the non-looped baseline continues to grow from +2.8 points at depth 2 to +3.9 points at depth 8. Our code is available at https://github.com/thu-nics/TaH.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.35748",
+        "external_id": "2609.35748"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.35748",
+        "external_id": "2609.35748"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/thu-nics/TaH",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yichen You",
+      "Tianyu Fu",
+      "Aosong Feng",
+      "Xingtai Lv",
+      "Xuefei Ning",
+      "Ning Ding",
+      "Yu Wang"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700756Z",
+    "dedup_keys": [
+      "arxiv:2609.35748",
+      "title:adaptive improving looped scaling test time transformers with",
+      "github:thu-nics/tah"
+    ],
+    "signals": {
+      "hf_upvotes": 26,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 85,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 45.378,
+    "score_breakdown": {
+      "hf_upvotes": 26.367,
+      "github_stars": 8.909,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "e04069610c4d9251",
+    "kind": "paper",
+    "title": "TraceDance: An Automated System for Building Agent Behavior Benchmarks from Real-World Agent Deployment Traces",
+    "summary_en": "An agent can complete a task while exhibiting undesirable behavior during execution. Developers need tests for the specific behaviors encountered in deployment, beyond fixed benchmark suites. We present TraceDance, an agent system that constructs targeted benchmarks from deployment traces for user-specified undesirable behaviors. For efficient construction, Anchor-and-Confirm combines programmable retrieval with candidate-level confirmation by a Flash large language model (LLM), while the Anchor Synthesis Loop generates and revises specifications for custom behaviors. The benchmarks use decision-point continuation to evaluate an LLM's next turn at a recorded decision point with a behavior-specific rubric, without a reference answer or environment replay. Experiments in coding and general tool use draw on 252,557 sessions and produce 107 benchmarks with 4,125 instances, fulfilling 95.3% of build-target requests. Both human annotators confirm the requested behavior in 84% of sampled instances, and the automated grader's agreement with human pass/fail judgments is comparable to that between the annotators. Nine frontier LLMs achieve a mean pass rate of only 26.7%, showing that they still struggle to respond appropriately at the evaluated decision points. Analysis across behavior-specific benchmarks further reveals weaknesses in how current LLMs behave as agents. By turning deployment problems into targeted benchmarks, TraceDance could serve as a key component of the recursive self-improvement (RSI) loop.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33295",
+        "external_id": "2609.33295"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33295",
+        "external_id": "2609.33295"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ZhishanQ/TraceDance",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Dehai Min",
+      "Daoan Zhang",
+      "Yiming Zeng",
+      "Huayi Zhang",
+      "Ziyi Chen",
+      "Yan Zhang",
+      "Qinbo Bai",
+      "Mengyuan Chao",
+      "Jing Ning",
+      "Qiyue Hua",
+      "Huiyi Chen",
+      "Hanrong Zhang",
+      "Henry Peng Zou",
+      "Jie Yang",
+      "Wei Xu",
+      "Philip S. Yu"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700688Z",
+    "dedup_keys": [
+      "arxiv:2609.33295",
+      "title:agent agent automated behavior benchmarks building deployment for from real system tracedance traces world",
+      "github:zhishanq/tracedance"
+    ],
+    "signals": {
+      "hf_upvotes": 44,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.252,
+    "score_breakdown": {
+      "hf_upvotes": 30.453,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "dd89df4f6f5edc50",
+    "kind": "paper",
+    "title": "Beyond Teacher Assignment: Domain-Normalized Multi-Teacher On-Policy Distillation",
+    "summary_en": "Reinforcement learning can turn one language model into several specialists, each excellent at a single skill such as mathematics, coding or following instructions, but users need one model with all of these skills. Multi-teacher on-policy distillation (MOPD) merges them by letting the specialists teach one student: the student answers each prompt, and the specialist for that prompt's domain gives feedback on every token. This routing decides which specialist teaches, but not how strongly its feedback moves the shared student. In Qwen3.5 models at three sizes, we find that MOPD's student does not beat one taught by the best single specialist and gains little of the mathematics specialist's advantage. The feedback is unbalanced: instruction-following feedback is several times more spread out than mathematics feedback and dominates the student's updates. We propose Domain-Normalized MOPD (DN-MOPD), which keeps the routing and rescales each domain's feedback by its measured spread. On six public benchmarks, DN-MOPD improves the average score over MOPD at every size, across three random seeds and under two answer-length limits, and recovers most of the lost mathematics gain. Controls with fixed domain weights show that the gain comes mainly from turning down instruction-following feedback rather than turning up mathematics alone, and that fixed weights close to those DN-MOPD measures perform comparably. Combining specialists therefore requires deciding not only which one teaches, but also how strongly its feedback counts.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.35347",
+        "external_id": "2609.35347"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.35347",
+        "external_id": "2609.35347"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/LiXin97/DN-MOPD",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xin Li",
+      "Hao Jiang",
+      "Xin Gao",
+      "Annan Wang",
+      "Yuchen Xie",
+      "Jinghao Guo",
+      "Xingwei Qu",
+      "Yichi Zhang",
+      "Chau Yuen"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700856Z",
+    "dedup_keys": [
+      "arxiv:2609.35347",
+      "title:assignment beyond distillation domain multi normalized policy teacher teacher",
+      "github:lixin97/dn-mopd"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 38.77,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "d9bad10ffddb2595",
+    "kind": "paper",
+    "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+    "summary_en": "Symbolic models make melody, harmony, rhythm, and form explicit but typically stop before a finished recording; audio models produce complete songs while leaving composition implicit. We introduce YuE2, which unifies symbolic and audio music generation at frontier quality through symbolic planning. A single AR-NAR Mixture-of-Transformers (MoT) first writes a readable score specifying melody and harmony, expands it into semantic music tokens, and realizes it as full-song audio. In comparisons using the same checkpoint, experts prefer symbolic planning for overall quality and musicality, with 49.3% of overall preferences versus 34.6% without planning. Experts also favor the unified model over a separate language model and diffusion Transformer. On WildSongBench, YuE2 scores 6.73 on SongBench Global Avg, exceeding all evaluated public baselines. Selecting from eight candidates (best-of-8), YuE2 reaches 6.96, the highest observed mean among all evaluated systems. Expert listening further establishes its competitiveness with proprietary song generators, favoring best-of-8 over Suno v4.5 and yielding nearly balanced preferences against Suno v5. To learn this generation process from recordings without aligned scores, we introduce MERT2 and SheetSage2 to supply semantic and symbolic supervision. MERT2 sets a new state of the art in music representation learning, surpassing previous best results on 14 of 15 MARBLE metrics; SheetSage2 leads 12 of 15 benchmark-metric pairs in our lead-sheet transcription comparison. The same checkpoint follows score edits while largely preserving unedited musical content and generates zero-shot covers without cover-specific training. Its readable score also enables agentic music editing, with external language models translating user feedback into revisions of the composition.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "speech",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33757",
+        "external_id": "2609.33757"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33757",
+        "external_id": "2609.33757"
+      }
+    ],
+    "actors": [
+      "Ruibin Yuan",
+      "Jiahao Pan",
+      "Junyan Jiang",
+      "Zhiyue Wu",
+      "Ziya Zhou",
+      "Jiankai Sun",
+      "Yizhi Li",
+      "Ge Zhang",
+      "Yicheng Gu",
+      "Zeyue Tian",
+      "Junyu Dai",
+      "Hanfeng Lin",
+      "Kai Li",
+      "Shangda Wu",
+      "Xuanjie Liu",
+      "Jiaming Wang",
+      "Zihan Liu",
+      "Yue Wang",
+      "Yinghao Ma",
+      "Hanzhi Yin",
+      "Kangrui Chen",
+      "Xinyue Zhang",
+      "Ziyang Ma",
+      "Mengqi Liao",
+      "Hejia Zhao",
+      "Guowei Huang",
+      "Chao Yan",
+      "Lei Ke",
+      "Jianwei Yu",
+      "Bei Liu",
+      "Joe Guo",
+      "Liumeng Xue",
+      "Gus Xia",
+      "Wei Xue",
+      "Yike Guo"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700546Z",
+    "dedup_keys": [
+      "arxiv:2609.33757",
+      "title:and audio frontier generation music quality symbolic unifying yue2"
+    ],
+    "signals": {
+      "hf_upvotes": 47,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 36.572,
+    "score_breakdown": {
+      "hf_upvotes": 30.97,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "ee6c39ad591a62ce",
+    "kind": "paper",
+    "title": "Knowing When Thinking Is Not Enough: Teaching Small Reasoning Models to Reason Beyond Their Parametric Knowledge",
+    "summary_en": "Scaling test-time computation is a powerful way to improve language-model reasoning, and is particularly appealing for small reasoning models (sRMs) that are cheap to serve. However, is additional thinking always the right operation? By intervening at intermediate reasoning states across two model families and multiple scales, we find that self-refinement largely consolidates probability mass onto solutions already reachable from the current state, rather than making new ones reachable. These interventions reveal two failure regimes: execution bottlenecks, where the correct path is reachable and reflection can recover it, and knowledge bottlenecks, where relevant external information makes it reachable. Motivated by this distinction, we introduce FlyBy, a selective querying framework, and train 4B and 8B variants to reason first, diagnose what remains unresolved, and, at a knowledge bottleneck, query stronger models whose parametric knowledge extends beyond its own. Supervised fine-tuning bootstraps a multi-depth query action, and cost-aware reinforcement learning calibrates whether to query, what to ask, and how much to spend. On 1,158 hard problems across six benchmarks, FlyBy-4B achieves 45.96% pass@8, surpassing Qwen3-14B (41.64%) at 2.7 times lower serving cost, while also exceeding Qwen3-8B in pass@1 (16.85% vs. 15.31%). Scaling to FlyBy-8B further improves pass@8 to 51.81%.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.34327",
+        "external_id": "2609.34327"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.34327",
+        "external_id": "2609.34327"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/tally0818/FlyBy",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chanuk Lee",
+      "Minki Kang",
+      "Sangwoo Park",
+      "Woongyeong Yeo",
+      "Jinheon Baek",
+      "Sung Ju Hwang"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700832Z",
+    "dedup_keys": [
+      "arxiv:2609.34327",
+      "title:beyond enough knowing knowledge models not parametric reason reasoning small teaching their thinking when",
+      "github:tally0818/flyby"
+    ],
+    "signals": {
+      "hf_upvotes": 23,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.526,
+    "score_breakdown": {
+      "hf_upvotes": 25.424,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "f67a73cb7c3cfba2",
+    "kind": "model",
+    "title": "lilylilith/QI_2.1_AnyAngle",
+    "summary_en": "image-to-image, LoRA, lora, Qwen-Image-2.1",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/lilylilith/QI_2.1_AnyAngle",
+        "external_id": "lilylilith/QI_2.1_AnyAngle"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+        "external_id": "Qwen/Qwen-Image-2.1"
+      }
+    ],
+    "actors": [
+      "lilylilith"
+    ],
+    "published_at": "2026-09-28T05:08:18Z",
+    "first_seen_at": "2026-09-29T06:21:44.674139Z",
+    "dedup_keys": [
+      "hf:lilylilith/qi_2.1_anyangle"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 59,
+      "hf_downloads": 0,
+      "hf_trending_score": 58.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 35.171,
+    "score_breakdown": {
+      "hf_trending": 24.465,
+      "hf_likes": 12.283,
+      "age_decay": -1.577
+    }
+  },
+  {
+    "id": "db104bd22e248089",
+    "kind": "paper",
+    "title": "SpatialSpeak: QA-Native Reconstruction with Local and Global Context for Spatial Chain-of-Thought Reasoning",
+    "summary_en": "Vision-language models (VLMs) can benefit from geometric priors for multi-view spatial reasoning, yet answer-only training does not directly supervise the intermediate geometric estimates and their use in deriving quantitative spatial answers. We hypothesize that spatial chain-of-thought (CoT) supervision becomes more effective when the VLM first jointly learns complementary local geometry and global scene context through multi-view reconstruction. We introduce SpatialSpeak, a two-stage framework that connects QA-native reconstruction pretraining with spatial CoT learning. In Stage I, QA-Native Reconstruction Pretraining (QA-RP) combines marked-point 3D queries for fine-grained local geometry with object-center queries for global scene context across views. Both tasks are formulated as text-based question answering, allowing geometric estimation and subsequent reasoning to share the same autoregressive output interface. In Stage II, spatial CoT with Visual Compensation (CoT-VC) trains the model to express question-relevant geometric estimates and use them to derive answers, with reliability assessment and visual compensation supporting answer refinement when needed. On ReVSI, QA-RP increases the gain from CoT-VC from 2.6 to 6.9 points, and ablations show that both local and global reconstruction supervision are beneficial. SpatialSpeak achieves state-of-the-art results on ReVSI, VSI-Bench, and SPAR-Bench, with a ReVSI score of 62.8 that exceeds the strongest compared baseline by 8.7 points.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33616",
+        "external_id": "2609.33616"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33616",
+        "external_id": "2609.33616"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yangcaoai/SpatialSpeak-VLM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yang Cao",
+      "Jiaxin Zhang",
+      "Dave Zhenyu Chen",
+      "Yingji Zhong",
+      "Ruiyuan Gao",
+      "Lanqing Hong",
+      "Dan Xu"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700951Z",
+    "dedup_keys": [
+      "arxiv:2609.33616",
+      "title:and chain context for global local native reasoning reconstruction spatial spatialspeak thought with",
+      "github:yangcaoai/spatialspeak-vlm"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.931,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "f674be6970c33cf5",
+    "kind": "paper",
+    "title": "MassAlloc Attention: Let Attention Allocate Its Own Compute",
+    "summary_en": "FullAttn often assigns negligible normalized mass to much of the causal score space, yet dense kernels execute the complete post-score path after forming each QK tile. We introduce MALA, a fused attention primitive that preserves score access to every legal causal interaction and uses normalized contribution to allocate post-score computation. Forward uses its evolving online-softmax normalizer, while backward reuses the finalized normalizer to derive nested retained support using only standard attention state. A common tolerance governs training and inference, allowing for adaptive retention of the work. MALA reduces low-contribution post-score computation. A matched-work study at 8K isolates the benefit of distribution-adaptive allocation: under exactly matched total post-score work, MALA approaches a per-instance reference-mass oracle, with mean omitted mass of 0.0188% versus 0.0182%. Across context lengths from 1K to 32K tokens, the same tolerance maintains low output and gradient errors relative to the reference. Across a broader controlled associative-recall comparison, MALA closely tracks FullAttn as context grows, reaching 89.67% accuracy at 8K compared with 89.97% for FullAttn. In an attention-operator benchmark at 128K tokens with tensor parallelism, MALA reduces forward and backward latency during training by 2.2x and 3.0x and decoding latency during inference by 1.6x relative to FullAttn. Across scaling-law training from 0.6B to 14B parameters, MALA closely tracks FullAttn in perplexity while reducing total training FLOPs. The resulting 14B models and 32B models from separate continued training achieve comparable knowledge, reasoning, and long-context retrieval scores to FullAttn. These results indicate that allocating post-score computation according to normalized attention contributions can retain the evaluated capabilities of FullAttn while reducing attention computation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.32712",
+        "external_id": "2609.32712"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.32712",
+        "external_id": "2609.32712"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/HKUSTDial/flash-sparse-attention",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jingze Shi",
+      "Zhangyang Peng",
+      "Xianduo Li",
+      "Yanlin Qi",
+      "Xiaotian Lin",
+      "Haoxian Chen",
+      "Liangdong Wang",
+      "Guang Liu",
+      "Yuyu Luo"
+    ],
+    "published_at": "2026-09-26T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701322Z",
+    "dedup_keys": [
+      "arxiv:2609.32712",
+      "title:allocate attention attention compute its let massalloc own",
+      "github:hkustdial/flash-sparse-attention"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 761,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.708,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "github_stars": 13.272,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.898
+    }
+  },
+  {
+    "id": "1883ab58d52edc63",
+    "kind": "paper",
+    "title": "Diffusion Reward Models",
+    "summary_en": "Reward models underpin the alignment of large language models, yet the dominant designs reduce each prompt--response pair to a point estimate or to a distribution from a fixed parametric family. This is at odds with human preference, which is inherently multimodal: the same response can be reasonably judged in many ways, and no single family covers all of them. To better fit this structure, we introduce DRM, a Diffusion Reward Model that recasts reward modeling as conditional density estimation over p(rmid x,y). Conditioned on a frozen LLM encoder, a lightweight Diffusion Transformer denoises Gaussian noise into a reward vector, placing no parametric assumption on the output distribution and naturally representing its multimodal structure. A single architecture handles both multi-attribute regression and pairwise preference data, and at inference N samples form an empirical reward distribution that can be aggregated into a scalar, a variance, or quantiles. Across five benchmarks, DRM matches or surpasses baselines under matched data and backbone, stays competitive with much larger discriminative, distributional, and generative RMs despite its modest training scale, and recovers multimodal reward structure where conventional heads collapse to a point. Uncertainty-aware rejection and lower-confidence-bound (LCB) aggregation further demonstrate that DRM can exploit distributional information beyond a scalar reward to improve reward-model decisions. Downstream RLHF experiments additionally show that using DRM as the training-time reward leads to improved policy performance, directly validating the practical benefit of diffusion-based reward modeling for RLHF training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33803",
+        "external_id": "2609.33803"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33803",
+        "external_id": "2609.33803"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/thunlp/DRM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xiangyang Wang",
+      "Bingxiang He",
+      "Zeyuan Liu",
+      "Jiaze WangZiqing Qiao",
+      "Yuxin Zuo",
+      "Huan-ang Gao",
+      "Cheng Qian",
+      "Wenbin Zhang",
+      "Ran Li",
+      "Youbang Sun",
+      "Ning Ding",
+      "Yuanchun Shi",
+      "Zhiyuan Liu",
+      "Chaojun Xiao",
+      "Chun Yu"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700975Z",
+    "dedup_keys": [
+      "arxiv:2609.33803",
+      "title:diffusion models reward",
+      "github:thunlp/drm"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.487,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "20d45c9f5cddce15",
+    "kind": "paper",
+    "title": "CompoWorld: Compositional Environment Scaling for General Agents",
+    "summary_en": "Automatically generated environments provide a scalable source of interaction data for training general agents. However, existing approaches mainly generate tasks within a single environment, while real-world workflows require agents to connect information and actions across multiple services. We introduce Compositional Environment Scaling (CompoWorld), which expands the task space by composing a finite library of reusable services. Coding agents turn tool specifications into verified services with typed states and shared interfaces, while a world model handles tools that cannot be reliably implemented. A random-walk procedure connects services through dependency graphs, enabling the generation and verification of tasks that require information to flow across services. Verified trajectories support supervised fine-tuning (SFT), while our Completion-Focused Rubric Reward guides reinforcement learning (RL) toward full task completion by emphasizing criteria with lower pass rates within each rollout group. We construct 448 services exposing 10,130 tools and use 3K SFT trajectories and 1K RL tasks to train Qwen3.6-35B-A3B. Experimental results show that CompoWorld improves on its backbone by 9.17 points on average across eight benchmarks. On AutomationBench, it surpasses frontier models such as Claude Opus 4.6 and leads all compared agent-specialized 35B-A3B models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33665",
+        "external_id": "2609.33665"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33665",
+        "external_id": "2609.33665"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AllSpark-Research/CompoWorld",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xiao-Wen Yang",
+      "Weiyi Xu",
+      "Wen Da",
+      "Hang Xu",
+      "Canwei Li",
+      "Hong-Jie You",
+      "Pusen Dong",
+      "Yucheng Zeng",
+      "Zhaokai Luo",
+      "Yu-Feng Li",
+      "Yao Hu",
+      "Mu Chuan"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700807Z",
+    "dedup_keys": [
+      "arxiv:2609.33665",
+      "title:agents compositional compoworld environment for general scaling",
+      "github:allspark-research/compoworld"
+    ],
+    "signals": {
+      "hf_upvotes": 24,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.353,
+    "score_breakdown": {
+      "hf_upvotes": 25.751,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "680fedf2bc2a613a",
+    "kind": "paper",
+    "title": "Surprising Success, Repeated Failure: Entropy-Guided Credit Assignment for Exploration in LLM Reasoning",
+    "summary_en": "Reinforcement learning with verifiable rewards (RLVR) enhances reasoning in large language models (LLMs) through outcome-level feedback, yet recent approaches to finer-grained credit assignment often require auxiliary models, additional sampling, or privileged information. Although policy entropy provides a readily available signal, prioritizing uncertain positions under both reinforcement and penalization concentrates penalties where failed responses still retain alternatives for recovery, which can suppress opportunities for exploration. To address this, we introduce Entropic Advantage Policy Optimization (EAPO), an entropy-guided credit assignment method that treats success and failure asymmetrically. Specifically, motivated by the observation that success under uncertainty is less repeatable while confident failures tend to recur, EAPO couples normalized policy entropy with the sign of the response advantage to reinforce surprising success and correct repeated failure. It assigns stronger reinforcement to high-entropy decisions in successful responses and stronger penalties to low-entropy decisions in failed responses, while attenuating penalties at uncertain positions to preserve opportunities for recovery. By redistributing the response advantage across tokens, EAPO derives token-level credit directly from existing rollout signals without additional supervision. We validate EAPO on a range of reasoning tasks across both base and reasoning backbones, demonstrating that it achieves the best overall performance. We further show that EAPO promotes more effective exploration, broadening problem coverage and generating more diverse candidate answers.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33781",
+        "external_id": "2609.33781"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33781",
+        "external_id": "2609.33781"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/wgcyeo/EAPO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Woongyeong Yeo",
+      "Minki Kang",
+      "Chanuk Lee",
+      "Sangwoo Park",
+      "Jinheon Baek",
+      "Sung Ju Hwang"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700883Z",
+    "dedup_keys": [
+      "arxiv:2609.33781",
+      "title:assignment credit entropy exploration failure for guided llm reasoning repeated success surprising",
+      "github:wgcyeo/eapo"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.686,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "c5dd35f58e3fbc26",
+    "kind": "paper",
+    "title": "WorldPlay2: Extending Real-Time Interactive World Models in Control and Horizon",
+    "summary_en": "Interactive world models require responding in real time to versatile controls and maintaining long-horizon consistency. However, modeling heterogeneous controls remains difficult, while explosive contexts and unstable distillation impede achieving both long-horizon consistency and real-time responsiveness. In this paper, we present WorldPlay2, an interactive world model that couples a factorized hybrid control interface with a co-design of compressed memory and stable distillation. 1) Our factorized hybrid control interface integrates frame-aligned action control with structured semantic control that explicitly disentangles scene appearance, character identity, and dynamic semantic events, thereby facilitating effective control learning. 2) To achieve efficient long-horizon modeling, we compress historical contexts into compact memory tokens shared by the autoregressive student and the bidirectional teacher. This design enables clip-wise, memory-conditioned score evaluation instead of jointly processing an entire long rollout, substantially reducing distillation overhead. 3) We further propose Stable Forcing, which initializes the autoregressive student via a few-step strategy and leverages full-rollout replay to preserve the quality of long-horizon rollouts, ensuring robust and stable distillation. Extensive experiments demonstrate the strong generalizability of our model and its superior performance compared to existing methods.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.35560",
+        "external_id": "2609.35560"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.35560",
+        "external_id": "2609.35560"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/WorldPlay2/WorldPlay2",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haiyu Zhang",
+      "Wenqiang Sun",
+      "Tengfei Wang",
+      "Junta Wu",
+      "Jun Zhang",
+      "Yunhong Wang",
+      "Yu Qiao",
+      "Chunchao Guo"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701161Z",
+    "dedup_keys": [
+      "arxiv:2609.35560",
+      "title:and control extending horizon interactive models real time world worldplay2",
+      "github:worldplay2/worldplay2"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 9,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.128,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 4.605,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "37dc20ae1349d016",
+    "kind": "paper",
+    "title": "Just MLPs: Efficient Visual State Reconstruction for Multimodal Language Models",
+    "summary_en": "Long visual token sequences often account for a substantial fraction of the computational overhead in multimodal large language models~(MLLMs). Existing approaches reduce this cost by pruning redundant visual tokens, but permanently discard visual evidence that may become useful in subsequent layers. We instead ask whether all visual tokens can be preserved while reducing the cost of repeatedly evolving the representations through the Transformer. To answer this question, we perform low-rank interventions on visual-to-text information flow. We find that, after visual-to-text attention is blocked, restoring only a few directions recovers most of the lost accuracy, suggesting the relevant visual influence is concentrated in a low-dimensional subspace. We further observe strong predictability in layer-specific visual states: lightweight MLPs approximate them with high cosine similarity and low reconstruction error. Motivated by these findings, we propose δ-Vision, which replaces repeated Transformer evolution of visual tokens with lightweight low-rank adapters that construct layer-wise visual memories while preserving all visual tokens for text retrieval. Across image and video benchmarks, δ-Vision achieves higher accuracy than visual token pruning baselines at comparable or lower computation, while delivering competitive inference efficiency without discarding visual tokens.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.34972",
+        "external_id": "2609.34972"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.34972",
+        "external_id": "2609.34972"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/declare-lab/delta-Vision",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jingdi lei",
+      "Junxian Li",
+      "Di Zhang",
+      "Zhanqiu Zhang",
+      "Yiwen Guo",
+      "Soujanya Poria"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701093Z",
+    "dedup_keys": [
+      "arxiv:2609.34972",
+      "title:efficient for just language mlps models multimodal reconstruction state visual",
+      "github:declare-lab/delta-vision"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.178,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "91bd6fcb78c4e538",
+    "kind": "release",
+    "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+    "summary_en": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:45.429424Z",
+    "dedup_keys": [
+      "url:openai.com/index/basis-tax-workbook-with-astra",
+      "title:astra basis completes faster gpt tax with workbook"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.102,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "81200c4858b45293",
+    "kind": "paper",
+    "title": "AdaTutoRank: Learning to Rerank Document Sets via Adaptive Tutoring Optimization for RAG and Deep Research",
+    "summary_en": "Document rerankers determine what evidence reaches the downstream model in RAG and deep research, yet mainstream rerankers select by relevance matching, and individually relevant documents rarely constitute the complete, complementary, non-redundant set a complex information need demands. Prior work rewards a set by its aggregate rubric score, shifting the objective from ranking documents to composing sets. Yet that score is one scalar shared by every document in the set, so the supervision is sparse: a redundant document is rewarded with the rest whenever the set scores well, and a decisive one penalized with the rest whenever it does not; credit assignment leaves contributors indistinguishable from free riders. On-policy distillation could densify this supervision, but existing methods give every rollout the same fixed guidance, too prescriptive for strong rollouts and too abstract for weak ones. We therefore propose AdaTutoRank, a setwise reranker trained with Adaptive Tutoring Optimization (ATO) under a three-level hierarchy of nine rubric dimensions, which supplies silver labels for the cold start, rewards for reinforcement learning, and hints for distillation. ATO draws three hint forms of increasing specificity from the policy's own frozen snapshot: the rubrics alone, a self-selector's sibling-set chosen under rubrics, and a self-reflector's reflection contrasting the rollout with that sibling-set; each rollout receives the form matched to its quality. Re-scoring that rollout under the hint-conditioned frozen teacher and the hint-free snapshot distills the hint's effect into a token-level advantage that complements the group-relative outcome advantage. Across ten benchmarks spanning RAG, deep research, and setwise evaluation, AdaTutoRank attains the best overall performance while issuing fewer retrieval calls.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.32472",
+        "external_id": "2609.32472"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.32472",
+        "external_id": "2609.32472"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AdaTutoRank/AdaTutoRank",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kailin Jiang",
+      "Lei Liu",
+      "Jian Xi",
+      "Yangqi Chen",
+      "Hui Xu",
+      "Hongwei Zhao",
+      "Bin Li",
+      "Yu Lu",
+      "Haibo Shi"
+    ],
+    "published_at": "2026-09-26T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701001Z",
+    "dedup_keys": [
+      "arxiv:2609.32472",
+      "title:adaptive adatutorank and deep document for learning optimization rag rerank research sets tutoring via",
+      "github:adatutorank/adatutorank"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.154,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.898
+    }
+  },
+  {
+    "id": "9bc4a063d8aca565",
+    "kind": "paper",
+    "title": "DepthBench: Measuring How Residual Connections Enable More Computational Depth",
+    "summary_en": "Depth is a natural way to increase the computational capacity in Transformers, yet the contribution of deeper layers can diminish as depth grows larger. Recent approaches enhance normalization (e.g., LayerNorm Scaling) or residual connections (e.g., mHC, AttnRes) to enable better information flow and depth utilization. However, it remains unclear whether they truly translate increased architectural depth into effective computational depth, and whether their reported gains stem from better access to information across depth, or unaccounted-for confounding factors. In this paper, we introduce DepthBench, a controlled benchmark for studying computational depth across various architectures. We systematically vary the width--depth aspect ratio (d_{model}/n_{layer}) from shallow--wide to deep--narrow shapes, while keeping the model size and pre-training recipe fixed. Across 10 representative architectures, we find that the benefit of allocating more capacity to depth is strongly architecture-dependent. Standard Pre-LN and most of its norm- and scaling-based variants provide little benefit and can even degrade performance as models become deeper and narrower, whereas HC and Full AttnRes improve consistently even at extreme deep shapes. These gains extend beyond pre-training loss and consistently translate into improved domain-specific performance and effective computation. Controlled layer-level analyses further show that the gains of HC and Full AttnRes are associated with more effective utilization of additional layers, revealing distinct mechanisms of computational depth across architectures. Overall, our results identify residual connection design as a key determinant of whether depth can serve as a meaningful scaling axis by enabling additional architectural depth to translate into effective computation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.32534",
+        "external_id": "2609.32534"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.32534",
+        "external_id": "2609.32534"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/keyu-wang-2002/DepthBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Keyu Wang",
+      "Yangyi Huang",
+      "Jiale Kang",
+      "David González-Martínez",
+      "Weiyang Liu",
+      "Shiwei Liu"
+    ],
+    "published_at": "2026-09-26T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701046Z",
+    "dedup_keys": [
+      "arxiv:2609.32534",
+      "title:computational connections depth depthbench enable how measuring more residual",
+      "github:keyu-wang-2002/depthbench"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.841,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.898
+    }
+  },
+  {
+    "id": "0bd174aa68ad6348",
+    "kind": "paper",
+    "title": "REALM: A Coarse-to-Fine Generative Framework for Embodied Reactive Listening",
+    "summary_en": "Generating responsive listener facial motion is an important task for embodied conversational AI. Two modeling challenges are central: accounting for the timing of speaker cues while maintaining continuity with the listener's ongoing motion, and capturing locally variable facial events alongside the overall motion trajectory. Listener responses may follow preceding cues with a temporal lag, while brief expressions and blinks introduce variation that is difficult to predict deterministically. These challenges motivate a framework that combines history-aware temporal alignment with stochastic expression refinement. We propose REALM (Reactive Embodied Audio-driven Listening Model), a coarse-to-fine framework for audio-driven reactive listening. A Reactive Gated Speaker-Listener Fusion module combines listener motion history with speaker audio through a delay-centered attention prior and adaptive gating. A coarse decoder predicts a base motion trajectory, which is augmented by audio-conditioned stochastic residuals in the expression subspace while retaining the coarse pose parameters. Evaluations on ViCo and L2L show improvements over the evaluated baselines across multiple motion-quality metrics. Additional analyses examine delay sensitivity, gate behavior, and blink dynamics. Finally, deployment on an Ameca humanoid robot and a perceptual user study demonstrate the applicability of the generated behavior to physical embodiment.\n  Code: https://github.com/lipzh5/REALM Demo: https://youtu.be/Tf5mpd5S8VQ",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "speech",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33095",
+        "external_id": "2609.33095"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33095",
+        "external_id": "2609.33095"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/lipzh5/REALM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Peizhen Li",
+      "Longbing Cao",
+      "Yang Zhang"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701116Z",
+    "dedup_keys": [
+      "arxiv:2609.33095",
+      "title:coarse embodied fine for framework generative listening reactive realm",
+      "github:lipzh5/realm"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 24,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.223,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 6.438,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "47da0e0d1a578d56",
+    "kind": "paper",
+    "title": "Learning to Learn from Context: Synthetic Training from Perturbed Public Documents",
+    "summary_en": "Real-world tasks often require large language models (LLMs) to learn from complex task-specific context rather than pretrained parametric knowledge. This capability remains a weakness of LLMs, while human annotation for such task contexts is expensive and difficult to scale. Public high-quality documents are an abundant alternative, but much of the public web has already been consumed during pretraining: training on such documents naively would reward memorization rather than context learning. In this work, we attempt to make use of high-quality public documents with small perturbations and empirically find that LLMs can successfully generate context-dependent reasoning traces and answers, which are then used to train a student model. Specifically, we construct a synthesis pipeline that (i) rewrites source documents to reduce memorization risk, (ii) generates questions and rubrics that require reasoning over the document, (iii) answers the questions with the document as context, and (iv) admits only samples that genuinely depend on the document. Without any human annotators, our pipeline generates about 10k samples from 3.5k documents, and the resulting student model substantially improves the performance on CL-bench. SFT raises a Qwen3.6-35B-A3B student from 13.7% to 22.8%, and a subsequent rubric-reward RL stage reaches 24.6%, on CL-bench comparable with a frontier model of over a trillion parameters, Qwen3.8-2.4T (23.9%). We also observe a broad transfer of improvements to long-context understanding, instruction following, and reasoning, while code generation and knowledge remain mostly flat. We hope this work provides a reproducible and scalable way to improve the ability of LLMs to learn from context, and to facilitate further research on context-grounded reasoning.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33642",
+        "external_id": "2609.33642"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33642",
+        "external_id": "2609.33642"
+      }
+    ],
+    "actors": [
+      "Haoyi Wu",
+      "Yang Xiao",
+      "Yusong Sun",
+      "Wenyang Hui",
+      "Zhaokai Luo",
+      "Chengyue Jiang",
+      "Mu Chuan"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700905Z",
+    "dedup_keys": [
+      "arxiv:2609.33642",
+      "title:context documents from from learn learning perturbed public synthetic training"
+    ],
+    "signals": {
+      "hf_upvotes": 20,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.958,
+    "score_breakdown": {
+      "hf_upvotes": 24.356,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "b82d2e238023d375",
+    "kind": "paper",
+    "title": "SolveEdit: Benchmarking Visual Problem Solving in Generative Models",
+    "summary_en": "Machine intelligence is often evaluated through abstract reasoning problems, yet many real-world problems are visual, such as arranging objects, repairing layouts, or tracing routes. Solving these problems requires understanding a scene, inferring what must change to achieve a goal, and realizing that change without disturbing unrelated content. However, existing benchmarks mainly evaluate perception, generation, or explicitly specified transformations, leaving goal-driven visual problem solving underexplored. To bridge this gap, we introduce SolveEpIT, a benchmark for visual problem solving through scene transformation. Given an image and a goal, a model must infer a valid transformation from the request, the scene, or a visually expressed rule, then execute it while preserving unrelated content. SoLvEEDrr contains 2,728 cases. Atomic transition contracts specify required and protected conditions, enabling SoLvEScoRE to measure completion and unintended changes without a single reference output. The strongest evaluated model achieves only57.0% SolvEScore. We further introduce SolveEdiT-PLAN, a two-stage visual planner that instantiates the transition before generation. Under matched single-generation evaluation, it improves SoLvEScoRE by 9.1 points on average across three tested generators, including a gain from 57.0% to 71.6% for GPT-Image-2, without modifying the editor.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.35504",
+        "external_id": "2609.35504"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.35504",
+        "external_id": "2609.35504"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/WenjieShu/SolveEdit",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Wenjie Shu",
+      "Yexin Liu",
+      "Harold Haodong Chen",
+      "Xuerui Qiu",
+      "Zehan Wang",
+      "Yidi Zhang",
+      "Yizhan Chen",
+      "Zunwei Wang",
+      "Minghao Liu",
+      "Qi Chen",
+      "Harry Yang",
+      "Xiaogang Xu"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701233Z",
+    "dedup_keys": [
+      "arxiv:2609.35504",
+      "title:benchmarking generative models problem solveedit solving visual",
+      "github:wenjieshu/solveedit"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 29.511,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "a4050bc22c182b7f",
+    "kind": "release",
+    "title": "One year in: How Microsoft Research Asia – Singapore is advancing research, partnership and talent for real-world impact",
+    "summary_en": "Since launching a year ago, the Microsoft Research Asia — Singapore lab has established a strong foundation, deepened collaboration across government, academia, and industry, and explored how frontier AI research can create real-world value. The post One year in: How Microsoft Research Asia – Singapore is advancing research, partnership and talent for real-world impact appeared first on Microsoft Research .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "microsoft_research"
+    ],
+    "published_at": "2026-09-28T21:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:49.411539Z",
+    "dedup_keys": [
+      "url:microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact",
+      "title:advancing and asia for how impact microsoft one partnership real research research singapore talent world year"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.415,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.585
+    }
+  },
+  {
+    "id": "9e2e777f0e498676",
+    "kind": "release",
+    "title": "How we will do better for Australia",
+    "summary_en": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-28T19:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:45.429265Z",
+    "dedup_keys": [
+      "url:openai.com/index/how-we-will-do-better-for-australia",
+      "title:australia better for how will"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.29,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.71
+    }
+  },
+  {
+    "id": "ad87067596994ca8",
+    "kind": "paper",
+    "title": "Skill2Env: Capability-Oriented Environment Synthesis from Skills for General Agents",
+    "summary_en": "Executable environments are critical for post-training agents on tasks that require tool use and multi-step interaction, but constructing executable tasks together with their environments remains difficult to scale. Skills provide reusable domain knowledge, operational procedures, and tool-use instructions, but a substantial gap remains between the information contained in a skill and a concrete, challenging task with a complete executable environment. To address this gap, we introduce Skill2Env, a capability-oriented framework that starts from a skill and uses agent capability demands to guide task and environment synthesis. Skill2Env represents these demands through reusable difficulty patterns and instantiates them into task blueprints that specify objectives, challenges, environment facts, information boundaries, and acceptance criteria. These blueprints guide the joint construction of task instructions, execution substrates, workspaces, and rubric-based evaluators around source skills. We further propose Iterative Task Hardening, which uses solver execution evidence to identify insufficiently challenging task designs, strengthen or extend their difficulty-pattern instantiations, and revise the corresponding blueprints and environments. Using 1.5K high-scoring trajectories generated from Skill2Env environments for supervised fine-tuning, we observe consistent improvements across a broad range of agent benchmarks, demonstrating the effectiveness of capability-oriented environment synthesis for agent post-training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33772",
+        "external_id": "2609.33772"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33772",
+        "external_id": "2609.33772"
+      }
+    ],
+    "actors": [
+      "Weiyi Xu",
+      "Xiaowen Yang",
+      "Wen Da",
+      "Hang Xu",
+      "Canwei Li",
+      "Hongjie You",
+      "Pusen Dong",
+      "Yucheng Zeng",
+      "Zhaokai Luo",
+      "Mu Chuan"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700926Z",
+    "dedup_keys": [
+      "arxiv:2609.33772",
+      "title:agents capability environment for from general oriented skill2env skills synthesis"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.158,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "05fd742a33a60837",
+    "kind": "paper",
+    "title": "Program-Verified Self-Evolution for Vision-Language Models",
+    "summary_en": "Self-evolving vision-language models train on questions they generate from unlabeled images. Since these questions have no gold answers, prior methods label them by majority vote over sampled answers or by a model judge. In a human evaluation, we find that 24\\% of majority-vote labels and 18\\% of model-judge labels produced during self-evolution are wrong. To address this problem, we present Verifiable QA Generation for Self-Evolving Models (VQS), which changes how the model judges answers. Instead of voting on an answer, the model parses each image into a structured record, such as a scene graph, a chart table, or a diagram graph. Fixed programs then write a question from the record and compute its answer. The model still acts as a visual checker, but it only confirms the individual facts the program reads, one short claim at a time. These claim-level checks select the parser's training targets, so the parser also improves without labels. Human raters find 94\\% of VQS answers correct, against 76\\% for majority voting. Across ten benchmarks, VQS improves Qwen3-VL by up to 3.18 points at the 2B, 4B, and 8B scales and outperforms the strongest self-evolving baseline at each. Gains keep growing over three training rounds, reaching 3.84 points at 2B. Code is released at https://github.com/ahmedheakl/VQS",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.33855",
+        "external_id": "2609.33855"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.33855",
+        "external_id": "2609.33855"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ahmedheakl/VQS",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ahmed Heakl",
+      "Sungik Choi",
+      "Moontae Lee",
+      "Salman Khan"
+    ],
+    "published_at": "2026-09-27T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701185Z",
+    "dedup_keys": [
+      "arxiv:2609.33855",
+      "title:evolution for language models program self verified vision",
+      "github:ahmedheakl/vqs"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 28.409,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.398
+    }
+  },
+  {
+    "id": "26a6107ba78e5788",
+    "kind": "release",
+    "title": "Are you a Codex Original?",
+    "summary_en": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/form/codex-originals",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-09-28T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:45.429375Z",
+    "dedup_keys": [
+      "url:openai.com/form/codex-originals",
+      "title:are codex original you"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.102,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.898
+    }
+  },
+  {
+    "id": "ae428754c5ba8576",
+    "kind": "paper",
+    "title": "Post-Training Leaves Behavioral Shadows on Unrelated Decisions",
+    "summary_en": "We find that language models can transfer capabilities through task-unrelated text. Post-training typically improves language models using task-specific data. Prior work on subliminal learning shows that information about these updates can pass through unrelated generations, but has largely focused on traits or preferences using extensive teacher outputs. We introduce Active Taskless Distillation (ATD), which achieves capability transfer using only a single word from the teacher per prompt. ATD probes the behavioral shadow of post-training by selecting prompts where the teacher and student's shared public ancestor is nearly indifferent between two ordinary words. A student initialized from this ancestor learns solely from the resulting prompt-word pairs, without target-task examples, teacher logits, or teacher parameters. In the primary coding experiment with Qwen2.5-1.5B, 5,664nses yield a 5.34 pp gain on HumanEval+ over an exact nuisance-matched control thadisrupts prompt-resperiments showtransfer in scientific knowledge, commonsense reasoning, and reading comprehensins across additional model generations, sizes, and families. Functional analyses show that the learned sid composable, andthat its strength tracks the teacher's update strength.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.29233",
+        "external_id": "2609.29233"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.29233",
+        "external_id": "2609.29233"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/myboker/ATD",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ziyang Zhang",
+      "Yubin Jing",
+      "Yuanhao Zeng",
+      "Yuyao Li",
+      "Haofan Wang",
+      "Yichen Gong"
+    ],
+    "published_at": "2026-09-24T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701138Z",
+    "dedup_keys": [
+      "arxiv:2609.29233",
+      "title:behavioral decisions leaves post shadows training unrelated",
+      "github:myboker/atd"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 8,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.917,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 4.394,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.898
+    }
+  },
+  {
+    "id": "0140d81ab8051a53",
+    "kind": "paper",
+    "title": "RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents",
+    "summary_en": "A foundation model should not act in isolation as an embodied agent. Yet, existing methods often optimize individual components of the agent stack, such as memory, context, skills, or action interfaces, rather than treating the supporting system itself as a unified policy. Moreover, interaction alone does not yield self-improvement unless execution experience is converted into persistent, validated system changes. We therefore propose RoboFoundry, the first embodied agentic framework that formulates this process as Self-Evolving System-as-Policy. RoboFoundry diagnoses capability gaps in decision-making and memory management, converts execution traces into validated task-specific system updates, and promotes recurring improvements to the general system. Evolution operates over two complementary surfaces: a context system that manages active internal context and persistent file-system memory, and a hierarchical skill system that organizes atomic skills, reusable compositions, and failure-conditioned recovery. A shared semantic interface separates embodiment-invariant decisions from embodiment-specific execution, allowing evolved system capabilities to transfer across heterogeneous robots. On EmbodiedBench, RoboFoundry achieves state-of-the-art performance, notably improving GPT-5.5 by 27.8%. It also brings Qwen3.7-Plus to near parity with GPT-5.5 (70.3% vs. 72.7%), showing consistent gains from system-as-policy evolution across foundation models. For long-horizon memory, RoboFoundry outperforms all baselines on RoboMemArena by at least 39.0%, even against methods assisted by external foundation models. On LIBERO-PRO, it further outperforms Cap-Agent0 by 243.8%-679.7% across all perturbation types. In real-world deployments, RoboFoundry demonstrates zero-shot transfer and online evolution across robots and tasks, highlighting its potential for fully autonomous embodied agents.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.32862",
+        "external_id": "2609.32862"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.32862",
+        "external_id": "2609.32862"
+      }
+    ],
+    "actors": [
+      "Jingsong Liang",
+      "Shuhao Liao",
+      "Shizhe Zhang",
+      "Diyuan Hou",
+      "Yuxin Cai",
+      "Xinjian Deng",
+      "Chengyang He",
+      "Wenhui Huang",
+      "Runjia Tan",
+      "Zhidong Wang",
+      "Lan Yu",
+      "Xuesong Tian",
+      "Guillaume Sartoretti",
+      "Jie Luo",
+      "Yao Mu",
+      "Wenjun Wu",
+      "Wanhua Li",
+      "Chen Lv"
+    ],
+    "published_at": "2026-09-26T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701023Z",
+    "dedup_keys": [
+      "arxiv:2609.32862",
+      "title:agents embodied evolution for learning policy robofoundry self system"
+    ],
+    "signals": {
+      "hf_upvotes": 15,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.283,
+    "score_breakdown": {
+      "hf_upvotes": 22.181,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.898
+    }
+  },
+  {
+    "id": "ca0efa0e1e8cfef8",
+    "kind": "paper",
+    "title": "Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extreme Visual Token Reduction",
+    "summary_en": "Visual token reduction is an effective way to accelerate multimodal large language models (MLLMs), but performance deteriorates rapidly under extremely low token budgets. Existing work has explored both visual-token selection and training-based adaptation to reduced visual inputs. We take a step further by asking how a heavily compressed MLLM should learn from the states induced by its own generations. This setting naturally calls for on-policy self-distillation: a heavily compressed model is supervised on the states induced by its own generations, while its full-token counterpart serves as an information-rich teacher. Based on this insight, we propose LT-OPD, a training framework for extreme visual-token reduction. The student rolls out responses with only a small fraction of visual tokens, and a frozen full-token copy of the same MLLM provides distributional supervision along these student-generated trajectories. To stabilize on-policy learning when visual evidence is severely limited, we further introduce a budget-level curriculum that progressively decreases the token budget during training. Across nine benchmarks on Qwen3.5-4B, LT-OPD raises average retained performance under 5% visual-token retention from 68.6% to 82.3%, outperforming training-free, training-based, and reinforcement-learning baselines at the same budget. The gains transfer consistently to Qwen3.5-9B, GLM-4.6V-9B, and LLaVA-OV-1.5-4B. LT-OPD also reduces KV-cache usage by 85.2% and prefill FLOPs by 85.4% without additional inference overhead, demonstrating that on-policy learning can substantially recover capabilities lost to extreme visual-token reduction.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.32353",
+        "external_id": "2609.32353"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.32353",
+        "external_id": "2609.32353"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Yrxxxxxxxx1007/LT-OPD",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Junxian Li",
+      "Ruixuan Yang",
+      "Tianao Zhang",
+      "Tiange Xu",
+      "Weisheng Dong",
+      "Yulun Zhang"
+    ],
+    "published_at": "2026-09-26T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.701299Z",
+    "dedup_keys": [
+      "arxiv:2609.32353",
+      "title:distillation extreme fewer for more policy reduction self self teaching token tokens visual",
+      "github:yrxxxxxxxx1007/lt-opd"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.253,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.898
+    }
+  },
+  {
+    "id": "46a7baf93d7efc0b",
+    "kind": "paper",
+    "title": "EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks",
+    "summary_en": "Long-horizon embodied interaction requires agents to retain and continually update information about the environment as they observe, act, and encounter change. Yet current agents struggle to maintain such memory reliably. Our analysis traces this limitation to four key deficiencies: weak fine-grained visual memory, unreliable dynamic world-state tracking, failing to record world state revealed by interaction outcomes, and limited generalization from prior experience. However, existing benchmarks do not directly assess these memory capabilities during long-horizon embodied interaction. To address this gap, we introduce EmbodiedMemory-Bench (EMem-Bench), comprising 2,554 interactive episodes across four task families. EMem-Bench requires agents to build and update memory from interaction history, then use it to complete a later task by acting in the environment. We further present Embodied-Memorizer (EMem), an external memory system that organizes embodied experience into spatial, event, and scene memories. We also train EMem-8B, an 8B policy that manages and uses these memories. We evaluate a diverse range of open-source and proprietary MLLMs and representative multimodal memory systems. Results show that current models remain weak and uneven across the four challenges. Under matched backbones, EMem achieves the best overall performance among the evaluated memory systems and improves both open-source and proprietary models, while EMem-8B further improves over its backbone. Project page: https://zju-omniai.github.io/EmbodiedMemoryBench/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.28236",
+        "external_id": "2609.28236"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.28236",
+        "external_id": "2609.28236"
+      }
+    ],
+    "actors": [
+      "Lizhou Liang",
+      "Xinyu Zhong",
+      "Miao Pan",
+      "Xiaohe Zhou",
+      "Xuanyu Liu",
+      "Qinfeng Li",
+      "Peng Li",
+      "Jintao Chen",
+      "Xuhong Zhang",
+      "Wenqi Zhang"
+    ],
+    "published_at": "2026-09-23T00:00:00Z",
+    "first_seen_at": "2026-09-29T06:21:44.700780Z",
+    "dedup_keys": [
+      "arxiv:2609.28236",
+      "title:bench benchmarking embodied embodied embodiedmemory for horizon long memory tasks"
+    ],
+    "signals": {
+      "hf_upvotes": 26,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 25.969,
+    "score_breakdown": {
+      "hf_upvotes": 26.367,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -9.398
+    }
+  }
+]
