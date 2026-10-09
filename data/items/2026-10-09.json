@@ -1,5 +1,112 @@
 [
   {
+    "id": "84f0da5e8b4a375e",
+    "kind": "model",
+    "title": "Phocinae/Phocinae-Largha-150M-v1",
+    "summary_en": "text-classification, transformers, modernbert, fill-mask, decision-making, typed-decisions, small-model",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1",
+        "external_id": "Phocinae/Phocinae-Largha-150M-v1"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/jhu-clsp/mmBERT-small",
+        "external_id": "jhu-clsp/mmBERT-small"
+      }
+    ],
+    "actors": [
+      "Phocinae"
+    ],
+    "published_at": "2026-10-08T00:30:10Z",
+    "first_seen_at": "2026-10-09T18:33:31.736647Z",
+    "dedup_keys": [
+      "hf:phocinae/phocinae-largha-150m-v1"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 209,
+      "hf_downloads": 89,
+      "hf_trending_score": 185.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 61.766,
+    "score_breakdown": {
+      "hf_trending": 31.354,
+      "hf_downloads": 9.0,
+      "hf_likes": 16.041,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.629
+    }
+  },
+  {
+    "id": "ff24cfc65a0bcb93",
+    "kind": "model",
+    "title": "Qwen/Qwen-Image-2.1-Turbo",
+    "summary_en": "text-to-image, diffusers, qwen, image-generation, image-editing",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+        "external_id": "Qwen/Qwen-Image-2.1-Turbo"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+        "external_id": "Qwen/Qwen-Image-2.1"
+      }
+    ],
+    "actors": [
+      "Qwen"
+    ],
+    "published_at": "2026-10-09T04:50:01Z",
+    "first_seen_at": "2026-10-09T18:33:31.732735Z",
+    "dedup_keys": [
+      "hf:qwen/qwen-image-2.1-turbo"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 220,
+      "hf_downloads": 0,
+      "hf_trending_score": 220.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 61.725,
+    "score_breakdown": {
+      "hf_trending": 32.389,
+      "hf_likes": 16.194,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "age_decay": -0.858
+    }
+  },
+  {
     "id": "ed5ecb5a1abed4f2",
     "kind": "paper",
     "title": "AgentGarten: Code Worlds for Evolving Agents",
@@ -45,19 +152,19 @@
       "Fangfu Liu"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550732Z",
+    "first_seen_at": "2026-10-09T18:33:31.792381Z",
     "dedup_keys": [
       "arxiv:2610.12374",
       "title:agentgarten agents code evolving for worlds",
       "github:mirros-lab/agentgarten"
     ],
     "signals": {
-      "hf_upvotes": 45,
+      "hf_upvotes": 130,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 54,
+      "github_stars": 97,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -65,14 +172,82 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 48.713,
+    "score": 57.512,
     "score_breakdown": {
-      "hf_upvotes": 30.629,
-      "github_stars": 8.015,
+      "hf_upvotes": 39.002,
+      "github_stars": 9.17,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
+    }
+  },
+  {
+    "id": "b0acdce8c45770fc",
+    "kind": "paper",
+    "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
+    "summary_en": "Large language model (LLM) routing distributes inference work across different models, advancing the cost-quality Pareto frontier of LLM serving. While coarse-grained routing at the session or query level has been widely adopted in production systems, recent algorithmic work shows that fine-grained token-level routing can yield substantial efficiency and quality gains. However, efficiently serving token-level routed inference poses significant challenges to existing systems. Built on single-LLM assumptions, current systems suffer from severe step desynchronization and frequent batch admission delays under token-level routing, and they also impose high implementation complexity on developers. To address these challenges, we design TokenRouter, an efficient and developer-friendly serving system for token-level routed LLM inference. TokenRouter follows the principle of request-centric programming, model-centric execution: developers describe routing logic from the perspective of a single request, while the runtime launches a subserver for each LLM and dispatches requests asynchronously. Each subserver employs a delayed-batching scheduler, whose optimal hyperparameters are derived from a mathematical throughput model of the system. Across diverse routing algorithms, workloads, and model pairs, TokenRouter achieves 2.01-64.15x higher decoding throughput than existing systems, substantially advancing the serving efficiency of token-level LLM routing. Our code is available at https://github.com/thu-nics/TokenRouter.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.12242",
+        "external_id": "2610.12242"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.12242",
+        "external_id": "2610.12242"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/thu-nics/TokenRouter",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Tianyu Fu",
+      "Tengxuan Liu",
+      "Ruoxi Wang",
+      "Yixin Dong",
+      "Yi Ge",
+      "Yichen You",
+      "Yu Wang"
+    ],
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:31.792456Z",
+    "dedup_keys": [
+      "arxiv:2610.12242",
+      "title:efficient for level llm routing serving system token tokenrouter",
+      "github:thu-nics/tokenrouter"
+    ],
+    "signals": {
+      "hf_upvotes": 99,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 20,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 52.27,
+    "score_breakdown": {
+      "hf_upvotes": 36.841,
+      "github_stars": 6.089,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.66
     }
   },
   {
@@ -120,19 +295,19 @@
       "Sida Peng"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550688Z",
+    "first_seen_at": "2026-10-09T18:33:31.792518Z",
     "dedup_keys": [
       "arxiv:2610.12126",
       "title:agentic any any for navigation scene supernav system task",
       "github:zju3dv/supernav"
     ],
     "signals": {
-      "hf_upvotes": 52,
+      "hf_upvotes": 61,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 10,
+      "github_stars": 51,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -140,14 +315,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 46.627,
+    "score": 50.259,
     "score_breakdown": {
-      "hf_upvotes": 31.762,
-      "github_stars": 4.796,
+      "hf_upvotes": 33.017,
+      "github_stars": 7.902,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
@@ -189,19 +364,19 @@
       "Wenya Wang"
     ],
     "published_at": "2026-10-05T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550604Z",
+    "first_seen_at": "2026-10-09T18:33:31.792491Z",
     "dedup_keys": [
       "arxiv:2610.06100",
       "title:agentic agentic environment for from interactive language models simulation traces world worlds",
       "github:ruyue0001/trace2env"
     ],
     "signals": {
-      "hf_upvotes": 70,
+      "hf_upvotes": 73,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 17,
+      "github_stars": 27,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -209,67 +384,69 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 45.451,
+    "score": 45.937,
     "score_breakdown": {
-      "hf_upvotes": 34.101,
-      "github_stars": 5.781,
+      "hf_upvotes": 34.433,
+      "github_stars": 6.664,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.431
+      "age_decay": -7.16
     }
   },
   {
-    "id": "b0acdce8c45770fc",
+    "id": "4140f9d8bf1d0d63",
     "kind": "paper",
-    "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing",
-    "summary_en": "Large language model (LLM) routing distributes inference work across different models, advancing the cost-quality Pareto frontier of LLM serving. While coarse-grained routing at the session or query level has been widely adopted in production systems, recent algorithmic work shows that fine-grained token-level routing can yield substantial efficiency and quality gains. However, efficiently serving token-level routed inference poses significant challenges to existing systems. Built on single-LLM assumptions, current systems suffer from severe step desynchronization and frequent batch admission delays under token-level routing, and they also impose high implementation complexity on developers. To address these challenges, we design TokenRouter, an efficient and developer-friendly serving system for token-level routed LLM inference. TokenRouter follows the principle of request-centric programming, model-centric execution: developers describe routing logic from the perspective of a single request, while the runtime launches a subserver for each LLM and dispatches requests asynchronously. Each subserver employs a delayed-batching scheduler, whose optimal hyperparameters are derived from a mathematical throughput model of the system. Across diverse routing algorithms, workloads, and model pairs, TokenRouter achieves 2.01-64.15x higher decoding throughput than existing systems, substantially advancing the serving efficiency of token-level LLM routing. Our code is available at https://github.com/thu-nics/TokenRouter.",
+    "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
+    "summary_en": "Learning from experience is essential for LLM agents to adapt to unfamiliar and dynmaic environments. Evaluating this ability is therefore important for understanding how effectively agents acquire and use new knowledge. Existing benchmarks have sought to evaluate this ability, but they primarily evaluate tasks whose rules are provided in the instructions or already familiar to pretrained models, making it difficult to distinguish learning from interactions from reasoning with existing knowledge. To address this, we introduce Learn2Play Bench, a benchmark of newly designed text-based games, whose rules are novel or counterintuitive, requiring agents to acquire knowledge through interaction rather than rely solely on pretrained knowledge. These games provide reproducible feedback and automatic scoring, enabling controlled evaluation of learning across repeated attempts. We also vary game instances to test whether agents can apply what they have learned to new situations. Therefore, we evaluate how backbone models, self-evolving methods, and agent harnesses affect agents' learning ability, revealing three findings: (1) Experience retention: Retaining complete records of actions and feedback can support more effective learning than summarizing these experiences into rules or strategies. (2) Human agent gap: Top-performing human players achieve higher peak scores than the evaluated agents. Human explore more varied strategies, and repeat actions less. (3) Harness matters: With the backbone fixed, changing the harness can improve performance while reducing estimated inference cost. Together, these findings provide insights into how LLM agents learn from experience and suggest directions for future work to improve their learning ability. Project website: https://liushiliushi.github.io/learn2play-bench-website/",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
+      "agent",
+      "eval",
       "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.12242",
-        "external_id": "2610.12242"
+        "url": "https://huggingface.co/papers/2610.08215",
+        "external_id": "2610.08215"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.12242",
-        "external_id": "2610.12242"
+        "url": "https://arxiv.org/abs/2610.08215",
+        "external_id": "2610.08215"
       },
       {
         "source": "github",
-        "url": "https://github.com/thu-nics/TokenRouter",
+        "url": "https://github.com/liushiliushi/Learn2Play-Bench",
         "external_id": null
       }
     ],
     "actors": [
-      "Tianyu Fu",
-      "Tengxuan Liu",
-      "Ruoxi Wang",
-      "Yixin Dong",
-      "Yi Ge",
-      "Yichen You",
-      "Yu Wang"
+      "Yibo Li",
+      "Jinhang Qiu",
+      "Zhi Zheng",
+      "Qianyun Guo",
+      "Jiaying Wu",
+      "Shuo Ji",
+      "Bryan Hooi"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550665Z",
+    "first_seen_at": "2026-10-09T18:33:31.792589Z",
     "dedup_keys": [
-      "arxiv:2610.12242",
-      "title:efficient for level llm routing serving system token tokenrouter",
-      "github:thu-nics/tokenrouter"
+      "arxiv:2610.08215",
+      "title:agents bench environments experience from how learn learn2play llm unfamiliar well",
+      "github:liushiliushi/learn2play-bench"
     ],
     "signals": {
-      "hf_upvotes": 52,
+      "hf_upvotes": 49,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 4,
+      "github_stars": 12,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -277,67 +454,78 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 45.05,
+    "score": 45.766,
     "score_breakdown": {
-      "hf_upvotes": 31.762,
-      "github_stars": 3.219,
+      "hf_upvotes": 31.296,
+      "github_stars": 5.13,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
-    "id": "84f0da5e8b4a375e",
-    "kind": "model",
-    "title": "Phocinae/Phocinae-Largha-150M-v1",
-    "summary_en": "text-classification, transformers, modernbert, fill-mask, decision-making, typed-decisions, small-model",
+    "id": "61a6428a05d7c1f7",
+    "kind": "paper",
+    "title": "Foundations of Large Language Models",
+    "summary_en": "This is a book about large language models. As indicated by the title, it primarily focuses on foundational concepts rather than comprehensive coverage of all cutting-edge technologies. The book is structured into six main chapters, each exploring a key area: pre-training, generative models, prompting, alignment, inference, and reasoning. It is intended for college students, professionals, and practitioners in natural language processing and related fields, and can serve as a reference for anyone interested in large language models.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm"
+      "llm",
+      "rag",
+      "infra"
     ],
     "links": [
       {
-        "source": "hf_models",
-        "url": "https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1",
-        "external_id": "Phocinae/Phocinae-Largha-150M-v1"
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2501.09223",
+        "external_id": "2501.09223"
       },
       {
-        "source": "hf_base_model:finetune",
-        "url": "https://huggingface.co/jhu-clsp/mmBERT-small",
-        "external_id": "jhu-clsp/mmBERT-small"
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2501.09223",
+        "external_id": "2501.09223"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/NiuTrans/NLPBook",
+        "external_id": null
       }
     ],
     "actors": [
-      "Phocinae"
+      "Tong Xiao",
+      "Jingbo Zhu"
     ],
-    "published_at": "2026-10-08T00:30:10Z",
-    "first_seen_at": "2026-10-09T06:53:53.519627Z",
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:31.792920Z",
     "dedup_keys": [
-      "hf:phocinae/phocinae-largha-150m-v1"
+      "arxiv:2501.09223",
+      "title:foundations language large models",
+      "github:niutrans/nlpbook"
     ],
     "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 77,
+      "hf_upvotes": 15,
+      "hf_likes": 0,
       "hf_downloads": 0,
-      "hf_trending_score": 68.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 872,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
     },
-    "score": 44.575,
+    "score": 45.065,
     "score_breakdown": {
-      "hf_trending": 25.405,
-      "hf_likes": 13.07,
-      "has_weights": 4.0,
+      "hf_upvotes": 22.181,
+      "github_stars": 13.544,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.9
+      "age_decay": -2.66
     }
   },
   {
@@ -381,19 +569,19 @@
       "Seungryong Kim"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550820Z",
+    "first_seen_at": "2026-10-09T18:33:31.792610Z",
     "dedup_keys": [
       "arxiv:2610.12299",
       "title:agent egocentric embodied fine grained interaction model multi with world",
       "github:cvlab-kaist/me-world"
     ],
     "signals": {
-      "hf_upvotes": 28,
+      "hf_upvotes": 40,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 14,
+      "github_stars": 15,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -401,83 +589,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 42.423,
+    "score": 44.594,
     "score_breakdown": {
-      "hf_upvotes": 26.938,
-      "github_stars": 5.416,
+      "hf_upvotes": 29.709,
+      "github_stars": 5.545,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "4140f9d8bf1d0d63",
-    "kind": "paper",
-    "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
-    "summary_en": "Learning from experience is essential for LLM agents to adapt to unfamiliar and dynmaic environments. Evaluating this ability is therefore important for understanding how effectively agents acquire and use new knowledge. Existing benchmarks have sought to evaluate this ability, but they primarily evaluate tasks whose rules are provided in the instructions or already familiar to pretrained models, making it difficult to distinguish learning from interactions from reasoning with existing knowledge. To address this, we introduce Learn2Play Bench, a benchmark of newly designed text-based games, whose rules are novel or counterintuitive, requiring agents to acquire knowledge through interaction rather than rely solely on pretrained knowledge. These games provide reproducible feedback and automatic scoring, enabling controlled evaluation of learning across repeated attempts. We also vary game instances to test whether agents can apply what they have learned to new situations. Therefore, we evaluate how backbone models, self-evolving methods, and agent harnesses affect agents' learning ability, revealing three findings: (1) Experience retention: Retaining complete records of actions and feedback can support more effective learning than summarizing these experiences into rules or strategies. (2) Human agent gap: Top-performing human players achieve higher peak scores than the evaluated agents. Human explore more varied strategies, and repeat actions less. (3) Harness matters: With the backbone fixed, changing the harness can improve performance while reducing estimated inference cost. Together, these findings provide insights into how LLM agents learn from experience and suggest directions for future work to improve their learning ability. Project website: https://liushiliushi.github.io/learn2play-bench-website/",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.08215",
-        "external_id": "2610.08215"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.08215",
-        "external_id": "2610.08215"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/liushiliushi/Learn2Play-Bench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yibo Li",
-      "Jinhang Qiu",
-      "Zhi Zheng",
-      "Qianyun Guo",
-      "Jiaying Wu",
-      "Shuo Ji",
-      "Bryan Hooi"
-    ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550709Z",
-    "dedup_keys": [
-      "arxiv:2610.08215",
-      "title:agents bench environments experience from how learn learn2play llm unfamiliar well",
-      "github:liushiliushi/learn2play-bench"
-    ],
-    "signals": {
-      "hf_upvotes": 46,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 40.87,
-    "score_breakdown": {
-      "hf_upvotes": 30.801,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
@@ -519,19 +638,19 @@
       "Yu-Lun Liu"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550836Z",
+    "first_seen_at": "2026-10-09T18:33:31.792680Z",
     "dedup_keys": [
       "arxiv:2610.12461",
       "title:alive any bringing cinemagraphs diverse endlessly looping ouroworld world",
       "github:youzhe0305/ouroworld"
     ],
     "signals": {
-      "hf_upvotes": 20,
+      "hf_upvotes": 29,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 16,
+      "github_stars": 34,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -539,82 +658,193 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 40.091,
+    "score": 43.661,
     "score_breakdown": {
-      "hf_upvotes": 24.356,
-      "github_stars": 5.666,
+      "hf_upvotes": 27.21,
+      "github_stars": 7.111,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
-    "id": "29376bb5bdaff4a3",
+    "id": "09400c305da4746b",
+    "kind": "model",
+    "title": "speridlabs/iris-3b",
+    "summary_en": "text-to-image, pytorch, diffusion, pixel-space, flow-matching, general-vision-learner, vision-foundation-model",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/speridlabs/iris-3b",
+        "external_id": "speridlabs/iris-3b"
+      }
+    ],
+    "actors": [
+      "speridlabs"
+    ],
+    "published_at": "2026-10-05T14:51:15Z",
+    "first_seen_at": "2026-10-09T18:33:31.737139Z",
+    "dedup_keys": [
+      "hf:speridlabs/iris-3b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 62,
+      "hf_downloads": 68,
+      "hf_trending_score": 62.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.524,
+    "score_breakdown": {
+      "hf_trending": 24.859,
+      "hf_downloads": 8.468,
+      "hf_likes": 12.429,
+      "has_weights": 4.0,
+      "age_decay": -6.232
+    }
+  },
+  {
+    "id": "f7bd146216c4139e",
+    "kind": "model",
+    "title": "akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA",
+    "summary_en": "image-to-image, diffusers, qwen-image-2.1, lora, camera-control, multiple-angles, image-editing",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA",
+        "external_id": "akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+        "external_id": "Qwen/Qwen-Image-2.1"
+      }
+    ],
+    "actors": [
+      "akhaliq"
+    ],
+    "published_at": "2026-10-06T22:06:51Z",
+    "first_seen_at": "2026-10-09T18:33:31.737356Z",
+    "dedup_keys": [
+      "hf:akhaliq/qwen-image-2.1-multiple-angles-lora"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 47,
+      "hf_downloads": 605,
+      "hf_trending_score": 46.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 43.251,
+    "score_breakdown": {
+      "hf_trending": 23.101,
+      "hf_downloads": 12.814,
+      "hf_likes": 11.614,
+      "age_decay": -4.278
+    }
+  },
+  {
+    "id": "61b8fa276afeb95b",
     "kind": "paper",
-    "title": "LEGO: A Lifting-Free Approach for Exocentric-to-Egocentric Video Generation",
-    "summary_en": "Generating an egocentric video from a single exocentric recording is a challenging case of novel view synthesis, as the two cameras share little overlap and much of the target view is unobserved. Current state-of-the-art methods reconstruct the scene explicitly by estimating depth, lifting the video into a point cloud, and re-rendering it from the egocentric camera to condition a video diffusion model. This deterministic mapping assigns each pixel to a single reprojected location, which preserves texture but translates depth errors into misplaced content. We ask what a video diffusion model should receive as its condition and propose a lifting-free answer: a learned view synthesizer, an LVSM-style transformer fine-tuned to render the egocentric view directly without depth, point clouds, or reprojection, resolving cross-view correspondence internally. In contrast, its probabilistic mapping averages each region over candidate source locations according to a learned correspondence distribution, preserving structure while fine texture is averaged away. We argue that this trade-off suits a diffusion generator, whose denoising training excels at restoring detail, so an effective condition should prioritize structural alignment over sharpness. This distribution's concentration also yields a per-region confidence, used both to mask low-confidence regions and to guide the generator toward high-confidence areas during early layout-forming denoising steps. Our approach consistently outperforms the state-of-the-art explicit pipeline and generalizes to other datasets without retraining. The synthesizer thus supplies view structure, and the diffusion model its detail.",
+    "title": "Reasoning-Informed Visual Editing",
+    "summary_en": "Large Multi-modality Models (LMMs) have made significant progress in visual understanding and generation, but still face challenges in visual editing, particularly in following complex instructions, preserving appearance consistency, and supporting flexible input formats. To study this gap, we introduce RISEBench, the first benchmark for evaluating Reasoning-Informed viSual Editing (RISE), and extend it to RISEBench++, a more comprehensive and fine-grained benchmark for this emerging task. RISEBench++ extends the taxonomy into a hierarchical scheme spanning six reasoning dimensions: Temporal, Causal, Spatial, Logical, and Counterfactual Reasoning, together with Hybrid Reasoning integrating multiple reasoning types across multi-turn edits. These dimensions are further decomposed into 12 subcategories and 65 fine-grained task types. We expand input formats to include multi-image conditioning and scale the benchmark to 1000 human-annotated test cases, released in English and Chinese. We also improve our evaluation framework, assessing Instruction Reasoning, Appearance Consistency, and Visual Plausibility with human judges and an LMM-as-a-judge approach for more reliable and calibrated judgements. Beyond benchmarking, we introduce RISE-Agent, a training-free agentic framework integrating reasoning-driven planning, tool-augmented execution, and verifier-guided refinement, outperforming most strong existing approaches across diverse RISE tasks. We evaluate 58 visual editing approaches, including 34 open-source models, 19 closed-source models, and 5 agentic methods. The results reveal substantial challenges in reasoning-based visual editing, with even the strongest evaluated approach, GPT-Image-2.5 Sunburst, achieving only 56.6% accuracy. RISEBench++ highlights the limitations of contemporary editing models, provides insights, and indicates future directions for reasoning-aware visual editing.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "rag",
+      "agent",
       "cv",
+      "eval",
       "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.12442",
-        "external_id": "2610.12442"
+        "url": "https://huggingface.co/papers/2610.12343",
+        "external_id": "2610.12343"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.12442",
-        "external_id": "2610.12442"
+        "url": "https://arxiv.org/abs/2610.12343",
+        "external_id": "2610.12343"
       },
       {
         "source": "github",
-        "url": "https://github.com/suhwan-cho/LEGO",
+        "url": "https://github.com/VisionXLab/RISEBench",
         "external_id": null
       }
     ],
     "actors": [
-      "Suhwan Cho",
-      "Yonwoo Choi",
-      "Soongjin Kim",
-      "Jicheol Park",
-      "Taegyu Lim"
+      "Xue Yang",
+      "Peiyuan Zhang",
+      "Yilun Zhu",
+      "Qihao Yang",
+      "Mingxin Liu",
+      "Xiangyu Zhao",
+      "Ziqian Fan",
+      "Zhaokai Wang",
+      "Yan Li",
+      "Yifan Yang",
+      "Xu Yang",
+      "Xiaosong Jia",
+      "Yue Zhou",
+      "Zhihang Zhong",
+      "Junchi Yan"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550912Z",
+    "first_seen_at": "2026-10-09T18:33:31.792898Z",
     "dedup_keys": [
-      "arxiv:2610.12442",
-      "title:approach egocentric exocentric for free generation lego lifting video",
-      "github:suhwan-cho/lego"
+      "arxiv:2610.12343",
+      "title:editing informed reasoning visual",
+      "github:visionxlab/risebench"
     ],
     "signals": {
-      "hf_upvotes": 15,
+      "hf_upvotes": 16,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 14,
+      "github_stars": 159,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 2,
+      "num_comments": 1,
       "has_code": true,
       "has_weights": false
     },
-    "score": 37.666,
+    "score": 42.156,
     "score_breakdown": {
-      "hf_upvotes": 22.181,
-      "github_stars": 5.416,
+      "hf_upvotes": 22.666,
+      "github_stars": 10.15,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
@@ -658,19 +888,19 @@
       "Zhaoxiang Zhang"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550803Z",
+    "first_seen_at": "2026-10-09T18:33:31.792659Z",
     "dedup_keys": [
       "arxiv:2610.12468",
       "title:action counterfactual dreamtrue faithful model post robot training with world",
       "github:brave-eai/dreamtrue"
     ],
     "signals": {
-      "hf_upvotes": 30,
+      "hf_upvotes": 33,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 4,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -678,13 +908,82 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 37.541,
+    "score": 40.77,
     "score_breakdown": {
-      "hf_upvotes": 27.472,
+      "hf_upvotes": 28.211,
+      "github_stars": 3.219,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
+    }
+  },
+  {
+    "id": "29376bb5bdaff4a3",
+    "kind": "paper",
+    "title": "LEGO: A Lifting-Free Approach for Exocentric-to-Egocentric Video Generation",
+    "summary_en": "Generating an egocentric video from a single exocentric recording is a challenging case of novel view synthesis, as the two cameras share little overlap and much of the target view is unobserved. Current state-of-the-art methods reconstruct the scene explicitly by estimating depth, lifting the video into a point cloud, and re-rendering it from the egocentric camera to condition a video diffusion model. This deterministic mapping assigns each pixel to a single reprojected location, which preserves texture but translates depth errors into misplaced content. We ask what a video diffusion model should receive as its condition and propose a lifting-free answer: a learned view synthesizer, an LVSM-style transformer fine-tuned to render the egocentric view directly without depth, point clouds, or reprojection, resolving cross-view correspondence internally. In contrast, its probabilistic mapping averages each region over candidate source locations according to a learned correspondence distribution, preserving structure while fine texture is averaged away. We argue that this trade-off suits a diffusion generator, whose denoising training excels at restoring detail, so an effective condition should prioritize structural alignment over sharpness. This distribution's concentration also yields a per-region confidence, used both to mask low-confidence regions and to guide the generator toward high-confidence areas during early layout-forming denoising steps. Our approach consistently outperforms the state-of-the-art explicit pipeline and generalizes to other datasets without retraining. The synthesizer thus supplies view structure, and the diffusion model its detail.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.12442",
+        "external_id": "2610.12442"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.12442",
+        "external_id": "2610.12442"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/suhwan-cho/LEGO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Suhwan Cho",
+      "Yonwoo Choi",
+      "Soongjin Kim",
+      "Jicheol Park",
+      "Taegyu Lim"
+    ],
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:31.792854Z",
+    "dedup_keys": [
+      "arxiv:2610.12442",
+      "title:approach egocentric exocentric for free generation lego lifting video",
+      "github:suhwan-cho/lego"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 18,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 38.785,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "github_stars": 5.889,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.66
     }
   },
   {
@@ -863,13 +1162,13 @@
       "Boyi Zeng"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550763Z",
+    "first_seen_at": "2026-10-09T18:33:31.792560Z",
     "dedup_keys": [
       "arxiv:2610.11959",
       "title:improvement learning mimo reinforcement scaling self towards"
     ],
     "signals": {
-      "hf_upvotes": 34,
+      "hf_upvotes": 55,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -882,12 +1181,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 35.512,
+    "score": 38.543,
     "score_breakdown": {
-      "hf_upvotes": 28.443,
+      "hf_upvotes": 32.203,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
@@ -929,19 +1228,19 @@
       "Chunchao Guo"
     ],
     "published_at": "2026-10-05T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550852Z",
+    "first_seen_at": "2026-10-09T18:33:31.792723Z",
     "dedup_keys": [
       "arxiv:2610.06801",
       "title:and attention closing deconstructing dense diffusion gap sparse sparse the transformers",
       "github:dodododddo/mcsparse"
     ],
     "signals": {
-      "hf_upvotes": 18,
+      "hf_upvotes": 27,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 13,
+      "github_stars": 28,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -949,14 +1248,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 34.403,
+    "score": 38.233,
     "score_breakdown": {
-      "hf_upvotes": 23.556,
-      "github_stars": 5.278,
+      "hf_upvotes": 26.658,
+      "github_stars": 6.735,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.431
+      "age_decay": -7.16
     }
   },
   {
@@ -1007,19 +1306,19 @@
       "Si Liu"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550960Z",
+    "first_seen_at": "2026-10-09T18:33:31.792875Z",
     "dedup_keys": [
       "arxiv:2610.12419",
       "title:agent and deep for image multimodal onesearch research unified video",
       "github:appletea233/onesearch-vl"
     ],
     "signals": {
-      "hf_upvotes": 10,
+      "hf_upvotes": 16,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 13,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1027,308 +1326,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 31.449,
+    "score": 37.284,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "github_stars": 2.197,
+      "hf_upvotes": 22.666,
+      "github_stars": 5.278,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "61b8fa276afeb95b",
-    "kind": "paper",
-    "title": "Reasoning-Informed Visual Editing",
-    "summary_en": "Large Multi-modality Models (LMMs) have made significant progress in visual understanding and generation, but still face challenges in visual editing, particularly in following complex instructions, preserving appearance consistency, and supporting flexible input formats. To study this gap, we introduce RISEBench, the first benchmark for evaluating Reasoning-Informed viSual Editing (RISE), and extend it to RISEBench++, a more comprehensive and fine-grained benchmark for this emerging task. RISEBench++ extends the taxonomy into a hierarchical scheme spanning six reasoning dimensions: Temporal, Causal, Spatial, Logical, and Counterfactual Reasoning, together with Hybrid Reasoning integrating multiple reasoning types across multi-turn edits. These dimensions are further decomposed into 12 subcategories and 65 fine-grained task types. We expand input formats to include multi-image conditioning and scale the benchmark to 1000 human-annotated test cases, released in English and Chinese. We also improve our evaluation framework, assessing Instruction Reasoning, Appearance Consistency, and Visual Plausibility with human judges and an LMM-as-a-judge approach for more reliable and calibrated judgements. Beyond benchmarking, we introduce RISE-Agent, a training-free agentic framework integrating reasoning-driven planning, tool-augmented execution, and verifier-guided refinement, outperforming most strong existing approaches across diverse RISE tasks. We evaluate 58 visual editing approaches, including 34 open-source models, 19 closed-source models, and 5 agentic methods. The results reveal substantial challenges in reasoning-based visual editing, with even the strongest evaluated approach, GPT-Image-2.5 Sunburst, achieving only 56.6% accuracy. RISEBench++ highlights the limitations of contemporary editing models, provides insights, and indicates future directions for reasoning-aware visual editing.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.12343",
-        "external_id": "2610.12343"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.12343",
-        "external_id": "2610.12343"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/VisionXLab/RISEBench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Xue Yang",
-      "Peiyuan Zhang",
-      "Yilun Zhu",
-      "Qihao Yang",
-      "Mingxin Liu",
-      "Xiangyu Zhao",
-      "Ziqian Fan",
-      "Zhaokai Wang",
-      "Yan Li",
-      "Yifan Yang",
-      "Xu Yang",
-      "Xiaosong Jia",
-      "Yue Zhou",
-      "Zhihang Zhong",
-      "Junchi Yan"
-    ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.551157Z",
-    "dedup_keys": [
-      "arxiv:2610.12343",
-      "title:editing informed reasoning visual",
-      "github:visionxlab/risebench"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 155,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 31.259,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "github_stars": 10.1,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "176a198be6482a94",
-    "kind": "paper",
-    "title": "SparseDecoding: Decoding-Aware Pruning for Accurate and Efficient LLM Inference",
-    "summary_en": "The memory-bound nature of the decoding stage of large language model (LLM) inference incurs significant latency. Layer-wise training-free network pruning approaches guided by the Hessian have been a prominent solution to this problem, as pruning reduces the number of nonzero parameters read from memory during decoding. Nevertheless, typical methods in this line compute the Hessian using pre-collected natural sequences, whereas the model is fed self-generated tokens during decoding, creating a distribution shift between the two sequences. The Hessian calculated on the natural sequence is different from that calculated on the generated sequence. We observe that this discrepancy causes the activation distribution during generation to deviate from that used for pruning, further hurting the pruned model performance. Moreover, most existing LLM pruning methods that bring actual speedup primarily target the sparse matrix-matrix (SpMM) multiplication, providing limited support for the sparse matrix-vector (SpMV) operations, which dominate decoding. To solve these problems, we introduce SparseDecoding, a principled decoding-aware pruning framework tailored for accurate and efficient LLM decoding. Specifically, at the algorithmic axis, SparseDecoding constructs calibration matrices from layer-wise activations collected during the dense-model autoregressive generation, excluding prefill, thereby aligning the pruning objective with the decoding activations. At the system axis, we develop an optimized N:M sparse matrix-vector kernel with bitmask indexing and fixed-step traversal. Substantial empirical results on representative LLMs (Llama-3.1-8B, Llama-3.3-70B, Qwen3-14B / 32B) demonstrate that our method consistently outperforms standard fixed-text calibration on the long-form generation benchmarks while achieving up to 1.48x end-to-end wall-clock decoding speedup on A100 GPUs.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.12327",
-        "external_id": "2610.12327"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.12327",
-        "external_id": "2610.12327"
-      }
-    ],
-    "actors": [
-      "Qitong Wang",
-      "Xinwei Niu",
-      "Mingluo Su",
-      "Shanwei Zhao",
-      "Shiai Zhu",
-      "Huan Wang"
-    ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550868Z",
-    "dedup_keys": [
-      "arxiv:2610.12327",
-      "title:accurate and aware decoding efficient for inference llm pruning sparsedecoding"
-    ],
-    "signals": {
-      "hf_upvotes": 18,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 30.625,
-    "score_breakdown": {
-      "hf_upvotes": 23.556,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "27278a9e285be3ed",
-    "kind": "release",
-    "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
-    "summary_en": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision...",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "nvidia"
-    ],
-    "published_at": "2026-10-08T20:57:55Z",
-    "first_seen_at": "2026-10-09T06:53:55.567580Z",
-    "dedup_keys": [
-      "url:developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models",
-      "title:assets create for frontier models robotics simready steps with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.379,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.621
-    }
-  },
-  {
-    "id": "7311a375d2a69a87",
-    "kind": "paper",
-    "title": "TestPrism: Rethinking Test Evaluation Beyond a Single Reference",
-    "summary_en": "Large language model (LLM) coding agents have advanced test generation across diverse programming tasks. However, the common practice of evaluating tests against a single reference solution overlooks alternative valid implementations and can overstate test quality. We introduce TestPrism, comprising 300 test tasks from 17 sources and 3000 candidate implementations, evenly split between valid and invalid solutions. Its primary metric, Joint Success Function, requires the generated tests to fail on the initial program state, accept every valid candidate, and reject every invalid candidate. Across fourteen baseline coding agent configurations, Joint Success Function reaches only 28.00%, whereas single reference success reaches 59.67%. Our analysis reveals missed behaviors, unsupported assertions, and faulty test construction. To address these weaknesses, we introduce TestHelix, which combines heterogeneous synthesis of test and repair pairs with peer cross validation and recursive self improvement (RSI). Across two models, TestHelix improves Joint Success Function by 8.67 to 9.00 percentage points over the native harness comparators in the TestHelix evaluation",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.12289",
-        "external_id": "2610.12289"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.12289",
-        "external_id": "2610.12289"
-      }
-    ],
-    "actors": [
-      "Han Li",
-      "Lingxiang Hu",
-      "Jiacheng Huang",
-      "Ziqian Jiang",
-      "Jingkai Luo",
-      "Wei Gao",
-      "Yunfan Tan",
-      "Zun Wang",
-      "Jiaheng Liu"
-    ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550897Z",
-    "dedup_keys": [
-      "arxiv:2610.12289",
-      "title:beyond evaluation reference rethinking single test testprism"
-    ],
-    "signals": {
-      "hf_upvotes": 15,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.25,
-    "score_breakdown": {
-      "hf_upvotes": 22.181,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "32803a55ebc5cc8a",
-    "kind": "release",
-    "title": "LegalOn halves Codex costs while maintaining development speed",
-    "summary_en": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/legalon-halves-codex-costs",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-10-08T12:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.893360Z",
-    "dedup_keys": [
-      "url:openai.com/index/legalon-halves-codex-costs",
-      "title:codex costs development halves legalon maintaining speed while"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.819,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.181
+      "age_decay": -2.66
     }
   },
   {
@@ -1375,19 +1380,19 @@
       "Chang Xu"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550974Z",
+    "first_seen_at": "2026-10-09T18:33:31.792982Z",
     "dedup_keys": [
       "arxiv:2610.12229",
       "title:canvas editing image instructions vibeedit with",
       "github:zhaojingjing713/vibeedit"
     ],
     "signals": {
-      "hf_upvotes": 9,
+      "hf_upvotes": 13,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 8,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1395,129 +1400,128 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 28.49,
+    "score": 34.846,
     "score_breakdown": {
-      "hf_upvotes": 18.421,
+      "hf_upvotes": 21.112,
+      "github_stars": 4.394,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
-    "id": "926dff9f0608bc5f",
+    "id": "9b798e9a39939944",
     "kind": "paper",
-    "title": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
-    "summary_en": "Existing spatial reasoning benchmarks mainly test spatial perception: reading off relations already visible in the input. Yet real-world spatial intelligence demands predictive spatial reasoning: constructing a scene from observations, anticipating how an intervention changes it, and reasoning about the unseen outcome. We introduce SpaceCast-Bench, the first benchmark to directly and diagnostically evaluate this capability. Built around an observe-transform-infer framework, its 3,862 questions from 182 real-world scenes span 16 task types at three levels: static perception, local prediction, and global prediction, progressively requiring scene understanding, spatial state updating, and relational inference over unobserved outcomes. Evaluating 21 models exposes a stark gap: the strongest model reaches only 58.0% against 87.2% human performance, while spatially specialized models remain near random chance. Controlled analyses further reveal that bridge views are critical for integrating distributed observations, and that explicit 3D evidence benefits models more reliably than generated outcome images or videos. Fine-tuning on our programmatically generated data lifts Qwen3-VL-4B from 34.0% to 65.7% with macro-average gains across six out-of-domain benchmarks.",
+    "title": "U-Space: Uncovering When and Why Uncertainty Arises in Language Models",
+    "summary_en": "Large language models are informing decisions with ever-higher stakes. As the consequences of their errors grow, a central question becomes harder to ignore: how much can we trust an individual answer? Yet recognizing when to defer remains difficult because language models can present incorrect conclusions with fluent explanations and an authoritative tone. Uncertainty quantification seeks to address this disconnect by estimating the reliability of individual predictions. However, many existing methods require repeated generations or separately trained components, and their scalar estimates do not reveal where uncertainty arises or how it evolves during reasoning. Recent work has also shown that generation length can be strongly associated with uncertainty estimates and correctness, raising the question of how much of an estimator's predictive power comes from uncertainty-specific information rather than output length alone. Mechanistic interpretability offers a way to address these limitations by connecting human-interpretable concepts to intermediate model states. Building on this capability, we introduce the U-Space, a low-dimensional subspace that makes a model's evolving uncertainty measurable and interpretable. We identify semantic anchors for doubt and certainty, map their unembedding directions back into the residual space, and combine their contrasts into an orthogonal basis. The U-Lens projects each token state onto these basis vectors, yielding an interpretable token-level uncertainty map that can be inspected directly or aggregated into a scalar uncertainty score. Our approach requires no correctness labels, repeated generations, or training. Across reasoning benchmarks, its confidence score outperforms established baselines under both standard and length-controlled evaluation and transfers more reliably than supervised estimators. Code: https://github.com/s2labres/U-Space.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
       "rag",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.12402",
-        "external_id": "2610.12402"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.12402",
-        "external_id": "2610.12402"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/ZJU-REAL/SpaceCast-Bench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Hongxing Li",
-      "Jinyue Su",
-      "Dingming Li",
-      "Wenqi Zhang",
-      "Weiming Lu",
-      "Jun Xiao",
-      "Yueting Zhuang",
-      "Yongliang Shen"
-    ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.551064Z",
-    "dedup_keys": [
-      "arxiv:2610.12402",
-      "title:bench evaluating language models predictive reasoning spacecast spatial vision",
-      "github:zju-real/spacecast-bench"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 27.176,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "b9233563035f65f7",
-    "kind": "paper",
-    "title": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
-    "summary_en": "Geometrically faithful and functional articulated 3D assets are essential for real-to-sim robot manipulation, where policies trained in simulation must transfer to physical objects. Recent mesh-based methods learn to infer articulation from annotated 3D assets, but deployment remains challenging when real-world objects fall outside the training distribution or their meshes are incomplete or corrupted. To address these limitations, we formulate articulated asset reconstruction as programmatic modeling grounded in partial geometric evidence and introduce USDCraft, a framework in which a pretrained LLM writes and revises executable programs for simulation-ready articulated assets without task-specific training. We propose source geometry analysis, which converts the source mesh into a metric textual description that distinguishes observed surface from unknown space, and iterative geometric rechecking, which re-encodes each candidate in the same representation so that discrepancies point to program edits while unobserved regions remain open to completion. Visual feedback and physical authoring guidance complete the modeling process, which produces articulated USD assets with explicit physical properties that load into Isaac Sim without manual adjustment. Experiments demonstrate leading articulation recovery on two benchmarks and validate USDCraft's effectiveness for real-to-sim-to-real robot manipulation.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "robotics",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.11322",
-        "external_id": "2610.11322"
+        "url": "https://huggingface.co/papers/2610.09087",
+        "external_id": "2610.09087"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.11322",
-        "external_id": "2610.11322"
+        "url": "https://arxiv.org/abs/2610.09087",
+        "external_id": "2610.09087"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/s2labres/U-Space",
+        "external_id": null
       }
     ],
     "actors": [
-      "Chuanrui Zhang",
-      "Zaijia Yang",
-      "Duomin Wang",
-      "Lu Shi",
-      "Daquan Zhou",
-      "Ruihua Zhang",
-      "Ziwei Wang"
+      "Tobias Braun",
+      "Nils Loose",
+      "Alexander Herzog",
+      "Virginia Ceccatelli",
+      "Marcus Rohrbach",
+      "Thomas Eisenbarth",
+      "Lorenzo Cavallaro"
     ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550943Z",
+    "published_at": "2026-10-06T00:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:31.792763Z",
     "dedup_keys": [
-      "arxiv:2610.11322",
-      "title:articulated assets for geometrically grounded modeling programmatic simulation usdcraft"
+      "arxiv:2610.09087",
+      "title:and arises language models space uncertainty uncovering when why",
+      "github:s2labres/u-space"
     ],
     "signals": {
-      "hf_upvotes": 11,
+      "hf_upvotes": 25,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 4,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.602,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.66
+    }
+  },
+  {
+    "id": "7311a375d2a69a87",
+    "kind": "paper",
+    "title": "TestPrism: Rethinking Test Evaluation Beyond a Single Reference",
+    "summary_en": "Large language model (LLM) coding agents have advanced test generation across diverse programming tasks. However, the common practice of evaluating tests against a single reference solution overlooks alternative valid implementations and can overstate test quality. We introduce TestPrism, comprising 300 test tasks from 17 sources and 3000 candidate implementations, evenly split between valid and invalid solutions. Its primary metric, Joint Success Function, requires the generated tests to fail on the initial program state, accept every valid candidate, and reject every invalid candidate. Across fourteen baseline coding agent configurations, Joint Success Function reaches only 28.00%, whereas single reference success reaches 59.67%. Our analysis reveals missed behaviors, unsupported assertions, and faulty test construction. To address these weaknesses, we introduce TestHelix, which combines heterogeneous synthesis of test and repair pairs with peer cross validation and recursive self improvement (RSI). Across two models, TestHelix improves Joint Success Function by 8.67 to 9.00 percentage points over the native harness comparators in the TestHelix evaluation",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.12289",
+        "external_id": "2610.12289"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.12289",
+        "external_id": "2610.12289"
+      }
+    ],
+    "actors": [
+      "Han Li",
+      "Lingxiang Hu",
+      "Jiacheng Huang",
+      "Ziqian Jiang",
+      "Jingkai Luo",
+      "Wei Gao",
+      "Yunfan Tan",
+      "Zun Wang",
+      "Jiaheng Liu"
+    ],
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:31.792700Z",
+    "dedup_keys": [
+      "arxiv:2610.12289",
+      "title:beyond evaluation reference rethinking single test testprism"
+    ],
+    "signals": {
+      "hf_upvotes": 28,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1530,82 +1534,61 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 26.948,
+    "score": 33.278,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
+      "hf_upvotes": 26.938,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
-    "id": "c084a6311ae04955",
-    "kind": "paper",
-    "title": "What Did the Agent Actually Do? Evidence-Grounded Oversight for Long-Horizon Agents",
-    "summary_en": "As agents take on long-horizon tasks, users shift from making individual decisions to overseeing autonomous execution. Yet the volume of agent activity and the fragmentation of supporting evidence make it difficult to determine which decisions warrant user verification. We study monitors that identify consequential decisions and locate evidence to help users assess their implications. We introduce AgentMonBench, a software-engineering benchmark comprising three subsets that cover two complementary dimensions: alignment between requirements and behavior, and awareness of consequential autonomous decisions for verification. To support these judgments, we propose the Evidence-Grounded Behavior Graph (EBG), a training-free method that groups source-linked evidence into behaviors and organizes their relationships into a graph. EBG presents task-oriented views of this graph to help monitors interpret behavior in context. Experiments across eight models show that EBG improves decision identification and evidence localization in most settings compared with direct access to the original context. Further experiments show that EBG's evidence-localization gains persist across input scales and hyperparameter settings, while real-world applications illustrate its practical value for human oversight.",
+    "id": "6f8d3d0bfe4b8ee4",
+    "kind": "release",
+    "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+    "summary_en": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent",
-      "rag",
-      "eval"
+      "llm",
+      "agent"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.06406",
-        "external_id": "2610.06406"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.06406",
-        "external_id": "2610.06406"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/zhk-lab/EBG",
+        "source": "openai",
+        "url": "https://openai.com/index/asana-browser-agent",
         "external_id": null
       }
     ],
     "actors": [
-      "Zhongxiang Sun",
-      "Jiahao Yan",
-      "Hongkang Zhao",
-      "Haojie Ding",
-      "Boheng Zhang",
-      "Fan Yang",
-      "Xiao Zhang",
-      "Jun Xu"
+      "openai"
     ],
-    "published_at": "2026-10-05T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550928Z",
+    "published_at": "2026-10-09T07:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:32.178748Z",
     "dedup_keys": [
-      "arxiv:2610.06406",
-      "title:actually agent agents did evidence for grounded horizon long oversight the what",
-      "github:zhk-lab/ebg"
+      "url:openai.com/index/asana-browser-agent",
+      "title:76x asana browser costs cuts gpt model sol tests with"
     ],
     "signals": {
-      "hf_upvotes": 11,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 26.834,
+    "score": 33.277,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
+      "kind_base": 20.0,
+      "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -6.431
+      "age_decay": -0.723
     }
   },
   {
@@ -1650,19 +1633,19 @@
       "Yongliang Shen"
     ],
     "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.551079Z",
+    "first_seen_at": "2026-10-09T18:33:31.793210Z",
     "dedup_keys": [
       "arxiv:2610.12403",
       "title:agents evolving native reinforcing skills viskill visual vlm with",
       "github:zju-real/viskill"
     ],
     "signals": {
-      "hf_upvotes": 5,
+      "hf_upvotes": 10,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 8,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1670,39 +1653,169 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 26.6,
+    "score": 32.917,
     "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "github_stars": 2.197,
+      "hf_upvotes": 19.183,
+      "github_stars": 4.394,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.931
+      "age_decay": -2.66
     }
   },
   {
-    "id": "335cc9cfb936a6de",
-    "kind": "release",
-    "title": "Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core",
-    "summary_en": "Bitwise determinism makes large-scale pretraining easier to debug, validate, and resume reproducibly. These benefits become especially valuable when training...",
+    "id": "882d3e5dc5e70df4",
+    "kind": "paper",
+    "title": "Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching",
+    "summary_en": "Dense correspondence matching has historically been bounded by simplifying spatio-temporal priors, such as smooth motion and rigid geometry. While effective for classical tasks, these assumptions break down in image editing and reference-guided generation (IEG), where transformations can preserve visual identity while breaking physical continuity. To establish identity-preserving correspondence across such transformations, we introduce FreeMatching, a generalizable framework combining generative and semantic foundation representations with heterogeneous supervision from classical datasets, tracked videos, and synthetic scenes. Teacher-guided iterative refinement further improves correspondence in IEG without dense correspondence annotations. Experimentally, a single FreeMatching model substantially improves correspondence quality on challenging IEG image pairs while retaining competitive performance on classical benchmarks. Furthermore, we demonstrate its utility as a quantitative metric for evaluating identity preservation, with scores that correlate with human judgment. The code is available at https://github.com/luping-liu/FreeMatching.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
     "links": [
       {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core/",
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.12421",
+        "external_id": "2610.12421"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.12421",
+        "external_id": "2610.12421"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/luping-liu/FreeMatching",
         "external_id": null
       }
     ],
     "actors": [
-      "nvidia"
+      "Luping Liu",
+      "Bingyi Kang",
+      "Yifan Wang",
+      "Dong Xu"
     ],
-    "published_at": "2026-10-06T19:58:03Z",
-    "first_seen_at": "2026-10-09T06:53:55.567773Z",
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:31.792744Z",
     "dedup_keys": [
-      "url:developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core",
-      "title:bitwise core deterministic megatron nvidia pretraining scale with"
+      "arxiv:2610.12421",
+      "title:approach beyond correspondence dense for generalizable matching priors spatio temporal",
+      "github:luping-liu/freematching"
+    ],
+    "signals": {
+      "hf_upvotes": 25,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.791,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.66
+    }
+  },
+  {
+    "id": "2144cdc921ff7eb4",
+    "kind": "paper",
+    "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+    "summary_en": "Learning to act in unfamiliar environments requires agents to infer how the world works and revise that understanding as new evidence arrives. Yet limited observations can support multiple world models that explain past interactions but predict different outcomes in unseen states. We introduce Memento 3, building on the Memento series to enable frozen LLM agents to continually learn explicit world models through external memory. The agent maintains a natural-language rulebook as persistent semantic memory, recording revisable hypotheses about environment dynamics while leaving unknown aspects underspecified. It compiles this rulebook into executable code for prediction and planning. Through a continual loop of observation, reflection, rule revision, compilation, and verification, the agent uses prediction errors to refine both the rulebook and its code. Updated code is accepted only when the LLM judges it faithful to the rulebook and cell-exact replay reproduces the observed transitions. We investigate this process as a model-based route to recursive self-improvement (RSI): the agent autonomously explores the environment, revises its world model, and uses verified updates to guide subsequent interaction and learning, while the underlying LLM remains fixed. A population extension maintains multiple world models in parallel, sharing interaction evidence and using their predictions to guide exploration. On ARC-AGI-3, the single-model agent clears every level of all 25 public games, achieves a mean Relative Human Action Efficiency (RHAE) of 100.0, and uses 44% of the human action count. In an Atari Pong case study, a learned feedback controller wins 21:0 in each of three evaluated episodes with different openings, without further LLM calls.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.11794",
+        "external_id": "2610.11794"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.11794",
+        "external_id": "2610.11794"
+      }
+    ],
+    "actors": [
+      "Haoyu Zhao",
+      "Zhengxu Yu",
+      "Zhiyuan He",
+      "Meng Fang",
+      "Rasul Tutunov",
+      "Haitham Bou-Ammar",
+      "Weilin Luo",
+      "Jun Wang"
+    ],
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:31.792812Z",
+    "dedup_keys": [
+      "arxiv:2610.11794",
+      "title:based improvement memento model recursive reflective rulebooks self through"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.424,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.66
+    }
+  },
+  {
+    "id": "e60586b700b6ee37",
+    "kind": "release",
+    "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+    "summary_en": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/sophos",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-09T07:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:32.178672Z",
+    "dedup_keys": [
+      "url:openai.com/index/sophos",
+      "title:cuts daybreak investigation openai sophos threat time with"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1718,88 +1831,18 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 26.317,
+    "score": 29.277,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -3.683
+      "age_decay": -0.723
     }
   },
   {
-    "id": "017236964cb80360",
-    "kind": "paper",
-    "title": "From Prompting to Composing: A Spatial Canvas Interface for Poster Generation",
-    "summary_en": "Text prompting is an indirect interface for poster generation, requiring users to encode inherently two-dimensional composition intent into a one-dimensional sequence of words. We introduce a Spatial Canvas Interface that enables users to directly compose generation intent in space through four complementary binding types: semantic, identity, text, and pixel, together with Text Specifications for individual elements and global appearance. Based on this interface, we develop Compo, a poster generation model adapted from a pretrained image editing model to understand Spatial Canvas inputs and Text Specifications. Compo supports both direct inference, where users explicitly construct the canvas, and agentic mode, where a high-level request is automatically translated into a planned Spatial Canvas. To train Compo, we develop a scalable pipeline that automatically constructs supervision data for different binding types and their combinations, enabling efficient adaptation without training a specialized poster generator from scratch. We further introduce a benchmark that evaluates adherence to individual binding types and their joint composition. Experiments show that Compo achieves stronger compositional controllability than both general-purpose image generation models and dedicated poster generation systems while maintaining high visual quality. By decoupling intent specification from visual generation, our work shifts poster generation from prompting toward composing.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.12230",
-        "external_id": "2610.12230"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.12230",
-        "external_id": "2610.12230"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/snowflakewang/Compo",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yitong Wang",
-      "Fangyun Wei",
-      "Jinjing Zhao",
-      "Sirui Zhang",
-      "Hongyang Zhang",
-      "Dong Chen",
-      "Bo Dai",
-      "Yan Lu"
-    ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.551033Z",
-    "dedup_keys": [
-      "arxiv:2610.12230",
-      "title:canvas composing for from generation interface poster prompting spatial",
-      "github:snowflakewang/compo"
-    ],
-    "signals": {
-      "hf_upvotes": 6,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 25.636,
-    "score_breakdown": {
-      "hf_upvotes": 15.567,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "716ee02902554801",
-    "kind": "paper",
-    "title": "In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks",
-    "summary_en": "We study robotic in-context learning (ICL), an emerging paradigm that enables robots to infer and execute tasks from visual demonstrations. Despite its growing promise, the problem itself remains under-defined: a visual demonstration simultaneously conveys action trajectories, object semantics, manipulation affordances, spatial relations, and task goals, making it unclear what information the robot is actually expected to follow. In this work, we first provide a clear problem definition of robot ICL that explicitly defines its learning target and resolves this fundamental prompt ambiguity. Building on this definition, we develop a minimalist and reproducible ICL framework (SimpleICL) with a visual prompt encoder and a low-cost data collection protocol. Without massive pre-training or specialized data infrastructure, our framework achieves strong performance in both simulation and real-world environments. Extensive experiments further reveal several key properties of robot ICL, including action, semantic, composition, and affordance discrimination. We will fully open-source our data and training pipeline to facilitate systematic and reproducible research on robot ICL. The project page can be found at https://simpleicl.github.io/simpleicl.",
+    "id": "27278a9e285be3ed",
+    "kind": "release",
+    "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
+    "summary_en": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -1807,136 +1850,84 @@
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.38173",
-        "external_id": "2609.38173"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.38173",
-        "external_id": "2609.38173"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/simpleicl/simple-icl",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/",
         "external_id": null
       }
     ],
     "actors": [
-      "Minxing Li",
-      "Minghao Han",
-      "Weizhi Zhao",
-      "Hanwen Wang",
-      "Xiangshuo Liu",
-      "Shuyao Shang",
-      "Jingxiang Zhou",
-      "Mingchao Sun",
-      "Hongyu Pan",
-      "Mu Xu",
-      "Yu Liu",
-      "Lue Fan",
-      "Zhaoxiang Zhang"
+      "nvidia"
     ],
-    "published_at": "2026-09-29T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.550786Z",
+    "published_at": "2026-10-08T20:57:55Z",
+    "first_seen_at": "2026-10-09T18:33:33.792881Z",
     "dedup_keys": [
-      "arxiv:2609.38173",
-      "title:context democratized for learning made manipulation recipe robot simple tasks",
-      "github:simpleicl/simple-icl"
+      "url:developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models",
+      "title:assets create for frontier models robotics simready steps with"
     ],
     "signals": {
-      "hf_upvotes": 32,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 6,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 24.433,
+    "score": 28.65,
     "score_breakdown": {
-      "hf_upvotes": 27.972,
-      "github_stars": 3.892,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -15.431
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.35
     }
   },
   {
-    "id": "32a0da59f40b9c8a",
-    "kind": "paper",
-    "title": "Chaos in the Text: Revealing the Modality Preference in Mixed-Modality Retrievers",
-    "summary_en": "Dense retrievers have made significant progress on text and image corpora, but whether these capabilities extend reliably to mixed corpora containing text, image, and fused text-image documents remains unclear. In this paper, we systematically examine retrievers across architectures and find that their performance is highly sensitive to modality composition. As image documents are progressively replaced with semantically corresponding text representations, retrieval performance follows a pronounced V-shaped curve, remaining strong on single-modality corpora but degrading substantially when modalities coexist. In particular, irrelevant text causes more severe degradation than an equal number of irrelevant images, a phenomenon we term Chaos in the Text. Further analysis reveals modality preference, whereby text representations receive systematically higher similarity scores, allowing irrelevant text to outrank relevant images. To mitigate this bias, we introduce Trident, which constructs text, image, and fused text-image views of each document as co-equal positives and jointly optimizes relevance discrimination and positive-view balance through Multi-Positive View InfoNCE. Experiments across visual document and natural image benchmarks show that trident improves mixed-modality retrieval on both CLIP-based and VLM-based architectures, reduces sensitivity to modality composition and text distractors, and increases average single-modality retrieval performance.",
+    "id": "32803a55ebc5cc8a",
+    "kind": "release",
+    "title": "LegalOn halves Codex costs while maintaining development speed",
+    "summary_en": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "rag",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.11816",
-        "external_id": "2610.11816"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.11816",
-        "external_id": "2610.11816"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/OpenBMB/Trident",
+        "source": "openai",
+        "url": "https://openai.com/index/legalon-halves-codex-costs",
         "external_id": null
       }
     ],
     "actors": [
-      "Yubo Sun",
-      "Chunyi Peng",
-      "Yukun Yan",
-      "Zhenghao Liu",
-      "Zhipeng Xu",
-      "Sen Mei",
-      "Linlin Xin",
-      "Zheni Zeng",
-      "Maosong Sun"
+      "openai"
     ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:53.551144Z",
+    "published_at": "2026-10-08T12:00:00Z",
+    "first_seen_at": "2026-10-09T18:33:32.178856Z",
     "dedup_keys": [
-      "arxiv:2610.11816",
-      "title:chaos mixed modality modality preference retrievers revealing text the the",
-      "github:openbmb/trident"
+      "url:openai.com/index/legalon-halves-codex-costs",
+      "title:codex costs development halves legalon maintaining speed while"
     ],
     "signals": {
-      "hf_upvotes": 4,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 24.331,
+    "score": 28.09,
     "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.931
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.91
     }
   },
   {
@@ -1965,15 +1956,15 @@
       "JetBrains"
     ],
     "published_at": "2026-09-20T10:52:55Z",
-    "first_seen_at": "2026-10-09T06:53:53.519768Z",
+    "first_seen_at": "2026-10-09T18:33:31.737099Z",
     "dedup_keys": [
       "hf:jetbrains/mellum2.1-12b-a2.5b-thinking"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 49,
-      "hf_downloads": 110,
-      "hf_trending_score": 48.0,
+      "hf_likes": 69,
+      "hf_downloads": 198,
+      "hf_trending_score": 68.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -1983,39 +1974,39 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 24.255,
+    "score": 27.757,
     "score_breakdown": {
-      "hf_trending": 23.351,
-      "hf_downloads": 9.419,
-      "hf_likes": 11.736,
+      "hf_trending": 25.405,
+      "hf_downloads": 10.587,
+      "hf_likes": 12.745,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -28.251
+      "age_decay": -28.98
     }
   },
   {
-    "id": "d0df153b2a04fd20",
+    "id": "335cc9cfb936a6de",
     "kind": "release",
-    "title": "The model that didn't exist, so you made it yourself",
-    "summary_en": null,
+    "title": "Scale Bitwise-Deterministic Pretraining with NVIDIA Megatron Core",
+    "summary_en": "Bitwise determinism makes large-scale pretraining easier to debug, validate, and resume reproducibly. These benefits become especially valuable when training...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/building-with-ml-intern",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core/",
         "external_id": null
       }
     ],
     "actors": [
-      "huggingface"
+      "nvidia"
     ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-09T06:53:55.063701Z",
+    "published_at": "2026-10-06T19:58:03Z",
+    "first_seen_at": "2026-10-09T18:33:33.793114Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/building-with-ml-intern",
-      "title:didn exist made model that the you yourself"
+      "url:developer.nvidia.com/blog/scale-bitwise-deterministic-pretraining-with-nvidia-megatron-core",
+      "title:bitwise core deterministic megatron nvidia pretraining scale with"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -2031,56 +2022,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 18.069,
+    "score": 25.588,
     "score_breakdown": {
       "kind_base": 20.0,
-      "age_decay": -1.931
-    }
-  },
-  {
-    "id": "4f897fc9fcd8333d",
-    "kind": "release",
-    "title": "Introducing Falcon ASR",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "speech"
-    ],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-10-07T13:21:03Z",
-    "first_seen_at": "2026-10-09T06:53:55.063781Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/tiiuae/falcon-asr",
-      "title:asr falcon introducing"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 17.403,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -2.597
+      "known_org": 10.0,
+      "age_decay": -4.412
     }
   }
 ]
