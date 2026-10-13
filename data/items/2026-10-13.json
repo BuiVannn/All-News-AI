@@ -1,5 +1,59 @@
 [
   {
+    "id": "45d48a7393e5fb40",
+    "kind": "model",
+    "title": "LiquidAI/LFM2.5-24B-A2B",
+    "summary_en": "text-generation, transformers, lfm2_moe, liquid, lfm2.5, edge, moe",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+        "external_id": "LiquidAI/LFM2.5-24B-A2B"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base",
+        "external_id": "LiquidAI/LFM2.5-24B-A2B-Base"
+      }
+    ],
+    "actors": [
+      "LiquidAI"
+    ],
+    "published_at": "2026-10-12T05:35:46Z",
+    "first_seen_at": "2026-10-13T19:35:25.216879Z",
+    "dedup_keys": [
+      "hf:liquidai/lfm2.5-24b-a2b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 90,
+      "hf_downloads": 2565,
+      "hf_trending_score": 90.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 61.923,
+    "score_breakdown": {
+      "hf_trending": 27.065,
+      "hf_downloads": 15.7,
+      "hf_likes": 13.533,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.375
+    }
+  },
+  {
     "id": "09480ef1353db6a8",
     "kind": "model",
     "title": "openbmb/MiniCPM-V-4.7-1B",
@@ -22,15 +76,15 @@
       "openbmb"
     ],
     "published_at": "2026-10-06T17:40:13Z",
-    "first_seen_at": "2026-10-13T07:11:16.833687Z",
+    "first_seen_at": "2026-10-13T19:35:25.216728Z",
     "dedup_keys": [
       "hf:openbmb/minicpm-v-4.7-1b"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 127,
-      "hf_downloads": 14,
-      "hf_trending_score": 119.0,
+      "hf_likes": 277,
+      "hf_downloads": 263,
+      "hf_trending_score": 214.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -40,59 +94,121 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 46.852,
+    "score": 57.639,
     "score_breakdown": {
-      "hf_trending": 28.725,
-      "hf_downloads": 5.416,
-      "hf_likes": 14.556,
+      "hf_trending": 32.224,
+      "hf_downloads": 11.152,
+      "hf_likes": 16.883,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -9.845
+      "age_decay": -10.62
     }
   },
   {
-    "id": "40ad86295d6e5448",
+    "id": "222c7ba038da70d3",
     "kind": "paper",
-    "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
-    "summary_en": "Terminal agents are moving beyond local operations toward completing real-world professional tasks. Short trajectories can demonstrate commands and tool calls, but they do not fully show how agents accumulate evidence through exploration, use it to inform judgments, continually adjust strategies based on feedback, and turn intermediate results into final deliverables. High-quality long-horizon trajectories capture these agentic behavioral patterns and their connections within a single problem-solving process, providing richer experience for sustained autonomous work. However, environment synthesis may complete or simplify the key work underlying these patterns in advance and thus remove the need for exploration, implementation, and verification that the agent was meant to perform. To address this, we introduce TerminalHorizon, a fully automated data synthesis engine for long-horizon terminal agents. Starting from real-world professional work, it uses independent execution to identify key work omitted during construction and uses the resulting evidence to guide environment reconstruction. To extend these patterns across stages, it progressively expands tasks under the same goal, introducing new requirements that build on prior results and call for further exploration and improvement. Using this engine, we construct 1.5K task environments and perform supervised fine-tuning of Qwen3.5-27B on the resulting dataset to obtain TerminalHorizon-27B. We achieve substantial performance gains on all 12 benchmarks spanning coding-agent tasks, agentic tasks in real-world production settings, and general reasoning. Multiple RSI case studies, each with a 12-hour research budget, further demonstrate the model's ability to continue experimenting beyond an initial solution, improve its methods based on feedback, and retain effective improvements in its final deliverables.",
+    "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To",
+    "summary_en": "Large Language Models (LLMs) increasingly ship with explicit \"thinking modes\", yet their counterpart, \"no-thinking\", has received far less attention. We study LLMs' no-thinking behavior along two axes. a. How to measure no-thinking? Prior work typically defines no-thinking through proxies such as a disabled thinking mode or the absence of long traces. These proxies are unreliable: disabled thinking modes may still emit reasoning, while long traces may contain filler rather than genuine inference. We instead normalize each response into a pre-answer trace and final answer, and evaluate it at three levels: (i) Empty-Thinking Rate for strict answer-only compliance; (ii) instruction-aware Question-Pre-answer Relevance for similarity between the question and pre-answer trace; and (iii) LLM-as-judge Explicit Inference Rate for visible explicit inference. Together, these metrics distinguish answer-only output, relevant but non-inferential text, and explicit inference. b. How does no-thinking vary across tasks and models? We evaluate six prompting interventions on six LLMs across Boolean, multiple-choice, and open-ended questions. We find that explicit no-think controls cannot reliably eliminate visible inference. Models instead exhibit \"Thinking Inertia\": explicit inference persists even under strict controls and becomes more prevalent as the answer space opens. Accuracy remains stable on Boolean and multiple-choice tasks, whereas open-ended tasks reveal a trade-off between answer-only compliance and task accuracy. Rewriting the same questions across answer spaces shows that supplying candidate answers makes answer-only responses easier to produce. These findings establish no-thinking as a non-trivial capability: stopping explicit reasoning cannot be assumed from model settings or instructions alone and deserves systematic evaluation alongside reasoning ability.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.11765",
+        "external_id": "2610.11765"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.11765",
+        "external_id": "2610.11765"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/thinking-inertia/code",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Dianqiao Lei",
+      "Kevin Qinghong Lin",
+      "Pan Lu",
+      "Philip Torr",
+      "James Zou"
+    ],
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229203Z",
+    "dedup_keys": [
+      "arxiv:2610.11765",
+      "title:inertia keep llms not thinking thinking told when",
+      "github:thinking-inertia/code"
+    ],
+    "signals": {
+      "hf_upvotes": 214,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 49.014,
+    "score_breakdown": {
+      "hf_upvotes": 42.965,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.724
+    }
+  },
+  {
+    "id": "75e7d78a9e0992fe",
+    "kind": "paper",
+    "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
+    "summary_en": "As the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users' own workflows. This delegation carries a quiet assumption, that the delivered agent will faithfully serve the requirement it was built for, rather than merely appear to. No existing benchmark tests that assumption. We introduce AgentSWE, a benchmark for agent software engineering spanning three stages of the agent development lifecycle: Creation of a complete agent from a natural-language requirement, Editing of production agent codebases, and Optimization toward a measurable target. Each of its 25 tasks is framed as a commission rather than an exam: the builder iterates against a handful of illustrative cases, while acceptance exercises the frozen submission on held-out cases designed to span the full requirement, grading behavior against requirement-derived rubrics under hard pass/fail gates or, for Optimization, against the source benchmark's own objective. Evaluating a range of coding agents across models and harnesses, we find that none comes close to delivering what a requirement asks for: the gap between what a builder demonstrates and what it delivers is the norm, not the corner case. An accompanying empirical analysis of the failure trajectories identifies recurring failure modes, among them overfitting to the visible cases, hollow runtimes behind code that looks complete, and unsupported claims of completion, each a signal by which coding agents can learn to build the agents they are asked for.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
       "agent",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.13166",
-        "external_id": "2610.13166"
+        "url": "https://huggingface.co/papers/2610.13361",
+        "external_id": "2610.13361"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.13166",
-        "external_id": "2610.13166"
+        "url": "https://arxiv.org/abs/2610.13361",
+        "external_id": "2610.13361"
       }
     ],
     "actors": [
-      "Shun Zou",
-      "Ziyu Ma",
-      "Yi Zou",
-      "Yong Wang",
-      "Lin Chen",
-      "Zehui Chen",
-      "Guanhua Chen",
-      "Xiangxiang Chu",
-      "Feng Zhao"
+      "Jiahao Wang",
+      "Hongjin Qian",
+      "Yuyang Hu",
+      "Jiajun Zhang",
+      "Zheng Liu"
     ],
     "published_at": "2026-10-09T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836196Z",
+    "first_seen_at": "2026-10-13T19:35:25.229221Z",
     "dedup_keys": [
-      "arxiv:2610.13166",
-      "title:agentic data for horizon intelligence long scaling terminal"
+      "arxiv:2610.13361",
+      "title:actually agent agents agentswe build can coding the want you"
     ],
     "signals": {
-      "hf_upvotes": 65,
+      "hf_upvotes": 201,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -105,84 +221,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 36.068,
+    "score": 44.242,
     "score_breakdown": {
-      "hf_upvotes": 33.517,
+      "hf_upvotes": 42.466,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -6.449
-    }
-  },
-  {
-    "id": "821fb3a2dd7c0f10",
-    "kind": "paper",
-    "title": "Multi-Stream Attention Residuals",
-    "summary_en": "Attention Residuals (AttnRes) enables content-dependent retrieval over network depth, which can be viewed as single-stream softmax attention along the depth axis. Inspired by the success of multi-head attention along the sequence axis, we introduce Multi-Stream Attention Residuals (MSAR), an extension of AttnRes that generalizes this mechanism to multi-head depth attention, yielding substantial performance gains with minimal additional overhead. MSAR draws stream diversity from sequence context through multi-scale causal convolutions, allowing different heads to retrieve historical representations through distinct contextual views while preserving the integrity of the hidden representation. The retrieved streams are combined through lightweight adaptive mixing to generate the single-stream layer input. By retaining single-stream sources and expanding them on demand, MSAR supports multi-stream computation without requiring persistent multi-stream storage or communication. Across all 12 downstream benchmarks at the 18B and 28B MoE scales, MSAR consistently outperforms prior residual variants, including standard residual connections, manifold-constrained Hyper-Connections (mHC), and AttnRes. Scaling-law experiments yield an iso-loss compute speedup of 1.58times over the standard residual baseline, compared with 1.35times for AttnRes and 1.30times for mHC. These results make MSAR a promising residual architecture for large-scale pre-training.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.13630",
-        "external_id": "2610.13630"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.13630",
-        "external_id": "2610.13630"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/jianke0604/MSAR",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Xiaohan Qin",
-      "Xiangdong Zhang",
-      "Tuo Dai",
-      "Sunan Zou",
-      "Huaijin Wu",
-      "Yebin Yang",
-      "Zhuo Xia",
-      "Lin Yao",
-      "Yuliang Liu",
-      "Junchi Yan"
-    ],
-    "published_at": "2026-10-09T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836394Z",
-    "dedup_keys": [
-      "arxiv:2610.13630",
-      "title:attention multi residuals stream",
-      "github:jianke0604/msar"
-    ],
-    "signals": {
-      "hf_upvotes": 30,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 2,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 35.22,
-    "score_breakdown": {
-      "hf_upvotes": 27.472,
-      "github_stars": 2.197,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -6.449
+      "age_decay": -7.224
     }
   },
   {
@@ -247,19 +291,19 @@
       "Shiyu Huang"
     ],
     "published_at": "2026-09-30T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836327Z",
+    "first_seen_at": "2026-10-13T19:35:25.229170Z",
     "dedup_keys": [
       "arxiv:2609.39601",
       "title:foundation grounding groundingpi intelligence model physical primitives towards visual with",
       "github:groundingpi/groundingpi"
     ],
     "signals": {
-      "hf_upvotes": 56,
+      "hf_upvotes": 245,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 19,
+      "github_stars": 32,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -267,121 +311,59 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 30.386,
+    "score": 42.312,
     "score_breakdown": {
-      "hf_upvotes": 32.344,
-      "github_stars": 5.991,
+      "hf_upvotes": 44.043,
+      "github_stars": 6.993,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -19.949
+      "age_decay": -20.724
     }
   },
   {
-    "id": "222c7ba038da70d3",
+    "id": "40ad86295d6e5448",
     "kind": "paper",
-    "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To",
-    "summary_en": "Large Language Models (LLMs) increasingly ship with explicit \"thinking modes\", yet their counterpart, \"no-thinking\", has received far less attention. We study LLMs' no-thinking behavior along two axes. a. How to measure no-thinking? Prior work typically defines no-thinking through proxies such as a disabled thinking mode or the absence of long traces. These proxies are unreliable: disabled thinking modes may still emit reasoning, while long traces may contain filler rather than genuine inference. We instead normalize each response into a pre-answer trace and final answer, and evaluate it at three levels: (i) Empty-Thinking Rate for strict answer-only compliance; (ii) instruction-aware Question-Pre-answer Relevance for similarity between the question and pre-answer trace; and (iii) LLM-as-judge Explicit Inference Rate for visible explicit inference. Together, these metrics distinguish answer-only output, relevant but non-inferential text, and explicit inference. b. How does no-thinking vary across tasks and models? We evaluate six prompting interventions on six LLMs across Boolean, multiple-choice, and open-ended questions. We find that explicit no-think controls cannot reliably eliminate visible inference. Models instead exhibit \"Thinking Inertia\": explicit inference persists even under strict controls and becomes more prevalent as the answer space opens. Accuracy remains stable on Boolean and multiple-choice tasks, whereas open-ended tasks reveal a trade-off between answer-only compliance and task accuracy. Rewriting the same questions across answer spaces shows that supplying candidate answers makes answer-only responses easier to produce. These findings establish no-thinking as a non-trivial capability: stopping explicit reasoning cannot be assumed from model settings or instructions alone and deserves systematic evaluation alongside reasoning ability.",
+    "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+    "summary_en": "Terminal agents are moving beyond local operations toward completing real-world professional tasks. Short trajectories can demonstrate commands and tool calls, but they do not fully show how agents accumulate evidence through exploration, use it to inform judgments, continually adjust strategies based on feedback, and turn intermediate results into final deliverables. High-quality long-horizon trajectories capture these agentic behavioral patterns and their connections within a single problem-solving process, providing richer experience for sustained autonomous work. However, environment synthesis may complete or simplify the key work underlying these patterns in advance and thus remove the need for exploration, implementation, and verification that the agent was meant to perform. To address this, we introduce TerminalHorizon, a fully automated data synthesis engine for long-horizon terminal agents. Starting from real-world professional work, it uses independent execution to identify key work omitted during construction and uses the resulting evidence to guide environment reconstruction. To extend these patterns across stages, it progressively expands tasks under the same goal, introducing new requirements that build on prior results and call for further exploration and improvement. Using this engine, we construct 1.5K task environments and perform supervised fine-tuning of Qwen3.5-27B on the resulting dataset to obtain TerminalHorizon-27B. We achieve substantial performance gains on all 12 benchmarks spanning coding-agent tasks, agentic tasks in real-world production settings, and general reasoning. Multiple RSI case studies, each with a 12-hour research budget, further demonstrate the model's ability to continue experimenting beyond an initial solution, improve its methods based on feedback, and retain effective improvements in its final deliverables.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.11765",
-        "external_id": "2610.11765"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.11765",
-        "external_id": "2610.11765"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/thinking-inertia/code",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Dianqiao Lei",
-      "Kevin Qinghong Lin",
-      "Pan Lu",
-      "Philip Torr",
-      "James Zou"
-    ],
-    "published_at": "2026-10-08T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836446Z",
-    "dedup_keys": [
-      "arxiv:2610.11765",
-      "title:inertia keep llms not thinking thinking told when",
-      "github:thinking-inertia/code"
-    ],
-    "signals": {
-      "hf_upvotes": 18,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 30.38,
-    "score_breakdown": {
-      "hf_upvotes": 23.556,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -7.949
-    }
-  },
-  {
-    "id": "75e7d78a9e0992fe",
-    "kind": "paper",
-    "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
-    "summary_en": "As the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users' own workflows. This delegation carries a quiet assumption, that the delivered agent will faithfully serve the requirement it was built for, rather than merely appear to. No existing benchmark tests that assumption. We introduce AgentSWE, a benchmark for agent software engineering spanning three stages of the agent development lifecycle: Creation of a complete agent from a natural-language requirement, Editing of production agent codebases, and Optimization toward a measurable target. Each of its 25 tasks is framed as a commission rather than an exam: the builder iterates against a handful of illustrative cases, while acceptance exercises the frozen submission on held-out cases designed to span the full requirement, grading behavior against requirement-derived rubrics under hard pass/fail gates or, for Optimization, against the source benchmark's own objective. Evaluating a range of coding agents across models and harnesses, we find that none comes close to delivering what a requirement asks for: the gap between what a builder demonstrates and what it delivers is the norm, not the corner case. An accompanying empirical analysis of the failure trajectories identifies recurring failure modes, among them overfitting to the visible cases, hollow runtimes behind code that looks complete, and unsupported claims of completion, each a signal by which coding agents can learn to build the agents they are asked for.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
       "agent",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.13361",
-        "external_id": "2610.13361"
+        "url": "https://huggingface.co/papers/2610.13166",
+        "external_id": "2610.13166"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.13361",
-        "external_id": "2610.13361"
+        "url": "https://arxiv.org/abs/2610.13166",
+        "external_id": "2610.13166"
       }
     ],
     "actors": [
-      "Jiahao Wang",
-      "Hongjin Qian",
-      "Yuyang Hu",
-      "Jiajun Zhang",
-      "Zheng Liu"
+      "Shun Zou",
+      "Ziyu Ma",
+      "Yi Zou",
+      "Yong Wang",
+      "Lin Chen",
+      "Zehui Chen",
+      "Guanhua Chen",
+      "Xiangxiang Chu",
+      "Feng Zhao"
     ],
     "published_at": "2026-10-09T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836362Z",
+    "first_seen_at": "2026-10-13T19:35:25.229233Z",
     "dedup_keys": [
-      "arxiv:2610.13361",
-      "title:actually agent agents agentswe build can coding the want you"
+      "arxiv:2610.13166",
+      "title:agentic data for horizon intelligence long scaling terminal"
     ],
     "signals": {
-      "hf_upvotes": 30,
+      "hf_upvotes": 132,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -394,12 +376,208 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 30.023,
+    "score": 40.899,
     "score_breakdown": {
-      "hf_upvotes": 27.472,
+      "hf_upvotes": 39.123,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -6.449
+      "age_decay": -7.224
+    }
+  },
+  {
+    "id": "821fb3a2dd7c0f10",
+    "kind": "paper",
+    "title": "Multi-Stream Attention Residuals",
+    "summary_en": "Attention Residuals (AttnRes) enables content-dependent retrieval over network depth, which can be viewed as single-stream softmax attention along the depth axis. Inspired by the success of multi-head attention along the sequence axis, we introduce Multi-Stream Attention Residuals (MSAR), an extension of AttnRes that generalizes this mechanism to multi-head depth attention, yielding substantial performance gains with minimal additional overhead. MSAR draws stream diversity from sequence context through multi-scale causal convolutions, allowing different heads to retrieve historical representations through distinct contextual views while preserving the integrity of the hidden representation. The retrieved streams are combined through lightweight adaptive mixing to generate the single-stream layer input. By retaining single-stream sources and expanding them on demand, MSAR supports multi-stream computation without requiring persistent multi-stream storage or communication. Across all 12 downstream benchmarks at the 18B and 28B MoE scales, MSAR consistently outperforms prior residual variants, including standard residual connections, manifold-constrained Hyper-Connections (mHC), and AttnRes. Scaling-law experiments yield an iso-loss compute speedup of 1.58times over the standard residual baseline, compared with 1.35times for AttnRes and 1.30times for mHC. These results make MSAR a promising residual architecture for large-scale pre-training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.13630",
+        "external_id": "2610.13630"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.13630",
+        "external_id": "2610.13630"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/jianke0604/MSAR",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xiaohan Qin",
+      "Xiangdong Zhang",
+      "Tuo Dai",
+      "Sunan Zou",
+      "Huaijin Wu",
+      "Yebin Yang",
+      "Zhuo Xia",
+      "Lin Yao",
+      "Yuliang Liu",
+      "Junchi Yan"
+    ],
+    "published_at": "2026-10-09T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229280Z",
+    "dedup_keys": [
+      "arxiv:2610.13630",
+      "title:attention multi residuals stream",
+      "github:jianke0604/msar"
+    ],
+    "signals": {
+      "hf_upvotes": 34,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 26,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.811,
+    "score_breakdown": {
+      "hf_upvotes": 28.443,
+      "github_stars": 6.592,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.224
+    }
+  },
+  {
+    "id": "d96e033dfa160096",
+    "kind": "paper",
+    "title": "VIS-Ground: Video Interactive Storytelling with Contextual Grounding",
+    "summary_en": "Video interactive storytelling enables viewers to actively steer how a video unfolds. However, once we allow viewers to intervene during generation, a new challenge arises: The viewer's request can have latent dependencies on both the grounding source and the current rendered video state. These dependencies may not be explicitly stated in any individual input, but emerge only when the source, rendered history, and new viewer intent are considered jointly. Existing interactive video generation systems primarily emphasize following viewer instructions, while source-grounded video generation methods focus on aligning generated content with an external narrative or knowledge source. This leaves a fundamental question underexplored: What context should a generation model ground on during interactive continuation, and how can heterogeneous, unstructured inputs be transformed into such grounding context? In this work, we formulate contextual grounding as the process of transforming heterogeneous input context into an executable constraint model for video generation. To address this challenge, we introduce VIS-Ground, which performs Structured Context Abstraction to recover grounded states and cross-context dependencies, Generation Constraints Induction to project relevant dependencies into candidate-specific constraints, and Constrained Video Generation to enforce these constraints through planning, verification, revision, and rendering. Across three video generation backbones, VIS-Ground consistently achieves the highest overall composite score, reaching an average absolute improvement of 10.3 points over the strongest per-backbone baselines. Detailed analysis further shows gains across both narrative and knowledge grounding, and reveals remaining challenges in dependency extraction, and faithful realization during video rendering.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.09326",
+        "external_id": "2610.09326"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.09326",
+        "external_id": "2610.09326"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/vis-ground/code",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Bingxuan Li",
+      "Yiwen Song",
+      "Xueqing Wu",
+      "Yanzhou Pan",
+      "Yang Li",
+      "Kuang Su",
+      "Jingyun Liu",
+      "Sebastian Ko",
+      "Huan Zhang",
+      "Tong Zhang",
+      "Nanyun Peng",
+      "Tomas Pfister",
+      "Yale Song"
+    ],
+    "published_at": "2026-10-07T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229249Z",
+    "dedup_keys": [
+      "arxiv:2610.09326",
+      "title:contextual ground grounding interactive storytelling video vis with",
+      "github:vis-ground/code"
+    ],
+    "signals": {
+      "hf_upvotes": 75,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 36.422,
+    "score_breakdown": {
+      "hf_upvotes": 34.646,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -10.224
+    }
+  },
+  {
+    "id": "f4fd33e5e1476bb2",
+    "kind": "release",
+    "title": "Higgsfield takes AI video from 1 minute to over 10",
+    "summary_en": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-13T12:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.484088Z",
+    "dedup_keys": [
+      "url:openai.com/index/higgsfield-longer-videos-voice",
+      "title:from higgsfield minute over takes video"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.526,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.474
     }
   },
   {
@@ -445,19 +623,19 @@
       "Dahua Lin"
     ],
     "published_at": "2026-10-09T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836500Z",
+    "first_seen_at": "2026-10-13T19:35:25.229319Z",
     "dedup_keys": [
       "arxiv:2610.13832",
       "title:active for internalizing mentalization reasoning spatial spatialasm",
       "github:internlm/spatialasm"
     ],
     "signals": {
-      "hf_upvotes": 14,
+      "hf_upvotes": 16,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 1,
+      "github_stars": 19,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -465,129 +643,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 28.601,
+    "score": 33.433,
     "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "github_stars": 1.386,
+      "hf_upvotes": 22.666,
+      "github_stars": 5.991,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.449
-    }
-  },
-  {
-    "id": "2b251707d4d2276a",
-    "kind": "model",
-    "title": "AxiomicLabs/GPT-X3-150M",
-    "summary_en": "text-generation, transformers, gptx3, GPTX, GDN2, hybrid, math",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/AxiomicLabs/GPT-X3-150M",
-        "external_id": "AxiomicLabs/GPT-X3-150M"
-      }
-    ],
-    "actors": [
-      "AxiomicLabs"
-    ],
-    "published_at": "2026-09-23T02:51:52Z",
-    "first_seen_at": "2026-10-13T07:11:16.834210Z",
-    "dedup_keys": [
-      "hf:axiomiclabs/gpt-x3-150m"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 51,
-      "hf_downloads": 455,
-      "hf_trending_score": 51.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 25.536,
-    "score_breakdown": {
-      "hf_trending": 23.707,
-      "hf_downloads": 12.245,
-      "hf_likes": 11.854,
-      "has_weights": 4.0,
-      "topic_match": 4.0,
-      "age_decay": -30.27
-    }
-  },
-  {
-    "id": "0a6aa7ed235ffb0b",
-    "kind": "paper",
-    "title": "Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method",
-    "summary_en": "Vision-and-Language Navigation (VLN) has largely focused on a single agent following a single instruction, yet many real-world applications require teams of robots to tackle tasks beyond the capabilities of any individual agent. We present Systematic Multi-Agent Vision-and-Language Navigation, providing, to our knowledge, the first systematic formalization of multi-agent VLN as a constrained coordination problem: each mission consists of subtasks carrying dependency and resource constraints (presence locks and holding chains). A verified four-stage crafting pipeline instantiates the task as MAVLN, comprising 11,724 episodes across 145 scenes with teams of up to four agents under three instruction regimes, accompanied by tailored constraint-aware metrics. We further present TRISS, a coordination-ready navigation system coupling an LLM-based subtask scheduler, a shared topological memory that turns each agent's exploration into team knowledge, and a conflict-aware execution mechanism that realizes simultaneous intentions as collision-free routes. Extensive experiments establish TRISS as a comprehensive baseline and reveal substantial room for improvement across scheduling, planning, and execution, highlighting the challenges of coordinating under MAVLN task constraints. Project page: https://xyz9911.github.io/mavln.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "cv",
-      "robotics",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2609.35965",
-        "external_id": "2609.35965"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2609.35965",
-        "external_id": "2609.35965"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/xyz9911/MA-VLN",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yunzhe Xu",
-      "Zhe Liu"
-    ],
-    "published_at": "2026-10-07T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836525Z",
-    "dedup_keys": [
-      "arxiv:2609.35965",
-      "title:agent and and benchmark formulation language method multi navigation systematic vision",
-      "github:xyz9911/ma-vln"
-    ],
-    "signals": {
-      "hf_upvotes": 9,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 5,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 24.556,
-    "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "github_stars": 3.584,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -9.449
+      "age_decay": -7.224
     }
   },
   {
@@ -647,19 +710,19 @@
       "Shiyu Huang"
     ],
     "published_at": "2026-09-30T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836473Z",
+    "first_seen_at": "2026-10-13T19:35:25.229267Z",
     "dedup_keys": [
       "arxiv:2609.39600",
       "title:decoding flash groundanything grounding parallel precise reconciling speed visual with",
       "github:groundingpi/groundanything"
     ],
     "signals": {
-      "hf_upvotes": 14,
+      "hf_upvotes": 71,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 20,
+      "github_stars": 29,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -667,49 +730,91 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 19.804,
+    "score": 32.291,
     "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "github_stars": 6.089,
+      "hf_upvotes": 34.213,
+      "github_stars": 6.802,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -19.949
+      "age_decay": -20.724
     }
   },
   {
-    "id": "301f231ed9d387e0",
-    "kind": "model",
-    "title": "doofz/THX-01",
-    "summary_en": "text-classification, thx01, decision-model, calibration, reinforcement-learning, proper-scoring-rules, routing",
+    "id": "69fec1a43f4e247d",
+    "kind": "release",
+    "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
+    "summary_en": "Today, NVIDIA is making the full NVIDIA Run:ai platform available as open source software, giving customers, developers, and ecosystem partners access to...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [],
     "links": [
       {
-        "source": "hf_models",
-        "url": "https://huggingface.co/doofz/THX-01",
-        "external_id": "doofz/THX-01"
-      },
-      {
-        "source": "hf_base_model:finetune",
-        "url": "https://huggingface.co/jhu-clsp/mmBERT-base",
-        "external_id": "jhu-clsp/mmBERT-base"
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
+        "external_id": null
       }
     ],
     "actors": [
-      "doofz"
+      "nvidia"
     ],
-    "published_at": "2026-09-23T12:59:53Z",
-    "first_seen_at": "2026-10-13T07:11:16.834234Z",
+    "published_at": "2026-10-13T14:19:40Z",
+    "first_seen_at": "2026-10-13T19:35:26.557492Z",
     "dedup_keys": [
-      "hf:doofz/thx-01"
+      "url:developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform",
+      "title:dsx factory now nvidia nvidia open part platform run source"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 51,
-      "hf_downloads": 138,
-      "hf_trending_score": 51.0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.671,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.329
+    }
+  },
+  {
+    "id": "2b251707d4d2276a",
+    "kind": "model",
+    "title": "AxiomicLabs/GPT-X3-150M",
+    "summary_en": "text-generation, transformers, gptx3, GPTX, GDN2, hybrid, math",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/AxiomicLabs/GPT-X3-150M",
+        "external_id": "AxiomicLabs/GPT-X3-150M"
+      }
+    ],
+    "actors": [
+      "AxiomicLabs"
+    ],
+    "published_at": "2026-09-23T02:51:52Z",
+    "first_seen_at": "2026-10-13T19:35:25.217088Z",
+    "dedup_keys": [
+      "hf:axiomiclabs/gpt-x3-150m"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 53,
+      "hf_downloads": 677,
+      "hf_trending_score": 52.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -719,78 +824,14 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 19.793,
+    "score": 25.782,
     "score_breakdown": {
-      "hf_trending": 23.707,
-      "hf_downloads": 9.869,
-      "hf_likes": 11.854,
+      "hf_trending": 23.822,
+      "hf_downloads": 13.038,
+      "hf_likes": 11.967,
       "has_weights": 4.0,
-      "age_decay": -29.637
-    }
-  },
-  {
-    "id": "8f9a65c5140723bc",
-    "kind": "paper",
-    "title": "ARCS: Towards Precise Text-to-SQL via Structured Disambiguation",
-    "summary_en": "As text-to-SQL systems move beyond demonstrations toward real-world deployment, ambiguity in user questions becomes a primary source of errors. Such ambiguities are often subtle, domain- or data-specific, and can silently cause system outputs to deviate from the user's true intent. Ambiguity is traditionally addressed through conversational clarification, which is often inefficient, cognitively demanding, and poorly aligned with real-world user workflows. We propose structured disambiguation, a new paradigm in which ambiguity is resolved through explicit, constrained interactions rather than free-form dialogue. We construct ARCS (Ambiguity Resolution Corpus for SQL), the first text-to-SQL benchmark featuring naturally occurring, unconstrained ambiguities over real-world databases, with complete annotations of all valid ambiguity points, interpretations, and SQL queries. Experimental results show that text-to-SQL remains challenging in the presence of ambiguity: gpt-6-sol achieves only 51% end-to-end execution accuracy, and no open-source model exceeds 27%.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.09396",
-        "external_id": "2610.09396"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.09396",
-        "external_id": "2610.09396"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/megagonlabs/tabulaflow",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yihao Hu",
-      "Yanlin Feng",
-      "Naoki Otani",
-      "Nikita Bhutani"
-    ],
-    "published_at": "2026-10-07T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836571Z",
-    "dedup_keys": [
-      "arxiv:2610.09396",
-      "title:arcs disambiguation precise sql structured text towards via",
-      "github:megagonlabs/tabulaflow"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 5,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 17.225,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "github_stars": 3.584,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -9.449
+      "age_decay": -31.045
     }
   },
   {
@@ -832,19 +873,19 @@
       "Soujanya Poria"
     ],
     "published_at": "2026-10-09T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836597Z",
+    "first_seen_at": "2026-10-13T19:35:25.229374Z",
     "dedup_keys": [
       "arxiv:2610.12933",
       "title:contraction efficient for guided learning less more post progressive reasoning training training uncertainty",
       "github:jackbrocp/learning-more-by-training-less"
     ],
     "signals": {
-      "hf_upvotes": 2,
+      "hf_upvotes": 7,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 3,
+      "github_stars": 5,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -852,14 +893,243 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 17.113,
+    "score": 24.996,
     "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "github_stars": 2.773,
+      "hf_upvotes": 16.636,
+      "github_stars": 3.584,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.449
+      "age_decay": -7.224
+    }
+  },
+  {
+    "id": "0a6aa7ed235ffb0b",
+    "kind": "paper",
+    "title": "Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method",
+    "summary_en": "Vision-and-Language Navigation (VLN) has largely focused on a single agent following a single instruction, yet many real-world applications require teams of robots to tackle tasks beyond the capabilities of any individual agent. We present Systematic Multi-Agent Vision-and-Language Navigation, providing, to our knowledge, the first systematic formalization of multi-agent VLN as a constrained coordination problem: each mission consists of subtasks carrying dependency and resource constraints (presence locks and holding chains). A verified four-stage crafting pipeline instantiates the task as MAVLN, comprising 11,724 episodes across 145 scenes with teams of up to four agents under three instruction regimes, accompanied by tailored constraint-aware metrics. We further present TRISS, a coordination-ready navigation system coupling an LLM-based subtask scheduler, a shared topological memory that turns each agent's exploration into team knowledge, and a conflict-aware execution mechanism that realizes simultaneous intentions as collision-free routes. Extensive experiments establish TRISS as a comprehensive baseline and reveal substantial room for improvement across scheduling, planning, and execution, highlighting the challenges of coordinating under MAVLN task constraints. Project page: https://xyz9911.github.io/mavln.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.35965",
+        "external_id": "2609.35965"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.35965",
+        "external_id": "2609.35965"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/xyz9911/MA-VLN",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yunzhe Xu",
+      "Zhe Liu"
+    ],
+    "published_at": "2026-10-07T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229346Z",
+    "dedup_keys": [
+      "arxiv:2609.35965",
+      "title:agent and and benchmark formulation language method multi navigation systematic vision",
+      "github:xyz9911/ma-vln"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 24.543,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -10.224
+    }
+  },
+  {
+    "id": "6594a037a25b040e",
+    "kind": "release",
+    "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-10-13T17:05:48Z",
+    "first_seen_at": "2026-10-13T19:35:26.174629Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/liquidai/lfm25-24b-a2b",
+      "title:24b a2b agents device fast lfm2 private run with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 23.844,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "topic_match": 4.0,
+      "age_decay": -0.156
+    }
+  },
+  {
+    "id": "8f9a65c5140723bc",
+    "kind": "paper",
+    "title": "ARCS: Towards Precise Text-to-SQL via Structured Disambiguation",
+    "summary_en": "As text-to-SQL systems move beyond demonstrations toward real-world deployment, ambiguity in user questions becomes a primary source of errors. Such ambiguities are often subtle, domain- or data-specific, and can silently cause system outputs to deviate from the user's true intent. Ambiguity is traditionally addressed through conversational clarification, which is often inefficient, cognitively demanding, and poorly aligned with real-world user workflows. We propose structured disambiguation, a new paradigm in which ambiguity is resolved through explicit, constrained interactions rather than free-form dialogue. We construct ARCS (Ambiguity Resolution Corpus for SQL), the first text-to-SQL benchmark featuring naturally occurring, unconstrained ambiguities over real-world databases, with complete annotations of all valid ambiguity points, interpretations, and SQL queries. Experimental results show that text-to-SQL remains challenging in the presence of ambiguity: gpt-6-sol achieves only 51% end-to-end execution accuracy, and no open-source model exceeds 27%.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.09396",
+        "external_id": "2610.09396"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.09396",
+        "external_id": "2610.09396"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/megagonlabs/tabulaflow",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yihao Hu",
+      "Yanlin Feng",
+      "Naoki Otani",
+      "Nikita Bhutani"
+    ],
+    "published_at": "2026-10-07T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229357Z",
+    "dedup_keys": [
+      "arxiv:2610.09396",
+      "title:arcs disambiguation precise sql structured text towards via",
+      "github:megagonlabs/tabulaflow"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 22.938,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -10.224
+    }
+  },
+  {
+    "id": "301f231ed9d387e0",
+    "kind": "model",
+    "title": "doofz/THX-01",
+    "summary_en": "text-classification, thx01, decision-model, calibration, reinforcement-learning, proper-scoring-rules, routing",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/doofz/THX-01",
+        "external_id": "doofz/THX-01"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/jhu-clsp/mmBERT-base",
+        "external_id": "jhu-clsp/mmBERT-base"
+      }
+    ],
+    "actors": [
+      "doofz"
+    ],
+    "published_at": "2026-09-23T12:59:53Z",
+    "first_seen_at": "2026-10-13T19:35:25.217047Z",
+    "dedup_keys": [
+      "hf:doofz/thx-01"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 57,
+      "hf_downloads": 249,
+      "hf_trending_score": 57.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 21.175,
+    "score_breakdown": {
+      "hf_trending": 24.363,
+      "hf_downloads": 11.043,
+      "hf_likes": 12.181,
+      "has_weights": 4.0,
+      "age_decay": -30.412
     }
   },
   {
@@ -899,14 +1169,14 @@
       "Wei Yang Bryan Lim"
     ],
     "published_at": "2026-09-27T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836420Z",
+    "first_seen_at": "2026-10-13T19:35:25.229293Z",
     "dedup_keys": [
       "arxiv:2609.33304",
       "title:activation agents applicability does experience for gui imply not personal relevance",
       "github:fyzhang1/expactivator"
     ],
     "signals": {
-      "hf_upvotes": 20,
+      "hf_upvotes": 29,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -919,14 +1189,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 15.126,
+    "score": 17.205,
     "score_breakdown": {
-      "hf_upvotes": 24.356,
+      "hf_upvotes": 27.21,
       "github_stars": 3.219,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -24.449
+      "age_decay": -25.224
     }
   },
   {
@@ -969,14 +1239,84 @@
       "Eiichi Matsumoto"
     ],
     "published_at": "2026-10-02T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836549Z",
+    "first_seen_at": "2026-10-13T19:35:25.229332Z",
     "dedup_keys": [
       "arxiv:2610.03308",
       "title:arbitrary fidelity from generative high images reconstruction resolution surface t3lescope",
       "github:pfnet-research/t3lescope"
     ],
     "signals": {
-      "hf_upvotes": 7,
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 16.678,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -17.724
+    }
+  },
+  {
+    "id": "c40f9de0508b24b5",
+    "kind": "paper",
+    "title": "CrossTimeEdit: A Decade-Spanning Cross-View Dataset and Reward-Guided Editing for Historical Street-View Generation",
+    "summary_en": "Historical street-view imagery records urban evolution, but uneven coverage leaves substantial gaps in historical records. Generating plausible past appearances requires restoring changed structures while preserving persistent scene content. We construct VIGOR-his, a decade-spanning cross-view dataset containing 43,653 location-level quadruplets across 11 cities on three continents. Its automated pipeline performs spatial pairing, consistency screening, change classification, and the generation and validation of satellite-based change descriptions and local editing instructions. Based on VIGOR-his, we propose CrossTimeEdit, a model that reformulates historical street-view generation as editing, using recent street views to constrain viewpoint and unchanged appearance and temporal satellite differences as change evidence. Starting from FLUX.2 [Klein] 4B, we train CrossTimeEdit through supervised fine-tuning (SFT) followed by online reinforcement learning (RL). We design three street-view editing criteria, namely Instruction Alignment (IA), Background Preservation (BP), and Quality and Physical Plausibility (QP), as both RL reward dimensions and evaluation metrics. We optimize this multi-reward objective using Within Group Relative Policy Optimization for flow-matching models (Flow-GRPO) with Group reward-Decoupled Normalization Policy Optimization (GDPO), which normalizes each reward dimension before aggregation. CrossTimeEdit improves overall performance across the three editing criteria by 17.12\\% over the pretrained baseline and outperforms cross-view generation models in scene consistency, visual realism, and perceptual quality. The implementation code, dataset, and model weights are available at https://luhanwen67.github.io/CrossTimeEdit-release/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2609.36616",
+        "external_id": "2609.36616"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2609.36616",
+        "external_id": "2609.36616"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/LuHanwen67/CrossTimeEdit-release",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hanwen Lu",
+      "Jun He",
+      "Mingjia Yang",
+      "Hao Wei",
+      "Jinhao Huang",
+      "Yi Lin",
+      "Xiang Zhang"
+    ],
+    "published_at": "2026-09-29T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229306Z",
+    "dedup_keys": [
+      "arxiv:2609.36616",
+      "title:and cross crosstimeedit dataset decade editing for generation guided historical reward spanning street view view",
+      "github:luhanwen67/crosstimeedit-release"
+    ],
+    "signals": {
+      "hf_upvotes": 20,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -989,69 +1329,200 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 13.884,
+    "score": 16.329,
     "score_breakdown": {
-      "hf_upvotes": 16.636,
+      "hf_upvotes": 24.356,
       "github_stars": 2.197,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -16.949
+      "age_decay": -22.224
     }
   },
   {
-    "id": "d96e033dfa160096",
+    "id": "b7a96c4095b4d22f",
     "kind": "paper",
-    "title": "VIS-Ground: Video Interactive Storytelling with Contextual Grounding",
-    "summary_en": "Video interactive storytelling enables viewers to actively steer how a video unfolds. However, once we allow viewers to intervene during generation, a new challenge arises: The viewer's request can have latent dependencies on both the grounding source and the current rendered video state. These dependencies may not be explicitly stated in any individual input, but emerge only when the source, rendered history, and new viewer intent are considered jointly. Existing interactive video generation systems primarily emphasize following viewer instructions, while source-grounded video generation methods focus on aligning generated content with an external narrative or knowledge source. This leaves a fundamental question underexplored: What context should a generation model ground on during interactive continuation, and how can heterogeneous, unstructured inputs be transformed into such grounding context? In this work, we formulate contextual grounding as the process of transforming heterogeneous input context into an executable constraint model for video generation. To address this challenge, we introduce VIS-Ground, which performs Structured Context Abstraction to recover grounded states and cross-context dependencies, Generation Constraints Induction to project relevant dependencies into candidate-specific constraints, and Constrained Video Generation to enforce these constraints through planning, verification, revision, and rendering. Across three video generation backbones, VIS-Ground consistently achieves the highest overall composite score, reaching an average absolute improvement of 10.3 points over the strongest per-backbone baselines. Detailed analysis further shows gains across both narrative and knowledge grounding, and reveals remaining challenges in dependency extraction, and faithful realization during video rendering.",
+    "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+    "summary_en": "World action models (WAMs) aim to answer a coupled physical question: given a task instruction, what motion should the robot execute, and how will that motion change the surrounding world? Most existing WAMs build on pretrained video generators and represent world evolution through images or visual latents. Robotic interaction, however, takes place in metric three-dimensional space, while images are view-dependent projections whose pixel distances do not directly encode physical distances. We introduce UNITAS, to our knowledge the first 3D-native world action model that unifies observations, actions, and scene dynamics in a shared metric 3D frame within each interaction, using a common representation across robot embodiments and human hands. Action flow represents human hands and robot grippers as 3D point trajectories, while scene flow describes scene-point displacements conditioned on these trajectories. World-aligned 3D positional embeddings ground visual tokens with or without depth input, and a physical-time trajectory tokenizer encodes each point trajectory as one token anchored at its current 3D position. This interface supports both direct action execution and action-conditioned scene prediction. With 1.7B parameters, UNITAS achieves the best action-conditioned scene prediction on RoboTwin among the compared methods, with up to 49% lower displacement errors than PointWorld, and state-of-the-art manipulation success, including 99.8% on LIBERO and an average of 85% across real-world tasks. The code is available at https://github.com/DexForce/UNITAS.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.12099",
+        "external_id": "2610.12099"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.12099",
+        "external_id": "2610.12099"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/DexForce/UNITAS",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ruixiang Wang",
+      "Yongyi Su",
+      "Wenlve Zhou",
+      "Bo Yue",
+      "Hengyan Liu",
+      "Dekun Lu",
+      "Yuxin Tian",
+      "Yihan Fang",
+      "Zerui Wu",
+      "Xing Hu",
+      "Jietao Chen",
+      "Yong Guo",
+      "Ziyan He",
+      "Junbin Yuan",
+      "Guiliang Liu",
+      "Xiaofen Xing",
+      "Kui Jia"
+    ],
+    "published_at": "2026-10-08T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229454Z",
+    "dedup_keys": [
+      "arxiv:2610.12099",
+      "title:action embodied for manipulation model native unitas world",
+      "github:dexforce/unitas"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 37,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 16.096,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 7.275,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.724
+    }
+  },
+  {
+    "id": "73b1a68cec0d59ea",
+    "kind": "paper",
+    "title": "Branching On-Policy Distillation",
+    "summary_en": "On-policy distillation (OPD) provides teacher supervision on student-generated trajectories, but a single trajectory realizes only one continuation at each decision, limiting supervision coverage under a finite sampling budget. We propose BranchOPD (Branching On-Policy Distillation), which selects informative decision points using student uncertainty and teacher-student disagreement, resamples student-policy continuations from shared prefixes, and applies token-level teacher supervision to both main trajectories and branches. BranchOPD operates at token-level decisions in mathematics and within-turn decisions in agent tasks. Shared-prefix reuse reduces student-generated token costs by approximately 19% on ALFWorld and 31% on WebShop relative to seven independent trajectories. We also introduce protocol-boundary repair (PBR), which uses targeted supervision under protocol constraints to mitigate repetition and wasted generation. BranchOPD outperforms Vanilla OPD and Multi-Rollout OPD (n=7) across all evaluated benchmarks, with gains over Vanilla OPD of 18.55 percentage points in mean mathematics accuracy over 16 sampled answers (avg@16) and 13.8 points in mean ALFWorld ID/OOD success. Mechanistic analyses and selection ablations show that branching at uncertain decisions expands subsequent behavior coverage and outperforms random selection and turn-initial branching.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "agent",
       "rag",
-      "cv"
+      "cv",
+      "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.09326",
-        "external_id": "2610.09326"
+        "url": "https://huggingface.co/papers/2610.13481",
+        "external_id": "2610.13481"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.09326",
-        "external_id": "2610.09326"
+        "url": "https://arxiv.org/abs/2610.13481",
+        "external_id": "2610.13481"
+      }
+    ],
+    "actors": [
+      "Dongyang Chen",
+      "Shudong Liu",
+      "Shubo Li",
+      "Duoxun Tang",
+      "Jinwei Liang",
+      "Zehuan Wu",
+      "Lewei Lu"
+    ],
+    "published_at": "2026-10-09T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229395Z",
+    "dedup_keys": [
+      "arxiv:2610.13481",
+      "title:branching distillation policy"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 14.652,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -7.224
+    }
+  },
+  {
+    "id": "f3a089b7c14541fd",
+    "kind": "paper",
+    "title": "Evaluating LLM Creativity through Long-Tail Performance",
+    "summary_en": "Creativity benchmarks for large language models (LLMs) vary widely in task and metric design. This raises the question of whether they capture a common notion of creativity. We propose that this shared target can be formalized as task-specific performance in the long tail of a reference input-output distribution, which describes how common input-output pairs are relative to a chosen source of text. We ground this proposition in the novelty-quality product formulation and evaluate it empirically across 15 benchmarks and 26 open-weight models, using n-gram absence from the pretraining data as a novelty proxy. Our results show that creativity benchmarks lie further in the tail regions than standard benchmarks. Moreover, on both creativity and standard benchmarks, model rankings from higher-tail subsets of each benchmark align more closely with human creativity judgments in LM-Arena. Building on these findings, we introduce q@Tail(α), a lower-cost creativity diagnostic that measures mean task quality on the tail fraction of an existing benchmark. Applying it to creativity-promoting methods reveals substantial room to improve LLM creativity through stronger tail performance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.12998",
+        "external_id": "2610.12998"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.12998",
+        "external_id": "2610.12998"
       },
       {
         "source": "github",
-        "url": "https://github.com/vis-ground/code",
+        "url": "https://github.com/YichenZW/longtail-creativity",
         "external_id": null
       }
     ],
     "actors": [
-      "Bingxuan Li",
-      "Yiwen Song",
-      "Xueqing Wu",
-      "Yanzhou Pan",
-      "Yang Li",
-      "Kuang Su",
-      "Jingyun Liu",
-      "Sebastian Ko",
-      "Huan Zhang",
-      "Tong Zhang",
-      "Nanyun Peng",
-      "Tomas Pfister",
-      "Yale Song"
+      "Yichen Wang",
+      "Tenghao Huang",
+      "Vishakh Padmakumar",
+      "Mina Lee"
     ],
-    "published_at": "2026-10-07T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836625Z",
+    "published_at": "2026-10-09T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229429Z",
     "dedup_keys": [
-      "arxiv:2610.09326",
-      "title:contextual ground grounding interactive storytelling video vis with",
-      "github:vis-ground/code"
+      "arxiv:2610.12998",
+      "title:creativity evaluating llm long performance tail through",
+      "github:yichenzw/longtail-creativity"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 2,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1064,13 +1535,13 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 8.096,
+    "score": 13.565,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 8.789,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -9.449
+      "age_decay": -7.224
     }
   },
   {
@@ -1109,7 +1580,7 @@
       "Manmohan Chandraker"
     ],
     "published_at": "2026-10-06T00:00:00Z",
-    "first_seen_at": "2026-10-13T07:11:16.836647Z",
+    "first_seen_at": "2026-10-13T19:35:25.229470Z",
     "dedup_keys": [
       "arxiv:2610.09116",
       "title:3dgs and code discover from ideas innovate papers reproduce splatify trainable",
@@ -1129,14 +1600,256 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 7.982,
+    "score": 7.207,
     "score_breakdown": {
       "hf_upvotes": 5.545,
       "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -10.949
+      "age_decay": -11.724
+    }
+  },
+  {
+    "id": "d629b0862ff40ac2",
+    "kind": "paper",
+    "title": "Initialization Improves LLM-Driven Discovery",
+    "summary_en": "Large Language Models (LLMs) have been used for novel discovery of algorithms, theorems, drugs, and other tasks through the use of harnesses that prompt an LLM to iteratively optimize an objective. In this work, we study the relationship between the population of previous iterates and eventual discovery success. We generalize past work on harness design to develop a suite of 12 harnesses called 'Modular' and characterize their performance across 5 diverse discovery tasks, finding that discovery success is brittle and sensitive to harness design. We uncover mode collapse, characterized by a dramatic drop in the diversity of iterates, as a common failure mode. We find that popular state-of-the-art harnesses and diversity-inducing harness interventions, which aim to prolong this collapse, yield inconsistent gains. Our results instead uncover that the performance of early discoveries is predictive of eventual success. We therefore propose a universally applicable intervention that performs an initial stage of parallel exploration in order to initialize subsequent iterative optimization. Our method provides consistent gains across many harnesses and target applications, confirming the importance of initialization in LLM-driven discovery.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.00707",
+        "external_id": "2610.00707"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.00707",
+        "external_id": "2610.00707"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/msakarvadia/llm_optimizer",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Mansi Sakarvadia",
+      "Marco Ciccone",
+      "Colin Raffel"
+    ],
+    "published_at": "2026-09-30T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229386Z",
+    "dedup_keys": [
+      "arxiv:2610.00707",
+      "title:discovery driven improves initialization llm",
+      "github:msakarvadia/llm_optimizer"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 5.538,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -20.724
+    }
+  },
+  {
+    "id": "c956099c1529504e",
+    "kind": "paper",
+    "title": "Visual Grounding Safety in Vision-Language Models",
+    "summary_en": "Vision-language models (VLMs) are increasingly trained to generate structured outputs like points and bounding boxes that downstream interfaces, agents, and robots can act on, yet safety alignment of this output channel has not been systematically analyzed. We study visual grounding safety by repurposing three safety benchmarks spanning direct harm (VLSU), social bias (BBQ-V), and situational safety (Asimov-2.0) into 15,401 matched pairs of harmful requests that differ only in the requested output: a free-text answer (VQA) or a grounding (point or bounding box). Across five VLMs, models that refuse a harmful request posed as a question often comply when the same request asks for a grounding: averaged over models, grounding refusal trails VQA refusal by 31-59 percentage points, depending on the domain, and safety system prompts do not close this gap. We propose a fine-tuning approach that combines grounding-form refusals with capability grounding data and self-distilled benign data to counter over-refusal. For Qwen3-VL-8B and VisionReasoner-7B, it improves grounding refusal by 77-95 percentage points on VLSU and BBQ-V and by 64-85 points on the held-out Asimov-2.0 domain, while also improving VQA refusal, preserving grounding capability, and keeping over-refusal limited. Representation analysis shows that fine-tuning moves harmful requests toward each model's refusal direction, most strongly for grounding, while leaving benign requests near the harmless reference.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.05637",
+        "external_id": "2610.05637"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.05637",
+        "external_id": "2610.05637"
+      }
+    ],
+    "actors": [
+      "Erfan Shayegani",
+      "Kundan Krishna",
+      "Yue Dong",
+      "Nael Abu-Ghazaleh",
+      "Leon Gatys",
+      "Shruti Palaskar"
+    ],
+    "published_at": "2026-10-05T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229405Z",
+    "dedup_keys": [
+      "arxiv:2610.05637",
+      "title:grounding language models safety vision visual"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 4.565,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -13.224
+    }
+  },
+  {
+    "id": "b2a6ff636f352c1c",
+    "kind": "paper",
+    "title": "Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps",
+    "summary_en": "Reinforcement learning for long-horizon agents relies on purely retrospective training signals: credit is assigned only after observing environmental consequences, leaving the agent's belief at action time invisible to the gradient. We introduce Prospective Hindsight (PH), a self-calibrating training principle that augments any retrospective base method with a signal derived from the gap between the agent's prospective prediction (before feedback) and the retrospective evaluation (after feedback). This per-rollout surprise identifies samples where the agent's self-model is most inaccurate and amplifies their gradient contribution through a stop-gradient surprise-weighted advantage. Since the prospective predictor shares parameters with the policy, the two co-evolve, progressively shifting focus to the agent's remaining blind spots. We connect this principle to a privileged-information gap and show that minimizing the surprise residual provides a descent pathway on the agent's miscalibration rate; calibration thus emerges as a byproduct of optimization rather than from an added objective. On single-turn verifiable tasks and a multi-turn personal-agent task (under GRPO, on-policy distillation, and their combination), PH improves both task performance and calibration, with consistent gains across model scales. Notably, the dominant miscalibration mode shifts structurally between regimes, overconfident failures in single-turn, underconfident successes in multi-turn, yet the same training principle addresses both successfully.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.02740",
+        "external_id": "2610.02740"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.02740",
+        "external_id": "2610.02740"
+      }
+    ],
+    "actors": [
+      "Jiaxin Zhang",
+      "Xiangyu Peng",
+      "Qinglin Chen",
+      "Yu Li",
+      "Hiroaki Hayashi",
+      "Chien-Sheng Wu"
+    ],
+    "published_at": "2026-10-02T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229417Z",
+    "dedup_keys": [
+      "arxiv:2610.02740",
+      "title:calibrating gaps hindsight learning prediction prospective reality reinforcement self via"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 0.065,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -17.724
+    }
+  },
+  {
+    "id": "f351d85045a267d9",
+    "kind": "paper",
+    "title": "Same Output, Different Gold: Measuring How Reference Choice Moves a Multilingual Benchmark Score",
+    "summary_en": "A benchmark score compares a system output against a reference, and methodological attention falls almost entirely on the first term. We measure the second. The retained annotation record of a six-language benchmark for personally identifiable information contains two independent annotator labellings, the aggregate shipped as gold, and a reviewer gold from independent expert re-annotation of a sample. Using it, we hold the scored output fixed and exchange the reference. The score moves by 4.95 F1 points for one output and 2.00 for the other (95% CIs [3.23, 6.27] and [0.26, 3.37]), and by 7.55 in the worst language. The comparison between two outputs moves as well: the paired interaction between reference and system is +2.95 points (CI [+1.97, +3.87]), survives correction for multiple testing, and changes one language's margin outright. The cause is an undocumented aggregation default that usually kept one annotator when adjudication did not fire, making the shipped reference a partial copy of an output being scored. We report the resulting reference-sensitivity band, show how to compute one from any retained annotation record, and argue that the quantity belongs beside the score.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.03825",
+        "external_id": "2610.03825"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.03825",
+        "external_id": "2610.03825"
+      }
+    ],
+    "actors": [
+      "Parth Kulshreshtha",
+      "Shivali Dalmia",
+      "Abhishek Mukherji"
+    ],
+    "published_at": "2026-10-02T00:00:00Z",
+    "first_seen_at": "2026-10-13T19:35:25.229441Z",
+    "dedup_keys": [
+      "arxiv:2610.03825",
+      "title:benchmark choice different gold how measuring moves multilingual output reference same score"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": -3.935,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "age_decay": -17.724
     }
   }
 ]
