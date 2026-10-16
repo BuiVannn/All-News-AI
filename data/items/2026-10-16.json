@@ -1,0 +1,1997 @@
+[
+  {
+    "id": "31f9cc15d0f07e40",
+    "kind": "paper",
+    "title": "OmniCompass: A Holistic Benchmark for Omni-Modal Video Grounding and Understanding",
+    "summary_en": "With the rapid development of multimodal large language models (MLLMs), evaluating their video understanding capabilities has become increasingly important. Existing video understanding benchmarks cover only part of the evaluation dimensions, limiting systematic diagnosis of omni-modal video understanding. We introduce OmniCompass, a holistic benchmark for omni-modal video grounding and understanding. OmniCompass defines two evaluation tracks: OmniCompass-VL assesses vision-language models on tasks requiring visual evidence, while OmniCompass-AV assesses omni-modal models on tasks requiring joint audio-visual evidence. Each track includes three complementary tasks: temporal grounding (TG), spatial grounding (SG), and question answering (QA), assessing when a referenced target appears, where it is, and what happens. QA covers five perception and three reasoning categories in OmniCompass-VL, and three perception and two reasoning categories in OmniCompass-AV. OmniCompass-VL contains 820 videos and 2,460 instances across domains and three duration types: short, medium, and long. A narrative- and audio-rich subset forms OmniCompass-AV with 240 videos and 720 instances. Each instance is evaluated under two paired settings: text-only and text+image, specifying the same target through text and visual-language guidance. All instances are manually annotated with multi-round quality verification. Evaluations of 50 MLLMs show that open-source models still lag behind proprietary counterparts, particularly in audio-visual understanding. Precise temporal and spatial grounding remains challenging even for leading models, and their predictions still exhibit inconsistencies across the paired target specifications.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.18829",
+        "external_id": "2610.18829"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.18829",
+        "external_id": "2610.18829"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/PolyU-VCLab/OmniCompass",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xuyang Liu",
+      "Shihao Wang",
+      "Xinyu Wei",
+      "Minghan Li",
+      "Zeqing Wang",
+      "Zuhao Yang",
+      "Zichen Wen",
+      "Lei Zhang"
+    ],
+    "published_at": "2026-10-13T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336545Z",
+    "dedup_keys": [
+      "arxiv:2610.18829",
+      "title:and benchmark for grounding holistic modal omni omnicompass understanding video",
+      "github:polyu-vclab/omnicompass"
+    ],
+    "signals": {
+      "hf_upvotes": 76,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 54,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 49.938,
+    "score_breakdown": {
+      "hf_upvotes": 34.75,
+      "github_stars": 8.015,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.827
+    }
+  },
+  {
+    "id": "9ecaadde5f651b31",
+    "kind": "model",
+    "title": "black-forest-labs/flux-3-image-klein-base",
+    "summary_en": "image-to-image, diffusers, image-generation, image-editing, flux, flux-3, black-forest-labs",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-base",
+        "external_id": "black-forest-labs/flux-3-image-klein-base"
+      }
+    ],
+    "actors": [
+      "black-forest-labs"
+    ],
+    "published_at": "2026-10-13T10:19:46Z",
+    "first_seen_at": "2026-10-16T05:14:12.315176Z",
+    "dedup_keys": [
+      "hf:black-forest-labs/flux-3-image-klein-base"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 73,
+      "hf_downloads": 134,
+      "hf_trending_score": 72.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 48.284,
+    "score_breakdown": {
+      "hf_trending": 25.743,
+      "hf_downloads": 9.811,
+      "hf_likes": 12.912,
+      "has_weights": 4.0,
+      "age_decay": -4.182
+    }
+  },
+  {
+    "id": "7e2138d5a975fd3e",
+    "kind": "paper",
+    "title": "Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling",
+    "summary_en": "Interactive agents repeatedly choose among a finite set of actions, labels, or ordinal outcomes. Generating a free-form response for each choice adds latency and complicates the interface between a model and its environment. We present Intern-Decision, a family of 0.8B, 2B, and 4B multimodal decision models that return structured choices and candidate probabilities from text and optional images. Our autoregressive masked language modeling objective places one decision placeholder per field in a complete assistant JSON skeleton. Ground-truth symbols appear only in supervision, while all fields are evaluated in a single causal forward pass using the backbone's native language-model head. The 4B model achieves a 90.02% unweighted average accuracy across seven evaluation suites, compared with 88.74% for Jev v1.13.0. For a fixed 289-token request with three fields on one RTX 4090, mean latency is 44.16 ms for the 4B model and approximately 33--34 ms for the smaller models. On a separate 96-case known-distribution pilot, temperature scaling reduces expected multiclass Brier from 0.628 to 0.550 and expected calibration error from 0.213 to 0.089. A confidence-based handoff study on 111 public Jevbench-Hard items improves accuracy from 82/111 (73.87%) to 97/111 (87.39%) by routing 42 items to Atria-Dawn-Preview. We also describe qualitative game, visual interface, and browser demonstrations. These results support compact decision models as a practical component of larger agent systems.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22131",
+        "external_id": "2610.22131"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22131",
+        "external_id": "2610.22131"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/InternLM/Intern-Decision",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Tong Zhu",
+      "Zhe Xu",
+      "Zefeng He",
+      "Yunkai Chai",
+      "Xuyang Hu",
+      "Dehong Zheng",
+      "Yun Luo",
+      "Yafu Li",
+      "Qi Zhang",
+      "Yu Cheng"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336965Z",
+    "dedup_keys": [
+      "arxiv:2610.22131",
+      "title:autoregressive decision decision efficient intern language making masked modeling multimodal with",
+      "github:internlm/intern-decision"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 786,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 45.173,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "github_stars": 13.336,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "28b98defd089ad38",
+    "kind": "paper",
+    "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model for Omni-Visual Understanding and Image Generation",
+    "summary_en": "Unified multimodal generation covers discrete, continuous, and hybrid paradigms. Discrete approaches with single-codebook visual tokenizers align naturally with text modeling but have limited representational capacity. Continuous and hybrid approaches retain richer visual representations, but they model text and images in heterogeneous spaces with different training objectives, potentially introducing optimization conflicts between modalities with misaligned representation spaces. These choices expose a central question: how to efficiently model high-capacity visual representations alongside textual content in a shared optimization space within a single backbone. We present Intern Lumina U2, to our knowledge the first diffusion language model to represent multi-codebook visual tokens in a fully discrete space. Each visual position is represented by a group of codes from complementary codebooks, increasing its representational capacity while preserving compatibility with discrete text modeling. At the input, the embeddings are concatenated at each position; at the output, a lightweight multi-codebook autoregressive head predicts the codes within each position sequentially, while the diffusion backbone processes all positions in parallel. Built on the unified 4D representation of AToken, Intern Lumina U2 supports image, video, and 3D inputs within a single backbone and achieves leading performance among unified models in visual understanding, image generation, and image editing. We further build a full-stack training, inference, and evaluation system on both Ascend and NVIDIA platforms to verify the cross-platform effectiveness of our model. We also improve the inference efficiency through a stability-aware sampling strategy, which combines confidence-plateau-guided unmasking approach with drift-triggered cache refreshing mechanisms, accelerating image generation by 4.45x.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.20818",
+        "external_id": "2610.20818"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.20818",
+        "external_id": "2610.20818"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/InternLM/InternLumina-U2",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Qian Yu",
+      "Zongyang Qiu",
+      "Juncheng Yan",
+      "Hongliang Li",
+      "Qi Qin",
+      "Keqi Wang",
+      "Siqi Luo",
+      "Junkui Ju",
+      "Yapeng Mi",
+      "Tiantian Lu",
+      "Tian Liu",
+      "Pengyu Xie",
+      "Chenhao Ji",
+      "Minghui Zhang",
+      "Yiang Zhao",
+      "Siyu Yan",
+      "Haiying Xu",
+      "Yanbo Wang",
+      "Jianghan Shen",
+      "Yuandong Pu",
+      "Jiayi Lei",
+      "Borui Zhang",
+      "Jinxin Shi",
+      "Bo Zhang",
+      "Yuhang Zang",
+      "Shenglong Ye",
+      "Lixin Gu",
+      "Hongjie Zhang",
+      "Linghan Liu",
+      "Xinyuan Chen",
+      "Yuewen Cao",
+      "Lihe Zhang",
+      "Xiaohong Liu",
+      "Junjun He",
+      "Qiangwei Liu",
+      "Qi Zhang",
+      "Yu Cheng",
+      "Tianfan Xue",
+      "Hui Xiong",
+      "Chang Xu",
+      "Yu Qiao",
+      "Yihao Liu",
+      "Bin Fu"
+    ],
+    "published_at": "2026-10-14T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336682Z",
+    "dedup_keys": [
+      "arxiv:2610.20818",
+      "title:and codebook diffusion for generation image intern language large lumina model multi omni understanding visual",
+      "github:internlm/internlumina-u2"
+    ],
+    "signals": {
+      "hf_upvotes": 23,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 68,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.565,
+    "score_breakdown": {
+      "hf_upvotes": 25.424,
+      "github_stars": 8.468,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.327
+    }
+  },
+  {
+    "id": "27edde89bdc01696",
+    "kind": "paper",
+    "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+    "summary_en": "We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of executable 3D code, a coding harness for spatial reasoning and automated verification, and practical guidance for 3D coding. First, we construct 3DCodeVerse-2M, a large-scale curated dataset of standalone 3D executable code. We build this corpus by collecting open-source data, converting specialized representations, and generating new programs with coding agents. Each program is packaged with the source files and associated assets required for execution in its declared environment, along with available descriptions and verification records. Second, we develop the 3DCodeVerse Harness, a multi-agent directed acyclic graph framework for generating and refining 3D content. It uses execution checks, spatial measurements, and visual feedback to automatically evaluate and revise generated programs without human feedback during generation. Third, we conduct systematic empirical studies of 3D coding, establishing baselines with fine-tuned open models and deriving practical guidance through component-level analyses of our harness. Extensive experiments demonstrate that fine-tuning on our dataset significantly improves the 3D coding capabilities of open-source models. Notably, our 3DCodeVerse harness achieves a 90% win rate against Claude Design (3D Object) in pairwise human evaluations, when both are utilized by Claude Opus 5.5.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22341",
+        "external_id": "2610.22341"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22341",
+        "external_id": "2610.22341"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/gaoypeng/3dcodeverse",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yipeng Gao",
+      "Ziyao Zeng",
+      "Jinfa Huang",
+      "Yijiang Li",
+      "Haolin Xiong",
+      "Wang Qin",
+      "Xinlei Yu",
+      "Youheng Yao",
+      "Jie Zhang",
+      "Kun-Yu Lin",
+      "Rong Liu",
+      "Yinyuan Zhao",
+      "Yajie Zhao",
+      "Meiqi Guo",
+      "Jiebo Luo",
+      "Lei Shu",
+      "Yunhao Ge",
+      "Xinyu Hu",
+      "Laurent Itti"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336711Z",
+    "dedup_keys": [
+      "arxiv:2610.22341",
+      "title:3dcodeverse code exploring worlds",
+      "github:gaoypeng/3dcodeverse"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 14,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 40.673,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 5.416,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "30017d22bf5fc95f",
+    "kind": "paper",
+    "title": "Orbia: Do Generated Videos Form a Consistent 3D World?",
+    "summary_en": "Video generators serve as interactive worlds for exploration and simulation, yet realistic and visually appealing frames do not necessarily depict a consistent 3D world. Existing benchmarks assess selected geometric properties or use vision-language models to judge memory and consistency, leaving systematic 3D evaluation underexplored. We introduce Orbia, the first benchmark dedicated to a systematic and comprehensive evaluation of 3D consistency in interactive world models. Through controlled exploration and revisit, we organize the evaluation into three dimensions: input preservation, generated-content persistence, and 3D self-consistency. For input preservation, registered RGB-D references and annotated anchors support appearance, geometry, and spatial stability measurements. For generated-content persistence, we compare revisits to regions absent from the input image with their first generated observations to test whether models preserve what they create. For 3D self-consistency, cross-view depth and feature correspondence, regional scale agreement, and held-out Gaussian rendering test whether generated views describe the same 3D scene. Minute-long exploration and revisits further test long-term consistency. Our construction and annotation pipeline brings together public datasets, self-captured scenes, and simulation, yielding 720 instances across indoor and outdoor environments and six exploration-and-revisit protocols. Evaluation spans 27 text-, action-, and camera-conditioned models through native-interface adapters. Our Orbia benchmark provides a systematic basis for diagnosing 3D inconsistency and developing more persistent video world models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.20693",
+        "external_id": "2610.20693"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.20693",
+        "external_id": "2610.20693"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/worldbench/orbia",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Dongyue Lu",
+      "Guian Fang",
+      "Hur Lim",
+      "Yonggang Wu",
+      "Yanrong Wang",
+      "Hongshan Chen",
+      "Shengju Qian",
+      "Yue Liao",
+      "Wei Chow",
+      "Lingdong Kong",
+      "Tianxin Huang",
+      "Yu Yang",
+      "Hongji Yang",
+      "Junchao Huang",
+      "Ao Liang",
+      "Yihao Wang",
+      "Zihan Wang",
+      "Rong Li",
+      "Hanlin Chen",
+      "Xin Wang",
+      "Wei Tsang Ooi",
+      "Mike Zheng Shou",
+      "Shuicheng Yan"
+    ],
+    "published_at": "2026-10-14T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336636Z",
+    "dedup_keys": [
+      "arxiv:2610.20693",
+      "title:consistent form generated orbia videos world",
+      "github:worldbench/orbia"
+    ],
+    "signals": {
+      "hf_upvotes": 23,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 25,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 40.613,
+    "score_breakdown": {
+      "hf_upvotes": 25.424,
+      "github_stars": 6.516,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.327
+    }
+  },
+  {
+    "id": "ecb26df884b44108",
+    "kind": "paper",
+    "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
+    "summary_en": "Few-step autoregressive video generators enable streaming generation, yet they run every token through the final denoising step, regardless of how much refinement it needs. We find this uniform computation is often unnecessary: many tokens already closely match their eventual full-step outputs in the initial steps, while others require refinement until the end. We introduce Speculative Forcing, a framework that treats intermediate clean estimates as drafts and predicts when individual tokens can be safely accepted early. Once accepted, a token is frozen as its final output and undergoes no further denoising, while its cached keys and values remain available as context for the remaining tokens. We explore two alternative verifier designs: a training-free one based on similarity to clean content and stability across steps, and a learned one that reads the frozen generator's intermediate features to estimate each token's remaining gap to its full-step output. Across short-video, long-video, and world generation, Speculative Forcing preserves the quality of full-step sampling while substantially reducing computation. On LongLive, it matches the four-step generator with ~1.7 denoising steps per token, running over 1.5x faster at 41.7 and 37.8 fps. On Lingbot-World 2.0, where camera motion continually changes the visible content, it maintains quality with ~2.5 denoising steps per token and runs 1.35x faster at 24.5 fps.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22347",
+        "external_id": "2610.22347"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22347",
+        "external_id": "2610.22347"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/naver-ai/speculative-forcing",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hyunwook Choi",
+      "Seungryong Kim",
+      "Dongyoon Han",
+      "Sangdoo Yun"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336594Z",
+    "dedup_keys": [
+      "arxiv:2610.22347",
+      "title:autoregressive efficient for forcing generation speculative video",
+      "github:naver-ai/speculative-forcing"
+    ],
+    "signals": {
+      "hf_upvotes": 51,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.98,
+    "score_breakdown": {
+      "hf_upvotes": 31.61,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "ac84988e42f2ff8e",
+    "kind": "paper",
+    "title": "DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding",
+    "summary_en": "We propose DeltaStreamer, a novel agentic framework for streaming video understanding inspired by how humans observe, remember, and investigate. Streaming video understanding requires a system to retain evidence before knowing which details future queries will need. Existing approaches often obscure event transitions and omit relevant details when compressing video history, and cannot recover missing visual evidence. DeltaStreamer addresses these limitations by combining change-aware memory with query-driven planning and targeted evidence gathering with replay. Before a query arrives, it continuously observes the stream and explicitly records visual changes in structured memory, preserving how events unfold rather than only what is present. When a query arrives, a query-driven planner identifies the required evidence and guides memory retrieval and targeted replay. By revisiting historical frames, the agent can recover visual details omitted during observation and ground its answer in evidence beyond the retained descriptions. This connects continuous observation with active investigation tailored to each question. Experiments on OVO-Bench and StreamingBench demonstrate improvements over representative streaming video understanding methods, with overall scores of 66.07% and 59.53%, respectively.\n  Project page: https://bbbbchan.github.io/DeltaStreamer/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.19849",
+        "external_id": "2610.19849"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.19849",
+        "external_id": "2610.19849"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/BBBBchan/DeltaStreamer",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Boyuan Sun",
+      "Deshui Miao",
+      "Wenzhao Gao",
+      "Shaoyong Jia",
+      "Shaohui Jiao",
+      "Chi Liu",
+      "Yan Shu",
+      "Derek Li",
+      "Bryan Dai",
+      "Shengsheng Qian",
+      "Qibin Hou"
+    ],
+    "published_at": "2026-10-14T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336991Z",
+    "dedup_keys": [
+      "arxiv:2610.19849",
+      "title:agentic deltastreamer human like streaming towards understanding video",
+      "github:bbbbchan/deltastreamer"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 61,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 38.039,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 8.254,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.327
+    }
+  },
+  {
+    "id": "e77a2730c577ec6a",
+    "kind": "paper",
+    "title": "InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views",
+    "summary_en": "Feed-forward Gaussian reconstruction builds 3D scenes directly from input images for novel view rendering, but learning Gaussian attributes from predicted geometry for high-quality rendering under large viewpoint changes remains challenging. We analyze limitations in Gaussian attribute learning and introduce InfiniSplat v2, which improves rendering quality through architectural and training changes. Our method decouples geometry and attribute prediction with a frozen geometry branch, aligns predicted Gaussians using ground-truth camera poses during training, and adopts large-angle target view supervision. Across six datasets, the feed-forward outputs of the same trained model achieve state-of-the-art mean LPIPS and DISTS among the evaluated methods in both pose-conditioned and pose-free settings. In the pose-conditioned setting, mean LPIPS and DISTS decrease by 25.8% and 32.9%, respectively, compared with the strongest evaluated baselines. We further find that opacity learned with only image reconstruction supervision suppresses geometrically inconsistent points. Project page: https://zju3dv.github.io/InfiniSplat2/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.20341",
+        "external_id": "2610.20341"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.20341",
+        "external_id": "2610.20341"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zju3dv/InfiniSplat",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yongzhen Hu",
+      "Hao Yu",
+      "Jiawei Wang",
+      "Xianming Zeng",
+      "Jianyun Xu",
+      "Xingliang Liu",
+      "Ruizhen Hu",
+      "Xiaowei Zhou",
+      "Hujun Bao",
+      "Sida Peng"
+    ],
+    "published_at": "2026-10-14T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337162Z",
+    "dedup_keys": [
+      "arxiv:2610.20341",
+      "title:3dgs analyzing and any feed forward from improving infinisplat views",
+      "github:zju3dv/infinisplat"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 365,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.661,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 11.805,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -3.327
+    }
+  },
+  {
+    "id": "6df481cd891cded2",
+    "kind": "paper",
+    "title": "SCOPE: Semantic Bounded Credit Optimization for Prompt Engineering in Text-to-image Generation",
+    "summary_en": "Reinforcement learning (RL) enables language models to improve text-to-image (T2I) generation by rewriting prompts for a frozen image generator. Existing methods typically apply a single signal derived from the image to individual subword tokens, although objects, counts, attributes, and relations form coherent semantic spans. We propose SCOPE, an objective based on Group Relative Policy Optimization (GRPO) that aligns update weighting with this structure. The rewriter jointly generates an enhanced prompt and its semantic partition. SCOPE pools shifts in policy log probabilities within each span to derive a shared coefficient for its token losses while retaining a single advantage for each completion. It requires neither separate span rewards nor additional image renders. Across Qwen-Image, SD3, and FLUX.1-dev, SCOPE achieves average relative gains over vanilla GRPO of 9.48% on GeneVal and 7.62% on T2I-CompBench. Ablation studies show that both semantic boundaries and pooling within spans contribute to these gains, supporting semantic structure as a practical inductive bias for prompt engineering with RL.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22264",
+        "external_id": "2610.22264"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22264",
+        "external_id": "2610.22264"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/MAC-AutoML/SCOPE",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yufei Jiao",
+      "Jinfa Huang",
+      "Zeyue Xue",
+      "Tianyu Xie",
+      "Yuexiao Ma",
+      "Rongrong Ji",
+      "Xiawu Zheng",
+      "Jiebo Luo"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336740Z",
+    "dedup_keys": [
+      "arxiv:2610.22264",
+      "title:bounded credit engineering for generation image optimization prompt scope semantic text",
+      "github:mac-automl/scope"
+    ],
+    "signals": {
+      "hf_upvotes": 19,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.525,
+    "score_breakdown": {
+      "hf_upvotes": 23.966,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "3a0dfca376b03b21",
+    "kind": "paper",
+    "title": "JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs",
+    "summary_en": "Large language model (LLM) agents now fix software, operate computers and serve customers, but their harnesses, the programs that run them, call a large LLM at every step, which makes long tasks slow and costly. Most of these calls end in a multiple-choice decision, such as which tool to call next. Decision models such as Jev answer these questions directly, at a fraction of an LLM call's time and price. We ask how a harness can delegate these decisions to a decision model with little loss of success. To evaluate decision models in agentic tasks, we build AgentDecisionBench, which tests them from isolated questions up to control of a running agent, on public benchmarks and our DecisionGym environment. The decision model most accurate on isolated questions solved only 69.5% of agent tasks, and without a fitted confidence threshold, delegating tool choices lowered success by 19.0 points. Building on these findings, we then design JevAgentHarness, which fits this threshold for each choice on the agent's own trajectories and lets the LLM decide below it. Because existing decision models never see the states an agent reaches after its own mistakes, we train AgentDecision-4B, an open 4B model, on such states with Jev's answers as labels. On tasks unlike its training data, the agent solved 91.5% of them with AgentDecision-4B and 82.0% with Jev. On tasks like their training data, 4B models trained this way made agents 81.1-89.0% cheaper and up to 2.5 times faster, without losing 3 or more points of task success. The models, data, and harness will be released at https://github.com/JevAgentHarness/JevAgentHarness.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.21412",
+        "external_id": "2610.21412"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.21412",
+        "external_id": "2610.21412"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/JevAgentHarness/JevAgentHarness",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kunlun Zhu",
+      "Tao Feng",
+      "Xu Han",
+      "Heng Wang",
+      "Ling Yang",
+      "Xiangru Tang",
+      "Jiaxuan You",
+      "Heng Ji"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337069Z",
+    "dedup_keys": [
+      "arxiv:2610.21412",
+      "title:and benchmarking control decision deploying jevagentharness llms models share that training with",
+      "github:jevagentharness/jevagentharness"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.466,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "a69236a221197abe",
+    "kind": "release",
+    "title": "Bringing GPT-Rosalind to academic research labs",
+    "summary_en": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-15T19:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.802724Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-the-rosalind-academic-plan",
+      "title:academic bringing gpt labs research rosalind"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.36,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.64
+    }
+  },
+  {
+    "id": "ac0e64a97f0b3436",
+    "kind": "release",
+    "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+    "summary_en": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-10-15T18:00:01Z",
+    "first_seen_at": "2026-10-16T05:14:14.550535Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72",
+      "title:agentic coding gb300 meta muse nvidia nvl72 open scale spark with workflows"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.298,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.702
+    }
+  },
+  {
+    "id": "d774ae4f1af498b3",
+    "kind": "paper",
+    "title": "Self-Evolving Agent Harness",
+    "summary_en": "Harness self-evolution revises an agent's software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework separates update targets from proposal and admission mechanisms. It distinguishes changes to interpreted state from revisions to tools and code, repository-level control logic, and plugin composition. We characterize search through evolutionary optimization and examine its reliability through continual PAC-learning. Under explicit assumptions, the analysis yields an expected generalization bound, a retention bound conditional on historical regression budgets, and a high-probability admission rule using fresh, independent validation data. We examine how persistent harness revisions affect knowledge sharing and organizational workflows, with implications for scientific reliability, physical safety, and institutional accountability. Cases from prior work illustrate model--harness co-design, distributed execution, and plugin reuse. Reliable deployment requires continual validation as task distributions and evaluators change, with independent safeguards for learning, runtime privileges, and consequential actions. We provide a comprehensive 66-page discussion of related work, theory, algorithms, evaluation, applications, and the broader impact of Harness RSI, together with continuously updated code and supplementary materials, at https://github.com/zgcagi/Harness-RSI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.18813",
+        "external_id": "2610.18813"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.18813",
+        "external_id": "2610.18813"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zgcagi/Harness-RSI",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chuyang Wei",
+      "Haoxiang Guan",
+      "Minghang Zhu",
+      "Kexin Zhou",
+      "Jiyan He",
+      "Xiren Zhou",
+      "Huanhuan Chen",
+      "Yifei Shen"
+    ],
+    "published_at": "2026-10-13T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336935Z",
+    "dedup_keys": [
+      "arxiv:2610.18813",
+      "title:agent evolving harness self",
+      "github:zgcagi/harness-rsi"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.996,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.827
+    }
+  },
+  {
+    "id": "4554760b8a01e3ba",
+    "kind": "paper",
+    "title": "SWE-at-Scale: Scalable Issue Synthesis from Historical Bug Fixes",
+    "summary_en": "As coding agents become increasingly capable, robust evaluation requires a broader and more diverse supply of verifiable software engineering (SWE) tasks. However, real-world tasks are constrained by the natural frequency of issue reporting and the substantial cost of manual curation. Furthermore, existing synthetic approaches rely primarily on the pretrained knowledge of large models coupled with heuristic prompting, often failing to capture the authentic, complex mechanics of software failures. To exponentially scale SWE task production, we introduce SWE-at-Scale, a framework that automatically synthesizes realistic issues by reverse-engineering real-world software fixes. Our key insight is that historical fixes encapsulate deep mechanistic knowledge of bug formation: inverting a fix transforms repair supervision into bug-induction supervision grounded in actual development scenarios. SWE-at-Scale transfers these learned bug patterns to novel code contexts, repeatedly sampling diverse bug typologies to construct executable SWE tasks. Extensive experiments show that SWE-at-Scale generates more diverse and realistic SWE tasks than current synthesis baselines while posing greater challenges to state-of-the-art coding agents. Notably, SWE-at-Scale can generate distinct bug types from a single code context, with bug diversity scaling robustly even up to 200 generations per file. Overall, SWE-at-Scale turns finite real-world fixes into reusable supervision for scalable synthesis of realistic, diverse, and challenging SWE tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.21359",
+        "external_id": "2610.21359"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.21359",
+        "external_id": "2610.21359"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/cslsolow/SWE-at-scale",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Silin Chen",
+      "Zihan Zhang",
+      "Xiaodong Gu",
+      "Jiale Huang",
+      "Yuling Shi",
+      "Han Li",
+      "Zhao Shan",
+      "Chengcheng Wan",
+      "Zhensu Sun",
+      "Haibing Guan"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337099Z",
+    "dedup_keys": [
+      "arxiv:2610.21359",
+      "title:bug fixes from historical issue scalable scale swe synthesis",
+      "github:cslsolow/swe-at-scale"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.89,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "e64267e555a1f305",
+    "kind": "paper",
+    "title": "Learning Where to Split: Dynamic Band Splitting for Audio Source Separation",
+    "summary_en": "Audio source separation models must preserve fine spectral structure while keeping the cost of the separator tractable. Band-split architectures reduce this cost by manually partitioning the spectrum into predefined frequency bands and encoding each band as a token, but the same boundaries are used for every mixture. Because informative spectral structure varies with source content, fixed boundaries can merge discriminative components or spend tokens where little resolution is needed. We introduce Dynamic Band Splitting (DBS), an end-to-end framework that adapts boundary locations and band widths to each mixture under a fixed band-token budget. DBS predicts content-conditioned boundary scores within frequency blocks, selects a prescribed number of boundaries using hard Top-K, and applies content-dependent pooling to obtain compact band tokens. After separation, it smooths and expands these tokens to the original STFT grid, refines them along frequency, and decodes complex masks with a frequency-shared head. DBS improved separation over the corresponding static models on DnR v2, MUSDB18-HQ, and EchoSet, with DBS-BSRNN achieving relative gain of 29.0% in average SI-SDR on DnR v2. These results and boundary analyses on DnR v2 show that content-adaptive frequency partitioning benefits multiple separator backbones under a fixed band-token budget. Code and audio demos are available at https://cslikai.cn/Dynamic-Band-Splitting",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.14993",
+        "external_id": "2610.14993"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.14993",
+        "external_id": "2610.14993"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/JusperLee/Dynamic-Band-Splitting",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Bingzhe Zhang",
+      "Kai Li",
+      "Xiaolin Hu"
+    ],
+    "published_at": "2026-10-10T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336853Z",
+    "dedup_keys": [
+      "arxiv:2610.14993",
+      "title:audio band dynamic for learning separation source split splitting where",
+      "github:jusperlee/dynamic-band-splitting"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 16,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.005,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 5.666,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -9.327
+    }
+  },
+  {
+    "id": "c2b3a93a626a737f",
+    "kind": "paper",
+    "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+    "summary_en": "Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying decay across interaction turns. Family Dense Reward (FDR) calibrates semantic progress across task families; Success-Prioritized Reward (SPR) separates strict success from bounded partial credit. A Warm-up Critic Model, recursive critic handoff, and stage-specific learning rates coordinate the two refinement phases. The five-stage sequence from Qwen3.8-27B base model through RSR-1, RPR-1, RSR-2, and RPR-2 yields Terminal-RSI-27B: 19.84% on Terminal-Bench 4.0, 86.52% on Terminal-Bench 2.1, 16.95% on Terminal-Bench 3.0, and 79.00% on Terminal-Bench Hard. On LHTB, process reward rises from 0.21 to 0.37 and strict completion from 0/46 to 5/46; SWR100 success doubles from 3.00% to 6.00%. By recursively coupling verified trajectory rewriting with critic-inheriting policy refinement, each retained stage consolidates discovered behaviors and progressively advances the agent from partial local repairs to strict terminal verification.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22192",
+        "external_id": "2610.22192"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22192",
+        "external_id": "2610.22192"
+      }
+    ],
+    "actors": [
+      "Junyao Yang",
+      "Zongxia Li",
+      "Yucheng Shi",
+      "Zhongzhi Li",
+      "Ruhan Wang",
+      "Ruiwen Zhou",
+      "Haitao Mi",
+      "Shuicheng Yan",
+      "Leowei Liang"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337018Z",
+    "dedup_keys": [
+      "arxiv:2610.22192",
+      "title:agents and improving policy recursive recursive refine rewrite rsi self self terminal terminal via"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.285,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "3397b1644755dadb",
+    "kind": "release",
+    "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+    "summary_en": "In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/sullivan-cromwell",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.802871Z",
+    "dedup_keys": [
+      "url:openai.com/index/sullivan-cromwell",
+      "title:agreement brings cromwell expertise into legal review sullivan"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.173,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "9f5d93428e7583c8",
+    "kind": "paper",
+    "title": "Memory as Weights: Internalizing Long-Term History for Streaming Videos",
+    "summary_en": "Streaming vision-language models (VLMs) must continuously integrate information from the past while remaining responsive to current observations and user queries. Existing memory mechanisms typically compress, retrieve, or cache historical observations and reintroduce them into the input context, forcing historical memory and current observations to compete for limited context. We propose MaLoW, a streaming memory framework that instead internalizes historical context into evolving lightweight parameter updates. MaLoW uses a recurrent HyperNetwork to incrementally consolidate incoming video observations into fixed-size LoRA weights, allowing historical information to be carried forward without revisiting the full video stream. In doing so, MaLoW represents history as weights, while keeping the current observation as input. To support training, we further construct MaLoW-Instruct, a large-scale streaming video dataset containing 381K question-answer pairs over 56K videos. We conduct extensive experiments to demonstrate that MaLoW achieves strong performance on OVO-Bench, StreamingBench, and StreamArena. On the backward split of OVO-Bench, MaLoW outperforms prior memory approaches by 3.9% to 11.8% across different video backbones while incurring only modest latency overhead. Beyond streaming video understanding, MaLoW also generalizes to vision-language-action models, improving the action success rate on Simpler WidowX by 9.3%.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22070",
+        "external_id": "2610.22070"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22070",
+        "external_id": "2610.22070"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/dragonlzm/MaLoW",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhuoming Liu",
+      "Jinhong Lin",
+      "Lin Zhang",
+      "Yiwu Zhong",
+      "Yin Li"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337355Z",
+    "dedup_keys": [
+      "arxiv:2610.22070",
+      "title:for history internalizing long memory streaming term videos weights",
+      "github:dragonlzm/malow"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.937,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "b4e451719f482c09",
+    "kind": "paper",
+    "title": "WorldCast: Exploring Intelligent Visual Generation in World State Prediction",
+    "summary_en": "Humans interpret multimodal observations of the world and forecast how it will evolve. Recent multimodal generative systems have demonstrated similar capabilities: they can integrate multimodal context and synthesize visual outputs that depict changes in the world. To characterize this emerging trajectory, we organize model capabilities into a four-level hierarchy and discover that higher-level tasks remain relatively underexplored despite model progress. To bridge this gap, we explore model performance on multi-step world state prediction, a high-level task that requires models to forecast successive future world states from multimodal observations and diverse references. Such a task requires models to possess entangled understanding and generation capabilities, as well as extensive world knowledge to translate human action sequences, physical transformations, and abstract visual reasoning into coherent visual outputs. We introduce WorldCast, a benchmark comprising 320 manually designed cases across eight categories, and evaluate 12 representative models. The conducted experiments yield three key insights: (a) advances in frontier models are rapidly pushing the boundaries of intelligent world modeling, with the GPT-Image-2.5 System scoring 72.8 and demonstrating early-stage visual state prediction capabilities on real-world tasks; (b) WorldCast reveals substantial gaps between models: even Nano Banana Pro reaches only 42.8 and the best open-source model scores 20.1, with deficits in handling complex context, entangled references, and reasoning-heavy tasks; (c) strong generative models effectively draw on the capabilities of their underlying language models. These findings highlight the need for multimodal generative models that are capable of dynamic planning and reasoning while also being deeply unified to faithfully simulate real-world states.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.20731",
+        "external_id": "2610.20731"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.20731",
+        "external_id": "2610.20731"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/teal024/WorldCast",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Wenhao Yan",
+      "Haodong Li",
+      "Xiaotong Li",
+      "Yaxin Luo",
+      "Zhengrong Yue",
+      "Jialv Zou",
+      "Xu Huang",
+      "Haojin Yang",
+      "Nan Jia",
+      "Yan Feng",
+      "Peng Pei",
+      "Xunliang Cai"
+    ],
+    "published_at": "2026-10-14T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337124Z",
+    "dedup_keys": [
+      "arxiv:2610.20731",
+      "title:exploring generation intelligent prediction state visual world worldcast",
+      "github:teal024/worldcast"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.856,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.327
+    }
+  },
+  {
+    "id": "c8e11f4bb474b8e3",
+    "kind": "paper",
+    "title": "CommerceGen-Studio: An End-to-End Framework for Commercial-Grade Main-Image Generation",
+    "summary_en": "We present CommerceGen-Studio, an end-to-end framework for generating commercial-grade main images for e-commerce Stock Keeping Units (SKUs). Our framework is organized along a three-stage pipeline of information extraction, semantic rewriting, and multi-condition generation: Prompt-Eval-Refine-Loop Agent (PERL-Agent) distills heterogeneous SKU metadata into concise selling-point text lists through an iterative closed loop of VLM and LLM roles scored by a reference-free rubric. Layout Thinker Optimization (LTO) aligns the rewriter with both caption and rendered-image quality via alternating domain-specific policy optimization. SKU-DiT, trained under Reinforce-Distill-Reinforce (RDR) progressive training, conditions jointly on the white-background product image, the trademark crop, and the structured layout to hold subject fidelity, trademark integrity, and character-level text accuracy together. The framework runs in production at a scale of millions of main images per day with a latency of a few seconds per image, which we believe makes it among the first systems of this kind to operate at commercial scale. We also release CommerceGen-Bench, a benchmark of hard cases collected from live traffic across all product categories. On it, our framework achieves the highest overall scores among the evaluated open-source baselines on both editing tracks, with and without prompt enhancement. It also matches much larger closed-source models, and beats several of them at Instruction Following and Product Integration - the two properties that determine whether an image can be published.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.20603",
+        "external_id": "2610.20603"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.20603",
+        "external_id": "2610.20603"
+      }
+    ],
+    "actors": [
+      "Xiaoli Xu",
+      "Zhengtao Wu",
+      "Zhengze Xu",
+      "Tao Liu",
+      "Yongchao Du",
+      "Zuan Gao",
+      "Xingjian Wang",
+      "Hao Yan",
+      "Mengting Chen",
+      "Wei Li",
+      "Bo Zheng"
+    ],
+    "published_at": "2026-10-14T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336879Z",
+    "dedup_keys": [
+      "arxiv:2610.20603",
+      "title:commercegen commercial end end for framework generation grade image main studio"
+    ],
+    "signals": {
+      "hf_upvotes": 15,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.854,
+    "score_breakdown": {
+      "hf_upvotes": 22.181,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.327
+    }
+  },
+  {
+    "id": "cce7c9254280221e",
+    "kind": "paper",
+    "title": "Mosaic: Multi-Session Agentic Reinforcement Learning",
+    "summary_en": "Most existing agentic reinforcement learning methods assume single-session trajectories, where interaction proceeds within one continuously accumulated context. However, agentic techniques such as context compaction and subagent forking may produce trajectories spanning multiple sessions, creating a mismatch between the single-session training assumption and inference-time execution. Therefore, we introduce Multi-Session Agentic Reinforcement Learning, a more general setting that supports an arbitrary number of sessions within a trajectory. Under this setting, a widely adopted method is to broadcast trajectory-level advantages to all sessions, but this does not distinguish contributions from various sessions or guide session allocation within trajectories. To address this issue, we propose Mosaic, a multi-session agentic RL method with critic-free hierarchical optimization. At the trajectory level, it incorporates session-usage signals into advantage estimation. At the session level, it shapes each session's advantage according to the estimated marginal contribution. Experiments on BrowseComp with Qwen3.5-4B show that Mosaic outperforms broadcasting in both context compaction and subagent forking scenarios while using fewer sessions on average. Further analyses show that our method achieves improvements in session utility and allocation, which we suggested is a promising target for future advances in multi-session agentic RL.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22174",
+        "external_id": "2610.22174"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22174",
+        "external_id": "2610.22174"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/LARK-AI-Lab/Mosaic",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yilong Xu",
+      "Minrui Xu",
+      "Xinyu Zhou",
+      "Xiang Long",
+      "Haochen Tan",
+      "Zhijiang Guo"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337249Z",
+    "dedup_keys": [
+      "arxiv:2610.22174",
+      "title:agentic learning mosaic multi reinforcement session",
+      "github:lark-ai-lab/mosaic"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.751,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "508c2edbbe254f86",
+    "kind": "paper",
+    "title": "Velox: Spatial Memory Makes World Models Efficient",
+    "summary_en": "Video world models turn actions and camera motion into long visual rollouts, making video a natural interface for interactive simulation. Such interaction requires responsive generation, yet coherent rollouts must retain visual memory of what has already been generated. Chunked video diffusion models usually keep this context in growing KV caches, so later chunks become progressively slower. To address this bottleneck, we introduce Velox, a training-free attention router for region-level context selection using frustum slab correspondences from streaming geometry. Velox represents historical blocks as camera frustum slabs with depth intervals and obtains current-block depth through recency-priority multiwarp. For well-covered regions, frustum slab overlap softly modulates each layer's model-derived block importance. Uncovered regions retain the model-derived route without geometric bias. The fixed token-block granularity matches FlashAttention-style tiled execution and reduces the attention term that grows with rollout length. Frustum slab construction runs asynchronously with denoising on the same H200. At chunk 48, Velox accelerates attention by 4.36times and denoising by 2.43times. On the full 158-case WBench navigation split, it remains within 0.15 API-free average points of dense LingBot-Fast-Cam. Please see our project page at https://velox-world.com/velox/ for more details.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22311",
+        "external_id": "2610.22311"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22311",
+        "external_id": "2610.22311"
+      }
+    ],
+    "actors": [
+      "Qiuhong Shen",
+      "Shizun Wang",
+      "Xinchao Wang"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337043Z",
+    "dedup_keys": [
+      "arxiv:2610.22311",
+      "title:efficient makes memory models spatial velox world"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.693,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "56f54e2f7b878618",
+    "kind": "paper",
+    "title": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
+    "summary_en": "Complex and long-horizon agent tasks often rely on frontier models deployed in the cloud to achieve strong performance. However, using these models for every step of a long-horizon trajectory incurs substantial inference cost, even though not all steps may require the same level of model capability. In this paper, we find that allocating the LLM to only a small subset of key steps can achieve performance comparable to full LLM execution while significantly reducing inference cost. Motivated by this observation, we propose EdgeWise, an edge-cloud collaboration framework that deploys an SLM on the local device as the primary solver and selectively delegates critical steps to a cloud LLM when stronger model capacity is needed. To enable autonomous delegation without additional models at inference time, we introduce a step-level RL method that jointly optimizes task solving and delegation, with fine-grained credit assignment for individual delegation decisions. We also introduce an external judge-based delegation strategy and use it to systematically investigate key design choices in edge-cloud collaboration, including when to delegate, how delegation decisions should be made, what context should be shared, and how frequently the cloud LLM should be invoked. Experiments show that EdgeWise matches or outperforms pure-LLM execution while reducing inference cost up to 62% on SWE-Rebench and 34% on Terminal-Bench 2.1. We further deploy EdgeWise on a local workstation, demonstrating comparable cost savings in a practical edge-cloud setting.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.17560",
+        "external_id": "2610.17560"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.17560",
+        "external_id": "2610.17560"
+      }
+    ],
+    "actors": [
+      "Zeru Shi",
+      "Jindong Jiang",
+      "Ryo Hachiuma",
+      "Yonggan Fu",
+      "Byung-Kwan Lee",
+      "Peter Belcak",
+      "Saurav Muralidharan",
+      "Ayush Agarwal",
+      "Ruixiang Tang",
+      "Ambrish Dantrey",
+      "Pavlo Molchanov",
+      "Anjul Patney",
+      "Subhashree Radhakrishnan"
+    ],
+    "published_at": "2026-10-13T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336822Z",
+    "dedup_keys": [
+      "arxiv:2610.17560",
+      "title:agents bringing cloud delegation edge edgewise horizon long selective the via"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.296,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.827
+    }
+  },
+  {
+    "id": "c3ba5a1895ea5a6d",
+    "kind": "paper",
+    "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
+    "summary_en": "Language models are increasingly trained against several verifiable rewards at once, such as the correctness and the format of a tool call, or the individual constraints of a complex instruction. Reward-decoupled normalization (GDPO) normalizes each reward separately so that different reward combinations keep distinct advantages, but it still spreads every reward's advantage evenly over the whole response, although each verifier checks only a few positions. We propose MRTPO, which assigns the advantage of each reward to the tokens relevant to it, using the information its verifier checks, without auxiliary models or token-level annotations. For each reward, the policy replays its own response with and without that reward's verifier information, and the per-token Jensen-Shannon distance between the two next-token distributions measures each token's relevance and reassigns the advantage. On text-to-SQL, multi-constraint instruction following and tool calling, MRTPO converges faster and achieves better performance than the compared methods.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.21439",
+        "external_id": "2610.21439"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.21439",
+        "external_id": "2610.21439"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zhaihaotian/MRTPO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Skylar Zhai",
+      "Haonan Wang",
+      "Zhining Liu",
+      "Linxin Song",
+      "Xuwei Ding",
+      "Jingcheng Liang",
+      "Jian Kang"
+    ],
+    "published_at": "2026-10-15T07:47:04Z",
+    "first_seen_at": "2026-10-16T05:14:12.337279Z",
+    "dedup_keys": [
+      "arxiv:2610.21439",
+      "title:assignment credit each for its level multi relevant reward reward reward specific token tokens",
+      "github:zhaihaotian/mrtpo"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.295,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.341
+    }
+  },
+  {
+    "id": "37cb54519aa589cd",
+    "kind": "paper",
+    "title": "CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance",
+    "summary_en": "While generalist vision-language-action (VLA) models have enabled diverse open-world manipulation, real-world robotic assistance requires two critical capabilities they currently lack: personalization and reliable execution. First, executing an instruction like \"make me a sandwich\" requires grounding subtask decomposition in persistent user preferences rather than relying on a single generic solution. Second, reliable deployment demands explainable safety assurance that proactively prevents hazards and gracefully recovers from occasional physical failures. To address these gaps, we present CarryOn, a dual-loop harness designed to augment a frozen VLA policy. The planning loop maintains persistent user-level and scene-level context that is continually grounded against new observations and revised through interaction, enabling personalized task selection and execution grounding across conversations and changing scenes. The execution loop actively supervises policy rollouts, shielding actions from predicted hazardous contact. When execution fails, the system invokes reusable control-based recovery skills that restore task progress and are refined through reflection on earlier failures. On a real robot and in simulation, CarryOn dispatches preference-consistent subtasks across users and scenes, reduces the violation rate of an already safety-finetuned VLA from 52.6% to 6.1%, and increases recovery success from 13% to 80% when refined skills are reused.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "multimodal",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.21453",
+        "external_id": "2610.21453"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.21453",
+        "external_id": "2610.21453"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/JIA-Lab-research/CarryOn",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zixuan Wang",
+      "Yuqi Liu",
+      "Yuxin Chen",
+      "Sengqiao Yang",
+      "Jinhui Ye",
+      "Pengguang Chen",
+      "Changsheng Lu",
+      "Shu Liu",
+      "Bei Yu",
+      "Jiaya Jia"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337328Z",
+    "dedup_keys": [
+      "arxiv:2610.21453",
+      "title:and assistance carryon dual for harness loop personalized reliable robot",
+      "github:jia-lab-research/carryon"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.126,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "29c57730d6c3d811",
+    "kind": "paper",
+    "title": "SimVTA: Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models",
+    "summary_en": "Driving world action models (WAMs) learn from paired trajectories and future observations. Post-training with reinforcement learning allows the policy to explore alternative trajectories and improve planning using driving rewards. However, driving logs contain future videos only for the recorded trajectories, leaving these alternatives without corresponding visual supervision. Thus, we introduce SimVTA, a simulation-grounded post-training framework that combines trajectory optimization with video supervision. First, we sample candidate trajectories for each observation and use a real-world simulator (e.g., World Engine) to render future videos for high-reward candidates in real-world scenes reconstructed with 3D Gaussian Splatting (3DGS). This provides trajectory-matched supervision independent of the model's own predictions. Under a limited rendering budget, we prioritize video supervision for higher-error futures among these rendered candidates. Finally, we optimize trajectory planning with Group Relative Policy Optimization (GRPO) and use a flow-matching loss on the matched videos to update shared representations. At inference time, the model predicts trajectories directly, without simulator calls. On NAVSIM v1, applying SimVTA to a WAM initialization improves PDMS from 86.2 to 91.3 (+5.1). It achieves 88.2 EPDMS on NAVSIM v2 and an average HD-Score of 38.8 in closed-loop evaluation on HUGSIM. Ablations show that updating shared representations with video supervision improves planning, while prioritizing higher-error futures among high-reward trajectories further improves performance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.13781",
+        "external_id": "2610.13781"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.13781",
+        "external_id": "2610.13781"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/OpenDriveLab/SimVTA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Changhui Jing",
+      "Haochen Tian",
+      "Hongchen Li",
+      "Tianyu Li",
+      "Caojun Wang",
+      "Zihao Zhang",
+      "Yanhao Liu",
+      "Chengen Xie",
+      "Bailin Li",
+      "Hao Zhao",
+      "Zhenjie Yang"
+    ],
+    "published_at": "2026-10-09T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.337219Z",
+    "dedup_keys": [
+      "arxiv:2610.13781",
+      "title:action alignment driving for grounded models simulation simvta trajectory video world",
+      "github:opendrivelab/simvta"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 19,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.347,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 5.991,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -10.827
+    }
+  },
+  {
+    "id": "f8e5a1020c7f9a28",
+    "kind": "paper",
+    "title": "Routing Policy Optimization for Online Diffusion Reinforcement Learning",
+    "summary_en": "Reinforcement learning can align visual generators with reward signals beyond their pretraining objectives, but existing score-function methods typically introduce stochasticity by perturbing the reverse denoising trajectory, leading to costly rollout-based optimization. We instead ask whether stochastic exploration can be introduced inside the generator while preserving its original sampler. Routing Policy Optimization (RPO) answers this question by turning attention routing into a stochastic exploration action. At a few selected denoising levels, each query block keeps its own block and samples further key blocks in proportion to the generator's native attention mass, or keeps dense attention. The sampled route perturbs the velocity of that transition, and a Gaussian likelihood around the dense velocity scores the perturbation with a score-function objective. RPO further uses a controlled two-rollout estimator: two rollouts share the same prompt, initial latent, routed denoising levels, and dense anchor layers, differing only in their sampled attention routes. Their reward difference provides an advantage signal for the routed transitions. Because the likelihood differentiates the dense velocity itself, the learned updates remain effective after routing is removed. At inference, RPO restores dense attention and retains the original deterministic sampler. Experiments on text-to-image and text-to-video generation show that RPO improves generation quality while achieving nearly 4x higher training efficiency than Flow-GRPO-style methods. Please see our project page at https://velox-world.com/rpo for visual results.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.22282",
+        "external_id": "2610.22282"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.22282",
+        "external_id": "2610.22282"
+      }
+    ],
+    "actors": [
+      "Qiuhong Shen",
+      "Yiding Yang",
+      "Yuxin Zhang",
+      "Xinwei Huang",
+      "Minxuan Lin",
+      "Bo Liu",
+      "Hao Kang",
+      "Haotian Yang",
+      "Yizhi Wang",
+      "Chongyang Ma",
+      "Xinchao Wang"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:12.336763Z",
+    "dedup_keys": [
+      "arxiv:2610.22282",
+      "title:diffusion for learning online optimization policy reinforcement routing"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.296,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "is_daily_paper": 5.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "14f04607ffb2233d",
+    "kind": "release",
+    "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/meta-muse-spark-open",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-16T05:14:14.202583Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/meta-muse-spark-open",
+      "title:experts from frontier meta mixture model multimodal muse open open spark weight welcome"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 22.173,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "topic_match": 4.0,
+      "age_decay": -1.827
+    }
+  },
+  {
+    "id": "f76354b7581a824d",
+    "kind": "release",
+    "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-10-16T01:44:47Z",
+    "first_seen_at": "2026-10-16T05:14:14.202474Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/nvidia/scaling-indic-pretraining",
+      "title:and data generation indic open pipeline pretraining scaling tokens trillion"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.782,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.218
+    }
+  }
+]
