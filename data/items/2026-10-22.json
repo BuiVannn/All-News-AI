@@ -1,0 +1,1835 @@
+[
+  {
+    "id": "067a7346c6fa5a1c",
+    "kind": "paper",
+    "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+    "summary_en": "Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems is challenging and can introduce substantial security risks. We therefore propose Agent World Model in the Wild (WildAWM), a scalable pipeline for synthesizing controllable environments and tasks for training general computer-use agents (CUAs). Whereas existing approaches typically specialize in a single agent interaction interface, we construct executable environments that jointly support graphical user interfaces, model context protocol services, and command-line interfaces, allowing agents to flexibly combine visual interaction, tool use, and code execution. WildAWM is entirely powered by open-source models, demonstrating that high-quality computer-use environments can be generated without proprietary frontier models. Beyond environments, we address three recurring challenges in task synthesis: ensuring solvability, maintaining sufficient difficulty, and producing reliable verifiers, by introducing execution-based quality gates that combine heterogeneous agent rollouts, cross-judge consistency checks, and counterfactual probes of judgment robustness. The resulting pipeline synthesizes 341 long-horizon environment-task pairs that can require over 100 agent steps to solve and remain challenging even for frontier models, with GPT-6-Astra solving only 60% of them. We train two Qwen models of different sizes exclusively in these synthetic worlds. Both models achieve substantial gains across 8 out-of-distribution benchmarks spanning web, claw, and computer-use agents, demonstrating that learning in WildAWM's synthesized worlds generalizes broadly to unseen computer-use tasks. The code is publicly available at https://github.com/MSR-Orchard/WildAWM.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "mcp",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.26828",
+        "external_id": "2610.26828"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.26828",
+        "external_id": "2610.26828"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/MSR-Orchard/WildAWM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhaoyang Wang",
+      "Qianhui Wu",
+      "Haorui Wang",
+      "Simon Yu",
+      "Baolin Peng",
+      "Canwen Xu",
+      "Hao Cheng",
+      "Wenlin Yao",
+      "Boyi Liu",
+      "Yite Wang",
+      "Jianfeng Gao",
+      "Huaxiu Yao"
+    ],
+    "published_at": "2026-10-19T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489602Z",
+    "dedup_keys": [
+      "arxiv:2610.26828",
+      "title:agent agent computer environment model synthesis the use wild world",
+      "github:msr-orchard/wildawm"
+    ],
+    "signals": {
+      "hf_upvotes": 47,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 50,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 45.987,
+    "score_breakdown": {
+      "hf_upvotes": 30.97,
+      "github_stars": 7.864,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.847
+    }
+  },
+  {
+    "id": "e2f50ec531df6488",
+    "kind": "paper",
+    "title": "Cache Engineering for Agents",
+    "summary_en": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active cache growth. Prior work uses context engineering to reduce cache size by trimming or summarizing history. However, modifying the trajectory prefix invalidates subsequent cached states and triggers costly re-prefilling of retained context. Task accuracy can also suffer when too little context is retained to limit re-prefill costs. We propose cache engineering as a new scheme. It allows agents to directly control their active KV cache without modifying the trajectory or re-prefilling retained context. Specifically, agents can proactively use drop to exclude selected cache from future attention and repos to adjust retained keys' position encodings. We formalize these cache operations and identify history dependence as a serving challenge: identical token sequences can yield different cache states under different cache operation sequences, making prefix matching insufficient for correct cache reuse. Thus, we co-design the AKV serving engine. It provides a stateless interface compatible with existing serving APIs, while internally managing stateful cache reuse, eviction, and restoration. Experiments show that a tool-response rolling-drop cache policy improves average benchmark scores by 1.7 points and reduces average cost by 27.7%, compared with conventional threshold-triggered summarization. With AKV, it achieves up to 1.2x the output throughput and a 1.5x speedup in P95 request latency. Recursive self-improvement of cache policies further reduces cost by 7.1% over expert design. Our code is at https://github.com/thu-nics/AKV.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.28577",
+        "external_id": "2610.28577"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.28577",
+        "external_id": "2610.28577"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/thu-nics/AKV",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Tianyu Fu",
+      "Ruoxi Wang",
+      "Zihan Min",
+      "Zhongqi Ren",
+      "Zhihao Li",
+      "Tengxuan Liu",
+      "Shengxu Mu",
+      "Hanling Zhang",
+      "Yu Wang"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489661Z",
+    "dedup_keys": [
+      "arxiv:2610.28577",
+      "title:agents cache engineering for",
+      "github:thu-nics/akv"
+    ],
+    "signals": {
+      "hf_upvotes": 44,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 12,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 44.236,
+    "score_breakdown": {
+      "hf_upvotes": 30.453,
+      "github_stars": 5.13,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.347
+    }
+  },
+  {
+    "id": "ce6632b6bab54667",
+    "kind": "paper",
+    "title": "Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation",
+    "summary_en": "Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access to the intervening visual context. Drawing supervision directly from training videos, FCP requires no additional pretrained visual encoder and leaves autoregressive inference unchanged. Our method achieves superior physical plausibility over standard teacher-forced autoregressive training with a lower overall training compute budget, highlighting the effectiveness and efficiency of future-chunk supervision for modeling visual evolution. Intriguingly, our visualizations suggest that FCP fosters a more structured representation space, which may be valuable for building autoregressive world models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.29989",
+        "external_id": "2610.29989"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.29989",
+        "external_id": "2610.29989"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/TencentARC/Looking-Ahead",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ruopeng Gao",
+      "Yukun Huang",
+      "Jiarui Hu",
+      "Shuai Wang",
+      "Wenbo Hu",
+      "Ying Shan",
+      "Limin Wang"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489707Z",
+    "dedup_keys": [
+      "arxiv:2610.29989",
+      "title:ahead autoregressive evolution future generation looking modeling video",
+      "github:tencentarc/looking-ahead"
+    ],
+    "signals": {
+      "hf_upvotes": 35,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.594,
+    "score_breakdown": {
+      "hf_upvotes": 28.668,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "754bba89242c4f24",
+    "kind": "paper",
+    "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
+    "summary_en": "Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: what changes when a multimodal agent moves from computer-use to robot-use? We introduce PAPAV, a unified capability-centric framework of five recurring functions: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome. Defined by function rather than architecture, these capabilities let PAPAV identify what all three share and then compare MMEAs with MMAs and with RSs. Five physical constraints, from partial observability to unverifiable outcomes, leave fewer choices fixed in advance and less room to reverse errors. Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success. These constraints also frame the open challenges we identify. PAPAV therefore provides a common basis for designing reliable physical agents and measuring progress across all five capabilities rather than task success alone.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.30108",
+        "external_id": "2610.30108"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.30108",
+        "external_id": "2610.30108"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/showlab/Awesome-Multimodal-Embodied-Agent",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yanzhe Chen",
+      "Ziyi Yang",
+      "Jifeng Zhu",
+      "Qiming Huang",
+      "Ruihe An",
+      "Peiyao Xu",
+      "Hesen Yang",
+      "Runda Liu",
+      "Chang Gong",
+      "Zhijun Cao",
+      "Zechen Bai",
+      "Wenzheng Zeng",
+      "Yiqi Lin",
+      "Guoqiang Liang",
+      "Kevin Yuchen Ma",
+      "Kevin Qinghong Lin",
+      "Mike Zheng Shou"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.490053Z",
+    "dedup_keys": [
+      "arxiv:2610.30108",
+      "title:agents capability centric computer embodied from multimodal perspective robot unified use use",
+      "github:showlab/awesome-multimodal-embodied-agent"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 137,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.586,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "github_stars": 9.855,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "b5fd6a05d5a4fd87",
+    "kind": "paper",
+    "title": "AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics",
+    "summary_en": "Agentic robotics systems combine planners with robot harnesses to perform complex manipulation tasks. Recent work improves these systems through better harnesses and external memory, but relies on powerful closed-source models as planners and does not improve the planners' own capabilities. In contrast, coding agents have improved substantially by post-training the model itself. We therefore investigate whether post-training can also improve robot planners. However, applying it across robot harnesses requires accommodating different execution mechanisms, including VLA skill invocation and control-code generation. To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning. To accommodate different execution mechanisms, harness-specific adapters connect recorded planner interactions with task outcomes, enabling a common RL training pipeline while keeping execution components fixed. On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory. These results demonstrate post-training as an effective approach for improving robot planners. We will release the framework and trained planner checkpoints.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.28589",
+        "external_id": "2610.28589"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.28589",
+        "external_id": "2610.28589"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/xinxinliu-ai/AgenticRoboRL",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xinxin Liu",
+      "Bingxin Xu",
+      "Wenrui Bao",
+      "Ming Li",
+      "Wentao Bao",
+      "Chen Chen",
+      "Yuzhang Shang"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489780Z",
+    "dedup_keys": [
+      "arxiv:2610.28589",
+      "title:agent agentic agenticroborl bringing coding post robotics training",
+      "github:xinxinliu-ai/agenticroborl"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.478,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.347
+    }
+  },
+  {
+    "id": "3108fd8458728243",
+    "kind": "paper",
+    "title": "Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds",
+    "summary_en": "Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We investigate this question through a controlled study of continued pre-training (CPT) across three axes: data volume, diversity, and model size. Our 120 training configurations span four model sizes from 0.8B to 27B, six data budgets from 50 to 1,600 hours, and five mixtures ranging from Minecraft-only data to diverse multi-world corpora. We assess performance and generalization using three-level validation losses and gameplay benchmarks from in-corpus worlds to unseen worlds. Our results show: (1) more data improves in-corpus performance, diversity improves transfer to related worlds with limited gains in distant worlds, and model size improves data efficiency but generalizes worse to distant worlds under single-world training; (2) we observe an early interface phase with broad cross-world benefits and a later world phase with gains narrowed to in-corpus and related worlds, and fit an empirical scaling law relating validation loss to data volume, diversity and model size; and (3) our models are competitive with Minecraft specialists and frontier models in 3D worlds, and perform best in real-time settings. However, the limits of imitation and persistent gaps in distant worlds suggest that building generalist embodied agents requires richer training stages beyond continued pre-training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.28698",
+        "external_id": "2610.28698"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.28698",
+        "external_id": "2610.28698"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/THUSI-Lab/GameScaling",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kuan Zhang",
+      "Yukun Chen",
+      "Zhihao Yang",
+      "Yue Su",
+      "Xiangnan Wu",
+      "Zirong Chen",
+      "Run Luo",
+      "Jinkun Hou",
+      "Tao Tan",
+      "Yinhe Zheng",
+      "Yiming Li"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489810Z",
+    "dedup_keys": [
+      "arxiv:2610.28698",
+      "title:agents continued diverse embodied for games pre scaling training virtual worlds",
+      "github:thusi-lab/gamescaling"
+    ],
+    "signals": {
+      "hf_upvotes": 15,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 9,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.439,
+    "score_breakdown": {
+      "hf_upvotes": 22.181,
+      "github_stars": 4.605,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.347
+    }
+  },
+  {
+    "id": "6e256816e6505eb6",
+    "kind": "paper",
+    "title": "StreamEval: Evaluating Interactive Streaming Video Generation Models",
+    "summary_en": "As streaming video generation advances, enabling real-time interaction with generated video is becoming increasingly important. We introduce StreamEval, a unified benchmark for interactive streaming video generation spanning five tasks: avatar dialogue, avatar performance, world generation, instruction editing, and reference editing. StreamEval comprises 300 scripted test cases lasting 15-300s, each specifying initial assets, incrementally arriving multimodal requests, and explicit requirements for state changes and content preservation. Performance is assessed along four evaluation dimensions: task execution, state consistency, visual fidelity, and audiovisual coordination, instantiated through ten task-specific metrics on a 0-100 scale. Evaluating 37 distinct models across 300 test cases, we find that high visual quality and identity retention do not necessarily coincide with reliable request execution or sustained state consistency. In particular, request execution remains challenging: the highest task-specific scores are 36.90 for Following among seven avatar-performance models, 25.93 for Following in text-conditioned world generation, and 15.00 for Edit Success among three reported reference-editing models. These findings identify reliable request execution under timing and preservation constraints as a central challenge for advancing omni-modal real-time interactive systems. The leaderboard is available at https://streameval.ai",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.28402",
+        "external_id": "2610.28402"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.28402",
+        "external_id": "2610.28402"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/StreamEval/StreamEval",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "StreamEval Team"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.490078Z",
+    "dedup_keys": [
+      "arxiv:2610.28402",
+      "title:evaluating generation interactive models streameval streaming video",
+      "github:streameval/streameval"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 129,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.955,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 9.735,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.347
+    }
+  },
+  {
+    "id": "0bdf26f49acd7059",
+    "kind": "release",
+    "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+    "summary_en": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/building-chatgpt-ad-stack",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-21T07:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:09.064319Z",
+    "dedup_keys": [
+      "url:openai.com/index/building-chatgpt-ad-stack",
+      "title:and built chatgpt for how novel relevance stack trust user"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.59,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.41
+    }
+  },
+  {
+    "id": "5763ced9989d07e0",
+    "kind": "release",
+    "title": "Using thousands of AI agents to uncover new leads in biological data",
+    "summary_en": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-21T04:50:00Z",
+    "first_seen_at": "2026-10-22T05:33:09.064244Z",
+    "dedup_keys": [
+      "url:openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "title:agents biological data leads new thousands uncover using"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.455,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.545
+    }
+  },
+  {
+    "id": "3c2e422bb7bc9eac",
+    "kind": "paper",
+    "title": "ALPS: Visual State Encoders for World Models",
+    "summary_en": "World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment, and pixel reconstruction, so that a single representation can support prediction, instruction, and inspection. However, existing encoders typically specialize in only one or two of these capabilities; we therefore introduce ALPS, a pretrained visual state encoder that unifies all three in a single set of patch tokens. Using only still images and text, we pretrain a ViT-B/16 from scratch with language, reconstruction, and spatial correspondence objectives, and then refine it via cross-view self-distillation. In a unified evaluation across fifteen public encoders, ALPS achieves the lowest aggregate LIBERO state-probe error among ViT-B models (matching the 3.5x larger V-JEPA 2-L) while maintaining strong language alignment and accurate pixel reconstruction. Downstream, frozen ALPS tokens reach the highest mean policy success on LIBERO (85.5%) when paired with our native text tower, match or exceed leading encoders on world-model planning across PushT, Wall, and Granular, and allow predicted future tokens to be decoded directly into pixels for visual inspection. We hope this work helps establish visual pretraining as a shared foundation for understanding, prediction, and action in world models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.30120",
+        "external_id": "2610.30120"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.30120",
+        "external_id": "2610.30120"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/UCSC-VLAA/ALPS",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yanqing Liu",
+      "Letian Zhang",
+      "Chengzhi Liu",
+      "Zijun Wang",
+      "Jieru Mei",
+      "Hongliang Fei",
+      "Yuyin Zhou",
+      "Cihang Xie"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489968Z",
+    "dedup_keys": [
+      "arxiv:2610.30120",
+      "title:alps encoders for models state visual world",
+      "github:ucsc-vlaa/alps"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.722,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "f4946fc042477f7f",
+    "kind": "paper",
+    "title": "DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations",
+    "summary_en": "Despite recent progress in dexterous reference tracking, existing models focus primarily on single-hand manipulation and a limited range of interactions, leaving the bimanual dexterous behaviors common in real life unaddressed. The scarcity of contact-rich bimanual manipulation data and the increased complexity of coordinating contacts make developing a generalist bimanual tracker particularly challenging. Therefore, we present 1) DONIC, the first generalist bimanual tracker jointly trained across operation categories and human-motion sources, together with 2) BiHOI, a multi-view dataset of 1,575 sequences spanning 229 objects and emphasizing sustained bimanual interaction, where reconstructed interactions are retargeted into robot references. DONIC combines proximal policy optimization with behavioral cloning in a feedback loop that recycles verified successful executions into training demonstrations. An object-centered per-hand reward maintains object-motion feedback while supervising each hand according to its reference contact role. Clip-Centered Advantages remove reference-dependent advantage offsets while preserving within-trajectory differences. Together, these designs enable one single policy to learn coordinated manipulation across heterogeneous references. Without finetuning, a single checkpoint achieves 86.79% success on unseen trajectories of training objects and 57.32% on held-out objects, surpassing the state-of-the-art bimanual tracking baselines by 77.36 and 45.73 percentage points.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.29997",
+        "external_id": "2610.29997"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.29997",
+        "external_id": "2610.29997"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Ropedia/DONIC",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Mingze Sun",
+      "Ziang Cao",
+      "Yuan Fei",
+      "Qiankuan Tao",
+      "Zihan Wang",
+      "Tianqi Liu",
+      "Junhao Chen",
+      "Haiwen Diao",
+      "Fangzhou Hong",
+      "Zhaoxi Chen",
+      "Ziwei Liu"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489897Z",
+    "dedup_keys": [
+      "arxiv:2610.29997",
+      "title:bimanual control demonstrations dexterous donic from generalist human tracking",
+      "github:ropedia/donic"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.484,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "40dbac7af51c8606",
+    "kind": "release",
+    "title": "Broad access through consistent standards",
+    "summary_en": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/broad-access-through-consistent-standards",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-21T21:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:09.064025Z",
+    "dedup_keys": [
+      "url:openai.com/index/broad-access-through-consistent-standards",
+      "title:access broad consistent standards through"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.465,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.535
+    }
+  },
+  {
+    "id": "b2d7afc7b6c6b653",
+    "kind": "paper",
+    "title": "Memory-Centric Continual Learning for AI Agents",
+    "summary_en": "Autonomous agents powered by foundation models can reason, plan, and use tools, but their fixed weights and context limits hinder sustained learning from experience over long-term deployment. While external memory systems attempt to bridge this gap, they mostly act as passive retrieval caches, evaluated primarily by whether they can recall stored facts or past interactions. Whether memory can drive genuine continual learning remains an open question. In this paper, we introduce Memory-Centric Continual Learning (MCCL), arguing that memory should be judged by whether it improves future actions, not merely what it retrieves. MCCL has three main parts. First, a three-axis taxonomy organizes memory by where state is stored (substrates), what form it takes (assets), and how it is managed (policies). This defines a two-loop lifecycle that updates memory state in an inner loop while refining management policies in an outer loop based on task feedback. Second, an evaluation protocol measures retention under interference, adaptation to change, and task transfer to isolate genuine behavioral gains from simple context expansion. Third, a memory scaling framework models how agent performance scales with experience, storage capacity, and compute budgets across non-parametric and parametric memory. Together, these components reframe agent memory from passive lookup to continuous learning, offering a principled route toward self-improving autonomous agents.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.29357",
+        "external_id": "2610.29357"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.29357",
+        "external_id": "2610.29357"
+      }
+    ],
+    "actors": [
+      "Dongfang Li",
+      "Zhuoen Chen",
+      "Bonian Jia",
+      "Zixuan Liu",
+      "Zhengxuan Lu",
+      "Can Deng",
+      "Yukun Shi",
+      "Yuhang Meng",
+      "Xin Zhang",
+      "Jiahe Huang",
+      "Fuhao Li",
+      "Junmai Wang",
+      "Shunyao Wen",
+      "Jingjun Sun",
+      "Jiaxu Tian",
+      "Jiangling Zhang",
+      "Zihan Wang",
+      "Liangyou Li",
+      "Yitong Yao",
+      "Shuangyong Song",
+      "Beilun Wang",
+      "Pengxu Wei",
+      "Hanlin Xu",
+      "Chang Liu",
+      "Yongxiang Li",
+      "Baotian Hu",
+      "Xiangyang Ji",
+      "Min Zhang"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489840Z",
+    "dedup_keys": [
+      "arxiv:2610.29357",
+      "title:agents centric continual for learning memory"
+    ],
+    "signals": {
+      "hf_upvotes": 15,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.334,
+    "score_breakdown": {
+      "hf_upvotes": 22.181,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "d79168f453493cf3",
+    "kind": "release",
+    "title": "How AT&T is rethinking in-house legal work with OpenAI",
+    "summary_en": "AT&amp;T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/att-legal",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-21T17:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:09.063945Z",
+    "dedup_keys": [
+      "url:openai.com/index/att-legal",
+      "title:house how legal openai rethinking with work"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.215,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.785
+    }
+  },
+  {
+    "id": "787ec5b41a86339e",
+    "kind": "release",
+    "title": "Empowering frontline maternal care with AI-assisted ultrasound",
+    "summary_en": "Health & Bioscience",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "google_research",
+        "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "google_research"
+    ],
+    "published_at": "2026-10-21T16:23:53Z",
+    "first_seen_at": "2026-10-22T05:33:09.926002Z",
+    "dedup_keys": [
+      "url:research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound",
+      "title:assisted care empowering frontline maternal ultrasound with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.178,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.822
+    }
+  },
+  {
+    "id": "78eef8d9789b4844",
+    "kind": "release",
+    "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+    "summary_en": "For decades, a fundamental question about the difficulty of computing in high-dimensional spaces has resisted proof. New research resolves this question, removing a major theoretical obstacle to understanding the efficiency of randomized algorithms used across science and computing. The Kannan–Lovász–Simonovits (KLS) conjecture was proposed in 1995. It asks whether, for a broad class of high-dimensional [&#8230;] The post Solving a 31-year-old grand challenge in mathematics – the KLS conjecture appeared first on Microsoft Research .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "microsoft_research"
+    ],
+    "published_at": "2026-10-21T16:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:11.424416Z",
+    "dedup_keys": [
+      "url:microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture",
+      "title:challenge conjecture grand kls mathematics old solving the year"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.153,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.847
+    }
+  },
+  {
+    "id": "0e2002ab98127800",
+    "kind": "release",
+    "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
+    "summary_en": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-10-21T12:30:00Z",
+    "first_seen_at": "2026-10-22T05:33:10.580430Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search",
+      "title:design guided inference proteina proteins reward rfd4 search time using with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.934,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.066
+    }
+  },
+  {
+    "id": "0169ce1a354bf361",
+    "kind": "release",
+    "title": "OpenAI models are coming to Google Cloud",
+    "summary_en": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/openai-models-google-cloud",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-21T12:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:09.064072Z",
+    "dedup_keys": [
+      "url:openai.com/index/openai-models-google-cloud",
+      "title:are cloud coming google models openai"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.903,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.097
+    }
+  },
+  {
+    "id": "a9bb60a2ea1f320c",
+    "kind": "release",
+    "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
+    "summary_en": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-10-21T09:35:32Z",
+    "first_seen_at": "2026-10-22T05:33:10.580631Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod",
+      "title:achieve and capacity dsx faster more nvidia pod predictably productive with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.752,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.248
+    }
+  },
+  {
+    "id": "d15c544d4a130f24",
+    "kind": "paper",
+    "title": "Real In, Real Out: What If We Only Use Real Data for Scene Text Editing?",
+    "summary_en": "Aiming to modify textual content while preserving the original style, Scene Text Editing (STE) has significant practical value in many applications. STE typically requires paired images before and after editing for training. However, recent approaches rely heavily on synthetic paired data and complex disentanglement strategies. They struggle to faithfully capture the diversity and complexity of natural scenes, often producing artifacts or hallucinations. In this work, we challenge the common practice and investigate whether STE can be driven by turning each real sample into its own paired supervision. Concretely, we explore multiple ways to disrupt the original image (e.g., Crop, Shuffle, Mask) to construct self-paired training data, and build a strong baseline (TextRIRO}) upon a conditional diffusion architecture. Our experiments show that combining character-column shuffling with image cropping (Shuffle&Crop) effectively destroys text semantics while preserving key style cues, enabling the model to learn editing behaviors directly from the real text image. With this concise yet real-oriented design, TextRIRO achieves promising performance in both accuracy and visual realism across real-world benchmarks, substantially mitigating the synthetic-to-real domain gap. Furthermore, we leverage TextRIRO to build TextRIRO-3M, a large-scale realistic dataset for long-text recognition by concatenating edited and original images. Experimental results show that training recognition models with TextRIRO-3M significantly improves recognition accuracy, demonstrating that TextRIRO provides highly useful training resources for downstream tasks. Overall, TextRIRO lifts STE to realistic, reliable, and widely applicable new levels. Code is available at https://github.com/YesianRohn/TextRIRO.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.27592",
+        "external_id": "2610.27592"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.27592",
+        "external_id": "2610.27592"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/YesianRohn/TextRIRO",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xingsong Ye",
+      "Yongkun Du",
+      "Jiaxin Zhang",
+      "Chong Sun",
+      "Zhineng Chen"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.490023Z",
+    "dedup_keys": [
+      "arxiv:2610.27592",
+      "title:data editing for only out real real real scene text use what",
+      "github:yesianrohn/textriro"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 28.46,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.347
+    }
+  },
+  {
+    "id": "439af14fa8749086",
+    "kind": "release",
+    "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+    "summary_en": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/cloudflare-cyber",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:09.064281Z",
+    "dedup_keys": [
+      "url:openai.com/index/cloudflare-cyber",
+      "title:cloudflare defense discovery links openai vulnerability with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.153,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "81498c3d3e246330",
+    "kind": "release",
+    "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+    "summary_en": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/empowering-cyber-defenders",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:09.064365Z",
+    "dedup_keys": [
+      "url:openai.com/index/empowering-cyber-defenders",
+      "title:cyber defenders democratic empowering frontier governance part"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.153,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "653cbbea303e9d2d",
+    "kind": "paper",
+    "title": "TraceForge: Distilling with Your Own Thinking",
+    "summary_en": "Using an LLM to generate training data for another is among the most general ways to train one, and it remains common practice. Some frontier teams have closed that route for their own models: what comes back is an answer, or a short summary, without the detailed reasoning trace behind it. That is a little ironic: they were themselves built on distilling human knowledge, and distilling an open-source model is still entirely routine; the restriction applies to their own outputs alone. Recent work recovers the hidden reasoning by replaying encrypted blocks across models. It somehow works, but it breaks the providers' terms of service, so it is not something a product can be built on long-term.\n  We built the alternative. We take the context and the teacher's answer as input, and generate the reasoning trace ourselves, in the style of the student's own model family. Training is two-stage, supervised and then adversarial: a generator learns to regenerate the family's own reasoning traces from their context and answer, and a critic learns how real a reasoning trace looks. Applied to a teacher's answer, the generator writes one in the family's style. An independent judge rates how likely traces are to be genuine on a scale from 0 to 1: ours average 0.68, real traces 0.66, and traces selected by the critic from four candidates 0.82. These are authenticity scores, not correctness rates.\n  We test the idea on five benchmarks with everything else held fixed. On general tasks the five training corpora are about the same; on coding, the generated reasoning beats Fable 5's own thinking content. With the same 5,000 questions and the same teacher answers, HumanEval+ improves by 3.7 points and MBPP+ by 7.1 at the final checkpoint, and the MBPP+ lead holds at every checkpoint. We suspect that reasoning written in the student's family style is easier for it to learn from.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.29680",
+        "external_id": "2610.29680"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.29680",
+        "external_id": "2610.29680"
+      }
+    ],
+    "actors": [
+      "Yan Wang"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489919Z",
+    "dedup_keys": [
+      "arxiv:2610.29680",
+      "title:distilling own thinking traceforge with your"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.032,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "23f37354a914c747",
+    "kind": "paper",
+    "title": "Socratic Skill Learning: Interleaving Teaching and Practice for Transferable Agent Skills",
+    "summary_en": "Agent Skills improve LLM agents by making task knowledge reusable across sessions. Learning transferable Skills requires evidence about a procedure and its conditions of use, which a successful task attempt can leave untested. We introduce Socratic Skill Learning (SSL), which interleaves expert teaching with Student practice. An Educator guides investigation while the Student remains the sole environment operator and Skill author, able to question, test, and adapt advice. To test reuse beyond the learning task, we construct SkillTransferBench, with 35 task families and 408 executable cases, pairing public variation specifications with held-out evaluation in fresh solver sessions. On the main 22-family, 155-case cohort, Fixed-Window SSL reaches 0.801 utility, versus 0.723 without a Skill, 0.761 for adapted Trace2Skill (trajectory distillation), and 0.751 for adapted SKILL-KD (contrastive distillation). Across three model pairs on shared families, interleaved guidance outperforms expert authoring and post-hoc teaching. Process analysis links guidance to Student writing and package revision; a case study shows the Student testing and refining a proposed procedure for later reuse. As demand for new lessons falls, the cost of fixed-window review grows. Issue-Guided SSL tracks unresolved questions across Skill revisions to select and focus review, reaching 0.805 utility with 61.7% fewer Educator tokens and 16.9% fewer total acquisition tokens than Fixed-Window SSL on the main cohort.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.17860",
+        "external_id": "2610.17860"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.17860",
+        "external_id": "2610.17860"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/NJU-LINK/Socratic-Skill-Learning",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Letian Zhu",
+      "Han Li",
+      "Yifan Yao",
+      "Xinping Lei",
+      "Xinyu Che",
+      "Jiahao Wang",
+      "Dianyi Wang",
+      "Yucheng Fu",
+      "Jiakai Wang",
+      "Zhiqi Bai",
+      "Wenbo Su",
+      "Jiaheng Liu"
+    ],
+    "published_at": "2026-10-13T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489749Z",
+    "dedup_keys": [
+      "arxiv:2610.17860",
+      "title:agent and for interleaving learning practice skill skills socratic teaching transferable",
+      "github:nju-link/socratic-skill-learning"
+    ],
+    "signals": {
+      "hf_upvotes": 25,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.415,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -13.847
+    }
+  },
+  {
+    "id": "bd054dce0572ecc1",
+    "kind": "paper",
+    "title": "Sparsity Should Be ALLOTted by Output: Training-Free Allocation of Block-Sparse Attention for Video Diffusion Transformers",
+    "summary_en": "Full 3D attention is costly in video Diffusion Transformers. Block-sparse attention reduces this cost by computing only selected attention blocks. However, existing methods either overlook the potential to optimize sparsity allocation or rely on heuristic rules or local metrics to guide it. In this work, we observe that sparsifying attention in different layers and at different denoising steps affects final-video fidelity to substantially different degrees. Yet the identities of the most sensitive layer-step pairs remain nearly unchanged across inputs. Building on these findings, we propose Allocating Layer-step Latency by Output Tests (ALLOT), a training-free sparsity allocation method. Treating each layer-step pair as a cell, ALLOT estimates each cell's contribution to final-video error through (i) cell probing and (ii) trajectory calibration, then jointly optimizes cell densities under a measured-latency budget. It preserves existing selection strategies and kernels, replacing only the allocation component. At equal or shorter wall-clock time, ALLOT outperforms every compared allocation strategy with XAttention, with an 11.8 dB PSNR gain on HunyuanVideo. Extensive experiments across four additional published pipelines on Wan2.1, Wan2.2, and HunyuanVideo show that ALLOT outperforms or ties the default in all nine settings.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.29441",
+        "external_id": "2610.29441"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.29441",
+        "external_id": "2610.29441"
+      }
+    ],
+    "actors": [
+      "Tianze Xia",
+      "Xiaoling Zhou",
+      "Ruya Lan",
+      "Yiqiao Liao",
+      "Chengru Song",
+      "Shiming Xiang"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489943Z",
+    "dedup_keys": [
+      "arxiv:2610.29441",
+      "title:allocation allotted attention block diffusion for free output should sparse sparsity training transformers video"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.336,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "9fb4c582483e8363",
+    "kind": "paper",
+    "title": "Spectral-Spatial Interpretation",
+    "summary_en": "Post-hoc image explanations usually show where a model looks using spatial heatmaps or indicate which channels matter using global channel scores. These separate views are limiting for multispectral data because channel relevance is often spatially localized and physically meaningful. We introduce Spectral-Spatial Interpretation (SSI), a full-grid attribution method over position-channel players (g,c). For each spatial position, SSI fixes the observed surrounding context, defines a conditional game over the channels at that position, and applies the Shapley value to this local game. The result is a full spectral-spatial attribution matrix rather than a single heatmap or a global channel ranking. SSI has a clear local interpretation. It satisfies Shapley fairness within each position, and aggregating its channel attributions exactly recovers the position-level contextual contrast obtained by replacing that position with the baseline. SSI also differs from context-averaged Owen-style hierarchical accounting, which uses the same position-channel grouping but averages over external spatial coalitions. On HLS Burn Scar, SSI outperforms an MC-Owen estimator across retained attribution metrics while using only about 6% of its evaluation budget. Across CUB-200, EuroSAT, and HLS Burn Scar under both per-channel mean and zero baselines, SSI achieves the best joint deletion and insertion AUC over dense, flat, and rank-1 baselines, yields the strongest spectral hit rates and channel deletion, and leads spatial localization on both annotated datasets. Code is available at https://github.com/AtheavenMa/Spectral-Spatial-Interpretation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.21114",
+        "external_id": "2610.21114"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.21114",
+        "external_id": "2610.21114"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AtheavenMa/Spectral-Spatial-Interpretation",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haotian Ma",
+      "Ruqi Yang",
+      "Philip Townsend"
+    ],
+    "published_at": "2026-10-15T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489865Z",
+    "dedup_keys": [
+      "arxiv:2610.21114",
+      "title:interpretation spatial spectral",
+      "github:atheavenma/spectral-spatial-interpretation"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.036,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -10.847
+    }
+  },
+  {
+    "id": "9088095146740807",
+    "kind": "paper",
+    "title": "Which Agent's Skill Should Change? Group-Relative Credit Assignment for Evolving Multi-Agent Teams",
+    "summary_en": "Cooperative language-model agents can improve without weight updates by revising reusable skills, but only if a shared team reward is traced to the responsible agent and skill. Existing methods credit the skills present in each trajectory, yet presence is not responsibility: a harmful skill active in successful runs still earns positive credit. We present GRSE, Group-Relative Skill Evolution, which assigns behavioral credit by comparison: inspired by GRPO, it executes each question several times under the same skill libraries and contrasts the executions to credit agent--skill pairs, with structured diagnosis of failures. On HotpotQA and LoCoMo with two open-weight actors, GRSE outperforms MASkills, the closest prior method, on HotpotQA and every LoCoMo category except open-domain, with the largest gains on multi-hop questions (+6.7 and +3.2 F1). Its gains rest on better-grounded retrieval rather than answers given without evidence, and its learned skills transfer between the multi-hop tasks. GRSE is robust to corrupted libraries: starting from planted harmful skills, it credits every planted skill with the correct sign and recovers the score of a clean library (+6.3 points), whereas MASkills misattributes two and falls below its starting point.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.27227",
+        "external_id": "2610.27227"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.27227",
+        "external_id": "2610.27227"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yananma1029/GRSE-Skills",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yanan Ma",
+      "Yang Wang",
+      "David Le",
+      "Chenhan Yuan",
+      "Yizheng Sun",
+      "Guangwei Zhang",
+      "Chenghao Xiao",
+      "Chenghua Lin",
+      "Imon Banerjee"
+    ],
+    "published_at": "2026-10-19T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.490129Z",
+    "dedup_keys": [
+      "arxiv:2610.27227",
+      "title:agent agent assignment change credit evolving for group multi relative should skill teams which",
+      "github:yananma1029/grse-skills"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 24.917,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.847
+    }
+  },
+  {
+    "id": "5790292a4080fa79",
+    "kind": "paper",
+    "title": "Harness Scaling for Generalizable Agentic Reinforcement Learning",
+    "summary_en": "Agent harnesses have become a central component of modern agentic systems, shaping how models use tools, manage context, and coordinate long-horizon interaction. Realizing the benefits of these harnesses depends on how effectively the underlying model can make use of them, motivating reinforcement learning directly through the harness. However, existing approaches typically train through a single fixed harness, which can lead to specialization and limited transfer across harness configurations. To address this, we introduce Harness Scaling, a new scaling dimension for agentic RL that extends training from a single harness to diverse execution configurations. Concretely, we construct a factorized harness space, select a compact training subset with balanced factorial coverage, and organize cross-harness training to combine global coverage with controlled variation for the same task. Across multiple benchmarks, model scales, and RL algorithms, Harness Scaling consistently improves generalization to unseen white-box configurations. Moreover, models trained through structured white-box variation transfer effectively to unseen external black-box harnesses, outperforming models trained through a single complex black-box harness. These results establish harness diversity as a meaningful scaling dimension for agentic RL and highlight the importance of how this diversity is organized for cross-harness generalization.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.29458",
+        "external_id": "2610.29458"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.29458",
+        "external_id": "2610.29458"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/RUCAIBox/Harness-Scaling",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Fei Bai",
+      "Huatong Song",
+      "Chuan Hao",
+      "Ran Tao",
+      "Jian Yang",
+      "Bryan Dai",
+      "Wayne Xin Zhao",
+      "Ji-Rong Wen"
+    ],
+    "published_at": "2026-10-21T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.490182Z",
+    "dedup_keys": [
+      "arxiv:2610.29458",
+      "title:agentic for generalizable harness learning reinforcement scaling",
+      "github:rucaibox/harness-scaling"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 24.487,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.847
+    }
+  },
+  {
+    "id": "59e057e1ea45f772",
+    "kind": "paper",
+    "title": "ACE-Brain-0.6: Scaling Spatial Grounding for Physical Foundation Models",
+    "summary_en": "General-purpose multimodal models, including GPT-6 Astra and Claude Opus 5.5, demonstrate broad capabilities in embodied manipulation. Our analysis indicates that this generality is accompanied by strong spatial perception, as Astra can determine where to interact with task-relevant entities amid visual distractors. Because spatial perception connects high-level reasoning to the physical scene, we investigate scaling visual grounding to strengthen the perceptual foundation of general embodied operation. We develop a unified data pipeline that combines robot manipulation recordings with complementary visual data from diverse sources. After automatically annotating the robot recordings, the pipeline converts the collected data into verifiable grounding supervision. Fine-tuning Qwen3.5-9B on approximately 1.5 million samples produced by this pipeline yields ACE-Brain-0.6. The model outperforms GPT-6 Astra on four of seven public grounding benchmarks, with an overall average score of 75.41 compared with Astra's 73.68. Under a fixed Qwen3.5-9B fine-tuning setup, aggregate grounding performance improves steadily as successive data releases expand the training collection to cover a broader range of grounding scenarios. These results show that scaling verifiable grounding supervision from diverse sources can strengthen the spatial perception of an open 9B model for general embodied operation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.27040",
+        "external_id": "2610.27040"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.27040",
+        "external_id": "2610.27040"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/DAXIAORobotics/ACE-Brain-0.6",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yinhe Wang",
+      "Tao Tao",
+      "Zexin He",
+      "Shuang Luo",
+      "Wei Mao",
+      "Yao Mu",
+      "Feng Pan",
+      "Hanming Deng",
+      "Lewei Lu",
+      "Zhi Hou",
+      "Xingang Pan",
+      "Dahua Lin",
+      "Dacheng Tao",
+      "Xiaogang Wang"
+    ],
+    "published_at": "2026-10-19T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.490256Z",
+    "dedup_keys": [
+      "arxiv:2610.27040",
+      "title:ace brain for foundation grounding models physical scaling spatial",
+      "github:daxiaorobotics/ace-brain-0.6"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 24.188,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.847
+    }
+  },
+  {
+    "id": "921bc2fe6c6c800b",
+    "kind": "paper",
+    "title": "Building AI Research Teams for Autonomous Discovery of Linear Attention Architectures",
+    "summary_en": "Autonomous agents can increasingly propose ideas, modify code, and run experiments, creating an opportunity to accelerate scientific discovery using teams of collaborative AI researchers. To escape local minima in the discovery, we propose to encourage orthogonal exploration by constructing the team using agents with varying expertise. However, realizing this design requires more than diverse backgrounds. When experiments are costly, a team can test only a limited number of ideas, thereby creating the need to balance exploration and exploitation when selecting a subset of researchers to propose and execute new experiments. Furthermore, each result should shape what the team tries next. We therefore ask how AI researchers with different scientific backgrounds can build on one another's findings and sustain progress under a limited experimental budget. To address these challenges, we build a team of persistent AI researchers, each grounded in a different discipline, who keep private research histories, share experimental evidence, and receive research opportunities through adaptive allocation. We demonstrate the effectiveness of this design by deploying the team to search for linear attention architectures, where it outperforms GDN2 at 1.3B scale on language modeling, common-sense reasoning, and synthetic and real-world retrieval tasks. In controlled comparisons, removing any single organizational component from our design yields markedly weaker discoveries: without disciplinary backgrounds, the search plateaus early; without private histories, researchers make less progress despite identical shared evidence; and uniform selection falls short of adaptive allocation within the same budget. These results suggest that sustained autonomous discovery depends not only on stronger agents, but also on who explores, what they remember, and how research effort is allocated.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.28887",
+        "external_id": "2610.28887"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.28887",
+        "external_id": "2610.28887"
+      }
+    ],
+    "actors": [
+      "Yujian Liu",
+      "Li An",
+      "Zelin He",
+      "Jacob Helwig",
+      "Jiabao Ji",
+      "Rohit Jain",
+      "Siyu Zhu",
+      "Shiyu Chang"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-10-22T05:33:08.489993Z",
+    "dedup_keys": [
+      "arxiv:2610.28887",
+      "title:architectures attention autonomous building discovery for linear research teams"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 24.074,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.347
+    }
+  }
+]
