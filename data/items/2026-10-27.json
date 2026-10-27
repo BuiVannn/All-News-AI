@@ -1,9 +1,9 @@
 [
   {
-    "id": "3029a54251bdd559",
+    "id": "49db6280227ee5e5",
     "kind": "model",
-    "title": "tencent/WeVisOne-VL-4B",
-    "summary_en": "image-text-to-text, transformers, qwen3_vl, vision-language, object-detection, referring-expression-comprehension, object-counting",
+    "title": "baidu/Unlimited-OCR-2",
+    "summary_en": "image-text-to-text, transformers, unlimited-ocr, feature-extraction, baidu, vision-language, ocr, custom_code",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -14,23 +14,23 @@
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/tencent/WeVisOne-VL-4B",
-        "external_id": "tencent/WeVisOne-VL-4B"
+        "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+        "external_id": "baidu/Unlimited-OCR-2"
       }
     ],
     "actors": [
-      "tencent"
+      "baidu"
     ],
-    "published_at": "2026-10-22T09:48:14Z",
-    "first_seen_at": "2026-10-27T05:46:34.963125Z",
+    "published_at": "2026-10-26T03:57:46Z",
+    "first_seen_at": "2026-10-27T18:25:25.666232Z",
     "dedup_keys": [
-      "hf:tencent/wevisone-vl-4b"
+      "hf:baidu/unlimited-ocr-2"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 66,
-      "hf_downloads": 2605,
-      "hf_trending_score": 64.0,
+      "hf_likes": 205,
+      "hf_downloads": 513,
+      "hf_trending_score": 197.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -40,63 +40,81 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 54.143,
+    "score": 65.794,
     "score_breakdown": {
-      "hf_trending": 25.046,
-      "hf_downloads": 15.731,
-      "hf_likes": 12.614,
+      "hf_trending": 31.73,
+      "hf_downloads": 12.484,
+      "hf_likes": 15.984,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -7.248
+      "age_decay": -2.404
     }
   },
   {
-    "id": "ade5b4ca54976e01",
-    "kind": "model",
-    "title": "Nanbeige/Nanbeige4.3-33B-Base",
-    "summary_en": "text-generation, transformers, llama, llm, nanbeige, conversational, en",
+    "id": "c48115f174775589",
+    "kind": "paper",
+    "title": "DynaFlow: Learning Free-Form Multi-Agent Orchestration",
+    "summary_en": "Multi-agent systems often rely on predefined collaboration structures, limiting their ability to adapt to diverse task requirements. We introduce DynaFlow, a framework that integrates free-form executable workflow synthesis into the action space of the main agent. The agent decides when collaboration is needed and generates task-specific programs that coordinate sub-agents through sequential or parallel execution, structured information exchange, and verification. Execution results and traces inform subsequent actions, enabling the agent to adapt collaboration as reasoning progresses. We train only the main agent through supervised fine-tuning on distilled trajectories, followed by refinement on examples filtered for unsupported premises, biased verification, and information-flow defects. All sub-agents remain fixed, separating orchestration learning from executor capability improvement. Across six benchmarks spanning mathematical reasoning, scientific question answering, and multi-hop retrieval, DynaFlow achieves 88.08% overall accuracy in Forced mode, outperforming the strongest evaluated baseline by 10.90 percentage points with the same Qwen3.5-27B backbone. Workflow analysis finds more explicit use, verification, and refinement of upstream outputs after training, highlighting cross-stage information flow as a key dimension of multi-agent orchestration.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm"
+      "llm",
+      "agent",
+      "rag",
+      "eval"
     ],
     "links": [
       {
-        "source": "hf_models",
-        "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base",
-        "external_id": "Nanbeige/Nanbeige4.3-33B-Base"
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.34467",
+        "external_id": "2610.34467"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.34467",
+        "external_id": "2610.34467"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/amiya-special/Dynaflow",
+        "external_id": null
       }
     ],
     "actors": [
-      "Nanbeige"
+      "Ruhao Liu",
+      "Qi Li",
+      "Shizun Wang",
+      "Xinchao Wang"
     ],
-    "published_at": "2026-10-24T02:46:52Z",
-    "first_seen_at": "2026-10-27T05:46:34.963154Z",
+    "published_at": "2026-10-25T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671634Z",
     "dedup_keys": [
-      "hf:nanbeige/nanbeige4.3-33b-base"
+      "arxiv:2610.34467",
+      "title:agent dynaflow form free learning multi orchestration",
+      "github:amiya-special/dynaflow"
     ],
     "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 61,
-      "hf_downloads": 370,
-      "hf_trending_score": 61.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
+      "hf_upvotes": 182,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 53,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
     },
-    "score": 52.289,
+    "score": 57.502,
     "score_breakdown": {
-      "hf_trending": 24.763,
-      "hf_downloads": 11.832,
-      "hf_likes": 12.381,
-      "has_weights": 4.0,
+      "hf_upvotes": 41.676,
+      "github_stars": 7.978,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -4.687
+      "age_decay": -4.152
     }
   },
   {
@@ -140,93 +158,147 @@
       "Tao Lin"
     ],
     "published_at": "2026-10-24T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961365Z",
+    "first_seen_at": "2026-10-27T18:25:25.671501Z",
     "dedup_keys": [
       "arxiv:2610.33568",
       "title:agents compositional decision for grounded interaction synthesis tool trajectory2gym use",
       "github:yihaohu0118/trajectory2gym"
     ],
     "signals": {
-      "hf_upvotes": 88,
+      "hf_upvotes": 330,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 5,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 45.245,
+    "score": 56.349,
     "score_breakdown": {
-      "hf_upvotes": 35.909,
-      "github_stars": 2.197,
+      "hf_upvotes": 46.417,
+      "github_stars": 3.584,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -4.861
+      "age_decay": -5.652
     }
   },
   {
-    "id": "31b5da5f0939e157",
-    "kind": "paper",
-    "title": "InteractiveWorld: A Verifiable Human-Centric Environment for Building Better Interactive MLLM Assistants",
-    "summary_en": "People have long dreamed of an assistant that is always there to guide them and remind what they forget, from new dishes to lost keys. Powered by multimodal large language models (MLLMs), egocentric AI assistants on wearable devices are bringing this dream within reach: they see what the user sees and give instructions for user's physical work when necessary. However, testing such assistance is challenging and usually requires real people. The expensive and rare real interaction data leaves a key question unanswered: Can today's MLLMs truly help people in physical world? To answer this question, we propose InteractiveWorld, the first verifiable environment for closed-loop interaction between human and AI assistant. Unlike existing robot-centric simulators, InteractiveWorld lets the assistant guide a human agent who observes the scene, understands instructions, and acts independently. It thus realistically simulates how AI assistant collaborates with human: the assistant instructs, the human acts, and the environment executes actions and updates what they see next. Building on it, we introduce InteractiveBench, the first dynamic benchmark for egocentric AI assistants, with 120 multi-turn tasks across six categories. In each task, the assistant guides the human in real time, and every instruction shapes the outcome, which is scored by verifiable, state-based rewards. Experiments with 12 frontier MLLMs show they are still far from reliable assistants. Even the strongest model, Claude Fable 5.1, achieves at most 20% and 25% on long-horizon Guidance and Planning tasks, respectively. Overall, our work offers a verifiable platform and a rigorous evaluation set, laying a solid foundation for research on interactive MLLM assistants that truly help people in the physical world.",
+    "id": "3029a54251bdd559",
+    "kind": "model",
+    "title": "tencent/WeVisOne-VL-4B",
+    "summary_en": "image-text-to-text, transformers, qwen3_vl, vision-language, object-detection, referring-expression-comprehension, object-counting",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "agent",
       "multimodal",
-      "robotics",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/tencent/WeVisOne-VL-4B",
+        "external_id": "tencent/WeVisOne-VL-4B"
+      }
+    ],
+    "actors": [
+      "tencent"
+    ],
+    "published_at": "2026-10-22T09:48:14Z",
+    "first_seen_at": "2026-10-27T18:25:25.667076Z",
+    "dedup_keys": [
+      "hf:tencent/wevisone-vl-4b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 67,
+      "hf_downloads": 3786,
+      "hf_trending_score": 65.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 54.237,
+    "score_breakdown": {
+      "hf_trending": 25.138,
+      "hf_downloads": 16.479,
+      "hf_likes": 12.659,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -8.039
+    }
+  },
+  {
+    "id": "cbab863991130ee8",
+    "kind": "paper",
+    "title": "Work Agents: Systems, Capabilities, and Optimization",
+    "summary_en": "As foundation models evolve from information generation to digital work execution, agents are increasingly capable of completing complex tasks across tools, applications, and workflows. However, existing research lacks a unified perspective on how agents reliably accomplish delegated work. To address this gap, we present a work-centric, system-level perspective that views work agents as systems combining foundation models and runtime harnesses to execute tasks in stateful workspaces and deliver verifiable outcomes. We introduce two complementary dimensions, work persistence and work openness, to characterize working conditions, and classify digital work into five forms according to task scope and organization. Building on this framework, we identify five core capability families required for reliable work execution and examine approaches to model optimization, harness optimization, and their joint optimization. We further analyze existing evaluation methods and metrics from the perspective of work outcomes. Finally, we discuss future research directions, including sustained work delegation, adaptation to open environments, and the interaction between work execution and capability improvement. This paper provides a unified framework for understanding, optimizing, and evaluating work agents, supporting the development of systems capable of delivering reliable, verifiable, and practically valuable work outcomes.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.33966",
-        "external_id": "2610.33966"
+        "url": "https://huggingface.co/papers/2610.35845",
+        "external_id": "2610.35845"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.33966",
-        "external_id": "2610.33966"
+        "url": "https://arxiv.org/abs/2610.35845",
+        "external_id": "2610.35845"
       },
       {
         "source": "github",
-        "url": "https://github.com/facebookresearch/InteractiveWorld",
+        "url": "https://github.com/EnjunDu/awesome-working-agent",
         "external_id": null
       }
     ],
     "actors": [
-      "Qinsi Wang",
-      "Wei Wen",
-      "Chong Zhou",
-      "Saksham Suri",
-      "Zechun Liu",
-      "Lemeng Wu",
-      "Hai Helen Li",
-      "Yiran Chen",
-      "Raghuraman Krishnamoorthi",
-      "Qi Qian"
+      "Zishan Xu",
+      "Enjun Du",
+      "Mingqi Gao",
+      "Cheng Yang",
+      "Junhao Shen",
+      "Zirong Chen",
+      "Zhiyuan Yao",
+      "Yifu Guo",
+      "Yuquan Lu",
+      "Jinyang Huang",
+      "Zhengxi Lu",
+      "Siyi Liu",
+      "Ziyu Zheng",
+      "Yongqi Zhang",
+      "Difan Zou",
+      "Weiwen Liu"
     ],
-    "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961429Z",
+    "published_at": "2026-10-26T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671707Z",
     "dedup_keys": [
-      "arxiv:2610.33966",
-      "title:assistants better building centric environment for human interactive interactiveworld mllm verifiable",
-      "github:facebookresearch/interactiveworld"
+      "arxiv:2610.35845",
+      "title:agents and capabilities optimization systems work",
+      "github:enjundu/awesome-working-agent"
     ],
     "signals": {
-      "hf_upvotes": 56,
+      "hf_upvotes": 96,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 6,
+      "github_stars": 56,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -234,87 +306,113 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 44.875,
+    "score": 54.032,
     "score_breakdown": {
-      "hf_upvotes": 32.344,
-      "github_stars": 3.892,
+      "hf_upvotes": 36.598,
+      "github_stars": 8.086,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.361
+      "age_decay": -2.652
     }
   },
   {
-    "id": "3f4377b7c5baa4b2",
-    "kind": "paper",
-    "title": "StreamVibe: Proactive Video Agents for Evolving User Intent",
-    "summary_en": "Vision-language models are shifting from offline passive understanding toward online proactive interaction. However, prevailing methods largely rely on explicit requests while miss the implicit user intent (e.g., \"where should I click next?\" while a user navigate a website), meanwhile fail to update the state simultaneously as user requests might update continuously. These limitations make them less suited to intent-aware interaction in practical. To address these challenges, we introduce StreamVibe-Bench, a new benchmark serving as testbed for user intent interaction, with 4.1K evaluation samples and 85K training samples spanning explicit, implicit, and dynamic intents. Building on this benchmark, we develop StreamVibe-VL, a streaming proactive model that infers implicit user intents from continuous observations and dynamically tailors its interactions as these intents evolve. We further introduce StreamVibe-Harness, which maintains user intents as persistent states with a fleixble lifecycles via a hierarchical memory to track the latest user intent and environmental state. Our experiments reveal three key findings: (i) StreamVibe-VL preserves strong general video understanding while improving response timing and answer quality by 10.7% over other baselines; (ii) existing proactive models remain limited in understanding user intent and deciding when to respond, especially under implicit and dynamic intents; and (iii) StreamVibe-Harness further improves response consistency and adaptation over sustained interaction, resulting in a 12.3% gain in proactive interaction.",
+    "id": "ade5b4ca54976e01",
+    "kind": "model",
+    "title": "Nanbeige/Nanbeige4.3-33B-Base",
+    "summary_en": "text-generation, transformers, llama, llm, nanbeige, conversational, en",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "agent",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
+      "llm"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.34662",
-        "external_id": "2610.34662"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.34662",
-        "external_id": "2610.34662"
+        "source": "hf_models",
+        "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base",
+        "external_id": "Nanbeige/Nanbeige4.3-33B-Base"
       }
     ],
     "actors": [
-      "Chengzhi Liu",
-      "Yuxiang Lai",
-      "Yuzhe Yang",
-      "Yanqing Liu",
-      "Jiheng Hou",
-      "Yue Cao",
-      "Haonan Wang",
-      "Ruixi Fan",
-      "Lan Wang",
-      "Sheng Liu",
-      "Songyou Peng",
-      "Yale Song",
-      "Kevin Qinghong Lin",
-      "Xin Eric Wang",
-      "Jui-Hsin Lai",
-      "Youbao Tang"
+      "Nanbeige"
     ],
-    "published_at": "2026-10-26T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961402Z",
+    "published_at": "2026-10-24T02:46:52Z",
+    "first_seen_at": "2026-10-27T18:25:25.667053Z",
     "dedup_keys": [
-      "arxiv:2610.34662",
-      "title:agents evolving for intent proactive streamvibe user video"
+      "hf:nanbeige/nanbeige4.3-33b-base"
     ],
     "signals": {
-      "hf_upvotes": 77,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
+      "hf_upvotes": 0,
+      "hf_likes": 67,
+      "hf_downloads": 572,
+      "hf_trending_score": 67.0,
+      "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 53.2,
+    "score_breakdown": {
+      "hf_trending": 25.317,
+      "hf_downloads": 12.702,
+      "hf_likes": 12.659,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -5.478
+    }
+  },
+  {
+    "id": "8929b920cacad850",
+    "kind": "model",
+    "title": "OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM",
+    "summary_en": "minimax-h3, merge, ref2va",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM",
+        "external_id": "OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM"
+      },
+      {
+        "source": "hf_base_model:merge",
+        "url": "https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity",
+        "external_id": "WarmBloodAban/Minimax-h3_Singularity"
+      }
+    ],
+    "actors": [
+      "OliviaRossi"
+    ],
+    "published_at": "2026-10-24T11:16:40Z",
+    "first_seen_at": "2026-10-27T18:25:25.666916Z",
+    "dedup_keys": [
+      "hf:oliviarossi/minimax-h3_singularity-x-10eros-max_prism"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 72,
+      "hf_downloads": 17415,
+      "hf_trending_score": 71.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
       "has_code": false,
       "has_weights": false
     },
-    "score": 41.993,
+    "score": 53.114,
     "score_breakdown": {
-      "hf_upvotes": 34.854,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.861
+      "hf_trending": 25.66,
+      "hf_downloads": 19.53,
+      "hf_likes": 12.871,
+      "age_decay": -4.947
     }
   },
   {
@@ -374,19 +472,93 @@
       "Sicheng Zhou"
     ],
     "published_at": "2026-10-23T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961458Z",
+    "first_seen_at": "2026-10-27T18:25:25.671599Z",
     "dedup_keys": [
       "arxiv:2610.32285",
       "title:agent and attribution benchmarking failure for harnesses reliability trace trial",
       "github:tracelite-ai/tracetrial-bench"
     ],
     "signals": {
-      "hf_upvotes": 55,
+      "hf_upvotes": 188,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 4,
+      "github_stars": 15,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 4,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 52.327,
+    "score_breakdown": {
+      "hf_upvotes": 41.934,
+      "github_stars": 5.545,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.152
+    }
+  },
+  {
+    "id": "31b5da5f0939e157",
+    "kind": "paper",
+    "title": "InteractiveWorld: A Verifiable Human-Centric Environment for Building Better Interactive MLLM Assistants",
+    "summary_en": "People have long dreamed of an assistant that is always there to guide them and remind what they forget, from new dishes to lost keys. Powered by multimodal large language models (MLLMs), egocentric AI assistants on wearable devices are bringing this dream within reach: they see what the user sees and give instructions for user's physical work when necessary. However, testing such assistance is challenging and usually requires real people. The expensive and rare real interaction data leaves a key question unanswered: Can today's MLLMs truly help people in physical world? To answer this question, we propose InteractiveWorld, the first verifiable environment for closed-loop interaction between human and AI assistant. Unlike existing robot-centric simulators, InteractiveWorld lets the assistant guide a human agent who observes the scene, understands instructions, and acts independently. It thus realistically simulates how AI assistant collaborates with human: the assistant instructs, the human acts, and the environment executes actions and updates what they see next. Building on it, we introduce InteractiveBench, the first dynamic benchmark for egocentric AI assistants, with 120 multi-turn tasks across six categories. In each task, the assistant guides the human in real time, and every instruction shapes the outcome, which is scored by verifiable, state-based rewards. Experiments with 12 frontier MLLMs show they are still far from reliable assistants. Even the strongest model, Claude Fable 5.1, achieves at most 20% and 25% on long-horizon Guidance and Planning tasks, respectively. Overall, our work offers a verifiable platform and a rigorous evaluation set, laying a solid foundation for research on interactive MLLM assistants that truly help people in the physical world.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.33966",
+        "external_id": "2610.33966"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.33966",
+        "external_id": "2610.33966"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/facebookresearch/InteractiveWorld",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Qinsi Wang",
+      "Wei Wen",
+      "Chong Zhou",
+      "Saksham Suri",
+      "Zechun Liu",
+      "Lemeng Wu",
+      "Hai Helen Li",
+      "Yiran Chen",
+      "Raghuraman Krishnamoorthi",
+      "Qi Qian"
+    ],
+    "published_at": "2026-10-25T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671674Z",
+    "dedup_keys": [
+      "arxiv:2610.33966",
+      "title:assistants better building centric environment for human interactive interactiveworld mllm verifiable",
+      "github:facebookresearch/interactiveworld"
+    ],
+    "signals": {
+      "hf_upvotes": 109,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 15,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -394,14 +566,272 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 41.061,
+    "score": 50.997,
     "score_breakdown": {
-      "hf_upvotes": 32.203,
-      "github_stars": 3.219,
+      "hf_upvotes": 37.604,
+      "github_stars": 5.545,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.361
+      "age_decay": -4.152
+    }
+  },
+  {
+    "id": "3f4377b7c5baa4b2",
+    "kind": "paper",
+    "title": "StreamVibe: Proactive Video Agents for Evolving User Intent",
+    "summary_en": "Vision-language models are shifting from offline passive understanding toward online proactive interaction. However, prevailing methods largely rely on explicit requests while miss the implicit user intent (e.g., \"where should I click next?\" while a user navigate a website), meanwhile fail to update the state simultaneously as user requests might update continuously. These limitations make them less suited to intent-aware interaction in practical. To address these challenges, we introduce StreamVibe-Bench, a new benchmark serving as testbed for user intent interaction, with 4.1K evaluation samples and 85K training samples spanning explicit, implicit, and dynamic intents. Building on this benchmark, we develop StreamVibe-VL, a streaming proactive model that infers implicit user intents from continuous observations and dynamically tailors its interactions as these intents evolve. We further introduce StreamVibe-Harness, which maintains user intents as persistent states with a fleixble lifecycles via a hierarchical memory to track the latest user intent and environmental state. Our experiments reveal three key findings: (i) StreamVibe-VL preserves strong general video understanding while improving response timing and answer quality by 10.7% over other baselines; (ii) existing proactive models remain limited in understanding user intent and deciding when to respond, especially under implicit and dynamic intents; and (iii) StreamVibe-Harness further improves response consistency and adaptation over sustained interaction, resulting in a 12.3% gain in proactive interaction.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.34662",
+        "external_id": "2610.34662"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.34662",
+        "external_id": "2610.34662"
+      }
+    ],
+    "actors": [
+      "Chengzhi Liu",
+      "Yuxiang Lai",
+      "Yuzhe Yang",
+      "Yanqing Liu",
+      "Jiheng Hou",
+      "Yue Cao",
+      "Haonan Wang",
+      "Ruixi Fan",
+      "Lan Wang",
+      "Sheng Liu",
+      "Songyou Peng",
+      "Yale Song",
+      "Kevin Qinghong Lin",
+      "Xin Eric Wang",
+      "Jui-Hsin Lai",
+      "Youbao Tang"
+    ],
+    "published_at": "2026-10-26T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671554Z",
+    "dedup_keys": [
+      "arxiv:2610.34662",
+      "title:agents evolving for intent proactive streamvibe user video"
+    ],
+    "signals": {
+      "hf_upvotes": 235,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 50.059,
+    "score_breakdown": {
+      "hf_upvotes": 43.711,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.652
+    }
+  },
+  {
+    "id": "c20196ae23fdf509",
+    "kind": "paper",
+    "title": "S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning",
+    "summary_en": "Critic-free methods are widely used in reinforcement learning with verifiable rewards (RLVR) for long chain-of-thought (CoT) reasoning, avoiding difficult and costly critic training. Common alternatives lack token-level credit assignment and typically rely on grouped rollouts to estimate prompt-specific baselines. A critic can address both limitations, but long-CoT critic training is hindered by insufficient coverage of trajectories with diverse lengths and early gradients dominated by the newly initialized value head. We introduce S3AC (Stabilized, Selective, and Scalable Actor-Critic) for LLM reasoning, built around a practical critic-training recipe. The trained critic provides token-specific advantages and prompt-specific baselines. Using the prompt-level baseline to estimate difficulty, we propose Difficulty-Aware Prompt Sampling (DAPS). DAPS combines this estimate with outcome history to select prompts before generation, reducing rollout waste without offline difficulty initialization. S3AC improves group-rollout performance across dense and mixture-of-experts models from 1.5B to 397B parameters, outperforming a modern GRPO variant (GRPO-X). At 35B, it sustains single-rollout training while tested critic-free baselines deteriorate after initial gains.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.35518",
+        "external_id": "2610.35518"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.35518",
+        "external_id": "2610.35518"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/InternLM/xtuner",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shuo Shen",
+      "Guangran Cheng",
+      "Chengqi Lyu",
+      "Xiangsen Wang",
+      "Yanan Sun",
+      "Wenwei Zhang"
+    ],
+    "published_at": "2026-10-26T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.672581Z",
+    "dedup_keys": [
+      "arxiv:2610.35518",
+      "title:actor and critic for llm reasoning s3ac scalable selective stabilized",
+      "github:internlm/xtuner"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5220,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 46.989,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "github_stars": 17.121,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.652
+    }
+  },
+  {
+    "id": "a0909164944a2103",
+    "kind": "model",
+    "title": "nvidia/MotionBricks",
+    "summary_en": "robotics, pytorch, nvidia, motionbricks, motion-generation, pose-conditioned, animation",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/nvidia/MotionBricks",
+        "external_id": "nvidia/MotionBricks"
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-10-23T18:49:27Z",
+    "first_seen_at": "2026-10-27T18:25:25.667034Z",
+    "dedup_keys": [
+      "hf:nvidia/motionbricks"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 68,
+      "hf_downloads": 0,
+      "hf_trending_score": 67.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 46.044,
+    "score_breakdown": {
+      "hf_trending": 25.317,
+      "hf_likes": 12.702,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "age_decay": -5.975
+    }
+  },
+  {
+    "id": "73e3590befff12c0",
+    "kind": "paper",
+    "title": "Spatial Audio Generation and Editing with Executable Plans and Self-Distilling Transfusion",
+    "summary_en": "Spatial audio authoring coordinates source decisions with soundfield synthesis. For editing, plans specify what to change and retain, while reference audio supplies further acoustic detail. We present AMBIT, a unified framework for native First-Order Ambisonics (FOA) generation and editing with three connected contributions. First, a shared Transfusion backbone couples autoregressive planning with rectified-flow rendering through executable ScenePlans that specify source content, activity, and 3D trajectories. For editing, the plan describes the full target scene, including retained sources; contrastive features ground the requested change, while full reference latents supply residual acoustic detail for preservation. Second, an FOA-aware continuous VAE combines shared-decoder omnidirectional recovery, asymmetric grouped KL, and spatial covariance matching to preserve content and inter-channel structure. Third, joint Transfusion on-policy self-distillation (OPSD) refines planning on student-generated prefixes and rendering at sampling states reached under student plans, with target-conditioned teachers supervising both modes of the shared student. Evaluations across speech, music, and sound show improved generation content and spatial quality, acoustic fidelity during instruction-guided editing, and unedited-source preservation over the compared baselines. Project page: https://wjm-george.github.io/AMBIT/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "multimodal",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.34415",
+        "external_id": "2610.34415"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.34415",
+        "external_id": "2610.34415"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/WJM-George/AMBIT",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kam Man Wu",
+      "Yu Zhang",
+      "Pengjun Fang",
+      "Mingfei Chen",
+      "Weijia Chen",
+      "Zeyue Tian",
+      "Qifeng Chen"
+    ],
+    "published_at": "2026-10-25T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671804Z",
+    "dedup_keys": [
+      "arxiv:2610.34415",
+      "title:and and audio distilling editing executable generation plans self spatial transfusion with",
+      "github:wjm-george/ambit"
+    ],
+    "signals": {
+      "hf_upvotes": 38,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 15,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.701,
+    "score_breakdown": {
+      "hf_upvotes": 29.308,
+      "github_stars": 5.545,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.152
     }
   },
   {
@@ -447,19 +877,19 @@
       "Jiayi Ma"
     ],
     "published_at": "2026-10-23T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961478Z",
+    "first_seen_at": "2026-10-27T18:25:25.671771Z",
     "dedup_keys": [
       "arxiv:2610.33135",
       "title:angle camera character consistent control generation large video with world worldcast",
       "github:pixctrol/worldcast"
     ],
     "signals": {
-      "hf_upvotes": 38,
+      "hf_upvotes": 42,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 17,
+      "github_stars": 36,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -467,444 +897,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 40.728,
+    "score": 42.16,
     "score_breakdown": {
-      "hf_upvotes": 29.308,
-      "github_stars": 5.781,
+      "hf_upvotes": 30.09,
+      "github_stars": 7.222,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.361
-    }
-  },
-  {
-    "id": "c48115f174775589",
-    "kind": "paper",
-    "title": "DynaFlow: Learning Free-Form Multi-Agent Orchestration",
-    "summary_en": "Multi-agent systems often rely on predefined collaboration structures, limiting their ability to adapt to diverse task requirements. We introduce DynaFlow, a framework that integrates free-form executable workflow synthesis into the action space of the main agent. The agent decides when collaboration is needed and generates task-specific programs that coordinate sub-agents through sequential or parallel execution, structured information exchange, and verification. Execution results and traces inform subsequent actions, enabling the agent to adapt collaboration as reasoning progresses. We train only the main agent through supervised fine-tuning on distilled trajectories, followed by refinement on examples filtered for unsupported premises, biased verification, and information-flow defects. All sub-agents remain fixed, separating orchestration learning from executor capability improvement. Across six benchmarks spanning mathematical reasoning, scientific question answering, and multi-hop retrieval, DynaFlow achieves 88.08% overall accuracy in Forced mode, outperforming the strongest evaluated baseline by 10.90 percentage points with the same Qwen3.5-27B backbone. Workflow analysis finds more explicit use, verification, and refinement of upstream outputs after training, highlighting cross-stage information flow as a key dimension of multi-agent orchestration.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.34467",
-        "external_id": "2610.34467"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.34467",
-        "external_id": "2610.34467"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/amiya-special/Dynaflow",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Ruhao Liu",
-      "Qi Li",
-      "Shizun Wang",
-      "Xinchao Wang"
-    ],
-    "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961494Z",
-    "dedup_keys": [
-      "arxiv:2610.34467",
-      "title:agent dynaflow form free learning multi orchestration",
-      "github:amiya-special/dynaflow"
-    ],
-    "signals": {
-      "hf_upvotes": 22,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 36.496,
-    "score_breakdown": {
-      "hf_upvotes": 25.084,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.361
-    }
-  },
-  {
-    "id": "def22125f1e80c57",
-    "kind": "release",
-    "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-    "summary_en": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/greptile-code-review-codex-astra",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-10-26T22:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:35.218622Z",
-    "dedup_keys": [
-      "url:openai.com/index/greptile-code-review-codex-astra",
-      "title:astra beyond bug code detection gpt greptile review takes with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.514,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.486
-    }
-  },
-  {
-    "id": "a0b28a9631e842cc",
-    "kind": "paper",
-    "title": "Δτ-Bench: Pushing Agents Toward a Moving Capability",
-    "summary_en": "In this paper, we introduce Δτ-Bench, an executable agent benchmark that models the structural evolution of large tool ecosystems. In Δτ-Bench, independently evolving services continually reshape how tasks can be accomplished: familiar tools may disappear or be replaced, while more efficient alternatives emerge amid overlapping functionality and noisy documentation. Against this moving capability frontier, we evaluate whether agents can proactively discover efficient tool-use paths and promptly revise their accumulated procedural knowledge, bringing together demands that existing benchmarks fail to examine. Δτ-Bench comprises 1,588 validated multi-turn tasks across 42 domains and six successive ecosystem states generated through capability-preserving transformations. Our evaluation shows that even the strongest evaluated model or harness achieves only 42.3% task success, while initial gains from existing skill-learning methods can not consistently translate into better adaptation as the ecosystem evolves. These findings motivate Steward, an ecosystem manager that jointly manages tools and procedural knowledge through incremental skill maintenance and dynamic provisioning during task execution. Experiments show that Steward sustains higher task success across ecosystem changes with lower skill-maintenance overhead, while improving both recovery from disrupted workflows and adoption of more efficient alternatives.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.34238",
-        "external_id": "2610.34238"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.34238",
-        "external_id": "2610.34238"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/zjunlp/delta-tau-bench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Shuofei Qiao",
-      "Xuanguang Pan",
-      "Yijun Chen",
-      "Wendi Feng",
-      "Bin Wu",
-      "Runnan Fang",
-      "Yuqi Zhu",
-      "Shumin Deng",
-      "Emine Yilmaz"
-    ],
-    "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961552Z",
-    "dedup_keys": [
-      "arxiv:2610.34238",
-      "title:agents bench capability moving pushing toward",
-      "github:zjunlp/delta-tau-bench"
-    ],
-    "signals": {
-      "hf_upvotes": 14,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 33.076,
-    "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.361
-    }
-  },
-  {
-    "id": "bb67802f99c40d34",
-    "kind": "release",
-    "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-    "summary_en": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-10-26T13:45:00Z",
-    "first_seen_at": "2026-10-27T05:46:35.218719Z",
-    "dedup_keys": [
-      "url:openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "title:across codebases coderabbit complex gpt helps security sol strengthen"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.998,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.002
-    }
-  },
-  {
-    "id": "ae2a0d79ab9f606b",
-    "kind": "release",
-    "title": "Introducing GPT-6.1 Terra",
-    "summary_en": "Bringing fast and capable computer use to everyone",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-10-26T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:35.218837Z",
-    "dedup_keys": [
-      "url:openai.com/index/introducing-gpt-6-1-terra",
-      "title:gpt introducing terra"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.139,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.861
-    }
-  },
-  {
-    "id": "0f115b15b7685682",
-    "kind": "paper",
-    "title": "World-in-Context: Interactive Video World Modeling with In-Context Conditioning",
-    "summary_en": "Interactive video world models require coordinated control over viewing perspectives, character actions, and camera motion. Existing methods typically leave view modes implicit in text captions, conflate action with camera motion, and inject controls through fragmented architectural pathways that capture interdependencies only indirectly. In this work, we present World-in-Context, an interactive world modeling framework powered by In-Context Conditioning (ICC). Rather than relying on specialized conditioning pathways, World-in-Context unifies view, action, and camera controls into explicit tokens contextualized directly within a shared self-attention space. Our formulation reveals that (i) explicit view tokens disentangle conflicting dynamics and unlock emergent view switching from single-view data, while (ii) action and camera inputs play complementary roles in governing local responsiveness and global stability. To preserve temporal continuity across execution intervals, we further introduce Interaction-Transport RoPE (IT-RoPE), parameterizing temporal attention with accumulated control transitions. On WBench, World-in-Context-5B achieves navigation performance on par with 22B EchoWM (81.5 vs. 81.6) and attains a 93.8% perspective-switching success rate, substantially outperforming existing 5B baselines (18.8%). Controlled analyses further demonstrate compounding advantages of World-in-Context under richer conditioning mixtures, favorable data efficiency, and natural applicability to causal rollouts.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.33169",
-        "external_id": "2610.33169"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.33169",
-        "external_id": "2610.33169"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/aigc3d/World-in-Context",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Harold Haodong Chen",
-      "Rui Peng",
-      "Rongjin Guo",
-      "Lingteng Qiu",
-      "Kejie Qiu",
-      "Chao Xu",
-      "Zilong Dong"
-    ],
-    "published_at": "2026-10-23T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961514Z",
-    "dedup_keys": [
-      "arxiv:2610.33169",
-      "title:conditioning context context interactive modeling video with world world",
-      "github:aigc3d/world-in-context"
-    ],
-    "signals": {
-      "hf_upvotes": 16,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 4,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 31.524,
-    "score_breakdown": {
-      "hf_upvotes": 22.666,
-      "github_stars": 3.219,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -6.361
-    }
-  },
-  {
-    "id": "cbab863991130ee8",
-    "kind": "paper",
-    "title": "Work Agents: Systems, Capabilities, and Optimization",
-    "summary_en": "As foundation models evolve from information generation to digital work execution, agents are increasingly capable of completing complex tasks across tools, applications, and workflows. However, existing research lacks a unified perspective on how agents reliably accomplish delegated work. To address this gap, we present a work-centric, system-level perspective that views work agents as systems combining foundation models and runtime harnesses to execute tasks in stateful workspaces and deliver verifiable outcomes. We introduce two complementary dimensions, work persistence and work openness, to characterize working conditions, and classify digital work into five forms according to task scope and organization. Building on this framework, we identify five core capability families required for reliable work execution and examine approaches to model optimization, harness optimization, and their joint optimization. We further analyze existing evaluation methods and metrics from the perspective of work outcomes. Finally, we discuss future research directions, including sustained work delegation, adaptation to open environments, and the interaction between work execution and capability improvement. This paper provides a unified framework for understanding, optimizing, and evaluating work agents, supporting the development of systems capable of delivering reliable, verifiable, and practically valuable work outcomes.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.35845",
-        "external_id": "2610.35845"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.35845",
-        "external_id": "2610.35845"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/EnjunDu/awesome-working-agent",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Zishan Xu",
-      "Enjun Du",
-      "Mingqi Gao",
-      "Cheng Yang",
-      "Junhao Shen",
-      "Zirong Chen",
-      "Zhiyuan Yao",
-      "Yifu Guo",
-      "Yuquan Lu",
-      "Jinyang Huang",
-      "Zhengxi Lu",
-      "Siyi Liu",
-      "Ziyu Zheng",
-      "Yongqi Zhang",
-      "Difan Zou",
-      "Weiwen Liu"
-    ],
-    "published_at": "2026-10-26T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961618Z",
-    "dedup_keys": [
-      "arxiv:2610.35845",
-      "title:agents and capabilities optimization systems work",
-      "github:enjundu/awesome-working-agent"
-    ],
-    "signals": {
-      "hf_upvotes": 10,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 2,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 31.519,
-    "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "github_stars": 2.197,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.861
+      "age_decay": -7.152
     }
   },
   {
@@ -959,19 +959,19 @@
       "Jun Wang"
     ],
     "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961636Z",
+    "first_seen_at": "2026-10-27T18:25:25.671740Z",
     "dedup_keys": [
       "arxiv:2610.33956",
       "title:agents and benchmarking continual exam experiential horizon learning learning llm long rsi",
       "github:haoyu-zhao/continual-learning-exam"
     ],
     "signals": {
-      "hf_upvotes": 9,
+      "hf_upvotes": 43,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 6,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -979,114 +979,51 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 29.257,
+    "score": 42.014,
     "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "github_stars": 2.197,
+      "hf_upvotes": 30.274,
+      "github_stars": 3.892,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.361
+      "age_decay": -4.152
     }
   },
   {
-    "id": "73e3590befff12c0",
-    "kind": "paper",
-    "title": "Spatial Audio Generation and Editing with Executable Plans and Self-Distilling Transfusion",
-    "summary_en": "Spatial audio authoring coordinates source decisions with soundfield synthesis. For editing, plans specify what to change and retain, while reference audio supplies further acoustic detail. We present AMBIT, a unified framework for native First-Order Ambisonics (FOA) generation and editing with three connected contributions. First, a shared Transfusion backbone couples autoregressive planning with rectified-flow rendering through executable ScenePlans that specify source content, activity, and 3D trajectories. For editing, the plan describes the full target scene, including retained sources; contrastive features ground the requested change, while full reference latents supply residual acoustic detail for preservation. Second, an FOA-aware continuous VAE combines shared-decoder omnidirectional recovery, asymmetric grouped KL, and spatial covariance matching to preserve content and inter-channel structure. Third, joint Transfusion on-policy self-distillation (OPSD) refines planning on student-generated prefixes and rendering at sampling states reached under student plans, with target-conditioned teachers supervising both modes of the shared student. Evaluations across speech, music, and sound show improved generation content and spatial quality, acoustic fidelity during instruction-guided editing, and unedited-source preservation over the compared baselines. Project page: https://wjm-george.github.io/AMBIT/",
+    "id": "f30773158b068418",
+    "kind": "model",
+    "title": "maya-research/maya2-native",
+    "summary_en": "text-to-speech, maya3, tts, indic, multilingual, voice-cloning",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent",
-      "multimodal",
-      "speech",
-      "eval"
+      "speech"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.34415",
-        "external_id": "2610.34415"
+        "source": "hf_models",
+        "url": "https://huggingface.co/maya-research/maya2-native",
+        "external_id": "maya-research/maya2-native"
       },
       {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.34415",
-        "external_id": "2610.34415"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/WJM-George/AMBIT",
-        "external_id": null
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+        "external_id": "Qwen/Qwen3-1.7B-Base"
       }
     ],
     "actors": [
-      "Kam Man Wu",
-      "Yu Zhang",
-      "Pengjun Fang",
-      "Mingfei Chen",
-      "Weijia Chen",
-      "Zeyue Tian",
-      "Qifeng Chen"
+      "maya-research"
     ],
-    "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961602Z",
+    "published_at": "2026-10-26T02:58:10Z",
+    "first_seen_at": "2026-10-27T18:25:25.667099Z",
     "dedup_keys": [
-      "arxiv:2610.34415",
-      "title:and and audio distilling editing executable generation plans self spatial transfusion with",
-      "github:wjm-george/ambit"
-    ],
-    "signals": {
-      "hf_upvotes": 12,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 29.159,
-    "score_breakdown": {
-      "hf_upvotes": 20.52,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.361
-    }
-  },
-  {
-    "id": "f3a585406a9654fc",
-    "kind": "release",
-    "title": "Working with academic communities to build scientific understanding",
-    "summary_en": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-10-26T14:30:00Z",
-    "first_seen_at": "2026-10-27T05:46:35.218688Z",
-    "dedup_keys": [
-      "url:openai.com/index/building-scientific-understanding-with-academic-communities",
-      "title:academic build communities scientific understanding with working"
+      "hf:maya-research/maya2-native"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 0,
+      "hf_likes": 65,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
+      "hf_trending_score": 65.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -1094,13 +1031,219 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
+      "has_weights": true
+    },
+    "score": 39.241,
+    "score_breakdown": {
+      "hf_trending": 25.138,
+      "hf_likes": 12.569,
+      "has_weights": 4.0,
+      "age_decay": -2.466
+    }
+  },
+  {
+    "id": "a0b28a9631e842cc",
+    "kind": "paper",
+    "title": "Δτ-Bench: Pushing Agents Toward a Moving Capability",
+    "summary_en": "In this paper, we introduce Δτ-Bench, an executable agent benchmark that models the structural evolution of large tool ecosystems. In Δτ-Bench, independently evolving services continually reshape how tasks can be accomplished: familiar tools may disappear or be replaced, while more efficient alternatives emerge amid overlapping functionality and noisy documentation. Against this moving capability frontier, we evaluate whether agents can proactively discover efficient tool-use paths and promptly revise their accumulated procedural knowledge, bringing together demands that existing benchmarks fail to examine. Δτ-Bench comprises 1,588 validated multi-turn tasks across 42 domains and six successive ecosystem states generated through capability-preserving transformations. Our evaluation shows that even the strongest evaluated model or harness achieves only 42.3% task success, while initial gains from existing skill-learning methods can not consistently translate into better adaptation as the ecosystem evolves. These findings motivate Steward, an ecosystem manager that jointly manages tools and procedural knowledge through incremental skill maintenance and dynamic provisioning during task execution. Experiments show that Steward sustains higher task success across ecosystem changes with lower skill-maintenance overhead, while improving both recovery from disrupted workflows and adoption of more efficient alternatives.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.34238",
+        "external_id": "2610.34238"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.34238",
+        "external_id": "2610.34238"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zjunlp/delta-tau-bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shuofei Qiao",
+      "Xuanguang Pan",
+      "Yijun Chen",
+      "Wendi Feng",
+      "Bin Wu",
+      "Runnan Fang",
+      "Yuqi Zhu",
+      "Shumin Deng",
+      "Emine Yilmaz"
+    ],
+    "published_at": "2026-10-25T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671899Z",
+    "dedup_keys": [
+      "arxiv:2610.34238",
+      "title:agents bench capability moving pushing toward",
+      "github:zjunlp/delta-tau-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 21,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 29.045,
+    "score": 36.16,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.955
+      "hf_upvotes": 24.728,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.152
+    }
+  },
+  {
+    "id": "1df5da6117698be5",
+    "kind": "paper",
+    "title": "HiP3R: Hierarchical Pose Graphs for Long-Horizon 3D Reconstruction",
+    "summary_en": "Feed-forward models accurately estimate camera motion and 3D geometry from short video windows. However, computational and memory costs prevent direct inference on sequences containing thousands of frames. Long videos must therefore be processed as overlapping chunks. This division produces independent local reconstructions with inconsistent coordinate frames and duplicate estimates of shared cameras. Achieving global consistency requires propagating constraints from adjacent overlaps and distant revisits across the sequence. This requirement naturally motivates pose graph optimization. However, the choice of graph level creates a trade-off. Chunk-level graphs efficiently resolve scale drift and close large loops. Yet, their rigid transformations cannot correct internal errors or conflicting frame predictions. Conversely, frame-level optimization offers local flexibility, but scaling it globally is computationally expensive and can break metric scale. HiP3R resolves this trade-off using a hierarchical pose graph. HiP3R first optimizes a robust chunk-level Sim(3) graph to establish the global layout and scale. It then holds this layout fixed and estimates one shared SE(3) camera per frame, turning overlapping window predictions into a single trajectory. Experiments across multiple benchmarks demonstrate the effectiveness of HiP3R in improving camera trajectories and 3D reconstruction. Our method applies to both chunk-based and streaming backends without additional training or fine-tuning. The codes are available at https://kkakkkka.github.io/HiP3R.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.31635",
+        "external_id": "2610.31635"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.31635",
+        "external_id": "2610.31635"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/HiP3Rs/HiP3R",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zunnan Xu",
+      "Shangchen Zhou",
+      "Yihang Luo",
+      "Chen Change Loy"
+    ],
+    "published_at": "2026-10-22T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671993Z",
+    "dedup_keys": [
+      "arxiv:2610.31635",
+      "title:for graphs hierarchical hip3r horizon long pose reconstruction",
+      "github:hip3rs/hip3r"
+    ],
+    "signals": {
+      "hf_upvotes": 19,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 387,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.236,
+    "score_breakdown": {
+      "hf_upvotes": 23.966,
+      "github_stars": 11.922,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -8.652
+    }
+  },
+  {
+    "id": "0f115b15b7685682",
+    "kind": "paper",
+    "title": "World-in-Context: Interactive Video World Modeling with In-Context Conditioning",
+    "summary_en": "Interactive video world models require coordinated control over viewing perspectives, character actions, and camera motion. Existing methods typically leave view modes implicit in text captions, conflate action with camera motion, and inject controls through fragmented architectural pathways that capture interdependencies only indirectly. In this work, we present World-in-Context, an interactive world modeling framework powered by In-Context Conditioning (ICC). Rather than relying on specialized conditioning pathways, World-in-Context unifies view, action, and camera controls into explicit tokens contextualized directly within a shared self-attention space. Our formulation reveals that (i) explicit view tokens disentangle conflicting dynamics and unlock emergent view switching from single-view data, while (ii) action and camera inputs play complementary roles in governing local responsiveness and global stability. To preserve temporal continuity across execution intervals, we further introduce Interaction-Transport RoPE (IT-RoPE), parameterizing temporal attention with accumulated control transitions. On WBench, World-in-Context-5B achieves navigation performance on par with 22B EchoWM (81.5 vs. 81.6) and attains a 93.8% perspective-switching success rate, substantially outperforming existing 5B baselines (18.8%). Controlled analyses further demonstrate compounding advantages of World-in-Context under richer conditioning mixtures, favorable data efficiency, and natural applicability to causal rollouts.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.33169",
+        "external_id": "2610.33169"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.33169",
+        "external_id": "2610.33169"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/aigc3d/World-in-Context",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Harold Haodong Chen",
+      "Rui Peng",
+      "Rongjin Guo",
+      "Lingteng Qiu",
+      "Kejie Qiu",
+      "Chao Xu",
+      "Zilong Dong"
+    ],
+    "published_at": "2026-10-23T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.672056Z",
+    "dedup_keys": [
+      "arxiv:2610.33169",
+      "title:conditioning context context interactive modeling video with world world",
+      "github:aigc3d/world-in-context"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 23,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.76,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "github_stars": 6.356,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.152
     }
   },
   {
@@ -1139,19 +1282,19 @@
       "Eunho Yang"
     ],
     "published_at": "2026-10-24T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961532Z",
+    "first_seen_at": "2026-10-27T18:25:25.671864Z",
     "dedup_keys": [
       "arxiv:2610.33512",
       "title:based eat hacking mitigates objective precision precision reward rubric your",
       "github:jhkim631/fork"
     ],
     "signals": {
-      "hf_upvotes": 14,
+      "hf_upvotes": 27,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 1,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1159,38 +1302,41 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 28.803,
+    "score": 34.392,
     "score_breakdown": {
-      "hf_upvotes": 21.664,
+      "hf_upvotes": 26.658,
+      "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -4.861
+      "age_decay": -5.652
     }
   },
   {
-    "id": "1c412114b4e51f36",
+    "id": "c21fa8c69e34aa95",
     "kind": "release",
-    "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
-    "summary_en": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
+    "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+    "summary_en": "Education Innovation",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
+    "topics": [
+      "llm"
+    ],
     "links": [
       {
-        "source": "openai",
-        "url": "https://openai.com/index/openai-cut-incident-investigation",
+        "source": "google_research",
+        "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
         "external_id": null
       }
     ],
     "actors": [
-      "openai"
+      "google_research"
     ],
-    "published_at": "2026-10-26T07:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:35.218804Z",
+    "published_at": "2026-10-27T17:35:00Z",
+    "first_seen_at": "2026-10-27T18:25:27.325697Z",
     "dedup_keys": [
-      "url:openai.com/index/openai-cut-incident-investigation",
-      "title:cut from hours how incident investigation minutes openai ultrafast"
+      "url:research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
+      "title:continual for framework knowledge learning llms new retain sleep the way"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1206,11 +1352,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 28.576,
+    "score": 33.947,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -1.424
+      "topic_match": 4.0,
+      "age_decay": -0.053
     }
   },
   {
@@ -1255,19 +1402,19 @@
       "Tao Lin"
     ],
     "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961669Z",
+    "first_seen_at": "2026-10-27T18:25:25.672493Z",
     "dedup_keys": [
       "arxiv:2610.18683",
       "title:advantage agentic aware for framework learning multi proas progress reinforcement shaping turn",
       "github:lins-lab/proas"
     ],
     "signals": {
-      "hf_upvotes": 6,
+      "hf_upvotes": 13,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 6,
+      "github_stars": 11,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1275,423 +1422,111 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 28.098,
+    "score": 33.93,
     "score_breakdown": {
-      "hf_upvotes": 15.567,
-      "github_stars": 3.892,
+      "hf_upvotes": 21.112,
+      "github_stars": 4.97,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.361
+      "age_decay": -4.152
     }
   },
   {
-    "id": "943db525b3be8a61",
-    "kind": "paper",
-    "title": "Principia: Test-Time Hypotheses to Principle Construction for Scientific Discovery",
-    "summary_en": "Scientific discovery requires identifying the scientific principles underlying observed phenomena to guide further investigation. As these empirical principles are often unknown in complex discovery processes, they are constructed via a hypotheses-to-principle pipeline to obtain recurring causalities from progressively accumulated observations during test-time discovery. However, constructing this knowledge requires substantial domain expertise, time, and effort, making this translation stage a bottleneck for scientific discovery. To address this limitation, we propose Principia, an LLM-based framework that constructs and continually refines scientific principles at test time. Drawing on how human researchers develop principles, Principia forms comparative causal hypotheses from related inputs and their observed outcomes, then synthesizes recurring relationships across these hypotheses into inductive principles. By applying the constructed hypotheses and inductive principles to the task, it obtains new observations, revises the hypotheses used based on these new observations, and reconstructs principles from the updated hypotheses, allowing scientific knowledge to continuously evolve throughout test-time discovery. Across benchmarks spanning molecular optimization, protein engineering, gene perturbation, and molecular property prediction, Principia outperforms baselines relying on internal knowledge, external sources, or experience summaries, while generating principles that are plausible and consistent with the scientific literature, demonstrating its effectiveness in constructing and refining task-specific hypotheses and principles at test time for scientific discovery. Our code is available at https://github.com/DongkiKim95/Principia.",
+    "id": "e882699b1d0a25b6",
+    "kind": "release",
+    "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+    "summary_en": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "eval"
+      "llm"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.32195",
-        "external_id": "2610.32195"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.32195",
-        "external_id": "2610.32195"
-      }
-    ],
-    "actors": [
-      "Dongki Kim",
-      "Sangwoo Park",
-      "Jinheon Baek",
-      "Soyeong Jeong",
-      "Sung Ju Hwang"
-    ],
-    "published_at": "2026-10-23T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961585Z",
-    "dedup_keys": [
-      "arxiv:2610.32195",
-      "title:construction discovery for hypotheses principia principle scientific test time"
-    ],
-    "signals": {
-      "hf_upvotes": 14,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 24.303,
-    "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -6.361
-    }
-  },
-  {
-    "id": "72dc4cbe664453f4",
-    "kind": "paper",
-    "title": "Novel or Not? PatEx-Gym: Agentic Prior-Art Search for Novelty Assessment in Patent Examination",
-    "summary_en": "Patent examination is a challenging real-world task that requires agents to discover sparse prior art, iteratively refine queries, inspect technical evidence, and produce novelty assessments documented in Office Actions (OAs) across heterogeneous scientific and technical domains. However, existing benchmarks largely focus on static and limited candidate sets, leaving the full search--reasoning--assessment process underexplored. We present PatEx-Gym, the first framework for developing and evaluating agents for patent examination, which integrates three components. First, PatEx-Bench provides 1K realistic examination tasks, two large-scale retrieval corpora containing over 1M patents and 52K scientific papers, and a harness runtime supporting iterative search, document visits, reasoning, and OA generation. Second, we introduce PASS, an annotation-free Prior-Art Agentic Search Trajectory Synthesis framework. Specifically, it exploits document visits as implicit relevance signals and evidence-acquisition anchors to model intra-turn query behavior, inter-turn search progression, and trajectory-level evidence and outcome quality, yielding PatEx-SynData. Third, we train PatEx-Agent at the 4B scale via supervised fine-tuning on the curated trajectories, establishing a lightweight baseline. Extensive experiments show that final decision accuracy alone does not fully reflect examination quality, while prior-art discovery remains difficult even for strong frontier models. Our PatEx-Agent achieves competitive performance against substantially larger general-purpose agents. These results show that training on PatEx-SynData enables a compact 4B model to serve as a competitive baseline for prior-art search and patent examination. We view patent examination as a demanding testbed for agentic search and deep research agents.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.33503",
-        "external_id": "2610.33503"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.33503",
-        "external_id": "2610.33503"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/AIforIP/PatEx-Gym",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
         "external_id": null
       }
     ],
     "actors": [
-      "Qiyao Wang",
-      "Xinyi Chen",
-      "Hongbo Wang",
-      "Jiayuan Lu",
-      "Jianhang Li",
-      "Minghuan Tan",
-      "Yuan Lin",
-      "Min Yang"
+      "nvidia"
     ],
-    "published_at": "2026-10-24T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961686Z",
+    "published_at": "2026-10-27T16:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:27.867988Z",
     "dedup_keys": [
-      "arxiv:2610.33503",
-      "title:agentic art assessment examination for gym not novel novelty patent patex prior search",
-      "github:aiforip/patex-gym"
+      "url:developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+      "title:fine just know languages local local nemotron not nvidia rules tuning"
     ],
     "signals": {
-      "hf_upvotes": 4,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 7,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 24.174,
+    "score": 33.848,
     "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "github_stars": 4.159,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
+      "kind_base": 20.0,
+      "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -4.861
+      "age_decay": -0.152
     }
   },
   {
-    "id": "ab2d5b6911df277b",
-    "kind": "paper",
-    "title": "Qwen-Image-PE: Learning Visual Design for Text-to-Image Prompt Enhancement",
-    "summary_en": "Learning visual design is essential for prompt enhancement (PE) to turn underspecified user requests into coherent visual specifications for text-to-image (T2I) generation. Existing methods preserve user intent and improve overall visual appeal, with less explicit emphasis on fine-grained design dimensions. To address this gap, we introduce Qwen-Image-PE, which learns visual design through two-stage training. Supervised fine-tuning with Caption-Based Reverse Distillation (CRD) uses dense captions of well-designed images as design supervision. Reinforcement learning with Groupwise Design Reward (GDR) jointly compares all candidate images for the same request to refine lighting, composition, layout, and detail. On Qwen-Image-Bench with Qwen-Image-2.1, Qwen-Image-PE-397B improves over original requests by 7.81 points, while Qwen-Image-PE-9B outperforms all evaluated PE baselines. Further evaluations show gains in visual design, aesthetics, image quality, and human preference. We find that PE scales along three axes: training data, model size, and information density, with sufficient information density as a prerequisite for effective enhancement. Moreover, we demonstrate that Qwen-Image-PE generalizes to four additional T2I backbones, even surpassing native prompt enhancers on HunyuanImage-2.1 and FLUX 3 Image Klein. We release Qwen-Image-PE-9B at https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.33472",
-        "external_id": "2610.33472"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.33472",
-        "external_id": "2610.33472"
-      }
-    ],
-    "actors": [
-      "Zekai Zhang",
-      "Yanran Zhang",
-      "Shengming Yin",
-      "Yan Shu",
-      "Zhening Liu",
-      "Bingxuan Zhao",
-      "Chenyang Zhu",
-      "Donghao Zhou",
-      "Jiahao Li",
-      "Jiahao Wang",
-      "Jie Zhang",
-      "Kaiyuan Gao",
-      "Kun Yan",
-      "Lihan Jiang",
-      "Ningyuan Tang",
-      "Qihang Ai",
-      "Rui Song",
-      "Shuo Cao",
-      "Xiao Xu",
-      "Xiaoyue Chen",
-      "Yuxiang Chen",
-      "Zhendong Wang",
-      "Zhouyang Li",
-      "Zihao Liu",
-      "Zikai Zhou",
-      "Bo Zheng",
-      "Huishuai Zhang",
-      "Dongyan Zhao",
-      "Chenfei Wu"
-    ],
-    "published_at": "2026-10-24T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961570Z",
-    "dedup_keys": [
-      "arxiv:2610.33472",
-      "title:design enhancement for image image learning prompt qwen text visual"
-    ],
-    "signals": {
-      "hf_upvotes": 14,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 21.803,
-    "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "is_daily_paper": 5.0,
-      "age_decay": -4.861
-    }
-  },
-  {
-    "id": "8483ac3f829f809a",
-    "kind": "paper",
-    "title": "Trustworthy Recursive Self-Improvement in the Era of Large Models: Foundation, Risks, Evaluation and Open Challenges",
-    "summary_en": "AI systems built around large models increasingly use experience and feedback to make persistent changes to models, prompts, memories, tools, and workflows. Recursive self-improvement (RSI) extends this process to inductive biases and to the mechanisms that govern future updates, which can themselves be revised and reused across improvement cycles. Yet self-modification alone does not guarantee trustworthy improvement. Reported gains may reflect flawed evaluations, previously acquired capabilities may deteriorate, and compliance with behavioral constraints may weaken. Compromised artifacts or sensitive information may also persist in successor systems. Changes to improvement mechanisms may invalidate earlier verification results and make human oversight less effective. This survey presents an operational definition and process framework for RSI and organizes the requirements for trustworthy RSI into four interconnected themes: genuine and sustained improvement; behavioral constraints, alignment, and fairness; system security and privacy; and transparency and controllability. We examine these themes from three perspectives: Improvement Validity, Constraint Preservation, and Effective Oversight. This analysis covers improvement diagnosis, proposal generation, proposal evaluation, and update implementation (S1--S4), including the recursive application of these stages to improvement mechanisms (RI). We review risks, safeguards, and evaluation evidence for individual updates, effects inherited by successor systems, and revisions to improvement mechanisms, while distinguishing direct RSI findings from evidence in related systems. Finally, we examine evaluation settings, identify requirements for independent and longitudinal assessment, and discuss applications and open research problems.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.35193",
-        "external_id": "2610.35193"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.35193",
-        "external_id": "2610.35193"
-      }
-    ],
-    "actors": [
-      "Jiayue Pu",
-      "Ang Gao",
-      "Jinyi Bai",
-      "Qipeng Wang",
-      "Tongyu Wen",
-      "Jiahao Zhao",
-      "Keyu Qu",
-      "Junhao Zhang",
-      "Chenglei Shen",
-      "Zhongxiang Sun",
-      "Jun Xu",
-      "Xiao Zhang"
-    ],
-    "published_at": "2026-10-26T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961652Z",
-    "dedup_keys": [
-      "arxiv:2610.35193",
-      "title:and challenges era evaluation foundation improvement large models open recursive risks self the trustworthy"
-    ],
-    "signals": {
-      "hf_upvotes": 8,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 20.717,
-    "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "is_daily_paper": 5.0,
-      "age_decay": -1.861
-    }
-  },
-  {
-    "id": "8ea415cbe983f4e3",
-    "kind": "paper",
-    "title": "Extreme Compression of Per-Layer Embeddings via Cross-Layer Latent Vector Quantization",
-    "summary_en": "Scaling embedding capacity alongside Transformer computation is an emerging trend in language models. This trend makes high compression rates increasingly useful. Hence, we study extreme compression of Per-Layer Embeddings (PLE), which follow this trend and account for 35.2% of the parameters of Gemma 4 E4B. At such rates, conventional quantizers give each token-layer vector its own code of only a few bytes. We instead develop OPTIC (Output-Path-fitted, Token-shared Indexed Codes), which stores one quantized code tuple per token and decodes it at every layer with a layer-specific affine decoder. Codes and decoders are fitted to the PLE output path rather than to the stored vectors. At about 100times PLE compression of bfloat16 (BF16) E4B, OPTIC retains an aggregate 97.8% of the uncompressed model's performance across seven benchmarks, whereas product quantization, the strongest of six conventional baselines, retains 66.3%. At 594times and 1,002times PLE compression of BF16 E4B, OPTIC retains 90.5% and 84.1%. On the official E4B release with 4-bit linear weights and 16-bit activations (W4A16), OPTIC retains 96.9% at about 100times PLE compression. During inference at about 100times PLE compression, BF16 E4B uses 29.7% less GPU memory than with uncompressed PLE at the same key-value cache size, while running at most 0.40% slower.",
+    "id": "456e892c3a6d9b90",
+    "kind": "release",
+    "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+    "summary_en": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "rag",
-      "eval",
-      "infra"
+      "agent"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.31309",
-        "external_id": "2610.31309"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.31309",
-        "external_id": "2610.31309"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/VILA-Lab/optic",
+        "source": "openai",
+        "url": "https://openai.com/index/oracle-apps-in-chatgpt",
         "external_id": null
       }
     ],
     "actors": [
-      "Jiacheng Liu",
-      "Yaxin Luo",
-      "Xiaohan Zhao",
-      "Peng Sun",
-      "Xinyi Shang",
-      "Jiacheng Cui",
-      "Yonina C. Eldar",
-      "Zhiqiang Shen"
+      "openai"
     ],
-    "published_at": "2026-10-22T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961702Z",
+    "published_at": "2026-10-27T07:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:26.106423Z",
     "dedup_keys": [
-      "arxiv:2610.31309",
-      "title:compression cross embeddings extreme latent layer layer per quantization vector via",
-      "github:vila-lab/optic"
+      "url:openai.com/index/oracle-apps-in-chatgpt",
+      "title:apps bring chatgpt expands its openai oracle partnership with"
     ],
     "signals": {
-      "hf_upvotes": 4,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 19.788,
-    "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -7.861
-    }
-  },
-  {
-    "id": "ae2818ca6d15c82e",
-    "kind": "paper",
-    "title": "AgentProofBench: Benchmarking Reusable Verifiers for Web Agents",
-    "summary_en": "Reusable Web-agent verification requires a rule to follow changing requirements and support subsequent execution. We introduce AgentProofBench, which connects paired tests of a frozen acceptance rule to execution from identical saved openings. The resource spans 97 tasks, 79 families, and four Web services. Experiments with DeepSeek Flash/Pro establish two linked measurements. Across 48 families, complete-panel and decision-replay tests retain 82/96 Flash and 79/96 Pro source programs; paired reuse-rebuild BA intervals are [-5.47, 1.57] and [-10.16, 0.00] percentage points. Across 22 execution families, deployment-state panel correctness separates program assignments whose two saved openings are both delivered correctly: 32/33 assignments with error-free panels, versus 1/11 with panel errors. All reference-defined program-gate regressions and withheld deliveries occur in the latter group. Neutral continuation attains the highest correct delivery under the tested generic feedback, providing a concrete baseline for measuring the value added by a gate. Released instructions, states, programs, reference rules, and trajectories connect each test failure to its execution consequences. AgentProofBench makes reusable verification assessable at both the requirement and policy levels.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.34634",
-        "external_id": "2610.34634"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.34634",
-        "external_id": "2610.34634"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/EthanNing/AgentProofBench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Jingjie Ning",
-      "Xueqi Li",
-      "Yi Lu",
-      "Yibo Kong"
-    ],
-    "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961732Z",
-    "dedup_keys": [
-      "arxiv:2610.34634",
-      "title:agentproofbench agents benchmarking for reusable verifiers web",
-      "github:ethanning/agentproofbench"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
+      "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 19.729,
+    "score": 33.286,
     "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
+      "kind_base": 20.0,
+      "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -3.361
+      "age_decay": -0.714
     }
   },
   {
@@ -1729,19 +1564,19 @@
       "Limin Wang"
     ],
     "published_at": "2026-10-24T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961793Z",
+    "first_seen_at": "2026-10-27T18:25:25.672751Z",
     "dedup_keys": [
       "arxiv:2610.33845",
       "title:agents battlegrounds build develop don hearthstone improving llm play players research rivals self that top",
       "github:mcg-nju/autotavern"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 9,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 31,
+      "github_stars": 68,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1749,51 +1584,292 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 14.07,
+    "score": 33.237,
     "score_breakdown": {
-      "github_stars": 6.931,
+      "hf_upvotes": 18.421,
+      "github_stars": 8.468,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -4.861
+      "age_decay": -5.652
     }
   },
   {
-    "id": "6f8b5d1697d34744",
-    "kind": "paper",
-    "title": "Skill^{infty}: Recursive Self-Improvement for Agent Skill Optimization",
-    "summary_en": "Recursive self-improvement (RSI), in which a system also improves the way it improves, is a long-standing aspiration on the path to AGI. Language agents increasingly store procedural knowledge in reusable skills. Optimizing skills offers a direct way to achieve RSI, because the optimization procedure itself can be encoded as a skill. Existing skill optimizers, however, follow a hand-designed procedure. Even methods that evolve a meta-skill confine it to a fixed pipeline and relearn it for each task. We present Skill^{infty}, which makes skill optimization recursively self-improving: a meta agent follows a meta-skill to optimize task skills and optimizes the meta-skill itself using the same procedure. The optimization is agent-led. The meta agent diagnoses execution traces, proposes candidates, requests independent reviews, and allocates the search budget. The meta-skill defines these steps, allowing self-improvement to rewrite them. This meta-skill is also decoupled from task skills, refined on multiple skill optimization tasks and then reused to optimize task skills across diverse domains. As in deployment, skills at both levels are standard packages loaded through native skill discovery. On 83 SkillsBench tasks, Skill^{infty} reaches a pass rate of 60.7%, compared with 56.4% for human-curated skills and 54.5% for SkillEvolver.",
+    "id": "def22125f1e80c57",
+    "kind": "release",
+    "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+    "summary_en": "How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent"
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/greptile-code-review-codex-astra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-26T22:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:26.106503Z",
+    "dedup_keys": [
+      "url:openai.com/index/greptile-code-review-codex-astra",
+      "title:astra beyond bug code detection gpt greptile review takes with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.723,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.277
+    }
+  },
+  {
+    "id": "1e3333802d20f9ea",
+    "kind": "paper",
+    "title": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
+    "summary_en": "Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their surroundings. For many such goals, changing the physical state of the world is the means rather than the end: the agent changes the state of a system through interaction, observes the feedback, and explores until it either achieves the goal itself (e.g., discovering physical laws) or learns what the goal requires; it acts to know. Manipulation benchmarks stop at acting to change, with the target state given; scientific discovery benchmarks evaluate knowing but replace physical experimentation with symbolic actions or numerical queries. We introduce EmbodiedLab, a benchmark in which a robot must act to know. Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly. Across 30 experiments in five disciplines on 14 apparatus platforms, the agent receives an objective and the apparatus, chooses its own procedure, and operates a physics-based simulated laboratory, reading the instruments through its cameras. Evaluation checks what the agent came to know, grounded in readings recorded during the episode, as well as the physical state the task requires; every experiment is verified to be solvable. We evaluate six frontier models in their developers' coding agents with native observation and control, with added perception and motion planning, and with manipulation skills distilled from the strongest agents. With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus, and manipulation skills help weaker agents more than perception and planning. The benchmark and its evaluation code are available at https://github.com/HexaFuture/EmbodiedLab.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "robotics",
+      "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.35434",
-        "external_id": "2610.35434"
+        "url": "https://huggingface.co/papers/2610.35385",
+        "external_id": "2610.35385"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.35434",
-        "external_id": "2610.35434"
+        "url": "https://arxiv.org/abs/2610.35385",
+        "external_id": "2610.35385"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/HexaFuture/EmbodiedLab",
+        "external_id": null
       }
     ],
     "actors": [
-      "Wangcheng Tao",
-      "Zhanglu Yan",
-      "Han Wu",
-      "Weng-Fai Wong"
+      "Hongcheng Gao",
+      "Zelin Zheng",
+      "Alex Zhou",
+      "Jay Zhu",
+      "Shijia Ge",
+      "Yazhe Wang",
+      "Xiping Li",
+      "Jianshu Zeng",
+      "Di Wu",
+      "Xuan Shangguan",
+      "Yexing Wan",
+      "Lingyu He",
+      "Yongli Wang",
+      "Xiaohan Yu",
+      "Zhiqi Jia",
+      "Yue Liu",
+      "Bryan Hooi",
+      "Yinpeng Dong",
+      "Wentao Zhang",
+      "Sihang Wu",
+      "Xiao He"
     ],
     "published_at": "2026-10-26T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961762Z",
+    "first_seen_at": "2026-10-27T18:25:25.672673Z",
     "dedup_keys": [
-      "arxiv:2610.35434",
-      "title:agent for improvement infty optimization recursive self skill skill"
+      "arxiv:2610.35385",
+      "title:act agents benchmarking embodied embodiedlab know that",
+      "github:hexafuture/embodiedlab"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 10,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.565,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 4.796,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.652
+    }
+  },
+  {
+    "id": "bb67802f99c40d34",
+    "kind": "release",
+    "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+    "summary_en": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-26T13:45:00Z",
+    "first_seen_at": "2026-10-27T18:25:26.106605Z",
+    "dedup_keys": [
+      "url:openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "title:across codebases coderabbit complex gpt helps security sol strengthen"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.208,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.792
+    }
+  },
+  {
+    "id": "ae2a0d79ab9f606b",
+    "kind": "release",
+    "title": "Introducing GPT-6.1 Terra",
+    "summary_en": "Bringing fast and capable computer use to everyone",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-26T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:26.106750Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-gpt-6-1-terra",
+      "title:gpt introducing terra"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.348,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.652
+    }
+  },
+  {
+    "id": "b336ff6c273ff1d5",
+    "kind": "paper",
+    "title": "AV-FABLE: Audio-Visual Manipulation Forensics in Long-Form Videos",
+    "summary_en": "Localized AI manipulations in long-form videos often affect brief events within otherwise authentic content, making video-level classification insufficient for forensic analysis. Existing audio-visual deepfake benchmarks largely focus on short talking-head clips, while long-form temporal forensics remains predominantly visual. We introduce AV-FABLE, a dual-timeline benchmark for sparse manipulations in open-scene long-form audio-visual videos. AV-FABLE contains 16,650 pristine--manipulated twin pairs (998 hours) created with 27 editing configurations, with separate audio and visual timelines that enable modality-specific temporal localization and expose errors hidden by joint-timeline evaluation. On AV-FABLE, zero-shot prompting of audio-visual large language models (AV-LLMs) yields near-chance detection and poor temporal localization. In contrast, supervised readouts of their frozen perception features recover strong forensic signals, suggesting manipulation evidence is encoded in these representations but not effectively exposed through language outputs. Motivated by this observation, we propose NFSR(Native Forensics via Separated Readouts), which reads frozen AV-LLM features with separate audio and visual temporal decoders. NFSR achieves the best audio-visual localization performance in-domain and across all three out-of-distribution settings, including transfer to held-out videos from an external long-video forensic benchmark. AV-FABLE, code, and model weights will be publicly released.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "speech",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.33413",
+        "external_id": "2610.33413"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.33413",
+        "external_id": "2610.33413"
+      }
+    ],
+    "actors": [
+      "Yuesheng Huang",
+      "Hoi Fan Au",
+      "Jiaqi Hou",
+      "Ruicheng Zhang",
+      "Jiarui He",
+      "Haocheng Yang",
+      "Bin Hu",
+      "Kewei Zhang",
+      "Weijian Deng",
+      "Jun Zhou",
+      "Xiu Li"
+    ],
+    "published_at": "2026-10-24T00:00:00Z",
+    "first_seen_at": "2026-10-27T18:25:25.671834Z",
+    "dedup_keys": [
+      "arxiv:2610.33413",
+      "title:audio fable forensics form long manipulation videos visual"
+    ],
+    "signals": {
+      "hf_upvotes": 32,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1806,153 +1882,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 12.684,
+    "score": 31.32,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 27.972,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.861
-    }
-  },
-  {
-    "id": "55524d423df0924f",
-    "kind": "paper",
-    "title": "RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions",
-    "summary_en": "Scaling vision-language-action (VLA) models is constrained by scarce action-labeled demonstrations and incompatible control spaces across robot embodiments. We present RynnVLA-Latent, a framework that turns heterogeneous interaction videos into scalable supervision for robot policy pretraining. At its core, RynnLAM learns continuous, 3D-grounded latent actions from visual transitions without requiring native robot controls. By combining residual future-feature prediction, camera-compensated 3D-flow supervision, and camera-motion decoupling, RynnLAM encourages representations that capture control-relevant motion rather than appearance changes alone. We apply RynnLAM to 30.1K hours of human, robot, and simulation videos, producing 745.52M latent-action descriptors. RynnVLA-Latent then learns to predict latent-action chunks from visual observations and language through flow matching, before adapting its pretrained backbone and action expert to embodiment-specific robot actions. The resulting 4B policy achieves 98.8% success on LIBERO, 84.7% on LIBERO-Plus without benchmark-specific adaptation, 51.9% average success across five VLABench tracks, and 88.6% average success on the RoboTwin 2.0 bimanual benchmark. It also achieves the highest observed success rates among the compared methods on six real-world manipulation tasks across dexterous-hand and mobile-gripper platforms. Together with representation ablations and data-scaling results, these findings demonstrate the potential of latent-action supervision for scaling robot policy learning beyond native action-labeled data.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "multimodal",
-      "cv",
-      "robotics",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.34356",
-        "external_id": "2610.34356"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.34356",
-        "external_id": "2610.34356"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/alibaba-damo-academy/RynnVLA-Latent",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Haoyu Zhao",
-      "Xingyue Zhao",
-      "Zhian Su",
-      "Bohan Hou",
-      "Yinzhou Tang",
-      "Fengyi Wang",
-      "Kehan Li",
-      "Yuming Jiang",
-      "Siteng Huang",
-      "Xin Li",
-      "Zhenyu Zeng",
-      "Mingxiu Chen",
-      "Deli Zhao",
-      "Zhongyu Li"
-    ],
-    "published_at": "2026-10-25T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961811Z",
-    "dedup_keys": [
-      "arxiv:2610.34356",
-      "title:actions foundation grounded latent latent manipulation models robotic rynnvla scaling with",
-      "github:alibaba-damo-academy/rynnvla-latent"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 6,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 12.531,
-    "score_breakdown": {
-      "github_stars": 3.892,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.361
-    }
-  },
-  {
-    "id": "1df5da6117698be5",
-    "kind": "paper",
-    "title": "HiP3R: Hierarchical Pose Graphs for Long-Horizon 3D Reconstruction",
-    "summary_en": "Feed-forward models accurately estimate camera motion and 3D geometry from short video windows. However, computational and memory costs prevent direct inference on sequences containing thousands of frames. Long videos must therefore be processed as overlapping chunks. This division produces independent local reconstructions with inconsistent coordinate frames and duplicate estimates of shared cameras. Achieving global consistency requires propagating constraints from adjacent overlaps and distant revisits across the sequence. This requirement naturally motivates pose graph optimization. However, the choice of graph level creates a trade-off. Chunk-level graphs efficiently resolve scale drift and close large loops. Yet, their rigid transformations cannot correct internal errors or conflicting frame predictions. Conversely, frame-level optimization offers local flexibility, but scaling it globally is computationally expensive and can break metric scale. HiP3R resolves this trade-off using a hierarchical pose graph. HiP3R first optimizes a robust chunk-level Sim(3) graph to establish the global layout and scale. It then holds this layout fixed and estimates one shared SE(3) camera per frame, turning overlapping window predictions into a single trajectory. Experiments across multiple benchmarks demonstrate the effectiveness of HiP3R in improving camera trajectories and 3D reconstruction. Our method applies to both chunk-based and streaming backends without additional training or fine-tuning. The codes are available at https://kkakkkka.github.io/HiP3R.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.31635",
-        "external_id": "2610.31635"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.31635",
-        "external_id": "2610.31635"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/HiP3Rs/HiP3R",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Zunnan Xu",
-      "Shangchen Zhou",
-      "Yihang Luo",
-      "Chen Change Loy"
-    ],
-    "published_at": "2026-10-22T00:00:00Z",
-    "first_seen_at": "2026-10-27T05:46:34.961717Z",
-    "dedup_keys": [
-      "arxiv:2610.31635",
-      "title:for graphs hierarchical hip3r horizon long pose reconstruction",
-      "github:hip3rs/hip3r"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 11.229,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -7.861
+      "age_decay": -5.652
     }
   }
 ]
