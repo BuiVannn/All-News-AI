@@ -1,0 +1,1603 @@
+[
+  {
+    "id": "e4c582a6677d794f",
+    "kind": "paper",
+    "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
+    "summary_en": "Diffusion language models (DLMs) generate text through iterative denoising, enabling bidirectional context modeling and parallel token refinement. Recent studies have applied reinforcement learning (RL) to DLMs and improved their reasoning performance. However, the iterative denoising process makes credit assignment more challenging, as final outcome rewards provide limited information about how different tokens contribute to the final output. In this paper, we propose Denoising Token Credit Assignment (DTCA), a framework for token-level credit assignment in reinforcement learning for diffusion language models. DTCA estimates token contributions by measuring the improvement in prediction confidence of remaining masked positions after token commitment and groups these signals according to part-of-speech (POS) categories. These contribution weights are used to select informative denoising timesteps and assign token-level learning signals during RL training. DTCA further calibrates these learning signals according to token-level entropy changes induced by policy updates. Experiments on LLaDA-8B-Instruct show that DTCA consistently improves mathematical reasoning performance across different generation budgets, with gains of up to 9.0 points on MATH500 and 5.3 points on GSM8K over the base model.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.35201",
+        "external_id": "2610.35201"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.35201",
+        "external_id": "2610.35201"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ZJU-OmniAI/DTCA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hongze Chen",
+      "Miao Pan",
+      "Lizhou Liang",
+      "Qinfeng Li",
+      "Xinyin Ma",
+      "Yongliang Shen",
+      "Weishi Wang",
+      "Daniel Dahlmeier",
+      "Xuhong Zhang",
+      "Wenqi Zhang"
+    ],
+    "published_at": "2026-10-26T00:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:18.684825Z",
+    "dedup_keys": [
+      "arxiv:2610.35201",
+      "title:assignment credit denoising diffusion dtca for language learning models reinforcement token",
+      "github:zju-omniai/dtca"
+    ],
+    "signals": {
+      "hf_upvotes": 254,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 54.191,
+    "score_breakdown": {
+      "hf_upvotes": 44.33,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.912
+    }
+  },
+  {
+    "id": "01c93539a73da91e",
+    "kind": "paper",
+    "title": "Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes",
+    "summary_en": "Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise of real scenes. Second, high-performance causal architectures are too heavy for edge deployment. Lightweight alternatives try to reclaim capacity by repeatedly invoking a small separator, which offsets the savings. To address the first gap, we release RealSSA, a realistic AVTSE benchmark consisting of RealSSA-Sim and RealSSA-Real. RealSSA-Sim provides controllable simulated scenes with 1--5 dynamic near-field interfering speakers; scenes with far-field interference additionally include 10--15 far-field interfering speakers. RealSSA-Real provides a held-out real-recorded evaluation set. To address the second gap, we propose Falcon, a causal AVTSE method. Its Separator performs multi-scale time-frequency separation in a single encoder--decoder pass. We train Falcon with an encoder-space speaker contrastive loss. This loss suppresses near-field leakage at zero inference cost and transfers across backbones. Falcon achieves state-of-the-art extraction quality on RealSSA-Sim, LRS2-2Mix, LRS3-2Mix, and VoxCeleb2-2Mix. Compared with the causal AV-TFGridNet baseline, it cuts parameters by 91.9%, computation by 20.2 times, and GPU inference latency by 11.1 times. Code and demo are available at https://cslikai.cn/Falcon/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "speech",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.32749",
+        "external_id": "2610.32749"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.32749",
+        "external_id": "2610.32749"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/JusperLee/Falcon",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Wendi Sang",
+      "Kai Li",
+      "Yifan Li",
+      "Jianqiang Huang",
+      "Xiaolin Hu"
+    ],
+    "published_at": "2026-10-23T00:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:18.684869Z",
+    "dedup_keys": [
+      "arxiv:2610.32749",
+      "title:acoustic audio efficient extraction for real scenes speaker streaming target visual world",
+      "github:jusperlee/falcon"
+    ],
+    "signals": {
+      "hf_upvotes": 140,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 13,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 43.456,
+    "score_breakdown": {
+      "hf_upvotes": 39.59,
+      "github_stars": 5.278,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -9.412
+    }
+  },
+  {
+    "id": "82ea5725424f72ab",
+    "kind": "model",
+    "title": "Efficient-Large-Model/Open-H3-Regenerate-2K",
+    "summary_en": "video-to-video, diffusers, minimax-h3, lora, video-refinement, sol-engine",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K",
+        "external_id": "Efficient-Large-Model/Open-H3-Regenerate-2K"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "Efficient-Large-Model"
+    ],
+    "published_at": "2026-10-26T14:55:57Z",
+    "first_seen_at": "2026-10-29T06:35:18.688495Z",
+    "dedup_keys": [
+      "hf:efficient-large-model/open-h3-regenerate-2k"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 78,
+      "hf_downloads": 0,
+      "hf_trending_score": 77.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 39.269,
+    "score_breakdown": {
+      "hf_trending": 26.14,
+      "hf_likes": 13.108,
+      "has_weights": 4.0,
+      "age_decay": -3.979
+    }
+  },
+  {
+    "id": "78577eea622aa66e",
+    "kind": "paper",
+    "title": "OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images",
+    "summary_en": "Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry as the viewpoint changes. To address this limitation, recent methods extend S2V to multiple reference views, providing more information about the subject from different viewpoints. However, they do not explicitly specify the 3D structure that connects these observations. In addition, existing training data do not guarantee that viewpoint changes preserve the same underlying 3D subject. We present OmniShowcase, built on two components: (i) a fully automated data synthesis pipeline that produces training videos along diverse camera trajectories, with viewpoint variation driven by underlying subject geometry, even spanning full 360-degree orbits; and (ii) a geometry-conditioning method that provides the video model with a turntable of surface-normal maps reconstructed from the reference views without requiring temporal alignment with the generated frames. We construct Showcase-4K, a corpus of 3D-asset-based videos covering twelve camera motions across 88 trajectory configurations with reconstruction-derived surface-normal conditioning, and ShowcaseBench, a held-out evaluation set with the source meshes and camera parameters used to render each video. Experiments show state-of-the-art subject identity and 3D consistency while maintaining competitive video quality and motion. Project page: justin4ai.github.io/OmniShowcase",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.35684",
+        "external_id": "2610.35684"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.35684",
+        "external_id": "2610.35684"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/justin4ai/OmniShowcase",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Junyeong Ahn",
+      "Geonwoo Kim",
+      "Kinam Kim",
+      "Gihwi Kim",
+      "Hoonjin Jung",
+      "Hyojin Jang",
+      "Jaegul Choo"
+    ],
+    "published_at": "2026-10-26T00:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:18.684887Z",
+    "dedup_keys": [
+      "arxiv:2610.35684",
+      "title:consistent from generation images multi omnidirectional omnishowcase subject video view",
+      "github:justin4ai/omnishowcase"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.391,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.912
+    }
+  },
+  {
+    "id": "05e70c76e22d3d78",
+    "kind": "release",
+    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+    "summary_en": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-28T13:15:00Z",
+    "first_seen_at": "2026-10-29T06:35:18.955336Z",
+    "dedup_keys": [
+      "url:openai.com/index/openai-servicenow-partnership-expansion",
+      "title:across and enterprise expand openai partnership servicenow workflows"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.916,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.084
+    }
+  },
+  {
+    "id": "1284374fa6761c27",
+    "kind": "release",
+    "title": "Legora is building the agentic operating system for legal work",
+    "summary_en": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/legora",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-10-28T09:30:00Z",
+    "first_seen_at": "2026-10-29T06:35:18.955415Z",
+    "dedup_keys": [
+      "url:openai.com/index/legora",
+      "title:agentic building for legal legora operating system the work"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.682,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.318
+    }
+  },
+  {
+    "id": "6160da4b95389498",
+    "kind": "model",
+    "title": "TOTORONG/AD103_win_unlocker",
+    "summary_en": "uefi, ad103, rtx4080, research, en, ko",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/TOTORONG/AD103_win_unlocker",
+        "external_id": "TOTORONG/AD103_win_unlocker"
+      }
+    ],
+    "actors": [
+      "TOTORONG"
+    ],
+    "published_at": "2026-10-23T12:42:49Z",
+    "first_seen_at": "2026-10-29T06:35:18.688610Z",
+    "dedup_keys": [
+      "hf:totorong/ad103_win_unlocker"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 62,
+      "hf_downloads": 0,
+      "hf_trending_score": 61.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.575,
+    "score_breakdown": {
+      "hf_trending": 24.763,
+      "hf_likes": 12.429,
+      "age_decay": -8.617
+    }
+  },
+  {
+    "id": "45b3e833b09bb40c",
+    "kind": "release",
+    "title": "Build specialized multimodal models with LFM3",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-10-27T17:16:52Z",
+    "first_seen_at": "2026-10-29T06:35:20.589417Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/liquidai/lfm3",
+      "title:build lfm3 models multimodal specialized with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 21.668,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "topic_match": 4.0,
+      "age_decay": -2.332
+    }
+  },
+  {
+    "id": "1ab7fcc64eab1ce2",
+    "kind": "release",
+    "title": "Can we trust LLMs to judge whether a research idea is novel?",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/allenai/novelty-bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-10-27T16:12:42Z",
+    "first_seen_at": "2026-10-29T06:35:20.589436Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/allenai/novelty-bench",
+      "title:can idea judge llms novel research trust whether"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 21.601,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "topic_match": 4.0,
+      "age_decay": -2.399
+    }
+  },
+  {
+    "id": "6ab93988c7b0bc82",
+    "kind": "release",
+    "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-10-28T14:58:17Z",
+    "first_seen_at": "2026-10-29T06:35:20.589363Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "title:adapt and and can granary intelligent multilingual nemotron nvidia prompt transcribe transcription you"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.024,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.976
+    }
+  },
+  {
+    "id": "e4c914cfeb31e2f5",
+    "kind": "paper",
+    "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+    "summary_en": "Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on GPUs, resulting in suboptimal scheduling decisions. To bridge this gap, we present TAO, a tool-aware joint scheduling framework for LLM-based agentic serving. Its value interface combines near-term tool readiness, node-specific cache credit with time-aware decay, and token footprint; a dynamic program jointly selects and places waiting sessions under capacity constraints. Across the 12 reported model-workload-concurrency settings, TAO reduces latency by up to 26.8%, reduces mean time to first token (TTFT) by up to 36.3%, and increases decode throughput by up to 29.5% relative to the best evaluated state-of-the-art baseline for each metric.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.37230",
+        "external_id": "2610.37230"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.37230",
+        "external_id": "2610.37230"
+      }
+    ],
+    "actors": [
+      "Shuhuai Li",
+      "Shengdong Ye",
+      "Dongdong Ge",
+      "Yinyu Ye",
+      "Jianghao Lin"
+    ],
+    "published_at": "2026-10-27T00:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:18.684900Z",
+    "dedup_keys": [
+      "arxiv:2610.37230",
+      "title:agentic aware based for joint llm scheduling serving tao tool"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 14.377,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.412
+    }
+  },
+  {
+    "id": "f43f0438b78d0581",
+    "kind": "paper",
+    "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+    "summary_en": "Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, S^2 offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With S^2, we extend PRH to robotics and make sensorimotor alignment measurable, offering a low-cost, representation-level view of robot foundation models that closed-loop success rates alone cannot reveal.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.31670",
+        "external_id": "2610.31670"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.31670",
+        "external_id": "2610.31670"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yunfeixie233/sensorimotor-alignment",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yunfei Xie",
+      "Howard H. Qian",
+      "Shiyi Lan",
+      "Kaiyu Hang",
+      "Chen Wei"
+    ],
+    "published_at": "2026-10-23T00:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:18.684914Z",
+    "dedup_keys": [
+      "arxiv:2610.31670",
+      "title:alignment embodied for platonic policy proxy sensorimotor success",
+      "github:yunfeixie233/sensorimotor-alignment"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 12.292,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -9.412
+    }
+  },
+  {
+    "id": "7f9b2c8c35bc8660",
+    "kind": "paper",
+    "title": "BehaveRec: When Does Long-Term Behavioral History Help Sequential Recommendation? A Study with Session, History, and Community Signals",
+    "summary_en": "Sequential recommendation models typically predict a user's next action from recent session interactions, which limits personalization when short-term signals are weak or ambiguous. Rather than assuming that incorporating longer-term history and community signals is universally beneficial, we study when it actually helps. We propose BehaveRec, a three-signal framework combining a causal session transformer, a bidirectional User History Encoder over a 90-day window, and a GraphSAGE module over a user-user graph built from behavioral embedding similarity rather than item co-occurrence; a learned gate blends the three signals per user. On an industrial dataset of 137M sequences from 12.6M users, BehaveRec improves R@5 by +3.2% over SASRec, with a larger-capacity SASRec baseline (more parameters than BehaveRec) still trailing by +2.5%, ruling out capacity as the explanation. More importantly, a user-level stratification by history length reveals a clear dose-response relationship: BehaveRec's advantage is negligible below roughly 10 interactions and grows monotonically with history richness, reaching +0.017 R@5 for users with 101+ events. This pattern is corroborated across one industrial and three public datasets spanning history-rich to history-sparse regimes, where session-only models remain preferable. These headline results, and the resulting deployment threshold, are established for category-level intent prediction; a preliminary, single-run check on the full item-level vocabulary yields a directionally mixed result and is scoped as an open question rather than a claim. We use these results to derive a practical deployment rule -- roughly 20 interactions per user -- for when long-term history and behavioral-graph signals are worth their added complexity. Despite this added complexity, BehaveRec remains lightweight: it uses 5.67M parameters and trains on a single GPU in under two days.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36239",
+        "external_id": "2610.36239"
+      }
+    ],
+    "actors": [
+      "Aysenur Inan",
+      "Reza Yousefi Maragheh",
+      "Jayesh Uddhav Kudase",
+      "Selene Xu",
+      "Kaushiki Nag",
+      "Jianpeng Xu",
+      "Sushant Kumar"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118769Z",
+    "dedup_keys": [
+      "arxiv:2610.36239",
+      "title:and behaverec behavioral community does help history history long recommendation sequential session signals study term when with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "7738b939da186f0e",
+    "kind": "paper",
+    "title": "CohortFlow: A Steerable Clinical Cohort Curation Agent with Localized Semantic Correction",
+    "summary_en": "Language model agents for clinical cohort curation should accommodate evolving eligibility criteria without repeatedly processing unchanged requirements. We introduce CohortFlow, a steerable agent that represents natural language corrections as localized updates to a structured cohort specification and reconciles them with a persistent execution graph. Explicitly recorded semantic dependencies enable affected computations to be selectively invalidated while preserving valid prior results. On 100 scenarios derived from clinical-trial eligibility criteria, comprising 126 correction turns, localized steering achieves 77.0% requirement micro-F1 versus 76.4% for full regeneration using the same 8B model, a small numerical advantage that is not statistically significant ($p=0.493$). It reduces mean correction latency by 64.8% after completion and 44.3% during execution, with 38.1% fewer model calls. In a separate proof-of-concept evaluation over MIMIC, all 13 cohort states execute successfully, while correction trajectories demonstrate selective preservation of unaffected computations and recomputation of changed or dependent nodes. Together, these results show that localized semantic steering can substantially reduce correction latency and model calls while maintaining strong requirement-level accuracy.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36100",
+        "external_id": "2610.36100"
+      }
+    ],
+    "actors": [
+      "Neil Chen",
+      "Adrian Serapio",
+      "Hanxue Gu",
+      "Evan Lee",
+      "Kang Wang",
+      "Yang Yang"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118404Z",
+    "dedup_keys": [
+      "arxiv:2610.36100",
+      "title:agent clinical cohort cohortflow correction curation localized semantic steerable with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "63867b0353420424",
+    "kind": "paper",
+    "title": "Counting the Bandages: On measuring the time that AI saves",
+    "summary_en": "I consider what it means for AI assistance to save time. I contrast a stopwatch view, on which time saved is whatever the clock records, with a ledger view, on which it is a counterfactual that has to be read next to the errors the work lets through, and I argue for the latter. The argument has four parts. I define a model-free pair of quantities, time saved and excess escaped defects, and one decision number built from them: the break-even defect cost. I give a baseline model of checking in which, until the model is good enough not to check, a calibrated worker's escaped-defect rate does not depend on how good the model is; checking time grows with the logarithm of the model's error rate; and over-trust buys minutes on the clock at a larger cost in total minutes. I show what randomized studies can and cannot identify, and I replicate METR's developer study from its public data: the same 246 issues support a slowdown of 19% or 24% depending on the estimand (34% without adjusting for a chance imbalance), and AI helped on somewhere between 3% and 82% of them. Finally, I restate the published record, with stated bounds in place of imported point assumptions. In GDPval's own review-every-output workflow, review time alone caps GPT-5's speedup at 3.6x; the consultants outside the frontier were faster, and more often wrong. Last, I test two of the model's predictions in a small pre-specified experiment on AI reviewers checking AI drafts of the same kind of brief, built from SEC filings made after the models' training data were collected. Told the drafter's true error rate, the reviewer checked more as it rose, but all-or-nothing, switching near where its prompt's costs break even. Told that the drafter erred ten times less often than it did, it checked 7 fewer of 9 figures and let a wrong figure through in 22.5% of briefs instead of none: faster and worse, entirely through reduced effort.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.35942",
+        "external_id": "2610.35942"
+      }
+    ],
+    "actors": [
+      "Solomon Shalom Lijo"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118228Z",
+    "dedup_keys": [
+      "arxiv:2610.35942",
+      "title:bandages counting measuring saves that the the time"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "051b6ad202cbbe0e",
+    "kind": "paper",
+    "title": "Don't Pick a Winner: Knowledge Conflicts Need a Prior, Not a Rule",
+    "summary_en": "A retrieval-augmented language model answers from two sources, the retrieved context and its own knowledge, and the two disagree whenever the context is incomplete or wrong. Existing methods settle the disagreement with a rule fixed at design time: follow the context, amplify it in proportion to how far it moves the model, or trust the model's memory. Each rule is confidently wrong in some deployment. In a decision-theoretic model of two sources, the score of any fixed rule is linear in the share of reliable contexts while the best attainable score is convex, so every fixed rule is beaten wherever it is not exactly optimal; and a symmetric divergence between the two sources, the signal adaptive decoding uses, carries no information about which one is right. Resolving a conflict therefore needs two inputs that no existing method keeps: evidence about each source separately, and a prior on how often the context is right. We test these claims on GRACE, a benchmark that intervenes on the knowledge-graph context of a fixed question, so that what the model knows, what the context says and what is true are measured separately. There, every baseline from four families is strong on right contexts or on wrong ones, never on both. We then build the two inputs: the model states its knowledge as notes, a small policy voices each note with a calibrated confidence, a reader answers in two voices, and a selector commits or abstains under a prior $\\pi$ applied as an exact prior shift. With $\\pi$ set to the true share of right contexts, the system is above the best baseline at every mixture of GRACE contexts, by up to 26 points. Its overall score is 45.3 and 35.0 (Qwen3.5-35B-A3B, Llama-3.1-8B), against 29.4 and 27.5 for the best baseline. On preregistered ClashEval it beats same-backbone CK-PLUG and TCR by 12 and 26 points. Where the model lacks the knowledge, the gains vanish, as the theory predicts.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36169",
+        "external_id": "2610.36169"
+      }
+    ],
+    "actors": [
+      "Minh Pham Van",
+      "Cong Tran"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118570Z",
+    "dedup_keys": [
+      "arxiv:2610.36169",
+      "title:conflicts don knowledge need not pick prior rule winner"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "05d853ad339f2523",
+    "kind": "paper",
+    "title": "From Structural Feedback to Prompt Policies: Learning Faithful Text-to-Image Prompt Editors",
+    "summary_en": "Prompt optimization should improve the image a user receives without changing the scene the user requested. Yet stylistic rewriting can weaken object attributes and relations even when global text--image similarity remains high. We propose StruPO, a structure-aware prompt editor that uses a calibrated scene graph as a shared representation for policy conditioning and image-grounded supervision. The graph exposes what should be preserved, while deletion, reordering, and insertion provide a token-aligned way to modify the prompt. This turns structural feedback from an external critique into a training signal for a reusable editing policy. Learning from that signal requires handling both uncertain grounding and stochastic image generation. StruPO retains grounding confidence through smooth reward shaping and averages multiple images for each edit before computing group-relative advantages. Experiments span three disjoint 2K-prompt test sets and four frozen generation backbones, with comparisons to learned prompt optimizers, iterative structural feedback, diffusion-model fine-tuning, and inference-time attention control. StruPO improves the faithfulness--aesthetics trade-off, with consistent gains in relational fidelity. Independent automatic evaluators and a 15-annotator study provide complementary evidence, and human preference margins increase with relation complexity. Controlled ablations connect these gains to graph conditioning, local editing, and image-grounded learning. The resulting policy produces reusable optimized text in one pass after graph calibration, without an iterative critique--rewrite loop.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36146",
+        "external_id": "2610.36146"
+      }
+    ],
+    "actors": [
+      "Wentao Ye",
+      "Yali Ye",
+      "Zhiqing Xiao",
+      "Ru Peng",
+      "Xinpeng Ti",
+      "Liyao Li",
+      "Zhanming Shen",
+      "Peng Lu",
+      "Jie Zhang",
+      "Haobo Wang"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118510Z",
+    "dedup_keys": [
+      "arxiv:2610.36146",
+      "title:editors faithful feedback from image learning policies prompt prompt structural text"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "7e6536939c87b0c2",
+    "kind": "paper",
+    "title": "How Stable Are LLM-Generated Proofs Under Program Refactoring? A Stress Test for Verifiable Code Generation",
+    "summary_en": "Benchmarks for verifiable code generation usually test a proof against one fixed implementation. We ask whether the same proof remains valid after a program refactoring that preserves behavior. We introduce RefactorProof, which derives 458 Lean-certified variants from the 185 VERINA tasks that compile in our pinned environment while holding the specification and evaluated proof fixed byte-for-byte. VERINA supplies reference proofs for 46 tasks, all from its basic split; the primary model-versus-reference comparisons further match on 21-25 short, non-recursive tasks. Structural refactorings expose substantial brittleness across proof sources: task-normalized structural PSR is 4.3% for the supplied references and 13.3-26.8% for the specialized provers. On the matched tasks, specialized prover proofs nevertheless have higher overall unchanged-proof survival than the supplied reference artifacts: +15.6 points for DeepSeek-Prover-V2-7B, +18.8 for Goedel-Prover-V2-32B, and +20.3 for Goedel-Prover-V2-8B; all three 95% CIs exclude zero. The ordering persists after excluding universally survived T1 variants, under family-balanced aggregation, and under alternative deployable valid-proof selection rules. However, unchanged-proof failure is not the same as high repair cost: predefined one-identifier edits repair 51/54 eligible reference structural failures and 58/85 eligible prover failures. RefactorProof therefore measures unchanged-proof stability under program refactoring, not the cost of maintaining a proof after it breaks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36328",
+        "external_id": "2610.36328"
+      }
+    ],
+    "actors": [
+      "Aravind Mandiga",
+      "Guoming Li"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119016Z",
+    "dedup_keys": [
+      "arxiv:2610.36328",
+      "title:are code for generated generation how llm program proofs refactoring stable stress test under verifiable"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "ead6f9106ed64d2c",
+    "kind": "paper",
+    "title": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
+    "summary_en": "Construction safety management still struggles to produce daily safety bulletins (DSBs), structured daily communications that identify site-specific hazards, convey safety protocols, and set preventive measures for workers. Manual DSB creation takes 2-3 hours daily and yields inconsistent quality, with 25% of crews never conducting pretask planning (Olson et al., 2016), diverting safety personnel from field supervision. This study proposes the Lightweight Multi-Agent DSB System (LM-DSB), which integrates retrieval-augmented generation (RAG) with a locally deployable Large Language Model (LLM) to automate DSB generation on consumer-grade personal computers. LM-DSB coordinates specialized planner, researcher, and writer agents in a hierarchical architecture, enhanced by domain-specific fine-tuning on construction safety documentation and RAG grounding in 37 health, safety, and environment (HSE) documents. A two-phase validation assessed feasibility. Phase 1 comparative evaluation showed the multi-agent RAG system (Llama 3-8B) outperformed all alternative configurations, with strong lexical alignment and coherence (TF-IDF: 0.70, BLEU: 0.39, ROUGE-1: 0.66) and near-complete document generation (length ratio: 1.01 vs. 0.39 for single-agent RAG). Phase 2 expert evaluation (N=40) confirmed practical acceptability (mean scores 3.50-4.20 on a 5-point scale), particularly in regulatory compliance (4.20) and factual accuracy (4.10). The findings show that architectural design enables lightweight models to handle safety-critical documentation on consumer-grade hardware, advancing technology democratization in construction safety management. Limitations include knowledge base scope, language constraints, and lack of field deployment validation; future work should address multimodal integration and workflow adoption.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36433",
+        "external_id": "2610.36433"
+      }
+    ],
+    "actors": [
+      "Xianxiang Zhao",
+      "Advik Mehta",
+      "Falak Sethi",
+      "Brian Gue",
+      "Qipei Mei",
+      "Lingzi Wu"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119455Z",
+    "dedup_keys": [
+      "arxiv:2610.36433",
+      "title:agent automated bulletin construction daily dsb for generation lightweight multi safety system"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "787d92bcbbb94a93",
+    "kind": "paper",
+    "title": "MAREval: A Multi-Agent Framework for Evaluating Natural Language Recommendation Explanations",
+    "summary_en": "Evaluating natural language explanations in recommender systems is essential for fostering user trust, transparency, and engagement. However, existing evaluation approaches like human evaluations, while accurate, are resource-intensive and impractical at the scale required by modern recommendation platforms. Also, automated methods using single-agent LLMs suffer from prompt sensitivity and inconsistent outputs. To address these challenges, we propose MAREval, a structured multi-agent framework for evaluating recommendation explanations using large language models. MAREval orchestrates (i) a planner agent that uses a novel Chain of Debate (CoD) prompting strategy to coordinate agent roles and enforce logically consistent evaluation plans; (ii) a moderator agent that regulates discussions by mitigating prompt drift; and (iii) an arbitrator agent that aggregates outputs from multiple evaluation rounds and (iv) a Monte Carlo sampling method, improving robustness and alignment with human judgment. We conduct comprehensive evaluations on both public (TopicalChat) and proprietary recommendation datasets, demonstrating that MAREval outperforms state-of-the-art baselines. Comprehensive experiments on a public benchmark and a proprietary e-commerce dataset show that MAREval improves alignment with human judgments over strong singleand multi-agent baselines. Stability analyses indicate substantially lower variability across repeated trials. In a large human-annotation gate, MAREval meets production quality thresholds where prior evaluators fall short, and online A/B testing demonstrates statistically significant improvements in engagement and revenue metrics. These results establish MAREval as a scalable and reliable solution for human-aligned evaluation of recommendation explanations in real-world systems",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36389",
+        "external_id": "2610.36389"
+      }
+    ],
+    "actors": [
+      "Reza Yousefi Maragheh",
+      "Jayesh Uddhav Kudase",
+      "Aysenur Inan",
+      "Ramin Giahi",
+      "Kai Zhao",
+      "Parth Parikh",
+      "Jianpeng Xu",
+      "Jason Cho",
+      "Evren Korpeoglu",
+      "Sushant Kumar"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119312Z",
+    "dedup_keys": [
+      "arxiv:2610.36389",
+      "title:agent evaluating explanations for framework language mareval multi natural recommendation"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "956b182d6c0f31f0",
+    "kind": "paper",
+    "title": "MARQ: A Modular, LLM-Agnostic Requirement Quality Assessor Infused with Systems Engineering Knowledge",
+    "summary_en": "Requirements engineering (RE) is foundational to systems engineering (SE), as requirement defects can propagate downstream and adversely affect development outcomes. Although large language models (LLMs) are promising for requirement quality assessment, prior work shows that off-the-shelf models miss a large share of expert-identified defects, perform unevenly across quality criteria, and vary across executions. This study investigates whether infusing expert-derived SE knowledge can improve LLM-based requirement quality evaluation beyond off-the-shelf capability. We present MARQ, a modular, LLM-agnostic prototype that supplements LLMs with a criterion-specific knowledge stack operationalizing INCOSE requirement quality criteria and evaluated against off-the-shelf baselines on an expert-labeled NASA requirement set using Claude Opus 5, GPT-5.6 Sol, and the open-weight Gemma 3 12B, with 100 executions per model. MARQ achieves median F1 scores of 0.80 for Claude Opus 5, 0.62 for GPT-5.6 Sol, and 0.53 for Gemma 3 12B, compared with off-the-shelf baselines of 0.55, 0.52, and 0.18, respectively. However, the nature of these gains is model-dependent. Claude Opus 5 improves defect detection and false-alarm control; GPT-5.6 Sol gains detection and better execution-level consistency at the cost of more false alarms; and Gemma 3 12B reaches the performance of off-the-shelf proprietary models, although it remains highly variable. Criterion-level analysis shows gains concentrated in Correctness and Conformance, trade-offs between misses and false alarms within individual criteria, and model-dependent responses across several criteria. These findings position SE knowledge infusion as a promising model-agnostic pathway for strengthening trustworthy LLM-based RE support while underscoring the need for criterion-specific interventions and human-in-the-loop review.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36234",
+        "external_id": "2610.36234"
+      }
+    ],
+    "actors": [
+      "Jannatul Shefa",
+      "Alejandro Salado",
+      "Paul Wach",
+      "Taylan G. Topcu"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118712Z",
+    "dedup_keys": [
+      "arxiv:2610.36234",
+      "title:agnostic assessor engineering infused knowledge llm marq modular quality requirement systems with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "606f1f3daff6c3b6",
+    "kind": "paper",
+    "title": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
+    "summary_en": "Large language models (LLMs) perform well across many real-world tasks but remain prone to hallucination, limiting their reliability in domains such as biomedicine and healthcare, where answers must be grounded in established knowledge. Retrieval-augmented generation (RAG) mitigates this problem by incorporating external information, but often overlooks logical relationships and relies heavily on the LLM's own reasoning, which can compromise answer faithfulness. We propose OA-RAG, an agent that integrates formal reasoning with LLM reasoning, drawing on both the logical structure and informal annotations of domain ontologies. For each answer, OA-RAG reports the ontology observations used as evidence and a model-assessed grounding level (entailed, supported, related, or unrelated) that characterises the strength of that evidence. Across benchmarks derived from three large-scale ontologies and six real-world medical question-answering tasks, OA-RAG achieves the best overall performance among the evaluated ontology-fine-tuned and popular RAG methods, with particularly strong results on reasoning-intensive tasks. The reported grounding levels also offer a useful indication of answer reliability, with stronger grounding generally associated with higher accuracy. Finally, our results demonstrate the value of ontologies as knowledge sources: OA-RAG is competitive with, and sometimes outperforms, domain-specific RAG systems that draw on sources such as textbooks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36335",
+        "external_id": "2610.36335"
+      }
+    ],
+    "actors": [
+      "Hui Yang",
+      "Jiaoyan Chen",
+      "Yongsheng Gao"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119117Z",
+    "dedup_keys": [
+      "arxiv:2610.36335",
+      "title:agentic based faithful for llm ontology rag rag reasoning"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "0210cea6f85ac6b4",
+    "kind": "paper",
+    "title": "Ontology-guided multi-agent reasoning for explainable differential diagnosis",
+    "summary_en": "Effective differential diagnosis depends on well structured and unambiguous patient case descriptions, since incomplete or ambiguous clinical information readily leads to diagnostic errors and inconsistent reasoning. Large Language Models (LLMs) have recently shown promising capabilities in medical question answering and clinical reasoning; however, even when achieving competitive performance on medical benchmarks, they often rely on pattern recognition learned from training data rather than grounded clinical evidence, and can generate plausible yet unsupported diagnostic conclusions. Their reasoning remains largely opaque, making it difficult for clinicians to assess the evidence and rationale behind a given recommendation. To address this gap, we propose an ontology-guided, multiagent differential diagnosis framework that replicates the iterative reasoning process of physicians. The framework grounds diagnostic inference in a structured, expert-curated medical knowledge base, enabling interpretation of symptoms, clinical findings, or disease relationships, while decomposing diagnosis into explicit, auditable reasoning steps. This ontology-based grounding constrains inference to evidence-backed associations, reducing hallucination and improving diagnostic transparency, traceability, and consistency. The system then identifies the most discriminative missing symptoms and generates targeted follow-up questions to reduce uncertainty through a process that mirrors to clinical inquiry. Together, these components improve the reliability, explainability, and diagnostic accuracy of AI-assisted differential diagnosis. The source code is publicly available.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36325",
+        "external_id": "2610.36325"
+      }
+    ],
+    "actors": [
+      "Roxana Ramona Szomiu",
+      "George Ursu",
+      "Adrian Groza"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118968Z",
+    "dedup_keys": [
+      "arxiv:2610.36325",
+      "title:agent diagnosis differential explainable for guided multi ontology reasoning"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "63155587114e7ebe",
+    "kind": "paper",
+    "title": "Plenty of Room in the Middle: Revealing Opportunities on a GPU Cluster via Fine-Grained Monitoring",
+    "summary_en": "GPU clusters have become essential computing resources for AI and scientific research in academia and industry. However, their high cost and growing demand often result in long queueing delays. While previous monitoring efforts have operated at second- or minute-level frequencies, they primarily informed job-level scheduling for clusters and lacked the detail needed to optimize GPU-level utilization. This paper presents an in-depth study of a university research GPU cluster, analyzing resource usage at 100 ms intervals. We have developed a lightweight monitoring tool that leverages Nvidia's DCGM library to capture fine-grained \"compute utilization\" metrics within GPUs. Deployed on a cluster with 89 nodes and 319 GPUs, our tool collected data over several months. This paper focuses on a 10-day period with 7,399 jobs submitted by 150 users from 12 departments. Our study reveals three key findings: (1) the GPU cluster exhibits significant underutilization, with over 70% of jobs using less than 20% of GPU memory and 50% averaging below 5% Streaming Multiprocessor (SM) utilization; (2) 80% of jobs have a drastic mismatch between their requested and actual durations, significantly limiting the scheduler's effectiveness; and (3) the multi-GPU jobs we examined show highly periodic communication patterns. These findings suggest there is plenty of room in the middle: substantial utilization gains are available through better job scheduling and GPU multitasking, independent of hardware or application improvements. Our monitoring solution is available as open-source software at https://github.com/als244/gpu_server_monitoring.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36329",
+        "external_id": "2610.36329"
+      }
+    ],
+    "actors": [
+      "Andrew Sheinberg",
+      "Samyak Gupta",
+      "Kai Li"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119066Z",
+    "dedup_keys": [
+      "arxiv:2610.36329",
+      "title:cluster fine gpu grained middle monitoring opportunities plenty revealing room the via"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "607f6fb42dc21065",
+    "kind": "paper",
+    "title": "Skill Dreaming: Evolving Repository Skills through Pull Request Streams",
+    "summary_en": "Large language model (LLM) agents increasingly rely on reusable skills for complex software engineering tasks, making skill libraries essential for repository development and maintenance. However, repository-specific skills must evolve with changing code structures, implementation conventions, and maintenance requirements. Pull requests (PRs) provide a natural source of such knowledge by recording how repositories evolve through implementation and review. Meanwhile, new PRs must follow repository-specific implementation patterns, modify related components consistently, and ensure that existing tests continue to pass while adding coverage for new functionality. This creates a mutually reinforcing cycle: PRs provide knowledge for updating skills, while these skills improve future PRs, maintain repositories, and support further skill evolution. To enable this co-evolution of PRs, repositories, and skills, we propose Skill Dreaming, a framework that learns from PR streams to guide continuous repository development and maintenance. Given a repository and its PR history, Skill Dreaming builds a repository-specific skill library by extracting executable knowledge from validated PRs and continuously refines the skills as new PR information becomes available. These skills guide coding agents not only in implementing requested features but also in maintaining associated tests, documentation, compatibility, and repository conventions. By integrating PR analysis, skill management, code execution, and continuous integration, Skill Dreaming provides an end-to-end workflow for applying learned skills to repository changes and incorporating subsequent PR outcomes into future skill updates.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36188",
+        "external_id": "2610.36188"
+      }
+    ],
+    "actors": [
+      "Xinyuan Song",
+      "Hasibul Haque",
+      "Jay Somasundaram",
+      "Ryan Turner",
+      "Bowen Zhu",
+      "Liang Zhao"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118659Z",
+    "dedup_keys": [
+      "arxiv:2610.36188",
+      "title:dreaming evolving pull repository request skill skills streams through"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "7e998dbb3a3de2d2",
+    "kind": "paper",
+    "title": "Verifiable Efficiency Limits of Innate LLM Planning in Sliding Puzzles",
+    "summary_en": "Tool-assisted planning success can reflect external search and verification, leaving a model's unaided planning ability unresolved. We isolate innate planning through complete plans generated in one response without tools or execution feedback. We propose a verifiable framework that decomposes success-weighted plan efficiency as $\\mathrm{SPE}=R\\times Q\\times E$: execution reliability, planning coordination among legal plans, and action economy among completed plans. Trajectory replay and certified optima verify these factors; the joint score includes unsuccessful attempts. We evaluate 8,400 full-plan outputs from seven model conditions on $4\\times4$ sliding puzzles, controlling exact horizon and obstacle count in the primary cohort. Models that complete every trial still become less economical at longer horizons, while higher efficiency among completed plans can coexist with poor goal attainment. SPE separates the overall capability hierarchy, while its factors distinguish coordination failure from inefficient completion. The framework makes long-horizon limitations in unaided planning quantitatively verifiable.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36415",
+        "external_id": "2610.36415"
+      }
+    ],
+    "actors": [
+      "Yezhou Cheng",
+      "Charles Ling"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119405Z",
+    "dedup_keys": [
+      "arxiv:2610.36415",
+      "title:efficiency innate limits llm planning puzzles sliding verifiable"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "20778736ab4fb4ef",
+    "kind": "paper",
+    "title": "WAKMan: Workload Aware KVCache Manager",
+    "summary_en": "Prefix caching enables a Large Language Model (LLM) servers to reuse the Key-Value (KV) states and accelerate prefill computation stage for requests that share a prefix with earlier prompts, thus reducing latency and serving cost. With limited memory resource, the KV cache eviction policy becomes a decisive factor in determining the overall benefits of prefix caching. Production traffic may have single-turn, multi-turn, agentic, or a mixture of any combination of these request types. Our findings indicate that agentic steps return within seconds and favor recency, while popular prompts and long conversations return after many other requests and favor frequency. Across 20 mixes, no single policy is always best: vLLM's default strategy LRU provides 12% higher cache hits as compared to the frequency-oriented S3FIFO on agentic-heavy mixes but trails it by up to 22% elsewhere, and even a single workload parameter can flip the winner even for any particular mix. We present WAKMan, a workload-aware KV cache manager that picks its eviction policy from live traffic without knowing request types or reading prompts. It improves hit rate over LRU by 5 percentage points on average, with the lowest mean and worst-case optimality gap of all policies.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36355",
+        "external_id": "2610.36355"
+      }
+    ],
+    "actors": [
+      "Suhas Kumar Morisetty",
+      "Vaibhavi Lokegaonkar",
+      "Sachin Mathew Varghese",
+      "Wesley Harris"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119216Z",
+    "dedup_keys": [
+      "arxiv:2610.36355",
+      "title:aware kvcache manager wakman workload"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "02e32d99e9304960",
+    "kind": "paper",
+    "title": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+    "summary_en": "Memory-agent benchmarks often collapse retrieval and answer generation into one score, making it hard to tell whether a failure comes from missing an update or from not using an update that was already retrieved. We examine this distinction on the single-hop FactConsolidation task of MemoryAgentBench. With Qwen2.5-7B-Instruct on 6K-history BM25 accuracy drops from 45% to 32% when the retrieved evidence budget grows from 64 to 512 tokens, even though a gold-assisted post-hoc audit finds the newest statement in every retrieved set. Most of the errors occur on questions that also contain an obsolete statement version. Under a frozen prompt and equal four-statement evidence size, replacing one unrelated statement with the obsolete competing statement reduces accuracy from 100% to 44.6% for Qwen2.5 and from 100% to 87.8% for Qwen3-14B, with all 50 harmful paired flips classified as stale. A 32K-history replication likewise favors BM25-64 over BM25-512 (69% versus 58%). These results suggest that retrieving the correct fact is not enough. An obsolete competing statement can be more harmful than an unrelated piece of evidence of the same size.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36308",
+        "external_id": "2610.36308"
+      }
+    ],
+    "actors": [
+      "Oleeviya Babu Poikarayil",
+      "Tony Basil Babu",
+      "Abdulrahman Nahhas",
+      "Het Darshan Mehta",
+      "Jawid Ahmad Baktash",
+      "Ernesto William De Luca",
+      "Klaus Turowski"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.118917Z",
+    "dedup_keys": [
+      "arxiv:2610.36308",
+      "title:agent enough facts memory not obsolete retrieval when"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "130f13f0c0289e0a",
+    "kind": "paper",
+    "title": "Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation",
+    "summary_en": "LLM agents increasingly interact with other agents on behalf of users, yet how users in the loop affect their agents' behavior--for better or worse--remains poorly understood. We study this question through the lens of negotiation, where agents must represent users while strategically bargaining with other agents. To isolate the effect of user presence, we develop PRESENT, a controlled evaluation framework that compares negotiation settings with and without an interactive user, while holding the game, objectives, and user preferences fixed across conditions. Across 11.2k runs spanning 7 games and 8 models, we find that user presence significantly changes both outcomes and behavior. Specifically, negotiation parties with a user obtain higher payouts (+13.7% on average) and their agents negotiate more aggressively. Surprisingly, user presence also induces misaligned behavior, both toward counterparties (where its rate roughly doubles) and toward users (where it emerges in 14.3% of games). These misaligned behaviors are uncorrelated with outcomes and persist even when the user sends only templated, neutral messages. These findings expose two blind spots in current evaluation practice: static instructions miss behaviors that emerge only when users are present, and outcome-level metrics cannot detect them.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36435",
+        "external_id": "2610.36435"
+      }
+    ],
+    "actors": [
+      "Jane Pan",
+      "You Lyu",
+      "Abe Bohan Hou",
+      "Valerie Chen",
+      "He He"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119502Z",
+    "dedup_keys": [
+      "arxiv:2610.36435",
+      "title:acts agent agent around behavior changes differently how negotiation presence user when you your"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  },
+  {
+    "id": "5f720e38f5ef5165",
+    "kind": "paper",
+    "title": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
+    "summary_en": "Each new generation of frontier model pushes the edge of what is possible. Inside a harness -- a loop, a shell, a filesystem, the ability to write and run its own code -- a model can take on increasingly difficult work. A growing body of work treats the coding-agent harness as infrastructure for knowledge work rather than a coding tool, and a new wave of benchmarks tests it there. Most of them are generative: build a financial model, a memo, a spreadsheet from a brief, judged by a rubric or by another model. Few test the expensive part of knowledge work, which is investigative. In audit, tax, due diligence, regulatory reporting, claims or any dispute over numbers, the answer already exists -- hidden in incomplete and inconsistent evidence spread across systems -- and has to be recovered and defended to the cent. We introduce kw-bench, a benchmark built from real engagements specialists described to us. Its first task family is a five-year VAT reconstruction across three generations of SAP -- legacy ECC, a partial S/4HANA migration and a consultant's redesign -- delivered as raw system extracts: page headers, local number formats, partial link tables, no documentation of how anything connects. Grading is deterministic, with no LLM judge. We ran four harnesses -- Claude Code, Codex, OpenCode and micro-cc -- on the same model, DeepSeek v4.1 Flash, for two hours. The two independent, model-agnostic harnesses delivered (OpenCode 0.542, micro-cc 0.528); the two lab harnesses, away from their home model, delivered nothing (0.00 each). What defeated them was inertia: keeping many weak signals alive across a long session. On a frontier model the task collapses. micro-cc and Claude Code on Claude Opus 5.5 scored 0.9986 and 1.000, in 22 and 25 minutes. A weeks-long engagement now costs minutes and a few dollars; below the frontier, the harness decides how far a model gets.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.36405",
+        "external_id": "2610.36405"
+      }
+    ],
+    "actors": [
+      "George Juraj Salapa"
+    ],
+    "published_at": "2026-10-29T04:00:00Z",
+    "first_seen_at": "2026-10-29T06:35:19.119367Z",
+    "dedup_keys": [
+      "arxiv:2610.36405",
+      "title:bench breaking frontier harnesses real tasks world"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.838,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.162
+    }
+  }
+]
