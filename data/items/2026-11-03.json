@@ -1,0 +1,1636 @@
+[
+  {
+    "id": "c6c3c9228d86ac2b",
+    "kind": "model",
+    "title": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+    "summary_en": "image-to-video, minimax-h3, pika, pika-h3-flex, turbo, 4-step, 8-step",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+        "external_id": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
+        "external_id": "Iwannapose/minimax_h3_pdmd_2nfe_comfyui"
+      }
+    ],
+    "actors": [
+      "Pika-Labs"
+    ],
+    "published_at": "2026-10-29T18:45:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.312896Z",
+    "dedup_keys": [
+      "hf:pika-labs/pika-h3-flex-turbo-lora"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 82,
+      "hf_downloads": 28961,
+      "hf_trending_score": 82.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 53.53,
+    "score_breakdown": {
+      "hf_trending": 26.513,
+      "hf_downloads": 20.547,
+      "hf_likes": 13.257,
+      "age_decay": -6.787
+    }
+  },
+  {
+    "id": "c2172a9f8d454e10",
+    "kind": "paper",
+    "title": "CUA-Master: Scaling Computer-use Agents through Open-World Recursive Improvements",
+    "summary_en": "Despite recent advances in CUAs, their development remains constrained by the limited diversity, controllability, and reliability of interaction data. Moreover, conventional optimization pipelines lack iterative feedback, while existing recursive improvement approaches often rely on self-generated experiences, limiting ability expansion and yielding diminishing returns. To address these challenges, we introduce CUA-Master, a nested double-loop recursive improvement framework. At the system level, an outer world-data-model flywheel continuously incorporates open-world corpus and leverages evolving model weaknesses to guide subsequent data construction and optimization iterations. At the data level, an inner flywheel couples open-world seeding and autocatalytic propagation. The former mines authentic workflows as seed tasks from instructional videos, and employs visual-semantic dual-path trajectory reconstruction; The latter transforms these seeds into reusable primitives for controllable synthesis of diverse, complex, and verifiable tasks. To enable efficient and reliable trajectory collection, we further introduce a feedback-guided snapshot-rollback retry mechanism in various real environments. Extensive experiments demonstrate that CUA-Master-27B achieves competitive performance across GUI-only and GUI-CLI hybrid benchmarks, scoring 80.2 on OSWorld Verified, 36.9 on OSWorld 2.0, 43.9 on WeaveBench, and 25.0 on Agents' Last Exam. Our framework also substantially improves the quality and efficiency of data synthesis, and exhibits continuous gains across recursive iterations.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.03126",
+        "external_id": "2611.03126"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.03126",
+        "external_id": "2611.03126"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/xlyu0106/CUA-Master",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xinlei Yu",
+      "Gen Li",
+      "Ji Zhao",
+      "Zhangquan Chen",
+      "Congcong Wang",
+      "Shuai Dong",
+      "Zelin Peng",
+      "Yuqi Xu",
+      "Hongrui Wu",
+      "Kaiwen Tuo",
+      "Cheng Yang",
+      "Kaituo Feng",
+      "Yifan Wu",
+      "Jiayi Zhang",
+      "Dongming Wu",
+      "Wenqi Shao",
+      "Jiaqi Wang",
+      "Xiangyu Yue"
+    ],
+    "published_at": "2026-11-02T13:41:14Z",
+    "first_seen_at": "2026-11-03T07:20:24.311030Z",
+    "dedup_keys": [
+      "arxiv:2611.03126",
+      "title:agents computer cua improvements master open recursive scaling through use world",
+      "github:xlyu0106/cua-master"
+    ],
+    "signals": {
+      "hf_upvotes": 20,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 44,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.866,
+    "score_breakdown": {
+      "hf_upvotes": 24.356,
+      "github_stars": 7.613,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.103
+    }
+  },
+  {
+    "id": "db268c9f14453e08",
+    "kind": "paper",
+    "title": "Wave Forcing: Towards Speed-of-Light Streaming Video Generation",
+    "summary_en": "Real-time long-video generation requires continuous output with consistent appearance and natural motion. Existing chunk-wise autoregressive methods face challenges in both generation efficiency and long-video quality: serialized denoising and history-cache refresh require two forward passes even with one-step denoising, and longer rollouts can degrade quality and cause camera drift. We propose Wave Forcing (WF), which co-designs generation, training, and execution for continuous video output with multi-step denoising. WF uses chunk-wise causal attention to access earlier, cleaner chunks before their denoising is complete, and distributes staggered denoising and cache-refresh stages across full-model replicas to achieve 1F1C: one output chunk per concurrent forward round after pipeline fill. To adapt the model to this continuous generation process, we develop a three-stage training procedure that successively introduces mixed-noise denoising, motion supervision, and causal adaptation using self-generated history. To execute this process efficiently, Wave Runtime (WaveRT) uses Wave Parallelism (WP) for early K/V delivery and communication-computation overlap, together with optimized kernels and pipelined VAE decoding. Experiments on Wan2.1-T2V-1.3B show that 5-step WF maintains overall quality comparable to Rolling Forcing while achieving higher Dynamic Degree on both short and long videos. Our system efficiency experiments show that 4-step WF achieves 147.6 DiT FPS and 134.8 end-to-end FPS on eight H200 GPUs, yielding 7.07x the single-GPU end-to-end throughput. In DiT-only tests with matched SageAttention+W8A8 backends, denoising steps, and GPU counts, WP delivers up to 2.53x the throughput of the faster of the Ulysses and Ring context-parallel baselines across six model scales (1.3B-14B).",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.00859",
+        "external_id": "2611.00859"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.00859",
+        "external_id": "2611.00859"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/SJTU-DENG-Lab/WaveForcing",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yijie Jin",
+      "Yuxuan Liu",
+      "Jiajun Xu",
+      "Ye Huang",
+      "Chuzhi Wang",
+      "Jiayang Li",
+      "Ruiyang Chen",
+      "Chenling Hong",
+      "Xu Wang",
+      "Zhijie Deng"
+    ],
+    "published_at": "2026-10-31T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.310945Z",
+    "dedup_keys": [
+      "arxiv:2611.00859",
+      "title:forcing generation light speed streaming towards video wave",
+      "github:sjtu-deng-lab/waveforcing"
+    ],
+    "signals": {
+      "hf_upvotes": 49,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 68,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.805,
+    "score_breakdown": {
+      "hf_upvotes": 31.296,
+      "github_stars": 8.468,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.959
+    }
+  },
+  {
+    "id": "9507acffb6734e51",
+    "kind": "paper",
+    "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+    "summary_en": "Video generation is shifting from end-to-end synthesis toward agentic generation, where planning, tool use, and feedback enable coherent, controllable multi-shot videos. In parallel, video world models provide action-conditioned observations and predicted futures, serving as interactive environments for agents. We study their intersection through the agent harness: an executable runtime that constructs context, exposes tools, maintains state, routes feedback, and manages budgets around video models. This report examines three directions. First, agentic video generation, where harnesses coordinate scripting, shot planning, asset management, production, and editing, alongside the evaluation challenges of these systems. Second, agentic world modeling, where harnesses mediate observation, control, execution, and state. We discuss hybrid designs in which game engines or agent-written programs maintain world state while video models render observations, and how agents and world models can mutually evaluate and improve one another. Third, recursive self-improvement (RSI) in video model development, distinguishing output revisions, updates to harness state, generator parameters, and evaluators, and changes to the improvement procedure itself. We identify how these improvements feed back into subsequent development. Across these directions, we analyze essential agent capabilities, including audiovisual perception, long-horizon planning, memory, code-based interaction, feedback-guided control, skill reuse, and multi-agent coordination. We conclude with challenges in autonomous video production, lifelong memory, programmable hybrid control, autonomous model development, provenance, cost accounting, and evaluation linking video quality and task performance to sustained improvements in models and harnesses.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "speech",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.40191",
+        "external_id": "2610.40191"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.40191",
+        "external_id": "2610.40191"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/agentic-videogen/awesome-agentic-videogen",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Liaoyuan Fan",
+      "Yuhao Zheng",
+      "Dongxing Mao",
+      "Hangyu Ran",
+      "Siyuan Hu",
+      "Weijia Mao",
+      "Rui Zhao",
+      "Weijia Wu",
+      "Guian Fang",
+      "Yanzhe Chen",
+      "Zeyu Zhu",
+      "Yuxin Jiang",
+      "Yiren Song",
+      "Yuchao Gu",
+      "Junchao Yi",
+      "Qi Hu",
+      "Dan Kong",
+      "Alex Jinpeng Wang",
+      "Kevin Qinghong Lin",
+      "Mike Zheng Shou",
+      "Wei Liu"
+    ],
+    "published_at": "2026-10-29T14:47:39Z",
+    "first_seen_at": "2026-11-03T07:20:24.310988Z",
+    "dedup_keys": [
+      "arxiv:2610.40191",
+      "title:agent agentic agentic and generation generation harness improvement meets modeling recursive self video video world",
+      "github:agentic-videogen/awesome-agentic-videogen"
+    ],
+    "signals": {
+      "hf_upvotes": 46,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 30,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.635,
+    "score_breakdown": {
+      "hf_upvotes": 30.801,
+      "github_stars": 6.868,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.034
+    }
+  },
+  {
+    "id": "25b273bfcb72918a",
+    "kind": "model",
+    "title": "deep-principle/Hydrogen-1.0",
+    "summary_en": "text-generation, glm_moe_dsa, bf16, science, conversational",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/deep-principle/Hydrogen-1.0",
+        "external_id": "deep-principle/Hydrogen-1.0"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/zai-org/GLM-5.3",
+        "external_id": "zai-org/GLM-5.3"
+      }
+    ],
+    "actors": [
+      "deep-principle"
+    ],
+    "published_at": "2026-10-31T15:54:37Z",
+    "first_seen_at": "2026-11-03T07:20:24.312975Z",
+    "dedup_keys": [
+      "hf:deep-principle/hydrogen-1.0"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 167,
+      "hf_downloads": 0,
+      "hf_trending_score": 60.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 40.073,
+    "score_breakdown": {
+      "hf_trending": 24.665,
+      "hf_likes": 15.372,
+      "has_weights": 4.0,
+      "age_decay": -3.964
+    }
+  },
+  {
+    "id": "4709f3679e9c16de",
+    "kind": "paper",
+    "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+    "summary_en": "Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports further training. Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks. Our analysis across model generations, families, and sizes links effective robot use to four general capabilities, suggesting that future RUA training should develop them jointly.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.01560",
+        "external_id": "2611.01560"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.01560",
+        "external_id": "2611.01560"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Open-RUA/uni-robot-agent",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jiarui Yuan",
+      "Yuxin Zuo",
+      "Xiaoyu Huang",
+      "Wenbo Zhang",
+      "Kwanyoung Park",
+      "Junlin Yang",
+      "Tianxiang Zhang",
+      "Ruoqu Chen",
+      "Yutao Ouyang",
+      "Bingxiang He",
+      "Xingtai Lv",
+      "Hongjin Wu",
+      "Jiajun Liu",
+      "Jiahao Zhao",
+      "Tianwei Luo",
+      "Haozhan Li",
+      "Cheng Qian",
+      "Jiaxin Ge",
+      "Huan-ang Gao",
+      "Kaisen Yang",
+      "Jiaqi Deng",
+      "Qixin Xu",
+      "Siqiao Huang",
+      "Bowen Zhou",
+      "Mengdi Xu",
+      "Zhiyuan Liu",
+      "Pieter Abbeel",
+      "Ning Ding"
+    ],
+    "published_at": "2026-11-01T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311012Z",
+    "dedup_keys": [
+      "arxiv:2611.01560",
+      "title:agents democratizing harness models open robot unified use with",
+      "github:open-rua/uni-robot-agent"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.784,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.459
+    }
+  },
+  {
+    "id": "ec28daef7d46d3d9",
+    "kind": "paper",
+    "title": "NorthCUA Technical Report: Turbocharging Computer-Use Agents through Experience at Scale",
+    "summary_en": "Scaling computer-use agents from individual actions to complex software work requires experience that connects decisions to complete outcomes. We present NorthCUA, an integrated system for turbocharging computer-use agents through experience at scale. Its Experience Flywheel supplies diverse executable tasks to the NorthCUA Harness, which sustains long interactions, records decisions, and checks task outcomes. The Flywheel uses these records to curate verified trajectories. For unsolved tasks, recursive self-improvement evolves reusable skills and preserves verified milestones so later attempts build on earlier progress. Staged Learning combines this experience with grounding data from the Flywheel to develop GUI competence through mid-training and long-horizon supervised fine-tuning. The policy then learns from fresh attempts in the same Harness through joint desktop-web reinforcement learning, closing the loop between experience production and policy improvement. The resulting Nano, Mini, and Pro family achieves state-of-the-art results among open-source models across GUI grounding, desktop execution, and Web interaction under the reported evaluation settings. For more responsive Web workflows, NorthCUA-Ultrafast pairs direct action selection with open-ended generation on pre-RL Nano, offering a measured quality-latency tradeoff. Together, these advances establish NorthCUA as a high-performing model family and a reusable foundation for agents that carry complex software work from intent to completion.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.02102",
+        "external_id": "2611.02102"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.02102",
+        "external_id": "2611.02102"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/beipo-ai/NorthCUA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chaoyun Zhang",
+      "Bingxuan Li",
+      "Pinxue Guo",
+      "Yangfan Gao",
+      "Zikun Cai",
+      "Tianci Xie",
+      "Hui Li",
+      "Yuqi Huang",
+      "Yifei Cao",
+      "Bo Mao",
+      "Tian Tang",
+      "Qichang Zheng",
+      "Tongtong Liu",
+      "Xiaoxing Wang",
+      "Jinxiu Liu",
+      "Lizhi Lin",
+      "Zhou Shao",
+      "Maosen Zhou",
+      "Miao Zheng",
+      "Shuo Zhang",
+      "Yangji He",
+      "Kepeng Lei",
+      "Ning Zhao",
+      "Wei Shen",
+      "Zhenjiang Jin",
+      "Xinyue Zhang",
+      "Peng Sun",
+      "Zhenhua Han",
+      "Rui Zheng",
+      "Hang Yan"
+    ],
+    "published_at": "2026-11-01T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311074Z",
+    "dedup_keys": [
+      "arxiv:2611.02102",
+      "title:agents computer experience northcua report scale technical through turbocharging use",
+      "github:beipo-ai/northcua"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 14,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.08,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "github_stars": 5.416,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.459
+    }
+  },
+  {
+    "id": "e8b9983a62033887",
+    "kind": "paper",
+    "title": "From Fragmentation to Fusion: A Survey and Roadmap for Omnimodal Embeddings",
+    "summary_en": "Embedding models underpin virtually every modern AI system, from search engines to recommendation systems. Despite shared mathematical foundations, research on embedding models remains fragmented by modality: the communities develop largely in isolation, seldom exchanging insights. We argue that this fragmentation obscures a deeper convergence. Driven by contrastive learning, Transformer architectures, and a granularity shift, embedding research across modalities is converging toward a common set of principles, even as modality-specific challenges remain underexplored. To reason across this convergence without conflating it, we propose a framework of three progressively harder capabilities: coverage, comparability, and compositionality. Three paths toward unification satisfy these in turn: transformation broadens coverage, alignment enables comparability, and joint embedding, the terminus we advocate, aims at compositionality. This position paper traces the resulting evolution, providing the first unified, cross-cutting treatment of omnimodal embedding research.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.00172",
+        "external_id": "2611.00172"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.00172",
+        "external_id": "2611.00172"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/codefuse-ai/Awesome-Omnimodal-Embeddings",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ziyin Zhang",
+      "Yuyu Guo",
+      "Ying Zhang",
+      "Siqiao Xue",
+      "Zihan Liao",
+      "Jin Qin",
+      "Wenjie Yang",
+      "Siyuan Yang",
+      "Shijie Li",
+      "Cheng Chen",
+      "Hao Wu",
+      "Zhaoyang Zhu",
+      "Ruipeng Li",
+      "Zhaokun Jiang",
+      "Lei Lei",
+      "Rui Wang",
+      "Hang Yu",
+      "Rui Wang"
+    ],
+    "published_at": "2026-10-30T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311053Z",
+    "dedup_keys": [
+      "arxiv:2611.00172",
+      "title:and embeddings for fragmentation from fusion omnimodal roadmap survey",
+      "github:codefuse-ai/awesome-omnimodal-embeddings"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 19,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.088,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "github_stars": 5.991,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.459
+    }
+  },
+  {
+    "id": "70681bbe5eb8fd83",
+    "kind": "release",
+    "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+    "summary_en": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-02T23:39:34Z",
+    "first_seen_at": "2026-11-03T07:20:25.978896Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
+      "title:attribution diagnose distributed failures nvidia with workload"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.52,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.48
+    }
+  },
+  {
+    "id": "275ee4b8f320508e",
+    "kind": "release",
+    "title": "Keep Distributed Training Running with Automated Workload Recovery",
+    "summary_en": "As distributed AI training scales, failures across hardware and software dependencies increasingly disrupt training progress, making fast, reliable recovery...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-02T22:43:05Z",
+    "first_seen_at": "2026-11-03T07:20:25.978941Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery",
+      "title:automated distributed keep recovery running training with workload"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.461,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.539
+    }
+  },
+  {
+    "id": "a476aea52fc740d1",
+    "kind": "release",
+    "title": "Preparing our next security sprint to harden OpenAI",
+    "summary_en": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-02T18:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.601885Z",
+    "dedup_keys": [
+      "url:openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "title:harden next openai our preparing security sprint"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.166,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.834
+    }
+  },
+  {
+    "id": "248f9dd597287942",
+    "kind": "release",
+    "title": "Rewarding defenders with bigger bug bounties",
+    "summary_en": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-02T18:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.601866Z",
+    "dedup_keys": [
+      "url:openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "title:bigger bounties bug defenders rewarding with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.166,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.834
+    }
+  },
+  {
+    "id": "294088734b6f5ceb",
+    "kind": "release",
+    "title": "Scaling Git at OpenAI",
+    "summary_en": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/scaling-git-at-openai",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-02T15:30:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.601789Z",
+    "dedup_keys": [
+      "url:openai.com/index/scaling-git-at-openai",
+      "title:git openai scaling"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.01,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.99
+    }
+  },
+  {
+    "id": "241513f8f4ef8e9c",
+    "kind": "release",
+    "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+    "summary_en": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/dan-driscoll-joins-openai",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-02T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.601944Z",
+    "dedup_keys": [
+      "url:openai.com/index/dan-driscoll-joins-openai",
+      "title:appoints counselor dan driscoll for modernization national openai security senior"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.041,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.959
+    }
+  },
+  {
+    "id": "bf935b7e44023283",
+    "kind": "paper",
+    "title": "Avatar Intelligence: Amplifying Human Agency Through Persistent Personal Agents",
+    "summary_en": "Personal AI agents are increasingly capable of handling long-horizon tasks across applications, yet users often need to invest substantial effort in specifying goals, resolving ambiguity, and verifying outcomes. We argue that progress should be measured by how effectively agents amplify human agency: enabling people to pursue their goals with less routine supervision while retaining control over consequential decisions. We advocate Avatar Intelligence, a paradigm of persistent personal agents that represent users' goals, values, and constraints through sustained decision delegation across contexts and time. We describe a maturity roadmap from human-directed execution to autonomous operation within delegated domains, and introduce the Agentic Oversight Index (AOI) as a framework for evaluating delivered value against agent-side operational cost and human oversight burden. We identify three core research challenges: identity-continuous personalization that carries user preferences across tasks, user-situated evolution through Rehearsal Engineering, and safety mechanisms that combine technical control with accountability and recourse. These directions define a research agenda for reliable decision delegation to personal agents across tasks and over time.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.03092",
+        "external_id": "2611.03092"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.03092",
+        "external_id": "2611.03092"
+      }
+    ],
+    "actors": [
+      "Zheng Wu",
+      "Xinbei Ma",
+      "Yao Yao",
+      "Zhaoyuan Huang",
+      "Haowen Hu",
+      "Yijie Lu",
+      "Taolei Wang",
+      "Yifei Yang",
+      "Wuyue Xiong",
+      "Pengzhou Cheng",
+      "Zhuosheng Zhang"
+    ],
+    "published_at": "2026-11-02T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311101Z",
+    "dedup_keys": [
+      "arxiv:2611.03092",
+      "title:agency agents amplifying avatar human intelligence persistent personal through"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.92,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -1.959
+    }
+  },
+  {
+    "id": "beb976816f204925",
+    "kind": "paper",
+    "title": "Diagnosing the Reference Gap: What Visual Scaffolds Can and Cannot Fix in Multimodal Reasoning",
+    "summary_en": "Multimodal large language models can recognize visual content yet struggle to reason reliably over it across multiple steps. In counting, a model may see all objects but lose track of which ones it has counted. We argue that such failures, commonly attributed to perception, reveal a reference gap: the failure to bind language to the relevant visual entities, regions, or locations. Motivated by the theory of visual routines, we test whether external references such as numbering can narrow this gap. We introduce ReGap-Bench, a paired benchmark of five visual reasoning tasks in which the scene, question, and answer are fixed and only the reference varies. Results show that task-matched references improve accuracy by up to 25\\%, while mismatched references provide little benefit or even hurt performance. These findings identify the reference gap as a bottleneck distinct from visual perception and show that constructing task-appropriate visual references can serve as a training-free visual skill for improving multimodal reasoning.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.39419",
+        "external_id": "2610.39419"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.39419",
+        "external_id": "2610.39419"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/regap-bench/ReGap-Bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Guizhen Chen",
+      "Weiwen Xu",
+      "Wotao Yin",
+      "Anh Tuan Luu",
+      "Hou Pong Chan"
+    ],
+    "published_at": "2026-10-29T06:00:35Z",
+    "first_seen_at": "2026-11-03T07:20:24.311090Z",
+    "dedup_keys": [
+      "arxiv:2610.39419",
+      "title:and can cannot diagnosing fix gap multimodal reasoning reference scaffolds the visual what",
+      "github:regap-bench/regap-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.915,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.583
+    }
+  },
+  {
+    "id": "0ac3900b1514e0d4",
+    "kind": "paper",
+    "title": "CrossSWE: Benchmarking Cross-Repository Joint Development for Coding Agents",
+    "summary_en": "As coding agents achieve increasingly high success rates on software engineering benchmarks, recent efforts have sought to increase task complexity through longer horizons and more extensive code modifications. However, real-world software development often spans multiple interdependent repositories, introducing additional challenges in dependency reasoning, change propagation, and interface consistency. Rather than further increasing complexity within individual repositories, we introduce CrossSWE, a benchmark for cross-repository joint development comprising 171 real-world instances spanning 165 repositories, 20 technical domains, and 13 programming languages. CrossSWE verifies the necessity of coordinated changes by testing whether partial repository modifications are insufficient to achieve the intended behavior. Our evaluation of five LLMs reveals substantial challenges, with the strongest model, GPT-6.1 Sol, achieving only 58.48% Pass@1. Furthermore, cross-repository inconsistencies emerge as the most prevalent failure mode (44.2%), highlighting the difficulty of maintaining consistency across interdependent repositories.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.01484",
+        "external_id": "2611.01484"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.01484",
+        "external_id": "2611.01484"
+      }
+    ],
+    "actors": [
+      "Silin Chen",
+      "Yuling Shi",
+      "Heng Lian",
+      "Zihan Zhang",
+      "Xiaodong Gu",
+      "Haotian Lin",
+      "Zhensu Sun"
+    ],
+    "published_at": "2026-11-01T03:16:52Z",
+    "first_seen_at": "2026-11-03T07:20:24.311113Z",
+    "dedup_keys": [
+      "arxiv:2611.01484",
+      "title:agents benchmarking coding cross crossswe development for joint repository"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 24.167,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.254
+    }
+  },
+  {
+    "id": "11f0af29082e447f",
+    "kind": "paper",
+    "title": "DeFT-RAG: Decomposing Multi-Hop Questions into Self-Contained Sub-Questions with Reusable Answers",
+    "summary_en": "Retrieval-augmented generation (RAG) lets a large language model (LLM) answer questions by retrieving relevant passages from a large corpus. However, RAG struggles with multi-hop questions, which require chaining facts spread across several documents through intermediate entities that the question never mentions. Graph-based RAG methods retrieve once from the entities a question names and so rarely recover the full evidence chain. Iterative RAG methods recover it step by step, but their accuracy is limited by the many tasks they ask the LLM to perform, such as planning the sub-questions, deciding their dependencies, rewriting them as answers arrive, and keeping track of what is known. We propose DeFT-RAG, a RAG framework built on three components. First, DeFT-RAG generates one self-contained sub-question at a time from the original question and the sub-questions answered so far with their answers (QA pairs). Each sub-question names every entity it asks about, which removes the need to plan, track dependencies or rewrite, and lets the LLM focus on a single fine-grained task at a time. Second, DeFT-RAG moves the remaining LLM work outside the LLM: rule-based updates to a QA table that keeps track of what is known, and yes/no decisions made by a fine-tuned lightweight decision model. Third, DeFT-RAG caches the QA pairs and reuses an answer when a later question asks a sub-question with the same meaning. On MuSiQue, 2WikiMultiHopQA and HotpotQA, DeFT-RAG achieves the best accuracy among thirteen baselines with both gpt-4o-mini and Qwen3.6 as the backbone, while giving the LLM fewer input tokens than any other iterative method. With a QA cache shared across 1,000 MuSiQue questions, 23.1% of sub-questions are answered from the cache, which reduces LLM calls by 12.9% without lowering accuracy.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.37826",
+        "external_id": "2610.37826"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.37826",
+        "external_id": "2610.37826"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Dingyi-Kang/DeFT-RAG",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Dingyi Kang",
+      "Bingzhe Li"
+    ],
+    "published_at": "2026-10-30T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311141Z",
+    "dedup_keys": [
+      "arxiv:2610.37826",
+      "title:answers contained decomposing deft hop into multi questions questions rag reusable self sub with",
+      "github:dingyi-kang/deft-rag"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 23.563,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.459
+    }
+  },
+  {
+    "id": "df972e2f43158e2e",
+    "kind": "release",
+    "title": "Transformers Model Integration Contracts",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/transformers-mic",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-11-03T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:25.149836Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/transformers-mic",
+      "title:contracts integration model transformers"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 23.541,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "topic_match": 4.0,
+      "age_decay": -0.459
+    }
+  },
+  {
+    "id": "1b1384a63873b605",
+    "kind": "paper",
+    "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+    "summary_en": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative LLM's ranking knowledge to a decision model remains challenging: the teacher expresses preferences through a ranked list of document ID sequences, while the student determines the ranking using scores from the first-token position. To bridge this gap, we introduce DecisionRank, a decision model trained through item-space on-policy distillation (OPD). Item-space OPD constructs the student's rollout by sorting its document scores into a ranked sequence. A generative teacher takes the resulting ranking list as inputs and provides conditional feedback to directly supervise those scores. Combined with offline ranking supervision, DecisionRank achieves state-of-the-art performance on both general and reasoning-intensive retrieval benchmarks such as TREC DL, BEIR, and BRIGHT. Across four benchmarks, item-space OPD consistently outperforms alternative training objectives. Even at 1.7B parameters, DecisionRank surpasses its 27B generative teacher on TREC DL19--23. At 8B, it outperforms its generative listwise counterpart while running 24.5times faster on TREC DL and 16.7times faster on BRIGHT.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.42128",
+        "external_id": "2610.42128"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.42128",
+        "external_id": "2610.42128"
+      }
+    ],
+    "actors": [
+      "Yanran Wu",
+      "Dian Yu",
+      "Chongyang Bai",
+      "Jieyi Zhang",
+      "Rui Liu",
+      "Tianyi Chen",
+      "Shike Mei",
+      "Hang Cui",
+      "Frank Shyu",
+      "Sandeep Pandey",
+      "Luke Simon",
+      "Chunwei Liu",
+      "Xi Liu"
+    ],
+    "published_at": "2026-10-30T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311125Z",
+    "dedup_keys": [
+      "arxiv:2610.42128",
+      "title:decision decisionrank distillation for model policy rerankers"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.177,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.459
+    }
+  },
+  {
+    "id": "bd701b3c7ea79bbc",
+    "kind": "paper",
+    "title": "TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents",
+    "summary_en": "Robot agents built on vision-language models depend on both the planner and its harness: the tools, feedback, memory, and recovery logic around it. Can improvements to a large teacher's harness be carried into a compact agent with lower inference compute cost? We present TinyAstral, a two-stage approach. We first freeze an open-weight teacher and improve its harness through recursive self-improvement (RSI): frontier LLM agents read the teacher's trajectories and propose harness edits, and each edit is accepted only if it passes a paired statistical test. We then freeze the final harness, collect teacher trajectories with reasoning and failure recovery, and distill a small student that replaces the teacher in the same harness. On RoboTwin, harness evolution raises the teacher's success from 33.4% to 63.6%; the final 4B student reaches 62.8%. Across four harness versions, distilled 4B students score close to their corresponding teachers, and later versions yield stronger students, showing that harness evolution gains carry into compact models. The harness gains also transfer to other frozen planners without retraining. On identical episodes, the final 4B student outperforms open 4B agents, the open 27B harness-RSI model SenseNova-RoboRSI, and our own teacher model placed in three competitors' harnesses. It stays close to its teacher on all three training benchmarks, and on three benchmarks never used for RSI or training it scores close to a 552B planner running the same harness. On the measured deployment episodes, it uses about one fifth of its teacher's accelerator time.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.41216",
+        "external_id": "2610.41216"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.41216",
+        "external_id": "2610.41216"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Garfield-kh/TinyAstral",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kehong Gong",
+      "Xiaoxu Zheng",
+      "Guanli Hou",
+      "Seunghun Lee",
+      "Mengqi Guo",
+      "Runjia Tan",
+      "Zhengyu Wen",
+      "Qi Wang",
+      "Xiaoyu He",
+      "Mingyuan Zhang",
+      "Michael Bi Mi"
+    ],
+    "published_at": "2026-10-30T03:53:42Z",
+    "first_seen_at": "2026-11-03T07:20:24.311198Z",
+    "dedup_keys": [
+      "arxiv:2610.41216",
+      "title:agents evolving generalist harnesses manipulation self tiny tinyastral transferring",
+      "github:garfield-kh/tinyastral"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 17.347,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.215
+    }
+  },
+  {
+    "id": "98844cdf7411f59e",
+    "kind": "paper",
+    "title": "MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Collaboration Workloads",
+    "summary_en": "Large language model (LLM)-based multi-agent systems (MAS) coordinate specialized agents to solve complex tasks, turning each user request into interdependent model and tool operations. Unlike independent requests, these operations become ready at different times and consume evolving context as agents coordinate and exchange results. This creates changing patterns of concurrency, computation, and memory demand that can expose different bottlenecks in LLM serving hardware. Yet benchmarking these effects requires capturing the collaboration rules that generate serving workloads, beyond the requests observed during execution. We present MAServeBench, a benchmark that treats multi-agent collaboration as a configurable dimension of serving workloads for LLM serving and hardware evaluation. Its composable stages capture how agents coordinate and exchange context in documented MAS workflows, enabling native executions to generate different workloads even when task inputs and tools remain unchanged. Hierarchical Semantic Traces preserve realized operations and dependencies for reproducible comparisons of legal release constraints at fixed work. Task-linked measurements connect these workloads to serving execution and GPU/NPU hardware behavior, revealing why serving efficiency does not always translate into timely task completion. The benchmark code is available at https://github.com/ShengxuanQiu/MAServeBench.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.40293",
+        "external_id": "2610.40293"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.40293",
+        "external_id": "2610.40293"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ShengxuanQiu/MAServeBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shengxuan Qiu",
+      "Haochen Huang",
+      "Shuzhang Zhong",
+      "Zizhuo Fu",
+      "Zebin Yang",
+      "Jianming Tong",
+      "Meng Li"
+    ],
+    "published_at": "2026-10-29T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311167Z",
+    "dedup_keys": [
+      "arxiv:2610.40293",
+      "title:agent benchmarking collaboration hierarchical llm maservebench multi serving systems with workloads",
+      "github:shengxuanqiu/maservebench"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 15.131,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.959
+    }
+  },
+  {
+    "id": "d084032bd603fd93",
+    "kind": "paper",
+    "title": "Self-Improvement with Auxiliary Rewards: Learning from Verified Traces and Evaluating Transfer",
+    "summary_en": "Answer-level rewards cannot distinguish reasoning traces with equally correct outcomes. We study whether auxiliary trajectory preferences improve small-language-model self-improvement and transfer under limited supervision. We compare confidence-based (SC) and entropy-based metrics (UID-Conj.), which combines global entropy variation and local smoothness, through online reward augmentation and offline training on correct responses. Online experiments adapt Qwen3-1.7B on 30 AIME problems without reference answers; offline experiments use historical AIME problems. UID-Conj. improves the online macro-average across the adaptation benchmark and three transfer benchmarks by 2.08 percentage points over unmodified TTRL. The strongest evidence comes from offline weighted SFT: UID-Conj. exceeds uniform weighting on the same response pool by 1.93 points, with a paired prompt-bootstrap 95\\% CI of [0.44, 3.44]. Benefits are task-dependent: SC rewards judged trace quality and instruction following, while UID-Conj. rewards yield stronger training outcomes in several settings. We find that auxiliary preferences can expose learning value among equally correct traces not captured during inference time, motivating their evaluation through downstream gains.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.41296",
+        "external_id": "2610.41296"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.41296",
+        "external_id": "2610.41296"
+      }
+    ],
+    "actors": [
+      "Minju Gwak",
+      "Alan Ritter"
+    ],
+    "published_at": "2026-10-30T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311180Z",
+    "dedup_keys": [
+      "arxiv:2610.41296",
+      "title:and auxiliary evaluating from improvement learning rewards self traces transfer verified with"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 13.631,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.459
+    }
+  },
+  {
+    "id": "7bed9ffd2f6402b2",
+    "kind": "paper",
+    "title": "Lost in Recovery: Demystifying Recovery Behavior of Computer-Use Agents via Goal-Oriented Action Replay",
+    "summary_en": "Recent advances in large (vision) language models have enabled computer-use agents that automate digital workflows via fine-grained keyboard and mouse operations. However, such agents remain fragile in long-horizon settings, where errors accumulate and executed actions leave unintended side effects, making the ability to recover from failures critical. Yet, existing remedies remain inadequate: environment resets are infeasible in proprietary settings, action replay is prohibitively expensive over long horizons, and API-based rollback is limited to web environments, leaving model-based recovery largely unexplored. To address this gap, we present ReTrace, a scalable evaluation framework for systematically studying recovery behavior in computer-use agents. We formalize Transition-Consistent Recovery: identical downstream actions from the recovered and target states must yield identical outcomes. We operationalize this criterion through goal-oriented action replay following controlled error injection. Using ReTrace, we present the first systematic study of autonomous, model-based recovery, revealing that (i) ideal recovery can unlock model's latent task completion capabilities, (ii) current computer-use agents fail to exploit their latent recovery capabilities, and (iii) accurate model-based recovery yields measurable end-to-end gains. Together, these findings establish recovery as a fundamental capability for building reliable computer-use agents. Our code and dataset is available at https://github.com/BangProx/ReTRACE.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.27954",
+        "external_id": "2610.27954"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.27954",
+        "external_id": "2610.27954"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/BangProx/ReTRACE",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Byeonghun Bang",
+      "Sangwoo Park",
+      "Jinheon Baek",
+      "Kangsan Kim",
+      "Youngwan Lee",
+      "Sung Ju Hwang"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311153Z",
+    "dedup_keys": [
+      "arxiv:2610.27954",
+      "title:action agents behavior computer demystifying goal lost oriented recovery recovery replay use via",
+      "github:bangprox/retrace"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 6.19,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -21.459
+    }
+  },
+  {
+    "id": "22bef4f20447685f",
+    "kind": "paper",
+    "title": "On-Policy Self-Distillation with Teacher Evolution",
+    "summary_en": "On-Policy Self-Distillation (OPSD), which aligns a student model's token-level distribution with that of its self-teacher prompted by privileged context, has emerged as a promising direction to mitigate reward sparsity in sequence-level post-training paradigms. However, OPSD often fails to achieve continuous performance gains during training. In this paper, we find that the model's limited self-teaching capability underlies this phenomenon by generating unreliable guidance on certain samples. To address this problem, we propose Teacher-Evolution Self-Distillation (TESD), which enables the self-teacher to generate rollouts and receive environmental feedback based on task correctness and context independence. First, using these rewards as training objectives, we perform teacher-oriented optimization to continuously enhance the model's self-teaching capability during distillation. Second, by estimating teacher guidance reliability from these rewards, we apply adaptive student-oriented optimization to down-weight samples with unreliable guidance. Extensive experiments across multiple datasets and model scales show that TESD consistently outperforms representative token-level and sequence-level methods, highlighting the necessity of improving supervision quality in OPSD.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.38637",
+        "external_id": "2610.38637"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.38637",
+        "external_id": "2610.38637"
+      }
+    ],
+    "actors": [
+      "Shufan Shen",
+      "Zhongni Hou",
+      "Chao Bi",
+      "Yufei Zhang",
+      "Guojun Yin",
+      "Shuhui Wang"
+    ],
+    "published_at": "2026-10-28T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311209Z",
+    "dedup_keys": [
+      "arxiv:2610.38637",
+      "title:distillation evolution policy self teacher with"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 4.33,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "age_decay": -9.459
+    }
+  },
+  {
+    "id": "66ec4c9318f95dc3",
+    "kind": "paper",
+    "title": "ProVe: Proposer-Verifier Decoding",
+    "summary_en": "Speculative decoding accelerates autoregressive (AR) language models by letting a small model draft tokens serially and a large model verify them in parallel. We reverse these roles. Starting from a standard AR checkpoint, we fine-tune the large model into a proposer that predicts a block of future tokens in a single forward pass, then use one additional forward pass to verify the proposed block. This gives ProVe, Proposer-Verifier decoding. The verifier can be a smaller AR model or the proposer itself; the latter gives ProVe-lossless, which reproduces the proposer's greedy AR decoding. Block proposals already provide substantial room for acceleration: with a block size of 16, the proposed block has an average AR-matching prefix of 6.6 tokens on GSM8K. Across six benchmarks with a 32B proposer, ProVe-lossless reaches 2.5x average AR throughput without training a separate draft head. With a small 3B verifier, ProVe reaches 2.7x average throughput at 2.6 accuracy points below AR on the six-task average, providing a controllable tradeoff between speed and accuracy.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2610.27815",
+        "external_id": "2610.27815"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2610.27815",
+        "external_id": "2610.27815"
+      }
+    ],
+    "actors": [
+      "Ziqi Jin",
+      "Weiwen Xu",
+      "Jiaxi Li",
+      "Yujie Zhong",
+      "Qi She",
+      "Aixin Sun"
+    ],
+    "published_at": "2026-10-20T00:00:00Z",
+    "first_seen_at": "2026-11-03T07:20:24.311220Z",
+    "dedup_keys": [
+      "arxiv:2610.27815",
+      "title:decoding proposer prove verifier"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": -3.67,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -21.459
+    }
+  }
+]
