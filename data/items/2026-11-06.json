@@ -1,5 +1,57 @@
 [
   {
+    "id": "4efe74b5fa0a7e78",
+    "kind": "model",
+    "title": "Comfy-Org/RelayVSR",
+    "summary_en": "diffusion-single-file, comfyui",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Comfy-Org/RelayVSR",
+        "external_id": "Comfy-Org/RelayVSR"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/kopper/RelayVSR",
+        "external_id": "kopper/RelayVSR"
+      }
+    ],
+    "actors": [
+      "Comfy-Org"
+    ],
+    "published_at": "2026-11-05T11:54:26Z",
+    "first_seen_at": "2026-11-06T19:44:28.443948Z",
+    "dedup_keys": [
+      "hf:comfy-org/relayvsr"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 65,
+      "hf_downloads": 2607,
+      "hf_trending_score": 65.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 51.45,
+    "score_breakdown": {
+      "hf_trending": 25.138,
+      "hf_downloads": 15.733,
+      "hf_likes": 12.569,
+      "age_decay": -1.99
+    }
+  },
+  {
     "id": "ac593914a945c443",
     "kind": "paper",
     "title": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",
@@ -42,158 +94,34 @@
       "Weinan Zhang"
     ],
     "published_at": "2026-11-03T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979471Z",
+    "first_seen_at": "2026-11-06T19:44:28.456283Z",
     "dedup_keys": [
       "arxiv:2611.04277",
       "title:agent for from generalizable harness harnesses learning sibling training",
       "github:deepexperience/harness-s"
     ],
     "signals": {
-      "hf_upvotes": 30,
+      "hf_upvotes": 54,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 20,
+      "github_stars": 53,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 3,
       "has_code": true,
       "has_weights": false
     },
-    "score": 40.594,
+    "score": 46.303,
     "score_breakdown": {
-      "hf_upvotes": 27.472,
-      "github_stars": 6.089,
+      "hf_upvotes": 32.059,
+      "github_stars": 7.978,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -4.967
-    }
-  },
-  {
-    "id": "7b46da6fd2758fe2",
-    "kind": "model",
-    "title": "lodestones/chroma-h3",
-    "summary_en": "text-to-image, diffusers, minimax-h3, lora",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/lodestones/chroma-h3",
-        "external_id": "lodestones/chroma-h3"
-      },
-      {
-        "source": "hf_base_model:adapter",
-        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-        "external_id": "MiniMaxAI/MiniMax-H3"
-      }
-    ],
-    "actors": [
-      "lodestones"
-    ],
-    "published_at": "2026-10-31T01:41:14Z",
-    "first_seen_at": "2026-11-06T07:28:40.977939Z",
-    "dedup_keys": [
-      "hf:lodestones/chroma-h3"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 51,
-      "hf_downloads": 86,
-      "hf_trending_score": 50.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 39.015,
-    "score_breakdown": {
-      "hf_trending": 23.591,
-      "hf_downloads": 8.932,
-      "hf_likes": 11.854,
-      "has_weights": 4.0,
-      "age_decay": -9.362
-    }
-  },
-  {
-    "id": "4ac0194b129a268b",
-    "kind": "paper",
-    "title": "Towards Foundation Decision Models: Drex",
-    "summary_en": "Autoregressive approaches with large language models, such as long chain-of-thought reasoning, have become the default for new AI applications because they reach higher accuracy on a wide range of tasks. In production, however, they give inconsistent answers, require parsing of outputs, and add cost and latency. Decision models address this: given a question and a set of options supplied by the user, they return a probability distribution over the options without autoregressive decoding. We present Drex, a family of four open decision models with 8B (DLM), 9B (v1.5), 35B with 3B active (v2.0), and 27B (Max) parameters. Each request consists of a state (a document, record, or agent context, optionally with images) and questions about it, each asking for a choice among options, a yes/no judgment, or a score on an ordered scale. Training combines supervised fine-tuning with reinforcement learning from adjusted feedback (RLAF), plus vision tuning for Max. Ablations show that RLAF improves accuracy and that consistency losses improve robustness to option order. On Decision Index 0.4.1, Max sets a new state of the art among the decision models we compare (67.52 on the public suite vs. 60.70 for Jev 1.14.0). On Decision Bench v4, it is statistically tied with d3-turbo and GPT-6 Sol and trails Claude Opus 5.5 by 1.6 points, and it has the highest accuracy among decision models on DecideBench. Max answers a typical request in 183 ms, against about 2.0 s for GPT-6 Sol and 3.5 s for Claude Opus 5.5, and its outputs are stable under option reordering. All four models are open source: https://github.com/nace-ai/drex-decision-models",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.07854",
-        "external_id": "2611.07854"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.07854",
-        "external_id": "2611.07854"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/nace-ai/drex-decision-models",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Nischay Dhankhar",
-      "Alisher Amantay",
-      "Zhanibek Datbayev",
-      "Darkhan Akhmetov",
-      "Yash Shah",
-      "Nurmukhamed Ubaidullayev",
-      "Raman Saparkhan",
-      "Dos Baha",
-      "Abulhair Saparov"
-    ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979558Z",
-    "dedup_keys": [
-      "arxiv:2611.07854",
-      "title:decision drex foundation models towards",
-      "github:nace-ai/drex-decision-models"
-    ],
-    "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 88,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 38.889,
-    "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 8.977,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.967
+      "age_decay": -5.734
     }
   },
   {
@@ -246,13 +174,13 @@
       "Zhiding Yu"
     ],
     "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979326Z",
+    "first_seen_at": "2026-11-06T19:44:28.456140Z",
     "dedup_keys": [
       "arxiv:2611.08449",
       "title:accurate decoding fast flash planning primitive vflash via visual"
     ],
     "signals": {
-      "hf_upvotes": 43,
+      "hf_upvotes": 82,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -265,45 +193,190 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 37.307,
+    "score": 41.617,
     "score_breakdown": {
-      "hf_upvotes": 30.274,
+      "hf_upvotes": 35.351,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.967
+      "age_decay": -2.734
     }
   },
   {
-    "id": "31b1f2dccd0abcf6",
-    "kind": "release",
-    "title": "Australian universities are creating AI-native graduates",
-    "summary_en": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+    "id": "4ac0194b129a268b",
+    "kind": "paper",
+    "title": "Towards Foundation Decision Models: Drex",
+    "summary_en": "Autoregressive approaches with large language models, such as long chain-of-thought reasoning, have become the default for new AI applications because they reach higher accuracy on a wide range of tasks. In production, however, they give inconsistent answers, require parsing of outputs, and add cost and latency. Decision models address this: given a question and a set of options supplied by the user, they return a probability distribution over the options without autoregressive decoding. We present Drex, a family of four open decision models with 8B (DLM), 9B (v1.5), 35B with 3B active (v2.0), and 27B (Max) parameters. Each request consists of a state (a document, record, or agent context, optionally with images) and questions about it, each asking for a choice among options, a yes/no judgment, or a score on an ordered scale. Training combines supervised fine-tuning with reinforcement learning from adjusted feedback (RLAF), plus vision tuning for Max. Ablations show that RLAF improves accuracy and that consistency losses improve robustness to option order. On Decision Index 0.4.1, Max sets a new state of the art among the decision models we compare (67.52 on the public suite vs. 60.70 for Jev 1.14.0). On Decision Bench v4, it is statistically tied with d3-turbo and GPT-6 Sol and trails Claude Opus 5.5 by 1.6 points, and it has the highest accuracy among decision models on DecideBench. Max answers a typical request in 183 ms, against about 2.0 s for GPT-6 Sol and 3.5 s for Claude Opus 5.5, and its outputs are stable under option reordering. All four models are open source: https://github.com/nace-ai/drex-decision-models",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm"
+      "llm",
+      "agent",
+      "cv"
     ],
     "links": [
       {
-        "source": "openai",
-        "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.07854",
+        "external_id": "2611.07854"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.07854",
+        "external_id": "2611.07854"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/nace-ai/drex-decision-models",
         "external_id": null
       }
     ],
     "actors": [
-      "openai"
+      "Nischay Dhankhar",
+      "Alisher Amantay",
+      "Zhanibek Datbayev",
+      "Darkhan Akhmetov",
+      "Yash Shah",
+      "Nurmukhamed Ubaidullayev",
+      "Raman Saparkhan",
+      "Dos Baha",
+      "Abulhair Saparov"
     ],
-    "published_at": "2026-11-05T17:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:41.242739Z",
+    "published_at": "2026-11-05T00:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:28.456515Z",
     "dedup_keys": [
-      "url:openai.com/index/australian-universities-ai-native-graduates",
-      "title:are australian creating graduates native universities"
+      "arxiv:2611.07854",
+      "title:decision drex foundation models towards",
+      "github:nace-ai/drex-decision-models"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 16,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 98,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.122,
+    "score_breakdown": {
+      "hf_upvotes": 22.666,
+      "github_stars": 9.19,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.734
+    }
+  },
+  {
+    "id": "5a9d9d784d0c58d5",
+    "kind": "paper",
+    "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
+    "summary_en": "Strong single-turn editing performance does not guarantee reliable multi-turn interaction: as edited outputs are repeatedly reused, small unintended changes can accumulate into severe visual drift. This long-term drift is often mitigated through training on multi-turn data or cross-turn rollouts, potentially altering pretrained priors, or through specialized inference-time mechanisms that are difficult to scale to foundation models. We introduce TailSteer, a final-stage training framework that improves multi-turn robustness while retaining the generative and editing capabilities acquired through earlier training. TailSteer follows a simple principle: keep early denoising dynamics close to those of the base model and concentrate preservation corrections near the trajectory tail, where fine-grained deviations can be suppressed. These corrections are learned from the editor's own on-policy denoising rollouts, using unchanged source content as a preservation reference without requiring curated ground-truth editing pairs. Experiments across the FLUX, SenseNova, and Qwen families show that TailSteer substantially reduces cumulative drift over 15-20 editing turns while largely preserving base-model performance on extensive text-to-image and single-image editing benchmarks. These results demonstrate that long-horizon editing robustness can be unlocked in foundation models after TailSteer, rather than by relearning their existing capabilities.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.06741",
+        "external_id": "2611.06741"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.06741",
+        "external_id": "2611.06741"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Lyricccco/tailsteer",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ruikang Li",
+      "Zixuan Chen",
+      "Jiarui Wu",
+      "Mingde Yao",
+      "Yiyuan Zhang",
+      "Yujin Wang",
+      "Hanming Deng",
+      "Lewei Lu",
+      "Tianfan Xue"
+    ],
+    "published_at": "2026-11-04T00:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:28.456423Z",
+    "dedup_keys": [
+      "arxiv:2611.06741",
+      "title:drift editing for image multi resistant steering tail tailsteer trajectory turn",
+      "github:lyricccco/tailsteer"
+    ],
+    "signals": {
+      "hf_upvotes": 35,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 37,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.709,
+    "score_breakdown": {
+      "hf_upvotes": 28.668,
+      "github_stars": 7.275,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.234
+    }
+  },
+  {
+    "id": "7b46da6fd2758fe2",
+    "kind": "model",
+    "title": "lodestones/chroma-h3",
+    "summary_en": "text-to-image, diffusers, minimax-h3, lora",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/lodestones/chroma-h3",
+        "external_id": "lodestones/chroma-h3"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "external_id": "MiniMaxAI/MiniMax-H3"
+      }
+    ],
+    "actors": [
+      "lodestones"
+    ],
+    "published_at": "2026-10-31T01:41:14Z",
+    "first_seen_at": "2026-11-06T19:44:28.444139Z",
+    "dedup_keys": [
+      "hf:lodestones/chroma-h3"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 51,
+      "hf_downloads": 91,
+      "hf_trending_score": 50.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -311,110 +384,15 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": false
+      "has_weights": true
     },
-    "score": 33.095,
+    "score": 38.361,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.905
-    }
-  },
-  {
-    "id": "d5ee260a18359937",
-    "kind": "release",
-    "title": "Merge builds product and business tools with OpenAI technology",
-    "summary_en": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/merge-builds-with-openai",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-05T08:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:41.242899Z",
-    "dedup_keys": [
-      "url:openai.com/index/merge-builds-with-openai",
-      "title:and builds business merge openai product technology tools with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.533,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.467
-    }
-  },
-  {
-    "id": "66a6c87edc84d870",
-    "kind": "release",
-    "title": "Flipsnack grows product signups with conversion optimization",
-    "summary_en": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/ads/customers/flipsnack",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-05T00:45:15Z",
-    "first_seen_at": "2026-11-06T07:28:41.242955Z",
-    "dedup_keys": [
-      "url:openai.com/ads/customers/flipsnack",
-      "title:conversion flipsnack grows optimization product signups with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.08,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.92
+      "hf_trending": 23.591,
+      "hf_downloads": 9.044,
+      "hf_likes": 11.854,
+      "has_weights": 4.0,
+      "age_decay": -10.128
     }
   },
   {
@@ -464,14 +442,149 @@
       "Haoqian Wang"
     ],
     "published_at": "2026-11-03T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979539Z",
+    "first_seen_at": "2026-11-06T19:44:28.456487Z",
     "dedup_keys": [
       "arxiv:2611.04894",
       "title:agents bench evaluating horizon long multimodal search vissearch visual",
       "github:antins-labs/vissearch-bench-v1"
     ],
     "signals": {
-      "hf_upvotes": 11,
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 57,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.51,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "github_stars": 8.121,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.734
+    }
+  },
+  {
+    "id": "1a7e080ee80de15e",
+    "kind": "paper",
+    "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+    "summary_en": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.08373",
+        "external_id": "2611.08373"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.08373",
+        "external_id": "2611.08373"
+      }
+    ],
+    "actors": [
+      "Fuhao Li",
+      "Wenxuan Song",
+      "Qizhou Huang",
+      "Ziyang Zhou",
+      "Jingbo Wang",
+      "Junwu E",
+      "Pengwei Wang",
+      "Yan Wang",
+      "Shunbo Zhou",
+      "Haoang Li"
+    ],
+    "published_at": "2026-11-05T00:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:28.456362Z",
+    "dedup_keys": [
+      "arxiv:2611.08373",
+      "title:action continual language model pre scaling sla spatial training via"
+    ],
+    "signals": {
+      "hf_upvotes": 48,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 37.401,
+    "score_breakdown": {
+      "hf_upvotes": 31.135,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.734
+    }
+  },
+  {
+    "id": "784a2358d7d3e688",
+    "kind": "paper",
+    "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
+    "summary_en": "Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating full-benchmark scores from a subset, showing that most subsets yield small errors, while a few produce much larger errors, resulting in a long-tailed distribution. This means random sampling alone can achieve surprisingly strong performance with high probability, but remains unstable due to rare large errors. We further show that this instability is inherent to modern foundation models and persists even as more models are evaluated. Based on these findings, we introduce BestRand, a stable and low-cost benchmark compression method that preserves the efficiency of random sampling while substantially reducing its high-error tail. We validate BestRand on 70+ text, multimodal, and agent benchmarks, and further extend it to VLA evaluation. Compared with competitive methods, BestRand reduces high-error risk by 50.2% and estimation error by 16.4% on average, while requiring only 51.3% of the construction cost. It further reduces OOD estimation error by 21.8% on average across score-range, model-family, and temporal shifts. Together, our theory provides practical guidance for understanding and predicting the accuracy and reliability of benchmark compression, while BestRand enables stable and accurate compression at low cost. The code and data are publicly available onhttps://github.com/George-Ling3/BestRand.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "multimodal",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.00883",
+        "external_id": "2611.00883"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.00883",
+        "external_id": "2611.00883"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/George-Ling3/BestRand",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "George Ling",
+      "Shanshan Zhong",
+      "Lijin Yang",
+      "Hao Yang",
+      "Nanxiang Li",
+      "Zhongzhan Huang"
+    ],
+    "published_at": "2026-10-31T00:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:28.456330Z",
+    "dedup_keys": [
+      "arxiv:2611.00883",
+      "title:almost and benchmark bestrand compression cost enough low random stable via",
+      "github:george-ling3/bestrand"
+    ],
+    "signals": {
+      "hf_upvotes": 50,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -480,18 +593,18 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 30.131,
+    "score": 36.44,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
+      "hf_upvotes": 31.455,
       "github_stars": 3.219,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -4.967
+      "age_decay": -10.234
     }
   },
   {
@@ -539,13 +652,13 @@
       "Zhipeng Huang"
     ],
     "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979519Z",
+    "first_seen_at": "2026-11-06T19:44:28.456391Z",
     "dedup_keys": [
       "arxiv:2611.07392",
       "title:generation image image intelligence model towards unified visual welm"
     ],
     "signals": {
-      "hf_upvotes": 16,
+      "hf_upvotes": 37,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -558,350 +671,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 29.699,
+    "score": 35.367,
     "score_breakdown": {
-      "hf_upvotes": 22.666,
+      "hf_upvotes": 29.101,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.967
-    }
-  },
-  {
-    "id": "c73cf58f1bfc01ef",
-    "kind": "release",
-    "title": "Cult.fit builds operational muscle with Codex",
-    "summary_en": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/cultfit-builds-with-codex",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-05T20:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:41.242802Z",
-    "dedup_keys": [
-      "url:openai.com/index/cultfit-builds-with-codex",
-      "title:builds codex cult fit muscle operational with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.283,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.717
-    }
-  },
-  {
-    "id": "784a2358d7d3e688",
-    "kind": "paper",
-    "title": "Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand",
-    "summary_en": "Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating full-benchmark scores from a subset, showing that most subsets yield small errors, while a few produce much larger errors, resulting in a long-tailed distribution. This means random sampling alone can achieve surprisingly strong performance with high probability, but remains unstable due to rare large errors. We further show that this instability is inherent to modern foundation models and persists even as more models are evaluated. Based on these findings, we introduce BestRand, a stable and low-cost benchmark compression method that preserves the efficiency of random sampling while substantially reducing its high-error tail. We validate BestRand on 70+ text, multimodal, and agent benchmarks, and further extend it to VLA evaluation. Compared with competitive methods, BestRand reduces high-error risk by 50.2% and estimation error by 16.4% on average, while requiring only 51.3% of the construction cost. It further reduces OOD estimation error by 21.8% on average across score-range, model-family, and temporal shifts. Together, our theory provides practical guidance for understanding and predicting the accuracy and reliability of benchmark compression, while BestRand enables stable and accurate compression at low cost. The code and data are publicly available onhttps://github.com/George-Ling3/BestRand.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "rag",
-      "multimodal",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.00883",
-        "external_id": "2611.00883"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.00883",
-        "external_id": "2611.00883"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/George-Ling3/BestRand",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "George Ling",
-      "Shanshan Zhong",
-      "Lijin Yang",
-      "Hao Yang",
-      "Nanxiang Li",
-      "Zhongzhan Huang"
-    ],
-    "published_at": "2026-10-31T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979500Z",
-    "dedup_keys": [
-      "arxiv:2611.00883",
-      "title:almost and benchmark bestrand compression cost enough low random stable via",
-      "github:george-ling3/bestrand"
-    ],
-    "signals": {
-      "hf_upvotes": 17,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.429,
-    "score_breakdown": {
-      "hf_upvotes": 23.123,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -9.467
-    }
-  },
-  {
-    "id": "64feee17bc05e1a7",
-    "kind": "release",
-    "title": "Setting a new standard for responsible AI infrastructure",
-    "summary_en": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-05T02:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:41.242930Z",
-    "dedup_keys": [
-      "url:openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "title:for infrastructure new responsible setting standard"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.158,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.842
-    }
-  },
-  {
-    "id": "bb17f43eaabdfae0",
-    "kind": "release",
-    "title": "Franklin Templeton uses OpenAI to support investment research",
-    "summary_en": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/franklin-templeton",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:41.242984Z",
-    "dedup_keys": [
-      "url:openai.com/index/franklin-templeton",
-      "title:franklin investment openai research support templeton uses"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.033,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.967
-    }
-  },
-  {
-    "id": "360965979597ca70",
-    "kind": "paper",
-    "title": "EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure",
-    "summary_en": "Recent advances in Gaussian splatting have enabled efficient and photorealistic head avatar reconstruction, yet monocular video-based or image-based methods still suffer from under-constrained geometry and texture, leading to artifacts such as blurring, stretching, and temporal instability. We present EDGAR (Efficient Diffusion-Driven Gaussian Avatar Refinement), a conditional diffusion framework designed to enhance the quality of Gaussian avatars by correcting artifacts while preserving identity fidelity. To train EDGAR, we construct EDGAR-SET, a hybrid triplet dataset composed of real-captured and synthetic-rendered samples, which simulates realistic Gaussian avatar failure cases by pairing degraded renderings with ground-truth and reference images. EDGAR refines degraded frames through a fusion block that injects identity features extracted by the self-supervised Sapiens model into a one-step diffusion backbone, enabling effective artifact removal without sacrificing efficiency. Our EDGAR model incorporates a Mixture-of-Experts (MoE) architecture to address diverse degradation types and severity levels. The refined multi-view renderings are subsequently used as pseudo-targets to optimize a single underlying Gaussian avatar, so that the final avatar can be rendered without applying EDGAR to every output frame. Experiments on three different Gaussian avatar reconstruction methods, each evaluated under three different settings, show improvements in both perceptual and reconstruction measures over the raw outputs and an SDEdit-style refinement baseline. In addition, cross-view evaluation demonstrates improved calibrated consistency, while tests under large yaw and open-mouth expressions verify robustness under extreme settings. These results collectively indicate a useful operating regime for recoverable appearance artifacts. The code is available at https://kwanyun.github.io/edgar/",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.07909",
-        "external_id": "2611.07909"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.07909",
-        "external_id": "2611.07909"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/kwanyun/edgar-code",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Kwan Yun",
-      "Minhyeok Bang",
-      "Colette Suhjung Koo",
-      "Junyong Noh"
-    ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979576Z",
-    "dedup_keys": [
-      "arxiv:2611.07909",
-      "title:avatar diffusion driven edgar efficient failure gaussian refinement synthetic via",
-      "github:kwanyun/edgar-code"
-    ],
-    "signals": {
-      "hf_upvotes": 7,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 22.669,
-    "score_breakdown": {
-      "hf_upvotes": 16.636,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -1.967
-    }
-  },
-  {
-    "id": "5a9d9d784d0c58d5",
-    "kind": "paper",
-    "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
-    "summary_en": "Strong single-turn editing performance does not guarantee reliable multi-turn interaction: as edited outputs are repeatedly reused, small unintended changes can accumulate into severe visual drift. This long-term drift is often mitigated through training on multi-turn data or cross-turn rollouts, potentially altering pretrained priors, or through specialized inference-time mechanisms that are difficult to scale to foundation models. We introduce TailSteer, a final-stage training framework that improves multi-turn robustness while retaining the generative and editing capabilities acquired through earlier training. TailSteer follows a simple principle: keep early denoising dynamics close to those of the base model and concentrate preservation corrections near the trajectory tail, where fine-grained deviations can be suppressed. These corrections are learned from the editor's own on-policy denoising rollouts, using unchanged source content as a preservation reference without requiring curated ground-truth editing pairs. Experiments across the FLUX, SenseNova, and Qwen families show that TailSteer substantially reduces cumulative drift over 15-20 editing turns while largely preserving base-model performance on extensive text-to-image and single-image editing benchmarks. These results demonstrate that long-horizon editing robustness can be unlocked in foundation models after TailSteer, rather than by relearning their existing capabilities.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.06741",
-        "external_id": "2611.06741"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.06741",
-        "external_id": "2611.06741"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Lyricccco/tailsteer",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Ruikang Li",
-      "Zixuan Chen",
-      "Jiarui Wu",
-      "Mingde Yao",
-      "Yiyuan Zhang",
-      "Yujin Wang",
-      "Hanming Deng",
-      "Lewei Lu",
-      "Tianfan Xue"
-    ],
-    "published_at": "2026-11-04T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979594Z",
-    "dedup_keys": [
-      "arxiv:2611.06741",
-      "title:drift editing for image multi resistant steering tail tailsteer trajectory turn",
-      "github:lyricccco/tailsteer"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 21.64,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -3.467
+      "age_decay": -2.734
     }
   },
   {
@@ -947,19 +722,92 @@
       "Jinsong Su"
     ],
     "published_at": "2026-11-02T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979611Z",
+    "first_seen_at": "2026-11-06T19:44:28.456459Z",
     "dedup_keys": [
       "arxiv:2611.03743",
       "title:agents evolving evomemstate for memory personal state",
       "github:xmudeeplit/evomemstate"
     ],
     "signals": {
-      "hf_upvotes": 4,
+      "hf_upvotes": 20,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 3,
+      "github_stars": 17,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.903,
+    "score_breakdown": {
+      "hf_upvotes": 24.356,
+      "github_stars": 5.781,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.234
+    }
+  },
+  {
+    "id": "ae6b1f5d6a331d91",
+    "kind": "paper",
+    "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
+    "summary_en": "Prefill-to-Autoregressive Cross-model Transfer (PACT), a form of latent communication between language models, combines a larger model's prompt representations with a smaller model's efficient generation, offering a promising way to balance capability and inference cost. However, existing systems provide limited support for independently evaluating large-small model collaboration, and improved task performance alone does not establish whether the receiver benefits from the sender's information. We introduce PLatour, an open-source PACT framework that connects frozen models through lightweight, zero-initialized linear bridges trained directly with task rewards and supports hybrid-attention architectures. PLatour significantly outperforms open-source baselines on generation tasks and surpasses Mostik's reported results on shared mathematics and coding benchmarks using a substantially smaller sender. However, controlled experiments show that the gains on some tasks can be reproduced by uninformative sender signals, self-communication, or receiver-only training. We find that trainable bridges can act as parameter-efficient adaptation mechanisms without exploiting useful sender information. We therefore propose PACT-Check to quantify how much of a trained PACT system's gain genuinely comes from communication. Finally, we discuss the opportunities and challenges of PACT systems. Code is available at https://github.com/zhenyi4/platour.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.06976",
+        "external_id": "2611.06976"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.06976",
+        "external_id": "2611.06976"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zhenyi4/platour",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhenyi Shen",
+      "Junru Lu",
+      "Wei Liu",
+      "Jiangnan Ye",
+      "Jiazheng Li",
+      "Di Yin",
+      "Xing Sun",
+      "Tameem Adel",
+      "Yali Du",
+      "Lin Gui",
+      "Yulan He"
+    ],
+    "published_at": "2026-11-04T13:33:47Z",
+    "first_seen_at": "2026-11-06T19:44:28.456579Z",
+    "dedup_keys": [
+      "arxiv:2611.06976",
+      "title:and autoregressive challenges cross model opportunities prefill the transfer",
+      "github:zhenyi4/platour"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 9,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -967,39 +815,279 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 21.182,
+    "score": 33.739,
     "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "github_stars": 2.773,
+      "hf_upvotes": 20.52,
+      "github_stars": 4.605,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.467
+      "age_decay": -3.386
     }
   },
   {
-    "id": "e15a29f04e4251dd",
+    "id": "28c1b02282ffee0a",
     "kind": "release",
-    "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-    "summary_en": null,
+    "title": "Measuring how AI agents handle everyday wet-lab science",
+    "summary_en": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-06T00:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:29.128695Z",
+    "dedup_keys": [
+      "url:openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "title:agents everyday handle how lab measuring science wet"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.766,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.234
+    }
+  },
+  {
+    "id": "31b1f2dccd0abcf6",
+    "kind": "release",
+    "title": "Australian universities are creating AI-native graduates",
+    "summary_en": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-05T17:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:29.128737Z",
+    "dedup_keys": [
+      "url:openai.com/index/australian-universities-ai-native-graduates",
+      "title:are australian creating graduates native universities"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.329,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.671
+    }
+  },
+  {
+    "id": "d5ee260a18359937",
+    "kind": "release",
+    "title": "Merge builds product and business tools with OpenAI technology",
+    "summary_en": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/merge-builds-with-openai",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-05T08:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:29.128854Z",
+    "dedup_keys": [
+      "url:openai.com/index/merge-builds-with-openai",
+      "title:and builds business merge openai product technology tools with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.766,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.234
+    }
+  },
+  {
+    "id": "66a6c87edc84d870",
+    "kind": "release",
+    "title": "Flipsnack grows product signups with conversion optimization",
+    "summary_en": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/ads/customers/flipsnack",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-05T00:45:15Z",
+    "first_seen_at": "2026-11-06T19:44:29.128926Z",
+    "dedup_keys": [
+      "url:openai.com/ads/customers/flipsnack",
+      "title:conversion flipsnack grows optimization product signups with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.313,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.687
+    }
+  },
+  {
+    "id": "8bd4708eda639ee2",
+    "kind": "release",
+    "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
+    "summary_en": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-06T18:03:26Z",
+    "first_seen_at": "2026-11-06T19:44:31.037785Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective",
+      "title:accelerating collective learning refit reinforcement reshard the weight with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.895,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.105
+    }
+  },
+  {
+    "id": "a4bea2290b521d6e",
+    "kind": "release",
+    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+    "summary_en": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+        "source": "openai",
+        "url": "https://openai.com/index/partnering-with-hacktron",
         "external_id": null
       }
     ],
     "actors": [
-      "huggingface"
+      "openai"
     ],
-    "published_at": "2026-11-05T19:35:16Z",
-    "first_seen_at": "2026-11-06T07:28:42.252136Z",
+    "published_at": "2026-11-06T08:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:29.128601Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "title:cosmos for interactive models new nvidia open simulation world"
+      "url:openai.com/index/partnering-with-hacktron",
+      "title:find hacktron openai partnering systems vulnerabilities with"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1015,38 +1103,151 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 19.257,
+    "score": 29.266,
     "score_breakdown": {
       "kind_base": 20.0,
-      "age_decay": -0.743
+      "known_org": 10.0,
+      "age_decay": -0.734
     }
   },
   {
-    "id": "069f270ee5229371",
+    "id": "c73cf58f1bfc01ef",
     "kind": "release",
-    "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-    "summary_en": null,
+    "title": "Cult.fit builds operational muscle with Codex",
+    "summary_en": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/cultfit-builds-with-codex",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-05T20:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:29.128771Z",
+    "dedup_keys": [
+      "url:openai.com/index/cultfit-builds-with-codex",
+      "title:builds codex cult fit muscle operational with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.516,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.484
+    }
+  },
+  {
+    "id": "4e474ea65d08a917",
+    "kind": "paper",
+    "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
+    "summary_en": "Mathematical modeling turns an open-ended real-world problem into assumptions, a model, a solution, and a defended recommendation, and its answers matter only if they are both close to a credible reference and physically feasible; existing benchmarks either score solver fragments or grade reports with an LLM judge, leaving those numbers unchecked. We introduce TB-MathModel (the Terminal-style Mathematical Modeling Bench), the first benchmark to make complete contest-style modeling problems agentic, verifiable, and terminal at once, over 18 real CUMCM and MCM problems (2023--2025). Each task ships the verbatim statement, official attachments, and figures in a containerized terminal; the agent returns one JSON artifact, scored on the numeric core of the final question against a reproduction of the Outstanding-award paper. Two design choices distinguish it: direction-aware, one-sided scoring, which never penalises beating the anchor, and two-layer feasibility verification---a programmatic gate over six decidable invariant forms plus 624 Lean~4 obligations---with a hard gate that zeroes infeasible answers. Each task is scored against a panel of human outstanding papers rather than one, so a model must be close to many accepted answers; across seven multimodal entries (three seeds each) the strongest reach a multi-reference O-Eval of 64.58\\%, while the \\2.54 open model holds 59.81% at 1/100$ the cost. TB-MathModel turns the numeric core of modeling into a reproducible, machine-checkable signal for measuring long-horizon modeling competence and for collecting agent trajectories. The source code is available at https://github.com/wxj630/terminal-bench-math-modeling.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "speech",
+      "llm",
+      "agent",
+      "rag",
+      "multimodal",
       "eval"
     ],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/phonon-tts",
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.08237",
+        "external_id": "2611.08237"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.08237",
+        "external_id": "2611.08237"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/wxj630/terminal-bench-math-modeling",
         "external_id": null
       }
     ],
     "actors": [
-      "huggingface"
+      "Xiaojun Wu",
+      "Cehao Yang",
+      "Xuhui Jiang",
+      "Chengjin Xu",
+      "Jia Li",
+      "Jian Guo"
     ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:42.252195Z",
+    "published_at": "2026-11-05T16:18:35Z",
+    "first_seen_at": "2026-11-06T19:44:28.456708Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/phonon-tts",
-      "title:benchmarks closer device high launching look phonon quality speech that the tops tts"
+      "arxiv:2611.08237",
+      "title:agentic and bench benchmark first for mathematical mathematical modeling modeling style terminal the verifiable",
+      "github:wxj630/terminal-bench-math-modeling"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 5,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 28.203,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "github_stars": 3.584,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -1.715
+    }
+  },
+  {
+    "id": "64feee17bc05e1a7",
+    "kind": "release",
+    "title": "Setting a new standard for responsible AI infrastructure",
+    "summary_en": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-05T02:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:29.128894Z",
+    "dedup_keys": [
+      "url:openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "title:for infrastructure new responsible setting standard"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1062,10 +1263,56 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 18.033,
+    "score": 27.391,
     "score_breakdown": {
       "kind_base": 20.0,
-      "age_decay": -1.967
+      "known_org": 10.0,
+      "age_decay": -2.609
+    }
+  },
+  {
+    "id": "bb17f43eaabdfae0",
+    "kind": "release",
+    "title": "Franklin Templeton uses OpenAI to support investment research",
+    "summary_en": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/franklin-templeton",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-05T00:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:29.128961Z",
+    "dedup_keys": [
+      "url:openai.com/index/franklin-templeton",
+      "title:franklin investment openai research support templeton uses"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 27.266,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -2.734
     }
   },
   {
@@ -1128,10 +1375,207 @@
       "Daquan Zhou"
     ],
     "published_at": "2026-11-04T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979645Z",
+    "first_seen_at": "2026-11-06T19:44:28.456546Z",
     "dedup_keys": [
       "arxiv:2611.06817",
       "title:and embodied experience for for foundation human humanscale models open open recipe robot scaling"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.43,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.234
+    }
+  },
+  {
+    "id": "360965979597ca70",
+    "kind": "paper",
+    "title": "EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure",
+    "summary_en": "Recent advances in Gaussian splatting have enabled efficient and photorealistic head avatar reconstruction, yet monocular video-based or image-based methods still suffer from under-constrained geometry and texture, leading to artifacts such as blurring, stretching, and temporal instability. We present EDGAR (Efficient Diffusion-Driven Gaussian Avatar Refinement), a conditional diffusion framework designed to enhance the quality of Gaussian avatars by correcting artifacts while preserving identity fidelity. To train EDGAR, we construct EDGAR-SET, a hybrid triplet dataset composed of real-captured and synthetic-rendered samples, which simulates realistic Gaussian avatar failure cases by pairing degraded renderings with ground-truth and reference images. EDGAR refines degraded frames through a fusion block that injects identity features extracted by the self-supervised Sapiens model into a one-step diffusion backbone, enabling effective artifact removal without sacrificing efficiency. Our EDGAR model incorporates a Mixture-of-Experts (MoE) architecture to address diverse degradation types and severity levels. The refined multi-view renderings are subsequently used as pseudo-targets to optimize a single underlying Gaussian avatar, so that the final avatar can be rendered without applying EDGAR to every output frame. Experiments on three different Gaussian avatar reconstruction methods, each evaluated under three different settings, show improvements in both perceptual and reconstruction measures over the raw outputs and an SDEdit-style refinement baseline. In addition, cross-view evaluation demonstrates improved calibrated consistency, while tests under large yaw and open-mouth expressions verify robustness under extreme settings. These results collectively indicate a useful operating regime for recoverable appearance artifacts. The code is available at https://kwanyun.github.io/edgar/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.07909",
+        "external_id": "2611.07909"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.07909",
+        "external_id": "2611.07909"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/kwanyun/edgar-code",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kwan Yun",
+      "Minhyeok Bang",
+      "Colette Suhjung Koo",
+      "Junyong Noh"
+    ],
+    "published_at": "2026-11-05T00:00:00Z",
+    "first_seen_at": "2026-11-06T19:44:28.456609Z",
+    "dedup_keys": [
+      "arxiv:2611.07909",
+      "title:avatar diffusion driven edgar efficient failure gaussian refinement synthetic via",
+      "github:kwanyun/edgar-code"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 25.884,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.734
+    }
+  },
+  {
+    "id": "5278f22988013969",
+    "kind": "paper",
+    "title": "SAE Interprets MoE: Sparse AutoEncoders Reveal That MoE Experts Exhibit Human-Interpretable Fine-Grained Specialization",
+    "summary_en": "Mixture-of-Experts (MoE) models route each token to a few of many experts, yet what an individual expert is responsible for remains unsettled. Existing analyses count how often an expert is selected on domain-labeled corpora, an instrument that fixes the taxonomy in advance, stays coarse, and records selection rather than contribution. We instead study specialization in feature space by training a sparse autoencoder (SAE) on the output of an MoE layer. Since this output is a router-weighted sum of expert outputs and the SAE encoder is affine, the pre-activation of every latent decomposes exactly over the experts. Aggregated over a corpus, this gives each expert a dominant set of latents whose activation it principally drives. On layers 4, 30 and 46 of Qwen3-30B-A3B, contribution is far more concentrated than gating, most latents have only one or two dominators, and the overlap between dominant sets concentrates on a few expert pairs. Auto-interpreting these sets reveals a division of labor below coarse domains, with distinct experts for Java and front-end web code, or for geometry and for arithmetic and polynomials, while the coarse domains themselves take very unequal numbers of experts. Our SAEs and code are available at https://github.com/Bytedance-Seed/SAE-Interprets-MoE.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.08089",
+        "external_id": "2611.08089"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.08089",
+        "external_id": "2611.08089"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ByteDance-Seed/SAE-interprets-MoE",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Anyuan Zhuo",
+      "Shaohua Zhang",
+      "Yuan Lin",
+      "Pinyan Lu"
+    ],
+    "published_at": "2026-11-05T14:35:08Z",
+    "first_seen_at": "2026-11-06T19:44:28.456733Z",
+    "dedup_keys": [
+      "arxiv:2611.08089",
+      "title:autoencoders exhibit experts fine grained human interpretable interprets moe moe reveal sae sparse specialization that",
+      "github:bytedance-seed/sae-interprets-moe"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 21.898,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -1.822
+    }
+  },
+  {
+    "id": "a62aad4979c1322d",
+    "kind": "paper",
+    "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
+    "summary_en": "LiDAR is a critical sensor for autonomous driving and robotics, yet it remains vulnerable to adverse conditions such as fog, rain, transparent objects, and low-reflectance surfaces. Full-waveform LiDAR (FWL) addresses these limitations by capturing the complete return waveform as a histogram, preserving rich reflection characteristics including multi-path echoes and weak signals. While recent Transformer-based approaches have demonstrated promise on FWL data, two fundamental bottlenecks remain: high computational cost from redundant tokens in low-intensity background regions, and limited generalization due to scarce annotated training data. We address both bottlenecks by exploiting the physical structure inherent to FWL data. First, we propose FWL-ToPM, a token pruning and merging mechanism that leverages intensity distributions to selectively reduce tokens while retaining critical waveform content. Second, we introduce FWLAug, a data augmentation framework designed as a regularization method that preserves waveform structure, retaining the Time-of-Flight waveform of each ray and the frustum geometry, to improve generalization to unseen scenes. Evaluated on the Ghost-FWL benchmark, FWL-ToPM achieves over 8 times speedup at real-time throughput alongside a nearly 9-point F1 gain over the prior state of the art, establishing the first real-time FWL Transformer that simultaneously improves accuracy. FWLAug further improves performance on both the standard benchmark and an out-of-distribution test set of unseen scenes. Together, these methods push FWL-based perception toward practical deployment. The code and the OOD dataset are publicly available and can be accessed via the project page: https://keio-csg.github.io/FWL-ToPM",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.07613",
+        "external_id": "2611.07613"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.07613",
+        "external_id": "2611.07613"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Keio-CSG/FWL-ToPM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kotaro Oishi",
+      "Kazuma Ikeda",
+      "Ryosei Hara",
+      "Ryo Yoshida",
+      "Mariko Isogawa",
+      "Kentaro Yoshioka"
+    ],
+    "published_at": "2026-11-05T07:56:01Z",
+    "first_seen_at": "2026-11-06T19:44:28.456911Z",
+    "dedup_keys": [
+      "arxiv:2611.07613",
+      "title:and augmentation aware full guided intensity lidar physics real reduction time token towards transformers via waveform",
+      "github:keio-csg/fwl-topm"
     ],
     "signals": {
       "hf_upvotes": 2,
@@ -1139,134 +1583,69 @@
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 4,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
       "num_comments": 1,
-      "has_code": false,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 14.322,
+    "score": 21.77,
     "score_breakdown": {
       "hf_upvotes": 8.789,
+      "github_stars": 3.219,
       "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.467
+      "age_decay": -2.238
     }
   },
   {
-    "id": "964cf17e16ecebf0",
+    "id": "eb6a947c30616426",
     "kind": "paper",
-    "title": "Future Representation Distillation for Imagination-free World Action Models",
-    "summary_en": "World Action Models (WAMs) use the predictive knowledge of pretrained video diffusion models for robot control through future video prediction. However, iterative video denoising is costly, and inaccurate visual predictions can compromise action prediction. Our key idea is to make this predictive knowledge available through visual representations computed from the current observation, enabling action prediction without generating future videos. We introduce DreamFree, a WAM that repurposes a pretrained video diffusion model as a predictive visual encoder through representation distillation. The visual encoder learns to predict a frozen video diffusion model's representation using only the current observation. An action module is then trained to predict actions by extracting action-relevant information from the visual encoder. Across real-world and simulated tasks, DreamFree achieves higher success rates than state-of-the-art VLAs and WAMs, while performing real-time closed-loop control at 11Hz with a 14B video diffusion backbone. Experiments show that DreamFree can translate stronger video priors and additional video data into better robot control and enable learning new robot tasks from video demonstrations, including videos from a different embodiment, without action annotation for the new tasks.",
+    "title": "HeLM: Hierarchical Explicit Language Memory for Non-Markovian Manipulation",
+    "summary_en": "Recent advances in Vision-Language-Action (VLA) models have enabled fine manipulation capabilities, yet performing tasks that require working memory remains a key challenge. Most existing VLA architectures operate under a Markovian assumption, mapping only the current observation to an action, which leads to failure in non-Markovian environments. Inspired by the human 'inner monologue', we propose Hierarchical Explicit Language Memory (HeLM), a hierarchical VLA framework that maintains task-relevant history in explicit language through factorized event detection and event-triggered memory updates. We evaluate HeLM across 10 non-Markovian real-world tasks with 56 variants, including five newly formulated inter-episode tasks that require persistent context across task boundaries. HeLM improves intra-episode success by 12.8 percentage points over the strongest baseline and achieves 78% subtask success on compositional generalization tasks, while using up to 4.5x less memory and running 2.5x faster than the keyframe baseline at long horizons.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "cv",
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.04527",
-        "external_id": "2611.04527"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.04527",
-        "external_id": "2611.04527"
-      }
-    ],
-    "actors": [
-      "Jaehyeong Jo",
-      "Sangwon Jang",
-      "Sihyun Yu",
-      "Seonghyeon Ye",
-      "Yekyung Nah",
-      "Hojung Jung",
-      "Kimin Lee",
-      "Sung Ju Hwang"
-    ],
-    "published_at": "2026-11-04T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979626Z",
-    "dedup_keys": [
-      "arxiv:2611.04527",
-      "title:action distillation for free future imagination models representation world"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 12.623,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
-      "age_decay": -3.467
-    }
-  },
-  {
-    "id": "e72fd514c60f4a4c",
-    "kind": "paper",
-    "title": "NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in Nasopharyngeal Carcinoma",
-    "summary_en": "Current medical benchmarks typically break down clinical competence into isolated factual questions, single-image tasks, or static case vignettes. These tests score individual answers, but reveal less about whether a model can integrate subspecialty knowledge with multimodal evidence and track a patient's condition throughout a course of care. To close this gap, we introduce NPCBench, a clinical apprenticeship benchmark for nasopharyngeal carcinoma (NPC). NPCBench mirrors specialist training, from guideline and foundational knowledge to case planning, longitudinal review, CarePath integration, and open-ended consultation. It contains 4,777 component and consultation items and a 100-patient CarePath cohort with 417 scored diagnostic and care tasks. The episode-level evaluation tests whether diagnostic and care answers are jointly correct within a care pathway. By linking stepwise tasks to patient-level care trajectories, NPCBench evaluates whether models ground decisions in visual evidence, interpret changes in patient state, and meet clinical requirements in consultation. Across 30 evaluated models, we observe a composition gap: strong performance on individual tasks does not ensure jointly correct diagnostic and care answers for the same patient. Among 21 multimodal models, strict CarePath success reaches at most 23%. Paired controls and physician calibration further examine evidence grounding, longitudinal revision, and consultation judging. Overall, NPCBench broadens the evaluation of medical artificial intelligence beyond static question-answering paradigms to an apprenticeship-oriented assessment of clinical workflows, thereby offering a testbed for evidence-based and temporally coherent reasoning in oncology care.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
       "multimodal",
       "cv",
+      "robotics",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.08369",
-        "external_id": "2611.08369"
+        "url": "https://huggingface.co/papers/2611.02660",
+        "external_id": "2611.02660"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.08369",
-        "external_id": "2611.08369"
+        "url": "https://arxiv.org/abs/2611.02660",
+        "external_id": "2611.02660"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/kimspacehuni/HeLM",
+        "external_id": null
       }
     ],
     "actors": [
-      "Pengkai Wang",
-      "Wei-Wei Zhang",
-      "Yan Li",
-      "Min Tang",
-      "Zhitian Hou",
-      "Zeyu Liu",
-      "Guanghao Zhu",
-      "Yuanyi Wang",
-      "Yanggan Gu",
-      "Wenjun Wang",
-      "Minheng Ni",
-      "Congkai Xie",
-      "Zhijie Sang",
-      "Jianmin Wu",
-      "Ying Sun",
-      "Hongxia Yang"
+      "Gyeonghun Kim",
+      "Donghoon Kim",
+      "Minsoo Choi",
+      "Suyun Lee"
     ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979712Z",
+    "published_at": "2026-11-02T07:20:12Z",
+    "first_seen_at": "2026-11-06T19:44:28.456680Z",
     "dedup_keys": [
-      "arxiv:2611.08369",
-      "title:apprenticeship benchmark carcinoma care clinical for multimodal nasopharyngeal npcbench pathway reasoning"
+      "arxiv:2611.02660",
+      "title:explicit for helm hierarchical language manipulation markovian memory non",
+      "github:kimspacehuni/helm"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 6,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1276,63 +1655,56 @@
       "hn_points": 0,
       "reddit_score": 0,
       "num_comments": 1,
-      "has_code": false,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 12.578,
+    "score": 20.792,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 15.567,
       "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.967
+      "age_decay": -6.775
     }
   },
   {
-    "id": "1a7e080ee80de15e",
+    "id": "0989a07b8530f9e6",
     "kind": "paper",
-    "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
-    "summary_en": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
+    "title": "Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter Readout",
+    "summary_en": "Linear attention compresses context into a fixed-size key-value state for linear-time training and constant-memory inference. Gated delta-rule models decay this state and erase its prediction for an incoming key before writing a new value; Gated DeltaNet-2 (GDN-2) generalizes this with channel-wise decay and decoupled, full-rank erase and write gates. However, we show that state updates are far less sensitive to erasure than to writes: key activation and unit normalization concentrate key energy onto a sparse subset of channels, whereas value writes scale all channels, so the erase gate can be parameterized at lower rank. Furthermore, slow-decaying state rows accumulate much larger norms than fast rows, dominating unweighted readout and forcing stronger write-time erasure to suppress interference. Guided by this analysis, we introduce Muir, which fuses all gates into a sensitivity-allocated low-rank projection, re-weights state rows with a matched-filter readout gate, and reinvests the saved parameters in a wider feed-forward network. Because standard chunkwise algorithms become numerically unstable at the large chunk sizes needed to saturate wide matrix units, we design a parallel update for stable, efficient training. Across 166M-1.34B parameters, Muir lowers perplexity by 1.8-2.0% over GDN-2 and 2.5-3.6% over Transformer, raises commonsense accuracy by up to 1.9 points, and improves extractive recall over GDN-2. At 1.34B, Muir outperforms both baselines on multi-hop and multi-needle recall, extrapolates 2,560x from its 4K training length to 10M-token streams without perplexity drift, and maintains near-100% passkey retrieval to 1M tokens with static readout. Muir achieves these gains while matching GDN-2 throughput, reaching its 100B-token validation loss 1.2x faster, and training 2.7x faster than Transformer at 32K.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
+      "llm",
       "rag",
-      "multimodal",
-      "cv",
-      "robotics",
+      "eval",
       "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.08373",
-        "external_id": "2611.08373"
+        "url": "https://huggingface.co/papers/2611.08376",
+        "external_id": "2611.08376"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.08373",
-        "external_id": "2611.08373"
+        "url": "https://arxiv.org/abs/2611.08376",
+        "external_id": "2611.08376"
       }
     ],
     "actors": [
-      "Fuhao Li",
-      "Wenxuan Song",
-      "Qizhou Huang",
-      "Ziyang Zhou",
-      "Jingbo Wang",
-      "Junwu E",
-      "Pengwei Wang",
-      "Yan Wang",
-      "Shunbo Zhou",
-      "Haoang Li"
+      "Tushaar Gangavarapu",
+      "Gil Tabak",
+      "Clemens JS Schaefer"
     ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979691Z",
+    "published_at": "2026-11-05T17:53:49Z",
+    "first_seen_at": "2026-11-06T19:44:28.456806Z",
     "dedup_keys": [
-      "arxiv:2611.08373",
-      "title:action continual language model pre scaling sla spatial training via"
+      "arxiv:2611.08376",
+      "title:allocated and attention filter gating linear matched muir readout sensitivity with"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 4,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1345,12 +1717,59 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 12.578,
+    "score": 20.261,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 12.876,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -1.967
+      "age_decay": -1.615
+    }
+  },
+  {
+    "id": "d28d4fa6c8e2eb92",
+    "kind": "release",
+    "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/allenai/toyblocks",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-11-06T14:00:48Z",
+    "first_seen_at": "2026-11-06T19:44:30.650204Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/allenai/toyblocks",
+      "title:and controlled evaluation for learning robot toyblocks world"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.642,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.358
     }
   },
   {
@@ -1390,13 +1809,13 @@
       "Zhizheng Wu"
     ],
     "published_at": "2026-11-04T00:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.979677Z",
+    "first_seen_at": "2026-11-06T19:44:28.456785Z",
     "dedup_keys": [
       "arxiv:2611.06982",
       "title:before chunk decode duplex for full hear interleaved language listening models speculative speech you"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 5,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1409,359 +1828,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 11.078,
+    "score": 19.1,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 14.334,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -3.467
-    }
-  },
-  {
-    "id": "30e99b9cdf6ae93c",
-    "kind": "paper",
-    "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
-    "summary_en": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, attention has settled on one kind of intelligent individual, the embodied robot; we argue that the era of Physical AI holds a second kind of equal importance, the person augmented by AI. Alongside artificial general intelligence, which asks how intelligent a machine can be, stands AI-augmented human intelligence (AHI), which asks how much intelligence a machine can enable in a particular person. Realizing it calls for a new kind of system, a cognitive symbiont: a lifelong, embedded, real-time, private, low-friction, and proactive companion that senses what the person senses through external devices, keeps their context across years, models their situation and their mind, takes part in their thinking at the right moment, carries out everyday tasks with their context, and keeps learning the person as both change. We give the paradigm a conceptual core, the cognitive gap between what a person could bring to a situation and what they can hold in working memory, and organize its design space as a symbiosis loop of sensing, keeping, understanding, living alongside, acting for and thinking with the person, and growing, enclosed by a personal runtime and by trust. Because a symbiont changes what a person can do in front of others, it also raises risks of a new kind, from covert assistance in examinations to pressure on everyone to adopt it, and we treat their governance as part of the paradigm.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.05376",
-        "external_id": "2611.05376"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05376",
-        "external_id": "2611.05376"
-      }
-    ],
-    "actors": [
-      "Hao Fei"
-    ],
-    "published_at": "2026-11-03T18:59:52Z",
-    "first_seen_at": "2026-11-06T07:28:40.979661Z",
-    "dedup_keys": [
-      "arxiv:2611.05376",
-      "title:agents augmented autonomous cognitive from human intelligence symbionts toward"
-    ],
-    "signals": {
-      "hf_upvotes": 1,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 10.765,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.78
-    }
-  },
-  {
-    "id": "a36eee2b5ebf527d",
-    "kind": "paper",
-    "title": "AI-Driven SaaS Platform Integration: AI Express for Unified Generative AI Services with Pay-As-You-Go Credit Systems and Scalable Microservice Architecture",
-    "summary_en": "Generative AI is currently fragmented, with separate subscriptions required for text generation, image synthesis, and code assistance, leading to high costs and workflow disruptions. AI Express is a SaaS platform that consolidates these capabilities into a unified pay-as-you-go service. The platform provides a range of AI tools, including a Core Code Reviewer that evaluates GitHub repositories, a Text-to-Website generator that converts text into fully functional websites, script generation, grammar checking, data analysis, and watermark removal, all accessible through a single interface without requiring technical expertise.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05389",
-        "external_id": "2611.05389"
-      }
-    ],
-    "actors": [
-      "Deepit Sapru"
-    ],
-    "published_at": "2026-11-06T05:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.962975Z",
-    "dedup_keys": [
-      "arxiv:2611.05389",
-      "title:and architecture credit driven express for generative integration microservice pay platform saas scalable services systems unified with you"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.845,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.155
-    }
-  },
-  {
-    "id": "0f5dd2d39b0be180",
-    "kind": "paper",
-    "title": "Human-like cross-language generalisation in deep neural speaker embeddings and its acoustic foundations",
-    "summary_en": "Generalisability is a central question for deep neural networks, including the cross-language generalisation of speaker embeddings. This study examined whether deep neural speaker embeddings generalise across languages and how such generalisation relates to human perception and acoustic structure. Using Cantonese--English bilingual speech presented in within- and cross-language conditions, we derived similarity from 18 state-of-the-art models and compared it with human ratings and acoustic features using linear mixed models and representational similarity analysis. Embeddings exhibited cross-language generalisation that broadly paralleled human behaviour, reflecting accurate identity discrimination and sensitivity to language switching. This generalisation relied on largely shared acoustic cues with language-sensitive weighting, mirroring human patterns. Together, these findings provide converging evidence for human--machine alignment in cross-language voice similarity processing.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "speech"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05384",
-        "external_id": "2611.05384"
-      }
-    ],
-    "actors": [
-      "Tianze Xu",
-      "Xiyang Li",
-      "Xiaoming Jiang",
-      "Volker Dellwo"
-    ],
-    "published_at": "2026-11-06T05:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.962748Z",
-    "dedup_keys": [
-      "arxiv:2611.05384",
-      "title:acoustic and cross deep embeddings foundations generalisation human its language like neural speaker"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.845,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.155
-    }
-  },
-  {
-    "id": "9814394674aa2ae7",
-    "kind": "paper",
-    "title": "RAGCompass: Generalizable Retriever Routing via Reranking",
-    "summary_en": "Different retrievers exist for retrieval-augmented generation, yet none performs best for all queries. Therefore, the key question is: given a query and retrieved passages from different retrievers, which one is most suited for that query? Existing routers usually make predictions from query-specific features and a fixed pool of retrievers; such routers have no output for an unseen retriever and are incapable by design on a new corpus. To fill these gaps, RAGCompass reads the retrieved passage sets themselves: passages from an unfamiliar retriever or corpus stay directly comparable to other passages, so routing stays well designed where a query-only map would fail. We contrastively fine-tune a reranker against the answer each evidence set produces, which accounts for most of the gain; a small comparison head adds a moderate improvement, and neither component has retriever-specific parameters. RAGCompass improves answer F1 by 28% relative to the best fixed retriever, and outperforms fusion baselines, three query-only routers, and a prompted 8B language model. Generalization experiments show that RAGCompass keeps most of its gain under an unseen corpus, retriever, or reader, while query-only baselines fall to the best fixed retriever or below.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05596",
-        "external_id": "2611.05596"
-      }
-    ],
-    "actors": [
-      "Valentin Six",
-      "Mufei Li",
-      "Dongqi Fu",
-      "Yinglong Xia",
-      "Hong Li",
-      "Pan Li"
-    ],
-    "published_at": "2026-11-06T05:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.963163Z",
-    "dedup_keys": [
-      "arxiv:2611.05596",
-      "title:generalizable ragcompass reranking retriever routing via"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.845,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.155
-    }
-  },
-  {
-    "id": "99833d4d06871c41",
-    "kind": "paper",
-    "title": "Rewrite, Then Veto: Rewriter-Agnostic Edit Gating for LLM-Based Post-OCR Correction",
-    "summary_en": "LLMs can repair noisy OCR transcripts of historical documents, but they also change text that was already correct. We propose EditVeto, a veto gate placed after a full-context LLM rewrite. The rewrite is character-aligned to the OCR input, its differences are split into blocks, and a 0.6B-parameter gate keeps or reverts each block. An oracle analysis motivates the design: given the true error locations, per-span generation is worse than no correction, whereas vetoing a full rewrite's edits helps. Trained on rewrites by two Qwen3 models and evaluated, frozen, on the eight HIPE-OCRepair-2026 test sets, the gate improves all five rewriters tested, two of them unseen in training: weighted cMER falls by 0.0026-0.0044 and the preference score rises by 0.15-0.25 (paired bootstrap, p ~ 0.0002 each). On published competition outputs it lowers cMER for three of four teams but raises it for the winning run (0.0050 to 0.0065). In a second, disclosed test look, a retrained gate still improves LoRA-tuned rewriters (cMER -0.0011 to -0.0021), and an ensemble of their gated edits reaches a cMER of 0.0069 and a preference score of 0.928, mostly through fine-tuning and pooling rather than gating. Built only on public models and data, it is behind the winner (0.0050) and tied with the second-ranked run (0.0071), both from the only team using domain pre-training, and ahead of all other published runs. A third, secondary look shows the unchanged gate improving zero-shot Qwen3.8-27B (cMER 0.0114 to 0.0108) but only the preference score of its LoRA-tuned version.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05539",
-        "external_id": "2611.05539"
-      }
-    ],
-    "actors": [
-      "Jorge Ram\\'on Fonseca Cacho"
-    ],
-    "published_at": "2026-11-06T05:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.963104Z",
-    "dedup_keys": [
-      "arxiv:2611.05539",
-      "title:agnostic based correction edit for gating llm ocr post rewrite rewriter then veto"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.845,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.155
-    }
-  },
-  {
-    "id": "7b16ed81e041adc1",
-    "kind": "paper",
-    "title": "SRRM: A Retrieval-Reconstruction Benchmark for Evaluating Long-Context Memory in Small Language Models",
-    "summary_en": "Small Language Models (SLMs) are increasingly deployed on consumer-grade hardware, yet their ability to preserve information across progressively longer contexts remains insufficiently understood. Existing benchmarks primarily evaluate retrieval-oriented tasks, providing limited insight into whether successful retrieval reflects comprehensive long-context memory preservation. To address this limitation, this paper introduces Simple Retrieval-Reconstruction Memory (SRRM), a lightweight and fully reproducible benchmark that jointly evaluates Targeted Retrieval and Global Information Reconstruction. This study also proposes the Memory Preservation Ratio (MPR), a benchmark-level metric that quantifies the relationship between retrieval and reconstruction performance. SRRM was evaluated using a synthetic dataset on three Qwen2.5 models (0.5B, 1.5B, and 3B parameters) across context loads ranging from 10 to 100 factual statements. Experimental results show that reconstruction performance deteriorated substantially faster than retrieval accuracy as contextual information increased, indicating that retrieval alone is insufficient to characterize long-context memory preservation. Among the evaluated models, Qwen2.5-1.5B achieved the highest retrieval accuracy (86.7%), reconstruction performance (45.7%), and MPR (0.53), outperforming the larger Qwen2.5-3B model (72.2%, 18.5%, and 0.26, respectively). These findings demonstrate that increasing parameter count does not necessarily improve long-context memory preservation. Overall, SRRM provides a reproducible and extensible benchmark for systematically evaluating long-context memory while revealing complementary memory behaviors that remain hidden under retrieval-only evaluation frameworks.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05386",
-        "external_id": "2611.05386"
-      }
-    ],
-    "actors": [
-      "Christopher Alberto Hamonangan"
-    ],
-    "published_at": "2026-11-06T05:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.962927Z",
-    "dedup_keys": [
-      "arxiv:2611.05386",
-      "title:benchmark context evaluating for language long memory models reconstruction retrieval small srrm"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.845,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.155
-    }
-  },
-  {
-    "id": "42df4a6e76b493cd",
-    "kind": "paper",
-    "title": "When to Ask, When to Answer: Strategic Clarification for Ambiguous Reference Resolution in Dialogue",
-    "summary_en": "For humans, referential disambiguation is a collaborative process involving clarification questions asked when they will meaningfully change the outcome. However, large language models (LLMs) have been shown to be biased toward premature answering, preferring definite single-turn responses over more clarification exchanges. In this paper, we study the problem of \"strategic clarification\" -- asking clarification questions in a reference game when their answers will narrow the set of candidate referents. We construct a controlled test environment from the SIMMC 2.1 dataset that records how many questions each ambiguous reference needs to be successfully resolved, and examine how baseline LLM behavior and common post-training methods ask clarifying questions vs. attempt to answer the referent. We also propose BACE (Belief-Aware Critic with Epistemic tracking), a lightweight action chooser method on top of a frozen LM backbone, and show that BACE more consistently chooses the optimal number of clarifying questions than methods such as GRPO and ArCHer.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05517",
-        "external_id": "2611.05517"
-      }
-    ],
-    "actors": [
-      "Ibrahim Khebour",
-      "Nikhil Krishnaswamy"
-    ],
-    "published_at": "2026-11-06T05:00:00Z",
-    "first_seen_at": "2026-11-06T07:28:40.963031Z",
-    "dedup_keys": [
-      "arxiv:2611.05517",
-      "title:ambiguous answer ask clarification dialogue for reference resolution strategic when when"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.845,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.155
+      "age_decay": -4.234
     }
   }
 ]
