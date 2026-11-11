@@ -1,35 +1,34 @@
 [
   {
-    "id": "fe505c76b5f0e561",
+    "id": "20c3f17b3ec73112",
     "kind": "model",
-    "title": "autotrust/AutoTrust-Decider-Pro-Vision-27B-v1.1",
-    "summary_en": "text-classification, vllm, qwen3_5, decision-model, classification, structured-decisions",
+    "title": "MinimaLabs/KLM-1.6",
+    "summary_en": "text-generation, transformers, klm, custom_code, small-language-model, base, pretrained",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "cv"
+      "llm"
     ],
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/autotrust/AutoTrust-Decider-Pro-Vision-27B-v1.1",
-        "external_id": "autotrust/AutoTrust-Decider-Pro-Vision-27B-v1.1"
+        "url": "https://huggingface.co/MinimaLabs/KLM-1.6",
+        "external_id": "MinimaLabs/KLM-1.6"
       }
     ],
     "actors": [
-      "autotrust"
+      "MinimaLabs"
     ],
-    "published_at": "2026-10-17T07:59:58Z",
-    "first_seen_at": "2026-11-11T07:19:18.818737Z",
+    "published_at": "2026-11-09T10:00:48Z",
+    "first_seen_at": "2026-11-11T19:54:08.478503Z",
     "dedup_keys": [
-      "hf:autotrust/autotrust-decider-pro-vision-27b-v1.1"
+      "hf:minimalabs/klm-1.6"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 1414,
-      "hf_downloads": 140007,
-      "hf_trending_score": 99.5,
+      "hf_likes": 49,
+      "hf_downloads": 666,
+      "hf_trending_score": 49.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -39,14 +38,14 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 43.667,
+    "score": 52.596,
     "score_breakdown": {
-      "hf_trending": 27.661,
-      "hf_downloads": 23.699,
-      "hf_likes": 21.765,
+      "hf_trending": 23.472,
+      "hf_downloads": 13.006,
+      "hf_likes": 11.736,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -37.458
+      "age_decay": -3.618
     }
   },
   {
@@ -86,19 +85,84 @@
       "Xiang Bai"
     ],
     "published_at": "2026-11-09T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820501Z",
+    "first_seen_at": "2026-11-11T19:54:08.525471Z",
     "dedup_keys": [
       "arxiv:2611.12885",
       "title:agentic context for learning manipulation robot world",
       "github:archeone-ai/roboscript"
     ],
     "signals": {
-      "hf_upvotes": 17,
+      "hf_upvotes": 62,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 36,
+      "github_stars": 47,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 48.643,
+    "score_breakdown": {
+      "hf_upvotes": 33.145,
+      "github_stars": 7.742,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.244
+    }
+  },
+  {
+    "id": "04d0c5bc36bdc3e8",
+    "kind": "paper",
+    "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
+    "summary_en": "Weight-space programming, introduced in recent MIT work by Takehi et al., enables a frontier LLM agent to read a network's weights and write a repair. Their GPT-6 Astra agent corrected the reasoning loops of Qwen3.5-0.8B without gradients, using 158 agent turns, 89.7 million tokens, and 50 forward-pass requests. Our method, Tree-Ising, casts this repair as a sparse discrete optimization problem over the model's own BF16 weights. Forward statistics define an objective that weakens a loop direction, strengthens a concluding direction, and preserves the layer's output on productive tokens. Within a state-tree representation, where lossless BF16 storage acts as a special case, the admissible edits are sign flips and exponent shifts that preserve all shared group exponents and mantissas. We decompose this objective exactly into independent QUBO (Ising) problems, one per output row, which we solve on a GPU using simulated annealing or quantum-inspired simulated bifurcation. On the agent's two layers, Tree-Ising achieves 54.6% on MATH-500, outperforming the agent's edit (51.7%) under the same evaluation protocol, while the base model scores 7.9% as reported. The simulated bifurcation solver yields a statistically indistinguishable repair at 55.1%. Both solvers outperform the agent edit across all five math benchmarks, with statistically significant improvements on MATH-500 and GSM8K after correcting for multiple comparisons. Our approach modifies 13% to 17% fewer weights and reduces BF16 bit flips by a factor of 2.2 to 2.3. It requires only four forward-pass requests and zero LLM tokens, with the annealing recipe costing about $0.90 in GPU time. On Qwen3.5-2B, with layers and dose selected using only the base model, the same recipe increases greedy GSM8K accuracy from 21.6% to 69.4%. As a proof of concept, we execute an eight-variable repair subproblem using QAOA on an IBM Heron processor.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.14210",
+        "external_id": "2611.14210"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.14210",
+        "external_id": "2611.14210"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/TheQuantumGOAT/Tree-Ising",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hadi Salloum",
+      "Ammar Ali"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525420Z",
+    "dedup_keys": [
+      "arxiv:2611.14210",
+      "title:bit edits ising ising language level models repairing tree with",
+      "github:thequantumgoat/tree-ising"
+    ],
+    "signals": {
+      "hf_upvotes": 71,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -106,14 +170,222 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 38.887,
+    "score": 43.469,
     "score_breakdown": {
-      "hf_upvotes": 23.123,
-      "github_stars": 7.222,
+      "hf_upvotes": 34.213,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.458
+      "age_decay": -2.744
+    }
+  },
+  {
+    "id": "fe505c76b5f0e561",
+    "kind": "model",
+    "title": "autotrust/AutoTrust-Decider-Pro-Vision-27B-v1.1",
+    "summary_en": "text-classification, vllm, qwen3_5, decision-model, classification, structured-decisions",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/autotrust/AutoTrust-Decider-Pro-Vision-27B-v1.1",
+        "external_id": "autotrust/AutoTrust-Decider-Pro-Vision-27B-v1.1"
+      }
+    ],
+    "actors": [
+      "autotrust"
+    ],
+    "published_at": "2026-10-17T07:59:58Z",
+    "first_seen_at": "2026-11-11T19:54:08.478287Z",
+    "dedup_keys": [
+      "hf:autotrust/autotrust-decider-pro-vision-27b-v1.1"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 1440,
+      "hf_downloads": 140120,
+      "hf_trending_score": 104.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.2,
+    "score_breakdown": {
+      "hf_trending": 27.924,
+      "hf_downloads": 23.701,
+      "hf_likes": 21.819,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -38.244
+    }
+  },
+  {
+    "id": "cea7186eed759f4b",
+    "kind": "paper",
+    "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+    "summary_en": "External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-induced degradation, where an agent fails on tasks it would solve without memory, often because it follows a lesson that is incorrect, or misapplies or misreads a valid one. This is because lessons are inferred from trajectories labeled only with task success or failure, yet are typically provided without the trajectories they came from, leaving the agent no way to check them. To address this, we introduce WikiTrace, an evidence-linked memory system designed to let agents check each lesson against its original trajectory. Specifically, motivated by the finding that a trajectory often still holds the evidence needed to catch an erroneous lesson, WikiTrace stores each lesson as a concise insight linked to a summary of why its trajectory succeeded or failed and to the raw trajectory itself. Then, on a new task, the agent starts from all insights and, whenever one lacks details needed to act, conflicts with another, or comes from a failed task, descends through its links with terminal tools to fill in missing details or correct the insight before acting. We validate WikiTrace on five agentic benchmarks, showing that it consistently outperforms existing memory approaches and a baseline given the same insights alone, while also reducing memory-induced degradation. Our code is available at https://github.com/yukyeongleee/wikitrace",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.14320",
+        "external_id": "2611.14320"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.14320",
+        "external_id": "2611.14320"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yukyeongleee/wikitrace",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yukyeong Lee",
+      "Yumin Choi",
+      "Jinheon Baek",
+      "Sung Ju Hwang"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525510Z",
+    "dedup_keys": [
+      "arxiv:2611.14320",
+      "title:agents degradation don evidence induced just linked llm memory memory memory reduces trust your",
+      "github:yukyeongleee/wikitrace"
+    ],
+    "signals": {
+      "hf_upvotes": 45,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 6,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 43.104,
+    "score_breakdown": {
+      "hf_upvotes": 30.629,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.744
+    }
+  },
+  {
+    "id": "eaae01bbd90029fe",
+    "kind": "paper",
+    "title": "Embodied First Exam",
+    "summary_en": "Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control. We hope it serves as a first exam for coding agents before they enter the physical world, with 1,156 tasks in 35 suites on 47 robots, including 9 new suites that go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic whole-body control, and sim-to-sim engineering. Each task can be run in up to three evaluation settings. The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimited resets, allowing it to search for an oracle solution for training purposes. Success rates in this setting serve as an approximate upper bound. On the 456 core tasks, the strongest of eight agents, GPT-6 Astra in Codex, achieves a success rate of 34% in the Standard Setting, leaving much room for improvement. To see where agents fail, we label the stage at which failed attempts go wrong and compare failures across agents, settings, and stage categories.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.12177",
+        "external_id": "2611.12177"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.12177",
+        "external_id": "2611.12177"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/mll-lab-nu/embodied-first-exam",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kangrui Wang",
+      "Qineng Wang",
+      "Changhe Chen",
+      "Pingyue Zhang",
+      "Chi Gui",
+      "Feishi Wang",
+      "Canyu Chen",
+      "Wenli Xiao",
+      "Xiaoyu Huang",
+      "Tonghe Zhang",
+      "Linjie Li",
+      "Zihan Wang",
+      "Minyeong Kim",
+      "Yiyou Sun",
+      "Mingkai Deng",
+      "Jinyu Hou",
+      "Qi Zhu",
+      "Han Liu",
+      "Eric P. Xing",
+      "Huaxiu Yao",
+      "Zhiwen Fan",
+      "Yuejiang Liu",
+      "Dawn Song",
+      "Pieter Abbeel",
+      "Li Fei-Fei",
+      "Jiajun Wu",
+      "Yuke Zhu",
+      "Guanya Shi",
+      "Ruohan Zhang",
+      "Manling Li"
+    ],
+    "published_at": "2026-11-09T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525602Z",
+    "dedup_keys": [
+      "arxiv:2611.12177",
+      "title:embodied exam first",
+      "github:mll-lab-nu/embodied-first-exam"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 259,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.989,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 11.121,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.244
     }
   },
   {
@@ -154,19 +426,150 @@
       "Hong Cheng"
     ],
     "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820434Z",
+    "first_seen_at": "2026-11-11T19:54:08.525546Z",
     "dedup_keys": [
       "arxiv:2611.14309",
       "title:decision making massive measuring mmdm multitask",
       "github:mmdm-benchmark/mmdm"
     ],
     "signals": {
-      "hf_upvotes": 22,
+      "hf_upvotes": 25,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 1,
+      "github_stars": 8,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.715,
+    "score_breakdown": {
+      "hf_upvotes": 26.065,
+      "github_stars": 4.394,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.744
+    }
+  },
+  {
+    "id": "8ce2159d69140c4c",
+    "kind": "paper",
+    "title": "Few-Step Streaming Video Generation via Condition Shifting",
+    "summary_en": "Few-step sampling reduces the cost of streaming video generation. Distribution Matching Distillation (DMD) supervises few-step generators with a separate fake-score network, which adds training memory and computation and must track the evolving generator. We extend APEX to streaming video by using condition shifting to estimate the velocity field of the generated distribution within the generator. The original text condition selects generation, while a shifted condition selects fake estimation using the same parameters. This removes the independent fake network while retaining S2-Avatar's frozen reference teacher, Self-Replay Forcing, and perceptual regularization. We evaluate APEX on 180-second videos using three backbone evaluations per block and a one-step spatial Refiner, with a 70-case human study and a 320-case StreamAV-Bench comparison. Compared with S2-Avatar, APEX achieves higher video instruction fulfillment on the Progressive track (3.856 versus 3.831) and higher visual aesthetics across both tracks (0.641898 versus 0.632606). Human raters favor APEX most strongly on instruction following, with +30.0% net preference, followed by consistency and video quality at +4.3% each. Motion quality favors S2-Avatar, audiovisual synchronization is predominantly tied, and usability is unchanged. Separate measurements under matched training settings show 4.4% lower peak allocated GPU memory per GPU and 9.2% shorter mean iteration time than DMD.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.14033",
+        "external_id": "2611.14033"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.14033",
+        "external_id": "2611.14033"
+      }
+    ],
+    "actors": [
+      "Deyuan Liu",
+      "Jungang Li",
+      "Kaiwen Zheng",
+      "Kai Jiang",
+      "Jintao Chen",
+      "Yaole Wang",
+      "Ming Lin",
+      "Tao Lin",
+      "Jianfei Chen",
+      "Jun Zhu",
+      "Jintao Zhang"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525489Z",
+    "dedup_keys": [
+      "arxiv:2611.14033",
+      "title:condition few generation shifting step streaming via video"
+    ],
+    "signals": {
+      "hf_upvotes": 47,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 37.226,
+    "score_breakdown": {
+      "hf_upvotes": 30.97,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.744
+    }
+  },
+  {
+    "id": "107d750beb1376b3",
+    "kind": "paper",
+    "title": "WaveGen: Truly End-to-End Waveform Generation via Internal Spectral Trajectory Learning",
+    "summary_en": "This work proposes WaveGen, a fully end-to-end diffusion-based text-to-waveform framework based on Spectral Forcing, which jointly learns an internal spectral trajectory and the target waveform trajectory within a single model, enabling direct end-to-end text-to-waveform generation. Unlike recent TTS pipelines, WaveGen does not rely on separately trained or externally decoded intermediate representations, such as neural audio codecs, Mel-spectrogram vocoders, or VAE-based latent models. In addition, WaveGen performs internal text-speech alignment within a single model, eliminating the need for external alignment modules such as duration predictors. To preserve a truly end-to-end formulation, our framework further avoids dependence on self-supervised representations, such as BERT-based text embeddings and Wav2Vec 2.0-based semantic representations, as well as semantic distillation methods for training optimization. To achieve this, we carefully design Spectral Forcing, a model architecture with disentangled diffusion heads, and a training objective based on a multi-scale spectral v-loss. We further validate the scalability of end-to-end TTS models by scaling the model size from 0.1B to 0.6B parameters. Using a single architecture, open-source data, and one-stage training, without external modules such as duration predictor or REPA, WaveGen demonstrates fully end-to-end waveform generation achieving state-of-the-art performance on the Emilia training dataset. In particular, WaveGen achieves a WER of 1.47 and a SIM of 0.75 on the Seed-en benchmark. Source code and checkpoints are available at https://github.com/sh-lee-prml/WaveGen",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.12527",
+        "external_id": "2611.12527"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.12527",
+        "external_id": "2611.12527"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/sh-lee-prml/WaveGen",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Sang-Hoon Lee",
+      "Ha-Yeong Choi"
+    ],
+    "published_at": "2026-11-09T15:02:29Z",
+    "first_seen_at": "2026-11-11T19:54:08.525632Z",
+    "dedup_keys": [
+      "arxiv:2611.12527",
+      "title:end end generation internal learning spectral trajectory truly via waveform wavegen",
+      "github:sh-lee-prml/wavegen"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 30,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -174,14 +577,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 36.512,
+    "score": 36.084,
     "score_breakdown": {
-      "hf_upvotes": 25.084,
-      "github_stars": 1.386,
+      "hf_upvotes": 20.52,
+      "github_stars": 6.868,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.958
+      "age_decay": -3.304
     }
   },
   {
@@ -205,7 +608,7 @@
       "openai"
     ],
     "published_at": "2026-11-11T08:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:19.263765Z",
+    "first_seen_at": "2026-11-11T19:54:08.844449Z",
     "dedup_keys": [
       "url:openai.com/index/chatgpt-plus-for-veterans",
       "title:and chatgpt for plus servicemembers veterans"
@@ -224,60 +627,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 34.0,
+    "score": 33.256,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -0.0
-    }
-  },
-  {
-    "id": "0cd071090b463143",
-    "kind": "release",
-    "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
-    "summary_en": "Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears. The threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, [&#8230;] The post Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents appeared first on Microsoft Research .",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "microsoft_research",
-        "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "microsoft_research"
-    ],
-    "published_at": "2026-11-10T20:52:56Z",
-    "first_seen_at": "2026-11-11T07:19:21.979856Z",
-    "dedup_keys": [
-      "url:microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents",
-      "title:agents backdoor dormant foras lazare neurons reprogramming veni"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.347,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.653
+      "age_decay": -0.744
     }
   },
   {
@@ -322,13 +677,13 @@
       "Xunliang Cai"
     ],
     "published_at": "2026-11-09T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820292Z",
+    "first_seen_at": "2026-11-11T19:54:08.525524Z",
     "dedup_keys": [
       "arxiv:2611.12426",
       "title:are codes discrete dnavit general purpose representations visual"
     ],
     "signals": {
-      "hf_upvotes": 27,
+      "hf_upvotes": 32,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -341,12 +696,128 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 32.2,
+    "score": 32.728,
     "score_breakdown": {
-      "hf_upvotes": 26.658,
+      "hf_upvotes": 27.972,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -3.458
+      "age_decay": -4.244
+    }
+  },
+  {
+    "id": "0cd071090b463143",
+    "kind": "release",
+    "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+    "summary_en": "Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears. The threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, [&#8230;] The post Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents appeared first on Microsoft Research .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "microsoft_research"
+    ],
+    "published_at": "2026-11-10T20:52:56Z",
+    "first_seen_at": "2026-11-11T19:54:11.609185Z",
+    "dedup_keys": [
+      "url:microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents",
+      "title:agents backdoor dormant foras lazare neurons reprogramming veni"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.561,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.439
+    }
+  },
+  {
+    "id": "0722169f9d8067f1",
+    "kind": "paper",
+    "title": "MACaQ: Fast, Model Agnostic Calibrated Quantization for Low-Precision Weights and Activations",
+    "summary_en": "Weight-activation quantization can reduce the memory and compute cost of neural-network inference, but recent methods often require expensive optimization and architecture-specific propagation of basis transforms across layers. We introduce MACaQ, an MXFP4 W4A4 post-training quantization method that treats every linear layer independently. MACaQ applies a per-channel scale and a block-Hadamard transform online to each layer's activations, while absorbing the corresponding inverse transforms into its weights. Retaining these transforms online avoids cross-layer dependencies and enables a simple streaming implementation of the quantization process, in which only one layer must reside in memory at a time. To improve over round-to-nearest quantization, we introduce Flip-Refinement, a Hessian-aware coordinate-descent procedure that greedily moves individual FP4 codes to adjacent representable values. Despite executing the activation transforms at inference time, MACaQ adds only 2.3% end-to-end overhead over pure MXFP4 on Qwen3-32B in vLLM. MACaQ reaches lower perplexity than DuQuant++ and MR-GPTQ, and already matches their best perplexity on Llama-3-8B in 11 times less quantization time. We further apply MACaQ without architecture-specific modifications to an image diffusion model, illustrating the generality of its layer-local design and show quantization of a 122B parameter model in 64 minutes, using only 32.5GB GPU RAM.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.10649",
+        "external_id": "2611.10649"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.10649",
+        "external_id": "2611.10649"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/huawei-csl/MACaQ",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Lorenz K. Muller",
+      "Philippe Bich",
+      "Chiara Boretti",
+      "Hyun-Min Chang",
+      "Jiawei Zhuang",
+      "Lukas Cavigelli"
+    ],
+    "published_at": "2026-11-07T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525586Z",
+    "dedup_keys": [
+      "arxiv:2611.10649",
+      "title:activations agnostic and calibrated fast for low macaq model precision quantization weights",
+      "github:huawei-csl/macaq"
+    ],
+    "signals": {
+      "hf_upvotes": 19,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.495,
+    "score_breakdown": {
+      "hf_upvotes": 23.966,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.244
     }
   },
   {
@@ -370,7 +841,7 @@
       "openai"
     ],
     "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:19.264016Z",
+    "first_seen_at": "2026-11-11T19:54:08.844596Z",
     "dedup_keys": [
       "url:openai.com/index/cogent-security",
       "title:and build cogent cyber defense enterprises factories for openai"
@@ -389,12 +860,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 32.042,
+    "score": 31.256,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -1.958
+      "age_decay": -2.744
     }
   },
   {
@@ -416,7 +887,7 @@
       "openai"
     ],
     "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:19.263693Z",
+    "first_seen_at": "2026-11-11T19:54:08.844388Z",
     "dedup_keys": [
       "url:openai.com/index/gilbert-tobin-sam-nickless",
       "title:business gilbert law rethinks the tobin with"
@@ -443,28 +914,28 @@
     }
   },
   {
-    "id": "2c2921d1eb769d19",
+    "id": "2663db3bb841e481",
     "kind": "release",
-    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
-    "summary_en": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+    "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+    "summary_en": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [],
     "links": [
       {
-        "source": "openai",
-        "url": "https://openai.com/index/singapore-airlines-travel-work",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
         "external_id": null
       }
     ],
     "actors": [
-      "openai"
+      "nvidia"
     ],
-    "published_at": "2026-11-10T08:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:19.263939Z",
+    "published_at": "2026-11-11T17:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:10.827145Z",
     "dedup_keys": [
-      "url:openai.com/index/singapore-airlines-travel-work",
-      "title:airlines elevates openai singapore technology travel with work"
+      "url:developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory",
+      "title:dsx factory gpu inventory nvidia platforms runtime the validating via with"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -480,11 +951,218 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 28.542,
+    "score": 29.819,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -1.458
+      "age_decay": -0.181
+    }
+  },
+  {
+    "id": "3c019d2335ff18ed",
+    "kind": "release",
+    "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+    "summary_en": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-11-11T15:00:15Z",
+    "first_seen_at": "2026-11-11T19:54:09.304585Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease",
+      "title:alphagenome better cells deciphering disease dna how read understand"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.694,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.306
+    }
+  },
+  {
+    "id": "101da1b429935309",
+    "kind": "model",
+    "title": "HAL-X-AI/THX-02",
+    "summary_en": "zero-shot-classification, thx02, decision-model, classification, routing, multimodal, thinking",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/HAL-X-AI/THX-02",
+        "external_id": "HAL-X-AI/THX-02"
+      }
+    ],
+    "actors": [
+      "HAL-X-AI"
+    ],
+    "published_at": "2026-10-23T11:35:27Z",
+    "first_seen_at": "2026-11-11T19:54:08.478515Z",
+    "dedup_keys": [
+      "hf:hal-x-ai/thx-02"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 50,
+      "hf_downloads": 2134,
+      "hf_trending_score": 48.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 29.458,
+    "score_breakdown": {
+      "hf_trending": 23.351,
+      "hf_downloads": 15.332,
+      "hf_likes": 11.795,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -29.02
+    }
+  },
+  {
+    "id": "b2dcee656ddc9f8e",
+    "kind": "paper",
+    "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+    "summary_en": "How little of a pretrained large language model (LLM) has to change for it to acquire new capabilities? We find that zeroing fewer than 0.05% of its weights, with no other modification, matches full fine-tuning (FFT) at scale across three LLM post-training regimes: reinforcement learning with verifiable rewards, supervised fine-tuning, and on-policy distillation. Our method, Deletion Tuning, learns a binary mask over the gate projection of transformer blocks. Two practical advantages follow: the trained mask is hundreds to thousands of times smaller than the corresponding FFT checkpoint, and Deletion Tuning forgets far less, which addresses a central challenge in continual learning. Under reinforcement learning, its prior-task accuracy stays near the base level while FFT, LoRA, and random sparse fine-tuning lose up to 5.4 points. To understand why masking alone suffices, we analyze the geometry of the learned weight changes under reinforcement learning using stable rank, spectrum drift, and principal-weight overlap. Compared with LoRA and random sparse fine-tuning, Deletion Tuning is closest to FFT across the three measures.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.10866",
+        "external_id": "2611.10866"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.10866",
+        "external_id": "2611.10866"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/agentic-learning-ai-lab/deleting-weights",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jack Lu",
+      "Zhenbang Yang",
+      "Mike Lasby",
+      "Tejas Pote",
+      "Yani Ioannou",
+      "Mengye Ren"
+    ],
+    "published_at": "2026-11-07T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525688Z",
+    "dedup_keys": [
+      "arxiv:2611.10866",
+      "title:deleting effectiveness llm post surprising the training weights",
+      "github:agentic-learning-ai-lab/deleting-weights"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 41,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 28.867,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "github_stars": 7.475,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -7.244
+    }
+  },
+  {
+    "id": "289650aa03e84be4",
+    "kind": "release",
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "summary_en": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/jiostar-vijay-seshadri",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-11T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.844475Z",
+    "dedup_keys": [
+      "url:openai.com/index/jiostar-vijay-seshadri",
+      "title:500m architect chief discovery jiostar scale user"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 28.756,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.244
     }
   },
   {
@@ -521,13 +1199,13 @@
       "Zhijie Deng"
     ],
     "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820469Z",
+    "first_seen_at": "2026-11-11T19:54:08.525557Z",
     "dedup_keys": [
       "arxiv:2611.11166",
       "title:dexforesight dexterous foresight grounding implicit policies spatial with"
     ],
     "signals": {
-      "hf_upvotes": 21,
+      "hf_upvotes": 24,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -540,235 +1218,36 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 27.77,
+    "score": 28.007,
     "score_breakdown": {
-      "hf_upvotes": 24.728,
+      "hf_upvotes": 25.751,
       "is_daily_paper": 5.0,
-      "age_decay": -1.958
+      "age_decay": -2.744
     }
   },
   {
-    "id": "8ce2159d69140c4c",
-    "kind": "paper",
-    "title": "Few-Step Streaming Video Generation via Condition Shifting",
-    "summary_en": "Few-step sampling reduces the cost of streaming video generation. Distribution Matching Distillation (DMD) supervises few-step generators with a separate fake-score network, which adds training memory and computation and must track the evolving generator. We extend APEX to streaming video by using condition shifting to estimate the velocity field of the generated distribution within the generator. The original text condition selects generation, while a shifted condition selects fake estimation using the same parameters. This removes the independent fake network while retaining S2-Avatar's frozen reference teacher, Self-Replay Forcing, and perceptual regularization. We evaluate APEX on 180-second videos using three backbone evaluations per block and a one-step spatial Refiner, with a 70-case human study and a 320-case StreamAV-Bench comparison. Compared with S2-Avatar, APEX achieves higher video instruction fulfillment on the Progressive track (3.856 versus 3.831) and higher visual aesthetics across both tracks (0.641898 versus 0.632606). Human raters favor APEX most strongly on instruction following, with +30.0% net preference, followed by consistency and video quality at +4.3% each. Motion quality favors S2-Avatar, audiovisual synchronization is predominantly tied, and usability is unchanged. Separate measurements under matched training settings show 4.4% lower peak allocated GPU memory per GPU and 9.2% shorter mean iteration time than DMD.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "speech",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.14033",
-        "external_id": "2611.14033"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.14033",
-        "external_id": "2611.14033"
-      }
-    ],
-    "actors": [
-      "Deyuan Liu",
-      "Jungang Li",
-      "Kaiwen Zheng",
-      "Kai Jiang",
-      "Jintao Chen",
-      "Yaole Wang",
-      "Ming Lin",
-      "Tao Lin",
-      "Jianfei Chen",
-      "Jun Zhu",
-      "Jintao Zhang"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820552Z",
-    "dedup_keys": [
-      "arxiv:2611.14033",
-      "title:condition few generation shifting step streaming via video"
-    ],
-    "signals": {
-      "hf_upvotes": 12,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 27.562,
-    "score_breakdown": {
-      "hf_upvotes": 20.52,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "aee953421b341d0b",
-    "kind": "paper",
-    "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
-    "summary_en": "Memory-augmented vision-language-action (VLA) policies are meant to remember what happened. Many of them, however, fill memory by time: they sample frames uniformly across the episode and stamp each frame with its time step. Because time passes even when nothing happens, such a memory may not tell waiting from working. We show that it does not. On the counting tasks of RoboMME, we make the robot briefly pause or fidget its wrist. Such a null event changes nothing the task depends on, yet a released memory VLA counts the interval as work done and stops early. We call this failure phantom progress. It cuts success from 47 to 16 of 50 on one task and from 44 to 10 on the other. When the same frames are withheld from memory, success returns, so the cause lies in memory rather than in the interruption itself. We trace the failure to a temporal shortcut: because demonstrations proceed at a steady pace, elapsed time predicts progress. Indeed, rescaling the time stamps alone makes the policy stop early when the clock runs fast and repeat when it runs slow. Surprisingly, removing the time encoding does not cure the failure, because the frames of a null event still occupy slots of the time-sampled memory. Across RoboMME's released designs, vulnerability follows how memory is indexed. Of the fixes the diagnosis suggests, training with injected pauses does not remove the failure and impairs counting, whereas indexing memory by events recovers half or more of the loss without retraining. A memory meant to remember what happened should count events rather than clock ticks.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "multimodal",
-      "cv",
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.14488",
-        "external_id": "2611.14488"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.14488",
-        "external_id": "2611.14488"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/bennidict23/memory-clock",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Chubin Zhang",
-      "Bo An"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820627Z",
-    "dedup_keys": [
-      "arxiv:2611.14488",
-      "title:augmented clock just memory memory policies robot shortcuts temporal vla your",
-      "github:bennidict23/memory-clock"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 25.762,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "197346d6811eb571",
-    "kind": "paper",
-    "title": "Market-Conditioned JEPA: Learning from Unpredictable Market Shocks",
-    "summary_en": "Much of the variation in financial time series is driven by market-wide shocks that cannot be predicted from an asset's own history. Per-asset self-supervised learning treats this variation as irreducible noise. Under a latent factor model, we show that conditioning prediction on the realized market factor makes the asset's market exposure necessary for optimal prediction, while reducing the noise against which the asset-specific component is learned. Building on this insight, we introduce Market-Conditioned JEPA (MC-JEPA), a joint-embedding predictive architecture for financial time series. During training, we construct a leave-one-out market condition for each asset from the future target embeddings of other assets and incorporate it through factor loadings derived from the asset's own representation. On 11 years of minute-level Chinese A-share data, MC-JEPA improves over per-asset JEPA across nine targets spanning returns, market exposure, risk, and liquidity, with the strongest and most statistically significant gains in exposure, risk, and liquidity. It achieves the best RankIC on all liquidity targets and on return horizons from two hours to five days, outperforming time-series foundation models and self-supervised baselines, and delivers the best portfolio performance in a historical backtest. Ablations show that the return and exposure gains require the condition to be aligned with the realized market movement. After restoring the volatility scale removed by normalization, the predictor's factor loadings rank stocks by market beta nearly as well as a supervised probe, without labels. A synthetic factor-model study with known parameters shows that conditioning improves the recovery of both market exposure and the asset-specific component.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.13572",
-        "external_id": "2611.13572"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.13572",
-        "external_id": "2611.13572"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/OpenFinMind/MC-JEPA",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yuqi Wang",
-      "Fengyuan Liu",
-      "Mukai Li",
-      "Haochen Luo",
-      "Lei Li",
-      "Qi Liu"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820650Z",
-    "dedup_keys": [
-      "arxiv:2611.13572",
-      "title:conditioned from jepa learning market market shocks unpredictable",
-      "github:openfinmind/mc-jepa"
-    ],
-    "signals": {
-      "hf_upvotes": 4,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 2,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 25.115,
-    "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "github_stars": 2.197,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "94196951bb17f7c9",
+    "id": "2c2921d1eb769d19",
     "kind": "release",
-    "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-    "summary_en": null,
+    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+    "summary_en": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/qvac/botpsy",
+        "source": "openai",
+        "url": "https://openai.com/index/singapore-airlines-travel-work",
         "external_id": null
       }
     ],
     "actors": [
-      "huggingface"
+      "openai"
     ],
-    "published_at": "2026-11-11T05:01:16Z",
-    "first_seen_at": "2026-11-11T07:19:20.705808Z",
+    "published_at": "2026-11-10T08:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.844558Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/qvac/botpsy",
-      "title:agentic assistant billion botpsy device language model parameter personal sub with"
+      "url:openai.com/index/singapore-airlines-travel-work",
+      "title:airlines elevates openai singapore technology travel with work"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -784,77 +1263,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 23.856,
+    "score": 27.756,
     "score_breakdown": {
       "kind_base": 20.0,
-      "topic_match": 4.0,
-      "age_decay": -0.144
-    }
-  },
-  {
-    "id": "20b70f014edcc651",
-    "kind": "paper",
-    "title": "PhysOPSD: Code as Privilege for Physically Plausible Video Generation",
-    "summary_en": "While modern video generative models achieve remarkable visual fidelity, they remain noticeably brittle when generating physically plausible dynamics and complex interactions. Targeted post-training is crucial, yet supervised fine-tuning suffers from offline state mismatch, and reinforcement learning is hindered by sparse, ill-defined physical reward functions. On-Policy (Self-)Distillation (OPSD) reconciles on-policy rollouts with dense corrective feedback, shifting the core challenge to designing effective privileged context. However, conventional modalities fall short: text prompts are inherently declarative, whereas real reference videos heavily entangle physical laws with visual appearance without parametric control. To this end, we propose PhysOPSD, introducing executable code as privileged physical context for video generation. Unlike static visual observations, executable code instantiates an editable physical world with intrinsic abstraction and controllability. Powered by PhysOPSD-Engine, we translate real-world physical scenarios into verifiable simulation programs. PhysOPSD then incorporates (i) dual-level physical privilege to bridge the information gap via an intermediate bottleneck, alongside (ii) controlled physical variations under shared rollout noise to expose causal dynamic shifts. Extensive experiments demonstrate that PhysOPSD substantially improves physical plausibility across diverse backbones, outperforming SFT and RL baselines with only 3K samples, while preserving general video generation quality.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.12411",
-        "external_id": "2611.12411"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.12411",
-        "external_id": "2611.12411"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/aigc3d/PhysOPSD",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Harold Haodong Chen",
-      "Rui Peng",
-      "Lingteng Qiu",
-      "Kejie Qiu",
-      "Chao Xu",
-      "Zilong Dong"
-    ],
-    "published_at": "2026-11-09T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820603Z",
-    "dedup_keys": [
-      "arxiv:2611.12411",
-      "title:code for generation physically physopsd plausible privilege video",
-      "github:aigc3d/physopsd"
-    ],
-    "signals": {
-      "hf_upvotes": 8,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 23.506,
-    "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -3.458
+      "known_org": 10.0,
+      "age_decay": -2.244
     }
   },
   {
@@ -895,14 +1308,140 @@
       "Kaiyi Jiang"
     ],
     "published_at": "2026-11-09T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820579Z",
+    "first_seen_at": "2026-11-11T19:54:08.525618Z",
     "dedup_keys": [
       "arxiv:2611.13348",
       "title:closed evolution for loop model mutation protein proteus resolved world",
       "github:yikunpku/proteus"
     ],
     "signals": {
-      "hf_upvotes": 8,
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 27.065,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.244
+    }
+  },
+  {
+    "id": "9c594e46806fe024",
+    "kind": "paper",
+    "title": "TorchCurves: Differentiable Parametric Curves",
+    "summary_en": "We present TorchCurves, a PyTorch library that treats vector-valued parametric curves as learnable primitives. Its central operation maps batches of scalar inputs to points on curves represented in B-spline or Legendre polynomial bases, with differentiation through both inputs and coefficients. Curve coefficients can be optimized jointly with the surrounding model or produced by another network. The library provides trainable modules, reusable basis modules, and a functional interface, supporting applications ranging from continuous feature embeddings to Kolmogorov-Arnold networks and functional regression. Its implementation combines classical evaluation algorithms with vectorized PyTorch operations, emphasizing readability and maintainability without custom hardware kernels. Timing experiments compare curve evaluation against NumPy and SciPy and KAN training against EfficientKAN across a range of problem sizes. The results illustrate where this generality remains computationally practical and where overhead is substantial. Library is available on GitHub at https://github.com/alexshtf/torchcurves.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.14516",
+        "external_id": "2611.14516"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.14516",
+        "external_id": "2611.14516"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/alexshtf/torchcurves",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Alex Shtoff"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525875Z",
+    "dedup_keys": [
+      "arxiv:2611.14516",
+      "title:curves differentiable parametric torchcurves",
+      "github:alexshtf/torchcurves"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 70,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.57,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "github_stars": 8.525,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.744
+    }
+  },
+  {
+    "id": "aee953421b341d0b",
+    "kind": "paper",
+    "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
+    "summary_en": "Memory-augmented vision-language-action (VLA) policies are meant to remember what happened. Many of them, however, fill memory by time: they sample frames uniformly across the episode and stamp each frame with its time step. Because time passes even when nothing happens, such a memory may not tell waiting from working. We show that it does not. On the counting tasks of RoboMME, we make the robot briefly pause or fidget its wrist. Such a null event changes nothing the task depends on, yet a released memory VLA counts the interval as work done and stops early. We call this failure phantom progress. It cuts success from 47 to 16 of 50 on one task and from 44 to 10 on the other. When the same frames are withheld from memory, success returns, so the cause lies in memory rather than in the interruption itself. We trace the failure to a temporal shortcut: because demonstrations proceed at a steady pace, elapsed time predicts progress. Indeed, rescaling the time stamps alone makes the policy stop early when the clock runs fast and repeat when it runs slow. Surprisingly, removing the time encoding does not cure the failure, because the frames of a null event still occupy slots of the time-sampled memory. Across RoboMME's released designs, vulnerability follows how memory is indexed. Of the fixes the diagnosis suggests, training with injected pauses does not remove the failure and impairs counting, whereas indexing memory by events recovers half or more of the loss without retraining. A memory meant to remember what happened should count events rather than clock ticks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.14488",
+        "external_id": "2611.14488"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.14488",
+        "external_id": "2611.14488"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/bennidict23/memory-clock",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chubin Zhang",
+      "Bo An"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525724Z",
+    "dedup_keys": [
+      "arxiv:2611.14488",
+      "title:augmented clock just memory memory policies robot shortcuts temporal vla your",
+      "github:bennidict23/memory-clock"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -911,17 +1450,84 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 26.209,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.744
+    }
+  },
+  {
+    "id": "197346d6811eb571",
+    "kind": "paper",
+    "title": "Market-Conditioned JEPA: Learning from Unpredictable Market Shocks",
+    "summary_en": "Much of the variation in financial time series is driven by market-wide shocks that cannot be predicted from an asset's own history. Per-asset self-supervised learning treats this variation as irreducible noise. Under a latent factor model, we show that conditioning prediction on the realized market factor makes the asset's market exposure necessary for optimal prediction, while reducing the noise against which the asset-specific component is learned. Building on this insight, we introduce Market-Conditioned JEPA (MC-JEPA), a joint-embedding predictive architecture for financial time series. During training, we construct a leave-one-out market condition for each asset from the future target embeddings of other assets and incorporate it through factor loadings derived from the asset's own representation. On 11 years of minute-level Chinese A-share data, MC-JEPA improves over per-asset JEPA across nine targets spanning returns, market exposure, risk, and liquidity, with the strongest and most statistically significant gains in exposure, risk, and liquidity. It achieves the best RankIC on all liquidity targets and on return horizons from two hours to five days, outperforming time-series foundation models and self-supervised baselines, and delivers the best portfolio performance in a historical backtest. Ablations show that the return and exposure gains require the condition to be aligned with the realized market movement. After restoring the volatility scale removed by normalization, the predictor's factor loadings rank stocks by market beta nearly as well as a supervised probe, without labels. A synthetic factor-model study with known parameters shows that conditioning improves the recovery of both market exposure and the asset-specific component.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.13572",
+        "external_id": "2611.13572"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.13572",
+        "external_id": "2611.13572"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/OpenFinMind/MC-JEPA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuqi Wang",
+      "Fengyuan Liu",
+      "Mukai Li",
+      "Haochen Luo",
+      "Lei Li",
+      "Qi Liu"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525810Z",
+    "dedup_keys": [
+      "arxiv:2611.13572",
+      "title:conditioned from jepa learning market market shocks unpredictable",
+      "github:openfinmind/mc-jepa"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
       "num_comments": 1,
       "has_code": true,
       "has_weights": false
     },
-    "score": 23.506,
+    "score": 24.329,
     "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "github_stars": 1.386,
+      "hf_upvotes": 12.876,
+      "github_stars": 2.197,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
-      "age_decay": -3.458
+      "topic_match": 4.0,
+      "age_decay": -2.744
     }
   },
   {
@@ -964,7 +1570,7 @@
       "Junchi Yan"
     ],
     "published_at": "2026-11-02T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820529Z",
+    "first_seen_at": "2026-11-11T19:54:08.525646Z",
     "dedup_keys": [
       "arxiv:2611.03142",
       "title:cross depthgraft hierarchical layer reconstruction regularization structural through",
@@ -976,7 +1582,7 @@
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 9,
+      "github_stars": 21,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -984,60 +1590,129 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 23.167,
+    "score": 23.958,
     "score_breakdown": {
       "hf_upvotes": 20.52,
-      "github_stars": 4.605,
+      "github_stars": 6.182,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -13.958
+      "age_decay": -14.744
     }
   },
   {
-    "id": "75a1c8f0e539acf1",
+    "id": "20b70f014edcc651",
     "kind": "paper",
-    "title": "ExRL: Sample-Efficient Online Adaptation of Long-Chunk Policies via Execution Length Control",
-    "summary_en": "Predicting long action chunks, often spanning dozens of timesteps, has become a key ingredient in increasingly capable robot policies. In this paper, we find that adapting these long-chunk policies with existing reinforcement learning (RL) methods can require many online samples due to the high dimensionality of the action chunks being optimized, making such adaptation impractical in real-world scenarios where interaction data are costly to collect. Our key insight is to shift adaptation from optimizing actions to optimizing how long to execute each predicted action chunk. This keeps the adaptation space low-dimensional while its expressivity grows with the chunk size. We thus introduce Execution at the Right Length (ExRL), a simple approach which augments the base policy with a lightweight adapter that predicts the execution length of each chunk and is trained using off-policy RL algorithms. Across simulation benchmarks and real-world robotic tasks, ExRL enables sample-efficient adaptation of a diverse range of long-chunk policies with minimal task-specific hyperparameter tuning.",
+    "title": "PhysOPSD: Code as Privilege for Physically Plausible Video Generation",
+    "summary_en": "While modern video generative models achieve remarkable visual fidelity, they remain noticeably brittle when generating physically plausible dynamics and complex interactions. Targeted post-training is crucial, yet supervised fine-tuning suffers from offline state mismatch, and reinforcement learning is hindered by sparse, ill-defined physical reward functions. On-Policy (Self-)Distillation (OPSD) reconciles on-policy rollouts with dense corrective feedback, shifting the core challenge to designing effective privileged context. However, conventional modalities fall short: text prompts are inherently declarative, whereas real reference videos heavily entangle physical laws with visual appearance without parametric control. To this end, we propose PhysOPSD, introducing executable code as privileged physical context for video generation. Unlike static visual observations, executable code instantiates an editable physical world with intrinsic abstraction and controllability. Powered by PhysOPSD-Engine, we translate real-world physical scenarios into verifiable simulation programs. PhysOPSD then incorporates (i) dual-level physical privilege to bridge the information gap via an intermediate bottleneck, alongside (ii) controlled physical variations under shared rollout noise to expose causal dynamic shifts. Extensive experiments demonstrate that PhysOPSD substantially improves physical plausibility across diverse backbones, outperforming SFT and RL baselines with only 3K samples, while preserving general video generation quality.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.12411",
+        "external_id": "2611.12411"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.12411",
+        "external_id": "2611.12411"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/aigc3d/PhysOPSD",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Harold Haodong Chen",
+      "Rui Peng",
+      "Lingteng Qiu",
+      "Kejie Qiu",
+      "Chao Xu",
+      "Zilong Dong"
+    ],
+    "published_at": "2026-11-09T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525674Z",
+    "dedup_keys": [
+      "arxiv:2611.12411",
+      "title:code for generation physically physopsd plausible privilege video",
+      "github:aigc3d/physopsd"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 23.531,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.244
+    }
+  },
+  {
+    "id": "18d67370ce4a9110",
+    "kind": "paper",
+    "title": "LEASH: Stay Safe in Agentic Robotics",
+    "summary_en": "Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path toward artificial general intelligence in robotics. However, we find that using foundation models to control robots poses serious safety risks, and comprehensive safety evaluation is still lacking. We introduce RoboRisk, a comprehensive benchmark for evaluating safety in agentic robotics. Its 92 simulated tasks and 13 physical-robot tasks fall into five categories: Task-level Refusal (T), Plan Repair (P), Execution-time Hazard (E), Injection (I), and Sequential Memory (S). Prior benchmarks cover at most two of these categories, and several evaluate only text outputs. In contrast, RoboRisk covers all five and executes every task in closed loop. We evaluate six state-of-the-art foundation models on RoboRisk: GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, Claude Opus 5.5, Gemini 4 Argon, and Grok 4.7. These models generally show high harm rates. We also evaluate two robot-specific APIs: the Dream API and PokeBot's RoboAPI. We further propose the Lease-Enforced Agentic Safety Harness (LEASH), which offers essential safety infrastructure for agentic robotics and can be integrated into nearly any agentic architecture. LEASH leverages a decision model (Jev or OpenAI's Decisions API) to implement task, action, and commit gates, which review the task, each action, and each irreversible operation in their visual context. The planner and all three gates share a common safety policy. Experiments on RoboRisk in simulation and on physical robots show that LEASH effectively reduces harm across all six foundation models. It largely preserves their task completion performance and adds little time and token overhead.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
       "robotics",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.13482",
-        "external_id": "2611.13482"
+        "url": "https://huggingface.co/papers/2611.14115",
+        "external_id": "2611.14115"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.13482",
-        "external_id": "2611.13482"
+        "url": "https://arxiv.org/abs/2611.14115",
+        "external_id": "2611.14115"
       },
       {
         "source": "github",
-        "url": "https://github.com/Frankluox/ExRL",
+        "url": "https://github.com/zhuqinfeng1999/LEASH",
         "external_id": null
       }
     ],
     "actors": [
-      "Xu Luo",
-      "Jiaying Yang",
-      "Hao Wu",
-      "Junlin Xie",
-      "Zijin Hong",
-      "Ji Zhang",
-      "Lianli Gao",
-      "Jingkuan Song"
+      "Qinfeng Zhu",
+      "Weiguang Zhao",
+      "Ke Sun",
+      "Xihao Guo",
+      "Yunxi Jiang",
+      "Rui Zhang",
+      "Lei Fan",
+      "Kaizhu Huang"
     ],
     "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820674Z",
+    "first_seen_at": "2026-11-11T19:54:08.525782Z",
     "dedup_keys": [
-      "arxiv:2611.13482",
-      "title:adaptation chunk control efficient execution exrl length long online policies sample via",
-      "github:frankluox/exrl"
+      "arxiv:2611.14115",
+      "title:agentic leash robotics safe stay",
+      "github:zhuqinfeng1999/leash"
     ],
     "signals": {
       "hf_upvotes": 4,
@@ -1049,129 +1724,57 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 4,
       "has_code": true,
       "has_weights": false
     },
-    "score": 20.304,
+    "score": 23.518,
     "score_breakdown": {
       "hf_upvotes": 12.876,
       "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
-      "age_decay": -1.958
+      "topic_match": 4.0,
+      "age_decay": -2.744
     }
   },
   {
-    "id": "b67be93ea5d9377d",
+    "id": "546335948145c24e",
     "kind": "paper",
-    "title": "EVAThink: Evidence Sufficiency-Guided Training for Adaptive Thinking in Video Understanding",
-    "summary_en": "Under a fixed frame budget, video understanding with vision-language models (VLMs) depends on whether the sampled frames provide sufficient evidence for the question. Sufficient frame evidence supports direct answering, whereas less informative observations may benefit from reasoning that connects the available cues. We introduce EVAThink, which enhances video understanding through evidence sufficiency-guided training for adaptive thinking. First, Recoverable Evidence Gap Mining constructs evidence-dense and evidence-sparse video views that share the same question and answer under an identical frame budget. It retains pairs where sparse views yield lower direct-answer accuracy than dense views but benefit from explicit reasoning, providing supervision for response-mode selection. Second, Evidence-Guided Two-Stage Reinforcement Learning uses stage-specific rewards to guide training with evidence-based mode preferences and then refine response efficiency, while first-token advantage regularization mitigates mode collapse. Trained on only 6.7K curated samples, EVAThink consistently improves upon the base model across video understanding benchmarks under both 32- and 64-frame budgets, while outperforming strong baselines on average. The code, model, and datasets are available at https://github.com/ChangtiWu/EVAThink{EVAThink}.",
+    "title": "Sable: A Small-Field Sumcheck Argument for Bit-Exact Inference of Large Language Models",
+    "summary_en": "We present Sable, an argument system and single-GPU prover for the statement that a committed, integer-quantized transformer produced a given token sequence from a given prompt, bit for bit. Sable fixes an integer function F_O with no floating-point step, in which every rounding, normalization, softmax and sampling decision is determined by its inputs, and proves it with a constraint system whose relations provably never wrap modulo the 31-bit KoalaBear prime. The proof batches zerochecks and LogUp-GKR lookups into one sumcheck per domain, and commits to every witness tensor and weight in one multilinear commitment built from Reed-Solomon codes, BLAKE3 Merkle trees and a mixed-length BaseFold opening. The prover streams the model layer by layer on one GPU. On one NVIDIA RTX PRO 6000 Blackwell GPU, Sable proves all 64 layers of Qwen2.5-32B in 92.5 s for 4,096 tokens and 398 s for 16,384 tokens, and covers Qwen3-32B and the mixture-of-experts Qwen3-30B-A3B (4,096 tokens in 121.8 and 84.7 s). A proof costs 41 to 50 times the serving time, or 6.4 cents per 4,096-token request at public GPU prices, and 40 to 64 times less time per parameter and token than zkLLM. On WikiText-2, F_O's greedy token matches the BF16 model's at 86.3% of positions; on Qwen3, F_O is within 1.6 points of BF16 on MMLU and 1.7 points on GSM8K. A verifier with a compiled core checks a proof on one CPU core in 19 to 56 s. In the random-oracle model, the interactive proof has round-by-round soundness error 2^-103. The proof is not zero-knowledge, so the system targets open-weight models. Code: https://github.com/moonmath-ai/Sable",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "rag",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.13907",
-        "external_id": "2611.13907"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.13907",
-        "external_id": "2611.13907"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/ChangtiWu/EVAThink",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Changti Wu",
-      "Ruizhe Fan",
-      "Bin Wang",
-      "Lei Zhang",
-      "Yuxiang Zhang"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820812Z",
-    "dedup_keys": [
-      "arxiv:2611.13907",
-      "title:adaptive evathink evidence for guided sufficiency thinking training understanding video",
-      "github:changtiwu/evathink"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 20.217,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "e3f372925fb32128",
-    "kind": "paper",
-    "title": "Learning to Act with World Models by Valuing What Comes Next",
-    "summary_en": "A sparse terminal reward tells an agent little about its steps. Much of the missing information is implicit in the environment's dynamics, because each state transition can change the conditions for success long before the reward arrives. A world model trained on real transitions can learn to predict what each action changes, but a predicted observation does not by itself show whether success has become more likely. With a binary terminal reward, PPO's critic makes this judgment by estimating the current policy's probability of success, but only for states the agent reaches. Our method, WM-PPO, elegantly brings the two together. For each action the policy samples, executed or not, the world model predicts the next observation and the critic values the predicted successor. In the policy channel, comparisons among these values give the policy auxiliary advantages; in the value channel, their mean gives the critic an auxiliary target. A shared gate weights both channels according to how reliably comparisons with similar margins predicted real outcomes earlier in training. The policy, critic and world model all learn from the agent's own interaction, with no teacher or privileged information, and only the policy is used at inference. With a comparable number of real environment steps, WM-PPO raises success from PPO's 63.5% to 87.5% on ALFWorld and from 39.3% to 52.9% on ScienceWorld. It matches the strongest PPO refinements we tested on ALFWorld and exceeds the best of them by 6.5 points on ScienceWorld. The trained policy more often completes prerequisite steps before placing an object or committing to an answer.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
       "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.12200",
-        "external_id": "2611.12200"
+        "url": "https://huggingface.co/papers/2611.14083",
+        "external_id": "2611.14083"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.12200",
-        "external_id": "2611.12200"
+        "url": "https://arxiv.org/abs/2611.14083",
+        "external_id": "2611.14083"
       },
       {
         "source": "github",
-        "url": "https://github.com/nuskonghou/wm-ppo",
+        "url": "https://github.com/moonmath-ai/Sable",
         "external_id": null
       }
     ],
     "actors": [
-      "Chenghao Gao",
-      "Zhi Zhang",
-      "Dian Jin",
-      "Yihe Pan",
-      "Doudou Zhou"
+      "Tomer Solberg"
     ],
-    "published_at": "2026-11-09T10:59:19Z",
-    "first_seen_at": "2026-11-11T07:19:18.820834Z",
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-11T19:54:08.525889Z",
     "dedup_keys": [
-      "arxiv:2611.12200",
-      "title:act comes learning models next valuing what with world",
-      "github:nuskonghou/wm-ppo"
+      "arxiv:2611.14083",
+      "title:argument bit exact field for inference language large models sable small sumcheck",
+      "github:moonmath-ai/sable"
     ],
     "signals": {
       "hf_upvotes": 2,
@@ -1179,7 +1782,7 @@
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 1,
+      "github_stars": 14,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1187,608 +1790,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 19.404,
+    "score": 23.461,
     "score_breakdown": {
       "hf_upvotes": 8.789,
-      "github_stars": 1.386,
+      "github_stars": 5.416,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.771
-    }
-  },
-  {
-    "id": "04d0c5bc36bdc3e8",
-    "kind": "paper",
-    "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
-    "summary_en": "Weight-space programming, introduced in recent MIT work by Takehi et al., enables a frontier LLM agent to read a network's weights and write a repair. Their GPT-6 Astra agent corrected the reasoning loops of Qwen3.5-0.8B without gradients, using 158 agent turns, 89.7 million tokens, and 50 forward-pass requests. Our method, Tree-Ising, casts this repair as a sparse discrete optimization problem over the model's own BF16 weights. Forward statistics define an objective that weakens a loop direction, strengthens a concluding direction, and preserves the layer's output on productive tokens. Within a state-tree representation, where lossless BF16 storage acts as a special case, the admissible edits are sign flips and exponent shifts that preserve all shared group exponents and mantissas. We decompose this objective exactly into independent QUBO (Ising) problems, one per output row, which we solve on a GPU using simulated annealing or quantum-inspired simulated bifurcation. On the agent's two layers, Tree-Ising achieves 54.6% on MATH-500, outperforming the agent's edit (51.7%) under the same evaluation protocol, while the base model scores 7.9% as reported. The simulated bifurcation solver yields a statistically indistinguishable repair at 55.1%. Both solvers outperform the agent edit across all five math benchmarks, with statistically significant improvements on MATH-500 and GSM8K after correcting for multiple comparisons. Our approach modifies 13% to 17% fewer weights and reduces BF16 bit flips by a factor of 2.2 to 2.3. It requires only four forward-pass requests and zero LLM tokens, with the annealing recipe costing about $0.90 in GPU time. On Qwen3.5-2B, with layers and dose selected using only the base model, the same recipe increases greedy GSM8K accuracy from 21.6% to 69.4%. As a proof of concept, we execute an eight-variable repair subproblem using QAOA on an IBM Heron processor.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.14210",
-        "external_id": "2611.14210"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.14210",
-        "external_id": "2611.14210"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/TheQuantumGOAT/Tree-Ising",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Hadi Salloum",
-      "Ammar Ali"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820789Z",
-    "dedup_keys": [
-      "arxiv:2611.14210",
-      "title:bit edits ising ising language level models repairing tree with",
-      "github:thequantumgoat/tree-ising"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 18.831,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "27ab7ad1b8600c43",
-    "kind": "paper",
-    "title": "Are Dense Rewards Worth Their Tokens in GRPO?",
-    "summary_en": "RLVR trains language models to reason by rewarding correct final answers. A widely used algorithm, group-relative policy optimization (GRPO), gives every token of a solution the same credit, so dense process rewards have been proposed to credit intermediate steps, for example with a Monte-Carlo reward that scores each step by sampling continuations from it. Comparing such a reward with GRPO per training update, or vetting it with a gradient test on a single batch, leaves out what it costs: in our setting, the continuations alone take 91% of all generated tokens. We introduce a matched-compute protocol that gives every training intervention the same budget, measured in generated tokens and training GPU-hours, and tests it in preregistered studies with controls for side effects. Across 1,668 runs on six models, matching compute reverses the ranking. On Qwen2.5-1.5B, the Monte-Carlo reward leads standard GRPO per update, yet ends 14.3 percentage points lower at equal tokens and 7.8 points lower at equal training time, and none of four dense-reward variants outperforms GRPO even with as much training time. A per-token gradient test orders these rewards as training does but overestimates each by one to two points, as much as the gains it is meant to detect. In contrast, training on the prompts whose predicted success is nearest 1/2 improves accuracy at matched compute, by 1.7 points on Qwen3-0.6B and 0.8 on Qwen2.5-1.5B. These gains replicate on fresh seeds and unseen problems, and a simple rule, that the candidate prompts are predicted to fail more often than not, predicted where they appear in five of six preregistered tests. Both gains come early in training, and standard GRPO with twice the initial learning rate comes within half a point of them. We argue that training interventions should be validated at matched compute, which overturns some apparent gains and confirms others.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.13560",
-        "external_id": "2611.13560"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.13560",
-        "external_id": "2611.13560"
-      }
-    ],
-    "actors": [
-      "Vikash Singh",
-      "Weicong Chen",
-      "Debargha Ganguly",
-      "Yanyan Zhang",
-      "Mohsen Hariri",
-      "Sreehari Sankar",
-      "Wang Yang",
-      "Chaoda Song",
-      "Alexander Nemecek",
-      "Osama Zafar",
-      "Yuting Shao",
-      "Kai Ye",
-      "Biyao Zhang",
-      "Xinpeng Li",
-      "Shouren Wang",
-      "Erman Ayday",
-      "Jing Ma",
-      "Sanmukh Rao Kuppannagari",
-      "Vipin Chaudhary"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820721Z",
-    "dedup_keys": [
-      "arxiv:2611.13560",
-      "title:are dense grpo rewards their tokens worth"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 18.132,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "bfa579075d7d2b20",
-    "kind": "release",
-    "title": "Decision Models in Hugging Face",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/decision",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:20.705931Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/decision",
-      "title:decision face hugging models"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 18.042,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "2ddea35a0108a42c",
-    "kind": "release",
-    "title": "Pay for Hugging Face Hub with your Google Cloud Account",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/hub-gcp-marketplace",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:20.705874Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/hub-gcp-marketplace",
-      "title:account cloud face for google hub hugging pay with your"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 18.042,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -1.958
-    }
-  },
-  {
-    "id": "6b64a0010b99b2aa",
-    "kind": "paper",
-    "title": "Predictive Surprise as Self-Grounding Concept Bottleneck for Interpretable Time Series",
-    "summary_en": "Time-series classifiers deployed in risk-sensitive domains must be (1) accurate, (2) interpretable, and (3) able to abstain when evidence is weak. Existing methods do not deliver all 3 at once, and the obstacle is structural, rather than logistical. Meaningful temporal patterns cannot be defined without knowing segment boundaries, yet meaningful boundaries cannot be placed without knowing which patterns to expect. Existing approaches break this circularity by using fixed windows or expert-annotated vocabularies, thereby sacrificing at least one of the 3 properties. We introduce ConceptTime, which closes the loop through a single self-supervised signal. A frozen probabilistic forecaster predicts a distribution over the next observation at every timestep of the sequence. We call the mismatch between its prediction and the realized signal the predictive surprise. This signal both locates segment boundaries and characterizes each resulting segment through the forecaster. Segments are thus grounded by how they behaved relative to expectation, not by what they look like. These summaries cluster into a vocabulary of dynamical regimes that we call concepts. A lightweight head classifies from the concept sequence, and the distance to the nearest concept yields reliability by design. Across 17 public benchmarks, ConceptTime is competitive with state-of-the-art black-box accuracy, beats every interpretable baseline, and retains near-98% accuracy on Epilepsy with 1% of labels. It further remains competitive with softmax, prototype-distance, and SHAP/TimeX/TimeX++ on OOD detection and deletion faithfulness, without a single annotation, language model call, or domain expert. Code is available at: https://github.com/Sachithx/ConceptTime.git.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.12955",
-        "external_id": "2611.12955"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.12955",
-        "external_id": "2611.12955"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Sachithx/ConceptTime",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Sachith Abeywickrama",
-      "Emadeldeen Eldele",
-      "Min Wu",
-      "Xiaoli Li",
-      "Chau Yuen"
-    ],
-    "published_at": "2026-11-07T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820746Z",
-    "dedup_keys": [
-      "arxiv:2611.12955",
-      "title:bottleneck concept for grounding interpretable predictive self series surprise time",
-      "github:sachithx/concepttime"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 18.018,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -6.458
-    }
-  },
-  {
-    "id": "798c2ba2508a316d",
-    "kind": "paper",
-    "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
-    "summary_en": "While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose questions on curated images or give agents preprocessed inputs, leaving out the raw multi-sensor archives where such analysis begins. We introduce EarthRecord, a benchmark built on the raw record of 56 sites: four decades of Landsat, MODIS, VIIRS, and Sentinel-2 data, with cloud masking and cross-sensor harmonization left to the agent. It poses 238 land-change questions across ten analysis tasks, scored against withheld references from global products, agreement among methods, and visual interpretation. Two controls test what answers rest on: the closed book removes the record, and instrument pairs alter one satellite's data while nothing changes on the ground. Evaluations of twelve multimodal agents reveal that leading agents complete most analyses end to end but falter when an answer requires mapping from imagery. Further analysis shows that the record moves answers from prior knowledge to the pixels but not yet to the real change on the ground: when one satellite's data are altered, half of the right answers follow the alteration. EarthRecord thus provides a principled platform for measuring and advancing agents from pixels to land change.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.12934",
-        "external_id": "2611.12934"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.12934",
-        "external_id": "2611.12934"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/ranranrannervous/EarthRecord",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Haoran Zhang",
-      "Huizhen Sun",
-      "Hanbin Wen",
-      "Jie Leng",
-      "Jiaxin Zhu",
-      "Zhaohua Sun"
-    ],
-    "published_at": "2026-11-06T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820699Z",
-    "dedup_keys": [
-      "arxiv:2611.12934",
-      "title:agents change decades earthrecord four from imagery land multimodal over pixels satellite with",
-      "github:ranranrannervous/earthrecord"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 15.132,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -7.958
-    }
-  },
-  {
-    "id": "107d750beb1376b3",
-    "kind": "paper",
-    "title": "WaveGen: Truly End-to-End Waveform Generation via Internal Spectral Trajectory Learning",
-    "summary_en": "This work proposes WaveGen, a fully end-to-end diffusion-based text-to-waveform framework based on Spectral Forcing, which jointly learns an internal spectral trajectory and the target waveform trajectory within a single model, enabling direct end-to-end text-to-waveform generation. Unlike recent TTS pipelines, WaveGen does not rely on separately trained or externally decoded intermediate representations, such as neural audio codecs, Mel-spectrogram vocoders, or VAE-based latent models. In addition, WaveGen performs internal text-speech alignment within a single model, eliminating the need for external alignment modules such as duration predictors. To preserve a truly end-to-end formulation, our framework further avoids dependence on self-supervised representations, such as BERT-based text embeddings and Wav2Vec 2.0-based semantic representations, as well as semantic distillation methods for training optimization. To achieve this, we carefully design Spectral Forcing, a model architecture with disentangled diffusion heads, and a training objective based on a multi-scale spectral v-loss. We further validate the scalability of end-to-end TTS models by scaling the model size from 0.1B to 0.6B parameters. Using a single architecture, open-source data, and one-stage training, without external modules such as duration predictor or REPA, WaveGen demonstrates fully end-to-end waveform generation achieving state-of-the-art performance on the Emilia training dataset. In particular, WaveGen achieves a WER of 1.47 and a SIM of 0.75 on the Seed-en benchmark. Source code and checkpoints are available at https://github.com/sh-lee-prml/WaveGen",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv",
-      "speech",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.12527",
-        "external_id": "2611.12527"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.12527",
-        "external_id": "2611.12527"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/sh-lee-prml/WaveGen",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Sang-Hoon Lee",
-      "Ha-Yeong Choi"
-    ],
-    "published_at": "2026-11-09T15:02:29Z",
-    "first_seen_at": "2026-11-11T07:19:18.820896Z",
-    "dedup_keys": [
-      "arxiv:2611.12527",
-      "title:end end generation internal learning spectral trajectory truly via waveform wavegen",
-      "github:sh-lee-prml/wavegen"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 11,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 14.452,
-    "score_breakdown": {
-      "github_stars": 4.97,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.518
-    }
-  },
-  {
-    "id": "0868cffd8752a366",
-    "kind": "paper",
-    "title": "Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning",
-    "summary_en": "Reinforcement learning (RL) can improve an agent's task capability while reinforcing behavior that violates contextual execution requirements. We study this reward-driven misalignment, including reward hacking, through verifiable reward--context conflicts, where compliant task completion remains feasible while some executable shortcuts earn more reward than every compliant strategy. Encoding these conflicts in task dynamics lets us generate diverse interactive environments at scale and derive compliance feedback from execution histories. In resource and reporting workflows, task optimization increases real productivity through unauthorized resource use or raises reported scores while actual work declines. Controlled changes in the training distribution show that minority conflict exposure can still lead to widespread shortcut acquisition, reaching 97.9\\% certified profitable violations on an API task under a 25\\% conflict mixture after 128 updates. The same contextual checks supply a simple binary penalty that supports joint capability and compliance gains and partially mitigates acquired violations. Learned safety adapts to expanded authorization and transfers across mechanisms into workflows with evolving evidence and approval requirements. On 32 unseen changing-evidence tasks, resource-trained safety increases safe completion from 53.1\\% to 89.1\\% relative to task-only training, while both policies achieve full real work. These results connect a verifiable account of reward-driven misalignment with scalable task construction and safety learning that remains useful under changing execution requirements.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.12865",
-        "external_id": "2611.12865"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.12865",
-        "external_id": "2611.12865"
-      }
-    ],
-    "actors": [
-      "Xinjie Shen"
-    ],
-    "published_at": "2026-11-09T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820766Z",
-    "dedup_keys": [
-      "arxiv:2611.12865",
-      "title:and and boundaries contextual learning misalignment safety shortcuts verifiable"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 14.331,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.458
-    }
-  },
-  {
-    "id": "774e93c08d10ff22",
-    "kind": "paper",
-    "title": "FINCOSMOS: An Open-World Evaluation Paradigm for Agents in Finance",
-    "summary_en": "Language agents increasingly work for users on the open Web, and finance is where trusting them is hardest. The data must come from the Web, the strategy lives in the user's head, and correctness depends on time, so an agent can fail silently: a strategy the user never asked for, unverified data, or a backtest that uses the future yields a report as convincing as a correct one. Existing benchmarks close the world somewhere, fixing the task, the data, or the timeline, and thereby remove these failures instead of measuring them. We introduce FINCOSMOS, an open-world evaluation paradigm for agents doing financial work. A simulated user holds a hidden strategy sampled from a compositional grammar and reveals it only when asked. The agent receives no data, so it must acquire data from the Web, build its own backtest under a data cutoff, and deliver verifiable results. Grading needs no reference answer. Programs verify point-in-time correctness and recompute every reported metric, the delivered strategy is checked against the hidden specification, and a run is accepted only when the user is satisfied and none of 15 veto checks fails. Across four coding agents and a model without tools in 150 sessions, no session is accepted: every session that the simulated user signed off fails a program check, and agents raise only 54--64\\% of the details they were not told. Human experts attribute 88.33\\% of failures to the agents. With FINCOSMOS feedback, an agent with persistent memory learned all ten tasks.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.07464",
-        "external_id": "2611.07464"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.07464",
-        "external_id": "2611.07464"
-      }
-    ],
-    "actors": [
-      "Yupeng Cao",
-      "Xueqing Peng",
-      "Lingfei Qian",
-      "Haohang Li",
-      "Yangyang Yu",
-      "Anke Xu",
-      "Wenbo Cao",
-      "Yan Wang",
-      "Yuechen Jiang",
-      "Yuyan Wang",
-      "Zhuohan Xie",
-      "Yankai Chen",
-      "Zehan Li",
-      "Jimin Huang",
-      "Xue Liu",
-      "Jian-Yun Nie",
-      "Sophia Ananiadou"
-    ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.820856Z",
-    "dedup_keys": [
-      "arxiv:2611.07464",
-      "title:agents evaluation finance fincosmos for open paradigm world"
-    ],
-    "signals": {
-      "hf_upvotes": 1,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 5.087,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -9.458
-    }
-  },
-  {
-    "id": "2580dfab938cf2ed",
-    "kind": "paper",
-    "title": "From Relevant Posts to Attributable Spans: Explicit Symptom Evidence for Depression Questionnaire Inference",
-    "summary_en": "Longitudinal social-media histories offer an opportunity to assess depression, potentially supporting the inference of standardized depression questionnaire responses. However, this task requires evidence that is semantically relevant to a symptom and attributable to the user, while being sufficiently specific to support an individual questionnaire item. Existing approaches rely on semantic similarity to retrieve posts, which can introduce misleading or non-attributable evidence, particularly in multi-symptom posts and discussions of others' experiences. We propose SREE (Symptom Retrieval and Evidence-Grounded InfErence), an evidence-grounded pipeline that extracts first-person and symptom-specific text spans, selects a representative subset using a Facility Location-inspired objective, and performs Evidence-Gated Inference over the selected evidence. We evaluate evidence retrieval on BDI-Sen and evidence-conditioned questionnaire inference on eRisk 2019-2021. Compared with state-of-the-art retrieval approaches, SREE achieves relative improvements of 70% in post-level precision and 59% in F1, while retaining at least 30% fewer posts. On multi-symptom sentences, it also outperforms dense retrieval in precision and F1 even with twice the retrieval budget. Across all three eRisk collections, SREE achieves the highest exact item-level agreement while remaining competitive on ordinal and aggregate metrics. These results highlight the importance of localizing attributable evidence and controlling its composition before inferring depression questionnaire responses.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.12900",
-        "external_id": "2611.12900"
-      }
-    ],
-    "actors": [
-      "Sumanth Manduru",
-      "Carlotta Domeniconi"
-    ],
-    "published_at": "2026-11-11T05:00:00Z",
-    "first_seen_at": "2026-11-11T07:19:18.795761Z",
-    "dedup_keys": [
-      "arxiv:2611.12900",
-      "title:attributable depression evidence explicit for from inference posts questionnaire relevant spans symptom"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.855,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.145
+      "age_decay": -2.744
     }
   }
 ]
