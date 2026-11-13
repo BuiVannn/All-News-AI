@@ -3,13 +3,14 @@
     "id": "55cc869f025efe49",
     "kind": "model",
     "title": "thinkingmachines/Inkling-2-Small",
-    "summary_en": "image-text-to-text, transformers, inkling2, conversational, moe, endpoints_compatible, 8-bit",
+    "summary_en": "image-text-to-text, transformers, inkling2, conversational, moe, eval-results, endpoints_compatible",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
       "multimodal",
-      "cv"
+      "cv",
+      "eval"
     ],
     "links": [
       {
@@ -22,15 +23,15 @@
       "thinkingmachines"
     ],
     "published_at": "2026-11-04T19:51:05Z",
-    "first_seen_at": "2026-11-13T07:26:52.424524Z",
+    "first_seen_at": "2026-11-13T20:07:31.190615Z",
     "dedup_keys": [
       "hf:thinkingmachines/inkling-2-small"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 145,
-      "hf_downloads": 12,
-      "hf_trending_score": 144.0,
+      "hf_likes": 219,
+      "hf_downloads": 1064,
+      "hf_trending_score": 210.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -40,15 +41,15 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 55.216,
+    "score": 66.716,
     "score_breakdown": {
-      "hf_trending": 29.86,
-      "hf_downloads": 5.13,
-      "hf_likes": 14.951,
+      "hf_trending": 32.111,
+      "hf_downloads": 13.941,
+      "hf_likes": 16.181,
       "has_weights": 4.0,
       "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -12.725
+      "age_decay": -13.517
     }
   },
   {
@@ -72,15 +73,15 @@
       "higurashi-ai"
     ],
     "published_at": "2026-11-12T11:05:59Z",
-    "first_seen_at": "2026-11-13T07:26:52.424950Z",
+    "first_seen_at": "2026-11-13T20:07:31.190966Z",
     "dedup_keys": [
       "hf:higurashi-ai/haru-4b"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 48,
-      "hf_downloads": 0,
-      "hf_trending_score": 47.0,
+      "hf_likes": 117,
+      "hf_downloads": 165,
+      "hf_trending_score": 112.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -90,12 +91,13 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 37.63,
+    "score": 54.836,
     "score_breakdown": {
-      "hf_trending": 23.227,
-      "hf_likes": 11.675,
+      "hf_trending": 28.364,
+      "hf_downloads": 10.224,
+      "hf_likes": 14.312,
       "has_weights": 4.0,
-      "age_decay": -1.272
+      "age_decay": -2.064
     }
   },
   {
@@ -134,82 +136,111 @@
       "Xinchao Wang"
     ],
     "published_at": "2026-11-11T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440581Z",
+    "first_seen_at": "2026-11-13T20:07:31.192784Z",
     "dedup_keys": [
       "arxiv:2611.15777",
       "title:and arena benchmarking capability models one reliability spectrum system the",
       "github:holdrain/so-arena"
     ],
     "signals": {
-      "hf_upvotes": 15,
+      "hf_upvotes": 72,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 9,
+      "github_stars": 24,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 35.32,
+    "score": 48.504,
     "score_breakdown": {
-      "hf_upvotes": 22.181,
-      "github_stars": 4.605,
+      "hf_upvotes": 34.324,
+      "github_stars": 6.438,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.466
+      "age_decay": -4.258
     }
   },
   {
-    "id": "c7e59ff52e5e6bd5",
-    "kind": "release",
-    "title": "Microsoft Research Focus – Edition #98",
-    "summary_en": "What's new in research at Microsoft? Host Anson Ho explores the latest, including AI-powered universal translation, a breakthrough in a 31-year-old mathematics challenge, and advances making AI coding agents faster and more efficient. The post Microsoft Research Focus – Edition #98 appeared first on Microsoft Research .",
+    "id": "c140fcd2e77454b8",
+    "kind": "paper",
+    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+    "summary_en": "Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs, and controlled variations are difficult to obtain. Large language models (LLMs) possess physical knowledge, but struggle to reliably guide video generation models in producing their training videos. We present PhysLoop, a unified harness designed to support physically grounded self-improvement in video generation models. The harness guides and constrains LLMs throughout video generation, selection, and correction, distilling their physical knowledge into physically consistent videos. The framework supports controllable training-data construction and inference-time video repair. By identifying and correcting failures, PhysLoop marks a key milestone toward recursive self-improvement (RSI) in video generation models with limited human intervention. We release 100K videos spanning diverse, realistic indoor and outdoor scenes, along with generation tools and two evaluation datasets: PhysLoop-Gen and PhysLoop-Repair. We evaluate controllable generation and localized repair on these datasets, respectively, and assess physical behavior on the external Physics-IQ Verified benchmark.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent"
+      "llm",
+      "cv",
+      "eval",
+      "infra"
     ],
     "links": [
       {
-        "source": "microsoft_research",
-        "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.16748",
+        "external_id": "2611.16748"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.16748",
+        "external_id": "2611.16748"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/DAGroup-PKU/PhysLoop",
         "external_id": null
       }
     ],
     "actors": [
-      "microsoft_research"
+      "Yuxuan Chen",
+      "Xiaojie Li",
+      "Hao Chen",
+      "Juncheng Ma",
+      "Kewei Zhang",
+      "Zhongjing Du",
+      "Guoqiang Wei",
+      "Fangfang Wang",
+      "Zhen Dong",
+      "Zhiyang Dou",
+      "Liming Zhao",
+      "Yan Zeng",
+      "Jianwei Zhang",
+      "Daquan Zhou"
     ],
-    "published_at": "2026-11-12T21:31:57Z",
-    "first_seen_at": "2026-11-13T07:26:54.588078Z",
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.192898Z",
     "dedup_keys": [
-      "url:microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98",
-      "title:edition focus microsoft research"
+      "arxiv:2611.16748",
+      "title:awareness for generation harnessing improving llms models physics physloop self video",
+      "github:dagroup-pku/physloop"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 41,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
+      "is_daily_paper": true,
+      "github_stars": 32,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
+      "num_comments": 2,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 33.38,
+    "score": 46.136,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
+      "hf_upvotes": 29.901,
+      "github_stars": 6.993,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -0.62
+      "age_decay": -2.758
     }
   },
   {
@@ -254,265 +285,34 @@
       "Yongliang Shen"
     ],
     "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440603Z",
+    "first_seen_at": "2026-11-13T20:07:31.192990Z",
     "dedup_keys": [
       "arxiv:2611.17167",
       "title:actor agents decision horizon judge long models teacher understanding",
       "github:zju-real/decision-agents"
     ],
     "signals": {
-      "hf_upvotes": 12,
+      "hf_upvotes": 29,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 3,
+      "github_stars": 41,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 33.327,
+    "score": 43.927,
     "score_breakdown": {
-      "hf_upvotes": 20.52,
-      "github_stars": 2.773,
+      "hf_upvotes": 27.21,
+      "github_stars": 7.475,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.966
-    }
-  },
-  {
-    "id": "886ff6bb278ee9f2",
-    "kind": "release",
-    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-    "summary_en": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/business/customer-stories/amplitude",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-12T20:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.768383Z",
-    "dedup_keys": [
-      "url:openai.com/business/customer-stories/amplitude",
-      "title:amplitude days how improvements openai product ships with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 33.284,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.716
-    }
-  },
-  {
-    "id": "0c69de8e90e7f15d",
-    "kind": "paper",
-    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
-    "summary_en": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two complementary criteria: (i) world preservation, retaining prescribed 4D kinematics and camera paths; and (ii) visual realization, persistently binding text-specified target attributes over time. To evaluate this capability, we introduce WorldDraft, a benchmark of 432 strictly paired test cases across 48 executable 4D world families spanning six dynamic challenge categories. Under a 3 times 3 factorial design, WorldDraft orthogonally crosses draft granularity (abstract proxy to previs) and appearance alignment (neutral to conflicting) under identical dynamics. Extensive evaluations across 12 representative models reveal that: (I) world preservation and visual realization remain in stark operational tension; (II) richer draft scaffolding anchors structure but paradoxically impairs appearance fidelity; and (III) conflicting source cues trigger severe source leakage (up to 64%), exposing fragile cross-modal disentanglement. To mitigate these bottlenecks, we propose WorldDraft-Primer, a plug-and-play visual prompting strategy that consistently improves both objectives across frozen video renderers. Together, WorldDraft and WorldDraft-Primer lay a foundation for bridging programmatic 4D simulation with video generation, advancing physically grounded generative rendering.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "rag",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.16217",
-        "external_id": "2611.16217"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.16217",
-        "external_id": "2611.16217"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/KevinHuge/WorldDraft",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Zhiyu Hou",
-      "Wen-Jie Shu",
-      "Harold Haodong Chen",
-      "Weilin Ruan",
-      "Chenfei Liao",
-      "Liuzhou Zhang",
-      "Disen Lan",
-      "Xiaogang Xu",
-      "Qi Chen",
-      "Ser-Nam Lim"
-    ],
-    "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440622Z",
-    "dedup_keys": [
-      "arxiv:2611.16217",
-      "title:builds can code just models render the video world worlddraft",
-      "github:kevinhuge/worlddraft"
-    ],
-    "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 4,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 33.132,
-    "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 3.219,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.966
-    }
-  },
-  {
-    "id": "541d8684c99025ec",
-    "kind": "release",
-    "title": "Gondola doubles revenue as its team builds more with Codex",
-    "summary_en": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/business/customer-stories/gondola",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-12T12:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.768449Z",
-    "dedup_keys": [
-      "url:openai.com/business/customer-stories/gondola",
-      "title:builds codex doubles gondola its more revenue team with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.784,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.216
-    }
-  },
-  {
-    "id": "54cca1cbc5ed30a4",
-    "kind": "paper",
-    "title": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
-    "summary_en": "Driving world models aim to simulate how a scene unfolds under different ego actions. This requires plausible motion of surrounding vehicles as well as precise ego-trajectory control. Learning vehicle motion from perspective video alone is challenging because motion is entangled with appearance and vehicles can be occluded. Prior work therefore conditions video generation on layouts that specify vehicle motion, providing control over surrounding vehicles but requiring their future trajectories as inputs. We introduce BirdDreams, an autoregressive driving world model that jointly generates perspective video and a schematic bird's-eye-view (BEV) video, making scene layout part of the predicted future. The BEV, rendered from scene annotations for training, depicts roads and vehicles as simple shapes at a fixed metric scale, providing a top-down view of their positions and motion with reduced occlusion between vehicles. Perspective video, by contrast, retains scene details that the BEV omits, such as traffic signals and object appearance. Joint attention between two video diffusion transformers, one per stream, lets each stream inform the other during generation. The predicted BEV also provides a geometric interface for ego control: we translate and rotate its latest frame along an input ego trajectory and use the resulting frames as a soft condition that shows how the scene would appear to move if only the ego vehicle moved. At inference, BirdDreams generates both videos from a single camera image without requiring an HD map or vehicle-state inputs. On PhysicalAI-AV and nuScenes, BirdDreams follows input ego trajectories more faithfully than prior driving world models and generates more plausible ego motion without ego-action conditioning. Human evaluation shows that BirdDreams outperforms a perspective-only baseline in generating realistic surrounding-vehicle behavior.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.14815",
-        "external_id": "2611.14815"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.14815",
-        "external_id": "2611.14815"
-      }
-    ],
-    "actors": [
-      "Junyoung Seo",
-      "Jaewoo Seo",
-      "Seungryong Kim",
-      "Laura Leal-Taixé",
-      "Xiuming Zhang",
-      "Seung Wook Kim"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440388Z",
-    "dedup_keys": [
-      "arxiv:2611.14815",
-      "title:and bev birddreams driving for generation joint model perspective plausible reactive video world"
-    ],
-    "signals": {
-      "hf_upvotes": 34,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.477,
-    "score_breakdown": {
-      "hf_upvotes": 28.443,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -4.966
+      "age_decay": -2.758
     }
   },
   {
@@ -538,6 +338,11 @@
         "source": "arxiv",
         "url": "https://arxiv.org/abs/2611.15131",
         "external_id": "2611.15131"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/inclusionAI/Duo",
+        "external_id": null
       }
     ],
     "actors": [
@@ -563,31 +368,34 @@
       "Zhenzhong Lan"
     ],
     "published_at": "2026-11-11T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440438Z",
+    "first_seen_at": "2026-11-13T20:07:31.192962Z",
     "dedup_keys": [
       "arxiv:2611.15131",
-      "title:duo duplex for full interaction model reciprocal world"
+      "title:duo duplex for full interaction model reciprocal world",
+      "github:inclusionai/duo"
     ],
     "signals": {
-      "hf_upvotes": 24,
+      "hf_upvotes": 35,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 12,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
       "num_comments": 1,
-      "has_code": false,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 31.285,
+    "score": 41.54,
     "score_breakdown": {
-      "hf_upvotes": 25.751,
+      "hf_upvotes": 28.668,
+      "github_stars": 5.13,
       "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.466
+      "age_decay": -4.258
     }
   },
   {
@@ -643,19 +451,19 @@
       "Ziwei Liu"
     ],
     "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440682Z",
+    "first_seen_at": "2026-11-13T20:07:31.193070Z",
     "dedup_keys": [
       "arxiv:2611.17060",
       "title:and behaviors environments for gold physical ropedia scaling standard xperience",
       "github:ropedia/ropedia-xperience-2"
     ],
     "signals": {
-      "hf_upvotes": 8,
+      "hf_upvotes": 25,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 3,
+      "github_stars": 15,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -663,290 +471,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 30.385,
+    "score": 40.852,
     "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "github_stars": 2.773,
+      "hf_upvotes": 26.065,
+      "github_stars": 5.545,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.966
-    }
-  },
-  {
-    "id": "c140fcd2e77454b8",
-    "kind": "paper",
-    "title": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
-    "summary_en": "Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs, and controlled variations are difficult to obtain. Large language models (LLMs) possess physical knowledge, but struggle to reliably guide video generation models in producing their training videos. We present PhysLoop, a unified harness designed to support physically grounded self-improvement in video generation models. The harness guides and constrains LLMs throughout video generation, selection, and correction, distilling their physical knowledge into physically consistent videos. The framework supports controllable training-data construction and inference-time video repair. By identifying and correcting failures, PhysLoop marks a key milestone toward recursive self-improvement (RSI) in video generation models with limited human intervention. We release 100K videos spanning diverse, realistic indoor and outdoor scenes, along with generation tools and two evaluation datasets: PhysLoop-Gen and PhysLoop-Repair. We evaluate controllable generation and localized repair on these datasets, respectively, and assess physical behavior on the external Physics-IQ Verified benchmark.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.16748",
-        "external_id": "2611.16748"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.16748",
-        "external_id": "2611.16748"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/DAGroup-PKU/PhysLoop",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yuxuan Chen",
-      "Xiaojie Li",
-      "Hao Chen",
-      "Juncheng Ma",
-      "Kewei Zhang",
-      "Zhongjing Du",
-      "Guoqiang Wei",
-      "Fangfang Wang",
-      "Zhen Dong",
-      "Zhiyang Dou",
-      "Liming Zhao",
-      "Yan Zeng",
-      "Jianwei Zhang",
-      "Daquan Zhou"
-    ],
-    "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440645Z",
-    "dedup_keys": [
-      "arxiv:2611.16748",
-      "title:awareness for generation harnessing improving llms models physics physloop self video",
-      "github:dagroup-pku/physloop"
-    ],
-    "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 29.913,
-    "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.966
-    }
-  },
-  {
-    "id": "eda15d4b7305d317",
-    "kind": "paper",
-    "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
-    "summary_en": "Hyper-Connections (HC) architectures are increasingly adopted in frontier language models, yet their components remain insufficiently understood and introduce non-negligible training overhead. In this work, we systematically study the HC architecture to understand its components and identify simpler, more efficient designs. We find that learned read/write gating without mixing and unconstrained mixing with fixed gates form two effective interaction groups: either alone achieves performance comparable to mHC. We also identify repeated access to the expanded residual state as a major source of training overhead, even without mixing. These findings lead to SimpleHC, which simplifies the architecture by removing residual mixing and simplifies execution through shared memory access, using the resulting additive structure and shared gate inputs. Layer-specific gates share a group-entry state, enabling batched reads and deferred writes; scalar corrections exactly preserve preceding sublayer output contributions. Our analyses support both the retained residual structure and the design of shared memory access. SimpleHC incurs only 2.4% extra end-to-end training time over a vanilla residual baseline at the largest tested scale. It maintains performance comparable to mHC when scaling from 15B to 30B MoE models, exhibits smoother gradient dynamics during standard training, and remains stable under stress. We hope SimpleHC will encourage a broader pursuit of simplicity in foundation model design, making performance gains more accessible and practical at scale.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.05984",
-        "external_id": "2611.05984"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.05984",
-        "external_id": "2611.05984"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/aHapBean/SimpleHC",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Xiangdong Zhang",
-      "Xiaohan Qin",
-      "Sunan Zou",
-      "Tuo Dai",
-      "Bizhao Shi",
-      "Zhuo Xia",
-      "Yebin Yang",
-      "Yizhou Chen",
-      "Yuliang Liu",
-      "Yu Cheng",
-      "Junchi Yan"
-    ],
-    "published_at": "2026-11-04T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440548Z",
-    "dedup_keys": [
-      "arxiv:2611.05984",
-      "title:and connections design hyper scalability simplification stability the",
-      "github:ahapbean/simplehc"
-    ],
-    "signals": {
-      "hf_upvotes": 22,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 20,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 29.207,
-    "score_breakdown": {
-      "hf_upvotes": 25.084,
-      "github_stars": 6.089,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -13.966
-    }
-  },
-  {
-    "id": "d5cef9f4669bcfda",
-    "kind": "paper",
-    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
-    "summary_en": "Second-order optimizers (e.g., Shampoo, SOAP) have emerged as compelling alternatives to Adam/AdamW and promise faster per-step convergence than AdamW in transformer training. However, they still remain costly in practice, and even SOAP still pays substantial optimizer-state memory and eigendecomposition overhead. We ask whether the benefits of SOAP can be retained at nearly the efficiency of AdamW. In this paper, we answer yes with a lightweight SOAP variant, Factored One-sided Adam-Moment (FOAM). The path to practical impact is twofold: first, FOAM employs input-only preconditioning, dropping the output-side Kronecker factor to reduce memory and remove one eigendecomposition. The Kronecker structure of the Hessian shows that this is exact for a diagonal output-side curvature and nearly lossless for a near-diagonal one, as we observe empirically. Second, FOAM replaces SOAP's dense rotated second moment with a factored Adam-moment estimator based on row-by-column statistics. Under the K-FAC Fisher assumption with a diagonal output curvature, this estimator exactly recovers SOAP's dense second moment, and we measure only a 15-20% K-FAC violation, with negligible effect on the update. Our empirical results support the claim that FOAM matches strong SOAP and Muon baselines in validation loss across scales of large language model (LLM) pre-training, uses half of SOAP's optimizer state, runs at Muon-class wall-clock time, and retains robustness across a three-fold learning-rate range. The results hold from 124M to 760M parameters, demonstrating that SOAP's gains need not require SOAP's cost. Code: https://github.com/naver-ai/foam",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.16905",
-        "external_id": "2611.16905"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.16905",
-        "external_id": "2611.16905"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/naver-ai/foam",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Jaemyung Yu",
-      "Byeongho Heo",
-      "Sangdoo Yun",
-      "Dongyoon Han"
-    ],
-    "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440662Z",
-    "dedup_keys": [
-      "arxiv:2611.16905",
-      "title:adam and factored for moment one practical scalable sided soap",
-      "github:naver-ai/foam"
-    ],
-    "signals": {
-      "hf_upvotes": 9,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.455,
-    "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -1.966
-    }
-  },
-  {
-    "id": "a459404c425a0e6d",
-    "kind": "paper",
-    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
-    "summary_en": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear attention for compact context propagation. Autoregressive text prediction and visual flow matching jointly support visual question answering, text-to-image generation, instruction-guided editing, and interleaved text-image prediction. In interleaved generation, noisy visual targets are isolated from subsequent predictions, while clean visual representations provide context for later outputs. A blockwise protocol enforces this distinction through attention masks in full-attention layers and recurrent-state retention rules in linear-attention layers. The selected training sources contain 159.7M generation samples, 213.4M understanding samples, and 624.8K interleaved sequences. A four-stage curriculum jointly trains multimodal understanding and visual generation, refining answer accuracy and instruction following while extending image synthesis to 2K. UniSpark scores 2470.3 on MME-S and 0.83 on GenEval. Qualitative examples further illustrate its capabilities in interleaved image generation, video synthesis, and video editing. Together, these results demonstrate that hybrid attention provides an effective backbone for unified multimodal understanding and generation.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.16517",
-        "external_id": "2611.16517"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.16517",
-        "external_id": "2611.16517"
-      }
-    ],
-    "actors": [
-      "Jiancheng Pan",
-      "Yuzheng Liu",
-      "Hengyuan Cao",
-      "Qiyuan Zhang",
-      "Yangyan Li",
-      "Biao Gong",
-      "Zheng Zhang",
-      "Ka Long Cheng",
-      "Xinyang Wang",
-      "Yujun Shen"
-    ],
-    "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440716Z",
-    "dedup_keys": [
-      "arxiv:2611.16517",
-      "title:and attention exploring for generation hybrid multimodal understanding unispark"
-    ],
-    "signals": {
-      "hf_upvotes": 7,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 23.67,
-    "score_breakdown": {
-      "hf_upvotes": 16.636,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -1.966
+      "age_decay": -2.758
     }
   },
   {
@@ -992,19 +524,19 @@
       "Daquan Zhou"
     ],
     "published_at": "2026-11-08T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440701Z",
+    "first_seen_at": "2026-11-13T20:07:31.192931Z",
     "dedup_keys": [
       "arxiv:2611.13004",
       "title:autoregressive capacity compressed deeply for generation group scaled star token",
       "github:dagroup-pku/g-star"
     ],
     "signals": {
-      "hf_upvotes": 8,
+      "hf_upvotes": 40,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 4,
+      "github_stars": 24,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1012,13 +544,1047 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 20.831,
+    "score": 35.389,
     "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "github_stars": 3.219,
+      "hf_upvotes": 29.709,
+      "github_stars": 6.438,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
-      "age_decay": -7.966
+      "age_decay": -8.758
+    }
+  },
+  {
+    "id": "0c69de8e90e7f15d",
+    "kind": "paper",
+    "title": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
+    "summary_en": "Multimodal coding agents decouple 4D world construction from visual generation, repurposing video models from world generators toward generative renderers. This division of labor raises a fundamental question: if code builds the world, can video models just render it? A reliable generative renderer hinges on two complementary criteria: (i) world preservation, retaining prescribed 4D kinematics and camera paths; and (ii) visual realization, persistently binding text-specified target attributes over time. To evaluate this capability, we introduce WorldDraft, a benchmark of 432 strictly paired test cases across 48 executable 4D world families spanning six dynamic challenge categories. Under a 3 times 3 factorial design, WorldDraft orthogonally crosses draft granularity (abstract proxy to previs) and appearance alignment (neutral to conflicting) under identical dynamics. Extensive evaluations across 12 representative models reveal that: (I) world preservation and visual realization remain in stark operational tension; (II) richer draft scaffolding anchors structure but paradoxically impairs appearance fidelity; and (III) conflicting source cues trigger severe source leakage (up to 64%), exposing fragile cross-modal disentanglement. To mitigate these bottlenecks, we propose WorldDraft-Primer, a plug-and-play visual prompting strategy that consistently improves both objectives across frozen video renderers. Together, WorldDraft and WorldDraft-Primer lay a foundation for bridging programmatic 4D simulation with video generation, advancing physically grounded generative rendering.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.16217",
+        "external_id": "2611.16217"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.16217",
+        "external_id": "2611.16217"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/KevinHuge/WorldDraft",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhiyu Hou",
+      "Wen-Jie Shu",
+      "Harold Haodong Chen",
+      "Weilin Ruan",
+      "Chenfei Liao",
+      "Liuzhou Zhang",
+      "Disen Lan",
+      "Xiaogang Xu",
+      "Qi Chen",
+      "Ser-Nam Lim"
+    ],
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193120Z",
+    "dedup_keys": [
+      "arxiv:2611.16217",
+      "title:builds can code just models render the video world worlddraft",
+      "github:kevinhuge/worlddraft"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 8,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.3,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "github_stars": 4.394,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.758
+    }
+  },
+  {
+    "id": "79a859702f0e557d",
+    "kind": "paper",
+    "title": "TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models",
+    "summary_en": "Decoder-only Large View Synthesis Models (LVSMs) with KV-cache have recently achieved state-of-the-art quality by regressing novel views from neural networks without reconstructing 3D geometry, while Test-Time Training (TTT) layers save computation but sacrifice quality. We propose Test-Time Baking (TTB), a strategy that learns to bake global scene information from cross-view attention into a lightweight MLP, enabling fast and high-fidelity novel-view decoding. The first key is to repurpose the fast-weight MLP of TTT to learn the cross-view attention mapping explicitly from its input-output pairs, rather than replacing attention entirely, achieving the same rendering efficiency as TTT while delivering substantially higher quality. The second key addresses a modality misalignment between context prefilling and novel-view rendering: we disentangle context tokens into camera-only context rendering tokens to serve as TTB input, and context ground-truth tokens with image content to serve as the TTB mapping target, ensuring the baked MLPs are relieved of the modality generalization challenge between context and novel-view processing. Our method achieves up to **23x** rendering speedup with quality on par with the state-of-the-art across several benchmarks. Project page: https://test-time-baking.github.io",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.17331",
+        "external_id": "2611.17331"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17331",
+        "external_id": "2611.17331"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/NVlabs/DVSM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chin-Yang Lin",
+      "Ryo Hachiuma",
+      "Jaesung Choe",
+      "Min-Hung Chen",
+      "Yu-Chiang Frank Wang",
+      "Yen-Yu Lin",
+      "Wei-Chen Chiu",
+      "Yu-Lun Liu",
+      "Cheng Sun"
+    ],
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193095Z",
+    "dedup_keys": [
+      "arxiv:2611.17331",
+      "title:baking decoder efficient for models only rendering synthesis test time ttb view",
+      "github:nvlabs/dvsm"
+    ],
+    "signals": {
+      "hf_upvotes": 19,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 19,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.199,
+    "score_breakdown": {
+      "hf_upvotes": 23.966,
+      "github_stars": 5.991,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.758
+    }
+  },
+  {
+    "id": "998af45cc84546d8",
+    "kind": "paper",
+    "title": "Open Vision Banana: A Fully Open Recipe for Generative Visual Perception",
+    "summary_en": "Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (OVB), a fully open and reproducible recipe for converting pretrained generators into unified multi-task perception systems. Our analyses identify the design choices that matter most for generalization, including color encoding, prompt design, parameter adaptation, and task balancing. These choices interact, so individually helpful choices can hurt when combined with others. Starting from 4B and 9B parameter open-weight base models and using 2.1M-3.8M training pairs from public datasets, OVB surpasses Vision Banana's reported Cityscapes zero-shot performance (73.9 vs. 69.9 mIoU) and rivals state-of-the-art affine-invariant depth estimators. Its non-zero-shot variants come within five points of Vision Banana on referring and reasoning segmentation but remain further behind on instance segmentation. All models largely retain the base model's image-editing abilities. With legend ensembling, we introduce a test-time scaling method for generator-based perception. It segments an image under several class-color legends and fuses the results by majority vote, correcting unstable color-class bindings and improving mIoU by up to 8.7 points on Cityscapes and 15.0 points on COCO-Object without retraining. We release the dataset construction and processing pipeline, the training and evaluation code, as well as the final, intermediate, and ablation checkpoints. Project website: https://openvisionbanana.github.io",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.15844",
+        "external_id": "2611.15844"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.15844",
+        "external_id": "2611.15844"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/OpenVisionBanana/OpenVisionBanana",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Arpit Jadon",
+      "Valentinos Pariza",
+      "Jona Ruthardt",
+      "Ryousuke Yamada",
+      "A. Sophia Koepke",
+      "Andrei Bursuc",
+      "Yuki M. Asano"
+    ],
+    "published_at": "2026-11-11T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193016Z",
+    "dedup_keys": [
+      "arxiv:2611.15844",
+      "title:banana for fully generative open open perception recipe vision visual",
+      "github:openvisionbanana/openvisionbanana"
+    ],
+    "signals": {
+      "hf_upvotes": 28,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.68,
+    "score_breakdown": {
+      "hf_upvotes": 26.938,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.258
+    }
+  },
+  {
+    "id": "54cca1cbc5ed30a4",
+    "kind": "paper",
+    "title": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+    "summary_en": "Driving world models aim to simulate how a scene unfolds under different ego actions. This requires plausible motion of surrounding vehicles as well as precise ego-trajectory control. Learning vehicle motion from perspective video alone is challenging because motion is entangled with appearance and vehicles can be occluded. Prior work therefore conditions video generation on layouts that specify vehicle motion, providing control over surrounding vehicles but requiring their future trajectories as inputs. We introduce BirdDreams, an autoregressive driving world model that jointly generates perspective video and a schematic bird's-eye-view (BEV) video, making scene layout part of the predicted future. The BEV, rendered from scene annotations for training, depicts roads and vehicles as simple shapes at a fixed metric scale, providing a top-down view of their positions and motion with reduced occlusion between vehicles. Perspective video, by contrast, retains scene details that the BEV omits, such as traffic signals and object appearance. Joint attention between two video diffusion transformers, one per stream, lets each stream inform the other during generation. The predicted BEV also provides a geometric interface for ego control: we translate and rotate its latest frame along an input ego trajectory and use the resulting frames as a soft condition that shows how the scene would appear to move if only the ego vehicle moved. At inference, BirdDreams generates both videos from a single camera image without requiring an HD map or vehicle-state inputs. On PhysicalAI-AV and nuScenes, BirdDreams follows input ego trajectories more faithfully than prior driving world models and generates more plausible ego motion without ego-action conditioning. Human evaluation shows that BirdDreams outperforms a perspective-only baseline in generating realistic surrounding-vehicle behavior.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.14815",
+        "external_id": "2611.14815"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.14815",
+        "external_id": "2611.14815"
+      }
+    ],
+    "actors": [
+      "Junyoung Seo",
+      "Jaewoo Seo",
+      "Seungryong Kim",
+      "Laura Leal-Taixé",
+      "Xiuming Zhang",
+      "Seung Wook Kim"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.192841Z",
+    "dedup_keys": [
+      "arxiv:2611.14815",
+      "title:and bev birddreams driving for generation joint model perspective plausible reactive video world"
+    ],
+    "signals": {
+      "hf_upvotes": 45,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.871,
+    "score_breakdown": {
+      "hf_upvotes": 30.629,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -5.758
+    }
+  },
+  {
+    "id": "10ce3500125f08e4",
+    "kind": "release",
+    "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+    "summary_en": "Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-13T17:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:33.953525Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+      "title:across dgx enough glm gpu isn nvidia one serving stations two vllm when with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.805,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.195
+    }
+  },
+  {
+    "id": "1fd0a68c891ed8b1",
+    "kind": "release",
+    "title": "Introducing ChatGPT Wallet",
+    "summary_en": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-chatgpt-wallet",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-13T15:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.862743Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-chatgpt-wallet",
+      "title:chatgpt introducing wallet"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.68,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.32
+    }
+  },
+  {
+    "id": "c7e59ff52e5e6bd5",
+    "kind": "release",
+    "title": "Microsoft Research Focus – Edition #98",
+    "summary_en": "What's new in research at Microsoft? Host Anson Ho explores the latest, including AI-powered universal translation, a breakthrough in a 31-year-old mathematics challenge, and advances making AI coding agents faster and more efficient. The post Microsoft Research Focus – Edition #98 appeared first on Microsoft Research .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "microsoft_research"
+    ],
+    "published_at": "2026-11-12T21:31:57Z",
+    "first_seen_at": "2026-11-13T20:07:34.715830Z",
+    "dedup_keys": [
+      "url:microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98",
+      "title:edition focus microsoft research"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.588,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.412
+    }
+  },
+  {
+    "id": "886ff6bb278ee9f2",
+    "kind": "release",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "summary_en": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/business/customer-stories/amplitude",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-12T20:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.862836Z",
+    "dedup_keys": [
+      "url:openai.com/business/customer-stories/amplitude",
+      "title:amplitude days how improvements openai product ships with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.492,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.508
+    }
+  },
+  {
+    "id": "541d8684c99025ec",
+    "kind": "release",
+    "title": "Gondola doubles revenue as its team builds more with Codex",
+    "summary_en": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/business/customer-stories/gondola",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-12T12:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.862911Z",
+    "dedup_keys": [
+      "url:openai.com/business/customer-stories/gondola",
+      "title:builds codex doubles gondola its more revenue team with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.992,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.008
+    }
+  },
+  {
+    "id": "f897efde46436e8f",
+    "kind": "release",
+    "title": "Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA",
+    "summary_en": "AI applications at the edge often need to run multiple neural networks within limited compute and power budgets. NVIDIA Deep Learning Accelerator (DLA)...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-13T18:57:10Z",
+    "first_seen_at": "2026-11-13T20:07:33.953454Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla",
+      "title:agx cudla dla inference jetson native nvidia orin python run using"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.927,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.073
+    }
+  },
+  {
+    "id": "97df47f74844a9f7",
+    "kind": "release",
+    "title": "Adapt Human Motion for Robots with NVIDIA SOMA Retargeter",
+    "summary_en": "Human motion offers roboticists a great starting point for teaching humanoid robots how to move. A human demonstration captures the coordination and timing...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-13T17:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:33.953572Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter",
+      "title:adapt for human motion nvidia retargeter robots soma with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.805,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.195
+    }
+  },
+  {
+    "id": "d5cef9f4669bcfda",
+    "kind": "paper",
+    "title": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+    "summary_en": "Second-order optimizers (e.g., Shampoo, SOAP) have emerged as compelling alternatives to Adam/AdamW and promise faster per-step convergence than AdamW in transformer training. However, they still remain costly in practice, and even SOAP still pays substantial optimizer-state memory and eigendecomposition overhead. We ask whether the benefits of SOAP can be retained at nearly the efficiency of AdamW. In this paper, we answer yes with a lightweight SOAP variant, Factored One-sided Adam-Moment (FOAM). The path to practical impact is twofold: first, FOAM employs input-only preconditioning, dropping the output-side Kronecker factor to reduce memory and remove one eigendecomposition. The Kronecker structure of the Hessian shows that this is exact for a diagonal output-side curvature and nearly lossless for a near-diagonal one, as we observe empirically. Second, FOAM replaces SOAP's dense rotated second moment with a factored Adam-moment estimator based on row-by-column statistics. Under the K-FAC Fisher assumption with a diagonal output curvature, this estimator exactly recovers SOAP's dense second moment, and we measure only a 15-20% K-FAC violation, with negligible effect on the update. Our empirical results support the claim that FOAM matches strong SOAP and Muon baselines in validation loss across scales of large language model (LLM) pre-training, uses half of SOAP's optimizer state, runs at Muon-class wall-clock time, and retains robustness across a three-fold learning-rate range. The results hold from 124M to 760M parameters, demonstrating that SOAP's gains need not require SOAP's cost. Code: https://github.com/naver-ai/foam",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.16905",
+        "external_id": "2611.16905"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.16905",
+        "external_id": "2611.16905"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/naver-ai/foam",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jaemyung Yu",
+      "Byeongho Heo",
+      "Sangdoo Yun",
+      "Dongyoon Han"
+    ],
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193143Z",
+    "dedup_keys": [
+      "arxiv:2611.16905",
+      "title:adam and factored for moment one practical scalable sided soap",
+      "github:naver-ai/foam"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 29.762,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.758
+    }
+  },
+  {
+    "id": "eda15d4b7305d317",
+    "kind": "paper",
+    "title": "On the Design of Hyper-Connections: Simplification, Stability, and Scalability",
+    "summary_en": "Hyper-Connections (HC) architectures are increasingly adopted in frontier language models, yet their components remain insufficiently understood and introduce non-negligible training overhead. In this work, we systematically study the HC architecture to understand its components and identify simpler, more efficient designs. We find that learned read/write gating without mixing and unconstrained mixing with fixed gates form two effective interaction groups: either alone achieves performance comparable to mHC. We also identify repeated access to the expanded residual state as a major source of training overhead, even without mixing. These findings lead to SimpleHC, which simplifies the architecture by removing residual mixing and simplifies execution through shared memory access, using the resulting additive structure and shared gate inputs. Layer-specific gates share a group-entry state, enabling batched reads and deferred writes; scalar corrections exactly preserve preceding sublayer output contributions. Our analyses support both the retained residual structure and the design of shared memory access. SimpleHC incurs only 2.4% extra end-to-end training time over a vanilla residual baseline at the largest tested scale. It maintains performance comparable to mHC when scaling from 15B to 30B MoE models, exhibits smoother gradient dynamics during standard training, and remains stable under stress. We hope SimpleHC will encourage a broader pursuit of simplicity in foundation model design, making performance gains more accessible and practical at scale.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.05984",
+        "external_id": "2611.05984"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.05984",
+        "external_id": "2611.05984"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/aHapBean/SimpleHC",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xiangdong Zhang",
+      "Xiaohan Qin",
+      "Sunan Zou",
+      "Tuo Dai",
+      "Bizhao Shi",
+      "Zhuo Xia",
+      "Yebin Yang",
+      "Yizhou Chen",
+      "Yuliang Liu",
+      "Yu Cheng",
+      "Junchi Yan"
+    ],
+    "published_at": "2026-11-04T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193042Z",
+    "dedup_keys": [
+      "arxiv:2611.05984",
+      "title:and connections design hyper scalability simplification stability the",
+      "github:ahapbean/simplehc"
+    ],
+    "signals": {
+      "hf_upvotes": 26,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 20,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 29.698,
+    "score_breakdown": {
+      "hf_upvotes": 26.367,
+      "github_stars": 6.089,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -14.758
+    }
+  },
+  {
+    "id": "2b2f87c72f2b419f",
+    "kind": "model",
+    "title": "mossloras/moss-image-lora-archive",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/mossloras/moss-image-lora-archive",
+        "external_id": "mossloras/moss-image-lora-archive"
+      }
+    ],
+    "actors": [
+      "mossloras"
+    ],
+    "published_at": "2026-11-05T23:52:44Z",
+    "first_seen_at": "2026-11-13T20:07:31.191351Z",
+    "dedup_keys": [
+      "hf:mossloras/moss-image-lora-archive"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 46,
+      "hf_downloads": 0,
+      "hf_trending_score": 46.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 26.886,
+    "score_breakdown": {
+      "hf_trending": 23.101,
+      "hf_likes": 11.55,
+      "has_weights": 4.0,
+      "age_decay": -11.765
+    }
+  },
+  {
+    "id": "a459404c425a0e6d",
+    "kind": "paper",
+    "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
+    "summary_en": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear attention for compact context propagation. Autoregressive text prediction and visual flow matching jointly support visual question answering, text-to-image generation, instruction-guided editing, and interleaved text-image prediction. In interleaved generation, noisy visual targets are isolated from subsequent predictions, while clean visual representations provide context for later outputs. A blockwise protocol enforces this distinction through attention masks in full-attention layers and recurrent-state retention rules in linear-attention layers. The selected training sources contain 159.7M generation samples, 213.4M understanding samples, and 624.8K interleaved sequences. A four-stage curriculum jointly trains multimodal understanding and visual generation, refining answer accuracy and instruction following while extending image synthesis to 2K. UniSpark scores 2470.3 on MME-S and 0.83 on GenEval. Qualitative examples further illustrate its capabilities in interleaved image generation, video synthesis, and video editing. Together, these results demonstrate that hybrid attention provides an effective backbone for unified multimodal understanding and generation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.16517",
+        "external_id": "2611.16517"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.16517",
+        "external_id": "2611.16517"
+      }
+    ],
+    "actors": [
+      "Jiancheng Pan",
+      "Yuzheng Liu",
+      "Hengyuan Cao",
+      "Qiyuan Zhang",
+      "Yangyan Li",
+      "Biao Gong",
+      "Zheng Zhang",
+      "Ka Long Cheng",
+      "Xinyang Wang",
+      "Yujun Shen"
+    ],
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193164Z",
+    "dedup_keys": [
+      "arxiv:2611.16517",
+      "title:and attention exploring for generation hybrid multimodal understanding unispark"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 26.762,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.758
+    }
+  },
+  {
+    "id": "e85ea4a79d2e0611",
+    "kind": "release",
+    "title": "Opening the datasets behind our AI weather models",
+    "summary_en": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-11-10T11:13:04Z",
+    "first_seen_at": "2026-11-13T20:07:32.775650Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models",
+      "title:behind datasets models opening our the weather"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 24.943,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -5.057
+    }
+  },
+  {
+    "id": "f9c69fe5f10eebb9",
+    "kind": "release",
+    "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-11-13T18:00:39Z",
+    "first_seen_at": "2026-11-13T20:07:33.594304Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "title:and assets build pick place robot simready simulation with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.868,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.132
+    }
+  },
+  {
+    "id": "9b45f871c50a1d35",
+    "kind": "release",
+    "title": "XYBench: Helping with the problem behind the question",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/allenai/xybench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-11-13T17:02:35Z",
+    "first_seen_at": "2026-11-13T20:07:33.594365Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/allenai/xybench",
+      "title:behind helping problem question the the with xybench"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.807,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.193
+    }
+  },
+  {
+    "id": "f8cfb2a09e9b69b9",
+    "kind": "release",
+    "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-11-13T14:05:22Z",
+    "first_seen_at": "2026-11-13T20:07:33.594401Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "title:cpp ecosystem for foundation llama local stronger the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.623,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "age_decay": -0.377
     }
   },
   {
@@ -1053,14 +1619,14 @@
       "Minh-Anh Nguyen"
     ],
     "published_at": "2026-11-12T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440783Z",
+    "first_seen_at": "2026-11-13T20:07:31.193434Z",
     "dedup_keys": [
       "arxiv:2611.16321",
       "title:adaptive computation efficient from language large models models one system via",
       "github:minhkks/nestone"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 2,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1073,122 +1639,127 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 16.965,
+    "score": 19.417,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
+      "hf_upvotes": 8.789,
       "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -1.966
+      "age_decay": -2.758
     }
   },
   {
-    "id": "c543b49531fde155",
+    "id": "cce28eb85c44a7cb",
     "kind": "paper",
-    "title": "Agent-R^2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
-    "summary_en": "Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workflows, understanding heterogeneous file contexts, and producing usable deliverables under fine-grained requirements. A key bottleneck is the lack of scalable post-training data that reflects real work intent, authentic file environments, and deliverable-level evaluation. To close this gap, we introduce Agent-R^2, a real-source data synthesis framework that scales training data for realistic productivity work. Instead of relying on manually specified workflows or LLM-generated files, Agent-R^2 grounds synthesis throughout the pipeline in real occupational seeds, corpus-derived workflow evidence, and authentic web-sourced files. From 10k web-corpus candidates, Agent-R^2 distills 4k task instances that pair real multi-format attachments with fine-grained, deliverable-level rubrics. On this data, we train Agent-R^2-4B via supervised fine-tuning and rubric-based reinforcement learning, improving both end-to-end productivity performance and file-grounded reasoning. Trained on only 4k instances, Agent-R^2-4B surpasses Qwen3-235B-A22B-Thinking-2507 on both GDPval (51.0% vs. 48.0%) and OfficeQA (14.8% vs. 13.8%). Further analysis shows that Agent-R^2 mitigates shortcut behavior, where agents produce superficially plausible deliverables before sufficiently grounding, constructing, or verifying them, while promoting sustained exploration.",
+    "title": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+    "summary_en": "GPT-6 Astra can drive a robot arm directly through a fixed harness, and scores of such robot-use agents on RoboDojo have risen quickly since. Reported systems differ in harness and test subset and often change several designs at once, so it is hard to tell which choices produce the gains. We take these designs apart and test them in one framework, along the harness around the model, the action interface, the reuse of experience and the scene geometry given to the model. A lean harness that keeps the full episode history and stops each motion early goes a long way. Reusing experience changes how the model acts but is not a free lunch, and scene geometry helps most, even when depth is predicted from RGB alone. JustRUA starts from the official L3 harness and keeps only what matters most. Even with no learned policy, self-improvement loop or task-specific tuning, this simple harness raises the score on the RoboDojo simulation benchmark substantially, from 29.7 to 50.3.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
       "agent",
+      "robotics",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.08219",
-        "external_id": "2611.08219"
+        "url": "https://huggingface.co/papers/2611.16009",
+        "external_id": "2611.16009"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.08219",
-        "external_id": "2611.08219"
+        "url": "https://arxiv.org/abs/2611.16009",
+        "external_id": "2611.16009"
       },
       {
         "source": "github",
-        "url": "https://github.com/ZJU-REAL/Agent-R2",
+        "url": "https://github.com/ZefanW/JustRUA",
         "external_id": null
       }
     ],
     "actors": [
-      "Teng Pan",
-      "Zixuan Wang",
-      "Yuchen Yan",
-      "Qifei Wu",
-      "Yao Chen",
-      "Yingqi Qu",
-      "Ruiqing Zhang",
-      "Yongliang Shen"
+      "Zefan Wang",
+      "Yufan Dang",
+      "Xuanwei Shi",
+      "Mingqi Gao",
+      "Cheng Yin",
+      "SikYuen Tam",
+      "Hanyu Liu",
+      "Yasheng Wang",
+      "Yaxi Lu",
+      "Songyang Zhang",
+      "Xin Cong",
+      "Yuan Yao"
     ],
-    "published_at": "2026-11-05T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440801Z",
+    "published_at": "2026-11-11T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193211Z",
     "dedup_keys": [
-      "arxiv:2611.08219",
-      "title:agent agents data for productivity real realistic scaling source synthesis via work",
-      "github:zju-real/agent-r2"
+      "arxiv:2611.16009",
+      "title:agents controlled gpt justrua robot study use",
+      "github:zefanw/justrua"
     ],
     "signals": {
-      "hf_upvotes": 0,
+      "hf_upvotes": 3,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 6,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 3.426,
+    "score": 18.832,
     "score_breakdown": {
-      "github_stars": 3.892,
+      "hf_upvotes": 11.09,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -12.466
+      "age_decay": -4.258
     }
   },
   {
-    "id": "dbb31bfa1b7cdc76",
+    "id": "593f8b76d913ae4c",
     "kind": "paper",
-    "title": "Evidence-Guided Recovery for AI Agents with Ambiguous Tool Outcomes and Partial Execution",
-    "summary_en": "Tool timeouts can leave AI agents facing ambiguous tool outcomes and partial execution: an action may have failed, committed or remained in flight while other workflow steps have already completed. We formulate evidence-guided task recovery over approved obligations, provider capabilities and states compatible with public evidence. A shared admissibility check handles key expiry, authorization timing, dependencies and residual effects; a terminal certificate separates actual goal satisfaction from publicly supported safe completion. The known-model implementation combines standard observation-contingent planning with a separately implemented effect-history adjudicator. In a finite study of 37 assignments, planning and three active controls each certify 28 completions; four saved synthetic fee units incur additional computation. A preregistered assignment-held-out comparison then evaluates planning advice against evidence prompting with two local model bundles. Across 58 paired units in 19 previously developed task families, advice certifies 30 completions versus 9, a 36.2-percentage-point difference (exact family sign-flip p=0.0078), using 272 proposals versus 399. All 116 trajectories pass independent replay. Both models exhibit a positive completion difference. The comparison measures the evaluated advice interface under a common shield; search-versus-rule advice requires a separate matched comparison. Unknown and handoff outcomes remain explicit, with guarantees tied to the declared provider capabilities rather than arbitrary third-party exactly-once execution.",
+    "title": "DeepStress: Stress-Testing Deep Search Agents",
+    "summary_en": "While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. Such evidence is rare in benchmark corpora, and resulting failures are hard to reproduce. We propose DeepStress, a dynamic stress-testing framework that subjects agents to degraded evidence at controlled rates. It replaces the retrieval module with a synthetic environment where documents are generated dynamically for each query, under independent control of their trustworthiness, relevance, and factuality. To characterize behavior under stress, we go beyond binary accuracy with a five-way classification of final-answer outcomes and two new reliability-aware metrics, RAS and CoPRAS, which credit cautious behavior and account for computational cost. Evaluating 12 systems on questions from HotpotQA and BrowseComp-Plus, we find that several open-weight agents answer confidently when sources contain obvious credibility red flags, and that many HotpotQA questions are answered from parametric knowledge even when all returned documents are factually wrong.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "agent",
+      "rag",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2610.41453",
-        "external_id": "2610.41453"
+        "url": "https://huggingface.co/papers/2607.13920",
+        "external_id": "2607.13920"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2610.41453",
-        "external_id": "2610.41453"
+        "url": "https://arxiv.org/abs/2607.13920",
+        "external_id": "2607.13920"
       }
     ],
     "actors": [
-      "Genliang Zhu",
-      "Xiaobo Chen",
-      "Ziyuan Wang",
-      "Chu Wang"
+      "Ismael Rousseau",
+      "Geraldine Damnati",
+      "Frederic Bechet"
     ],
-    "published_at": "2026-10-30T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440735Z",
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-13T20:07:31.193230Z",
     "dedup_keys": [
-      "arxiv:2610.41453",
-      "title:agents ambiguous and evidence execution for guided outcomes partial recovery tool with"
+      "arxiv:2607.13920",
+      "title:agents deep deepstress search stress testing"
     ],
     "signals": {
-      "hf_upvotes": 2,
+      "hf_upvotes": 3,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1197,133 +1768,16 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 5,
       "has_code": false,
       "has_weights": false
     },
-    "score": -3.677,
+    "score": 17.332,
     "score_breakdown": {
-      "hf_upvotes": 8.789,
+      "hf_upvotes": 11.09,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -21.466
-    }
-  },
-  {
-    "id": "5b2097c402e5915f",
-    "kind": "paper",
-    "title": "Do Multimodal Models Decide Consistently on Equivalent Optical Spectra?",
-    "summary_en": "A spectrum can be given to a model as a table in nanometers or as a plot in photon energy, and the decision should not depend on which one it sees. When the data needed for an answer are missing, the model should say so. We test representation invariance and abstention on measured optical spectra of silicon metasurfaces (MOCLIP) and gold nanoparticles, with labels computed from the data. Each spectrum is shown as four tables (nm, μm, scientific notation, eV) and two plots (nm, eV), and partial spectra remove data inside or outside the queried range. We evaluate the decision models d3-nano and Jev 1.13, three GPT-6 Luna configurations and the Qwen3.5-2B base model. Changing only the representation moves accuracy by up to 41 percentage points within one model, mostly on photon-energy tables and plots. With the same evidence, asking in photon energy instead of wavelength helps some model-view pairs by 16-50 points and hurts others by up to 25. When the relevant extremum is removed, unadapted models rarely answer \"undetermined\". LoRA fine-tuning of d3-nano improves comparisons on the trained table formats, but much of its gain on unanswerable questions comes from a shortcut: it abstains whenever the input is truncated. Training with answerable truncations avoids the shortcut in all six seeds, with a 90-100 point gap between abstention after inside and outside cuts on held-out structures; with the same amount of extra original-task data, five of six seeds keep the shortcut. On gold spectra the two training sets perform similarly. Multimodal language models used for scientific decisions should be tested on equivalent representations and on missing evidence, not only on average accuracy. We release the tasks, per-response results and analysis code.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.00428",
-        "external_id": "2611.00428"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.00428",
-        "external_id": "2611.00428"
-      }
-    ],
-    "actors": [
-      "Ziyuan Wang",
-      "Genliang Zhu",
-      "Xiaobo Chen"
-    ],
-    "published_at": "2026-10-30T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440749Z",
-    "dedup_keys": [
-      "arxiv:2611.00428",
-      "title:consistently decide equivalent models multimodal optical spectra"
-    ],
-    "signals": {
-      "hf_upvotes": 1,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": -6.921,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -21.466
-    }
-  },
-  {
-    "id": "5d243bad1f619255",
-    "kind": "paper",
-    "title": "Humanized but Still True? Auditing Facts and Detection in AI-Text Humanizers",
-    "summary_en": "AI \"humanizers\" rewrite machine-generated text so that detectors classify it as human-written. Public leaderboards score evasion and embedding similarity, but not whether checkable details survive. We check whether numbers, dates, person and organization names, and quoted spans survive each rewrite, using a rule-based checker validated by two AI annotators (precision 0.84-1.00, recall 0.93-0.95; no human annotation). In the October 2026 cycle of a public humanizer leaderboard, all 11 commercial tools changed or dropped at least one of these units in 35-65% of the documents that contained one. Most changes were to quoted spans; counting numbers and names alone, 10 of the 11 tools still altered at least one in 20% or more of the documents. The September 2026 cycle was similar (19-50%). An open 12B humanizer kept at least 97% of numbers and names in fact-dense U.S. federal agency text, but reworded 67-78% of the quoted spans, against its own prompt. Unit retention and detector evasion were not clearly related across tools (Spearman rho = -0.46, 95% CI -0.65 to 0.08), and the open model's four released files (two of them quantization-aware low-bit files) did not show the pre-registered monotone trade-off. On federal texts with matched human, AI-styled and humanized versions, a general-purpose decision model, Jev, asked a single zero-shot question, separated human originals from humanized rewrites with AUROC 0.864 (0.827-0.902), 0.18-0.22 higher than Binoculars, Fast-DetectGPT and the adversarially trained RADAR, while calling 24% of the human originals AI at a 0.5 threshold. On the AI-styled rewrites by 2026 models, both perplexity-based detectors scored below chance (AUROC 0.37 and 0.39), also with line breaks removed. Hypotheses, data rules and analyses were frozen before the main runs; two earlier data contacts are disclosed. We release the checker and the per-item results.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.00359",
-        "external_id": "2611.00359"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.00359",
-        "external_id": "2611.00359"
-      }
-    ],
-    "actors": [
-      "Ziyuan Wang",
-      "Genliang Zhu",
-      "Xiaobo Chen"
-    ],
-    "published_at": "2026-10-30T00:00:00Z",
-    "first_seen_at": "2026-11-13T07:26:52.440767Z",
-    "dedup_keys": [
-      "arxiv:2611.00359",
-      "title:and auditing but detection facts humanized humanizers still text true"
-    ],
-    "signals": {
-      "hf_upvotes": 1,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": -6.921,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -21.466
+      "age_decay": -2.758
     }
   }
 ]
