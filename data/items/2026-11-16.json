@@ -1,0 +1,1719 @@
+[
+  {
+    "id": "8c03a18234b02b03",
+    "kind": "paper",
+    "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+    "summary_en": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards. For real-time interaction, a cloud-edge inference engine serves numerous simulated game environments concurrently, supports unbounded-context execution, and keeps online inference latency low. Across multiple challenging 3D open-world games, Gamer demonstrates solid generalization and operational efficiency comparable to skilled players. It also achieves competitive results on a range of conventional 2D game benchmarks. These results suggest that even repetitive keyboard and mouse trajectories can support substantial gains from scaling data and learning algorithms. Training on these trajectories helps Gamer learn complex skills more steadily in environments with both physical and digital properties. This approach offers a path toward generalist agents that can interact across digital and physical worlds.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18397",
+        "external_id": "2611.18397"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18397",
+        "external_id": "2611.18397"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/RainBowLuoCS/Gamer",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Run Luo",
+      "Kuan Zhang",
+      "Qi Deng",
+      "Yukun Chen",
+      "Zhihao Yang",
+      "Yufei Zhang",
+      "Renrong Hu",
+      "Yi Zhang",
+      "Guiyu Ma",
+      "Tianyu Fan",
+      "Longze Chen",
+      "Hao Sun",
+      "Jiaming Li",
+      "Jiaming Yang",
+      "Xiaohao Liu",
+      "Tao Tan",
+      "Minzheng Wang",
+      "Hangtian Jia",
+      "Shuai Yuan",
+      "Lvdi Wang",
+      "Xiao Liu",
+      "Chao Ma",
+      "Yuting Zou",
+      "Yinhe Zheng",
+      "Xiaobo Xia",
+      "Dawei Jiang",
+      "Shaoqing Ren"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712407Z",
+    "dedup_keys": [
+      "arxiv:2611.18397",
+      "title:action agent for foundation game gamer generalist horizon language long model real time vision",
+      "github:rainbowluocs/gamer"
+    ],
+    "signals": {
+      "hf_upvotes": 48,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 124,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 47.827,
+    "score_breakdown": {
+      "hf_upvotes": 31.135,
+      "github_stars": 9.657,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "412e491415fbe67c",
+    "kind": "model",
+    "title": "akhaliq/MiniMax-H3-Image-Character-Swap",
+    "summary_en": "image-to-image, diffusers, minimax-h3, character-swap, image-editing, lora-merge",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/akhaliq/MiniMax-H3-Image-Character-Swap",
+        "external_id": "akhaliq/MiniMax-H3-Image-Character-Swap"
+      },
+      {
+        "source": "hf_base_model:merge",
+        "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+        "external_id": "akatz-ai/MiniMax-H3-Character-Swap-LoRA"
+      }
+    ],
+    "actors": [
+      "akhaliq"
+    ],
+    "published_at": "2026-11-14T09:55:49Z",
+    "first_seen_at": "2026-11-16T07:26:18.683884Z",
+    "dedup_keys": [
+      "hf:akhaliq/minimax-h3-image-character-swap"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 52,
+      "hf_downloads": 133,
+      "hf_trending_score": 52.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 46.685,
+    "score_breakdown": {
+      "hf_trending": 23.822,
+      "hf_downloads": 9.796,
+      "hf_likes": 11.911,
+      "has_weights": 4.0,
+      "age_decay": -2.844
+    }
+  },
+  {
+    "id": "1013b38ed9ce41da",
+    "kind": "paper",
+    "title": "MMFlash: Faster Speculative Decoding for Vision-Language Models",
+    "summary_en": "Speculative decoding accelerates generation by letting a lightweight drafter propose tokens for parallel verification by a target model. Diffusion drafters such as DFlash propose an entire token block in a single forward pass, but mainly focus on text-only tasks, leaving multimodal drafting underexplored. To study this setting, we first introduce a metric of token-level visual dependence based on the KL divergence between next-token distributions with and without visual input. We find that acceptance rates decrease from 46% in the lowest visual-dependence quartile to 22% in the highest, with this disparity persisting after multimodal training. Motivated by this observation, we propose MMFlash, a simple and effective framework that adaptively upweights visually dependent tokens that the drafter predicts poorly. For long video inputs, MMFlash further employs sparse attention to reduce redundant attention computation and improve drafting quality. Across various multimodal benchmarks, MMFlash achieves lossless decoding speedups of up to 3.58times, outperforming EAGLE-3 and DFlash by up to 195.4% and 17.1%, respectively.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18482",
+        "external_id": "2611.18482"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18482",
+        "external_id": "2611.18482"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/fscdc/MMFlash",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Sicheng Feng",
+      "Zigeng Chen",
+      "Song Wang",
+      "Gongfan Fang",
+      "Xinchao Wang"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712478Z",
+    "dedup_keys": [
+      "arxiv:2611.18482",
+      "title:decoding faster for language mmflash models speculative vision",
+      "github:fscdc/mmflash"
+    ],
+    "signals": {
+      "hf_upvotes": 21,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 13,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 37.041,
+    "score_breakdown": {
+      "hf_upvotes": 24.728,
+      "github_stars": 5.278,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "861073c4f0c09e5b",
+    "kind": "paper",
+    "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+    "summary_en": "The release of GPT-6 Astra marks the emergence of a new paradigm in robotics: agentic robotics. Within weeks, frontier models with agentic harnesses matched or exceeded task-specific policies on many embodied benchmarks. Instead of training a dedicated policy for each family of tasks, an agentic robotic system applies a foundation model to open-world embodied tasks. It operates in a closed loop: observing the environment, interpreting user intent, reasoning about the task, invoking skills and tools, verifying outcomes, and adapting its strategy. Despite these advances, the community has yet to converge on a shared definition, a reliable evaluation framework, or a research roadmap. We argue that Embodied System 2, realized by a foundation model together with an embodied harness, forms the decision-making core of agentic robotics. Its central challenge is to translate general-purpose reasoning into effective and verifiable actions under physical constraints such as limited reaction time, mechanical limits, unpredictable environment changes, and irreversible consequences. Motivated by this perspective, we propose an evaluation framework that measures both model capabilities and closed-loop system performance. Furthermore, we identify the principles that carry over from digital to physical agents and the challenges that must be addressed to achieve reliable physical autonomy. On top of the Embodied System 2 and the evaluation framework, we envision a research roadmap toward sustained autonomy: the ability to perform work safely and reliably with progressively broader responsibility, from executing individual primitives to fulfilling standing roles.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18359",
+        "external_id": "2611.18359"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18359",
+        "external_id": "2611.18359"
+      }
+    ],
+    "actors": [
+      "Grid Robotics",
+      "Qingfeng Lan",
+      "Duo Li",
+      "Siyao Li",
+      "Yiheng Lyu",
+      "Shijian Lu",
+      "Zhenghao Qi",
+      "Shizun Wang",
+      "Xinchao Wang",
+      "Ming Yang",
+      "Zhiqin Yang",
+      "Zuhao Yang",
+      "Tao Yu"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712448Z",
+    "dedup_keys": [
+      "arxiv:2611.18359",
+      "title:agentic envisioning era new robotic robotics systems"
+    ],
+    "signals": {
+      "hf_upvotes": 45,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 34.664,
+    "score_breakdown": {
+      "hf_upvotes": 30.629,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "b515b071799f9323",
+    "kind": "release",
+    "title": "A step toward defining the Standard Model on a lattice",
+    "summary_en": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-15T22:00:01Z",
+    "first_seen_at": "2026-11-16T07:26:19.054866Z",
+    "dedup_keys": [
+      "url:openai.com/index/step-toward-defining-the-standard-model",
+      "title:defining lattice model standard step the toward"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.41,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.59
+    }
+  },
+  {
+    "id": "33db1b414f7837ac",
+    "kind": "model",
+    "title": "vyrekai/minimax-h3-image-comfyui-workflows",
+    "summary_en": "text-to-image, minimax-h3, comfyui, workflow, image-editing",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/vyrekai/minimax-h3-image-comfyui-workflows",
+        "external_id": "vyrekai/minimax-h3-image-comfyui-workflows"
+      }
+    ],
+    "actors": [
+      "vyrekai"
+    ],
+    "published_at": "2026-11-14T06:11:15Z",
+    "first_seen_at": "2026-11-16T07:26:18.683899Z",
+    "dedup_keys": [
+      "hf:vyrekai/minimax-h3-image-comfyui-workflows"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 48,
+      "hf_downloads": 0,
+      "hf_trending_score": 47.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.824,
+    "score_breakdown": {
+      "hf_trending": 23.227,
+      "hf_likes": 11.675,
+      "age_decay": -3.078
+    }
+  },
+  {
+    "id": "341f6f408bed4510",
+    "kind": "paper",
+    "title": "JVT: Just Video Transformer makes pixel-space video diffusion simple",
+    "summary_en": "Direct diffusion modeling of high-dimensional raw video data is challenging, and existing pixel-space methods often rely on specialized architectures. We introduce JVT (Just Video Transformer), a simple large-patch DiT-style Transformer for pixel-space video diffusion, without a pretrained autoencoder, auxiliary detailers, cascaded stages, or U-Net-style skip connections. We systematically examine video patch embeddings, register tokens, and adaptive layer normalization to identify design choices that balance generation quality and computational efficiency. The resulting JVT design achieves generation quality competitive with latent diffusion baselines in both class-conditioned and unconditional settings. The pixel-space formulation of JVT also naturally supports joint generation of pixel-aligned modalities. We demonstrate this capability through camera-conditioned RGB-disparity generation, which improves camera following relative to RGB-only baselines and yields explicit scene geometry without an additional reconstruction model at inference. These results highlight the potential of simple DiT-style Transformers for pixel-space video diffusion, and we hope our findings offer useful insights and practical guidance for future research.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18549",
+        "external_id": "2611.18549"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18549",
+        "external_id": "2611.18549"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ZhouTimeMachine/JVT",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jianjun Zhou",
+      "Hua Geng",
+      "Haoyu Guo"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712548Z",
+    "dedup_keys": [
+      "arxiv:2611.18549",
+      "title:diffusion just jvt makes pixel simple space transformer video video",
+      "github:zhoutimemachine/jvt"
+    ],
+    "signals": {
+      "hf_upvotes": 12,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 30.774,
+    "score_breakdown": {
+      "hf_upvotes": 20.52,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "1f89c7e10eee32d8",
+    "kind": "release",
+    "title": "Our new blog for science",
+    "summary_en": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/our-new-blog-for-science",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-15T22:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:19.054927Z",
+    "dedup_keys": [
+      "url:openai.com/index/our-new-blog-for-science",
+      "title:blog for new our science"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.41,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.59
+    }
+  },
+  {
+    "id": "9f788b1715423a6a",
+    "kind": "paper",
+    "title": "MEM-SQL: Memory-Empowered Text-to-SQL",
+    "summary_en": "Text-to-SQL systems translate natural language questions into SQL queries over increasingly complex databases. However, widely used benchmarks evaluate questions independently, overlooking settings where earlier queries over the same database can supply joins or calculations for a new question. We introduce HARE (History-AwaRe Text-to-SQL BEnchmark) to measure the accuracy and cost of adapting historical SQL. HARE comprises 1,600 requests derived from a fixed pool of 823 verified queries across four datasets. Annotations record which components each request preserves and which edits it requires, distinguishing whole-query adaptation from partial reuse. Our method, MEM-SQL (Memory-EMpowered Text-to-SQL), stores whole-query templates, reusable SQL blocks, and mappings from domain concepts to schema elements. MEM-SQL uses a layer only if every requirement assigned to it has a match above that layer's threshold. With On-demand Schema Linking (OSL), MEM-SQL consults the schema only when no layer qualifies or the generator judges retrieved evidence insufficient. Across six language models on HARE, mean execution accuracy rises from 37.1% for Direct Generation without history to 50.0% for MEM-SQL, with 76.6% fewer input tokens and 68.8% lower latency on average. Further analysis shows that requests reusing several verified queries remain a bottleneck, with accuracy falling from 56.7% to 29.7%, most sharply when reused components must be placed in a new query structure or combined with a shared join. Applying OSL to three other memory designs consistently reduces generation cost, while its accuracy benefit depends on the memory design. Verified history can thus make generation both more accurate and cheaper, but its value depends on the evidence retained and when the system consults the schema.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18338",
+        "external_id": "2611.18338"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18338",
+        "external_id": "2611.18338"
+      }
+    ],
+    "actors": [
+      "Xiaoqi Wang",
+      "Wenqi Pei",
+      "Shizheng Hou",
+      "Yilai Liu",
+      "Han Chen",
+      "Boyan Li",
+      "Yuyu Luo",
+      "Hongyang Du"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712564Z",
+    "dedup_keys": [
+      "arxiv:2611.18338",
+      "title:empowered mem memory sql sql text"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 23.914,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "b8f1a7e4bb4d94f3",
+    "kind": "paper",
+    "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
+    "summary_en": "Learning whole-body mobile manipulation requires demonstrations that coordinate bimanual actions with locomotion across extended workspaces. However, existing interfaces trade off direct robot control, perception and action alignment, and natural operator mobility, making such demonstrations difficult to collect. We introduce HALO, a human-aligned data collection system for whole-body mobile manipulation. The system aligns the operator's perception and action space with the robot while preserving direct physical feedback and natural locomotion. Operators guide the robot end-effectors through kinesthetic teaching and move a low-resistance platform without the deployed mobile base while performing bimanual manipulation. This interface enables more natural whole-body demonstrations, but the close human-robot coupling introduces discrepancies between the demonstration and deployment settings. We address these discrepancies with deployment-aligned demonstration processing, which calibrates and temporally aligns platform motion with the deployed base response and masks and inpaints demonstrator hands in recorded observations. Compared with Mobile ALOHA and VR teleoperation, HALO enables up to 2.9x faster demonstration collection while maintaining comparable or higher success rates. Policies trained with HALO perform precise manipulation tasks, including zip-tie fastening, and achieve a 73.3% success rate on a six-stage long-horizon mobile manipulation task involving repeated coordinated base and arm motion. Project page: https://robbyant-research.github.io/Lingbot-ALOHA/",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "robotics",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.16439",
+        "external_id": "2611.16439"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.16439",
+        "external_id": "2611.16439"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/robbyant-research/Lingbot-ALOHA",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shuai Yang",
+      "Fangyi Xu",
+      "Yishu Shen",
+      "Kecheng Zheng",
+      "Yinghao Xu"
+    ],
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712616Z",
+    "dedup_keys": [
+      "arxiv:2611.16439",
+      "title:aligned body collection data for halo human manipulation mobile whole",
+      "github:robbyant-research/lingbot-aloha"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 20.499,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -6.465
+    }
+  },
+  {
+    "id": "7a78bd0c8ab14ca8",
+    "kind": "paper",
+    "title": "AI Reviews Are Biased Towards the Appendix",
+    "summary_en": "Large language models (LLMs) are increasingly used by reviewers to highlight weaknesses during the reviewing process, and their outputs often shape the reviews that humans submit. Prior work studies how LLM reviews align with human ones, yet we know little about which parts of a paper these models actually criticize. In this work, we investigate 2,000 papers from ACL, EMNLP, COLM, and ICLR, and show that the latest GPT and Claude models draw about 50% or more of their review weaknesses from the appendix. This behavior holds across the API, coding-agent, and web access methods for using LLMs to review a paper. In contrast, we find that humans draw only 8.4% of their weaknesses from the appendix, and these weaknesses primarily revolve around a paper's presentation and content related to its core idea. Meanwhile, LLMs draw weaknesses from deep in the appendix that concern fine-grained technical details not central to the paper's contributions. We anticipate that our analysis will contribute to the scholarly discourse on AI reviews. Our code is publicly available at: https://github.com/cincynlp/review_appendix.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.17811",
+        "external_id": "2611.17811"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17811",
+        "external_id": "2611.17811"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/cincynlp/review_appendix",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Saptarshi Ghosh",
+      "Mohammad Saim",
+      "Tianyu Jiang"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712669Z",
+    "dedup_keys": [
+      "arxiv:2611.17811",
+      "title:appendix are biased reviews the towards",
+      "github:cincynlp/review_appendix"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 19.911,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "2f0f0c86c7a2b8d8",
+    "kind": "paper",
+    "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
+    "summary_en": "Looped Transformers reduce parameter count by repeatedly applying shared blocks, but parameter sharing alone does not determine how the results of repeated computation are reused. We take the depth-memory view of residual connections and analyze which representation is stored after each block application and how later reads weight it. A full block output contains both its input and its new update, so weighting that output also reweights the history already carried by the input. Reading individual updates instead, with the shared stack's input kept on a separate path, gives separate controls over input strength, total update weight, and allocation across updates. The Loopback Transformer implements these controls: geometric decay sets the total update weight and supplies a recency prior, and attention learns how to allocate that weight. On ClimbMix, Loopback reaches lower validation loss than standard Transformer baselines with 40-75% of their Transformer parameters (excluding token embeddings and the output head) at reference scales from 191M to 3B, with training tokens and executed depth matched. It also has higher mean accuracy over thirteen downstream tasks at 1.4B and 3B. At 191M, 374M, and 778M, it has the lowest validation loss and the highest thirteen-task mean among the standard Transformer and seven looped residual designs.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.07226",
+        "external_id": "2611.07226"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.07226",
+        "external_id": "2611.07226"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yancyou/Loopback",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xuan Ouyang",
+      "Zefan Cai",
+      "Chenlong Zhang",
+      "Cheng Luo",
+      "Ke Wan",
+      "Junjie Hu"
+    ],
+    "published_at": "2026-11-04T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712526Z",
+    "dedup_keys": [
+      "arxiv:2611.07226",
+      "title:loopback looped residual towards transformer transformers unified view",
+      "github:yancyou/loopback"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 17.42,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -18.465
+    }
+  },
+  {
+    "id": "78ebfda10f6a9b15",
+    "kind": "paper",
+    "title": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
+    "summary_en": "Foundation models trained on large unlabeled corpora develop emergent capabilities, tasks that go beyond the training objective. We extend this paradigm to multimodal biology with Bonbon, a foundation model for molecular interactions trained on approximately 3.2 trillion tokens of paired protein-ligand sequences. From a single representation space, Bonbon exhibits three zero-shot emergent capabilities at hierarchical levels of resolution: functional (mechanism of action), residue (binding site localization, including orthosteric/allosteric discrimination), and bond (covalent versus non-covalent engagement). All three capabilities generalize to out-of-distribution complexes. Bonbon was trained on protein-ligand sequences alone, without any task-specific supervision and without structural coordinates. We conducted controlled scaling experiments across six model scales from 42M to 1.6B parameters; every capability evaluated shows a sharp jump at the largest scale on continuous metrics, even as pretraining loss decreases smoothly. This demonstrates that loss-based scaling laws alone are insufficient to predict when zero-shot emergent capabilities become available. The capabilities reported here emerge after training at a 1:2,000 parameter-to-token ratio to accommodate the sparsity of paired biological interaction data. The same frozen representations achieve state-of-the-art binding and affinity prediction at five orders of magnitude greater speed than co-folding methods. In prospective wet-lab validation across nine disease targets spanning seven protein families, Bonbon achieves a 61.5% dose-response hit rate on de novo compounds, yielding structurally novel molecules not previously reported to inhibit these proteins, including for out-of-distribution targets.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.14504",
+        "external_id": "2611.14504"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.14504",
+        "external_id": "2611.14504"
+      }
+    ],
+    "actors": [
+      "Adi Mashiach"
+    ],
+    "published_at": "2026-11-10T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712597Z",
+    "dedup_keys": [
+      "arxiv:2611.14504",
+      "title:biological capabilities emergent for foundation interactions model molecular"
+    ],
+    "signals": {
+      "hf_upvotes": 8,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 17.113,
+    "score_breakdown": {
+      "hf_upvotes": 17.578,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -9.465
+    }
+  },
+  {
+    "id": "de8828ee756f5c89",
+    "kind": "paper",
+    "title": "eDIAR: Training-Free Open-Speaker Streaming Diarization for Long Meetings and Large Archives via e-means",
+    "summary_en": "Meetings last up to an hour, and nobody knows in advance how many people will speak. Neural diarizers with a fixed number of output slots, such as Streaming Sortformer and Nemotron-3, are accurate and run online, but they cannot name more speakers than they have slots. We remove this limit without retraining. The slot head keeps deciding who is active and when speech overlaps, and speaker embeddings are clustered inside a single slot, with the official e-means algorithm, only after every slot has been used. In the streaming system, re-clustering is confined to a bounded window, labels are revised for a few seconds, and identities are anchored to the slots of the head. The resulting system has no limit on the number of speakers and stays accurate when speakers outnumber the slots, where fixed-slot models break down. On meetings that grow to an hour it stays far more accurate than Streaming Sortformer, which accumulates errors, and its cost per update does not grow with the meeting. The same recipe turns the four-slot Streaming Sortformer into an open-speaker system. Across recordings, e-means makes it affordable to link the speakers of a large archive frame by frame, a task that arises when conversational corpora are prepared, and it reaches the clustering quality of Lloyd's k-means several times faster. The method needs little tuning, and e-means runs with its default recipe from a few hundred to more than a million embeddings.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18529",
+        "external_id": "2611.18529"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18529",
+        "external_id": "2611.18529"
+      }
+    ],
+    "actors": [
+      "Kyudan Jung",
+      "Jihwan Kim",
+      "Minwoo Lee",
+      "Eunji Shin",
+      "Jaegul Choo"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712651Z",
+    "dedup_keys": [
+      "arxiv:2611.18529",
+      "title:and archives diarization ediar for free large long means meetings open speaker streaming training via"
+    ],
+    "signals": {
+      "hf_upvotes": 4,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 16.911,
+    "score_breakdown": {
+      "hf_upvotes": 12.876,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "86cd7a7871132f13",
+    "kind": "paper",
+    "title": "JFinBench: A Continuously Refreshable Japanese Financial Benchmark from the Latest Certification Exams",
+    "summary_en": "Large language models (LLMs) are increasingly applied to finance, creating a need for benchmarks that evaluate their capabilities across financial systems with different regulations and practices. However, existing financial benchmarks provide limited coverage of country-specific financial systems, and they are difficult to keep up to date as released questions leak into training data. We introduce JFinBench, a Japanese financial benchmark comprising 321 examples from the 2026 editions of six regularly administered certification exams covering accounting, tax, financial planning, and banking. To construct it, we develop a human-in-the-loop agentic pipeline in which a coding agent writes exam-specific conversion code and a review page, while a human verifies every example and feeds corrections back to the agent. This pipeline adapts to heterogeneous exam formats and reduces the effort of incorporating new exam editions, enabling periodic refreshes that mitigate data contamination. Evaluating 12 recent LLMs, we find that Claude Fable 5 and GPT-6 Astra exceed 93% overall, while even the best open-weight model, Kimi K3.1 Pro, trails Claude Fable 5 by 12 percentage points. When models can additionally use a terminal and web access, they retrieve the knowledge they lack and every model improves. The gap narrows but about 4 points remain, and the ranking of models stays largely the same, suggesting that knowledge held in the model itself remains valuable even with tools. We release the dataset, the evaluation code, and the construction pipeline.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18130",
+        "external_id": "2611.18130"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18130",
+        "external_id": "2611.18130"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/SakanaAI/JFinBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Issa Sugiura",
+      "Taro Makino",
+      "Takashi Ishida"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712725Z",
+    "dedup_keys": [
+      "arxiv:2611.18130",
+      "title:benchmark certification continuously exams financial from japanese jfinbench latest refreshable the",
+      "github:sakanaai/jfinbench"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 15.824,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "ff0e32fafb6473dc",
+    "kind": "paper",
+    "title": "Evidence-Governed Adoption of Self-Generated Updates in Autonomous AI Agents",
+    "summary_en": "Autonomous agents modify prompts, memories, tools, workflows, and policies using interaction histories. Yet a plausible modification is not necessarily suitable for persistent adoption: candidate selection is adaptive, evaluators may be imperfect, and local gains can hide degradation against an earlier baseline. We introduce Evidence-Governed Evolution (EGE), a framework for governing adoption of self-generated agent modifications. EGE separates candidate generation from confirmatory adoption, evaluates frozen candidates on fresh paired audits, requires meaningful improvement on a prespecified primary objective, protects declared capabilities through reference-relative non-inferiority tests, and applies governance constraints before bounded canary deployment. We establish an evaluator-calibrated simultaneous lower-bound construction for a countable sequence of adaptively generated candidates. It combines candidate-wise Hoeffding bounds with independent calibration samples comparing the operational evaluator with a prespecified reference procedure. We also formalise reference replacement through bridge tests, derive a cumulative degradation bound along a versioned reference lineage, and provide an audit-planning condition relating effect-size margin, sample sizes, and acceptance probability. A Monte Carlo stress test illustrates calibration under candidate-dependent evaluator optimism; it is a stylised statistical experiment, not an evaluation of a deployed agent. The guarantees are conditional on bounded paired scores, fresh sampling, a valid reference-evaluation construct, and declared evaluation distributions; they do not establish universal agent safety or robustness to arbitrary distribution shift.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.16378",
+        "external_id": "2611.16378"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.16378",
+        "external_id": "2611.16378"
+      }
+    ],
+    "actors": [
+      "Subodh Lonkar"
+    ],
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712690Z",
+    "dedup_keys": [
+      "arxiv:2611.16378",
+      "title:adoption agents autonomous evidence generated governed self updates"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 13.625,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.465
+    }
+  },
+  {
+    "id": "56349ef03d4809d4",
+    "kind": "paper",
+    "title": "Aligning AI Teams",
+    "summary_en": "Previous work has shown that alignment training on individual LLM agents can fail to transfer to multi-agent settings. We investigate the underlying mechanisms for this failure, and explore interventions to preserve alignment transfer to multi-agent LLM teams. We focus on two software-engineering tasks (sepsis triage, a news recommender) and ten consulting-proposal generation tasks. We present four findings: (1) The single-vs-team safety gap does not show a clear trend with more capable models. We find that Anthropic's Mythos Preview shows the largest gap on one of our tasks but the smallest on another; (2) Many natural interventions, such as having agents critique each other's work or coordinate in a group chat, do not reliably bring agent teams back to single-agent alignment behavior; (3) diffusion of responsibility substantially accounts for the safety gap: agents in teams are less likely to proactively check for system-level safety failures and more likely to ignore, rationalize, or deflect responsibility for issues when they arise; (4) having a designated safety lead agent ensure system-level safety, and having a coordinator agent publish a safety specifications document are effective at restoring single-agent alignment. We also release magelab, a multi-agent LLM orchestration and experimentation framework. Our findings can help practitioners design agent teams that successfully preserve the behaviors expected of aligned individual agents.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.17820",
+        "external_id": "2611.17820"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17820",
+        "external_id": "2611.17820"
+      }
+    ],
+    "actors": [
+      "Siddarth Srinivasan",
+      "Morgan Jane Matthews",
+      "Jascha Sohl-Dickstein",
+      "Erik Jones"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712738Z",
+    "dedup_keys": [
+      "arxiv:2611.17820",
+      "title:aligning teams"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.824,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "88a00259ba6b3dd9",
+    "kind": "paper",
+    "title": "CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic Driving",
+    "summary_en": "Open driving releases and usage-based insurance programs often claim to prevent privacy breaches by omitting GPS records when sharing or collecting vehicle data. However, removing GPS coordinates from driving logs does not erase the location information carried by vehicle signals. While prior route-inference attacks have demonstrated that speed, steering, and driving events can be matched to road networks to reconstruct trajectories, existing studies rely on inconsistent prior assumptions and evaluation metrics and are tested only on small, restricted datasets, making their results difficult to compare and their real-world effectiveness uncertain. We release CANTraj, a naturalistic driving dataset pairing decoded CAN events with time-aligned GNSS trajectories (3,940 drives, 454 drivers), and CANTraj-Bench for evaluating trajectory recovery (3,675 drives, 431 drivers, 1,380 hours, 85,919 km). On 776 evaluation drives from 94 unseen drivers, we compare six re-implemented attacks and benchmark baselines under explicit information-access protocols, paired comparisons, and metrics incorporating failures. Experiments show that combining steering signals with road-network constraints yields the largest gain: With a known start and heading, adding steering to speed raises the online map filter's five-minute route recovery from 56% to 87%, with a median average displacement error of 43 m versus 921 m for map-free dead reckoning. Offline beam search recovers 88% of test routes with the heading and 81% without it. Because methods fail on different windows, we also evaluate an LLM harness that selects among candidate routes on 659 five-minute windows; its best configuration recovers 79% of routes on test and 83% on few-shot, outperforming the best baseline on test and matching it on few-shot. Data and code at huggingface.co/datasets/HenryYHW/CANTraj and github.com/WangYuHang-cmd/GPS--CAN.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18442",
+        "external_id": "2611.18442"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18442",
+        "external_id": "2611.18442"
+      }
+    ],
+    "actors": [
+      "Yuhang Wang",
+      "Jingxin Yang",
+      "Chuheng Wei",
+      "Suyang Chen",
+      "Haozhuang Chi",
+      "Hao Zhou"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.712754Z",
+    "dedup_keys": [
+      "arxiv:2611.18442",
+      "title:can cantraj driving from naturalistic recovering signals trajectories vehicle"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.824,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.965
+    }
+  },
+  {
+    "id": "8cbb64b0dcfedbac",
+    "kind": "paper",
+    "title": "Activation Steering the Nan-Shan in Typhoon",
+    "summary_en": "Typhoon is an audiovisual installation based on Joseph Conrad's novella, in which Captain MacWhirr steers the steamer Nan-Shan directly into and through a catastrophic storm. The novella is a study of what happens when the scale of a phenomenon exceeds the practical and conceptual frameworks available to comprehend it and of the paralysis that sometimes follows a demand for action in such overwhelming circumstances. We chose the text of Typhoon to reflect on human culture's current AI moment. We prompt a large language model, seeded with Conrad's original language, to feed endlessly on its own output, and explore when and how the text becomes increasingly alien and unwieldy as time progresses, including deviations from the narrative, digressions into the model's own instructions and thinking, and long periods of incoherent rumination. We employ methods from activation steering, including a novel adaptive steering method we introduce, to control the rhythm of the narrative and the model's digressions over long stretches of generation. The simultaneous efficacy and unpredictability of this steering showcases the tension between the perceived interpretability of AI, and the reality of a system that remains outside our comprehension and control.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17768",
+        "external_id": "2611.17768"
+      }
+    ],
+    "actors": [
+      "Megan Wei",
+      "Damon Pham",
+      "John Cayley",
+      "Ellie Pavlick"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772955Z",
+    "dedup_keys": [
+      "arxiv:2611.17768",
+      "title:activation nan shan steering the typhoon"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "015d89f6e3eb46a4",
+    "kind": "paper",
+    "title": "Benchmarks Don't Talk Back: Learning Through Self-Disagreement",
+    "summary_en": "A benchmark usually measures a language model alone with a question, and deployment rarely looks like that: answers get contested, and models give up correct ones under counter-reasoning that is itself wrong. We show that what fails there is not a shortfall of accuracy but a capability in its own right -- knowing when to hold a position and when to yield to a better one -- which we call dialectical competence. It stands on first-answer accuracy without following from it: a model can be made materially better at answering and no better at this, and training for accuracy alone can drift against it. Nor can it be bought at inference, by self-reflection or by sampling more. Taking a cue from the dialectical tradition in philosophy, in which productive opposition arises within a position rather than being imposed on it from outside, we hypothesize that this capability can be trained from opposition the model supplies itself. It states a position, generates the strongest case against that position -- its antithesis -- rules on whether the case stands, and is trained on that ruling, with no second model at training or at deployment. We call this learning through Self-Disagreement: reinforcement learning from verifiable rewards throughout, where the same check that scores an answer against its reference scores the ruling too, so no reward model, no preference data and no human annotation enter anywhere. The capability is trained rather than elicited: weak in the base model, it arrives with the reward, is not paid for out of first-answer accuracy, and holds against challengers the model never trained against, including ones stronger than itself. The opposition a model needs in order to improve, it turns out, need not come from outside it.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17563",
+        "external_id": "2611.17563"
+      }
+    ],
+    "actors": [
+      "Soheil Abbasloo",
+      "Peng Cheng"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772563Z",
+    "dedup_keys": [
+      "arxiv:2611.17563",
+      "title:back benchmarks disagreement don learning self talk through"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "fee651b1751bb9fe",
+    "kind": "paper",
+    "title": "CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents",
+    "summary_en": "Long-horizon LLM agents can coordinate tools and applications to complete complex, multi-step tasks. As their interaction histories grow, effective context management becomes essential for reliable and efficient execution. Existing methods reduce context through summarization, pruning, or history selection. However, shorter contexts do not necessarily support better decisions: summaries can omit exact details needed for later actions, while retaining entire interactions can carry substantial irrelevant information. We propose CarryOn, a lightweight context manager that pairs compact execution state with fine-grained, source-linked evidence. A learned selector and adaptive retention policy keep relevant evidence available without additional LLM calls for context management. We introduce two complementary evaluation metrics: $S_\\alpha$ prioritizes task success while accounting for resource use, and normalized cost per success (NCS) measures the resources spent per successful task. Across AppWorld, OfficeBench, and Tau2 Telecom with three LLM Actors, CarryOn achieves 75.7% macro-averaged task success, exceeding the strongest baseline by 6.7 percentage points. It also achieves the best average scores on both metrics.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17808",
+        "external_id": "2611.17808"
+      }
+    ],
+    "actors": [
+      "Lihuan Li",
+      "Ruiyi Yang",
+      "Jiru Wang",
+      "Yifan Duan",
+      "Xiachong Lin",
+      "Hao Xue",
+      "Yang Song",
+      "Flora Salim"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.773149Z",
+    "dedup_keys": [
+      "arxiv:2611.17808",
+      "title:agents carryon context for horizon keep learning llm long what"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "78f72336b5b53659",
+    "kind": "paper",
+    "title": "Creating Steering Vectors via Input Optimisation",
+    "summary_en": "Activation steering influences a language model's behaviour by adding a steering vector to its residual stream during generation, but it requires white-box access to modify the hidden states at every generation step. We introduce ActGCG, a modification of Greedy Coordinate Gradient which optimises a suffix to match the target activations obtained by adding a steering vector to the residual stream. We further introduce universal suffixes trained across many prompts at once, a model-translation step that rewrites the suffix into human-readable text midway through optimisation, and a soft-suffix variant to remove the discrete token space constraint. We study two behaviours: steering a model to answer in German, and anti-refusal steering for jailbreaking. For German, a discrete suffix reproduces the steering vector's behaviour almost perfectly and transfers well across prompts and models. For anti-refusal, the equivalence is weaker, succeeding under a phrase-avoidance metric but only partially under the stricter HarmBench classifier. Our results show that a steering vector's behaviour is reachable from the input, with no access to model internals at generation time, up to a loss that depends on the concept being steered.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17481",
+        "external_id": "2611.17481"
+      }
+    ],
+    "actors": [
+      "Batuhan Akar"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772449Z",
+    "dedup_keys": [
+      "arxiv:2611.17481",
+      "title:creating input optimisation steering vectors via"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "9ed2093dbdcdd29f",
+    "kind": "paper",
+    "title": "GDP.xlsx: Benchmarking Frontier Models on Professional Workbooks",
+    "summary_en": "We introduce GDP_xlsx, a benchmark of 70 realistic workplace requests written by professionals in 13 domains, each paired with an expert rubric of binary criteria and with the complete workbook or CSV file it refers to. Together the files hold 2.18 million populated cells, and the rubrics 791 criteria. Agents work in a container with spreadsheet tools, and an agentic judge that can open the file applies the rubric. Completeness and exclusivity criteria require set-valued answers to be found in full and with nothing extra. We rank models by strict pass@1, the share of attempts that meet every criterion. Across 20 model configurations, including frontier models from Google, Anthropic, and OpenAI, the top-scoring one, Gemini 4 Argon, passes only 38.3% of attempts, and the median score is 19.3%, leaving wide headroom. We release the evaluation harness and three public tasks; the other 67 are held out to protect the leaderboard from contamination.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17766",
+        "external_id": "2611.17766"
+      }
+    ],
+    "actors": [
+      "Suhaas Garre",
+      "Sushant Mehta",
+      "Edwin Chen"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772897Z",
+    "dedup_keys": [
+      "arxiv:2611.17766",
+      "title:benchmarking frontier gdp models professional workbooks xlsx"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "c01441dd8631b51a",
+    "kind": "paper",
+    "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
+    "summary_en": "Frontier LLM agents that query databases with tools are among the most accurate text-to-SQL systems, but per-query calls to a hosted model are slow, costly, and expose sensitive organizational queries to external APIs. For example, a Claude Opus 5.5 agent serving 10,000 queries a day costs over $70,000 a year at list price. To what extent can local hardware already owned by an organization offload this burden without compromising the agent's accuracy? We present LuthorSQL, a non-autoregressive 7B text-to-SQL model that serves as a rapid System 1 gate for a slower LLM agent (System 2), escalating queries only when uncertain. LuthorSQL makes a single forward pass to predict slot scores over a bounded grammar for query plans, compiles and runs up to 32 candidate plans, and chooses an answer using a trained validator. On its own, LuthorSQL reaches 68.03% execution accuracy on BIRD's hidden test set at 0.84 s per question on a single GPU, maintains its accuracy in 9 GB with 8-bit quantized weights, and transfers zero-shot to Snowflake, BigQuery, MySQL, PostgreSQL, and DuckDB within 3.1 points of its native SQLite accuracy. Combined with Claude Opus 5.5 in a pre-registered confidence cascade over 227 questions on databases published after Opus's training cutoff, LuthorSQL answers nearly half of all questions locally and cuts API cost by 33.3% at the same accuracy. Finally, contamination probing shows that Opus reproduces 48-92% of public benchmark gold queries verbatim without seeing the schema; however, its tool-assisted accuracy holds on renamed schemas and reaches 95.6-97.4% on post-cutoff databases. Code and data: https://github.com/IAMIbrahimmemon/luthorsql",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17780",
+        "external_id": "2611.17780"
+      }
+    ],
+    "actors": [
+      "Ibrahim Memon",
+      "Armin Karamzade",
+      "M. Hanif Jhaveri",
+      "Roy Fox"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.773028Z",
+    "dedup_keys": [
+      "arxiv:2611.17780",
+      "title:agent for llm luthorsql model one pass slower sql system text"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "e59d4ae34284ce44",
+    "kind": "paper",
+    "title": "Poetry 'resurrection' from LLMs",
+    "summary_en": "In an era where linguistic creativity is challenged by algorithmic authorship, we pose a provocative question: can artificial intelligence (AI) write an infinite poem? We set up two experiments to investigate the quantitative and qualitative output produced by AI utilizing couplets that evidence a poetic relationship between end words, the only variation in a strict anaphoric, litany structure. Our results show that while AI can generate interesting pairings, it still falls short of human-level creativity and understanding of poetic relationships. We offer commentary and a brief survey of the field of computational poetry experiments, tracing back authorial intention and distinctions of 'natural' and 'artificial' poetry, as well as justifying why couplet form is suited to testing AI's poetic output. Experiment 1 relies on manual prompting and co-creation to extend the original poem, which is developed into an animated webpage installation and interactive artwork. Experiment 2 reliably achieves automated output reaching the 1000 benchmark via an alternative method of using an LLM in combination with semantic similarity, of which Method 2 demonstrates a higher capacity for semantic and quantitative poetic output. These experiments highlight the limitations of current LLMs' generation capacity at the word level but also suggest that poetry will also respond and revive by incorporating AI workflows.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17464",
+        "external_id": "2611.17464"
+      }
+    ],
+    "actors": [
+      "Vincent Cellucci",
+      "Peter van der Putten"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772385Z",
+    "dedup_keys": [
+      "arxiv:2611.17464",
+      "title:from llms poetry resurrection"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "c09506269ca87bb5",
+    "kind": "paper",
+    "title": "RAG-FGO: Dynamic Optimization of Query-Rewriting Agents for Generative RAG",
+    "summary_en": "In retrieval-augmented generation (RAG), query rewriting serves as a core interface that aligns user intent with external knowledge bases, and its effectiveness directly determines overall system performance. However, generative retrieval faces three critical challenges in real-world deployment: noisy retrieval feedback, the difficulty of jointly optimizing discrete prompt templates and continuous decoding-control parameters, and the limited generalization of static rewriting strategies under semantically complex scenarios. To address these issues, we propose RAG-FGO, a dynamic optimization framework for generative retrieval strategies. RAG-FGO formulates query rewriting as a non-differentiable black-box optimization problem in a mixed discrete-continuous space, and represents prompt templates and decoding parameters as adaptively optimizable query-rewriting agents. The framework performs global search to enable semantic jumps and structural reorganization that escape local optima, while applying local perturbations for fine-grained alignment and precise refinement. In addition, RAG-FGO introduces an elite-preserving memory pool that accumulates high-quality strategies across iterations, thereby mitigating the impact of stochasticity and noisy feedback on optimization stability. Experimental results on a diverse suite of benchmarks demonstrate the effectiveness and robustness of the proposed method, supporting its applicability to complex semantic retrieval tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17788",
+        "external_id": "2611.17788"
+      }
+    ],
+    "actors": [
+      "Qigan Sun",
+      "Xudong Wang",
+      "Chaoning Zhang",
+      "Chenghao Li",
+      "Jiaquan Zhang",
+      "Jiehui Xie",
+      "Sungyoung Lee",
+      "Jie Zou",
+      "Ning Xie",
+      "Peng Wang",
+      "Yang Yang",
+      "Heng Tao Shen"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.773093Z",
+    "dedup_keys": [
+      "arxiv:2611.17788",
+      "title:agents dynamic fgo for generative optimization query rag rag rewriting"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "29fa1b61b3d1c31c",
+    "kind": "paper",
+    "title": "See Every Block Once: Variance-Reduced Post-Training for Masked Diffusion Language Models",
+    "summary_en": "Policy gradient methods are widely used to align large language model outputs with human preferences, but the log-likelihoods they require cannot be directly computed in Masked Diffusion Language Models (MDLMs). MDLM post-training therefore relies on a surrogate objective based on the Evidence Lower Bound (ELBO), and recent work estimates a blockwise variant of this objective via Monte Carlo methods to support blockwise generation. However, existing estimation schemes randomly sample the block index, so they may evaluate the same block more than once and leave some blocks unevaluated. This introduces variance arising from block selection into the estimates. In this work, we propose a full-block estimator that evaluates every block exactly once and averages the results. We theoretically show that the proposed estimator remains unbiased while eliminating the between-group variance arising from block selection, thereby achieving lower variance than the baseline for the same sample size. In experiments on five benchmarks spanning mathematics, planning, and coding, our method achieves the highest accuracy on four benchmarks and outperforms the random block sampling baseline by an average of 12.79 points.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17754",
+        "external_id": "2611.17754"
+      }
+    ],
+    "actors": [
+      "Yunzhen He",
+      "Hiroaki Yamagiwa",
+      "Hidetoshi Shimodaira"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772844Z",
+    "dedup_keys": [
+      "arxiv:2611.17754",
+      "title:block diffusion every for language masked models once post reduced see training variance"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "6337b553455179da",
+    "kind": "paper",
+    "title": "Small Open-Weight Language Models for Crowd Decision-Making: Capabilities and Limits of Output-Level Fusion and Linguistic Aggregation",
+    "summary_en": "Small open-weight language models can run crowd decision-making (CDM) on an institution's own infrastructure, which keeps the checkpoint, the inference settings and the opinions under its control. Their judgements vary across repeated queries; whether repeating and aggregating them, often through the 2-tuple linguistic representation, settles the decision rather than the labels is untested. Five open-weight models of 8-36B total parameters on one consumer GPU and a hosted reference classify 474 TripAdvisor reviews of four London restaurants ten times each; three open-weight models repeat the protocol on 600 reviews of twelve Madrid restaurants. Continuous evaluations preserve resolution: snapping each review leaves 5 distinct values against 21-65, and snapping at every level at most two collective values. Sensitivity to the participants persists once run-to-run variability is reduced: in London, redrawing the reviewers keeps the winner on 47-81% of replicas against 86-100% for redrawing the runs. With simultaneous intervals over every pair of alternatives under crowd resampling, no system on either corpus names a single winner: in London every system keeps all four restaurants as candidates, and in Madrid the candidate sets hold five to eight of the twelve. Extra runs and output-level fusion stabilize the winner but do not remove that sensitivity, and the fusion does not beat its best member. The three larger open-weight models name the hosted reference's London winner and at least match its per-review correlation with the reviewers' stars, so small open-weight models can support local CDM, reported as candidate sets with margins rather than forced rankings.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17589",
+        "external_id": "2611.17589"
+      }
+    ],
+    "actors": [
+      "David Herrera-Poyatos",
+      "Cristina Zuheros",
+      "Carlos Pel\\'aez-Gonz\\'alez",
+      "Andr\\'es Herrera-Poyatos",
+      "Rosana Montes",
+      "Francisco Herrera"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772720Z",
+    "dedup_keys": [
+      "arxiv:2611.17589",
+      "title:aggregation and and capabilities crowd decision for fusion language level limits linguistic making models open output small weight"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "9a322cf9e3987b00",
+    "kind": "paper",
+    "title": "Tracing Knowledge and Reasoning in LLM",
+    "summary_en": "Current evaluations of Large Language Models (LLMs) report performance at the dataset or task level, revealing what a model achieves but offering little insight into the internal processing associated with its performance. We propose a task-centric framework for characterising the model-internal processing elicited by a benchmark. It combines attention- and activation-based signals with representation-based measures to characterise benchmarks spanning a continuum from retrieval-dominant to reasoning-dominant and to surface failure modes that task-level scores conceal. We evaluate 16 LLMs across 24 diverse benchmarks and conduct targeted internal-state analyses on representative models and tasks, observing systematic differences in processing between knowledge-centric and reasoning-centric tasks. We shift evaluation from asking what score a model achieves toward characterising the processing patterns associated with that score, potentially supporting more targeted benchmark selection and more informed model choice. We open source our code at https://github.com/extraordinarylab/trace-kr.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17461",
+        "external_id": "2611.17461"
+      }
+    ],
+    "actors": [
+      "Yang Wang",
+      "Xiao Wang",
+      "Yiqi Liu",
+      "Chenghao Xiao",
+      "Eleni Vasilaki",
+      "Goran Nenadic",
+      "Chenghua Lin"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772287Z",
+    "dedup_keys": [
+      "arxiv:2611.17461",
+      "title:and knowledge llm reasoning tracing"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  },
+  {
+    "id": "81826eeaaeb98b99",
+    "kind": "paper",
+    "title": "What Do Multilingual Self-Supervised Speech Encoders Know About Sentence Meaning?",
+    "summary_en": "Self-supervised speech models (S3Ms) have been scaled up to thousands of languages and millions of hours of audio, yet little is known about how these models structure semantic knowledge across languages. In this work, we probe sentence-level semantics in massively multilingual S3Ms across 76 languages, using linear maps from frozen speech representations into a frozen text embedding space, evaluated by cross-modal retrieval. Sentence meaning is linearly accessible but highly uneven across languages and resource tiers. Cross-lingual probes can match language-specific probes on languages never seen in probe training, but per-model monolingual decodability does not predict transfer. Within the OmniASR wav2vec family, scaling from 300M--7B disproportionately benefits high-resource languages, and ASR tuning sharply improves semantic decodability while making representations more language-specific. However, semantic content is entangled with acoustics, inflating apparent performance on single-speaker corpora.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "multimodal",
+      "speech",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17686",
+        "external_id": "2611.17686"
+      }
+    ],
+    "actors": [
+      "Kevin Krahn",
+      "Eric Fosler-Lussier"
+    ],
+    "published_at": "2026-11-16T05:00:00Z",
+    "first_seen_at": "2026-11-16T07:26:18.772783Z",
+    "dedup_keys": [
+      "arxiv:2611.17686",
+      "title:about encoders know meaning multilingual self sentence speech supervised what"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.848,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.152
+    }
+  }
+]
