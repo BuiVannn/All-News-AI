@@ -1,5 +1,377 @@
 [
   {
+    "id": "a980e77c3976703f",
+    "kind": "model",
+    "title": "facebook/meta-encoder-v1",
+    "summary_en": "feature-extraction, transformers, muse_glimmer, metaencoder, multimodal-embedding, image-text-retrieval, video-retrieval",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/facebook/meta-encoder-v1",
+        "external_id": "facebook/meta-encoder-v1"
+      }
+    ],
+    "actors": [
+      "facebook"
+    ],
+    "published_at": "2026-11-12T02:00:27Z",
+    "first_seen_at": "2026-11-17T21:24:42.769798Z",
+    "dedup_keys": [
+      "hf:facebook/meta-encoder-v1"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 43,
+      "hf_downloads": 496,
+      "hf_trending_score": 43.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 55.762,
+    "score_breakdown": {
+      "hf_trending": 22.705,
+      "hf_downloads": 12.417,
+      "hf_likes": 11.353,
+      "has_weights": 4.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -8.713
+    }
+  },
+  {
+    "id": "31b821a0f6fff7ce",
+    "kind": "model",
+    "title": "sensenova/SenseNova-Loop-9B",
+    "summary_en": "image-text-to-text, transformers, sensenova_loop, text-generation, multimodal, looped-transformer, mhc",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+        "external_id": "sensenova/SenseNova-Loop-9B"
+      }
+    ],
+    "actors": [
+      "sensenova"
+    ],
+    "published_at": "2026-11-17T10:16:41Z",
+    "first_seen_at": "2026-11-17T21:24:42.766678Z",
+    "dedup_keys": [
+      "hf:sensenova/sensenova-loop-9b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 154,
+      "hf_downloads": 0,
+      "hf_trending_score": 151.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 52.577,
+    "score_breakdown": {
+      "hf_trending": 30.143,
+      "hf_likes": 15.13,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -0.696
+    }
+  },
+  {
+    "id": "2dd83443e1808bff",
+    "kind": "paper",
+    "title": "Sage S2.1 Flash Technical Report",
+    "summary_en": "We introduce Sage S1.5 Flash, a 320-billion-parameter general-purpose mixture-of-experts model designed to reason over scientific evidence and act in interactive environments. Sage Sci-Perception uses dedicated encoders for molecular graphs and biological sequences and represents spectra as ordered patches of measurements. Modality-specific projectors map these representations into the input space of a shared backbone, which processes them alongside text and images. To develop the model's agent capabilities, we construct verifiable environments for tool use, search, and coding, as well as specialized workflows involving machine learning experiments and scientific software. Task completion is checked against execution results, changes in environment state, or submitted artifacts. We evaluate Sage S1.5 Flash on 33 benchmarks across seven domains. In the primary comparison against five baselines, it ranks first on OfficeQA Pro (72.2), MLE-bench Lite (90.3 HumanRank), Harvey LAB, and SpreadsheetBench~2, and second on OSWorld-Verified (85.2), WebArena-Verified (67.6), and DeepResearch Bench~II (54.2). These results show particular strengths in using documentary evidence, producing verifiable workbooks, and carrying out machine learning tasks, alongside competitive performance in desktop and browser workflows that require the model to act on visual feedback.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.21072",
+        "external_id": "2611.21072"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21072",
+        "external_id": "2611.21072"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/InternLM/Sage-S2.1-Flash",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Kun Cai",
+      "Haodong Chen",
+      "Guangran Cheng",
+      "Qingxiu Cheng",
+      "Xu Dai",
+      "Guanting Dong",
+      "Qiming Ge",
+      "Lixin Gu",
+      "Tao Gui",
+      "Honglin Guo",
+      "Yuyang Hu",
+      "Zixian Huang",
+      "Jiajie Jin",
+      "Alexander Lam",
+      "Jiaqiang Li",
+      "Yining Li",
+      "Jiahang Lin",
+      "Yanjiang Liu",
+      "Xinyu Lu",
+      "Haijun Lv",
+      "Ningsheng Ma",
+      "Zerun Ma",
+      "Minlong Peng",
+      "Jianmin Qian",
+      "Huayu Sha",
+      "Junlin Shang",
+      "Shuo Shen",
+      "Qisheng Su",
+      "Jiajun Sun",
+      "Yanan Sun",
+      "Zhichao Sun",
+      "Ran Tao",
+      "Zhongbo Tian",
+      "Guoqiang Wang",
+      "Hui Wang",
+      "Rui Wang",
+      "Yiding Wang",
+      "Zhecan Wang",
+      "Hao Xiang",
+      "Xinchen Xie",
+      "Shuhao Xing",
+      "Xiaoyu Xing",
+      "Wanghan Xu",
+      "Xinyu Yang",
+      "Yajie Yang",
+      "Dingbo Yuan",
+      "Yuhang Zang",
+      "Hongjie Zhang",
+      "Chengfeng Zhao",
+      "Haoran Zhao",
+      "Penghao Zhao",
+      "Ruojun Zhou",
+      "Dongsheng Zhu",
+      "Yicheng Zou",
+      "Qiye Cai",
+      "Yifei Cao",
+      "Xinmeng Che",
+      "Hongji Chen",
+      "Jiabei Chen",
+      "Jiadong Chen",
+      "Jiahao Chen",
+      "Jiayi Chen",
+      "Xinjie Chen",
+      "Yujia Chen",
+      "Xin Deng",
+      "Yi Dong",
+      "Yichen Dong",
+      "Wenjie Fu",
+      "Jianing Geng",
+      "Chenyang Gu",
+      "Ding Han",
+      "Han Han",
+      "Feiyang Hao",
+      "Haotan He",
+      "Qiushi He",
+      "Xufeng He",
+      "Xin Hong",
+      "Jie Hou",
+      "Binze Hu",
+      "Yongkang Hu",
+      "Zijian Hu",
+      "Enfu Huang",
+      "Junhao Huang",
+      "Changhao Jiang",
+      "Huicheng Jiang",
+      "Jiazhen Jiang",
+      "Shufan Jiang",
+      "Wenqing Jing",
+      "Jiahao Kuang",
+      "Bowen Lai",
+      "Bo Li",
+      "Qi Li",
+      "Qilong Li",
+      "Zhuoqun Li",
+      "Tianhao Liang",
+      "Jiaxiang Liu",
+      "Junzhang Liu",
+      "Shaofan Liu",
+      "Shuainan Liu",
+      "Tong Liu",
+      "Yi Liu",
+      "Ziyu Liu",
+      "Zhonghang Lu",
+      "Jianwen Luo",
+      "Xuan Luo",
+      "Yanyi Luo",
+      "Huijie Lv",
+      "Mingyu Ma",
+      "Houcheng Min",
+      "Hongjun Mo",
+      "Songhao Ni",
+      "Chengjun Pan",
+      "Qiyuan Peng",
+      "Xiaoxuan Peng",
+      "Wanying Ren",
+      "Runhui Ruan",
+      "Jifei Shan",
+      "Zixin Shang",
+      "Bing Shao",
+      "Zhuohui Sheng",
+      "Jiayang Shi",
+      "Qingyun Shi",
+      "Yang Shu",
+      "Aierpanjiang Simayi",
+      "Sirui Song",
+      "Yuxiao Song",
+      "Jiahao Sun",
+      "Zhe Sun",
+      "Wenzhe Tan",
+      "Guoxiang Wang",
+      "Hanchen Wang",
+      "Jie Wang",
+      "Pengbo Wang",
+      "Qing Wang",
+      "Rui Wang",
+      "Weihang Wang",
+      "Xiaotao Wang",
+      "Yuhui Wang",
+      "Zhekai Wang",
+      "Zihan Wang",
+      "Zile Wang",
+      "Jinke Wu",
+      "Liwei Wu",
+      "Xuansheng Wu",
+      "Yida Wu",
+      "Yihao Wu",
+      "Yinqi Wu",
+      "Yue Wu",
+      "Yuhan Wu",
+      "Yuwa Wu",
+      "Zhiheng Xi",
+      "Ying Xiao",
+      "Zhide Xie",
+      "Caijun Xu",
+      "Xingle Xu",
+      "Yichen Xu",
+      "Yongfeng Xu",
+      "Xiaolei Yang",
+      "Zhixiong Yang",
+      "Jiacheng Yao",
+      "Dingcheng Yi",
+      "Shihong Yi",
+      "Jinhui Yin",
+      "Peizhou Yu",
+      "Shan Yu",
+      "Hao Yuan",
+      "Junjie Yuan",
+      "Xiongyao Zha",
+      "Bo Zhang",
+      "Caixian Zhang",
+      "Kaicheng Zhang",
+      "Pengxiang Zhang",
+      "Qiuyinzhe Zhang",
+      "Wei Zhang",
+      "Xiaoqian Zhang",
+      "Xinsen Zhang",
+      "Jiyuan Zhao",
+      "Shuyu Zhao",
+      "Pujun Zheng",
+      "Zheyu Zheng",
+      "Xiaoxue Zhong",
+      "Peiheng Zhou",
+      "Xiaohao Zhou",
+      "Xinyu Zhou",
+      "Fangyi Zhu",
+      "Guanru Zhu",
+      "Yulun Zhu",
+      "Jiabao Zhuang",
+      "Pengfei Cao",
+      "Zhicheng Dou",
+      "Xianpei Han",
+      "Ben He",
+      "Guoxiu He",
+      "Xuanjing Huang",
+      "Tao Ji",
+      "Yu-Gang Jiang",
+      "Dahua Lin",
+      "Hongyu Lin",
+      "Kang Liu",
+      "Yaojie Lu",
+      "Le Sun",
+      "Ji-Rong Wen",
+      "Jun Zhao",
+      "Yutao Zhu",
+      "Qi Zhang",
+      "Bowen Zhou"
+    ],
+    "published_at": "2026-11-16T00:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:42.802068Z",
+    "dedup_keys": [
+      "arxiv:2611.21072",
+      "title:flash report sage technical",
+      "github:internlm/sage-s2.1-flash"
+    ],
+    "signals": {
+      "hf_upvotes": 85,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 22,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 51.068,
+    "score_breakdown": {
+      "hf_upvotes": 35.635,
+      "github_stars": 6.271,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.838
+    }
+  },
+  {
     "id": "8e4d5ec1ed71287d",
     "kind": "paper",
     "title": "InclusionMed: Benchmarking AI for Inclusive Healthcare",
@@ -33,19 +405,19 @@
       "The InclusionMed Collaboration"
     ],
     "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.331976Z",
+    "first_seen_at": "2026-11-17T21:24:42.802205Z",
     "dedup_keys": [
       "arxiv:2611.21218",
       "title:benchmarking for healthcare inclusionmed inclusive",
       "github:panuvi/inclusionmed"
     ],
     "signals": {
-      "hf_upvotes": 29,
+      "hf_upvotes": 62,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 27,
+      "github_stars": 38,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -53,14 +425,69 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 43.834,
+    "score": 49.634,
     "score_breakdown": {
-      "hf_upvotes": 27.21,
-      "github_stars": 6.664,
+      "hf_upvotes": 33.145,
+      "github_stars": 7.327,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.04
+      "age_decay": -2.838
+    }
+  },
+  {
+    "id": "5023078a71e9b4b3",
+    "kind": "model",
+    "title": "iapp/OpenThai2.0-OCR-Markdown",
+    "summary_en": "image-text-to-text, nemotron_parse, OCR, Thai, document-parsing, markdown, tables",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/iapp/OpenThai2.0-OCR-Markdown",
+        "external_id": "iapp/OpenThai2.0-OCR-Markdown"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+        "external_id": "nvidia/Nemotron-3.5-Parse"
+      }
+    ],
+    "actors": [
+      "iapp"
+    ],
+    "published_at": "2026-11-09T14:21:29Z",
+    "first_seen_at": "2026-11-17T21:24:42.769921Z",
+    "dedup_keys": [
+      "hf:iapp/openthai2.0-ocr-markdown"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 52,
+      "hf_downloads": 12448,
+      "hf_trending_score": 38.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 48.31,
+    "score_breakdown": {
+      "hf_trending": 21.981,
+      "hf_downloads": 18.859,
+      "hf_likes": 11.911,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -12.441
     }
   },
   {
@@ -92,15 +519,15 @@
       "KORMo-VL"
     ],
     "published_at": "2026-11-14T11:23:13Z",
-    "first_seen_at": "2026-11-17T08:38:22.325008Z",
+    "first_seen_at": "2026-11-17T21:24:42.769427Z",
     "dedup_keys": [
       "hf:kormo-vl/kormo-web-11b"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 62,
-      "hf_downloads": 2,
-      "hf_trending_score": 55.0,
+      "hf_likes": 72,
+      "hf_downloads": 26,
+      "hf_trending_score": 65.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -110,14 +537,14 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 42.45,
+    "score": 47.474,
     "score_breakdown": {
-      "hf_trending": 24.152,
-      "hf_downloads": 2.197,
-      "hf_likes": 12.429,
+      "hf_trending": 25.138,
+      "hf_downloads": 6.592,
+      "hf_likes": 12.871,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -4.328
+      "age_decay": -5.127
     }
   },
   {
@@ -158,34 +585,456 @@
       "Weisi Lin"
     ],
     "published_at": "2026-11-15T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.331909Z",
+    "first_seen_at": "2026-11-17T21:24:42.802173Z",
     "dedup_keys": [
       "arxiv:2611.19937",
       "title:action allocflow data end end from generation market portfolio raw trading",
       "github:allocflow/allocflow"
     ],
     "signals": {
-      "hf_upvotes": 35,
+      "hf_upvotes": 67,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 1,
+      "github_stars": 18,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 2,
+      "num_comments": 3,
       "has_code": true,
       "has_weights": false
     },
-    "score": 38.514,
+    "score": 47.307,
     "score_breakdown": {
-      "hf_upvotes": 28.668,
-      "github_stars": 1.386,
+      "hf_upvotes": 33.756,
+      "github_stars": 5.889,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.54
+      "age_decay": -4.338
+    }
+  },
+  {
+    "id": "11aa59817b69d188",
+    "kind": "model",
+    "title": "rayline-ai/ARC-1.0",
+    "summary_en": "text-classification, vllm, qwen3_5, rayline, model-routing, agents, decision-model",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/rayline-ai/ARC-1.0",
+        "external_id": "rayline-ai/ARC-1.0"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+        "external_id": "Qwen/Qwen3.5-0.8B"
+      }
+    ],
+    "actors": [
+      "rayline-ai"
+    ],
+    "published_at": "2026-11-10T18:40:00Z",
+    "first_seen_at": "2026-11-17T21:24:42.769977Z",
+    "dedup_keys": [
+      "hf:rayline-ai/arc-1.0"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 40,
+      "hf_downloads": 1279,
+      "hf_trending_score": 37.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 44.604,
+    "score_breakdown": {
+      "hf_trending": 21.826,
+      "hf_downloads": 14.309,
+      "hf_likes": 11.141,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -10.672
+    }
+  },
+  {
+    "id": "3133a41484b0fa5d",
+    "kind": "model",
+    "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+    "summary_en": "peft, trl, grpo, async-grpo, lora, agents",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+        "external_id": "harness-hub/Qwen3.8-27B-pi-adapted"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "external_id": "Qwen/Qwen3.8-27B"
+      }
+    ],
+    "actors": [
+      "harness-hub"
+    ],
+    "published_at": "2026-11-16T06:52:31Z",
+    "first_seen_at": "2026-11-17T21:24:42.769340Z",
+    "dedup_keys": [
+      "hf:harness-hub/qwen3.8-27b-pi-adapted"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 73,
+      "hf_downloads": 0,
+      "hf_trending_score": 72.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 44.246,
+    "score_breakdown": {
+      "hf_trending": 25.743,
+      "hf_likes": 12.912,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.409
+    }
+  },
+  {
+    "id": "0355f4ed25e6d9fd",
+    "kind": "model",
+    "title": "perplexity-ai/pplx-decider-v1.3",
+    "summary_en": "text-classification, pytorch, qwen3_5, classification, multimodal, custom-code, decider",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.3",
+        "external_id": "perplexity-ai/pplx-decider-v1.3"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "external_id": "Qwen/Qwen3.8-27B"
+      }
+    ],
+    "actors": [
+      "perplexity-ai"
+    ],
+    "published_at": "2026-11-09T08:38:41Z",
+    "first_seen_at": "2026-11-17T21:24:42.769671Z",
+    "dedup_keys": [
+      "hf:perplexity-ai/pplx-decider-v1.3"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 48,
+      "hf_downloads": 837,
+      "hf_trending_score": 48.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.69,
+    "score_breakdown": {
+      "hf_trending": 23.351,
+      "hf_downloads": 13.462,
+      "hf_likes": 11.675,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -12.798
+    }
+  },
+  {
+    "id": "16b57535bd32c49d",
+    "kind": "model",
+    "title": "StarpowerTechnology/WVY-Blender-5m",
+    "summary_en": "text-generation, pytorch, wvy_blender, blender, animation, text-to-3d, scene-generation, small-language-model",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/StarpowerTechnology/WVY-Blender-5m",
+        "external_id": "StarpowerTechnology/WVY-Blender-5m"
+      }
+    ],
+    "actors": [
+      "StarpowerTechnology"
+    ],
+    "published_at": "2026-11-12T05:26:09Z",
+    "first_seen_at": "2026-11-17T21:24:42.769740Z",
+    "dedup_keys": [
+      "hf:starpowertechnology/wvy-blender-5m"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 48,
+      "hf_downloads": 648,
+      "hf_trending_score": 47.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.354,
+    "score_breakdown": {
+      "hf_trending": 23.227,
+      "hf_downloads": 12.951,
+      "hf_likes": 11.675,
+      "has_weights": 4.0,
+      "age_decay": -8.499
+    }
+  },
+  {
+    "id": "8479cc4b1dfd2a0c",
+    "kind": "model",
+    "title": "perplexity-ai/pplx-decider-flash-v1.3",
+    "summary_en": "text-classification, pytorch, qwen3_5, classification, multimodal, custom-code, decider",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.3",
+        "external_id": "perplexity-ai/pplx-decider-flash-v1.3"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+        "external_id": "Qwen/Qwen3.5-4B"
+      }
+    ],
+    "actors": [
+      "perplexity-ai"
+    ],
+    "published_at": "2026-11-09T08:38:22Z",
+    "first_seen_at": "2026-11-17T21:24:42.769865Z",
+    "dedup_keys": [
+      "hf:perplexity-ai/pplx-decider-flash-v1.3"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 41,
+      "hf_downloads": 1337,
+      "hf_trending_score": 40.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.094,
+    "score_breakdown": {
+      "hf_trending": 22.281,
+      "hf_downloads": 14.398,
+      "hf_likes": 11.213,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -12.798
+    }
+  },
+  {
+    "id": "0660f3d4dc0fe364",
+    "kind": "paper",
+    "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+    "summary_en": "A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We introduce SWE-CoWork, a benchmark comprising 101 development assignments across 101 real repositories, 11 programming languages, and 12 application domains. Each assignment places an agent in a simulated engineering organization with 26 colleagues who have distinct responsibilities, bounded knowledge, and controlled collaboration behavior. Starting from a brief handoff, agents must recover requirements distributed across colleagues and workplace records, reconcile conflicting evidence, and implement changes evaluated by private executable tests. We evaluate eleven models and find a substantial gap between partial implementation and complete task delivery. The two leading models satisfy approximately 63% of fail-to-pass (F2P) tests but complete fewer than 8% of assignments. Providing complete requirements upfront improves F2P by approximately 16 percentage points for Seed Evolving and GPT-6 Astra, yet leaves complete task success unchanged. Requirement-level trajectory analysis reveals failures throughout the delivery process: Claude-Opus-5.5 directs a mean of 93% of first questions about queried cards to their accountable owners across runs but obtains only 64% of colleague-held requirements. Deferred questions go unfollowed, implementations remain incomplete even after requirements are acquired, and 31% of requirements reported as completed fail their tests. These findings highlight sustained requirement tracking, from clarification through implementation, verification, and handoff, as a key challenge for reliable autonomous software engineering.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.20218",
+        "external_id": "2611.20218"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.20218",
+        "external_id": "2611.20218"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/TokenWave-AI/swe-cowork-bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xinping Lei",
+      "Minghao Liu",
+      "Ruijie Zhu",
+      "Xiaohui Hu",
+      "Xingqiao Li",
+      "Ao Zhang",
+      "Wenhao Chai",
+      "Han Li",
+      "Tao Wang",
+      "Jingyuan Zhang",
+      "Enduo Zhao",
+      "Yunfeng Shi",
+      "Yiming Liang",
+      "Zetao Yang",
+      "Xingjian Wang",
+      "Yifan Yao",
+      "Xinkai Ma",
+      "Yingru Li",
+      "Tianhan Yang",
+      "Huan Zhou",
+      "Weiran Shi",
+      "Shen Yan",
+      "Jiaheng Liu",
+      "Stephen Huang",
+      "Eli Cheung",
+      "Weihao Xuan"
+    ],
+    "published_at": "2026-11-15T00:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:42.802268Z",
+    "dedup_keys": [
+      "arxiv:2611.20218",
+      "title:agents benchmarking coding cowork digital employees organizations swe",
+      "github:tokenwave-ai/swe-cowork-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 44,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 42.274,
+    "score_breakdown": {
+      "hf_upvotes": 30.453,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.338
+    }
+  },
+  {
+    "id": "6cfa777b90915c4f",
+    "kind": "paper",
+    "title": "VoxMel TTS Technical Report",
+    "summary_en": "Continuous autoregressive TTS relies on an acoustic target that enables stable next-latent modeling while preserving fine-grained acoustic details. While existing approaches employ learned compressed representations (e.g., continuous VAE latents) to render prediction tractable, they rely on complex neural encoders that often cap generation fidelity. Conversely, training-free targets like mel-spectrograms eliminate encoder overhead, yet their potential for autoregressive generation remains largely underexplored. In this work, we propose VoxMel, a tokenizer-free framework for autoregressive TTS that makes stable mel modeling tractable through a fixed, exactly invertible two-axis Haar transform. The transform first decomposes each mel spectrogram along frequency into local averages and a frequency residual, then splits the averaged component along time into Coarse-Mel and a temporal residual. A language-model backbone with a flow-matching head autoregressively generates Coarse-Mel. Non-autoregressive residual tiers then predict the temporal residual from Coarse-Mel, followed by the frequency residual conditioned on the reconstructed Frequency-Averaged Mel. Neither residual is fed back into the autoregressive history. Trained on 100K hours of Emilia, the supervised 0.6B model obtains 1.51\\% WER and 0.738 speaker similarity (SIM) on test-en, and 1.29\\% CER and 0.755 SIM on test-zh. GRPO improves these results to 1.15\\% WER / 0.753 SIM and 1.17\\% CER / 0.776 SIM, respectively. We also distill the guided flow head into two- and four-step students, requiring 2 or 4 head evaluations per coarse frame. The four-step student retains competitive SIM and nearly matches the supervised model in WER/CER.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "speech",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.20254",
+        "external_id": "2611.20254"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.20254",
+        "external_id": "2611.20254"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/VoxDance-Lab/VoxMel",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Wenhao Guan",
+      "Jiaxin Ye",
+      "Haitao Li",
+      "Yifan Duan",
+      "Junxi Liu",
+      "Wangjin Zhou",
+      "Lin Li",
+      "Qingyang Hong",
+      "Xie Chen"
+    ],
+    "published_at": "2026-11-15T00:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:42.802353Z",
+    "dedup_keys": [
+      "arxiv:2611.20254",
+      "title:report technical tts voxmel",
+      "github:voxdance-lab/voxmel"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 92,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.811,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 9.065,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.338
     }
   },
   {
@@ -311,13 +1160,13 @@
       "Eric P. Xing"
     ],
     "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.331950Z",
+    "first_seen_at": "2026-11-17T21:24:42.802129Z",
     "dedup_keys": [
       "arxiv:2611.21003",
       "title:fleet frontier horizon language models open source"
     ],
     "signals": {
-      "hf_upvotes": 31,
+      "hf_upvotes": 67,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -330,224 +1179,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 34.686,
+    "score": 39.918,
     "score_breakdown": {
-      "hf_upvotes": 27.726,
+      "hf_upvotes": 33.756,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -2.04
-    }
-  },
-  {
-    "id": "4a9e0720013c38c7",
-    "kind": "paper",
-    "title": "Calpha: Toward Native Biomolecular Intelligence in a General-Purpose Language Model",
-    "summary_en": "Biomolecular foundation models predict the structures of proteins and their complexes accurately, and large language models (LLMs) reason in natural language, but the two remain separate: the abilities of the former are not part of a general-purpose LLM, and the reasoning of the latter does not enter a structure prediction. Calpha aims at one general model that folds proteins and complexes, understands protein sequence and structure, and lets its language reasoning influence the structures it predicts. This report covers the first step, in which an LLM outputs single-chain protein structures. Qwen3.5-9B reads a sequence enriched with ESM2 residue features. It can respond in text or emit a token that invokes a pretrained SimpleFold structure head, which receives information about the protein only through Qwen's residue states. Under a fixed folding request, the head achieves mean TM-scores of 0.808 on the FoldBench-334 development set, 0.635 on CASP16 domains and 0.900 on a CAMEO-style PDB set. We compare these predictions with a baseline in which ESM2-3B encodes the sequence and a fine-tuned SimpleFold-3B head predicts the coordinates. The two systems also differ in trainable weights, training duration and crop length. For chains of 100--299 residues, all three paired confidence intervals include zero. At 300--600 residues, the mean differences are -0.044, -0.160 and -0.025, respectively. In a separate test, four English request types triggered folding on every evaluated example. Protein training reduced accuracy on a 350-item MMLU-Pro subset from 77.4% to 70.3%. An LLM can therefore output single-chain structures from its own states, with lower long-chain scores in the current comparisons and reduced accuracy on the evaluated MMLU-Pro subset. Complex prediction, structure understanding and the effect of language reasoning on the predicted coordinates remain future work.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20986",
-        "external_id": "2611.20986"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20986",
-        "external_id": "2611.20986"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/yliust/Calpha",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yong Liu",
-      "Zhanpeng Shi",
-      "Peicong Lin",
-      "Zhenyi Zhong",
-      "Yizhou Dang",
-      "Wendi Wu",
-      "Haoling Li",
-      "Shuangjia Zheng"
-    ],
-    "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332058Z",
-    "dedup_keys": [
-      "arxiv:2611.20986",
-      "title:biomolecular calpha general intelligence language model native purpose toward",
-      "github:yliust/calpha"
-    ],
-    "signals": {
-      "hf_upvotes": 10,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 14,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 34.559,
-    "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "github_stars": 5.416,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.04
-    }
-  },
-  {
-    "id": "6cfa777b90915c4f",
-    "kind": "paper",
-    "title": "VoxMel TTS Technical Report",
-    "summary_en": "Continuous autoregressive TTS relies on an acoustic target that enables stable next-latent modeling while preserving fine-grained acoustic details. While existing approaches employ learned compressed representations (e.g., continuous VAE latents) to render prediction tractable, they rely on complex neural encoders that often cap generation fidelity. Conversely, training-free targets like mel-spectrograms eliminate encoder overhead, yet their potential for autoregressive generation remains largely underexplored. In this work, we propose VoxMel, a tokenizer-free framework for autoregressive TTS that makes stable mel modeling tractable through a fixed, exactly invertible two-axis Haar transform. The transform first decomposes each mel spectrogram along frequency into local averages and a frequency residual, then splits the averaged component along time into Coarse-Mel and a temporal residual. A language-model backbone with a flow-matching head autoregressively generates Coarse-Mel. Non-autoregressive residual tiers then predict the temporal residual from Coarse-Mel, followed by the frequency residual conditioned on the reconstructed Frequency-Averaged Mel. Neither residual is fed back into the autoregressive history. Trained on 100K hours of Emilia, the supervised 0.6B model obtains 1.51\\% WER and 0.738 speaker similarity (SIM) on test-en, and 1.29\\% CER and 0.755 SIM on test-zh. GRPO improves these results to 1.15\\% WER / 0.753 SIM and 1.17\\% CER / 0.776 SIM, respectively. We also distill the guided flow head into two- and four-step students, requiring 2 or 4 head evaluations per coarse frame. The four-step student retains competitive SIM and nearly matches the supervised model in WER/CER.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "speech",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20254",
-        "external_id": "2611.20254"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20254",
-        "external_id": "2611.20254"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/VoxDance-Lab/VoxMel",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Wenhao Guan",
-      "Jiaxin Ye",
-      "Haitao Li",
-      "Yifan Duan",
-      "Junxi Liu",
-      "Wangjin Zhou",
-      "Lin Li",
-      "Qingyang Hong",
-      "Xie Chen"
-    ],
-    "published_at": "2026-11-15T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332100Z",
-    "dedup_keys": [
-      "arxiv:2611.20254",
-      "title:report technical tts voxmel",
-      "github:voxdance-lab/voxmel"
-    ],
-    "signals": {
-      "hf_upvotes": 7,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 75,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 33.757,
-    "score_breakdown": {
-      "hf_upvotes": 16.636,
-      "github_stars": 8.661,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.54
-    }
-  },
-  {
-    "id": "649b602a20b8b506",
-    "kind": "paper",
-    "title": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
-    "summary_en": "Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task provides a working program and specifies the workload, correctness requirements, timing boundaries, and permitted edits, leaving agents to choose where and how to optimize. Public testing supports iterative development, and a separate verifier scores the final submission. On benchmark version 1.1, we evaluate 16 coding agents, each pairing a model with a harness. Their Score@1 ranges from 25.5% to 67.4%. Most of their programs are correct, and the size of the speedup separates them: the two leading agents are at least 2x faster on 22 or more of the 32 tasks, while the other fourteen reach 2x on 8 to 17 and leave 125 of their 412 correct outcomes below 1.25x. Controlled replays show why coordination across an application matters: identical source code runs between 0.29x and 2.12x depending only on build and runtime settings, and one code change is worth 1.01x or 6.4x depending on another. Accelerate Bench pairs executable workloads with agents' programs and trajectories to evaluate both their gains and the process behind them.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20882",
-        "external_id": "2611.20882"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20882",
-        "external_id": "2611.20882"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/AdAstraAbyssoque/accelerate-bench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Bowen Liu",
-      "Yuhan Li",
-      "Nuo Chen",
-      "Weile Luo",
-      "Miao Peng",
-      "Qintong Zhang",
-      "Qifan Zhang",
-      "Jia Li",
-      "Ziqi Gao",
-      "Lydell Huang"
-    ],
-    "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332039Z",
-    "dedup_keys": [
-      "arxiv:2611.20882",
-      "title:accelerate agents application bench evaluating for level optimization program",
-      "github:adastraabyssoque/accelerate-bench"
-    ],
-    "signals": {
-      "hf_upvotes": 13,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 31.072,
-    "score_breakdown": {
-      "hf_upvotes": 21.112,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.04
+      "age_decay": -2.838
     }
   },
   {
@@ -595,19 +1232,19 @@
       "Li Yuan"
     ],
     "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332136Z",
+    "first_seen_at": "2026-11-17T21:24:42.802476Z",
     "dedup_keys": [
       "arxiv:2611.21339",
       "title:for form framework long movieroll out rolling systematic videos",
       "github:tencent-hunyuan/movieroll"
     ],
     "signals": {
-      "hf_upvotes": 5,
+      "hf_upvotes": 10,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 22,
+      "github_stars": 53,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -615,317 +1252,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 30.565,
+    "score": 36.323,
     "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "github_stars": 6.271,
+      "hf_upvotes": 19.183,
+      "github_stars": 7.978,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.04
-    }
-  },
-  {
-    "id": "b87d9481d3486044",
-    "kind": "release",
-    "title": "Strengthening NATO and allied cyber defenses with AI",
-    "summary_en": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-17T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.776497Z",
-    "dedup_keys": [
-      "url:openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-      "title:allied and cyber defenses nato strengthening with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.46,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.54
-    }
-  },
-  {
-    "id": "1b87c427b3d8e571",
-    "kind": "paper",
-    "title": "Latent Feedback Is a Compute and Data Amplifier",
-    "summary_en": "When high-quality data runs out, a common practice is to train on it for several epochs, but each repeat is worth less than the last. Latent feedback, which feeds each token's top-layer state into the next token's input, is another way to spend that compute, yet it has not been tested against a vanilla Transformer that spends the same compute on more epochs. We run this test across a ladder of model sizes, unique data and epochs, tuning both models at every size and amount of unique data. Latent feedback makes every FLOP and every token count for more except when unique data is scarce relative to model size, a regime that today's models are far from. We find that latent feedback serves as an amplifier: with unique data fixed, it reaches a Transformer's loss with less compute; with epochs fixed, it reaches that loss with less unique data. Furthermore, both savings grow with unique data per parameter and with repetition, and downstream tasks agree. To go beyond our grid, we fit one scaling law to both models, in which latent feedback enters as a Transformer with more parameters; it predicts that both savings keep growing with unique data and repetition. Fitted on models from 60M to 271M parameters, the law predicts the losses at a held-out 778M size to within 0.3% and the gap between the two models to within 0.05%. At most, latent feedback saves 48% of the compute and 47% of the unique data. When data, not compute, is the limit, latent feedback is the better use of a FLOP for a model of a given size.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20404",
-        "external_id": "2611.20404"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20404",
-        "external_id": "2611.20404"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/ifm-ai/LoRM",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Benhao Huang",
-      "Chaitanya Dwivedi",
-      "Xuezhe Ma",
-      "Alexander Moreno",
-      "Hector Liu"
-    ],
-    "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332155Z",
-    "dedup_keys": [
-      "arxiv:2611.20404",
-      "title:amplifier and compute data feedback latent",
-      "github:ifm-ai/lorm"
-    ],
-    "signals": {
-      "hf_upvotes": 4,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 20,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.925,
-    "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "github_stars": 6.089,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.04
-    }
-  },
-  {
-    "id": "15a8711472016784",
-    "kind": "release",
-    "title": "How Revolut raises ambition without lowering the bar",
-    "summary_en": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/business/customer-stories/revolut",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-16T09:30:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.776648Z",
-    "dedup_keys": [
-      "url:openai.com/business/customer-stories/revolut",
-      "title:ambition bar how lowering raises revolut the without"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.554,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.446
-    }
-  },
-  {
-    "id": "0660f3d4dc0fe364",
-    "kind": "paper",
-    "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
-    "summary_en": "A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We introduce SWE-CoWork, a benchmark comprising 101 development assignments across 101 real repositories, 11 programming languages, and 12 application domains. Each assignment places an agent in a simulated engineering organization with 26 colleagues who have distinct responsibilities, bounded knowledge, and controlled collaboration behavior. Starting from a brief handoff, agents must recover requirements distributed across colleagues and workplace records, reconcile conflicting evidence, and implement changes evaluated by private executable tests. We evaluate eleven models and find a substantial gap between partial implementation and complete task delivery. The two leading models satisfy approximately 63% of fail-to-pass (F2P) tests but complete fewer than 8% of assignments. Providing complete requirements upfront improves F2P by approximately 16 percentage points for Seed Evolving and GPT-6 Astra, yet leaves complete task success unchanged. Requirement-level trajectory analysis reveals failures throughout the delivery process: Claude-Opus-5.5 directs a mean of 93% of first questions about queried cards to their accountable owners across runs but obtains only 64% of colleague-held requirements. Deferred questions go unfollowed, implementations remain incomplete even after requirements are acquired, and 31% of requirements reported as completed fail their tests. These findings highlight sustained requirement tracking, from clarification through implementation, verification, and handoff, as a key challenge for reliable autonomous software engineering.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20218",
-        "external_id": "2611.20218"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20218",
-        "external_id": "2611.20218"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/TokenWave-AI/swe-cowork-bench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Xinping Lei",
-      "Minghao Liu",
-      "Ruijie Zhu",
-      "Xiaohui Hu",
-      "Xingqiao Li",
-      "Ao Zhang",
-      "Wenhao Chai",
-      "Han Li",
-      "Tao Wang",
-      "Jingyuan Zhang",
-      "Enduo Zhao",
-      "Yunfeng Shi",
-      "Yiming Liang",
-      "Zetao Yang",
-      "Xingjian Wang",
-      "Yifan Yao",
-      "Xinkai Ma",
-      "Yingru Li",
-      "Tianhan Yang",
-      "Huan Zhou",
-      "Weiran Shi",
-      "Shen Yan",
-      "Jiaheng Liu",
-      "Stephen Huang",
-      "Eli Cheung",
-      "Weihao Xuan"
-    ],
-    "published_at": "2026-11-15T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332084Z",
-    "dedup_keys": [
-      "arxiv:2611.20218",
-      "title:agents benchmarking coding cowork digital employees organizations swe",
-      "github:tokenwave-ai/swe-cowork-bench"
-    ],
-    "signals": {
-      "hf_upvotes": 8,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 26.038,
-    "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.54
-    }
-  },
-  {
-    "id": "b8b66a34737fd2fc",
-    "kind": "paper",
-    "title": "PaperCritic: Training AI Reviewers to Assess the Soundness of Papers",
-    "summary_en": "As AI conference submissions grow rapidly, AI reviewers are being considered as an alternative. However, simply imitating human reviewing is problematic because reviewing serves multiple purposes, including evaluating papers' soundness, interestingness, and clarity, the last two of which are subjective. In this work, we focus solely on evaluating soundness, the most important and objective criterion, and define the learning objective as jointly maximizing (1) precision, based on the soundness and substantiveness of review points, and (2) recall, the coverage of high-quality reference review points. Under this problem formulation, we construct a quality-labeled review point dataset, PaperSound-23K, using 1K ICLR submissions and 23K human-written and LLM-generated review points. Using this dataset, we train an AI reviewer model, PaperCritic, through reinforcement learning with the F1 score of precision and recall as the reward. Our experiments show that PaperCritic outperforms frontier models and models trained with other AI reviewer training methods on an in-domain test set. Surprisingly, learning to review ICLR submissions also transfers to reviewing Nature-family papers and even to out-of-domain reviewing tasks (e.g., code review, legal contract review, and feedback on story writing).",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.17834",
-        "external_id": "2611.17834"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.17834",
-        "external_id": "2611.17834"
-      }
-    ],
-    "actors": [
-      "Hyun Ryu",
-      "Ji Yong Cho",
-      "Eunho Yang",
-      "Moontae Lee",
-      "June Yong Yang",
-      "Sean Welleck",
-      "Carolyn Rose"
-    ],
-    "published_at": "2026-11-13T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332020Z",
-    "dedup_keys": [
-      "arxiv:2611.17834",
-      "title:assess papercritic papers reviewers soundness the training"
-    ],
-    "signals": {
-      "hf_upvotes": 18,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 26.016,
-    "score_breakdown": {
-      "hf_upvotes": 23.556,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -6.54
+      "age_decay": -2.838
     }
   },
   {
@@ -970,13 +1304,13 @@
       "Li Yi"
     ],
     "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332119Z",
+    "first_seen_at": "2026-11-17T21:24:42.802298Z",
     "dedup_keys": [
       "arxiv:2611.21607",
       "title:552 action billion language models parameters scalevla scaling vision"
     ],
     "signals": {
-      "hf_upvotes": 5,
+      "hf_upvotes": 41,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -989,37 +1323,211 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 21.294,
+    "score": 36.063,
     "score_breakdown": {
-      "hf_upvotes": 14.334,
+      "hf_upvotes": 29.901,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -2.04
+      "age_decay": -2.838
     }
   },
   {
-    "id": "6a52052269472896",
-    "kind": "release",
-    "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
-    "summary_en": null,
+    "id": "bebc76bb052c0b45",
+    "kind": "model",
+    "title": "owensong/Inflect-Mini-v3",
+    "summary_en": "text-to-speech, inflect, english, multi-speaker, local-inference, en",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
+    "topics": [
+      "speech",
+      "infra"
+    ],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/openrouter",
+        "source": "hf_models",
+        "url": "https://huggingface.co/owensong/Inflect-Mini-v3",
+        "external_id": "owensong/Inflect-Mini-v3"
+      }
+    ],
+    "actors": [
+      "owensong"
+    ],
+    "published_at": "2026-11-10T07:42:26Z",
+    "first_seen_at": "2026-11-17T21:24:42.769817Z",
+    "dedup_keys": [
+      "hf:owensong/inflect-mini-v3"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 42,
+      "hf_downloads": 590,
+      "hf_trending_score": 42.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 35.258,
+    "score_breakdown": {
+      "hf_trending": 22.567,
+      "hf_downloads": 12.764,
+      "hf_likes": 11.284,
+      "age_decay": -11.357
+    }
+  },
+  {
+    "id": "4a9e0720013c38c7",
+    "kind": "paper",
+    "title": "Calpha: Toward Native Biomolecular Intelligence in a General-Purpose Language Model",
+    "summary_en": "Biomolecular foundation models predict the structures of proteins and their complexes accurately, and large language models (LLMs) reason in natural language, but the two remain separate: the abilities of the former are not part of a general-purpose LLM, and the reasoning of the latter does not enter a structure prediction. Calpha aims at one general model that folds proteins and complexes, understands protein sequence and structure, and lets its language reasoning influence the structures it predicts. This report covers the first step, in which an LLM outputs single-chain protein structures. Qwen3.5-9B reads a sequence enriched with ESM2 residue features. It can respond in text or emit a token that invokes a pretrained SimpleFold structure head, which receives information about the protein only through Qwen's residue states. Under a fixed folding request, the head achieves mean TM-scores of 0.808 on the FoldBench-334 development set, 0.635 on CASP16 domains and 0.900 on a CAMEO-style PDB set. We compare these predictions with a baseline in which ESM2-3B encodes the sequence and a fine-tuned SimpleFold-3B head predicts the coordinates. The two systems also differ in trainable weights, training duration and crop length. For chains of 100--299 residues, all three paired confidence intervals include zero. At 300--600 residues, the mean differences are -0.044, -0.160 and -0.025, respectively. In a separate test, four English request types triggered folding on every evaluated example. Protein training reduced accuracy on a 350-item MMLU-Pro subset from 77.4% to 70.3%. An LLM can therefore output single-chain structures from its own states, with lower long-chain scores in the current comparisons and reduced accuracy on the evaluated MMLU-Pro subset. Complex prediction, structure understanding and the effect of language reasoning on the predicted coordinates remain future work.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.20986",
+        "external_id": "2611.20986"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.20986",
+        "external_id": "2611.20986"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yliust/Calpha",
         "external_id": null
       }
     ],
     "actors": [
-      "huggingface"
+      "Yong Liu",
+      "Zhanpeng Shi",
+      "Peicong Lin",
+      "Zhenyi Zhong",
+      "Yizhou Dang",
+      "Wendi Wu",
+      "Haoling Li",
+      "Shuangjia Zheng"
     ],
     "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:24.193151Z",
+    "first_seen_at": "2026-11-17T21:24:42.802447Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/openrouter",
-      "title:and easy face forces hugging join make models open openrouter run weight"
+      "arxiv:2611.20986",
+      "title:biomolecular calpha general intelligence language model native purpose toward",
+      "github:yliust/calpha"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 17,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.822,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "github_stars": 5.781,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.838
+    }
+  },
+  {
+    "id": "0d1c1707ba7c138c",
+    "kind": "model",
+    "title": "FluidVoice-Labs/fluid-speech-pro",
+    "summary_en": "automatic-speech-recognition, transformers, nemo, parakeet_tdt, feature-extraction, speech-recognition, parakeet",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/FluidVoice-Labs/fluid-speech-pro",
+        "external_id": "FluidVoice-Labs/fluid-speech-pro"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/moondream/parakeet-ultra",
+        "external_id": "moondream/parakeet-ultra"
+      }
+    ],
+    "actors": [
+      "FluidVoice-Labs"
+    ],
+    "published_at": "2026-10-30T08:20:49Z",
+    "first_seen_at": "2026-11-17T21:24:42.769581Z",
+    "dedup_keys": [
+      "hf:fluidvoice-labs/fluid-speech-pro"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 54,
+      "hf_downloads": 9064,
+      "hf_trending_score": 50.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 34.02,
+    "score_breakdown": {
+      "hf_trending": 23.591,
+      "hf_downloads": 18.224,
+      "hf_likes": 12.022,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -27.817
+    }
+  },
+  {
+    "id": "b16381598e43804a",
+    "kind": "release",
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "summary_en": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-17T17:45:00Z",
+    "first_seen_at": "2026-11-17T21:24:43.298528Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-gpt-6-2-astra-sol",
+      "title:and astra gpt introducing sol"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1035,54 +1543,113 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 17.96,
+    "score": 33.771,
     "score_breakdown": {
       "kind_base": 20.0,
-      "age_decay": -2.04
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.229
     }
   },
   {
-    "id": "8eebae244b51e19b",
-    "kind": "paper",
-    "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
-    "summary_en": "Tool-using agents act on email, files, and payments, so an instruction hidden in a web page or a shared document can make an agent send data or money to an attacker. Many runtime defenses put a language model on the decision that lets an action through, so the decision depends on a model that may read the attacker's text and adds model calls to every step. Provenance defenses keep the model off the final check but need a model to plan or route each task first. Where an action goes can instead be read from the tools' typed returns: an email's sender or a payment's account arrives in a typed field, while injected instructions arrive as free text. SPILLWAY turns this observation into a deterministic floor with no per-task plan. The check admits a call when each target value that appears in tool output but not in the user's task was returned by a read-only tool in a typed field or is covered by a fixed delegation rule. A deterministic sanitizer removes instruction-like regions its fixed rules match before the model reads them and retains the removed spans as evidence, and a local judge may restore a refused call, never one whose target lies in the removed text. Across three backbones, and seven task suites on one of them, no standard templated injection redirects an action to an attacker's target under SPILLWAY, at the highest observed mean utility and composite scores (NRP, ERS) of the defenses we run under that attack. A forged chat template also produces a raw zero, and mean in-scope attack success under a released reinforcement-learning attacker is .007. SPILLWAY reaches this floor with no defense-triggered backbone re-run and almost no added model call. As personal AI agents act on users' email, files, and payments, SPILLWAY gives them an auditable refusal floor on where their actions go that keeps them useful and holds across backbones.",
+    "id": "d1922599a7b4400f",
+    "kind": "release",
+    "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
+    "summary_en": "Agentic workloads, long documents, and large codebases are pushing context lengths from tens of thousands of tokens to hundreds of thousands. At those lengths,...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "agent"
+      "agent",
+      "infra"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.07222",
-        "external_id": "2611.07222"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.07222",
-        "external_id": "2611.07222"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/saintmachines/spillway",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/",
         "external_id": null
       }
     ],
     "actors": [
-      "Woosang Lim",
-      "Yeseul Chang",
-      "Jaewoo Lee"
+      "nvidia"
     ],
-    "published_at": "2026-11-04T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332003Z",
+    "published_at": "2026-11-17T17:30:00Z",
+    "first_seen_at": "2026-11-17T21:24:45.682468Z",
     "dedup_keys": [
-      "arxiv:2611.07222",
-      "title:admission against agents defend from injection prompt sanitization separating spillway target tool using",
-      "github:saintmachines/spillway"
+      "url:developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference",
+      "title:attention context designing efficient for inference long sparse"
     ],
     "signals": {
-      "hf_upvotes": 20,
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.755,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.245
+    }
+  },
+  {
+    "id": "649b602a20b8b506",
+    "kind": "paper",
+    "title": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+    "summary_en": "Application optimization requires coding agents to discover useful changes and coordinate them across a complete program while preserving the required computation. We introduce Accelerate Bench, a benchmark of 32 CPU optimization tasks adapted from scientific applications and supercomputing competitions. Each task provides a working program and specifies the workload, correctness requirements, timing boundaries, and permitted edits, leaving agents to choose where and how to optimize. Public testing supports iterative development, and a separate verifier scores the final submission. On benchmark version 1.1, we evaluate 16 coding agents, each pairing a model with a harness. Their Score@1 ranges from 25.5% to 67.4%. Most of their programs are correct, and the size of the speedup separates them: the two leading agents are at least 2x faster on 22 or more of the 32 tasks, while the other fourteen reach 2x on 8 to 17 and leave 125 of their 412 correct outcomes below 1.25x. Controlled replays show why coordination across an application matters: identical source code runs between 0.29x and 2.12x depending only on build and runtime settings, and one code change is worth 1.01x or 6.4x depending on another. Accelerate Bench pairs executable workloads with agents' programs and trajectories to evaluate both their gains and the process behind them.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.20882",
+        "external_id": "2611.20882"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.20882",
+        "external_id": "2611.20882"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AdAstraAbyssoque/accelerate-bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Bowen Liu",
+      "Yuhan Li",
+      "Nuo Chen",
+      "Weile Luo",
+      "Miao Peng",
+      "Qintong Zhang",
+      "Qifan Zhang",
+      "Jia Li",
+      "Ziqi Gao",
+      "Lydell Huang"
+    ],
+    "published_at": "2026-11-16T00:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:42.802392Z",
+    "dedup_keys": [
+      "arxiv:2611.20882",
+      "title:accelerate agents application bench evaluating for level optimization program",
+      "github:adastraabyssoque/accelerate-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 16,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1095,79 +1662,70 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 17.702,
+    "score": 33.214,
     "score_breakdown": {
-      "hf_upvotes": 24.356,
+      "hf_upvotes": 22.666,
       "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -20.04
+      "age_decay": -2.838
     }
   },
   {
-    "id": "91de0abc9f8a8bcd",
-    "kind": "paper",
-    "title": "LoopFill: Pipelined Multi-Token Speculative Decoding for Looped Transformers",
-    "summary_en": "Looped Transformers improve parameter efficiency by repeatedly applying the same Transformer layers. During autoregressive decoding, however, generating each token requires several sequential passes through these layers, leading to high decoding latency. Pipelined self-speculative methods use shallow-loop predictions to process tokens at different loops in the same batch, but each token must reach the drafting depth before the next can enter the pipeline. We introduce LoopFill, a training-free speculative decoding algorithm for looped LLM that combines multi-token suffix drafts with shallow-loop predictions in a single draft tree. Both drafters contribute to one tree, so a suffix lookup can immediately extend a shallow prediction and several future tokens can enter the pipeline together. The shared block computes the highest-scoring draft candidates at different loop depths in one batch, and full-depth verification preserves the model's autoregressive output distribution. Across seven benchmarks, LoopFill's average speedup over greedy autoregressive decoding is 5.85times on Ouro-2.6B and 5.13times on Huginn-3.5B. The speedups exceed those of LoopAhead, the strongest baseline, by \\(40\\%\\) on Ouro-2.6B and \\(25\\%\\) on Huginn-3.5B.",
+    "id": "da70dc301fe937ae",
+    "kind": "release",
+    "title": "Astra for Law leads in legal intelligence",
+    "summary_en": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
       "llm",
-      "rag",
       "eval"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.19649",
-        "external_id": "2611.19649"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.19649",
-        "external_id": "2611.19649"
+        "source": "openai",
+        "url": "https://openai.com/index/astra-law-6-2",
+        "external_id": null
       }
     ],
     "actors": [
-      "Siqi Zhu",
-      "Suozhi Huang",
-      "Yi Zhao",
-      "Jiaxuan You"
+      "openai"
     ],
-    "published_at": "2026-11-14T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332169Z",
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:43.298707Z",
     "dedup_keys": [
-      "arxiv:2611.19649",
-      "title:decoding for looped loopfill multi pipelined speculative token transformers"
+      "url:openai.com/index/astra-law-6-2",
+      "title:astra for intelligence law leads legal"
     ],
     "signals": {
-      "hf_upvotes": 3,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
+      "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 0,
       "has_code": false,
       "has_weights": false
     },
-    "score": 15.05,
+    "score": 32.662,
     "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "is_daily_paper": 5.0,
+      "kind_base": 20.0,
+      "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -5.04
+      "age_decay": -1.338
     }
   },
   {
-    "id": "4009de0cafd78c91",
+    "id": "1b87c427b3d8e571",
     "kind": "paper",
-    "title": "Centered Ablation: Why Last-Layer Directional Ablation Under-Fires or Collapses, and a Closed-Form Fix",
-    "summary_en": "Directional ablation removes a hidden state's component along a \"behaviour direction\" while a language model runs. It is the standard way to switch a behaviour such as refusal off, but it is erratic: on some models it barely fires, on others the text collapses into repetition. We show why, and fix it. At the last residual stream, ablation is exactly a logit bias: a fixed vocabulary footprint scaled by a gate, the cosine between the hidden state and the direction. The gate is measured from the origin, but last-layer states share a large common mode far from it, so a direction that overlaps the common mode fires on benign text and under-fires on its targets. Centered Ablation (CA) projects the common mode out of the direction, in closed form. Across 8 models, CA raises attack success by 29 and 46 points where the standard recipe under-fires, cuts collapse on Gemma-2-9B from 50\\% to 1\\%, and preserves 12 to 40 points more benign answers on high-overlap models, 39 to 46 more than the affine offset of prior work. Two numbers computed before generation predict, on models the analysis had not seen, which gain faithfulness and which gain attack success, and a collapse index marks when text degenerates. We also show that two standard safety judges score collapsed text in opposite directions, which can fabricate a 46-point effect.",
+    "title": "Latent Feedback Is a Compute and Data Amplifier",
+    "summary_en": "When high-quality data runs out, a common practice is to train on it for several epochs, but each repeat is worth less than the last. Latent feedback, which feeds each token's top-layer state into the next token's input, is another way to spend that compute, yet it has not been tested against a vanilla Transformer that spends the same compute on more epochs. We run this test across a ladder of model sizes, unique data and epochs, tuning both models at every size and amount of unique data. Latent feedback makes every FLOP and every token count for more except when unique data is scarce relative to model size, a regime that today's models are far from. We find that latent feedback serves as an amplifier: with unique data fixed, it reaches a Transformer's loss with less compute; with epochs fixed, it reaches that loss with less unique data. Furthermore, both savings grow with unique data per parameter and with repetition, and downstream tasks agree. To go beyond our grid, we fit one scaling law to both models, in which latent feedback enters as a Transformer with more parameters; it predicts that both savings keep growing with unique data and repetition. Fitted on models from 60M to 271M parameters, the law predicts the losses at a held-out 778M size to within 0.3% and the gap between the two models to within 0.05%. At most, latent feedback saves 48% of the compute and 47% of the unique data. When data, not compute, is the limit, latent feedback is the better use of a FLOP for a model of a given size.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -1176,346 +1734,41 @@
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20148",
-        "external_id": "2611.20148"
+        "url": "https://huggingface.co/papers/2611.20404",
+        "external_id": "2611.20404"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20148",
-        "external_id": "2611.20148"
+        "url": "https://arxiv.org/abs/2611.20404",
+        "external_id": "2611.20404"
       },
       {
         "source": "github",
-        "url": "https://github.com/knoveleng/centered-ablation",
+        "url": "https://github.com/ifm-ai/LoRM",
         "external_id": null
       }
     ],
     "actors": [
-      "Quy-Anh Dang",
-      "Chris Ngo"
-    ],
-    "published_at": "2026-11-15T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332208Z",
-    "dedup_keys": [
-      "arxiv:2611.20148",
-      "title:ablation ablation and centered closed collapses directional fires fix form last layer under why",
-      "github:knoveleng/centered-ablation"
-    ],
-    "signals": {
-      "hf_upvotes": 1,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 14.005,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.54
-    }
-  },
-  {
-    "id": "7a3b79afb4499f82",
-    "kind": "paper",
-    "title": "Nemotron 3.5 Bolt E4B 4GB: An Open and Efficient Small Language Model for Fast Conversational Agents",
-    "summary_en": "We introduce Nemotron 3.5 Bolt E4B 4GB, an open and efficient small language model further post-trained from Gemma-4-E4B-it and optimized for speed and intelligence per GB of memory used for fast conversational agents. The model carries forward Gemma's strong conversational capabilities and further improves multi-turn tool use, instruction following, and input grounding for fast, local voice/device assistants, interactive personas, and embedded/Edge interfaces. The model combines natural conversation with multi-turn agentic capabilities to power voice/device assistants, interactive characters and robotic/IoT interfaces running on GeForce RTX, Jetson, and RTX/DGX Spark. Experiments on 21 benchmarks show that Nemotron 3.5 Bolt E4B 4GB achieves the highest average accuracy while generating the fewest output tokens in both reasoning and non-reasoning modes, compared with Gemma-4-E4B-it and Qwen3.5-4B. The model is released with a DFlash drafter. With DFlash, Bolt E4B achieves $2.74\\times$ the per-user decode speed of inference without speculative decoding at concurrency~1, and $1.21\\times$ the generation throughput of Gemma-4-E4B-it with MTP at batch size 1.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "speech",
-      "robotics",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20771",
-        "external_id": "2611.20771"
-      }
-    ],
-    "actors": [
-      "NVIDIA",
-      ":",
-      "Adi Margolin",
-      "Aditya Malte",
-      "Aishwarya Chhabra",
-      "Alex Hodson",
-      "Ameya Sunil Mahabaleshwarkar",
-      "Ambrish Dantrey",
-      "Amy Shen",
-      "Andrii Skliar",
-      "Annamalai Chockalingam",
-      "Anusha Pant",
-      "Ashwath Aithal",
-      "Ashwin Kumar",
-      "Besmira Nushi",
-      "Bhavesh Pawar",
-      "Bryan Catanzaro",
-      "Bryan Yu",
-      "Chantal Hwang",
-      "Chenhan Yu"
-    ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.483000Z",
-    "dedup_keys": [
-      "arxiv:2611.20771",
-      "title:4gb agents and bolt conversational e4b efficient fast for language model nemotron open small"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 13.772,
-    "score_breakdown": {
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.228
-    }
-  },
-  {
-    "id": "3a52bc7b0d963634",
-    "kind": "paper",
-    "title": "Reasoning in the loop: antibody lead optimization by probing mechanism and measurement",
-    "summary_en": "Lab-in-the-loop systems, in which a model proposes molecules, automated assays measure their properties and the results retrain the model, are a popular approach to antibody lead optimization. These systems optimize for a specification defined with metrics computed from instrument signals, so their success depends on how well those metrics serve as proxies for the properties a drug candidate needs. When a metric is a poor proxy, neither a better model nor more data will fix it, and identifying the problem usually requires expert review. We report two campaigns run on BigHat Biosciences' Milliner platform, one on an anti-albumin nanobody (VHH) and one on an anti-mesothelin single-chain variable fragment (scFv), in which a research team and a general-purpose AI agent, Claude, brought scientific reasoning into the loop. Over seven rounds and about 1,010 design variants we built libraries from antibody lineage, structure and biophysics, and found from the raw curves that on each scaffold one thermal metric did not measure what its name implied. The libraries were built as controlled comparisons, so the results also show what each mutation contributes to each property. We fit a physical model of the curves, used it to choose metrics suited to each scaffold, and changed the experimental protocol, varying protein concentration and heating rate, to test the model against pre-registered predictions. Both leads improve on their parents in affinity, thermal stability and aggregation while improving or maintaining yield and purity.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.19812",
-        "external_id": "2611.19812"
-      }
-    ],
-    "actors": [
-      "Samuel Stanton (Anthropic)",
-      "Aaron Solomon (BigHat Biosciences)",
-      "Emily Delaney (BigHat Biosciences)",
-      "Melanie Montgomery (BigHat Biosciences)",
-      "Crystal Humphries (BigHat Biosciences)",
-      "Timothy Acker (BigHat Biosciences)",
-      "Ryan Henrici (BigHat Biosciences)",
-      "Charbel Eid (BigHat Biosciences)",
-      "Eddie Abrams (BigHat Biosciences)",
-      "Peyton Greenside (BigHat Biosciences)"
-    ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:23.265813Z",
-    "dedup_keys": [
-      "arxiv:2611.19812",
-      "title:and antibody lead loop measurement mechanism optimization probing reasoning the"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 13.772,
-    "score_breakdown": {
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.228
-    }
-  },
-  {
-    "id": "09d79af3a5229867",
-    "kind": "paper",
-    "title": "SurveyWeave: An Agentic Framework for Automated Survey Generation",
-    "summary_en": "Surveys help researchers keep up with fast-moving fields, but they take weeks to months to write. Automated survey generation (AutoSurvey) can alleviate this situation, but it is challenging to draw on hundreds to thousands of precisely scoped papers, choose among many valid structures, and stay faithful to its sources while offering insights. We present SurveyWeave, an agentic architecture that decomposes the problem into four tasks coordinated by three agents, each reviewing others' work and conducting revisions based on feedback. We also introduce WeaveEval, a five-dimension evaluation grounded in prior surveys. A comprehensive comparison shows that SurveyWeave outperforms Codex by 8 points and the strongest AutoSurvey baseline by 6 points.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.19029",
-        "external_id": "2611.19029"
-      }
-    ],
-    "actors": [
-      "Franklin Zhang (University of Washington)",
-      "Xiao Yang (Meta Reality Labs)",
-      "Xin Luna Dong (Meta Reality Labs)",
-      "Juhua Hu (University of Washington Tacoma)"
-    ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.478046Z",
-    "dedup_keys": [
-      "arxiv:2611.19029",
-      "title:agentic automated for framework generation survey surveyweave"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 13.772,
-    "score_breakdown": {
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -0.228
-    }
-  },
-  {
-    "id": "b4809f400928283b",
-    "kind": "paper",
-    "title": "DominoBench: Evaluating Multi-Step Physical Reasoning from Still Images",
-    "summary_en": "Can a vision-language model look at a picture of a chain reaction and tell what will happen? Recent multimodal models describe scenes fluently and solve textbook physics problems, which suggests they should also predict how a scene of ramps, ledges, pendulums, seesaws and dominoes plays out once a ball is pushed. We tested this claim on 30 models from 10 families and reached a clear conclusion: unaided, no model predicts the outcome reliably. We built DominoBench, a benchmark of still images of 2D rigid-body scenes whose outcome a physics simulator computes. It holds 854 items in 427 minimal pairs, in which a change of one to three grid steps in one quantity decides whether one person survives, and every item comes with a four-rung hint ladder ending in the exact calculation that decides the outcome. Unaided, frontier models from Anthropic, Google and OpenAI are right about the person whose fate flips in at most 72% of items and answer both twins of a pair correctly in at most 34%. Pointing at the deciding step helps little, and exact geometry given as text barely helps, yet once the deciding calculation and the quantities it needs, including speeds that a still image cannot show, are written out, the same models reach 82-92% on the deciding person, while small open-weight models stay near chance. Physical prediction from a still image therefore fails at the quantitative step: the strongest models use the deciding quantity when they are given it, but do not produce it on their own. For models that plan or act in the physical world, a fluent account of a scene is thus no evidence of a correct prediction: such models must find and compute the deciding quantity unprompted, and DominoBench tests whether they do.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20385",
-        "external_id": "2611.20385"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20385",
-        "external_id": "2611.20385"
-      }
-    ],
-    "actors": [
-      "Emilio Ferrara"
+      "Benhao Huang",
+      "Chaitanya Dwivedi",
+      "Xuezhe Ma",
+      "Alexander Moreno",
+      "Hector Liu"
     ],
     "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332229Z",
+    "first_seen_at": "2026-11-17T21:24:42.802499Z",
     "dedup_keys": [
-      "arxiv:2611.20385",
-      "title:dominobench evaluating from images multi physical reasoning step still"
+      "arxiv:2611.20404",
+      "title:amplifier and compute data feedback latent",
+      "github:ifm-ai/lorm"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 6,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 12.505,
-    "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -2.04
-    }
-  },
-  {
-    "id": "bd376cc0cf195550",
-    "kind": "paper",
-    "title": "Ego Guidance: Enhancing Robot Policy Learning with Action-Free Human Egocentric Videos",
-    "summary_en": "In this paper, we investigate how human egocentric videos can benefit robot policy learning without action supervision. Building on a pretrained VLM, we propose Shared Prediction on Action and Representation (SPAR), an MoT architecture in which future visual state prediction can provide independent and complementary learning signals alongside action prediction. We find that representations learned from egocentric videos improve downstream performance on out-of-distribution robot tasks, with further gains as video data scales. We also study the effects of objective choices and data curation, providing insights into how to leverage action-free videos for scalable robot learning.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "multimodal",
-      "cv",
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.13685",
-        "external_id": "2611.13685"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.13685",
-        "external_id": "2611.13685"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/llong-cs/EgoGuidance",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Lin Long",
-      "Tianren Ma",
-      "Zhong Chu",
-      "Di Wu",
-      "Maosong Cao",
-      "Qixiang Ye",
-      "Junbo Zhao",
-      "Shanghang Zhang"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332186Z",
-    "dedup_keys": [
-      "arxiv:2611.13685",
-      "title:action ego egocentric enhancing free guidance human learning policy robot videos with",
-      "github:llong-cs/egoguidance"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 22,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1523,181 +1776,84 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 11.946,
+    "score": 31.0,
     "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "github_stars": 2.197,
+      "hf_upvotes": 15.567,
+      "github_stars": 6.271,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -11.04
+      "age_decay": -2.838
     }
   },
   {
-    "id": "ec8e2f5917c9bb50",
-    "kind": "paper",
-    "title": "GlyphAtlas: Disentangling Stroke Detail from Layout for Scene Text Synthesis",
-    "summary_en": "Scene text synthesis requires stroke-accurate characters rendered in a specified layout, as well as visual coherence with the surrounding scene. To achieve this, existing methods commonly pre-render the target text at its intended locations to form a glyph image that jointly specifies layout and glyph structure. However, this representation ties the resolution of each glyph to its target region, limiting fine-grained stroke guidance for small, densely packed, or structurally complex text. To tackle this, we propose GlyphAtlas, a scene text synthesis framework that retains the glyph image as a spatial anchor and supplies fine-grained stroke references through a dedicated glyph atlas. The atlas renders and encodes each character or word in a separate cell, decoupling reference resolution from target-region size. We further introduce atlas-anchored attention, which lets each text region retrieve stroke detail only from its corresponding atlas cells to refine the coarse glyph structure provided by the glyph image. This coarse-to-fine conditioning simplifies stroke rendering while preserving explicit layout correspondence. We optimize GlyphAtlas with a mask-weighted flow matching objective and a timestep-weighted text perceptual loss for writing accuracy and background consistency. Random resolution augmentation of atlas cells supports adjustable atlas budgets at inference. Extensive experiments demonstrate that GlyphAtlas achieves stroke-accurate synthesis of small, dense, and structurally complex text, zero-shot transfer to languages unseen during task-specific training, and leading performance in scenes with many text regions. project page: https://fr0zencrane.github.io/project-glyphatlas/",
+    "id": "4329c4d74230fd94",
+    "kind": "release",
+    "title": "Integrating QPUs into Supercomputing Centers Using Slurm HRES Plugins",
+    "summary_en": "Quantum processors are being integrated into supercomputing centers worldwide. National programs in North America, Europe, and Asia are driving the installation...",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "cv",
-      "infra"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.20192",
-        "external_id": "2611.20192"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.20192",
-        "external_id": "2611.20192"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Fr0zenCrane/GlyphAtlas",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins/",
         "external_id": null
       }
     ],
     "actors": [
-      "Luozheng Qin",
-      "Changhai Zhou",
-      "Yiyi Zhou"
+      "nvidia"
     ],
-    "published_at": "2026-11-15T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332260Z",
+    "published_at": "2026-11-17T17:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:45.682527Z",
     "dedup_keys": [
-      "arxiv:2611.20192",
-      "title:detail disentangling for from glyphatlas layout scene stroke synthesis text",
-      "github:fr0zencrane/glyphatlas"
+      "url:developer.nvidia.com/blog/integrating-qpus-into-supercomputing-centers-using-slurm-hres-plugins",
+      "title:centers hres integrating into plugins qpus slurm supercomputing using"
     ],
     "signals": {
-      "hf_upvotes": 1,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 11.391,
+    "score": 29.724,
     "score_breakdown": {
-      "hf_upvotes": 5.545,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -3.54
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.276
     }
   },
   {
-    "id": "05330b72ab5b0b10",
-    "kind": "paper",
-    "title": "Reflection Anchors for Propagation-Aware Visual Retention in Long-Chain Multimodal Reasoning",
-    "summary_en": "Long chain-of-thought (CoT) reasoning improves large vision--language models, but visual information often fades during generation, limiting long-horizon multimodal reasoning. Existing methods either re-inject vision at inference or train policies for stronger grounding, but where to intervene relies on perception heuristics rather than principled gain analysis, and how local visual influence propagates remains implicit. We study this problem from an information-theoretic standpoint and derive a lower bound on the downstream visual gain of a one-step intervention, which suggests two factors: local branching room (token entropy) and downstream visual propagation potential (suffix divergence from a vision-marginalized reference). Guided by this analysis, we propose reflection-anchor policy optimization (RAPO), a GRPO-based policy optimization method that selects high-entropy reflection anchors and optimizes a chain-masked finite-window KL surrogate for downstream visual dependence. Experiments on reasoning-intensive and general-domain benchmarks show that RAPO delivers substantial gains over strong baselines across multiple LVLM backbones. Mechanism analyses further indicate that reflection anchors are enriched for visually sensitive decision points and that RAPO increases contrastive visual-dependence signals along generated trajectories.",
+    "id": "3337e4a8c6528d52",
+    "kind": "release",
+    "title": "Can AI help build a healthier future?",
+    "summary_en": "What can AI enable in medicine, and how do we get there? Microsoft Research lead Doug Burger, Microsoft Principal Research Manager Ava Amini, Microsoft Chief Scientific Officer Eric Horvitz, and physician-scientist Eric Topol of Scripps Research explore these questions and more. The post Can AI help build a healthier future? appeared first on Microsoft Research .",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "cv",
-      "eval",
-      "infra"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2605.09614",
-        "external_id": "2605.09614"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2605.09614",
-        "external_id": "2605.09614"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/coder-gx/RAPO",
+        "source": "microsoft_research",
+        "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
         "external_id": null
       }
     ],
     "actors": [
-      "Xuan Gong",
-      "Hanbo Huang",
-      "Hao Zheng",
-      "Yiran Zhang",
-      "Wenbin Dai",
-      "Weishu Zhao",
-      "Shiyu Liang"
+      "microsoft_research"
     ],
-    "published_at": "2026-11-15T00:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.332277Z",
+    "published_at": "2026-11-17T16:52:17Z",
+    "first_seen_at": "2026-11-17T21:24:46.498044Z",
     "dedup_keys": [
-      "arxiv:2605.09614",
-      "title:anchors aware chain for long multimodal propagation reasoning reflection retention visual",
-      "github:coder-gx/rapo"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 9.846,
-    "score_breakdown": {
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.54
-    }
-  },
-  {
-    "id": "d50e242c20df06e9",
-    "kind": "paper",
-    "title": "\"I Am Not a Kiddo!\": Quantifying Epistemic Infantilization in Large Language Models via Multi-Metric Bias Analysis",
-    "summary_en": "Large language models (LLMs) are increasingly used for tutoring and professional knowledge retrieval, yet safety evaluations still focus mainly on overt harms such as toxicity while overlooking benevolent failure modes. We study epistemic infantilization, defined as an identity-conditioned reduction in technical depth that appears when disability disclosure precedes an expert-level query. To measure this effect, we construct a counterfactual dataset of matched question-answer pairs and compare model responses across three settings: no identity context, disability disclosed in prior conversational context, and disability disclosed via a short query prefix. We introduce two composite metrics, the Infantilization Bias Index (IBI) and the Epistemic Accessibility Response Score (EARS), which capture retention of mathematical and formal content, domain terminology, reasoning coverage, and tone signals such as simplification markers and unsolicited offers to adjust the level. Across five open-weight model families, we find consistent evidence that disability disclosure reduces epistemic access by replacing formal explanations with higher-level summaries, with Physics and Mathematics most affected. Using question-clustered inference that respects the repeated-measures structure of the data, the effect remains reliable after accounting for correlated observations. These findings suggest an inclusion tax, where disabled users must request rigor more explicitly than non-disabled users. We conclude by arguing that accessibility should mean format adaptation rather than content simplification.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.18583",
-        "external_id": "2611.18583"
-      }
-    ],
-    "actors": [
-      "Aditya Upadhyay",
-      "Arpan Verma",
-      "Chandan Sah",
-      "Dev Utkarsh",
-      "Harshit Gupta"
-    ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.474956Z",
-    "dedup_keys": [
-      "arxiv:2611.18583",
-      "title:analysis bias epistemic infantilization kiddo language large metric models multi not quantifying via"
+      "url:microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future",
+      "title:build can future healthier help"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1713,42 +1869,88 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 3.772,
+    "score": 29.716,
     "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.228
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.284
     }
   },
   {
-    "id": "e2bff5eda1d96a17",
-    "kind": "paper",
-    "title": "Automating literature screening and knowledge synthesis with large language models",
-    "summary_en": "Scientific literature is expanding rapidly, yet much of its knowledge remains difficult to organize and reuse due to the substantial workload needed to navigate large, heterogeneous literature corpora. Here, we develop a generalizable large language model (LLM)-powered framework that automates literature screening, structured information extraction, and knowledge synthesis within a unified workflow. We benchmarked 11 state-of-the-art proprietary and open-weight LLMs across three materials science screening tasks differing in scope, corpus size, and class imbalance. Seven LLMs achieved balanced accuracies above 0.90 across all tasks, with the best-performing LLM reaching 0.96--0.98, demonstrating the potential of LLMs to accurately screen large, highly imbalanced scientific corpora. The framework also substantially reduces manual effort, screening 10,000 records within four minutes compared with approximately 83 person-hours for manual screening. Beyond literature screening, the framework extracts structured information from full-text articles, enabling content-level quantification of research landscapes that extends traditional bibliometric analysis based on publication metadata. This capability reveals methodological trends and underexplored directions, as shown for machine learning in concrete materials science. We further demonstrate its utility for information and data discovery by identifying publications containing silicate glass density data that are difficult to retrieve using conventional search strategies, which can support downstream hypothesis development, research design, and data-driven scientific discovery. Overall, these results demonstrate the broad applicability of LLM-powered literature analysis across scientific domains and its potential to transform large, unstructured literature corpora into structured, analyzable knowledge at scale.",
+    "id": "60a565d6d728807b",
+    "kind": "model",
+    "title": "briaai/RMBG-3.0",
+    "summary_en": "image-segmentation, diffusers, background-removal, remove-background, alpha-matting, image-matting, segmentation",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "eval"
+      "cv"
     ],
     "links": [
       {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.18588",
-        "external_id": "2611.18588"
+        "source": "hf_models",
+        "url": "https://huggingface.co/briaai/RMBG-3.0",
+        "external_id": "briaai/RMBG-3.0"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/briaai/Fibo-2.0-dev",
+        "external_id": "briaai/Fibo-2.0-dev"
       }
     ],
     "actors": [
-      "Zhanzhao Li",
-      "Qiyao He",
-      "Weiqiang Chen",
-      "Kengran Yang",
-      "Kai Gong"
+      "briaai"
     ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.475199Z",
+    "published_at": "2026-11-10T15:41:35Z",
+    "first_seen_at": "2026-11-17T21:24:42.769475Z",
     "dedup_keys": [
-      "arxiv:2611.18588",
-      "title:and automating knowledge language large literature models screening synthesis with"
+      "hf:briaai/rmbg-3.0"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 56,
+      "hf_downloads": 0,
+      "hf_trending_score": 56.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 29.529,
+    "score_breakdown": {
+      "hf_trending": 24.258,
+      "hf_likes": 12.129,
+      "has_weights": 4.0,
+      "age_decay": -10.858
+    }
+  },
+  {
+    "id": "f433d947d4006454",
+    "kind": "release",
+    "title": "Introducing OpenAI for Chile",
+    "summary_en": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-openai-for-chile",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:43.298668Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-openai-for-chile",
+      "title:chile for introducing openai"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1764,41 +1966,36 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 3.772,
+    "score": 28.662,
     "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.228
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.338
     }
   },
   {
-    "id": "6d36856788663e03",
-    "kind": "paper",
-    "title": "Human vs Machine Translation Detection: A Cross-Model, Cross-Domain, and Low-Resource Analysis",
-    "summary_en": "The growing reliance on web-crawled corpora for training large language models introduces a critical challenge: machine-translated (MT) content is often treated as human translation (HT), potentially degrading data quality and propagating synthetic artifacts, especially in low-resource settings. In this work, we study MT-HT detectability across high-resource (English, Spanish) and low-resource (Swahili, Afrikaans) languages using both decoder-only LLMs in zero-shot and few-shot settings, and fine-tuned multilingual encoders trained at the sentence level and on token-chunked inputs. We find that decoder-only models provide limited discrimination overall and exhibit a consistent class-asymmetric failure mode: they recognize human-written text reliably (high HT recall) but rarely flag fluent machine output (low MT recall). Encoder-based classifiers achieve high accuracy when evaluated on data generated by the same MT systems and translators used during training in a legislative domain, but their MT recall drops sharply on unseen translators and on unseen domains such as low-resource conversational text and medical content. To address this limitation, we evaluate models on longer inputs by chunking text into segments of up to 300 tokens, which substantially improves generalization, suggesting that sentence-level signals are insufficient for robust detection. Finally, we analyze the relationship between translation quality and detectability using COMET and BLEURT, showing that lower-quality MT is more easily identified, while high-quality MT remains difficult to distinguish from HT. Our results highlight the importance of input granularity, translator generalization, and translation quality in building robust MT detection systems across domains and languages.",
+    "id": "b87d9481d3486044",
+    "kind": "release",
+    "title": "Strengthening NATO and allied cyber defenses with AI",
+    "summary_en": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "eval"
-    ],
+    "topics": [],
     "links": [
       {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.18586",
-        "external_id": "2611.18586"
+        "source": "openai",
+        "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+        "external_id": null
       }
     ],
     "actors": [
-      "Yabsera Yemanberhan",
-      "Prasenjit Mitra",
-      "Roald Eiselen"
+      "openai"
     ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.475125Z",
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-17T21:24:43.298616Z",
     "dedup_keys": [
-      "arxiv:2611.18586",
-      "title:analysis and cross cross detection domain human low machine model resource translation"
+      "url:openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "title:allied and cyber defenses nato strengthening with"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1814,121 +2011,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 3.772,
+    "score": 28.662,
     "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.228
-    }
-  },
-  {
-    "id": "9f2e011bc2389c3d",
-    "kind": "paper",
-    "title": "OmniTag-LLM: Multilingual Multitask Speech Tagging",
-    "summary_en": "Multimodal LLMs promise to replace the traditional cascade of specialist speech models with a single system that, from one audio clip, jointly transcribes and labels emotion, gender, language, and named entities. Yet most benchmarks still score these tasks in isolation, and largely in English. We introduce OmniTag-Bench, a five-language benchmark (en/de/es/fr/it) and training recipe for joint understanding: one audio clip in, one JSON object out (transcript, emotion, gender, LID, token-level NER). We evaluate ten open multimodal LLMs and a LoRA fine-tuned Qwen3-Omni on a unified prompt and scorer. Beyond aggregate scores, OmniTag-Bench reveals a systematic failure mode: several strong models often transcribe or translate non-English speech into English, inflating multilingual WER. Fine-tuning improves the base model on NER, emotion, and WER while nearly doubling accuracy on independent human-labeled emotion corpora, suggesting transferable gains beyond pseudo-label imitation. The fine-tuned model also generalizes to unseen but related languages, transferring to held-out Dutch. We release prompts, the scorer, and the labeling pipeline.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "speech",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.18589",
-        "external_id": "2611.18589"
-      }
-    ],
-    "actors": [
-      "Aref Farhadipour",
-      "Francesco Verdini",
-      "Antonis Asonitis",
-      "Pierre-Edouard Honnet",
-      "Marzieh Razavi",
-      "Vijeta Avijeet",
-      "Juan Pablo Zuluaga Gomez"
-    ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.475261Z",
-    "dedup_keys": [
-      "arxiv:2611.18589",
-      "title:llm multilingual multitask omnitag speech tagging"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.772,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.228
-    }
-  },
-  {
-    "id": "8a0972e39afdf9d2",
-    "kind": "paper",
-    "title": "Read, Route, Patch: Robust Test-Time Evolution for LLM Agents",
-    "summary_en": "Large Language Model (LLM)-based agents can improve long- horizon interactive decision-making through test-time evolu- tion, yet existing methods face three information bottlenecks: memory retrieval overemphasizes textual similarity, candi- date harnesses are often behaviorally redundant, and whole- harness rewriting may overwrite useful evidence or introduce cross-component inconsistency. We introduce Trident, which improves experience utilization, behavioral exploration, and harness evolution through boundary-aware memory reading, diversity-aware candidate routing, and order-aware insertion- based updating, respectively. We evaluate Trident on five benchmarks spanning text games, web interaction, and cod- ing tasks. Across qwen-32B, mistral-small-3.2-24B, and gpt- oss-20B, Trident achieves the best average performance and consistently outperforms non-learning, memory-based, reflection-based, and automated prompt optimization base- lines. Compared with the strongest baseline, APEX, Trident yields relative average gains of 30.7%, 30.8%, and 38.3% on the three backbones, respectively. Ablation and sensitivity stud- ies further show that the three designs provide complementary gains and remain robust to parameter variations.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.18585",
-        "external_id": "2611.18585"
-      }
-    ],
-    "actors": [
-      "Kaijie Chen",
-      "Liang Yan",
-      "Yilan Wei",
-      "Jiachen Luo",
-      "Zhihao Dou",
-      "Jiashu Qu",
-      "Haoran Liu",
-      "Junli Wang"
-    ],
-    "published_at": "2026-11-17T05:00:00Z",
-    "first_seen_at": "2026-11-17T08:38:22.475046Z",
-    "dedup_keys": [
-      "arxiv:2611.18585",
-      "title:agents evolution for llm patch read robust route test time"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 3.772,
-    "score_breakdown": {
-      "topic_match": 4.0,
-      "age_decay": -0.228
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -1.338
     }
   }
 ]
