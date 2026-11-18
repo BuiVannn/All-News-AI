@@ -1,0 +1,1995 @@
+[
+  {
+    "id": "7b13937fab2fe9df",
+    "kind": "model",
+    "title": "iapp/OpenThai2.1-OCR-Markdown-20261118",
+    "summary_en": "image-text-to-text, nemotron_parse, OCR, Thai, document-parsing, markdown, tables",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/iapp/OpenThai2.1-OCR-Markdown-20261118",
+        "external_id": "iapp/OpenThai2.1-OCR-Markdown-20261118"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+        "external_id": "nvidia/Nemotron-3.5-Parse"
+      }
+    ],
+    "actors": [
+      "iapp"
+    ],
+    "published_at": "2026-11-09T14:21:29Z",
+    "first_seen_at": "2026-11-18T08:01:13.032505Z",
+    "dedup_keys": [
+      "hf:iapp/openthai2.1-ocr-markdown-20261118"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 52,
+      "hf_downloads": 12448,
+      "hf_trending_score": 38.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 47.647,
+    "score_breakdown": {
+      "hf_trending": 21.981,
+      "hf_downloads": 18.859,
+      "hf_likes": 11.911,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -13.104
+    }
+  },
+  {
+    "id": "63f88fa12336e0aa",
+    "kind": "model",
+    "title": "tencent/Hy4-flash",
+    "summary_en": "image-text-to-text, transformers, hy_v4_flash, text-generation, hunyuan, hy4-flash, moe, multimodal",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/tencent/Hy4-flash",
+        "external_id": "tencent/Hy4-flash"
+      }
+    ],
+    "actors": [
+      "tencent"
+    ],
+    "published_at": "2026-11-17T03:44:46Z",
+    "first_seen_at": "2026-11-18T08:01:13.032025Z",
+    "dedup_keys": [
+      "hf:tencent/hy4-flash"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 106,
+      "hf_downloads": 0,
+      "hf_trending_score": 91.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 47.382,
+    "score_breakdown": {
+      "hf_trending": 27.131,
+      "hf_likes": 14.018,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -1.767
+    }
+  },
+  {
+    "id": "8c92139c0013034f",
+    "kind": "paper",
+    "title": "Weight-Space Programming Doesn't Need Transformers",
+    "summary_en": "Standard neural architectures such as the Transformer were chosen because they train well with gradient descent and run fast on GPUs. In weight-space programming, a large language model (LLM) writes target weights by hand without gradient-based training, so those reasons no longer apply. Should we keep the Transformer? Given minimal guidance, ten labeled examples, and a sandbox, mainly on multiple-choice questions, we task three frontier LLMs with either generating the weights of a fixed architecture or designing the architecture themselves. When free to design, all three compile plain-text facts into a sparse table queried by a fixed procedure, reaching up to 54.4% test accuracy. An LLM-designed model achieves higher test accuracy than the most accurate released Transformer that the same LLM wrote while using about 1,800x fewer parameters. Without gradients, they choose a table, in which the LLM can state what each weight means and can find and rewrite a wrong one. Each wrong answer points to one row, and removing a row changes about one other answer. From this, we propose an associative-memory-based model up to 17x faster on GPUs than a same-sized Transformer. We also test pretrained weights, other benchmarks, and tasks where models generate answers. Pretrained LLMs remain more accurate; the claim concerns which structure to build when writing weights.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.22055",
+        "external_id": "2611.22055"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.22055",
+        "external_id": "2611.22055"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/effl-lab/Weight-Space-Programming",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hyunjong Ok",
+      "Jaeho Lee"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038363Z",
+    "dedup_keys": [
+      "arxiv:2611.22055",
+      "title:doesn need programming space transformers weight",
+      "github:effl-lab/weight-space-programming"
+    ],
+    "signals": {
+      "hf_upvotes": 40,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 27,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 46.372,
+    "score_breakdown": {
+      "hf_upvotes": 29.709,
+      "github_stars": 6.664,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "2de78b64afdf8b82",
+    "kind": "paper",
+    "title": "TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks",
+    "summary_en": "We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated advances in model architecture and training infrastructure on Ascend. This report describes the design principles and systems engineering behind the series, spanning architecture selection, large-scale pretraining, and reasoning and agentic post-training. We study how sparse activation, attention design, model depth and width, and speculative decoding balance model capacity with computation, memory access, and execution overhead. Our pretraining infrastructure builds on MindSpore HyperParallel, combining topology-aware hybrid sharding, efficient distributed optimizer execution, and coordinated management of long-sequence workloads and activation memory. CPU affinity and core isolation further reduce host scheduling interference. Together, these mechanisms support the pretraining of a 285B-parameter model on 8,192 Ascend 910C cards, providing a concrete setting for the architectural and systems studies. For post-training, we introduce TeleGym, a unified agent execution platform that connects execution, evaluation, and trajectory construction to policy optimization. Disaggregated asynchronous execution, bounded oversampling, and partial rollout accommodate heterogeneous task durations while preserving trajectory continuity across policy updates. Together, these advances establish an Ascend-oriented training foundation for the continued development of Xing 4 across model scales and increasingly demanding reasoning and agent workloads.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.22115",
+        "external_id": "2611.22115"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.22115",
+        "external_id": "2611.22115"
+      }
+    ],
+    "actors": [
+      "Xingchen AGI Lab",
+      "Baotian Hu",
+      "Bingkai Yang",
+      "Boyang Wang",
+      "Changzai Pan",
+      "Chao Lyu",
+      "Chao Wang",
+      "Chen Li",
+      "Chenshuo Pan",
+      "Chenyu Lin",
+      "Chenyuan Zhang",
+      "Chongming Liu",
+      "Dawei Fan",
+      "Di Wu",
+      "Dong Guo",
+      "Dong Li",
+      "Dongfang Li",
+      "Enlin Liu",
+      "Fanye Xiao",
+      "Fengkai Li",
+      "Fubei Yao",
+      "Gang Lin",
+      "Han Gao",
+      "Hanming Wu",
+      "Haowei He",
+      "Huapeng Liu",
+      "Hua Wang",
+      "Huinan Xu",
+      "Jiahong Xiong",
+      "Jiaxin Peng",
+      "Jianxiang Ma",
+      "Jianxing Zhuge",
+      "Jie Zhang",
+      "Ji Xiong",
+      "Jinglin Chen",
+      "Jingqi Li",
+      "Jingxuan Li",
+      "Jiwang Ye",
+      "Junchen Li",
+      "Junbiao Li",
+      "Junyang Wu",
+      "Kaidong Yu",
+      "Kaipeng Jia",
+      "Kehai Chen",
+      "Kuai Li",
+      "Laobin Liu",
+      "Lei Li",
+      "Libo Qin",
+      "Lingling Shi",
+      "Luwen Pu",
+      "Menghao Xu",
+      "Mengjiao Bao",
+      "Mengqi Chen",
+      "Min Zhang",
+      "Mingrui Wang",
+      "Naying Wang",
+      "Peicong Han",
+      "Peiming Guo",
+      "Pengfei Li",
+      "Qiang Feng",
+      "Qi Wang",
+      "Qingjun Zhu",
+      "Qingli Li",
+      "Qitai Ding",
+      "Qiyi Xie",
+      "Quanchao Zhao",
+      "Rongbao Han",
+      "Rui Xue",
+      "Ruiyu Fang",
+      "Ruiting Song",
+      "Shijie Li",
+      "Shiquan Wang",
+      "Shuangyong Song",
+      "Sishi Xiong",
+      "Teng Su",
+      "Wankang Bao",
+      "Weijie Zhang",
+      "Wei Mao",
+      "Weiwei Fu",
+      "Weiyang Huang",
+      "Wenmin Deng",
+      "Wenqing Hu",
+      "Wujie Zhong",
+      "Xi Yu",
+      "Xiaohui Hu",
+      "Xiaomin Fang",
+      "Xiaomeng Huang",
+      "Xiaoqiong Shi",
+      "Xiaotong Shang",
+      "Xiaoyu Li",
+      "Xinglei Xu",
+      "Xin Jiang",
+      "Xin Wang",
+      "Xin Zhang",
+      "Xinzhang Liu",
+      "Xue Liu",
+      "Xuefeng Bai",
+      "Xuewei He",
+      "Yahan Li",
+      "Yanhan Zhang",
+      "Yanlei Xue",
+      "Yanzhang Wu",
+      "Yang Yu",
+      "Yi Liu",
+      "Yin Zhang",
+      "Yingyan Li",
+      "Yitong Yao",
+      "Yixuan Li",
+      "Yongqiang Xia",
+      "Yongxiang Li",
+      "Yinzhou Zhu",
+      "Yu Zhao",
+      "Yuhao Jiang",
+      "Yunpeng Zhang",
+      "Yuting Lin",
+      "Yuxuan Wu",
+      "Yuyao Huang",
+      "Yuyi Wang",
+      "Zebo Peng",
+      "Zhenwu Pei",
+      "Zhenxiong Li",
+      "Zhao Wang",
+      "Zhaoxi Zhang",
+      "Zhihao Yang",
+      "Zhiqiang Dong",
+      "Zhiwei Yan",
+      "Zhilong Lu",
+      "Zhonghao Guo",
+      "Zhongheng Wu",
+      "Zhongjiang He",
+      "Zhongqiu Li",
+      "Zhu Yuan",
+      "Zhuoru Jiang",
+      "Zhuoyi Wei",
+      "Zijia Guo",
+      "Zilu Huang",
+      "Zhipeng Guo",
+      "Zirui Li",
+      "Zihan Wang"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038170Z",
+    "dedup_keys": [
+      "arxiv:2611.22115",
+      "title:advancing agentic and chips domestic frameworks frontier models telechat xing4"
+    ],
+    "signals": {
+      "hf_upvotes": 135,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 46.3,
+    "score_breakdown": {
+      "hf_upvotes": 39.301,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "09632a7fccfdccec",
+    "kind": "paper",
+    "title": "AscendGYM: A Cost-Aware Kernel Optimization Benchmark for Real-World Workloads on Ascend NPUs",
+    "summary_en": "Kernel optimization is essential for efficient large language model (LLM) training and inference on Ascend NPUs. Existing Ascend kernel benchmarks primarily focus on kernel generation, with less emphasis on the ability of agents to optimize existing implementations under input configurations drawn from real workloads. To address this requirement, we introduce AscendGYM, a benchmark whose initial suite comprises 48 kernels across three difficulty levels. Each kernel is paired with test cases whose data types and tensor shapes are collected from real-world training and inference tasks. Consequently, performance improvements on AscendGYM map directly to the corresponding workloads. In terms of usability, two evaluation modes are supported in AscendGYM: model evaluation and model-harness evaluation. The kernel optimization capabilities of both trained models and custom agents are allowed to be measured. It provides a complete execution environment that closely reproduces how Ascend kernels are invoked in practical pipelines. For model evaluation, it additionally includes a built-in harness equipped with search orchestration and experience accumulation. Finally, we propose a new metric, the Speedup-Token Score (STS), which quantifies performance gains relative to token cost. By jointly considering speedup and cost, STS enables the assessment of practical kernel optimization capability of a model or harness under an acceptable budget. AscendGYM is available at https://github.com/SLAI-AITP/AscendGYM.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.17621",
+        "external_id": "2611.17621"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.17621",
+        "external_id": "2611.17621"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/SLAI-AITP/AscendGYM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "AI Training Platform Team",
+      "Bingwei Zhang",
+      "Jing Li",
+      "Amir Abdullin",
+      "Sihang Chen",
+      "Xin Chen",
+      "Liangjun Feng",
+      "Yingmeng Gao",
+      "Tao Guo",
+      "Junjie Huang",
+      "Dongfang Li",
+      "Zhanglian Lin",
+      "Jiajun Liu",
+      "Zekun Liu",
+      "Zhengxuan Lu",
+      "Xiaodong Luo",
+      "Jian Meng",
+      "Ivan Nosov",
+      "Linyuan Qiu",
+      "Weijian Sun",
+      "Wanrui Yan",
+      "Binfan Zheng",
+      "Zhicheng Zhou",
+      "Baotian Hu",
+      "Min Zhang",
+      "Haizhou Li",
+      "Zhiquan Luo"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038328Z",
+    "dedup_keys": [
+      "arxiv:2611.17621",
+      "title:ascend ascendgym aware benchmark cost for kernel npus optimization real workloads world",
+      "github:slai-aitp/ascendgym"
+    ],
+    "signals": {
+      "hf_upvotes": 84,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 25,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 46.056,
+    "score_breakdown": {
+      "hf_upvotes": 35.541,
+      "github_stars": 6.516,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.001
+    }
+  },
+  {
+    "id": "cdbd18f63d350000",
+    "kind": "model",
+    "title": "KORMo-VL/KORMo-Web-9B",
+    "summary_en": "image-text-to-text, transformers, qwen3_5, gui-agent, web-agent, computer-use, browser",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/KORMo-VL/KORMo-Web-9B",
+        "external_id": "KORMo-VL/KORMo-Web-9B"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "external_id": "Qwen/Qwen3.5-9B"
+      }
+    ],
+    "actors": [
+      "KORMo-VL"
+    ],
+    "published_at": "2026-11-14T15:37:16Z",
+    "first_seen_at": "2026-11-18T08:01:13.032473Z",
+    "dedup_keys": [
+      "hf:kormo-vl/kormo-web-9b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 47,
+      "hf_downloads": 104,
+      "hf_trending_score": 40.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 45.678,
+    "score_breakdown": {
+      "hf_trending": 22.281,
+      "hf_downloads": 9.308,
+      "hf_likes": 11.614,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -5.525
+    }
+  },
+  {
+    "id": "d4b9e9b5a454e976",
+    "kind": "paper",
+    "title": "ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models",
+    "summary_en": "Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show. Bringing force to an API-only frozen model raises two challenges. First, contact evolves much faster than an API model can decide, so the system must close the loop on force beneath the model. Second, a frozen model cannot interpret raw force streams, so force must be returned in a form the model can reason about. Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning. After calibrating hand force from a wrist sensor or joint torques alone, ForceHarness addresses the first challenge with self-terminating force primitives that regulate force on their own and return at a contact event. To address the second challenge, a physics translation layer turns each force trace into physical quantities with uncertainty as the tool result. To evaluate ForceHarness against expert force controllers and learned policies under identical conditions, we also build HiddenPhys, a seven-task MuJoCo benchmark with hidden physical variables. On a real arm without a wrist force sensor, ForceHarness raises the zero-shot success rate of GPT-6 Astra from 3.3% to 90.0%. In simulation, it adds 17.5 percentage points on the public ForceBench suite and 34.3 percentage points on HiddenPhys, surpassing force-aware policies trained on demonstrations on both benchmarks and matching hand-written expert controllers on HiddenPhys. Ablations further show that smaller models make significantly better decisions when given physical quantities rather than raw force values.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.21099",
+        "external_id": "2611.21099"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21099",
+        "external_id": "2611.21099"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/showlab/ForceHarness",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ke Sun",
+      "Kevin Yuchen Ma",
+      "Yike Zhang",
+      "Yanzhe Chen",
+      "Mike Zheng Shou"
+    ],
+    "published_at": "2026-11-16T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038388Z",
+    "dedup_keys": [
+      "arxiv:2611.21099",
+      "title:action and for force forceharness frontier frozen into models physics turning",
+      "github:showlab/forceharness"
+    ],
+    "signals": {
+      "hf_upvotes": 38,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 24,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 44.245,
+    "score_breakdown": {
+      "hf_upvotes": 29.308,
+      "github_stars": 6.438,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.501
+    }
+  },
+  {
+    "id": "76c1728c2b208750",
+    "kind": "model",
+    "title": "apple/FastFrames-L",
+    "summary_en": "text-to-video",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/apple/FastFrames-L",
+        "external_id": "apple/FastFrames-L"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B",
+        "external_id": "Wan-AI/Wan2.1-T2V-14B"
+      }
+    ],
+    "actors": [
+      "apple"
+    ],
+    "published_at": "2026-11-16T17:21:04Z",
+    "first_seen_at": "2026-11-18T08:01:13.032009Z",
+    "dedup_keys": [
+      "hf:apple/fastframes-l"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 113,
+      "hf_downloads": 0,
+      "hf_trending_score": 104.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.716,
+    "score_breakdown": {
+      "hf_trending": 27.924,
+      "hf_likes": 14.209,
+      "has_weights": 4.0,
+      "age_decay": -2.417
+    }
+  },
+  {
+    "id": "b31c502a4b3a82f8",
+    "kind": "model",
+    "title": "KORMo-VL/KORMo-Web-4B",
+    "summary_en": "image-text-to-text, transformers, qwen3_5, gui-agent, web-agent, computer-use, browser",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/KORMo-VL/KORMo-Web-4B",
+        "external_id": "KORMo-VL/KORMo-Web-4B"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+        "external_id": "Qwen/Qwen3.5-4B"
+      }
+    ],
+    "actors": [
+      "KORMo-VL"
+    ],
+    "published_at": "2026-11-14T11:22:47Z",
+    "first_seen_at": "2026-11-18T08:01:13.032489Z",
+    "dedup_keys": [
+      "hf:kormo-vl/kormo-web-4b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 48,
+      "hf_downloads": 43,
+      "hf_trending_score": 39.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 43.586,
+    "score_breakdown": {
+      "hf_trending": 22.133,
+      "hf_downloads": 7.568,
+      "hf_likes": 11.675,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -5.79
+    }
+  },
+  {
+    "id": "bb6b1b2927305ca0",
+    "kind": "paper",
+    "title": "Multi-Branch Transformer",
+    "summary_en": "Transformer language models are commonly scaled by making their blocks wider or stacking them deeper. In this work, we explore a complementary path: branching, the parallel composition of full Transformer blocks. We introduce the Multi-Branch Transformer (MBT), which processes the input through shared initial layers, executes independently parameterized branches of sequential blocks in parallel, and fuses their outputs before shared final layers. At comparable training compute, we study three MBT variants: Wide-Shallow preserves block width, Narrow-Deep preserves sequential depth, and Balanced interpolates between them. In controlled pretraining experiments at four mixture-of-experts scales (0.8B to 2.1B total parameters), 2-branch Wide-Shallow MBTs consistently outperform sequential Transformers under matched parameter and training-compute budgets. Balanced MBTs improve further and retain comparable quality as the number of branches increases. To improve inference efficiency at long contexts, we introduce Joint-KV, which constructs a shared KV cache from branch representations at each depth. Our final recipe combines Balanced MBTs with Joint-KV, supported by an inference engine that exploits branch grouping and shared-cache reuse. Fitted scaling curves indicate that standard Transformers require up to 1.26x as much training body compute to match our final models' validation loss. These models reduce full-model KV-cache storage by up to 34% and deliver up to 51.4% higher decoding throughput on a single H200 GPU. Ablation studies show that branching yields gains beyond changes in width and depth, enables an effective KV-sharing strategy (Joint-KV), remains robust across fusion functions, and performs best in the middle layers. These findings show that branching offers a practical path for scaling language models toward both better modeling quality and faster inference.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.19800",
+        "external_id": "2611.19800"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.19800",
+        "external_id": "2611.19800"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/GaotangLi/Multi-Branch-Transformer",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Gaotang Li",
+      "Lingjie Chen",
+      "Chunyuan Deng",
+      "Zhiwei Xu",
+      "Hongzheng Chen",
+      "Christopher De Sa",
+      "Jingrui He",
+      "Yingheng Wang",
+      "Hanghang Tong"
+    ],
+    "published_at": "2026-11-15T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038409Z",
+    "dedup_keys": [
+      "arxiv:2611.19800",
+      "title:branch multi transformer",
+      "github:gaotangli/multi-branch-transformer"
+    ],
+    "signals": {
+      "hf_upvotes": 29,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 36.982,
+    "score_breakdown": {
+      "hf_upvotes": 27.21,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.001
+    }
+  },
+  {
+    "id": "cceff117548bb650",
+    "kind": "paper",
+    "title": "TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation",
+    "summary_en": "Robot manipulation videos provide a rich visual experience, yet recovering robot action and gripper-state annotations from RGB observations still remains challenging. Using the embodiment-agnostic tool-center-point (TCP) pose as the action space, we present TCP4D, a unified model in which a shared 4D scene representation both tracks observed TCP motion and generates future TCP trajectories. Given a monocular video and initial 2D TCP queries, the tracker directly recovers metric TCP poses in SE(3) and gripper states alongside scene geometry and camera parameters. The generator samples local features from the same 4D representation along the recovered TCP tracks, then combines them with robot observations and language instructions to predict future TCP states. Our new cross-embodiment augmentation pipeline converts existing RGB videos into demonstrations for alternative embodiments by retargeting the recovered motion and synthesizing the corresponding observations, without recorded source-robot states. Experiments show that the tracker achieves absolute trajectory errors of 7.60 and 16.07 mm on DROID and RoboLab and adapts to a new embodiment with only ten demonstrations. The generator achieves 69.19% mean success on RoboTwin and outperforms well-established policy models on two real-world tasks, while joint training on source and augmented demonstrations improves target-robot success by 41.5% over augmented-only training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "robotics"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.23143",
+        "external_id": "2611.23143"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.23143",
+        "external_id": "2611.23143"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Livioni/TCP4D",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haosong Peng",
+      "Xiangyang Liu",
+      "Zhengshen Zhang",
+      "Yunfeng Fan",
+      "Tianyu Qi",
+      "Xin Xia",
+      "Yufeng Zhan",
+      "Wenchao Xu"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038430Z",
+    "dedup_keys": [
+      "arxiv:2611.23143",
+      "title:and center for generation manipulation model point robot tcp4d tool tracking unified",
+      "github:livioni/tcp4d"
+    ],
+    "signals": {
+      "hf_upvotes": 23,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.582,
+    "score_breakdown": {
+      "hf_upvotes": 25.424,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "1d6d9fa241644ffd",
+    "kind": "paper",
+    "title": "Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration",
+    "summary_en": "Collaboration promises to extend humanoid capabilities beyond what individual robots can achieve. However, realizing this potential requires coordinated whole-body interactions, coherent long-horizon planning, and precise synchronization across robots. We introduce Heave-Ho, a decentralized framework for long-horizon collaborative multi-humanoid loco-manipulation. At the low level, we develop a multi-agent post-training framework that adapts a humanoid foundation tracking model to physically coupled interactions between humanoids, enabling coordinated decentralized control from local observations alone. At the high level, we train a vision-language planner and design a speech-based leader-follower coordination mechanism to synchronize decentralized execution without network communication. Trained with two identical humanoids, our system scales to teams of up to ten robots and generalizes to heterogeneous teams without retraining. To benchmark these capabilities, we introduce HH-Bench, comprising 12 tasks involving teams of 2 to 10 humanoids, including heterogeneous teams. Systematic evaluations show that Heave-Ho consistently outperforms baseline methods, while real-world experiments demonstrate robust decentralized collaboration across challenging tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "multimodal",
+      "cv",
+      "speech",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.22275",
+        "external_id": "2611.22275"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.22275",
+        "external_id": "2611.22275"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/heaveho-humanoid/Heave-Ho",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ting-Hsuan Chen",
+      "Siheng Zhao",
+      "Han Jiang",
+      "Qi Pan",
+      "Louison Lu",
+      "Jiaheng Luo",
+      "Henghui Bao",
+      "Yiyu Chen",
+      "Quan Nguyen",
+      "Yue Wang"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038469Z",
+    "dedup_keys": [
+      "arxiv:2611.22275",
+      "title:collaboration decentralized heave horizon humanoid long multi",
+      "github:heaveho-humanoid/heave-ho"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 8,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 35.505,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 4.394,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "6b284013ce20fbfd",
+    "kind": "paper",
+    "title": "FastFrames: Video Generation at Interactive Latency",
+    "summary_en": "Autoregressive video diffusion models generate frames based on new observations and inputs, making them a promising medium for interactive visual experiences. However, existing models are orders of magnitude too slow for fluid interaction. This paper introduces FastFrames, a family of fast autoregressive video diffusion models that achieves interactive latency without compromising quality. We profile the inference pipeline of state-of-the-art models and find that operations often treated as fixed implementation details, such as VAE decoding and KV cache updates, in fact account for over half of end-to-end inference latency. We challenge the assumption that these components are indispensable and replace them with lightweight alternatives. Our 1.3B variant runs at 36 ms per frame, or 28 responses per second (RPS), on a single B200 GPU while matching the generation quality of a state-of-the-art model that is nearly 8x slower. Our 14B variant runs at 45 ms per frame, or 22 RPS, on an 8x B200 GPU node and yields significantly better visual quality and realism. We show that FastFrames enables real-time interaction in applications such as camera-conditioned and physics-conditioned video generation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.23226",
+        "external_id": "2611.23226"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.23226",
+        "external_id": "2611.23226"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/apple-aiml-research/ml-fastframes",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Gene Chou",
+      "Guandao Yang",
+      "Fujun Luan",
+      "Lars Mescheder",
+      "Wei Dong",
+      "Stephan Richter",
+      "Vladlen Koltun"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038448Z",
+    "dedup_keys": [
+      "arxiv:2611.23226",
+      "title:fastframes generation interactive latency video",
+      "github:apple-aiml-research/ml-fastframes"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 14,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.971,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "github_stars": 5.416,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "5e46c0471e5579f7",
+    "kind": "release",
+    "title": "Introducing ChatGPT for Sales",
+    "summary_en": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-17T08:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.393030Z",
+    "dedup_keys": [
+      "url:openai.com/index/introducing-chatgpt-for-sales",
+      "title:chatgpt for introducing sales"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.499,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.501
+    }
+  },
+  {
+    "id": "5a224cbce73687f9",
+    "kind": "paper",
+    "title": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
+    "summary_en": "π^4 is a unified foundation model for 4D scene perception. From diverse, uncalibrated RGB observations in the wild---a single image, an unordered collection, or a video sequence---it recovers dense geometry, camera poses, and metric scale, together with 2D/3D point tracks and moving-object masks for multi-image inputs. It couples a geometry branch with a geometry-conditioned motion branch, which predicts image-space correspondences that are lifted into 3D using reconstructed target-view geometry. Across diverse benchmarks, π^4 achieves the best overall average rank in geometry evaluation, alongside competitive performance in single- and multiview 2D/3D point tracking and moving-object segmentation. With a shared backbone, the full geometry-and-motion system contains approximately 0.5B parameters---less than half the size of most baselines. It produces joint reconstructions and tracks in one forward pass, including large-scale scenes with thousands of input images despite training with contexts of at most 64 views. We further present the data and training recipe underlying these capabilities, together with empirical studies of key design choices. Code and models are available at https://github.com/yyfz/Pi4.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.23144",
+        "external_id": "2611.23144"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.23144",
+        "external_id": "2611.23144"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yyfz/Pi4",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yifan Wang",
+      "Weiguang Zhao",
+      "Ni Yang",
+      "Haoyu Guo",
+      "Junting Dong",
+      "Weinan Zhang",
+      "Chunhua Shen"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038645Z",
+    "dedup_keys": [
+      "arxiv:2611.23144",
+      "title:and for foundation geometry model motion scene",
+      "github:yyfz/pi4"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 22,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.837,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 6.271,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "d64bd8b170930fa6",
+    "kind": "paper",
+    "title": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
+    "summary_en": "Medical image understanding with vision-language models (VLMs) typically relies on autoregressively generating reasoning and answer tokens. These unnecessary tokens make the inference cost scale with the response length and force the answer to be parsed from free-form text, incurring avoidable latency and decision errors. To this end, we introduce MedJev, a system one vision-language decision model that maps medical images, questions, and candidate answers directly to decisions in a single multimodal forward pass, without any autoregressive generation process. For fast inference, MedJev removes the upper language layers and the generative output pathway, while keeping the full vision pathway and all visual tokens. On this shortened backbone, a decision head scores each candidate by pretrained query--key matching and refines the scores with a lightweight multilayer perceptron (MLP) residual, coupling the pretrained matching structure with task-specific nonlinear discrimination. Built on Qwen3.5-4B, MedJev-4B improves both accuracy and speed over the original model on each of four medical image classification and visual question answering benchmarks, with an absolute accuracy gain of 7.93\\% and a 6.04times end-to-end speedup. Further comparison with 20 cutting-edge models shows that MedJev-4B achieves state-of-the-art performance and inference speed among 4B--9B general and medical VLMs, indicating that direct multimodal decision making is an effective route to fast and effective medical image understanding.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.20992",
+        "external_id": "2611.20992"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.20992",
+        "external_id": "2611.20992"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zfkarl/MedJev",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Fan Zhang",
+      "Hao Wu",
+      "Jinyang Wu",
+      "Hongyu Qu",
+      "Zheng Lian",
+      "Dongfu Yin",
+      "Qingsong Wen",
+      "Pheng-Ann Heng"
+    ],
+    "published_at": "2026-11-16T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038512Z",
+    "dedup_keys": [
+      "arxiv:2611.20992",
+      "title:and decision effective fast for image language medical medjev model one system understanding vision",
+      "github:zfkarl/medjev"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.597,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -3.501
+    }
+  },
+  {
+    "id": "2ec9f3d53f7f698e",
+    "kind": "paper",
+    "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+    "summary_en": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for context-based optimization. Using the setting of gameplay as a testbed, a frozen LLM agent is given a compute budget and tools for collecting experience and updating text documents, and allowed to freely experiment without an externally imposed loop or access to real-world data. We find that sufficiently capable models do self-improve under these conditions, demonstrating strategies that align with classic cognitive frameworks for self-regulated learning and constructs from machine learning literature on self-generated curricula. Furthermore, we study the extent to which the learned text artifacts transfer to external benchmarks, observing improvement across different game horizons, mechanics, and 3D navigation.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.23219",
+        "external_id": "2611.23219"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.23219",
+        "external_id": "2611.23219"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ssundaram21/self-org",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shobhita Sundaram",
+      "Cansu Sancaktar",
+      "Phillip Isola"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038619Z",
+    "dedup_keys": [
+      "arxiv:2611.23219",
+      "title:agents how improve llm need self still told",
+      "github:ssundaram21/self-org"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 25.566,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "2b1c7cfecd01c342",
+    "kind": "paper",
+    "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
+    "summary_en": "World-action models (WAMs) augment vision-language-action policies (VLAs) with future prediction so that the policy can anticipate how its actions will affect the physical world. Existing WAMs supervise complete future observations. However, observations typically change little over an action chunk, so the future loss is dominated by copying static background content rather than learning task-relevant robot and object motion, limiting policy learning. Moreover, existing WAMs rely on large video generation models or separate world models, incurring heavy training and inference compute that hinders closed-loop deployment. To improve policy performance, we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3 space. Compared with complete future features, this residual learning target yields a higher feature rank with richer and more diverse representations of scene changes, and spatially concentrates on the robot arm and manipulated objects rather than the background. To further improve computational efficiency, we present ResWAM, a residual world-action model with 2.3B parameters in total, including a lightweight 0.5B dual-branch DiT that jointly trains an action branch and a residual branch via conditional flow matching. Without robot pretraining (i.e., pretraining on external robot action trajectories beyond the benchmark demonstrations), ResWAM achieves top average success rates on LIBERO-Plus (81.1%), RoboTwin 2.0 (93.8%), and RoboDojo (9.40% success, 13.41 score) at the lowest training (2.7-4.0 TFLOPs) and inference compute (1.0-1.4 TFLOPs), and leads real-robot Open, Put, and Stack (80.0% average, +10.0% over π_{0.5}) at 92.7 ms latency.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.19559",
+        "external_id": "2611.19559"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.19559",
+        "external_id": "2611.19559"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/OPTML-Group/ResWAM",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chongyu Fan",
+      "Gaowen Liu",
+      "Ramana Rao Kompella",
+      "Jason Corso",
+      "Sijia Liu"
+    ],
+    "published_at": "2026-11-14T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038551Z",
+    "dedup_keys": [
+      "arxiv:2611.19559",
+      "title:action changes for learning models not reswam stays what what world",
+      "github:optml-group/reswam"
+    ],
+    "signals": {
+      "hf_upvotes": 9,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 25.306,
+    "score_breakdown": {
+      "hf_upvotes": 18.421,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.501
+    }
+  },
+  {
+    "id": "9547caad53180425",
+    "kind": "release",
+    "title": "ChatGPT Ads increases its market presence in 44 countries",
+    "summary_en": "Aleph selected as ChatGPT Ads’ exclusive reseller in 44 countries to offer local invoicing, in-person support and local market expertise to brands and agencies",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/ads/blog/chatgpt-ads-increases-its-market-presence",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-12T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.393644Z",
+    "dedup_keys": [
+      "url:openai.com/ads/blog/chatgpt-ads-increases-its-market-presence",
+      "title:ads chatgpt countries increases its market presence"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 24.499,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -9.501
+    }
+  },
+  {
+    "id": "cd7b6206eae5280d",
+    "kind": "paper",
+    "title": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose",
+    "summary_en": "Electronic nose (eNose) technology offers a portable, non-invasive route for disease screening via exhaled breath analysis. However, progress in the field is hindered by the lack of systematic benchmarks that compare machine learning methods under realistic conditions, particularly sensor drift, a known but rarely quantified failure mode. Most existing studies rely on small, private datasets with inconsistent protocols, rendering results non-comparable and slowing progress. We introduce Breath-Dx, the first comprehensive benchmark of time series classification methods for breath-based disease screening. Our work leverages the Scent of Health (S-OH) dataset, the largest public clinical eNose collection to date, comprising 1,234 patients across nine diagnostic groups, each providing a 17-channel multivariate time series with explicit temporal train/test splits that account for sensor drift. We systematically evaluate 10 methods spanning four families: feature-based tabular learners, convolution-based models, graph-based, and time series architectures. All methods degrade significantly under temporal validation (0.05-0.12 AUC drop compared to random cross-validation), confirming that drift embeds a strong temporal signal. Under this realistic evaluation, the best methods achieve ROC AUC of 0.74-0.76 for some lung conditions, though others remain near chance. Recurrent architectures show the most consistent performance across diseases, while specialized time series methods achieve the highest peak results. Demographic confounders matter: breath signals provide independent diagnostic value for some conditions but add little beyond age for others. We release the S-OH dataset, all temporal splits, evaluation protocols, and code to enable reproducible research and accelerate progress in clinical breathomics.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.15348",
+        "external_id": "2611.15348"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.15348",
+        "external_id": "2611.15348"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/ivanpodd/Breath-Dx",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ivan Poddiakov",
+      "Ivan Kruzhilov",
+      "Galina Zubkova",
+      "Svetlana Erofeeva",
+      "Andrey Savchenko",
+      "Pavel Blinov"
+    ],
+    "published_at": "2026-11-11T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038531Z",
+    "dedup_keys": [
+      "arxiv:2611.15348",
+      "title:benchmark breath classification disease enose for screening series time with",
+      "github:ivanpodd/breath-dx"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 22.379,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -11.001
+    }
+  },
+  {
+    "id": "6754735a5450738f",
+    "kind": "paper",
+    "title": "Regularized Score Centering",
+    "summary_en": "Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To stabilize off-policy learning, score centering (SC) removes the effect of reward baselines on the expected update. Our gradient diagnostics show less extreme gradients with SC than with importance sampling (IS), but SC can still fail when the learner moves far from the behavior policy that generated the data. To limit this policy mismatch, we introduce Regularized Score Centering (RSC), which adds a reverse Kullback-Leibler (KL) penalty to encourage the learner's next-token distribution to stay close to the behavior policy's next-token distribution. RSC works with or without truncated importance sampling (TIS), which caps token importance weights. Our theoretical analysis supports this approach, showing that KL regularization improves convergence guarantees. We evaluate dense and mixture-of-experts models on mathematical reasoning and agentic tasks, including online shopping, tool use, games, and fully asynchronous software engineering. RSC with TIS substantially improves sample efficiency across all agentic benchmarks, attaining higher training rewards with the same number of sampled responses. In final evaluations, it achieves top performance across all six agentic tasks, improving by 14.3% on AppWorld and reaching 9.9 times the strongest baseline's score on BabyAI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.21791",
+        "external_id": "2611.21791"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21791",
+        "external_id": "2611.21791"
+      }
+    ],
+    "actors": [
+      "Hao Bai",
+      "Chenlu Ye",
+      "Xuanchang Zhang",
+      "Aviral Kumar",
+      "Tong Zhang"
+    ],
+    "published_at": "2026-11-16T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038600Z",
+    "dedup_keys": [
+      "arxiv:2611.21791",
+      "title:centering regularized score"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 22.135,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.501
+    }
+  },
+  {
+    "id": "f0f34601b7079b6e",
+    "kind": "paper",
+    "title": "From Repositories to Training Environments: Scaling Long-Horizon Coding Agents with Environment Evolution Loop",
+    "summary_en": "Training coding agents for long-horizon tasks requires environments with verifiable feedback. Existing pipelines often follow a linear process that ends with validation, establishing usability but providing little guidance on improving training value. Recursive self-improvement (RSI) often requires model rollouts or model training followed by downstream evaluation, with costs and feedback delays amplified on long-horizon tasks. How can we use timely, reliable proxy signals to improve training value and synthesize environments at scale? We present RepoFactory, an automated pipeline that converts real repositories into verifiable environments where agents build complete projects from scratch given a language specification. Its Environment Evolution Loop optimizes a multiplicative objective combining validity, structural coupling, and implementation scope through proxy feedback. RepoFactory produces 10,159 environments across 17 software domains. Training Qwen3.5-35B-A3B on these environments yields RepoHorizen-35B-A3B, which achieves gains of 22.6 percentage points on NL2Repo-Bench and 8.5 points on average across five benchmarks covering long-horizon coding and agentic tasks in real-world production settings, compared with 17.5 and 6.4 points without environment evolution. These results highlight the training value of RepoFactory environments and the additional gains from the Environment Evolution Loop.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.21152",
+        "external_id": "2611.21152"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21152",
+        "external_id": "2611.21152"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/IQuestLab/RepoFactory",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yang Tian",
+      "Tianyu Zheng",
+      "Xiyuan Yang",
+      "Yaxin Du",
+      "Chengran Yang",
+      "Bo Zhao",
+      "Jian Yang",
+      "Bryan Dai"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038666Z",
+    "dedup_keys": [
+      "arxiv:2611.21152",
+      "title:agents coding environment environments evolution from horizon long loop repositories scaling training with",
+      "github:iquestlab/repofactory"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 21.089,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "ee155001ae9f652a",
+    "kind": "paper",
+    "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement",
+    "summary_en": "Harness optimization is often studied with a fixed policy model and benchmark. When either changes, the optimizer must decide which parts of an evolved harness to reuse or revise, but the harness alone may not explain why earlier edits were made or how they performed. In this work, we study Continual Recursive Self-Improvement (CRSI), a setting for continuing existing harness-optimization methods across compatible benchmarks or policy models. We propose Self-Improvement Memory (SIM) for the harness optimizer, rather than the task-solving policy. SIM groups edits by recurring harness problem and records their rationale, predicted and observed outcomes, and evaluation context. New attempts extend this history as optimization continues. In our experiments across four domains, SIM achieves higher final scores than harness-only and root-cause-only continuation in cross-dataset and pairwise cross-model comparisons. Across ten independent source runs in coding, paired continuations with SIM improve final scores by an average of 2.36 points over harness-only continuation (p=0.003).",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.18856",
+        "external_id": "2611.18856"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.18856",
+        "external_id": "2611.18856"
+      }
+    ],
+    "actors": [
+      "Xin Yu",
+      "Fei Xia",
+      "Jiaqi Pan",
+      "Youbao Tang",
+      "Chengzhi Liu",
+      "Adams Yu",
+      "Sicong Jiang",
+      "Yanfei Chen",
+      "Lingzhou Xue",
+      "Ting Yu"
+    ],
+    "published_at": "2026-11-13T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038491Z",
+    "dedup_keys": [
+      "arxiv:2611.18856",
+      "title:continual enables improvement improvement memory recursive self self"
+    ],
+    "signals": {
+      "hf_upvotes": 11,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 20.878,
+    "score_breakdown": {
+      "hf_upvotes": 19.879,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -8.001
+    }
+  },
+  {
+    "id": "08dac2ff06e738fe",
+    "kind": "paper",
+    "title": "Agentic On-Policy Distillation Implicitly Reshapes LLMs' ReAct Patterns",
+    "summary_en": "On-policy distillation (OPD) transfers specialized capabilities to language-model agents, but its cross-domain effects on interaction remain unclear. We investigate how OPD reshapes ReAct interaction patterns across mathematics, ALFWorld, and τ^2-bench, focusing on reasoning, actions, and observation acquisition. General-reasoning supervision reduces mathematical tool attempts from 70.4% to 14.4% while increasing accuracy from 16.7% to 38.0%; code-interpreter supervision improves household actions and retail queries. In contrast, ALFWorld supervision reduces τ^2-bench accuracy from 41.5% to 6.6%, accompanied by frequent tool calls that violate user-information dependencies. To address negative transfer using only source-domain training trajectories, we explore selective OPD guided by teacher preference changes before and after domain-specific RL. Retaining the top 95% of positions raises τ^2 accuracy from 11.5% to 29.9% with a source-learning trade-off.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.19244",
+        "external_id": "2611.19244"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.19244",
+        "external_id": "2611.19244"
+      }
+    ],
+    "actors": [
+      "Deyang Kong",
+      "Zhaoyi Li",
+      "Sijian Ren",
+      "Yuan Wei",
+      "Ying Wei",
+      "Defu Lian",
+      "Shikun Zhang",
+      "Wei Ye"
+    ],
+    "published_at": "2026-11-14T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038569Z",
+    "dedup_keys": [
+      "arxiv:2611.19244",
+      "title:agentic distillation implicitly llms patterns policy react reshapes"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.135,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -6.501
+    }
+  },
+  {
+    "id": "65ea88711f178f73",
+    "kind": "model",
+    "title": "speridlabs/iris-z",
+    "summary_en": "depth-estimation, iris-z, text-to-image, rgbd, flux",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/speridlabs/iris-z",
+        "external_id": "speridlabs/iris-z"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/black-forest-labs/FLUX.2-dev",
+        "external_id": "black-forest-labs/FLUX.2-dev"
+      }
+    ],
+    "actors": [
+      "speridlabs"
+    ],
+    "published_at": "2026-11-04T20:50:15Z",
+    "first_seen_at": "2026-11-18T08:01:13.032443Z",
+    "dedup_keys": [
+      "hf:speridlabs/iris-z"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 52,
+      "hf_downloads": 0,
+      "hf_trending_score": 40.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 13.993,
+    "score_breakdown": {
+      "hf_trending": 22.281,
+      "hf_likes": 11.911,
+      "age_decay": -20.199
+    }
+  },
+  {
+    "id": "9b7226d4d6414a32",
+    "kind": "paper",
+    "title": "MPEG-Diffusion: Mixed-Resolution Video Generation",
+    "summary_en": "Video diffusion transformers (DiTs) generate realistic videos, but their heavy computational cost limits broader real-world applications. Mixed-resolution generation reduces this cost by generating the visually important region at high resolution (HR) and the rest at low resolution (LR), yet existing methods suffer a severe quality drop on videos and require knowing the HR region in advance. We show that these failures are not inherent to mixed resolution, and propose MPEG-Diffusion to address their three root causes: (1) dual-resolution attention to mitigate the curse of mixed resolution, where each query reads the K/V of its own resolution, (2) a mixed-resolution decoder to blend the HR and LR latents before decoding and resolve distortion, and (3) a self-selected HR region using the DiT's knowledge to find the visually important region without requiring it in advance. Processing only 30% of full-resolution tokens, MPEG-Diffusion speeds up denoising by 4.8times on Wan2.1 14B (3.8times on 1.3B), outperforming prior methods on nearly every metric. In the user study, we demonstrate the high quality of MPEG-Diffusion, with raters preferring it over prior mixed-resolution methods in over 90% of pairs and rating it close to full resolution.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.12069",
+        "external_id": "2611.12069"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.12069",
+        "external_id": "2611.12069"
+      }
+    ],
+    "actors": [
+      "Dennis Menn",
+      "Tianpei Gu",
+      "Guande He",
+      "Aryan V S",
+      "Yanke Song",
+      "Nan Liu",
+      "Desai Xie",
+      "Xun Huang",
+      "Chenfeng Xu",
+      "Diana Marculescu"
+    ],
+    "published_at": "2026-11-09T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038586Z",
+    "dedup_keys": [
+      "arxiv:2611.12069",
+      "title:diffusion generation mixed mpeg resolution video"
+    ],
+    "signals": {
+      "hf_upvotes": 7,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 11.635,
+    "score_breakdown": {
+      "hf_upvotes": 16.636,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -14.001
+    }
+  },
+  {
+    "id": "f77700243e92a7ce",
+    "kind": "paper",
+    "title": "FMT: Lossless Image Compression in a Fixed Number of Parallel Steps",
+    "summary_en": "Learned lossless codecs make smaller files than common classical codecs, yet the images we archive and train on still use classical codecs. A main reason is time: a learned codec takes seconds to decode a photo that a classical codec opens in milliseconds, and their faster variants give up most of their gain in size. We argue that much of this time is spent waiting, not computing: the network waits for the values it conditions on, and the arithmetic decoder reads them one at a time. We introduce FMT (Fixed-step Multiscale Tree), a lossless image format whose decoding order and entropy coder are designed together so that neither wait grows with the image. FMT stores an image as a coarse-to-fine tree whose steps hold independent values: a GPU predicts each step at once and decodes it in parallel rANS lanes that carry their states from step to step, so an image of any size decodes in a fixed number of sequential steps. On this tree we build a family of bit-exact codecs, from a rule with no network to large networks, and no codec we ran on the same GPU beats any of them on both size and speed. Without a network, FMT beats NVIDIA's HTJ2K on size and speed; with a large one, it decodes Kodak photos 9 to 61X faster than learned codecs we ran on the same A100, at the same size or smaller.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.23108",
+        "external_id": "2611.23108"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.23108",
+        "external_id": "2611.23108"
+      }
+    ],
+    "actors": [
+      "Ammar Ali"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.038703Z",
+    "dedup_keys": [
+      "arxiv:2611.23108",
+      "title:compression fixed fmt image lossless number parallel steps"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 8.544,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "age_decay": -2.001
+    }
+  },
+  {
+    "id": "add8390e5d18b3dc",
+    "kind": "paper",
+    "title": "CrisisBench: an evaluation suite for crisis counseling AI",
+    "summary_en": "Background: Crisis helplines are essential to mental health systems but are often understaffed and underfunded. LLMs could support counselors, but existing benchmarks do not capture the escalation, risk assessment, and de-escalation central to crisis conversations, while privacy restrictions limit use of real transcripts. Methods: We present CrisisBench, a privacy-preserving suite for single- and multi-turn crisis counseling evaluation. It includes 1,085 single-turn tasks from 200 de-identified conversations and 1,185 patient LLMs derived from hotline metadata. Patient models and a 23-item LLM judge were calibrated against expert counselors. Results: We evaluated five GPT models plus draft-then-edit and retrieval-augmented generation. All systems underperformed human counselors on excessive empathy and questioning in single-turn evaluation. The rubric achieved human-human Krippendorff's $\\alpha$ = 0.51 and LLM-human $\\alpha$ = 0.54 (Pearson r = 0.80). In multi-turn evaluation, retrieval-augmented generation scored highest overall (0.961), with all systems within 0.058. Microskills and style/tone were near ceiling, while productivity and safety/risk accounted for most between-system variation. Counselors rated patient LLMs realistic (86%) and useful (92%). Conclusion: CrisisBench enables scalable, privacy-preserving evaluation of crisis counseling. Current systems perform strongly on core structural competencies but still diverge from experts on important response-level failure modes. We release the rubrics, judge prompts, and evaluation tasks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21622",
+        "external_id": "2611.21622"
+      }
+    ],
+    "actors": [
+      "Akshay Swaminathan",
+      "Filip Ramazan",
+      "Sharang Phadke",
+      "Kevina Wang",
+      "Ivan Lopez",
+      "Shaked Peleg Azzam",
+      "Gloria Ye",
+      "Chastin Chung",
+      "William Wang",
+      "Stephanie Stoll",
+      "Ivy Pham",
+      "Rebecca Hurwitz",
+      "Shreya Shah",
+      "Samuel Chuang",
+      "Divyanjali Verma",
+      "Abhay John",
+      "Ehsan Adeli",
+      "Nigam H. Shah"
+    ],
+    "published_at": "2026-11-18T05:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.018606Z",
+    "dedup_keys": [
+      "arxiv:2611.21622",
+      "title:counseling crisis crisisbench evaluation for suite"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.811,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.189
+    }
+  },
+  {
+    "id": "aa703983a2b2b6d2",
+    "kind": "paper",
+    "title": "RAW: Refusal Aversion in the Wild, A Causal Measurement Method for Deployed LLMs",
+    "summary_en": "Deployed LLMs field hundreds of millions of conversations a day and refuse a non-trivial fraction of user requests, yet the user-side cost of refusal, whether users disengage and by how much, is unmeasured on any production model: a blind spot for the consumer-facing platforms built on them. A/B-testing refusal is ethically and operationally constrained on frontier-lab products and unavailable to third-party platforms deploying these models through a fixed API. We introduce RAW, a method that uses LLM stochasticity as a natural experiment: at near-identical prompts in any existing log, the same model sometimes refuses and sometimes does not, and that variation identifies the causal user-side effect of refusal. Applying the method to 15 deployed LLMs in LMSYS-Chat-1M and WildChat, with user-clustered inference, we find that for about half of the models we can measure precisely, a refusal costs 3 to 17 pp of subsequent re-engagement; the rest show no distinguishable effect, among them one deployment whose positive point estimate we trace to persistent users retrying the refused request. Our contribution is the measurement method, which runs on any deployed model from logs alone for about \\$0.30 per 1,000 conversations. We release labels, moderation scores, prompt embeddings, and pipeline code.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21641",
+        "external_id": "2611.21641"
+      }
+    ],
+    "actors": [
+      "Pavel Kireyev"
+    ],
+    "published_at": "2026-11-18T05:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.018728Z",
+    "dedup_keys": [
+      "arxiv:2611.21641",
+      "title:aversion causal deployed for llms measurement method raw refusal the wild"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.811,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.189
+    }
+  },
+  {
+    "id": "9d5d099194b146d8",
+    "kind": "paper",
+    "title": "Sleep2Word: Peripheral-to-EEG Translation via Duration-Aware Wordization",
+    "summary_en": "Estimating full-night electroencephalography (EEG) spectrograms from peripheral measurements could extend EEG-informed sleep analysis to recordings acquired without EEG. This task requires compact representations of signals with different temporal structures. We introduce Sleep2Word, a framework for translating respiration, electrocardiography (ECG), or photoplethysmography (PPG) into EEG spectrograms through duration-aware physiological words. Building on context-dependent chunking, Sleep2Word groups physiological embeddings into variable-duration chunks and jointly quantizes their content and duration into modality-specific wordbooks. A block-autoregressive translator then predicts target EEG word identities and occurrence-specific duration refinements within fixed-duration blocks. This design accommodates independent source and target wordbooks, limits temporal drift, and shortens the autoregressive decoding path. Trained on over 20K PSG cases across 9 datasets, Sleep2Word consistently outperforms existing spectrogram generation baselines in EEG spectrogram reconstruction, sleep staging, arousal detection, and survival prediction. Compressing full night sequences by up to 69.7%, the learned words yield a favorable accuracy-compute trade-off. Sleep event analysis further shows that the learned words capture physiologically plausible associations across modalities, suggesting their potential for interpretable cross-modal analysis.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21643",
+        "external_id": "2611.21643"
+      }
+    ],
+    "actors": [
+      "Keondo Park",
+      "Arthur Delhaye",
+      "Younghoon Na",
+      "Hyun-Woo Shin",
+      "Hyung-Sin Kim"
+    ],
+    "published_at": "2026-11-18T05:00:00Z",
+    "first_seen_at": "2026-11-18T08:01:13.018810Z",
+    "dedup_keys": [
+      "arxiv:2611.21643",
+      "title:aware duration eeg peripheral sleep2word translation via wordization"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.811,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.189
+    }
+  }
+]
