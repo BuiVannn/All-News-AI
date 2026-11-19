@@ -20,15 +20,15 @@
       "microsoft"
     ],
     "published_at": "2026-11-18T17:05:50Z",
-    "first_seen_at": "2026-11-19T08:06:34.003823Z",
+    "first_seen_at": "2026-11-19T21:02:45.544805Z",
     "dedup_keys": [
       "hf:microsoft/aion-1.0-instruct-2.3b"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 35,
-      "hf_downloads": 0,
-      "hf_trending_score": 35.0,
+      "hf_likes": 67,
+      "hf_downloads": 788,
+      "hf_trending_score": 47.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -38,14 +38,188 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 49.314,
+    "score": 65.481,
     "score_breakdown": {
-      "hf_trending": 21.501,
-      "hf_likes": 10.751,
+      "hf_trending": 23.227,
+      "hf_downloads": 13.342,
+      "hf_likes": 12.659,
       "has_weights": 4.0,
       "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -0.938
+      "age_decay": -1.747
+    }
+  },
+  {
+    "id": "a5439af29e108e76",
+    "kind": "model",
+    "title": "sensenova/SenseNova-Loop-9B-GGUF",
+    "summary_en": "image-text-to-text, transformers, multimodal, text-generation, looped-transformer, mhc, custom_code",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-GGUF",
+        "external_id": "sensenova/SenseNova-Loop-9B-GGUF"
+      }
+    ],
+    "actors": [
+      "sensenova"
+    ],
+    "published_at": "2026-11-18T06:47:11Z",
+    "first_seen_at": "2026-11-19T21:02:45.545018Z",
+    "dedup_keys": [
+      "hf:sensenova/sensenova-loop-9b-gguf"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 59,
+      "hf_downloads": 34300,
+      "hf_trending_score": 28.5,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 59.084,
+    "score_breakdown": {
+      "hf_trending": 20.306,
+      "hf_downloads": 20.886,
+      "hf_likes": 12.283,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.391
+    }
+  },
+  {
+    "id": "7f0911cd2fe4035d",
+    "kind": "model",
+    "title": "RadixArk/DaisyRose-27B",
+    "summary_en": "image-text-to-text, transformers, qwen3_5, daisyrose, qwen3.8, reinforcement-learning, conversational",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/RadixArk/DaisyRose-27B",
+        "external_id": "RadixArk/DaisyRose-27B"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "external_id": "Qwen/Qwen3.8-27B"
+      }
+    ],
+    "actors": [
+      "RadixArk"
+    ],
+    "published_at": "2026-11-18T05:31:35Z",
+    "first_seen_at": "2026-11-19T21:02:45.544775Z",
+    "dedup_keys": [
+      "hf:radixark/daisyrose-27b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 173,
+      "hf_downloads": 166,
+      "hf_trending_score": 58.5,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 55.759,
+    "score_breakdown": {
+      "hf_trending": 24.516,
+      "hf_downloads": 10.236,
+      "hf_likes": 15.477,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.47
+    }
+  },
+  {
+    "id": "0a5398aa8c0dc5ef",
+    "kind": "paper",
+    "title": "Jeveration: System One Models Now Generate",
+    "summary_en": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24738",
+        "external_id": "2611.24738"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24738",
+        "external_id": "2611.24738"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Carol-lyh/Jeveration",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuhe Liu",
+      "Qi Li",
+      "Shihua Zhang",
+      "Xinchao Wang"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.569973Z",
+    "dedup_keys": [
+      "arxiv:2611.24738",
+      "title:generate jeveration models now one system",
+      "github:carol-lyh/jeveration"
+    ],
+    "signals": {
+      "hf_upvotes": 110,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 41,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 54.336,
+    "score_breakdown": {
+      "hf_upvotes": 37.676,
+      "github_stars": 7.475,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.815
     }
   },
   {
@@ -92,53 +266,53 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 48.973,
+    "score": 48.164,
     "score_breakdown": {
       "hf_trending": 21.501,
       "hf_downloads": 12.951,
       "hf_likes": 10.751,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -4.23
+      "age_decay": -5.039
     }
   },
   {
-    "id": "7f0911cd2fe4035d",
+    "id": "d6e8b8375298ecd4",
     "kind": "model",
-    "title": "RadixArk/DaisyRose-27B",
-    "summary_en": "image-text-to-text, transformers, qwen3_5, daisyrose, qwen3.8, reinforcement-learning, conversational",
+    "title": "harness-hub/Qwen3.8-27B-opencode-adapted",
+    "summary_en": "image-text-to-text, peft, trl, grpo, async-grpo, lora, agents",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
+      "agent",
       "multimodal",
       "cv"
     ],
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/RadixArk/DaisyRose-27B",
-        "external_id": "RadixArk/DaisyRose-27B"
+        "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-opencode-adapted",
+        "external_id": "harness-hub/Qwen3.8-27B-opencode-adapted"
       },
       {
-        "source": "hf_base_model:finetune",
+        "source": "hf_base_model:adapter",
         "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
         "external_id": "Qwen/Qwen3.8-27B"
       }
     ],
     "actors": [
-      "RadixArk"
+      "harness-hub"
     ],
-    "published_at": "2026-11-18T05:31:35Z",
-    "first_seen_at": "2026-11-19T08:06:34.003599Z",
+    "published_at": "2026-11-16T08:33:31Z",
+    "first_seen_at": "2026-11-19T21:02:45.544943Z",
     "dedup_keys": [
-      "hf:radixark/daisyrose-27b"
+      "hf:harness-hub/qwen3.8-27b-opencode-adapted"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 98,
-      "hf_downloads": 0,
-      "hf_trending_score": 70.0,
+      "hf_likes": 95,
+      "hf_downloads": 124,
+      "hf_trending_score": 31.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -148,79 +322,14 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 45.699,
+    "score": 46.863,
     "score_breakdown": {
-      "hf_trending": 25.576,
-      "hf_likes": 13.785,
+      "hf_trending": 20.794,
+      "hf_downloads": 9.657,
+      "hf_likes": 13.693,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -1.662
-    }
-  },
-  {
-    "id": "0a5398aa8c0dc5ef",
-    "kind": "paper",
-    "title": "Jeveration: System One Models Now Generate",
-    "summary_en": "System One models such as Jev return decisions through fast, parallel prediction. In this paper, we introduce Jeveration, showing that the same decision paradigm can also generate high-quality images in a single forward pass. Jeveration builds on a frozen vision-language model, repurposing its visual-semantic knowledge for holistic image generation. The key challenge is to maintain global consistency. A single prompt admits many valid images, yet parallel predictions must converge on a coherent whole. We therefore condition all positions on a shared random state to coordinate parallel predictions, so that each draw yields a different but coherent image. Since the model tends to ignore this state under direct image supervision, we first learn a distribution over discrete image codes to guide single-pass generation. Beyond text-to-image generation, we further unify image-to-image generation and dense prediction within the same architecture, so that one checkpoint supports all three tasks, each in one forward pass. Experiments show that Jeveration generates a 512x512 image in 78 ms, up to 122x faster than existing unified models, while maintaining competitive image quality and dense prediction performance.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "multimodal",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.24738",
-        "external_id": "2611.24738"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.24738",
-        "external_id": "2611.24738"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Carol-lyh/Jeveration",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yuhe Liu",
-      "Qi Li",
-      "Shihua Zhang",
-      "Xinchao Wang"
-    ],
-    "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064160Z",
-    "dedup_keys": [
-      "arxiv:2611.24738",
-      "title:generate jeveration models now one system",
-      "github:carol-lyh/jeveration"
-    ],
-    "signals": {
-      "hf_upvotes": 27,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 15,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 42.196,
-    "score_breakdown": {
-      "hf_upvotes": 26.658,
-      "github_stars": 5.545,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.007
+      "age_decay": -5.281
     }
   },
   {
@@ -270,19 +379,19 @@
       "Huan Zhang"
     ],
     "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064228Z",
+    "first_seen_at": "2026-11-19T21:02:45.570071Z",
     "dedup_keys": [
       "arxiv:2611.24154",
       "title:agents development environment experience for game2player gameplay player scaling through visual",
       "github:game2player/game2player"
     ],
     "signals": {
-      "hf_upvotes": 19,
+      "hf_upvotes": 24,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 21,
+      "github_stars": 22,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -290,14 +399,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 40.141,
+    "score": 41.207,
     "score_breakdown": {
-      "hf_upvotes": 23.966,
-      "github_stars": 6.182,
+      "hf_upvotes": 25.751,
+      "github_stars": 6.271,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.007
+      "age_decay": -2.815
     }
   },
   {
@@ -321,15 +430,15 @@
       "inworld"
     ],
     "published_at": "2026-11-14T02:14:35Z",
-    "first_seen_at": "2026-11-19T08:06:34.003460Z",
+    "first_seen_at": "2026-11-19T21:02:45.541055Z",
     "dedup_keys": [
       "hf:inworld/voice-isolator"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 125,
+      "hf_likes": 233,
       "hf_downloads": 0,
-      "hf_trending_score": 117.0,
+      "hf_trending_score": 206.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -339,233 +448,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 35.266,
+    "score": 39.687,
     "score_breakdown": {
-      "hf_trending": 28.624,
-      "hf_likes": 14.509,
-      "age_decay": -7.867
-    }
-  },
-  {
-    "id": "d6e8b8375298ecd4",
-    "kind": "model",
-    "title": "harness-hub/Qwen3.8-27B-opencode-adapted",
-    "summary_en": "image-text-to-text, peft, trl, grpo, async-grpo, lora, agents",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "multimodal",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-opencode-adapted",
-        "external_id": "harness-hub/Qwen3.8-27B-opencode-adapted"
-      },
-      {
-        "source": "hf_base_model:adapter",
-        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-        "external_id": "Qwen/Qwen3.8-27B"
-      }
-    ],
-    "actors": [
-      "harness-hub"
-    ],
-    "published_at": "2026-11-16T08:33:31Z",
-    "first_seen_at": "2026-11-19T08:06:34.003890Z",
-    "dedup_keys": [
-      "hf:harness-hub/qwen3.8-27b-opencode-adapted"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 33,
-      "hf_downloads": 0,
-      "hf_trending_score": 32.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 35.086,
-    "score_breakdown": {
-      "hf_trending": 20.979,
-      "hf_likes": 10.579,
-      "has_weights": 4.0,
-      "topic_match": 4.0,
-      "age_decay": -4.472
-    }
-  },
-  {
-    "id": "7ce9847d93612417",
-    "kind": "release",
-    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-    "summary_en": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/business/customer-stories/sumitomo-life",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-18T08:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.329825Z",
-    "dedup_keys": [
-      "url:openai.com/business/customer-stories/sumitomo-life",
-      "title:adopt chatgpt enterprise helped how leaders life sumitomo teams"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.493,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.507
-    }
-  },
-  {
-    "id": "392a2f2e611bf7c0",
-    "kind": "release",
-    "title": "Research acceleration: The jagged frontier",
-    "summary_en": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-18T08:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.329794Z",
-    "dedup_keys": [
-      "url:openai.com/index/research-acceleration-jagged-frontier",
-      "title:acceleration frontier jagged research the"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.493,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.507
-    }
-  },
-  {
-    "id": "4439555695d0cfb9",
-    "kind": "paper",
-    "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
-    "summary_en": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry depending on the interaction, and streaming inference must operate in a few causal steps without accumulating drift across self-generated history. We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language. Trained on an aligned approximately 200-hour multi-granularity corpus, Invoker-Render honors fine geometric constraints when supplied while synthesizing plausible local motion under coarse proxies, enabling runtime selection of input detail. To bridge bidirectional creation and real-time streaming without compounding step compression and rollout drift, we introduce Progressive Forcing (ProForcing). ProForcing first trains a causal predictor and distills it into a four-step renderer using histories derived from training videos. Training then shifts to continuous self-generated rollouts. A pipelined serving stack supports efficient streaming inference. Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.22925",
-        "external_id": "2611.22925"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.22925",
-        "external_id": "2611.22925"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/inclusionAI/CodeWorldModel",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Ruoyu Wang",
-      "Hao Zhong",
-      "Yanming Yang",
-      "Jiahao Tian",
-      "Lin Liu",
-      "Biao Gong",
-      "Guoshan Lu",
-      "Yiding Tian",
-      "Chunhua Shen",
-      "Zhenzhong Lan",
-      "Chi Zhang"
-    ],
-    "published_at": "2026-11-17T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064339Z",
-    "dedup_keys": [
-      "arxiv:2611.22925",
-      "title:code controllable generation infinite model towards video world",
-      "github:inclusionai/codeworldmodel"
-    ],
-    "signals": {
-      "hf_upvotes": 9,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 109,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 32.315,
-    "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "github_stars": 9.401,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -3.507
+      "hf_trending": 31.996,
+      "hf_likes": 16.366,
+      "age_decay": -8.675
     }
   },
   {
@@ -616,19 +503,153 @@
       "Miao Liu"
     ],
     "published_at": "2026-11-16T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064323Z",
+    "first_seen_at": "2026-11-19T21:02:45.570037Z",
     "dedup_keys": [
       "arxiv:2611.21366",
       "title:alive interactive making models streaming video",
       "github:lijinzhao30/alive"
     ],
     "signals": {
-      "hf_upvotes": 11,
+      "hf_upvotes": 31,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 10,
+      "github_stars": 15,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.456,
+    "score_breakdown": {
+      "hf_upvotes": 27.726,
+      "github_stars": 5.545,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.815
+    }
+  },
+  {
+    "id": "a3d6a11a5f877b62",
+    "kind": "model",
+    "title": "Akahsizrr/voltron-1-mini",
+    "summary_en": "lfm3, liquid, code, reasoning, math, instruction-following",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Akahsizrr/voltron-1-mini",
+        "external_id": "Akahsizrr/voltron-1-mini"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+        "external_id": "LiquidAI/LFM3-1.7B"
+      }
+    ],
+    "actors": [
+      "Akahsizrr"
+    ],
+    "published_at": "2026-11-13T16:02:52Z",
+    "first_seen_at": "2026-11-19T21:02:45.545081Z",
+    "dedup_keys": [
+      "hf:akahsizrr/voltron-1-mini"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 27,
+      "hf_downloads": 162,
+      "hf_trending_score": 26.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 38.648,
+    "score_breakdown": {
+      "hf_trending": 19.775,
+      "hf_downloads": 10.188,
+      "hf_likes": 9.997,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -9.312
+    }
+  },
+  {
+    "id": "e7e4eebff5a7f5fe",
+    "kind": "paper",
+    "title": "Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement",
+    "summary_en": "We present Piccolo, a family of multimodal decision models (0.8B to 27B) that coevolves model capabilities and training data via Agentic Data Engineering and recursive self-improvement (RSI). The models predict probabilities over candidate answers for general-purpose text and visual judgments, agent harnesses, data workflows, and interactive games. Piccolo-27B tops the Decision Index Vision Full leaderboard with a score of 75.59, while Piccolo-9B and Piccolo-4B achieve 68.35 and 67.46, respectively. All three rank first on the Private benchmark in their respective model-size categories. Research agents analyze model behavior, construct training data, conduct experiments, and use the results to refine subsequent proposals. Semantic slices and a shared research memory connect these actions across the model family's development. With training recipes comprising hundreds of thousands of examples, data selection and feedback-driven refinement are central to the self-improvement process. Our large-scale RSI exploration yields three counter-intuitive insights for decision-model development: (1) Backbone-recipe co-adaptation outweighs raw model recency: earlier backbones can surpass newer generations on visual tasks under identical recipes; (2) Targeted data curation enables 4B-9B models to rival 27B baselines on specialized workflows; and (3) Continuous loss reduction can decouple from and even degrade discrete decision accuracy. Together with the released weights and tools from the Data-Juicer and AgentScope ecosystems, Piccolo provides an actionable blueprint for building frontier decision models and scaling data-driven RSI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24651",
+        "external_id": "2611.24651"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24651",
+        "external_id": "2611.24651"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/agentscope-ai/Piccolo",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Zhenqing Ling",
+      "Qirui Jiao",
+      "Daoyuan Chen",
+      "Cheng Chen",
+      "Xinji Mai",
+      "Haowen Gao",
+      "Zhuo Zhang",
+      "Xuchen Pan",
+      "Mengsu Ding",
+      "Jiaji Deng",
+      "Yuexiang Xie",
+      "Xiaoming Qin",
+      "Weirui Kuang",
+      "Zhaoyang Liu",
+      "Yaliang Li",
+      "Bolin Ding",
+      "Jingren Zhou"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.570180Z",
+    "dedup_keys": [
+      "arxiv:2611.24651",
+      "title:and data decision evolving improvement models piccolo recursive self through",
+      "github:agentscope-ai/piccolo"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 58,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -636,14 +657,535 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 31.668,
+    "score": 36.523,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 4.796,
+      "hf_upvotes": 19.183,
+      "github_stars": 8.155,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -5.007
+      "age_decay": -2.815
+    }
+  },
+  {
+    "id": "4439555695d0cfb9",
+    "kind": "paper",
+    "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
+    "summary_en": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry depending on the interaction, and streaming inference must operate in a few causal steps without accumulating drift across self-generated history. We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language. Trained on an aligned approximately 200-hour multi-granularity corpus, Invoker-Render honors fine geometric constraints when supplied while synthesizing plausible local motion under coarse proxies, enabling runtime selection of input detail. To bridge bidirectional creation and real-time streaming without compounding step compression and rollout drift, we introduce Progressive Forcing (ProForcing). ProForcing first trains a causal predictor and distills it into a four-step renderer using histories derived from training videos. Training then shifts to continuous self-generated rollouts. A pipelined serving stack supports efficient streaming inference. Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.22925",
+        "external_id": "2611.22925"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.22925",
+        "external_id": "2611.22925"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/inclusionAI/CodeWorldModel",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ruoyu Wang",
+      "Hao Zhong",
+      "Yanming Yang",
+      "Jiahao Tian",
+      "Lin Liu",
+      "Biao Gong",
+      "Guoshan Lu",
+      "Yiding Tian",
+      "Chunhua Shen",
+      "Zhenzhong Lan",
+      "Chi Zhang"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.570144Z",
+    "dedup_keys": [
+      "arxiv:2611.22925",
+      "title:code controllable generation infinite model towards video world",
+      "github:inclusionai/codeworldmodel"
+    ],
+    "signals": {
+      "hf_upvotes": 13,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 132,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.578,
+    "score_breakdown": {
+      "hf_upvotes": 21.112,
+      "github_stars": 9.781,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -4.315
+    }
+  },
+  {
+    "id": "ced26e18d929bc06",
+    "kind": "release",
+    "title": "Build Tool-Calling Parsers in Rust with AI Agents",
+    "summary_en": "A tool call can arrive in pieces, an argument can be cut short, or model-specific markup can leak into the answer. A frontend parser turns that output, received...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-19T16:30:46Z",
+    "first_seen_at": "2026-11-19T21:02:47.285082Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents",
+      "title:agents build calling parsers rust tool with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.717,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.283
+    }
+  },
+  {
+    "id": "99063ad2fd30cf6c",
+    "kind": "paper",
+    "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+    "summary_en": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards make exploration and credit assignment difficult, while dense reward shaping still provides scalar evaluations rather than direct action targets. We introduce HINT-WAM, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself. For each demonstration observation, the student generates its action through its own denoising trajectory, and at the states along this trajectory the same model acts as a teacher conditioned additionally on this hindsight, providing a conditional action distribution as a dense training target, while the student sees only deployment-time inputs and needs no environmental rewards or simulator interaction. To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher's action distribution from the student's own samples rather than regressing its velocity field. The project web is available in https://tuandattt.github.io/hintwam/.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24789",
+        "external_id": "2611.24789"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24789",
+        "external_id": "2611.24789"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/tuandattt/hintwam_code",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Phuong Tuan Dat",
+      "Qi Li",
+      "Xinchao Wang"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.570105Z",
+    "dedup_keys": [
+      "arxiv:2611.24789",
+      "title:action for hindsight hint informed models training wam world",
+      "github:tuandattt/hintwam_code"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.488,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.815
+    }
+  },
+  {
+    "id": "0859ac5398572032",
+    "kind": "paper",
+    "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+    "summary_en": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at both levels where evaluation scores are used. At the candidate level (choosing artifacts), helpful candidate artifacts exist, but selection is no better than random at telling them from harmful ones, so errors accumulate across rounds. At the method level (ranking methods), typical margins of a few percentage points are smaller than the difference between two independent runs of the same method, so published rankings often rest on luck. Together, these findings indicate that agent evolution is often bottlenecked by reliably identifying improvements. This calls for a shift in how we develop and evaluate self-improving agents, from designing ever more candidate improvement systems to making true improvements detectable and accumulable.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.23068",
+        "external_id": "2611.23068"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.23068",
+        "external_id": "2611.23068"
+      }
+    ],
+    "actors": [
+      "Yuanhao Zeng",
+      "Shaocheng Lan",
+      "Ao Lu",
+      "Kuang Yan",
+      "Heng Lin",
+      "Xinang Xu",
+      "Yuan Luo",
+      "Yueting Wang",
+      "Yexin Li",
+      "Ruo Shan",
+      "Kan Ren"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.570012Z",
+    "dedup_keys": [
+      "arxiv:2611.23068",
+      "title:agent evolution hypothesis identifying improvements key resolution the"
+    ],
+    "signals": {
+      "hf_upvotes": 35,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.353,
+    "score_breakdown": {
+      "hf_upvotes": 28.668,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -4.315
+    }
+  },
+  {
+    "id": "51eff5d3bb79910f",
+    "kind": "release",
+    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "summary_en": "Learn how OpenAI built the Performance Factory, a system of Codex-powered workflows that finds and fixes performance issues to help keep ChatGPT fast.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-19T08:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.833506Z",
+    "dedup_keys": [
+      "url:openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "title:chatgpt factory fast how keeps openai performance"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 33.185,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -0.815
+    }
+  },
+  {
+    "id": "9148ef57f30f9cb8",
+    "kind": "paper",
+    "title": "WorldRuler: Interactive World Modeling under Configurable Rules",
+    "summary_en": "Rules govern how player actions change interactive worlds. Different rules create distinct gameplay experiences within similar scenes and action spaces. For customizable gameplay, generative world models must follow user-defined rules beyond real-world behaviors. However, realizing user-defined rules presents two challenges: Rule-State Persistence and Rule-to-Visual Realization. The former requires preserving rule definitions, dependencies, and world states across saving and loading, so that restored worlds follow the established rules. The latter requires accurately realizing rule-induced changes on designated objects and attributes, particularly when affected objects are unseen. In this paper, we propose WorldRuler, which organizes rule definitions, dependencies, and object states in an executable 3D rule graph and connects rule execution, video generation, and perceptual feedback in a closed loop. The graph supports joint saving and restoration of rules and world states, while dynamic object binding grounds rule-specified entities in visual instances and uses stored states to constrain generation from their first appearance. We further introduce object attribute state replacement and counterfactual reconstruction training, enabling accurate attribute control and compatible appearance and motion changes while limiting interference with unrelated content. We develop an automated data collection and annotation pipeline using GTA-V and Habitat to construct RuleVerse, a dataset of rule-driven interactions with detailed state and event annotations, including cases where rules take effect before affected objects become visible. Extensive experiments demonstrate the effectiveness of WorldRuler in preserving rule-state consistency across saving and loading and accurately realizing rule outcomes on designated objects and attributes.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24869",
+        "external_id": "2611.24869"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24869",
+        "external_id": "2611.24869"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AlayaLab/WorldRuler",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Mingliang Zhai",
+      "Chuanhao Li",
+      "Jiaming Tan",
+      "Zhen Li",
+      "Yuwei Wu",
+      "Yunde Jia",
+      "Zian Meng",
+      "Yuanyang Yin",
+      "Kaipeng Zhang"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.570130Z",
+    "dedup_keys": [
+      "arxiv:2611.24869",
+      "title:configurable interactive modeling rules under world worldruler",
+      "github:alayalab/worldruler"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 7,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.9,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "github_stars": 4.159,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -2.815
+    }
+  },
+  {
+    "id": "7ce9847d93612417",
+    "kind": "release",
+    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+    "summary_en": "Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/business/customer-stories/sumitomo-life",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-18T08:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.833596Z",
+    "dedup_keys": [
+      "url:openai.com/business/customer-stories/sumitomo-life",
+      "title:adopt chatgpt enterprise helped how leaders life sumitomo teams"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.685,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.315
+    }
+  },
+  {
+    "id": "392a2f2e611bf7c0",
+    "kind": "release",
+    "title": "Research acceleration: The jagged frontier",
+    "summary_en": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-18T08:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.833619Z",
+    "dedup_keys": [
+      "url:openai.com/index/research-acceleration-jagged-frontier",
+      "title:acceleration frontier jagged research the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.685,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -2.315
+    }
+  },
+  {
+    "id": "9205a0e44233c3de",
+    "kind": "paper",
+    "title": "CurvDelta: Low-Curvature Delta Modeling For Surgical Learning and Unlearning",
+    "summary_en": "A central challenge in adapting large language models (LLMs) is capability preservation: an adaptation can achieve its target while degrading general capabilities. We introduce CurvDelta, a scalable framework that incorporates the preservation constraint into the parameterization of the model update. By analyzing the local geometry of the preservation constraint around the pre-adaptation model, CurvDelta constructs a low-curvature space in which parameter updates leave the preservation loss nearly invariant. We make its construction practical for LLMs through Kronecker-factored approximate curvature (K-FAC) and a factorized projection. We also introduce CurvLoRA, a low-rank variant within the same preservation geometry, designed for more efficient adaptation. Both methods apply to preservation-constrained adaptation tasks such as capability learning and selective unlearning. We evaluate our methods on mathematical reasoning, code generation, and knowledge unlearning. For mathematical reasoning and code generation, our approaches achieve competitive downstream performance while better preserving general capabilities, offering a favorable acquisition--retention trade-off relative to the baselines. For knowledge unlearning, our main results on TOFU and MUSE show a better balance between targeted forgetting and knowledge retention than the baselines, with retention performance close to the from-scratch retraining reference.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24654",
+        "external_id": "2611.24654"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24654",
+        "external_id": "2611.24654"
+      }
+    ],
+    "actors": [
+      "Zeguan Xiao",
+      "Zhuocheng Liang",
+      "Yun Chen",
+      "Yong Wang",
+      "Guanhua Chen",
+      "Pinyan Lu"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.570084Z",
+    "dedup_keys": [
+      "arxiv:2611.24654",
+      "title:and curvature curvdelta delta for learning low modeling surgical unlearning"
+    ],
+    "signals": {
+      "hf_upvotes": 22,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 31.269,
+    "score_breakdown": {
+      "hf_upvotes": 25.084,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -2.815
     }
   },
   {
@@ -690,12 +1232,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 31.324,
+    "score": 30.515,
     "score_breakdown": {
       "hf_trending": 20.794,
       "hf_downloads": 13.018,
       "hf_likes": 10.49,
-      "age_decay": -12.978
+      "age_decay": -13.787
     }
   },
   {
@@ -737,81 +1279,149 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 31.251,
+    "score": 30.443,
     "score_breakdown": {
       "hf_trending": 21.332,
       "hf_likes": 10.833,
       "has_weights": 4.0,
-      "age_decay": -4.914
+      "age_decay": -5.722
     }
   },
   {
-    "id": "9148ef57f30f9cb8",
-    "kind": "paper",
-    "title": "WorldRuler: Interactive World Modeling under Configurable Rules",
-    "summary_en": "Rules govern how player actions change interactive worlds. Different rules create distinct gameplay experiences within similar scenes and action spaces. For customizable gameplay, generative world models must follow user-defined rules beyond real-world behaviors. However, realizing user-defined rules presents two challenges: Rule-State Persistence and Rule-to-Visual Realization. The former requires preserving rule definitions, dependencies, and world states across saving and loading, so that restored worlds follow the established rules. The latter requires accurately realizing rule-induced changes on designated objects and attributes, particularly when affected objects are unseen. In this paper, we propose WorldRuler, which organizes rule definitions, dependencies, and object states in an executable 3D rule graph and connects rule execution, video generation, and perceptual feedback in a closed loop. The graph supports joint saving and restoration of rules and world states, while dynamic object binding grounds rule-specified entities in visual instances and uses stored states to constrain generation from their first appearance. We further introduce object attribute state replacement and counterfactual reconstruction training, enabling accurate attribute control and compatible appearance and motion changes while limiting interference with unrelated content. We develop an automated data collection and annotation pipeline using GTA-V and Habitat to construct RuleVerse, a dataset of rule-driven interactions with detailed state and event annotations, including cases where rules take effect before affected objects become visible. Extensive experiments demonstrate the effectiveness of WorldRuler in preserving rule-state consistency across saving and loading and accurately realizing rule outcomes on designated objects and attributes.",
+    "id": "d4d19a63ee57b185",
+    "kind": "release",
+    "title": "Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo",
+    "summary_en": "Reinforcement learning (RL) uses rewards to train models to solve problems and complete tasks more successfully. Inference drives this process. Workers generate...",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "cv",
       "infra"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.24869",
-        "external_id": "2611.24869"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.24869",
-        "external_id": "2611.24869"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/AlayaLab/WorldRuler",
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/",
         "external_id": null
       }
     ],
     "actors": [
-      "Mingliang Zhai",
-      "Chuanhao Li",
-      "Jiaming Tan",
-      "Zhen Li",
-      "Yuwei Wu",
-      "Yunde Jia",
-      "Zian Meng",
-      "Yuanyang Yin",
-      "Kaipeng Zhang"
+      "nvidia"
     ],
-    "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064262Z",
+    "published_at": "2026-11-19T20:28:13Z",
+    "first_seen_at": "2026-11-19T21:02:47.284999Z",
     "dedup_keys": [
-      "arxiv:2611.24869",
-      "title:configurable interactive modeling rules under world worldruler",
-      "github:alayalab/worldruler"
+      "url:developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo",
+      "title:bottlenecks dynamo learning nvidia reducing reinforcement rollout with"
     ],
     "signals": {
-      "hf_upvotes": 12,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 6,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 30.405,
+    "score": 29.964,
     "score_breakdown": {
-      "hf_upvotes": 20.52,
-      "github_stars": 3.892,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -2.007
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.036
+    }
+  },
+  {
+    "id": "b5fe9a378466e238",
+    "kind": "release",
+    "title": "A game you cannot win unless you have a quantum computer",
+    "summary_en": "Quantum",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "google_research",
+        "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "google_research"
+    ],
+    "published_at": "2026-11-19T20:03:00Z",
+    "first_seen_at": "2026-11-19T21:02:46.853987Z",
+    "dedup_keys": [
+      "url:research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer",
+      "title:cannot computer game have quantum unless win you you"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.938,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.062
+    }
+  },
+  {
+    "id": "56f1e1e62e2cf2c4",
+    "kind": "release",
+    "title": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition",
+    "summary_en": "In science and industry, analyzing sensor measurements in real time can enable AI to adjust processes, guide experiments, and search for better operating...",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "nvidia",
+        "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "nvidia"
+    ],
+    "published_at": "2026-11-19T17:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:47.285056Z",
+    "dedup_keys": [
+      "url:developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition",
+      "title:acquisition data enabling for gpu instruments native real scientific time with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 29.747,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "age_decay": -0.253
     }
   },
   {
@@ -840,15 +1450,15 @@
       "apple"
     ],
     "published_at": "2026-11-16T17:21:25Z",
-    "first_seen_at": "2026-11-19T08:06:34.003694Z",
+    "first_seen_at": "2026-11-19T21:02:45.544979Z",
     "dedup_keys": [
       "hf:apple/fastframes-s"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 46,
+      "hf_likes": 86,
       "hf_downloads": 0,
-      "hf_trending_score": 43.0,
+      "hf_trending_score": 29.5,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -858,303 +1468,75 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 30.333,
+    "score": 29.173,
     "score_breakdown": {
-      "hf_trending": 22.705,
-      "hf_likes": 11.55,
-      "age_decay": -3.922
+      "hf_trending": 20.506,
+      "hf_likes": 13.398,
+      "age_decay": -4.731
     }
   },
   {
-    "id": "16403042d858b000",
-    "kind": "model",
-    "title": "mehdi-hf/cilla-lite",
-    "summary_en": "text-to-speech, pocket-tts, persian, fa",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "speech"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/mehdi-hf/cilla-lite",
-        "external_id": "mehdi-hf/cilla-lite"
-      }
-    ],
-    "actors": [
-      "mehdi-hf"
-    ],
-    "published_at": "2026-11-14T23:39:37Z",
-    "first_seen_at": "2026-11-19T08:06:34.003876Z",
-    "dedup_keys": [
-      "hf:mehdi-hf/cilla-lite"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 41,
-      "hf_downloads": 0,
-      "hf_trending_score": 32.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 29.664,
-    "score_breakdown": {
-      "hf_trending": 20.979,
-      "hf_likes": 11.213,
-      "has_weights": 4.0,
-      "age_decay": -6.528
-    }
-  },
-  {
-    "id": "138e9d6144219862",
-    "kind": "release",
-    "title": "Introducing Gemini 4 Neon",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "deepmind",
-        "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "deepmind"
-    ],
-    "published_at": "2026-11-18T21:35:43Z",
-    "first_seen_at": "2026-11-19T08:06:34.804405Z",
-    "dedup_keys": [
-      "url:deepmind.google/blog/introducing-gemini-4-neon",
-      "title:gemini introducing neon"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 29.343,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -0.657
-    }
-  },
-  {
-    "id": "9355d1b0b7c7e382",
-    "kind": "release",
-    "title": "The Silent Consensus",
-    "summary_en": "Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/the-silent-consensus",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-18T10:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.329730Z",
-    "dedup_keys": [
-      "url:openai.com/index/the-silent-consensus",
-      "title:consensus silent the"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.618,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.382
-    }
-  },
-  {
-    "id": "bb39d32d3298614b",
-    "kind": "release",
-    "title": "Inside the Codex sandbox",
-    "summary_en": "See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/inside-the-codex-sandbox",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-18T08:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.329851Z",
-    "dedup_keys": [
-      "url:openai.com/index/inside-the-codex-sandbox",
-      "title:codex inside sandbox the"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.493,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.507
-    }
-  },
-  {
-    "id": "c25bc86014a4a5f8",
-    "kind": "release",
-    "title": "Managing frontier AI risk: From training to deployment",
-    "summary_en": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/index/managing-frontier-ai-risk",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-18T06:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.329876Z",
-    "dedup_keys": [
-      "url:openai.com/index/managing-frontier-ai-risk",
-      "title:deployment from frontier managing risk training"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.368,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.632
-    }
-  },
-  {
-    "id": "0859ac5398572032",
+    "id": "426f9c27764194b0",
     "kind": "paper",
-    "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
-    "summary_en": "Agent evolution follows a simple loop: a proposer writes candidate artifacts (prompts, skills, memories) and selection accepts those that score higher. This loop has shown promise, yet practitioners face a puzzle: methods trade wins across papers, and evolution often fails to bootstrap on certain tasks. We trace this puzzle to the Resolution Hypothesis: agent evolution stalls not because methods fail to propose better artifacts, but because noisy evaluations cannot reliably identify them. Across seven evolution methods and six models (over 10M LLM calls), we find support for the hypothesis at both levels where evaluation scores are used. At the candidate level (choosing artifacts), helpful candidate artifacts exist, but selection is no better than random at telling them from harmful ones, so errors accumulate across rounds. At the method level (ranking methods), typical margins of a few percentage points are smaller than the difference between two independent runs of the same method, so published rankings often rest on luck. Together, these findings indicate that agent evolution is often bottlenecked by reliably identifying improvements. This calls for a shift in how we develop and evaluate self-improving agents, from designing ever more candidate improvement systems to making true improvements detectable and accumulable.",
+    "title": "Late Entry in Looped Language Models",
+    "summary_en": "Looped language models deepen reasoning at a compact parameter count by iterating a shared layer stack T times per token, turning recurrence depth directly into sequential decoding latency. Conventional early-exit decoding halts after initial passes without cache completion, truncating cached key-value states of past tokens to shallow depth. We study the opposite strategy, late entry, where new tokens skip initial passes and enter directly into the final K < T passes over a deep context cache. Once lightweight fine-tuning resolves hidden-state norm mismatch at the entry boundary, deep cached context substitutes for skipped token-local passes, allowing late entry to outperform matched early exit across model families and pass budgets. To turn this asymmetry into wall-clock speedups without stalling to build deep caches, candidate blocks verify through only the final K passes on the critical path while previously committed tokens complete passes 1 -> T alongside subsequent steps at zero extra serial calls. Projecting these finished T-pass wake states inside the existing output GEMM (Wake verification, governed by logit-margin tolerance tau in [0, inf]) unifies greedy-exact T-pass decoding (tau = 0, matching K = T block decoding within bf16 reduction order), margin-gated verification (tau > 0), and non-rollback lossy late entry (tau = inf) inside a single static CUDA graph. On Ouro-2.6B (T = 4), K = 2 Wake reaches 5.2x greedy-exact speedup at tau = 0 (+26% over K = 4 block decoding on GSM8K) and 6.8x at tau = inf (+16.9 points over trained early exit at matched speed). Scaling test-time recurrence across T in {8, 16, 32, 64} on Huginn-3.5B cuts K = T/4 rollbacks 21.5x with depth, driving greedy-exact (tau = 0) speedups to 6.1x (T = 32) and 8.4x (T = 64, +153% over K = 64 block) and tau = inf speedups to 10.6 to 12.5x.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "agent",
-      "eval"
+      "llm"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.23068",
-        "external_id": "2611.23068"
+        "url": "https://huggingface.co/papers/2611.24576",
+        "external_id": "2611.24576"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.23068",
-        "external_id": "2611.23068"
+        "url": "https://arxiv.org/abs/2611.24576",
+        "external_id": "2611.24576"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Xalp/LateComer",
+        "external_id": null
       }
     ],
     "actors": [
-      "Yuanhao Zeng",
-      "Shaocheng Lan",
-      "Ao Lu",
-      "Kuang Yan",
-      "Heng Lin",
-      "Xinang Xu",
-      "Yuan Luo",
-      "Yueting Wang",
-      "Yexin Li",
-      "Ruo Shan",
-      "Kan Ren"
+      "Ziqi Jin",
+      "Jiaxi Li",
+      "Weiwen Xu",
+      "Aixin Sun"
     ],
-    "published_at": "2026-11-17T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064244Z",
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-19T21:02:45.570203Z",
     "dedup_keys": [
-      "arxiv:2611.23068",
-      "title:agent evolution hypothesis identifying improvements key resolution the"
+      "arxiv:2611.24576",
+      "title:entry language late looped models",
+      "github:xalp/latecomer"
     ],
     "signals": {
-      "hf_upvotes": 14,
+      "hf_upvotes": 9,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 1,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
       "num_comments": 1,
-      "has_code": false,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 27.157,
+    "score": 28.992,
     "score_breakdown": {
-      "hf_upvotes": 21.664,
+      "hf_upvotes": 18.421,
+      "github_stars": 1.386,
       "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -3.507
+      "age_decay": -2.815
     }
   },
   {
@@ -1194,14 +1576,14 @@
       "Bin Hu"
     ],
     "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064384Z",
+    "first_seen_at": "2026-11-19T21:02:45.570232Z",
     "dedup_keys": [
       "arxiv:2611.24733",
       "title:critics design efficient exploration for mechanistic npu sample space",
       "github:bruno686/criticnpu"
     ],
     "signals": {
-      "hf_upvotes": 6,
+      "hf_upvotes": 9,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1210,18 +1592,18 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 26.946,
+    "score": 28.992,
     "score_breakdown": {
-      "hf_upvotes": 15.567,
+      "hf_upvotes": 18.421,
       "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.007
+      "age_decay": -2.815
     }
   },
   {
@@ -1269,14 +1651,14 @@
       "Yi Yang"
     ],
     "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064370Z",
+    "first_seen_at": "2026-11-19T21:02:45.570218Z",
     "dedup_keys": [
       "arxiv:2611.24098",
       "title:automatic bench benchmark cut for language large models rough roughcut video vision with",
       "github:whalesong-zrs/roughcut-bench"
     ],
     "signals": {
-      "hf_upvotes": 6,
+      "hf_upvotes": 9,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1285,177 +1667,50 @@
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 26.946,
+    "score": 28.992,
     "score_breakdown": {
-      "hf_upvotes": 15.567,
+      "hf_upvotes": 18.421,
       "github_stars": 1.386,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.007
+      "age_decay": -2.815
     }
   },
   {
-    "id": "426f9c27764194b0",
-    "kind": "paper",
-    "title": "Late Entry in Looped Language Models",
-    "summary_en": "Looped language models deepen reasoning at a compact parameter count by iterating a shared layer stack T times per token, turning recurrence depth directly into sequential decoding latency. Conventional early-exit decoding halts after initial passes without cache completion, truncating cached key-value states of past tokens to shallow depth. We study the opposite strategy, late entry, where new tokens skip initial passes and enter directly into the final K < T passes over a deep context cache. Once lightweight fine-tuning resolves hidden-state norm mismatch at the entry boundary, deep cached context substitutes for skipped token-local passes, allowing late entry to outperform matched early exit across model families and pass budgets. To turn this asymmetry into wall-clock speedups without stalling to build deep caches, candidate blocks verify through only the final K passes on the critical path while previously committed tokens complete passes 1 -> T alongside subsequent steps at zero extra serial calls. Projecting these finished T-pass wake states inside the existing output GEMM (Wake verification, governed by logit-margin tolerance tau in [0, inf]) unifies greedy-exact T-pass decoding (tau = 0, matching K = T block decoding within bf16 reduction order), margin-gated verification (tau > 0), and non-rollback lossy late entry (tau = inf) inside a single static CUDA graph. On Ouro-2.6B (T = 4), K = 2 Wake reaches 5.2x greedy-exact speedup at tau = 0 (+26% over K = 4 block decoding on GSM8K) and 6.8x at tau = inf (+16.9 points over trained early exit at matched speed). Scaling test-time recurrence across T in {8, 16, 32, 64} on Huginn-3.5B cuts K = T/4 rollbacks 21.5x with depth, driving greedy-exact (tau = 0) speedups to 6.1x (T = 32) and 8.4x (T = 64, +153% over K = 64 block) and tau = inf speedups to 10.6 to 12.5x.",
+    "id": "16403042d858b000",
+    "kind": "model",
+    "title": "mehdi-hf/cilla-lite",
+    "summary_en": "text-to-speech, pocket-tts, persian, fa",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm"
+      "speech"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.24576",
-        "external_id": "2611.24576"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.24576",
-        "external_id": "2611.24576"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Xalp/LateComer",
-        "external_id": null
+        "source": "hf_models",
+        "url": "https://huggingface.co/mehdi-hf/cilla-lite",
+        "external_id": "mehdi-hf/cilla-lite"
       }
     ],
     "actors": [
-      "Ziqi Jin",
-      "Jiaxi Li",
-      "Weiwen Xu",
-      "Aixin Sun"
+      "mehdi-hf"
     ],
-    "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064433Z",
+    "published_at": "2026-11-14T23:39:37Z",
+    "first_seen_at": "2026-11-19T08:06:34.003876Z",
     "dedup_keys": [
-      "arxiv:2611.24576",
-      "title:entry language late looped models",
-      "github:xalp/latecomer"
-    ],
-    "signals": {
-      "hf_upvotes": 3,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 22.469,
-    "score_breakdown": {
-      "hf_upvotes": 11.09,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.007
-    }
-  },
-  {
-    "id": "e8b1403f257a40ce",
-    "kind": "paper",
-    "title": "Decoding Without a Decoder: Direct Pixel Prediction from Diffusion Transformers",
-    "summary_en": "Latent diffusion models rely on a decoder to map denoised latents to pixels, adding complexity and inference cost. We introduce Decoding Without a Decoder (DWD), which lets a finetuned diffusion transformer produce final pixels directly through a linear head. Unlike previous methods, where the denoising output leads to final pixels, DWD separates the two roles: the original denoising head continues to drive sampling, then the new DWD head predicts the pixels at the final step. We extend pretrained latent models with DWD efficiently by finetuning only the last few transformer blocks, training the DWD head with pixel quality losses while anchoring the denoising head to the pretrained model to preserve the sample trajectory. Across latent image and video generators, DWD removes the decoder and reduces inference cost while maintaining or even improving pixel quality. On Wan video generation, it visibly reduces detail distortion and flickering, lowering warping error by 23%. Remarkably, the same separation also improves pixel diffusion models that do not even use a decoder: a final-step DWD head produces substantially better texture detail in text-to-image generation, and improves ImageNet FID from 1.55 to 1.43, a new state of the art among pixel flow models.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "cv",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.22287",
-        "external_id": "2611.22287"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.22287",
-        "external_id": "2611.22287"
-      }
-    ],
-    "actors": [
-      "Hansheng Chen",
-      "Shengqu Cai",
-      "Jan Ackermann",
-      "Rayhan Zirvi",
-      "Gordon Wetzstein",
-      "Xinchen Yan",
-      "Leonidas Guibas"
-    ],
-    "published_at": "2026-11-17T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064353Z",
-    "dedup_keys": [
-      "arxiv:2611.22287",
-      "title:decoder decoding diffusion direct from pixel prediction transformers without"
-    ],
-    "signals": {
-      "hf_upvotes": 7,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 22.129,
-    "score_breakdown": {
-      "hf_upvotes": 16.636,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.507
-    }
-  },
-  {
-    "id": "f11a7610f7100f1b",
-    "kind": "release",
-    "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-    "summary_en": null,
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/moe-expert-streaming",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "huggingface"
-    ],
-    "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:35.363124Z",
-    "dedup_keys": [
-      "url:huggingface.co/blog/moe-expert-streaming",
-      "title:180b 32gb inference limit moe parameters pushing ram the transformers with"
+      "hf:mehdi-hf/cilla-lite"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 0,
+      "hf_likes": 41,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
+      "hf_trending_score": 32.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -1463,278 +1718,14 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": false
+      "has_weights": true
     },
-    "score": 21.993,
+    "score": 28.855,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "topic_match": 4.0,
-      "age_decay": -2.007
-    }
-  },
-  {
-    "id": "e10fd14525ed0cbb",
-    "kind": "paper",
-    "title": "Tideway: Phase-Aware Tiered Memory Management for MoE Inference on Consumer Devices",
-    "summary_en": "Large language model (LLM) agents are rapidly becoming a dominant paradigm for AI applications. Recently, there is a growing demand to deploy large-scale Mixture-of-Experts (MoE) models locally on consumer PCs to balance data privacy, API costs, and inference efficiency. However, unlike datacenter servers with abundant DRAM, consumer devices are tightly constrained in both GPU VRAM and host RAM, forcing massive MoE weights to spill across VRAM, host RAM, and SSD. Under such spilling, we observe that existing systems fail to fully utilize this memory hierarchy, treating the tiers as independent caches and thrashing in inference.\n  We present TIDEWAY, a system for efficient inference of large MoE models on memory-constrained consumer devices. Our core insight is to manage host RAM and GPU VRAM as a unified memory pool. Within this pool, TIDEWAY couples phase-aware memory layouts, which adapt to the distinct access patterns of prefill and decode, with an execution engine that optimizes CUDA Graph execution under expert paging. Our evaluations on representative consumer hardware with frontier MoE models demonstrate that TIDEWAY significantly outperforms state-of-the-art systems. On average, TIDEWAY achieves speedups of 1.97x in end-to-end latency and 2.40x in Time-to-First-Token (TTFT), along with 1.61x higher decode throughput against the fastest baseline.\n  Our source code is publicly available at https://github.com/Afterglow231/Tideway .",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.14848",
-        "external_id": "2611.14848"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.14848",
-        "external_id": "2611.14848"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/Afterglow231/Tideway",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yifei Wang",
-      "Tsun-yu Yang",
-      "Yechen Xu",
-      "Hancheng Ye",
-      "Qinsi Wang",
-      "Baijun Zhou",
-      "Tingjun Chen",
-      "Hai &#34;Helen&#34; Li",
-      "Danyang Zhuo",
-      "Yiran Chen"
-    ],
-    "published_at": "2026-11-10T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064307Z",
-    "dedup_keys": [
-      "arxiv:2611.14848",
-      "title:aware consumer devices for inference management memory moe phase tideway tiered",
-      "github:afterglow231/tideway"
-    ],
-    "signals": {
-      "hf_upvotes": 12,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 4,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 21.732,
-    "score_breakdown": {
-      "hf_upvotes": 20.52,
-      "github_stars": 3.219,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -14.007
-    }
-  },
-  {
-    "id": "28509dd5c9cf4944",
-    "kind": "paper",
-    "title": "DrawScore: Evaluating Generated CAD Models against Engineering Drawings",
-    "summary_en": "Automatic CAD generation is commonly evaluated with volumetric IoU, Chamfer Distance, and surface F-score, which barely penalize local errors that occupy only a small fraction of a part's volume or surface area, such as a misplaced hole or a slot on the wrong face, even though such errors are critical to manufacturing. We formalize these metrics in a unified integral form and show that the weight of a local error decays as the (k+q)-th power of its size, where k is the dimension of the integration domain and q is determined by the penalty function. Guided by this analysis, we propose DrawScore, which projects both models into three orthographic views with visible and hidden lines, as in engineering drawings, and applies a saturating penalty along the projected curves, so that the weight of a local error decays only linearly. Controlled experiments confirm the predicted decay orders, and on outputs of existing CAD generation agents, DrawScore exposes errors in outputs that IoU rates as nearly perfect. DrawScore further improves generation as a reinforcement learning reward and, for CAD generation from engineering drawings, serves as a test-time verifier without 3D ground truth or an additional reward model. Our code is available at https://github.com/UESTC-Simon/DrawScore.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.24681",
-        "external_id": "2611.24681"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.24681",
-        "external_id": "2611.24681"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/UESTC-Simon/DrawScore",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Haorui Chen",
-      "Shiteng Lu",
-      "Zhanyu Guo",
-      "Zaixi Li",
-      "Yunhe Ni",
-      "Yaosong Du",
-      "Yichen Xiang",
-      "Xiande Huang",
-      "Rui Huang"
-    ],
-    "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064476Z",
-    "dedup_keys": [
-      "arxiv:2611.24681",
-      "title:against cad drawings drawscore engineering evaluating generated models",
-      "github:uestc-simon/drawscore"
-    ],
-    "signals": {
-      "hf_upvotes": 2,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 20.168,
-    "score_breakdown": {
-      "hf_upvotes": 8.789,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.007
-    }
-  },
-  {
-    "id": "fc33e24860ac7339",
-    "kind": "paper",
-    "title": "PReMind: When Personal Memory Meets Visual Hazards",
-    "summary_en": "Personalized vision-language assistants use visual observations and personal memories to provide advice tailored to the user. When the observed scene contains a physical hazard, personal context, such as allergies, medical conditions, or mobility constraints, can change what help is appropriate. Responding appropriately therefore requires recognizing the visible hazard and applying the relevant person's information. We introduce PReMind-Bench, a diagnostic benchmark that evaluates this combination across diverse hazards and personal-memory conditions. It separately measures memory access, grounding, abstention, and hazard response, and assesses joint success on interdependency cases. Existing models often satisfy one requirement while failing the other, and training only for safety or personalization leaves a gap in joint success. We therefore propose PReMind, a two-phase reinforcement learning framework that combines on-demand and forced-call interactions (memory always retrieved) to jointly train grounded memory use and hazard response. At 4B, PReMind raises joint success from 12.9% to 28.6% over its base on the interdependency set and improves hazard adequacy and correct abstention on the main test. Joint-success gains persist under forced-call evaluation and under a second LLM judge across three Phase II seeds; averaged over these seeds, joint success also improves on unseen hazard groups. These findings highlight the need to evaluate and train personal assistants to connect visual evidence with the relevant person's context.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.23808",
-        "external_id": "2611.23808"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.23808",
-        "external_id": "2611.23808"
-      }
-    ],
-    "actors": [
-      "Yeongtak Oh",
-      "Donghyeok Lee",
-      "Joonhee Oh",
-      "Jaewon Jeong",
-      "Sungroh Yoon"
-    ],
-    "published_at": "2026-11-18T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064407Z",
-    "dedup_keys": [
-      "arxiv:2611.23808",
-      "title:hazards meets memory personal premind visual when"
-    ],
-    "signals": {
-      "hf_upvotes": 4,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 19.869,
-    "score_breakdown": {
-      "hf_upvotes": 12.876,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -2.007
-    }
-  },
-  {
-    "id": "41a76bf5e178ee2a",
-    "kind": "paper",
-    "title": "QDA: Closed-Loop LLM Quantization Design with Agents",
-    "summary_en": "Post-training quantization is the standard way to serve large language models at low cost. However, the best quantization recipe differs across models and precisions. As a result, experts must redesign it for every new model, which is time-consuming and often sub-optimal. Fortunately, an LLM agent can take over this design by refining the recipe over rounds of building and evaluating candidates, so that more rounds lead to better recipes. However, evaluating one quantized reasoning model takes tens of GPU-hours, and combining methods from different codebases means porting each to the new architecture by hand. We present QDA, a system in which an agent designs the recipe for each model and precision. To make evaluation fast, QDA scores each candidate in minutes by its output KL divergence from the original model on reasoning traces that the agent never sees, and checks promising ones with long generations to catch failures such as repetition loops. To make building fast, QDA provides a library of public PTQ methods that are compatible with one another and with new model architectures. Across four reasoning models, QDA improves accuracy over the strongest public recipe by 0.9, 1.4 and 2.2 percentage points on average at W4A16, W4A8 and W3A16, using 64 GPU-hours per search. On the 320B-parameter MoE model GLM-5.3-Flash at NVFP4 W4A4, it recovers 98.3% of the FP8 model's accuracy, against 96.9% for the best vendor checkpoint. Every QDA checkpoint also runs on existing serving kernels with no inference overhead. We will release the library, the evaluator and the harness.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.23388",
-        "external_id": "2611.23388"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.23388",
-        "external_id": "2611.23388"
-      }
-    ],
-    "actors": [
-      "Xingyang Li",
-      "Tianlang Zhao",
-      "Song Han",
-      "Ligeng Zhu"
-    ],
-    "published_at": "2026-11-17T00:00:00Z",
-    "first_seen_at": "2026-11-19T08:06:34.064396Z",
-    "dedup_keys": [
-      "arxiv:2611.23388",
-      "title:agents closed design llm loop qda quantization with"
-    ],
-    "signals": {
-      "hf_upvotes": 5,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 19.827,
-    "score_breakdown": {
-      "hf_upvotes": 14.334,
-      "is_daily_paper": 5.0,
-      "topic_match": 4.0,
-      "age_decay": -3.507
+      "hf_trending": 20.979,
+      "hf_likes": 11.213,
+      "has_weights": 4.0,
+      "age_decay": -7.337
     }
   }
 ]
