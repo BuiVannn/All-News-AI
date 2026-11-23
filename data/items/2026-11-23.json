@@ -1,0 +1,1788 @@
+[
+  {
+    "id": "e96e52c845047075",
+    "kind": "model",
+    "title": "nokeepai/Inkling-2-Mini-Unbound",
+    "summary_en": "image-text-to-text, transformers, inkling2_loop, inkling2, uncensored, abliterated, refusal-removed",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound",
+        "external_id": "nokeepai/Inkling-2-Mini-Unbound"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+        "external_id": "thinkingmachines/Inkling-2-Mini"
+      }
+    ],
+    "actors": [
+      "nokeepai"
+    ],
+    "published_at": "2026-11-21T16:30:38Z",
+    "first_seen_at": "2026-11-23T08:22:45.215658Z",
+    "dedup_keys": [
+      "hf:nokeepai/inkling-2-mini-unbound"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 47,
+      "hf_downloads": 285,
+      "hf_trending_score": 30.099999999999998,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 49.057,
+    "score_breakdown": {
+      "hf_trending": 20.623,
+      "hf_downloads": 11.312,
+      "hf_likes": 11.614,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.492
+    }
+  },
+  {
+    "id": "18b5c14b7e7658d8",
+    "kind": "paper",
+    "title": "Clover-35B-A3B-Preview Technical Report",
+    "summary_en": "We introduce Clover-35B-A3B-Preview (Clover), a mixture-of-experts diffusion language model with 35 billion total parameters and 3 billion activated parameters, supporting thinking-mode generation. Clover adapts Gated Delta Networks to block diffusion by combining recurrent memory of previously generated context with bidirectional softmax attention inside the current block. Historical memory readout competes with current-block tokens in a shared softmax, with learnable block-size calibration and a separate, zero-initialized right-context convolution branch. Clover leads the seven evaluated agent metrics, including 73.6 on SWE-bench Verified and 51.7 on Terminal-Bench 2.1. On internal agent workloads, it reaches a reported generation speed of 680 tokens/s using one NVIDIA GB300 GPU at BF16 precision and batch size one. We organize the evaluation around model quality, drafting and verification costs, and deployment under constrained memory. We also describe a decision-model variant that generates answers to related questions in one denoising pass. On an internal set of 500 groups, joint prediction raises question accuracy from 90.37% to 93.88% and all-correct group accuracy from 65.4% to 77.0%.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24636",
+        "external_id": "2611.24636"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24636",
+        "external_id": "2611.24636"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "DiffuSpace Technical Team"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218525Z",
+    "dedup_keys": [
+      "arxiv:2611.24636",
+      "title:35b a3b clover preview report technical",
+      "github:diffuspace/clover-35b-a3b-preview"
+    ],
+    "signals": {
+      "hf_upvotes": 31,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 161,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.877,
+    "score_breakdown": {
+      "hf_upvotes": 27.726,
+      "github_stars": 10.175,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.024
+    }
+  },
+  {
+    "id": "3d4a6d687ca78427",
+    "kind": "paper",
+    "title": "Non-penetrating World Models",
+    "summary_en": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent such failures. Surprisingly, however, these models already encode the information needed to predict such violations. We find that the hidden states of diffusion transformers (DiTs) can predict whether a candidate action will penetrate an obstacle. Building on this, we introduce NoPeWorld, a lightweight framework that detects and prevents penetration. Specifically, we train a small prediction head on top of a frozen DiT's hidden states to read out if a candidate action is safe or not. Unsafe actions are then replaced with safe ones that best preserve the original intent. Despite its simplicity, NoPeWorld substantially reduces the physical violation rate, averaged over six video world models, from 74% to 16%. Remarkably, our method shows zero-shot generalization to open-domain imagery, third-person viewpoints, and moving obstacles. We publicly release our code, the NoPeBench benchmark, and model weights. Project Page: https://nopeworld.github.io .",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.27963",
+        "external_id": "2611.27963"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.27963",
+        "external_id": "2611.27963"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/yuhangdai427/NoPeWorld",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yuhang Dai",
+      "Yinwei Wu",
+      "Ziyue Lin",
+      "Han Ji",
+      "Xingyi Yang"
+    ],
+    "published_at": "2026-11-20T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218503Z",
+    "dedup_keys": [
+      "arxiv:2611.27963",
+      "title:models non penetrating world",
+      "github:yuhangdai427/nopeworld"
+    ],
+    "signals": {
+      "hf_upvotes": 38,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 39.057,
+    "score_breakdown": {
+      "hf_upvotes": 29.308,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.024
+    }
+  },
+  {
+    "id": "80bee2e499de5be7",
+    "kind": "model",
+    "title": "inclusionAI/LingSante-3.1-air-VL",
+    "summary_en": "image-text-to-text, bailing_moe_v3_vl, conversational, custom_code",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/inclusionAI/LingSante-3.1-air-VL",
+        "external_id": "inclusionAI/LingSante-3.1-air-VL"
+      }
+    ],
+    "actors": [
+      "inclusionAI"
+    ],
+    "published_at": "2026-11-19T04:31:06Z",
+    "first_seen_at": "2026-11-23T08:22:45.215466Z",
+    "dedup_keys": [
+      "hf:inclusionai/lingsante-3.1-air-vl"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 45,
+      "hf_downloads": 0,
+      "hf_trending_score": 42.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 35.812,
+    "score_breakdown": {
+      "hf_trending": 22.567,
+      "hf_likes": 11.486,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -6.241
+    }
+  },
+  {
+    "id": "86d7ff3289d6a8f5",
+    "kind": "paper",
+    "title": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+    "summary_en": "Manifold-constrained Hyper-Connections (mHC) extends residual connections to multiple streams and stabilizes residual propagation by constraining stream-mixing residual matrices to the Birkhoff polytope, the set of doubly stochastic matrices. In this work, we investigate how to effectively mix residual streams within the Birkhoff polytope. We reveal a mixing trade-off: when under-mixed residual matrices stay close to the vertices of the Birkhoff polytope, hyper-connections will degenerate into a set of nearly independent streams; when over-mixed residual matrices are concentrated around the uniform barycenter of the polytope, streams will become less distinguishable from each other. We theoretically validate our findings by bounding the cumulative residual mixing, stream difference and gradient difference of mixing coefficients across layers. Motivated by these findings, we propose Contraction for Manifold-Constrained Hyper-Connections (cmHC), an exact doubly stochastic method which geometrically contracts the Birkhoff polytope toward its interior. This contraction mitigates under-mixing by forcing the residual matrices to explore deeper into the polytope, with a provable stream mixing bound and no new parameterization. Moreover, we apply a moderate contraction at the shallow layers to prevent over-mixing, enabling stable gradient propagation on extremely large-scale model pretraining. Extensive experiments across dense and mixture-of-experts models at various parameter scales demonstrate the effectiveness and scalability of cmHC. We also develop fused operators for cmHC on Ascend NPUs, reducing hyper-connection execution latency by up to 44.8%.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.27193",
+        "external_id": "2611.27193"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.27193",
+        "external_id": "2611.27193"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Newiz430/cmHC",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Haowei He",
+      "Ziwen Zhao",
+      "Chenshuo Pan",
+      "Gang Lin",
+      "Zhihao Yang",
+      "Chao Wang",
+      "Xinzhang Liu",
+      "Kaidong Yu",
+      "Han Gao",
+      "Dongfang Li",
+      "Menglin Yang",
+      "Shuangyong Song",
+      "Yongxiang Li"
+    ],
+    "published_at": "2026-11-20T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218462Z",
+    "dedup_keys": [
+      "arxiv:2611.27193",
+      "title:balancing cmhc connections contraction geometric hyper mixing stream via",
+      "github:newiz430/cmhc"
+    ],
+    "signals": {
+      "hf_upvotes": 50,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 34.431,
+    "score_breakdown": {
+      "hf_upvotes": 31.455,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "age_decay": -5.024
+    }
+  },
+  {
+    "id": "b7b37ba0b6231b4b",
+    "kind": "paper",
+    "title": "Duopra: From Full-Duplex Conversation to Full-Duplex Agency",
+    "summary_en": "Full-duplex interaction models exhibit strong conversational agency, enabling natural, low-latency turn-taking, backchannels, and interruptions. However, completing tasks further requires task agency: timely tool invocation and argument revision following user corrections. Frontend-backend agents separate initiation from execution: the frontend decides whether and what to request, while the backend determines how. Execution can be offloaded, but unsent requests cannot be executed, and incomplete ones can misdirect the backend. On Full-Duplex-Bench v3 (FDB v3), most failures of Realtime-Venus-Audio + Harness in our streaming pipeline occur before a domain tool executes. We introduce Duopra, a full-duplex interaction model that learns task execution alongside conversational control. Duopra treats the backend as a tool, accepting a self-contained natural-language request. Direct calls and backend delegation share an action interface and requirements for faithful initiation and correct execution. Its three-stage training combines protocol SFT, full-duplex RL rewarding timely and complete execution, and projector-only repair of talker conditioning after thinker updates. With the same backend, Pass@1 rises from 4.7% to 44.7%; Duopra achieves 47.7% calling tools directly (26.0% after SFT) and 49.3% with a DeepSeek backend. It improves three FDB v1.0 takeover rates over the base model. These results show that task agency can coexist with key conversational agency.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.25773",
+        "external_id": "2611.25773"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.25773",
+        "external_id": "2611.25773"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/cyChen2003/duopra",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chiyu Chen",
+      "Pengzhou Cheng",
+      "Yuezhao Ma",
+      "Xiaocheng Li",
+      "Can Liu",
+      "Haonan Hu",
+      "Yao Yao",
+      "Yifei Yang",
+      "Yijie Lu",
+      "Taolei Wang",
+      "Yansi Li",
+      "Muhuan Wu",
+      "Chenglu Sun",
+      "Gongshen Liu",
+      "Zhuosheng Zhang"
+    ],
+    "published_at": "2026-11-19T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218580Z",
+    "dedup_keys": [
+      "arxiv:2611.25773",
+      "title:agency conversation duopra duplex duplex from full full",
+      "github:cychen2003/duopra"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 35,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.826,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 7.167,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.524
+    }
+  },
+  {
+    "id": "c15542014b6ee934",
+    "kind": "paper",
+    "title": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+    "summary_en": "Deploying large language models (LLMs) in long-horizon and continual interactions requires maintaining reusable memory states for future inference, posing challenges for existing architectures. Standard Transformers accumulate layer-wise, token-level KV caches, incurring linear GPU memory growth and quadratic computational complexity as the context expands. In contrast, linear-time architectures compress history into fixed-size states, but struggle to retain fine-grained details. We introduce MemOnce, a foundation architecture that learns scalable memory states for language models. MemOnce is based on two core designs: (a) Memory encoder-decoder: it caches only a small subset of final-layer hidden states as compact memory representations and dynamically decodes them back into KV caches for attention layers; (b) Memory sparse attention: for each continual input, MemOnce adaptively retrieves relevant memory representations, with the sparse indices computed only once across layers. Coupling these two designs enables efficient on-the-fly memory loading and KV cache decoding, drastically reducing the GPU memory footprint and achieving linear-time complexity. We conduct extensive experiments to show that MemOnce outperforms Transformers and other architectures across varying model sizes, context lengths, and training paradigms (pretraining and post-training adaptation). In particular, adapting Qwen3.5-4B with MemOnce reduces memory state cache by 1313times and prefill latency by 6.9times at 1M context, and improves throughput by 3.5times and overall memory performance by +5.77%. Finally, MemOnce generalizes zero-shot to downstream representation tasks, achieving competitive results against specialized models.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.27973",
+        "external_id": "2611.27973"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.27973",
+        "external_id": "2611.27973"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Clare-Nie/MemOnce",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Chang Nie",
+      "Chaoyou Fu",
+      "Songlin Liu",
+      "Yiqing Hu",
+      "Caifeng Shan"
+    ],
+    "published_at": "2026-11-20T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218563Z",
+    "dedup_keys": [
+      "arxiv:2611.27973",
+      "title:architecture for language large memonce memory models scalable",
+      "github:clare-nie/memonce"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 11,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 31.129,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 4.97,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.024
+    }
+  },
+  {
+    "id": "928016d0b80dabc7",
+    "kind": "paper",
+    "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+    "summary_en": "Vision-language models (VLMs) exhibit strong semantic understanding but remain limited in their ability to reason about metric 3D space in the physical world. Existing VLMs typically infer 3D scene structure from one or more images without known camera calibration or cross-view geometric constraints. This makes metric 3D inference inherently ambiguous and leaves it unclear whether their spatial predictions are grounded in visual evidence or driven primarily by semantic priors. In contrast, calibrated stereo provides explicit cross-view geometry that resolves this ambiguity and offers a more reliable foundation for metric 3D perception and geometric generalization. We investigate how VLMs can learn transferable 3D representations directly from calibrated binocular observations. To this end, we introduce StereoVLM, the first geometry-aware binocular VLM for metric 3D spatial reasoning. StereoVLM follows a hierarchical learning paradigm spanning from cross-view correspondence and disparity estimation to calibration-conditioned metric depth perception and semantic spatial reasoning. We further find that disparity supervision generalizes substantially better than direct binocular depth supervision on unseen environments. To evaluate these capabilities, we introduce Stereo3D-Bench, a comprehensive benchmark across three levels, from point-level geometry to object-level spatial reasoning. StereoVLM-8B achieves 95.17% depth accuracy (δ_1) and a 66.98 average object-level score on Stereo3D-Bench. Intervention results further indicate that the model's performance on Stereo3D-Bench benefits from valid cross-view geometry and cannot be explained solely by additional visual tokens or semantic priors. Hierarchical geometric supervision also yields average gains of 3.54 points across five spatial benchmarks and 4.3 percentage points in RoboCasa manipulation success.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.27915",
+        "external_id": "2611.27915"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.27915",
+        "external_id": "2611.27915"
+      }
+    ],
+    "actors": [
+      "Chi Yan",
+      "Guoyang Zhao",
+      "Wentao Yuan",
+      "Yixiao Ge",
+      "Yanning Zhou",
+      "Dan Xu"
+    ],
+    "published_at": "2026-11-20T17:52:02Z",
+    "first_seen_at": "2026-11-23T08:22:45.218596Z",
+    "dedup_keys": [
+      "arxiv:2611.27915",
+      "title:binocular for language metric models reasoning spatial stereovlm vision"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 19.427,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -3.907
+    }
+  },
+  {
+    "id": "3d35d22e555eabc9",
+    "kind": "paper",
+    "title": "AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation",
+    "summary_en": "Vision-language-action (VLA) models enable unmanned aerial vehicles (UAVs) to follow natural-language instructions, yet still fail frequently in closed-loop flight. Correcting these failures requires repairs, i.e., actions that avoid them at the states the policy itself reaches, which human pilots cannot label at scale and rule-based planners cannot supply reliably. In this paper, we present AeroRSI, a recursive self-improvement framework in which an aerial navigation policy iteratively learns from its own failures. Our key insight is that a failing policy should judge its own repairs by flying on from them. Judged in this way, its sampled actions and even rule-based proposals that hurt it when imitated directly become reliable supervision. Moreover, an episode terminates at its first failure, concealing subsequent failures until the earlier ones are repaired. AeroRSI thus renews its supervision in every round, anchoring the failures of the current policy, verifying repairs by its continuation, and distilling them while keeping its behavior elsewhere. On TravelUAV, three rounds raise the success rate of a supervised 2B-parameter policy from 46.4% to 67.5% and reduce collisions by half, surpassing the previous state of the art by 10.6 points from the same initialization without extra human labels or inference cost. Code and models are available at https://github.com/starsholic/AeroRSI.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24077",
+        "external_id": "2611.24077"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24077",
+        "external_id": "2611.24077"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/starsholic/AeroRSI",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shiwei Wu",
+      "Yuwen Pan",
+      "Zhi Li",
+      "Yaowen Li",
+      "Yan Zhou",
+      "Xuemiao Xu",
+      "Yu Liu"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218639Z",
+    "dedup_keys": [
+      "arxiv:2611.24077",
+      "title:aerial aerorsi for improvement language navigation recursive self vision",
+      "github:starsholic/aerorsi"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 18.285,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.024
+    }
+  },
+  {
+    "id": "3b32c069dedfc380",
+    "kind": "paper",
+    "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
+    "summary_en": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. However, existing benchmarks report only episode-level success rates, which show neither how these agents succeed nor where they fail. In this paper, we present a systematic action-level analysis of frontier agents on direct robot control across 12 manipulation benchmarks. We introduce AgentRoboCritic, an intent-grounded critique framework in which the policy agent states a local intent alongside each action, and a critic evaluates the action's outcome and failure mode against this intent. Our action-level analysis demonstrates the promising capabilities of frontier agents on direct robot control, including closed-loop recovery from local execution failures, reliable semantic grounding across diverse scenes, and strong zero-shot manipulation without task-specific adaptation. It also identifies their current limitations, including task-relevant physical execution bottlenecks such as grasping and alignment, and uneven recovery across failure modes. Finally, we validate our critic on a 400-action human-annotated benchmark and release a dataset of 12,844 annotated actions alongside a fine-tuned open-source critic, Muse-Glimmer-30B, whose failure-mode accuracy rises from 32.58% to 74.24%, enabling low-cost action-level analysis.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.26613",
+        "external_id": "2611.26613"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26613",
+        "external_id": "2611.26613"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/cxcscmu/AgentRoboCritic",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yiyang Du",
+      "Yuxuan Kuang",
+      "Qitao Zhao",
+      "Yixuan Wang",
+      "Zhanqiu Guo",
+      "Yi Xu",
+      "Xin Li",
+      "Wenbin He",
+      "Liu Ren",
+      "Chenyan Xiong"
+    ],
+    "published_at": "2026-11-19T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218672Z",
+    "dedup_keys": [
+      "arxiv:2611.26613",
+      "title:agentrobocritic agents capability control direct frontier robot the understanding",
+      "github:cxcscmu/agentrobocritic"
+    ],
+    "signals": {
+      "hf_upvotes": 2,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 4,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 17.484,
+    "score_breakdown": {
+      "hf_upvotes": 8.789,
+      "github_stars": 3.219,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -6.524
+    }
+  },
+  {
+    "id": "7116be0ceef0be0b",
+    "kind": "paper",
+    "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
+    "summary_en": "Identity matching asks whether two records denote the same identity, yet the answer depends on the target granularity. Two records may match at the base level but not at the variant level: they share an underlying design while differing in attributes such as color or size. Final matching accuracy does not separately characterize the capabilities involved. To study this problem, we use e-commerce as a challenging real-world domain. We introduce PURE, a diagnostic benchmark for multi-granularity multimodal identity matching covering four capability dimensions: Perception, Understanding, Reasoning, and Evidence-grounded Judgment. The benchmark comprises 1,457 multiple-choice questions across 14 tasks, derived from real-world matching pairs and verified by two domain experts. Across ten recent MLLMs, overall scores range from 47.1% to 86.0%. Understanding receives the highest mean score and Judgment the lowest, with weaknesses in visual difference localization and variant-level rule judgment. Modality ablations show that models benefit from multimodal evidence but can incorrectly identify conflicts between matching records. In direct matching, most models recognize matching pairs more reliably than non-matching pairs at the base level, whereas the reverse holds at the variant level. PURE therefore reveals what aggregate matching accuracy hides: not only whether models judge a pair correctly, but where they struggle to interpret evidence and apply matching criteria.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.22343",
+        "external_id": "2611.22343"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.22343",
+        "external_id": "2611.22343"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/alibaba-multimodal-industrial-ai/PURE",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Hengyu You",
+      "Xintong Wang",
+      "Jin Cao",
+      "Liang Ding"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218655Z",
+    "dedup_keys": [
+      "arxiv:2611.22343",
+      "title:benchmark diagnostic for granularity identity matching multi multimodal pure",
+      "github:alibaba-multimodal-industrial-ai/pure"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 3,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 16.339,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "github_stars": 2.773,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -9.524
+    }
+  },
+  {
+    "id": "209d082d25d3281c",
+    "kind": "paper",
+    "title": "Reading the Unreadable: Text-Aware Image Super-Resolution Needs Reasoning",
+    "summary_en": "Text-aware image super-resolution (TAISR) aims to recover high-resolution images from low-resolution inputs while preserving textual content. Existing methods treat this as a visual restoration problem, yet severely degraded text often cannot be read from local visual evidence alone. Humans instead read it by reasoning over image context, logical patterns, and prior knowledge. This raises a fundamental question: Does TAISR need reasoning? To answer this, we introduce two diagnostic tools. The first, ReasonText, is a human-curated benchmark that separates reasoning-required text from locally recoverable text. The second, Ground-Truth Text-Crop Accuracy (GTTCA), is a recognition-based metric that measures text restoration quality without text detection errors. Evaluating twelve recent super-resolution (SR) models, we find a consistent and substantial performance drop on reasoning-required text, revealing a systematic blind spot. Two observations point to a remedy. One is that text-conditioned SR models restore text substantially better when given ground-truth text. The other is that multimodal large language models (MLLMs) can read degraded text in low-resolution images through reasoning. We therefore propose Reasoning Transfer via Captioning (RTC), a training-free plug-in that uses an external MLLM to infer the degraded text and feeds the resulting caption to a text-conditioned SR model. RTC consistently improves all six text-conditioned SR models we evaluate, especially on reasoning-required text. Surprisingly, a real-world SR model with RTC can even outperform the TAISR model with RTC, suggesting that reasoning should be a core design axis for future TAISR.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.15449",
+        "external_id": "2611.15449"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.15449",
+        "external_id": "2611.15449"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/jasonleex1995/TAISR_needs_Reasoning",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Jaeseong Lee",
+      "Jinwoo Kim",
+      "Jinho Jeong",
+      "Seon Joo Kim"
+    ],
+    "published_at": "2026-11-11T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218544Z",
+    "dedup_keys": [
+      "arxiv:2611.15449",
+      "title:aware image needs reading reasoning resolution super text the unreadable",
+      "github:jasonleex1995/taisr_needs_reasoning"
+    ],
+    "signals": {
+      "hf_upvotes": 15,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 15.657,
+    "score_breakdown": {
+      "hf_upvotes": 22.181,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -18.524
+    }
+  },
+  {
+    "id": "1a1b251c10c4efe5",
+    "kind": "paper",
+    "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+    "summary_en": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.21485",
+        "external_id": "2611.21485"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.21485",
+        "external_id": "2611.21485"
+      }
+    ],
+    "actors": [
+      "Henry Zheng",
+      "Weibo Gong",
+      "Yang Yue",
+      "Rui Huang",
+      "Yang Zhang",
+      "Gao Huang"
+    ],
+    "published_at": "2026-11-16T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218610Z",
+    "dedup_keys": [
+      "arxiv:2611.21485",
+      "title:across benchmarking hallway lost memory persistent revisits spatial the"
+    ],
+    "signals": {
+      "hf_upvotes": 5,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 12.31,
+    "score_breakdown": {
+      "hf_upvotes": 14.334,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -11.024
+    }
+  },
+  {
+    "id": "139fdc442e59dcf8",
+    "kind": "paper",
+    "title": "Prune to Expand: Training Prompt Enhancers with Less to Imitate",
+    "summary_en": "Prompt enhancement (PE) refines concise user prompts into detailed descriptions to improve the compositional aesthetics of generated images while preserving user intent. A common practice constructs supervised fine-tuning (SFT) pairs by deriving short, user-like prompts from dense captions, implicitly assuming that captions that improve image generation also provide effective supervision. In this paper, however, we uncover a counterintuitive finding: PE models trained on caption pairs with substantial generation gains perform comparably to those trained on pairs with only marginal gains. We argue that dense captions can impose redundant supervision by requiring PE models to reproduce image-specific details weakly related to user intent. Motivated by this discrepancy, we introduce Prune to Expand (P2E), a simple text-only method that refines dense-caption supervision by selectively removing redundant sentences under a per-example deletion bound while preserving explicit user requirements and informative visual structure. Extensive experiments under identical training configurations demonstrate that P2E improves alignment with human preferences and visual quality over conventional dense-caption SFT across diverse image categories and visual generators.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.27229",
+        "external_id": "2611.27229"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.27229",
+        "external_id": "2611.27229"
+      }
+    ],
+    "actors": [
+      "Tianhe Wu",
+      "Qilin Sun",
+      "Kede Ma"
+    ],
+    "published_at": "2026-11-20T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218623Z",
+    "dedup_keys": [
+      "arxiv:2611.27229",
+      "title:enhancers expand imitate less prompt prune training with"
+    ],
+    "signals": {
+      "hf_upvotes": 3,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 11.066,
+    "score_breakdown": {
+      "hf_upvotes": 11.09,
+      "is_daily_paper": 5.0,
+      "age_decay": -5.024
+    }
+  },
+  {
+    "id": "5e3d4829a2099906",
+    "kind": "paper",
+    "title": "Intent Contracts: Taking Tools Away from Agents",
+    "summary_en": "Intent contracts are an authorization interface for tool-using LLM agents in which the planning model holds no tools. For each step it submits a short logged contract: a goal, a verbatim quotation of the user, and scope fields. Code validates the contract, and a small trusted model checks it against the user's words and writes the tool call itself. Provided the validation and dispatch code is correct, every executed call is written by the trusted model, the planner's influence on a call is confined to a contract logged before it, and the trusted side decides how much of a request to carry out. We compare contracts with two reviewers of planner-written commands: one sees only the user's words and the command, the information boundary of a reasoning-blind permission classifier, and one also sees the planner's goal and a checked quotation. With gpt-6.1-terra as planner and GLM-5.3-Flash as the trusted model on three AmPermBench task families, every object changed under contracts is named in the goal of the contract that produced the change; under review the planner names objects in its commands and rarely in its goals. When the planner adds work the user never asked for, contracts complete the user's task in 27/30 runs and the intent-visible reviewer in 16/30, because a reviewer can only refuse a whole command. Contracts do not reduce unauthorized actions. They are indistinguishable from blind review, and once the benchmark's environment terms are clarified, every condition that changes state hits a wrong target in 40-49% of those runs. That error is the planner's choice of objects for an ambiguous reference, which no trusted model here can see the environment to check; telling the executor to decline when unsure does not change it. We evaluate benign over-reach with one pair of models, not adversarial planners. We release the plugin and run records.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.24025",
+        "external_id": "2611.24025"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.24025",
+        "external_id": "2611.24025"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/zwang-devv/intent-contracts",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Ziyuan Wang",
+      "Genliang Zhu",
+      "Xiaobo Chen",
+      "Chu Wang"
+    ],
+    "published_at": "2026-11-18T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218700Z",
+    "dedup_keys": [
+      "arxiv:2611.24025",
+      "title:agents away contracts from intent taking tools",
+      "github:zwang-devv/intent-contracts"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 1,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 10.907,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "github_stars": 1.386,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -8.024
+    }
+  },
+  {
+    "id": "255e437a65f11147",
+    "kind": "paper",
+    "title": "Explicit Style Extraction for Personalized Long-Form Text Generation",
+    "summary_en": "Personalized long-form generation asks a language model to write new text the way a specific user would. The standard recipe, retrieval-augmented generation, places a few of the user's past texts in the prompt but leaves the model to decide what to take from them. We introduce StylePrism, a taxonomy of 28 stylistic aspects in seven categories, and SP-Refine, an inference-time method that makes style extraction an explicit step: the model first fills StylePrism with the user's patterns, quoted evidence, and habits to avoid, then drafts from the user's samples and revises the draft twice against this profile, guided by its own style scores. On the three long-form tasks of LongLaMP with three LLMs, SP-Refine outperforms LongLaMP's retrieval-augmented baseline in 25 of 27 ROUGE and METEOR comparisons, by 10.2% on average and by up to 35.8%. Annotating users' own texts with the extracted profiles shows that StylePrism captures concrete, checkable habits, from the order of rhetorical moves to a reviewer's sign-off. Ablations show that the profile helps as revision guidance, not as a replacement for the samples: writing from the profile alone is worse in all 27 comparisons, while a single implicit-inference call is a cheaper alternative that comes close. Oracle variants that let the reviser see the reference, together with reference-free controls, show that larger refinement gains require information unavailable at inference time.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.27211",
+        "external_id": "2611.27211"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.27211",
+        "external_id": "2611.27211"
+      }
+    ],
+    "actors": [
+      "Jenitha Reddy Patel",
+      "Sameeksha Kini",
+      "Amulya Rayasam",
+      "Anisa Dye",
+      "Abhinav Sharma",
+      "Sai Karthik Navuluru",
+      "Bo Ni",
+      "Li Li",
+      "Junda Wu",
+      "Tong Yu",
+      "Nedim Lipka",
+      "Xiaolei Huang",
+      "Tyler Derr",
+      "Yue Zhao",
+      "Zhengzhong Tu",
+      "Yu Wang",
+      "Hongjie Chen",
+      "Thien Huu Nguyen",
+      "Nesreen K. Ahmed",
+      "Franck Dernoncourt",
+      "Ryan A. Rossi"
+    ],
+    "published_at": "2026-11-20T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218714Z",
+    "dedup_keys": [
+      "arxiv:2611.27211",
+      "title:explicit extraction for form generation long personalized style text"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 9.521,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -5.024
+    }
+  },
+  {
+    "id": "d17c33cee9b3c94a",
+    "kind": "paper",
+    "title": "Motion-Aware Reward Modeling for Instruction-Guided Video Editing",
+    "summary_en": "Reward models for instruction-guided video editing can favor temporal consistency at the expense of motion. We study this failure, termed motion collapse, using controlled motion-suppression variants of real edits. On VE-Bench, the evaluated composite reward prefers a motion-suppressed candidate in 97% of cases. Learned video rewards and a VLM judge also struggle with mild suppression, while latent optimization and reward-guided fine-tuning exploit this weakness to increase reward as motion declines. A linear probe of our base reward backbone performs near chance on mild suppression, motivating an explicit inter-frame dynamics input. We propose a motion-aware reward model that combines an RGB frame-difference stream with preference training against motion-suppressed and fabricated-motion negatives. A distillation anchor preserves alignment with human quality judgments. On the VE-Bench motion ladder, our model reduces the rate of selecting motion-suppressed candidates to 0% while achieving a Spearman correlation of 0.57 with human quality ratings. It also detects unseen suppression variants and preserves motion during reward-guided fine-tuning on two editing pipelines. These results support explicitly modeling motion in rewards for video editing.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "multimodal",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.22495",
+        "external_id": "2611.22495"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.22495",
+        "external_id": "2611.22495"
+      }
+    ],
+    "actors": [
+      "Li Li",
+      "Xiangbo Gao",
+      "Bo Ni",
+      "Samyadeep Basu",
+      "Viet Dac Lai",
+      "Jing Shi",
+      "Seunghyun Yoon",
+      "Gang Wu",
+      "Yu Wang",
+      "Thien Huu Nguyen",
+      "Tyler Derr",
+      "Franck Dernoncourt",
+      "Zhengzhong Tu",
+      "Yue Zhao"
+    ],
+    "published_at": "2026-11-17T00:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.218687Z",
+    "dedup_keys": [
+      "arxiv:2611.22495",
+      "title:aware editing for guided instruction modeling motion reward video"
+    ],
+    "signals": {
+      "hf_upvotes": 1,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 5.021,
+    "score_breakdown": {
+      "hf_upvotes": 5.545,
+      "is_daily_paper": 5.0,
+      "topic_match": 4.0,
+      "age_decay": -9.524
+    }
+  },
+  {
+    "id": "c136b4edb59e251f",
+    "kind": "paper",
+    "title": "How Language Models Compress and Compare: Understanding Selection with Token Covariance Maps",
+    "summary_en": "Many language-model tasks reduce to selecting among structured alternatives, yet we still lack a simple picture of how a decoder-only transformer organizes an entire selection prompt across depth. We introduce token covariance maps, a prompt-level geometric view that tracks how token positions co-vary in hidden-state space at each layer. This turns a structured prompt into a depth-indexed sequence of maps whose spectral and block structure can be aligned with instructions, context, and candidate answers. Across 14 decoder-only models from 4 families and 12 structured-selection benchmarks, token covariance maps reveal a robust compress-then-compare organization. Early layers represent prompts diffusely, middle layers compress them into a shared low-rank bottleneck, and late layers re-expand into context-option and option-option geometry. This organization recurs across larger fixed-template samples, deterministic prompt rewrites, pairwise reranking reformulations, and controlled answer-set manipulations, while also emerging during training from an initially flat depth profile. Its timing aligns with behavior: useful answer discrimination appears well after the bottleneck, and low-rank intervention around the bottleneck preferentially disrupts late comparison geometry. We additionally show that the same geometric profile appears in instruction-tuned models, across several languages, and during open-ended generation. We further show that changing the internal representation of one candidate around the compressed region can shift which candidate the model later prefers. These results show that token covariance maps are a diagnostic tool for comparing how models organize information across prompts, model families, and stages of training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26874",
+        "external_id": "2611.26874"
+      }
+    ],
+    "actors": [
+      "Moshe Eliasof"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283905Z",
+    "dedup_keys": [
+      "arxiv:2611.26874",
+      "title:and compare compress covariance how language maps models selection token understanding with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "357f175abd2e8fe6",
+    "kind": "paper",
+    "title": "How Long Will My Language Model Run? A Benchmark for Pre-Execution Runtime Prediction",
+    "summary_en": "Researchers submitting deep learning jobs to shared GPU clusters need runtime estimates to request time limits, choose hardware, and budget compute. Large language models (LLMs) offer a tempting shortcut: describe the job and ask. We introduce PreRun, a benchmark for predicting deep learning training and inference runtime from information available before execution. PreRun contains 801 training and 1,884 inference records of language and vision models collected on a GPU cluster, paired with workload configurations and explicitly defined timing targets. It also includes 64 text-generation configurations measured under standardized conditions, each in three separate program launches. We compare three LLMs (Qwen3.5-9B, GPT-OSS-120B, and Claude Opus 5.5) with regression baselines and evaluate analytical estimates on a supported forward-pass subset. On 16 held-out generation configurations, the open-weight LLMs underestimate latency by 90-99% on average without examples. Claude's zero-shot mean absolute error is 4.5 times that of a Random Forest fit on 32 configurations. Five labeled examples substantially reduce Claude's generation error, but their benefit varies across timing targets. We will open-source our data and evaluation pipeline upon acceptance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26875",
+        "external_id": "2611.26875"
+      }
+    ],
+    "actors": [
+      "Ashish Molakalapalli",
+      "Kangda Wei",
+      "Haonan Duan",
+      "Alex Carter",
+      "Ruihong Huang"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283955Z",
+    "dedup_keys": [
+      "arxiv:2611.26875",
+      "title:benchmark execution for how language long model pre prediction run runtime will"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "388a7aaf713c1a5e",
+    "kind": "paper",
+    "title": "Know Your Context Bank: Repairing Inconsistency and Measuring Generalization in Context-Aware Text-to-SQL",
+    "summary_en": "Text-to-SQL systems increasingly rely on context banks: curated collections of example queries, metric definitions, and domain knowledge that tell a model how an organization writes its queries. In the enterprise, a bank grows over years as many analysts add entries, checked one at a time for correctness (does the SQL answer its own question?) and rarely for consistency with one another. Yet correctness is often loosely defined: a question seldom fixes how an entity is counted or which table defines it, so two entries can each pass review yet resolve the same decision in opposite ways. We call this condition context bank rot. A second question follows: does a system that uses a bank generalize from it, or only reproduce it? Existing benchmarks cannot tell, as they do not control how far a test question sits from the context. We answer both questions by comparing queries decision by decision, with a fast scorer distilled from human-calibrated LLM judges. Turned inward, the comparison diagnoses and repairs a bank. Fine-tuning on a cleaned BIRD-train bank beats a same-size random subset at every epoch (+2.6 points on average), and 92.4% of our removals had their SQL corrected by an independent expert audit, against 45.6% of audited entries. In-context examples that follow one convention beat those following the opposite one by 13.3 points, while a mix is barely better than none. Turned outward, the comparison generates test questions at a controlled distance from a bank, a pipeline we call CAT (Context-Aware Testing). On CAT-BIRD, for retrieval and fine-tuning alike, the benefit of a bank falls step by step with distance and is largely gone once about three quarters of a question's logic is new, and on CAT-Spider the benefit of retrieval likewise shrinks with distance.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26775",
+        "external_id": "2611.26775"
+      }
+    ],
+    "actors": [
+      "Hailong Li",
+      "Mohammadreza Pourreza",
+      "Tal Neiman",
+      "Reza Sherkat",
+      "Per Jacobsson",
+      "Yannis Papakonstantinou"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283340Z",
+    "dedup_keys": [
+      "arxiv:2611.26775",
+      "title:and aware bank context context generalization inconsistency know measuring repairing sql text your"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "68c7c71a51612b71",
+    "kind": "paper",
+    "title": "LLMs Memorize Their Own Hallucinations During Post-Training",
+    "summary_en": "Reasoning domains have shaped the post-training recipes of frontier models even though they are trained and deployed in domains beyond math and code. In this paper, we study the consequences of directly adopting reasoning-centric training recipes, e.g., the use of outcome-based rewards for reinforcement learning (RL), injection of \"cognitive\" behaviors such as proposing and backtracking from hypotheses in reasoning chains, etc., for knowledge tasks. We hypothesize that these decisions, while useful for reasoning, inadvertently encourage models to memorize hallucinations they themselves generate in their long reasoning chains when trained on knowledge tasks. To study this, we train models with standard post-training, extract their self-generated hallucinations during RL, and track memorization throughout the rest of training. Our experiments on six open models across two model families and two architectures confirm our hypothesis. We find that models' recall of hallucinations reinforced during training increases by 4.83% on average, compared to just 0.17% for self-hallucinations that receive no training signal. In fact, models even memorize false facts that they immediately retract in their reasoning; a backtracking template inherited from reasoning-centric training that has no benefit for knowledge recall. Furthermore, we find that memorization is strongest on the hardest training questions, and rewarding a hallucination makes the model less likely to abstain from it later (by 7.23% on average). Overall, our work identifies and systematically studies a previously unexamined pathway through which models learn hallucinations during training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26863",
+        "external_id": "2611.26863"
+      }
+    ],
+    "actors": [
+      "Anirudh Atmakuru",
+      "Tanya Goyal"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283843Z",
+    "dedup_keys": [
+      "arxiv:2611.26863",
+      "title:during hallucinations llms memorize own post their training"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "f05fb1106b3b19e7",
+    "kind": "paper",
+    "title": "MedicalRSI: Medical Recursive Self-Improving Agents via Clinical Model-Harness Co-Evolution",
+    "summary_en": "Medical agents built on large language models (LLMs) have advanced rapidly, yet most stay fixed once deployed and do not keep using their experience to improve later attempts. As a result, the same kind of error can recur across patients. To address this, existing self-improvement methods update an agent's weights or its medical harness from its own experience, but their improving strategy stays fixed and never learns which changes actually help, which caps how much the agent can improve. Recursive self-improvement (RSI) instead improves both the agent and its improving strategy. However, achieving RSI for medical agents is challenging, because clinical workflows rarely come with a reference harness, and a change that fixes early errors may not fix the problems the agent meets later. We propose MedicalRSI, an RSI framework built on Clinical Model-Harness Co-Evolution, in which one model plays two roles. The Solver is the medical agent itself, and the Improver is its learnable improving strategy, which writes a medical harness from the agent's failures. Each harness is rewarded by its gain over acting without it, and both roles are trained together, so the Improver keeps adapting to the problems the Solver has not yet solved. On multiple benchmarks and LLM backbones, MedicalRSI outperforms existing context-level and weight-level self-improvement methods and transfers well to unseen workflows, new LLMs and new databases, a step toward medical agents that keep improving.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26806",
+        "external_id": "2611.26806"
+      }
+    ],
+    "actors": [
+      "Ziqing Wang",
+      "Hamid Palangi",
+      "Lili Zhao",
+      "Kaize Ding"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283466Z",
+    "dedup_keys": [
+      "arxiv:2611.26806",
+      "title:agents clinical evolution harness improving medical medicalrsi model recursive self via"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "f7b4db6b43a07e8f",
+    "kind": "paper",
+    "title": "Neural Geometry as a Learning Signal",
+    "summary_en": "We investigate whether the geometric structure of neural representations can provide a sufficient learning signal for improving model behavior without any supervision on model outputs. First, we fine-tune Llama-3.1-8B to answer questions such as \"What month is four months after June?\" by supervising internal representations of the input month (June = 6) and offset (4), which are encoded with Fourier harmonics. Second, we fine-tune the model to predict line breaks in text wrapped to a fixed width by supervising an internal representation of the number of characters since the preceding newline, which is represented by a low-dimensional helical structure. In both tasks, we supervise a low-dimensional subspace of the residual stream using an idealized target structure, and find that internal geometric supervision achieves similar performance to standard fine-tuning (despite no supervision on outputs). Moreover, we find that simply patching in an ideal geometry is not sufficient to recover fine-tuning performance, and thus demonstrate geometric supervision provides beneficial effects beyond the representations it targets. Together, these findings show how mechanistic understanding of neural geometry can be leveraged to shape the behavior of neural networks.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26832",
+        "external_id": "2611.26832"
+      }
+    ],
+    "actors": [
+      "Eric Todd",
+      "Tal Haklay",
+      "Nikhil Prakash",
+      "Matthew Finlayson",
+      "Michael Hanna",
+      "Fenil R. Doshi",
+      "Daniel Wurgaft",
+      "Thomas McGrath",
+      "Owen Lewis",
+      "David Bau",
+      "Jack Merullo",
+      "Ekdeep Singh Lubana",
+      "Matthew Kowal",
+      "Thomas Fel",
+      "Atticus Geiger"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283571Z",
+    "dedup_keys": [
+      "arxiv:2611.26832",
+      "title:geometry learning neural signal"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "43512f5b2c0f833f",
+    "kind": "paper",
+    "title": "Non-Expanding Gated Continued Fraction Architecture for Feedforward Layers in Language Models",
+    "summary_en": "Recent work has shown that continued fraction inspired neural architectures (CoFrGeNets) can be highly parameter efficient yet performant for language modeling. In this work, we revisit continued fraction-based channel mixing with the goal of improving its performance and simplifying integration into standard pre-training protocols for language models. We achieve this by two simple yet critical contributions: i) we propose a novel non-expanding gated continued fraction inspired architectural component to replace feedforward layers in established language model architectures that may use vanilla multilayer perceptrons or gated linear units or (vanilla/gated) experts in mixture-of-experts (MoE) type architectures. ii) We propose a way to re-implement divisions -- the non-linearity in these architectures -- in terms of logarithms and exponentials. By experimenting on different language modeling architectures such as GPT-2, Llama-3, Mamba-2 and (nano) Llama-MoE we find that our proposed architecture performs similarly or significantly better than the continued fraction architecture proposed in prior work along with having higher throughput. In addition, our re-implementation of divisions makes training of deeper CoFrGeNets stable without the need for incremental training which was proposed in prior work as a means to stabilize training, but added notable complexity to existing large language model training implementations. Code is available at http://github.com/IBM/CoFrNets",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "cv",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26835",
+        "external_id": "2611.26835"
+      }
+    ],
+    "actors": [
+      "Amit Dhurandhar",
+      "Vijil Chenthamarakshan",
+      "Karthikeyan Natesan Ramamurthy",
+      "Dennis Wei",
+      "Rahul Nair"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283685Z",
+    "dedup_keys": [
+      "arxiv:2611.26835",
+      "title:architecture continued expanding feedforward for fraction gated language layers models non"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "f29568d7cf24ab86",
+    "kind": "paper",
+    "title": "Reinforcement Learning Unlearns Corrupted SFT Reasoning",
+    "summary_en": "We show that reinforcement learning (RL) in reasoning tasks can succeed even when the supervised fine-tuning (SFT) data is severely corrupted. In a mathematical reasoning dataset (GSM8K), we systematically corrupt training trajectories across 361 configurations by injecting realistic error types, varying error locations, trace-answer consistency, and corruption ratios up to 100%. While aggregated SFT-only performance steadily deteriorates under corruption (dropping from 43.61% to 13.80%), Group Relative Policy Optimization (GRPO) post-training consistently restores model accuracy back to gold-baseline levels (approximately 60%). Crucially, initializing RL with as few as N = 8 minimal, incorrect, three-line \"form-only\" traces boosts post-RL performance to 69.30%, outperforming standard gold SFT initialization (60.71%) and GRPO without SFT (35.00%). Further, we show that SFT accuracy is largely uncorrelated with post-RL accuracy (r approximately 0), demonstrating a fundamental asymmetry in post-training: SFT primarily establishes structural layout (form), while RL independently discovers functional reasoning (function).",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26756",
+        "external_id": "2611.26756"
+      }
+    ],
+    "actors": [
+      "Anika Misra",
+      "Shreyas Vinod",
+      "Huteng Dai"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283262Z",
+    "dedup_keys": [
+      "arxiv:2611.26756",
+      "title:corrupted learning reasoning reinforcement sft unlearns"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "e75fa7cef6231b31",
+    "kind": "paper",
+    "title": "Rethinking Full-Weight LoRA with Domain and Task Adapter Scaling for Question Answering over Portuguese Well Drilling Reports",
+    "summary_en": "Adapting large language models (LLMs) to specialized domains remains challenging, particularly for technical documents such as Portuguese well drilling reports, where annotated data are scarce and domain adaptation may compromise instruction-following capabilities. Although Low-Rank Adaptation (LoRA) is widely used for parameter-efficient adaptation, its scaling after training remains insufficiently explored. This study investigates the impact of LoRA adapter scaling on question answering over Portuguese drilling reports using Qwen2.5-7B and Llama-3.1-8B. Domain-adaptive pretraining (DAPT) is performed either directly on instruction-tuned models or on their base counterparts, with subsequent adapter transfer, while task-specific adapters are trained on WellQuest, an open-source question-answering dataset derived from Portuguese drilling reports. The two adapters are also combined using complementary weights. Scaling factors ranging from 0.1 to 1.0 are evaluated across multiple training checkpoints using BERTScore. Results show that fractional scaling consistently improves DAPT performance over full-weight application, increasing F1 from 68.8\\% to 71.9\\% for Qwen2.5-7B and from 63.2\\% to 68.5\\% for Llama-3.1-8B. QA adapters perform best at high but fractional weights, while base-to-instruct transfer yields better results than direct DAPT on instruct-tuned models. Adapter merging provides a modest improvement for Llama-3.1-8B. Overall, these findings demonstrate that post-training adapter scaling can improve domain adaptation without additional data or training.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26833",
+        "external_id": "2611.26833"
+      }
+    ],
+    "actors": [
+      "Luan B. Guerra",
+      "Diogo M. Paes",
+      "Marcelo N. Grimberg",
+      "Arnaldo C. Junior",
+      "Wallace Casaca",
+      "Lucas C. Ribas"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283629Z",
+    "dedup_keys": [
+      "arxiv:2611.26833",
+      "title:adapter and answering domain drilling for full lora over portuguese question reports rethinking scaling task weight well with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "80e56bb4ce2f9cc8",
+    "kind": "paper",
+    "title": "Search From the Start: Search-Native Pretraining for Language Models",
+    "summary_en": "Modern language models (LMs) are increasingly deployed with access to search tools at inference. Yet pretraining remains predominantly focused on predicting static text, with search capabilities typically introduced during post-training. We propose Search-Native Pretraining as a practical route to teach search capability during pretraining from ordinary text corpora. Specifically, we augment pretraining corpus at scale with web-search queries and retrieve web response using a local index. Training on this augmented corpus teaches models to generate search calls and incorporate retrieved evidence during language modeling. Across Wikipedia and DCLM-Edu corpora and 360M to 3.3B parameter scales, search-pretrained models (\"QueryLM\") show improved performance on knowledge-intensive tasks and higher steerability toward the retrieved evidence. Crucially, their advantage persists after supervised fine-tuning of both search-pretrained and conventionally pretrained models, indicating that the tested post-training procedures do not fully recover the capabilities developed during pretraining. Throughout our experiments, we find that a 1.4B QueryLM consistently beats or matches the performance of a FLOP-matched 3.3B baseline model across all knowledge intensive tasks. These results establish search-pretraining as a practical way to develop foundational search capabilities during pretraining. We release the training artifacts, including model checkpoints and data.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26809",
+        "external_id": "2611.26809"
+      }
+    ],
+    "actors": [
+      "Kaustubh Ponkshe",
+      "Gyung Hyun Je",
+      "Stefan Taga",
+      "Colin Raffel",
+      "Martin Jaggi"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283519Z",
+    "dedup_keys": [
+      "arxiv:2611.26809",
+      "title:for from language models native pretraining search search start the"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "e2175fb85e17541d",
+    "kind": "paper",
+    "title": "SkillPrivus: Uncovering PRIVacy of USe Harms in Agentic Skills",
+    "summary_en": "Agent skills extend AI assistants through installable instructions and code that can access users' files, accounts, and data. Even when performing their advertised tasks, skills may infer sensitive attributes, retain unnecessary information, or disclose data to unexpected recipients. We study these potential privacy-of-use harms through SkillPrivus, a static audit framework that analyzes skills before installation without executing them. SkillPrivus extracts data operations from code and natural-language instructions, grounds them in source evidence, and adapts Contextual Integrity to assess their appropriateness. Applied to 726 real skills from public marketplaces, 563 of which handle personal data, SkillPrivus flags at least one potential violation in 307 of these skills (54.5%), and its judgments agree with three blind human annotators on 83.2% of resolvable moves. The flagged behaviors include sensitive inferences, information use beyond the stated task, and disclosures to unexpected recipients, suggesting that privacy harms can arise from ordinary skill functionality.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26747",
+        "external_id": "2611.26747"
+      }
+    ],
+    "actors": [
+      "Mariana Fernandez-Espinosa",
+      "Ivoline Ngong",
+      "Keerthiram Murugesan",
+      "Karthikeyan Natesan Ramamurthy"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283191Z",
+    "dedup_keys": [
+      "arxiv:2611.26747",
+      "title:agentic harms privacy skillprivus skills uncovering use"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "dfe5776f40953f1d",
+    "kind": "paper",
+    "title": "Weight-Space Programming Writes In-Context Learning and Matches Fine-Tuning in Language Models",
+    "summary_en": "Weight-space programming is a frontier language model's recently reported ability to read and rewrite another network's weights without gradient descent. We investigate how examples can provide a weight update so that a weaker language model performs the task with nothing in the prompt, and study what it edits. Our experiments cover six tasks, four frontier editors and three families of weaker language models, without the editors being told anything about in-context learning (ICL). In most runs, the few-shot minus zero-shot residual is measured at the final prompt token, the ICL task vector, and write it into the weights, at its sparsest into near-silent MLP units keyed to the prompt format. Results reach the accuracy of ICL and of fine-tuning on the same examples, LoRA included, usually leaving perplexity untouched, with worse performance under changes of wording. We also qualify the comparison by counting unfinished runs, observing that one editor falls below fine-tuning; held only to the seen examples, without task pairs of their own, only the strongest editor has similar performance. Given a task and unlabelled inputs, that editor writes its own examples and does nearly as well on unseen items as with labels.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26841",
+        "external_id": "2611.26841"
+      }
+    ],
+    "actors": [
+      "Konstantinos Skianis",
+      "Aristidis Likas"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283785Z",
+    "dedup_keys": [
+      "arxiv:2611.26841",
+      "title:and context fine language learning matches models programming space tuning weight writes"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  },
+  {
+    "id": "a56772aec5555f1f",
+    "kind": "paper",
+    "title": "What Helps Language-Model Agents Review Violent Video? A Controlled Comparison with a Human Evidence Reference",
+    "summary_en": "Systems that flag violent video for a human operator can now be built from language models without training, by combining perception models and letting a language model decide. We ask how the observations of the perception models should reach the decision, and which evidence matters. On the XD-Violence test set (799 clips) we fix one set of perception agents (video description, object detection, sound tagging, speech recognition and speech tagging) and one reasoning model, and compare three interfaces: messages between agents, a typed evidence graph explored with tools, and flat text read in one pass; and a single audio-visual model given the raw clip. Two annotators provide a human reference that records the decision, the incident segments and whether they relied on sight, sound or speech. Flat text matches the single model (F1 0.967 against 0.968), while the graph agent and message passing are less accurate; a variant of the graph agent developed on a separate set did not close the gap, and both graph summaries and multi-turn tool use lowered accuracy. These results hold with reworded prompts and with a larger reasoning model, except that the larger model weakens message passing enough for the graph agent to beat it. Sound events improve F1 by +0.012 [+0.004, +0.021], in line with the annotators, who used sound or speech on most violent clips. Citations of stored observations are faithful, changing about half of the decisions when removed, but no more so with the graph than with flat text, and the agent pipeline costs about 3 times the GPU time of the single model. We also report two artefacts of vision-language describers that mislead pipelines built on them.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "speech"
+    ],
+    "links": [
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.26776",
+        "external_id": "2611.26776"
+      }
+    ],
+    "actors": [
+      "Mohammed El Amine Mokhtari",
+      "Matei Mancas",
+      "Virginie Vandenbulcke"
+    ],
+    "published_at": "2026-11-23T05:00:00Z",
+    "first_seen_at": "2026-11-23T08:22:45.283407Z",
+    "dedup_keys": [
+      "arxiv:2611.26776",
+      "title:agents comparison controlled evidence helps human language model reference review video violent what with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 3.789,
+    "score_breakdown": {
+      "topic_match": 4.0,
+      "age_decay": -0.211
+    }
+  }
+]
