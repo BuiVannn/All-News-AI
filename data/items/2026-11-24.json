@@ -20,15 +20,15 @@
       "inclusionAI"
     ],
     "published_at": "2026-11-23T03:55:12Z",
-    "first_seen_at": "2026-11-24T10:31:11.236502Z",
+    "first_seen_at": "2026-11-24T22:49:03.367206Z",
     "dedup_keys": [
       "hf:inclusionai/ling-3.2-air"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 141,
+      "hf_likes": 178,
       "hf_downloads": 733,
-      "hf_trending_score": 129.0,
+      "hf_trending_score": 153.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -38,13 +38,140 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 59.356,
+    "score": 60.3,
     "score_breakdown": {
-      "hf_trending": 29.205,
+      "hf_trending": 30.222,
       "hf_downloads": 13.197,
-      "hf_likes": 14.867,
+      "hf_likes": 15.562,
       "has_weights": 4.0,
-      "age_decay": -1.913
+      "age_decay": -2.681
+    }
+  },
+  {
+    "id": "cc528cadb49af71a",
+    "kind": "model",
+    "title": "baidu/ERNIE-5.5-Flash-Preview",
+    "summary_en": "text-generation, transformers, ernie5_5_moe, ERNIE5.5, MoE, agent, en",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+        "external_id": "baidu/ERNIE-5.5-Flash-Preview"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+        "external_id": "baidu/ERNIE-5.5-Flash-Base"
+      }
+    ],
+    "actors": [
+      "baidu"
+    ],
+    "published_at": "2026-11-23T09:00:29Z",
+    "first_seen_at": "2026-11-24T22:49:03.367348Z",
+    "dedup_keys": [
+      "hf:baidu/ernie-5.5-flash-preview"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 252,
+      "hf_downloads": 75,
+      "hf_trending_score": 83.5,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 57.519,
+    "score_breakdown": {
+      "hf_trending": 26.621,
+      "hf_downloads": 8.661,
+      "hf_likes": 16.6,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -2.363
+    }
+  },
+  {
+    "id": "cb731b9c2e25aaa7",
+    "kind": "paper",
+    "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+    "summary_en": "Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods generate motion incrementally, but bounded attention caches limit access to distant history, while repeated denoising introduces substantial inference overhead. We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation. PCM transforms compressed motion history from Mamba recurrent states, together with state changes and text-conditioned features, into dynamically updated content slots accessible to local attention. To enable efficient inference, we further develop an execution scheme tailored to this architecture, combining CUDA Graph replay, fused kernels, and execution-flow simplification while preserving the canonical history update. Evaluations on retargeted HiPHI demonstrate accurate terminal control over rollouts of up to 39.52 s, while short-horizon comparisons on BONES Seed and retargeted HumanML3D show that the model also retains strong spatial control and text-motion matching. On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138times while preserving identical outputs and committed states in the tested rollouts. Moreover, we conduct extensive real-world evaluation on the Unitree G1, demonstrating sequential text-guided action composition, expressive motion, and interactive locomotion through keyboard and mouse control.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "robotics",
+      "eval",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.29897",
+        "external_id": "2611.29897"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.29897",
+        "external_id": "2611.29897"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AIGeeksGroup/MotionMamba2.0",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yue Huang",
+      "Tianshan Zhang",
+      "Zeyu Zhang",
+      "Jayeon Kang",
+      "Akide Liu",
+      "Sungjoon Choi",
+      "Dacheng Tao",
+      "Hao Tang"
+    ],
+    "published_at": "2026-11-23T00:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.736264Z",
+    "dedup_keys": [
+      "arxiv:2611.29897",
+      "title:autoregressive control diffusion for horizon humanoid long mamba mamba motion",
+      "github:aigeeksgroup/motionmamba2.0"
+    ],
+    "signals": {
+      "hf_upvotes": 171,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 23,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 56.61,
+    "score_breakdown": {
+      "hf_upvotes": 41.18,
+      "github_stars": 6.356,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.926
     }
   },
   {
@@ -103,19 +230,19 @@
       "Wentao Zhang"
     ],
     "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261072Z",
+    "first_seen_at": "2026-11-24T22:49:03.736384Z",
     "dedup_keys": [
       "arxiv:2611.30013",
       "title:3agamefactory agentic and assets complex diverse for generation motion motion reliable rigging",
       "github:opendcai/gamefactory-3a"
     ],
     "signals": {
-      "hf_upvotes": 44,
+      "hf_upvotes": 57,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 1352,
+      "github_stars": 1377,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -123,52 +250,46 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 54.715,
+    "score": 56.015,
     "score_breakdown": {
-      "hf_upvotes": 30.453,
-      "github_stars": 14.42,
+      "hf_upvotes": 32.484,
+      "github_stars": 14.457,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.158
+      "age_decay": -2.926
     }
   },
   {
-    "id": "cc528cadb49af71a",
+    "id": "ad68ffbab6170e9b",
     "kind": "model",
-    "title": "baidu/ERNIE-5.5-Flash-Preview",
-    "summary_en": "text-generation, transformers, ernie5_5_moe, ERNIE5.5, MoE, agent, en",
+    "title": "Aleph-Alpha/Kolibri-1.1",
+    "summary_en": "text-generation, vllm, kolibri1_1, reasoning, moe, conversational",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "agent"
+      "llm"
     ],
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
-        "external_id": "baidu/ERNIE-5.5-Flash-Preview"
-      },
-      {
-        "source": "hf_base_model:finetune",
-        "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
-        "external_id": "baidu/ERNIE-5.5-Flash-Base"
+        "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+        "external_id": "Aleph-Alpha/Kolibri-1.1"
       }
     ],
     "actors": [
-      "baidu"
+      "Aleph-Alpha"
     ],
-    "published_at": "2026-11-23T09:00:29Z",
-    "first_seen_at": "2026-11-24T10:31:11.236835Z",
+    "published_at": "2026-11-20T09:01:10Z",
+    "first_seen_at": "2026-11-24T22:49:03.367293Z",
     "dedup_keys": [
-      "hf:baidu/ernie-5.5-flash-preview"
+      "hf:aleph-alpha/kolibri-1.1"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 171,
-      "hf_downloads": 75,
-      "hf_trending_score": 53.5,
+      "hf_likes": 111,
+      "hf_downloads": 272,
+      "hf_trending_score": 94.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -178,14 +299,14 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 54.497,
+    "score": 53.834,
     "score_breakdown": {
-      "hf_trending": 23.989,
-      "hf_downloads": 8.661,
-      "hf_likes": 15.442,
+      "hf_trending": 27.323,
+      "hf_downloads": 11.219,
+      "hf_likes": 14.155,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -1.595
+      "age_decay": -6.863
     }
   },
   {
@@ -214,15 +335,15 @@
       "MemTensor"
     ],
     "published_at": "2026-11-20T13:14:57Z",
-    "first_seen_at": "2026-11-24T10:31:11.236668Z",
+    "first_seen_at": "2026-11-24T22:49:03.367366Z",
     "dedup_keys": [
       "hf:memtensor/memt-1.0-pro"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 81,
+      "hf_likes": 97,
       "hf_downloads": 397,
-      "hf_trending_score": 73.0,
+      "hf_trending_score": 83.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -232,135 +353,14 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 53.187,
+    "score": 53.715,
     "score_breakdown": {
-      "hf_trending": 25.824,
+      "hf_trending": 26.585,
       "hf_downloads": 11.973,
-      "hf_likes": 13.22,
+      "hf_likes": 13.755,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -5.83
-    }
-  },
-  {
-    "id": "ad68ffbab6170e9b",
-    "kind": "model",
-    "title": "Aleph-Alpha/Kolibri-1.1",
-    "summary_en": "text-generation, vllm, kolibri1_1, reasoning, moe, conversational",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "hf_models",
-        "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
-        "external_id": "Aleph-Alpha/Kolibri-1.1"
-      }
-    ],
-    "actors": [
-      "Aleph-Alpha"
-    ],
-    "published_at": "2026-11-20T09:01:10Z",
-    "first_seen_at": "2026-11-24T10:31:11.236764Z",
-    "dedup_keys": [
-      "hf:aleph-alpha/kolibri-1.1"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 63,
-      "hf_downloads": 272,
-      "hf_trending_score": 62.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": true
-    },
-    "score": 50.461,
-    "score_breakdown": {
-      "hf_trending": 24.859,
-      "hf_downloads": 11.219,
-      "hf_likes": 12.477,
-      "has_weights": 4.0,
-      "topic_match": 4.0,
-      "age_decay": -6.094
-    }
-  },
-  {
-    "id": "cb731b9c2e25aaa7",
-    "kind": "paper",
-    "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
-    "summary_en": "Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods generate motion incrementally, but bounded attention caches limit access to distant history, while repeated denoising introduces substantial inference overhead. We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation. PCM transforms compressed motion history from Mamba recurrent states, together with state changes and text-conditioned features, into dynamically updated content slots accessible to local attention. To enable efficient inference, we further develop an execution scheme tailored to this architecture, combining CUDA Graph replay, fused kernels, and execution-flow simplification while preserving the canonical history update. Evaluations on retargeted HiPHI demonstrate accurate terminal control over rollouts of up to 39.52 s, while short-horizon comparisons on BONES Seed and retargeted HumanML3D show that the model also retains strong spatial control and text-motion matching. On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138times while preserving identical outputs and committed states in the tested rollouts. Moreover, we conduct extensive real-world evaluation on the Unitree G1, demonstrating sequential text-guided action composition, expressive motion, and interactive locomotion through keyboard and mouse control.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent",
-      "cv",
-      "robotics",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.29897",
-        "external_id": "2611.29897"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.29897",
-        "external_id": "2611.29897"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/AIGeeksGroup/MotionMamba2.0",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Yue Huang",
-      "Tianshan Zhang",
-      "Zeyu Zhang",
-      "Jayeon Kang",
-      "Akide Liu",
-      "Sungjoon Choi",
-      "Dacheng Tao",
-      "Hao Tang"
-    ],
-    "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.260975Z",
-    "dedup_keys": [
-      "arxiv:2611.29897",
-      "title:autoregressive control diffusion for horizon humanoid long mamba mamba motion",
-      "github:aigeeksgroup/motionmamba2.0"
-    ],
-    "signals": {
-      "hf_upvotes": 111,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 3,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 50.363,
-    "score_breakdown": {
-      "hf_upvotes": 37.748,
-      "github_stars": 2.773,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.158
+      "age_decay": -6.598
     }
   },
   {
@@ -411,19 +411,19 @@
       "Chen Change Loy"
     ],
     "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261024Z",
+    "first_seen_at": "2026-11-24T22:49:03.736323Z",
     "dedup_keys": [
       "arxiv:2611.31201",
       "title:embo frontier harness harness model policy towards understanding",
       "github:dravenalg/embo-harness"
     ],
     "signals": {
-      "hf_upvotes": 76,
+      "hf_upvotes": 90,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 7,
+      "github_stars": 59,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -431,14 +431,132 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 48.751,
+    "score": 53.35,
     "score_breakdown": {
-      "hf_upvotes": 34.75,
-      "github_stars": 4.159,
+      "hf_upvotes": 36.087,
+      "github_stars": 8.189,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.158
+      "age_decay": -2.926
+    }
+  },
+  {
+    "id": "4e18a2f70b050c41",
+    "kind": "paper",
+    "title": "WorldLeague: Benchmarking Physical Agency",
+    "summary_en": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's Physical Agency Profile. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "multimodal",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.30989",
+        "external_id": "2611.30989"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.30989",
+        "external_id": "2611.30989"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/xyangzhou/WorldLeague",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Xinyang Zhou",
+      "Qi Li",
+      "Xinchao Wang"
+    ],
+    "published_at": "2026-11-23T00:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.736355Z",
+    "dedup_keys": [
+      "arxiv:2611.30989",
+      "title:agency benchmarking physical worldleague",
+      "github:xyangzhou/worldleague"
+    ],
+    "signals": {
+      "hf_upvotes": 75,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 18,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 49.609,
+    "score_breakdown": {
+      "hf_upvotes": 34.646,
+      "github_stars": 5.889,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.926
+    }
+  },
+  {
+    "id": "ce684c3a33d5a0d9",
+    "kind": "model",
+    "title": "jesdga/Inkling-2-Mini-Basalt",
+    "summary_en": "basalt, moe",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/jesdga/Inkling-2-Mini-Basalt",
+        "external_id": "jesdga/Inkling-2-Mini-Basalt"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+        "external_id": "thinkingmachines/Inkling-2-Mini"
+      }
+    ],
+    "actors": [
+      "jesdga"
+    ],
+    "published_at": "2026-11-21T13:30:28Z",
+    "first_seen_at": "2026-11-24T22:49:03.367793Z",
+    "dedup_keys": [
+      "hf:jesdga/inkling-2-mini-basalt"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 35,
+      "hf_downloads": 84359,
+      "hf_trending_score": 33.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 49.513,
+    "score_breakdown": {
+      "hf_trending": 21.158,
+      "hf_downloads": 22.686,
+      "hf_likes": 10.751,
+      "age_decay": -5.082
     }
   },
   {
@@ -482,19 +600,19 @@
       "Jing Lyu"
     ],
     "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261050Z",
+    "first_seen_at": "2026-11-24T22:49:03.736433Z",
     "dedup_keys": [
       "arxiv:2611.30662",
       "title:advancing commerce content ecom for multimodal understanding wechat wemm",
       "github:tencent/wemm-ecom"
     ],
     "signals": {
-      "hf_upvotes": 47,
+      "hf_upvotes": 52,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 22,
+      "github_stars": 34,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -502,14 +620,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 47.083,
+    "score": 47.947,
     "score_breakdown": {
-      "hf_upvotes": 30.97,
-      "github_stars": 6.271,
+      "hf_upvotes": 31.762,
+      "github_stars": 7.111,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.158
+      "age_decay": -2.926
     }
   },
   {
@@ -540,15 +658,15 @@
       "baselabs"
     ],
     "published_at": "2026-11-20T04:49:38Z",
-    "first_seen_at": "2026-11-24T10:31:11.237104Z",
+    "first_seen_at": "2026-11-24T22:49:03.367778Z",
     "dedup_keys": [
       "hf:baselabs/bison-1"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 36,
+      "hf_likes": 37,
       "hf_downloads": 462,
-      "hf_trending_score": 32.0,
+      "hf_trending_score": 33.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -558,21 +676,21 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 45.731,
+    "score": 45.221,
     "score_breakdown": {
-      "hf_trending": 20.979,
+      "hf_trending": 21.158,
       "hf_downloads": 12.275,
-      "hf_likes": 10.833,
+      "hf_likes": 10.913,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -6.356
+      "age_decay": -7.125
     }
   },
   {
-    "id": "4e18a2f70b050c41",
+    "id": "6ba35e3b4bb333e6",
     "kind": "paper",
-    "title": "WorldLeague: Benchmarking Physical Agency",
-    "summary_en": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's Physical Agency Profile. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
+    "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+    "summary_en": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a small library of hand-crafted search and visual tools. However, the library is laborious to create and maintain, and frozen when new query types, evidence formats, and failure modes are encountered in the wild. Human practitioners, by contrast, cope with insufficient tools by fashioning new ones from familiar parts and reusing them across tasks. Inspired by this, we propose ToolSmith, an automatic tool-generation framework that grows and reuses modules on top of a lean base tool library. We evaluate ToolSmith on three in-domain multimodal search benchmarks and ten out-of-domain benchmarks under a VLM-as-a-Judge protocol. ToolSmith consistently improves over the base library across deployed agents of varying scales, with larger backbones reaping greater gains, demonstrating the scalability of the approach. Our code and data are available at https://threesr.github.io/toolsmith/.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -580,45 +698,46 @@
       "agent",
       "multimodal",
       "cv",
-      "robotics",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.30989",
-        "external_id": "2611.30989"
+        "url": "https://huggingface.co/papers/2611.31198",
+        "external_id": "2611.31198"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.30989",
-        "external_id": "2611.30989"
+        "url": "https://arxiv.org/abs/2611.31198",
+        "external_id": "2611.31198"
       },
       {
         "source": "github",
-        "url": "https://github.com/xyangzhou/WorldLeague",
+        "url": "https://github.com/uclanlp/OpenVLHarness",
         "external_id": null
       }
     ],
     "actors": [
-      "Xinyang Zhou",
-      "Qi Li",
-      "Xinchao Wang"
+      "Rui Sun",
+      "Junhua Huang",
+      "Luca Zancato",
+      "Md Mofijul Islam",
+      "Kai-Wei Chang"
     ],
     "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261090Z",
+    "first_seen_at": "2026-11-24T22:49:03.737172Z",
     "dedup_keys": [
-      "arxiv:2611.30989",
-      "title:agency benchmarking physical worldleague",
-      "github:xyangzhou/worldleague"
+      "arxiv:2611.31198",
+      "title:agents automatic for framework generation multimodal search tool toolsmith",
+      "github:uclanlp/openvlharness"
     ],
     "signals": {
-      "hf_upvotes": 31,
+      "hf_upvotes": 9,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 5,
+      "github_stars": 579,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -626,81 +745,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 41.152,
+    "score": 40.221,
     "score_breakdown": {
-      "hf_upvotes": 27.726,
-      "github_stars": 3.584,
+      "hf_upvotes": 18.421,
+      "github_stars": 12.726,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.158
-    }
-  },
-  {
-    "id": "2dffb3ba15da64d1",
-    "kind": "paper",
-    "title": "Plan4D: Generative Plannable 4D Worlds",
-    "summary_en": "Most world models for future prediction prioritize aestetic quality of generated videos, but offer only weak physical grounding and limited geometric consistency over time, due to the lack of explicit 4D modeling. In this paper, we introduce plan4d, a possible next milestone towards building a generative plannable 4D world model that predicts future RGB videos together with dense 4D geometry, including depth, cameras, point clouds, and scene flow from an observed scene context and text-specified actions. Since training data with paired actions and dense 4D annotations is inherently scarce, plan4d leverages the complementary priors of foundational video generators and 3D reconstructors. Specifically, we propose a model-stitching architecture that couples Depth Anything 3 with LongCat-Video and augments it with an auxiliary DPT head for scene-flow prediction. The resulting model allows us to plan and generate complex, long-horizon, and fine-grained actions in a dynamic 3D scenes, while substantially improving both visual fidelity and geometric accuracy of the generated future videos. Extensive experiments on both synthetic and real-world datasets demonstrate that plan4d achieves state-of-the-art performance in generative 4D modeling of environmental reactions. Project Page: https://fogradio.github.io/plan4d-project",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.26516",
-        "external_id": "2611.26516"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.26516",
-        "external_id": "2611.26516"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/AMAP-ML/plan4d",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Hangwei Zhang",
-      "Rujing Dang",
-      "Ruimin Lin",
-      "Jiahong Wu",
-      "Xiangxiang Chu",
-      "Chuanxia Zheng"
-    ],
-    "published_at": "2026-11-19T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261165Z",
-    "dedup_keys": [
-      "arxiv:2611.26516",
-      "title:generative plan4d plannable worlds",
-      "github:amap-ml/plan4d"
-    ],
-    "signals": {
-      "hf_upvotes": 27,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 11,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 35.47,
-    "score_breakdown": {
-      "hf_upvotes": 26.658,
-      "github_stars": 4.97,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -8.158
+      "age_decay": -2.926
     }
   },
   {
@@ -746,34 +798,82 @@
       "Mike Zheng Shou"
     ],
     "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261207Z",
+    "first_seen_at": "2026-11-24T22:49:03.736592Z",
     "dedup_keys": [
       "arxiv:2611.31115",
       "title:good interface makes robot ruibench use what",
       "github:showlab/ruibench"
     ],
     "signals": {
-      "hf_upvotes": 17,
+      "hf_upvotes": 22,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 17,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 2,
       "has_code": true,
       "has_weights": false
     },
-    "score": 35.162,
+    "score": 39.939,
     "score_breakdown": {
-      "hf_upvotes": 23.123,
-      "github_stars": 2.197,
+      "hf_upvotes": 25.084,
+      "github_stars": 5.781,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.158
+      "age_decay": -2.926
+    }
+  },
+  {
+    "id": "83ec33c0babdb886",
+    "kind": "model",
+    "title": "KRAFTON/Raon-1-mini",
+    "summary_en": "text-generation, transformers, raon1_mini, raon, conversational, custom_code, mxfp8",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/KRAFTON/Raon-1-mini",
+        "external_id": "KRAFTON/Raon-1-mini"
+      }
+    ],
+    "actors": [
+      "KRAFTON"
+    ],
+    "published_at": "2026-11-24T13:17:11Z",
+    "first_seen_at": "2026-11-24T22:49:03.367807Z",
+    "dedup_keys": [
+      "hf:krafton/raon-1-mini"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 33,
+      "hf_downloads": 0,
+      "hf_trending_score": 33.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 39.141,
+    "score_breakdown": {
+      "hf_trending": 21.158,
+      "hf_likes": 10.579,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -0.596
     }
   },
   {
@@ -818,194 +918,19 @@
       "Xingang Pan"
     ],
     "published_at": "2026-11-19T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261112Z",
+    "first_seen_at": "2026-11-24T22:49:03.736483Z",
     "dedup_keys": [
       "arxiv:2611.26389",
       "title:and diffusion models plan reason step step teaching videcide video",
       "github:kevin-thu/videcide"
     ],
     "signals": {
-      "hf_upvotes": 29,
+      "hf_upvotes": 36,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 5,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 34.636,
-    "score_breakdown": {
-      "hf_upvotes": 27.21,
-      "github_stars": 3.584,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -8.158
-    }
-  },
-  {
-    "id": "92217dbe10bc8bd8",
-    "kind": "release",
-    "title": "Supercharging transformer residual connections",
-    "summary_en": "Algorithms & Theory",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm"
-    ],
-    "links": [
-      {
-        "source": "google_research",
-        "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "google_research"
-    ],
-    "published_at": "2026-11-23T17:21:12Z",
-    "first_seen_at": "2026-11-24T10:31:12.734624Z",
-    "dedup_keys": [
-      "url:research.google/blog/supercharging-transformer-residual-connections",
-      "title:connections residual supercharging transformer"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.927,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.073
-    }
-  },
-  {
-    "id": "b56ffd0639ecac2c",
-    "kind": "release",
-    "title": "Finding faster quantum algorithms with agents and formal verification",
-    "summary_en": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "deepmind",
-        "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "deepmind"
-    ],
-    "published_at": "2026-11-23T16:59:40Z",
-    "first_seen_at": "2026-11-24T10:31:11.989620Z",
-    "dedup_keys": [
-      "url:deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
-      "title:agents algorithms and faster finding formal quantum verification with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.905,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.095
-    }
-  },
-  {
-    "id": "0dc8aeb5e6b808e9",
-    "kind": "paper",
-    "title": "HIVE-Bench: Evaluating Patch-Level Visual Representations for Egocentric Robot Manipulation",
-    "summary_en": "Pretrained vision is a common start for robot learning, but most comparisons still score one pooled vector from a third-person image. Bimanual policies instead read dense patch tokens from cameras on the robot. We introduce HIVE-Bench: one shared flow-matching policy reads 20 encoders from seven families on 24 egocentric bimanual tasks, across adaptation, task sharing, and sweeps of data, model size, and layer. Keeping the patches matters. Averaging each view to one token removes most of the success, adaptation helps every pair we test, and one shared policy keeps most of the success of separate policies at a fraction of the updates. The same tokens are then scored with statistics, state and object readouts, published vision scores, and an inverse-dynamics readout. That readout of the commanded motion is one of the strongest measurements available before a policy is trained. Recognition, depth, and correspondence do not transfer reliably. Fine-tuning can improve the action readout even when other measurements move the other way, and no statistic is stable enough to replace a rollout before any deployment.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv",
-      "robotics",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.30813",
-        "external_id": "2611.30813"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.30813",
-        "external_id": "2611.30813"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/KolaKivy/HIVE-Bench",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Qiwei Liang",
-      "Zhengtu Liang",
-      "Minghao Lai",
-      "Yikeng Chen",
-      "Yiming Wang",
-      "Boyang Cai",
-      "Yuetong Fang",
-      "Taowen Wang",
-      "Baiqiao Yin",
-      "Tianxing Chen",
-      "Yue Chen",
-      "Jiaming Liang",
-      "Guangyu Chen",
-      "Shaolong Zhu",
-      "Daolin Ma",
-      "Renjing Xu"
-    ],
-    "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261378Z",
-    "dedup_keys": [
-      "arxiv:2611.30813",
-      "title:bench egocentric evaluating for hive level manipulation patch representations robot visual",
-      "github:kolakivy/hive-bench"
-    ],
-    "signals": {
-      "hf_upvotes": 10,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 5,
+      "github_stars": 10,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1013,63 +938,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 32.609,
+    "score": 36.757,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "github_stars": 3.584,
+      "hf_upvotes": 28.887,
+      "github_stars": 4.796,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.158
-    }
-  },
-  {
-    "id": "d4f02406a43d2ec4",
-    "kind": "release",
-    "title": "Richpanel helps companies automate 50% of support in 30 days",
-    "summary_en": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent"
-    ],
-    "links": [
-      {
-        "source": "openai",
-        "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "openai"
-    ],
-    "published_at": "2026-11-23T08:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.540187Z",
-    "dedup_keys": [
-      "url:openai.com/business/customer-stories/richpanel-ai-customer-support",
-      "title:automate companies days helps richpanel support"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 32.342,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "topic_match": 4.0,
-      "age_decay": -1.658
+      "age_decay": -8.926
     }
   },
   {
@@ -1116,13 +992,13 @@
       "Shi-Min Hu"
     ],
     "published_at": "2026-11-22T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261149Z",
+    "first_seen_at": "2026-11-24T22:49:03.736409Z",
     "dedup_keys": [
       "arxiv:2611.29338",
       "title:for foundation glimpse manipulation models robotic training vlms"
     ],
     "signals": {
-      "hf_upvotes": 27,
+      "hf_upvotes": 53,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1135,136 +1011,64 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 32.0,
+    "score": 36.486,
     "score_breakdown": {
-      "hf_upvotes": 26.658,
+      "hf_upvotes": 31.912,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -3.658
+      "age_decay": -4.426
     }
   },
   {
-    "id": "b63bc7e0bd7f7c52",
+    "id": "2dffb3ba15da64d1",
     "kind": "paper",
-    "title": "GameAnything: From Any Inspirations to Playable Game Worlds",
-    "summary_en": "AI-driven game development holds the potential to transform diverse human inspirations into interactive experiences. However, existing systems and benchmarks primarily focus on explicit development specifications, with limited support for adapting multimodal references and evaluating actual gameplay experiences. We introduce GameAnything, an open-source agentic platform that transforms multimodal inspirations into playable extensions of existing games through iterative development. GameAnything integrates coding agents with an independent playtesting critic, persistent development state, and reusable experience memory to support continuous refinement. We further present GameAnything-Bench, a benchmark spanning diverse reference modalities, game creation objectives, and gaming environments, with exploratory gameplay testing to assess both functional correctness and gameplay quality. Evaluations of nine coding agent configurations reveal that current agents can adapt reference content but still struggle with playable interactions and precise modifications. Moreover, multimodal references improve content fidelity, while iterative refinement yields substantial but varying improvements across agents. These findings highlight both the potential and remaining challenges of inspiration-driven game development.",
+    "title": "Plan4D: Generative Plannable 4D Worlds",
+    "summary_en": "Most world models for future prediction prioritize aestetic quality of generated videos, but offer only weak physical grounding and limited geometric consistency over time, due to the lack of explicit 4D modeling. In this paper, we introduce plan4d, a possible next milestone towards building a generative plannable 4D world model that predicts future RGB videos together with dense 4D geometry, including depth, cameras, point clouds, and scene flow from an observed scene context and text-specified actions. Since training data with paired actions and dense 4D annotations is inherently scarce, plan4d leverages the complementary priors of foundational video generators and 3D reconstructors. Specifically, we propose a model-stitching architecture that couples Depth Anything 3 with LongCat-Video and augments it with an auxiliary DPT head for scene-flow prediction. The resulting model allows us to plan and generate complex, long-horizon, and fine-grained actions in a dynamic 3D scenes, while substantially improving both visual fidelity and geometric accuracy of the generated future videos. Extensive experiments on both synthetic and real-world datasets demonstrate that plan4d achieves state-of-the-art performance in generative 4D modeling of environmental reactions. Project Page: https://fogradio.github.io/plan4d-project",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent",
-      "multimodal",
-      "eval"
+      "rag",
+      "cv"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.29238",
-        "external_id": "2611.29238"
+        "url": "https://huggingface.co/papers/2611.26516",
+        "external_id": "2611.26516"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.29238",
-        "external_id": "2611.29238"
+        "url": "https://arxiv.org/abs/2611.26516",
+        "external_id": "2611.26516"
       },
       {
         "source": "github",
-        "url": "https://github.com/AetherLabsAI/GameAnything",
+        "url": "https://github.com/AMAP-ML/plan4d",
         "external_id": null
       }
     ],
     "actors": [
-      "Wenyi Wu",
-      "Siqi Liu",
-      "Yuru Feng",
-      "Zixuan Song",
-      "Aayush Salvi",
-      "Sibo Zhu",
-      "Kun Zhou",
-      "Biwei Huang"
+      "Hangwei Zhang",
+      "Rujing Dang",
+      "Ruimin Lin",
+      "Jiahong Wu",
+      "Xiangxiang Chu",
+      "Chuanxia Zheng"
     ],
-    "published_at": "2026-11-22T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261293Z",
+    "published_at": "2026-11-19T00:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.736524Z",
     "dedup_keys": [
-      "arxiv:2611.29238",
-      "title:any from game gameanything inspirations playable worlds",
-      "github:aetherlabsai/gameanything"
+      "arxiv:2611.26516",
+      "title:generative plan4d plannable worlds",
+      "github:amap-ml/plan4d"
     ],
     "signals": {
-      "hf_upvotes": 13,
+      "hf_upvotes": 28,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 4,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 31.651,
-    "score_breakdown": {
-      "hf_upvotes": 21.112,
-      "github_stars": 2.197,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.658
-    }
-  },
-  {
-    "id": "cd5db100dc13466f",
-    "kind": "paper",
-    "title": "Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space",
-    "summary_en": "Vision Banana showed that a closed image generator, instruction-tuned to paint perception outputs as RGB images, becomes a generalist vision model. Does this carry over to open generators, and if not, what fails? We answer with Open Vision Banana (OVB), an open framework that adapts the 7B diffusion generator of Qwen-Image-2.1 into one instruction-driven model for metric depth, semantic, instance, and referring segmentation, using a single shared low-rank adapter and public data. Each task is a task contract whose RGB encoder, instruction, and decoder share one specification and are checked before training. Studying 42 externally evaluated checkpoints from two 100k-update runs, six exact weight-space merges, and eight controlled shorter runs, we find that the gap to the closed system is specific and measurable. Geometry is learned early while absolute scale is not: median-aligned NYUv2 δ_1 stays at 0.89--0.93 throughout training as unaligned δ_1 wanders between 0.11 and 0.50. The scale is not committed by a single sample: a ten-seed ensemble lifts unaligned δ_1 from 0.348 to 0.516 without retraining. Depth and 2D segmentation compete for the shared adapter, and weight merging moves along this trade-off without escaping it. Finally, lower validation flow loss comes with lower Cityscapes accuracy (Spearman ρapprox-0.9 between loss reduction and mIoU), so the loss cannot select checkpoints. We release code, contracts, training data, and all evaluation outputs.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.28489",
-        "external_id": "2611.28489"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.28489",
-        "external_id": "2611.28489"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/isLinXu/open-vision-banana",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Xu Lin",
-      "Ruilin Yao",
-      "Haoran Xu",
-      "Zixiang Wang",
-      "Ming Ma",
-      "Yu Zhao",
-      "Pu Miao",
-      "Chonghan Liu"
-    ],
-    "published_at": "2026-11-21T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261257Z",
-    "dedup_keys": [
-      "arxiv:2611.28489",
-      "title:banana for framework generation open open perception rgb space through unified vision visual",
-      "github:islinxu/open-vision-banana"
-    ],
-    "signals": {
-      "hf_upvotes": 14,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 22,
+      "github_stars": 21,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1272,13 +1076,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 30.777,
+    "score": 36.194,
     "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "github_stars": 6.271,
+      "hf_upvotes": 26.938,
+      "github_stars": 6.182,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
-      "age_decay": -5.158
+      "topic_match": 4.0,
+      "age_decay": -8.926
     }
   },
   {
@@ -1342,19 +1147,19 @@
       "Xin Eric Wang"
     ],
     "published_at": "2026-11-20T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261360Z",
+    "first_seen_at": "2026-11-24T22:49:03.736549Z",
     "dedup_keys": [
       "arxiv:2611.27376",
       "title:composable continual distillation experts post prompt soft toward training",
       "github:ucsb-ai/cspd"
     ],
     "signals": {
-      "hf_upvotes": 12,
+      "hf_upvotes": 27,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 6,
+      "github_stars": 9,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1362,107 +1167,190 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 29.754,
+    "score": 35.837,
     "score_breakdown": {
-      "hf_upvotes": 20.52,
-      "github_stars": 3.892,
+      "hf_upvotes": 26.658,
+      "github_stars": 4.605,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.658
+      "age_decay": -7.426
     }
   },
   {
-    "id": "9e578829875314ca",
+    "id": "b63bc7e0bd7f7c52",
     "kind": "paper",
-    "title": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
-    "summary_en": "Multimodal foundation models can play video games well when the game waits for them, but often fail when it keeps running. We find that much of this gap lies in the harness, which decides what the model sees, what it remembers, and how its outputs become actions over time. Existing harnesses such as VISTA improve the first two, yet turn each model call into at most one action, so the agent acts only as often as its model thinks. We introduce AutoPILOT, which changes the third: in each model call, the model can send a primitive action, start an open-loop macro, or write a closed-loop controller that keeps playing from the screen without further model calls until it hands control back. To evaluate agents in real-time games, we build AFK-Bench, 120 diverse browser games grouped by how they respond to inaction and playable in real time or with the clock paused. With GPT-6.1 Sol under the same budgets, AutoPILOT reaches 68.6% real-time success against 38.3% for VISTA, and on GameWorld it keeps 80.0% in real time while VISTA drops from 84.1% to 42.9%. Its gains hold across models, and it reaches VISTA's final success rate at a fifth of its API cost. Our results suggest that how a harness turns model outputs into actions over time is a central yet underexplored part of agent design, and we hope AutoPILOT and AFK-Bench will serve as a foundation for agents in a world that does not wait.",
+    "title": "GameAnything: From Any Inspirations to Playable Game Worlds",
+    "summary_en": "AI-driven game development holds the potential to transform diverse human inspirations into interactive experiences. However, existing systems and benchmarks primarily focus on explicit development specifications, with limited support for adapting multimodal references and evaluating actual gameplay experiences. We introduce GameAnything, an open-source agentic platform that transforms multimodal inspirations into playable extensions of existing games through iterative development. GameAnything integrates coding agents with an independent playtesting critic, persistent development state, and reusable experience memory to support continuous refinement. We further present GameAnything-Bench, a benchmark spanning diverse reference modalities, game creation objectives, and gaming environments, with exploratory gameplay testing to assess both functional correctness and gameplay quality. Evaluations of nine coding agent configurations reveal that current agents can adapt reference content but still struggle with playable interactions and precise modifications. Moreover, multimodal references improve content fidelity, while iterative refinement yields substantial but varying improvements across agents. These findings highlight both the potential and remaining challenges of inspiration-driven game development.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
       "agent",
       "multimodal",
-      "cv",
       "eval"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.28202",
-        "external_id": "2611.28202"
+        "url": "https://huggingface.co/papers/2611.29238",
+        "external_id": "2611.29238"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.28202",
-        "external_id": "2611.28202"
+        "url": "https://arxiv.org/abs/2611.29238",
+        "external_id": "2611.29238"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/AetherLabsAI/GameAnything",
+        "external_id": null
       }
     ],
     "actors": [
-      "Mark Zhao",
-      "Pengcheng Wang",
-      "Rui Yang",
-      "Jiarui Yao",
-      "Xirui Jiang",
-      "Yuxi Chen",
-      "Bingxuan Li",
-      "Hanyang Chen",
-      "Ke Yang",
-      "Manling Li",
-      "Tong Zhang",
-      "Huan Zhang"
+      "Wenyi Wu",
+      "Siqi Liu",
+      "Yuru Feng",
+      "Zixuan Song",
+      "Aayush Salvi",
+      "Sibo Zhu",
+      "Kun Zhou",
+      "Biwei Huang"
     ],
-    "published_at": "2026-11-20T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261126Z",
+    "published_at": "2026-11-22T00:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.736999Z",
     "dedup_keys": [
-      "arxiv:2611.28202",
-      "title:agent autopilot for gameplay harness real time visual"
+      "arxiv:2611.29238",
+      "title:any from game gameanything inspirations playable worlds",
+      "github:aetherlabsai/gameanything"
     ],
     "signals": {
-      "hf_upvotes": 28,
+      "hf_upvotes": 14,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 16,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": false,
+      "num_comments": 4,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 29.28,
+    "score": 34.904,
     "score_breakdown": {
-      "hf_upvotes": 26.938,
+      "hf_upvotes": 21.664,
+      "github_stars": 5.666,
       "is_daily_paper": 5.0,
+      "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -6.658
+      "age_decay": -4.426
     }
   },
   {
-    "id": "12f13deda18abe4d",
-    "kind": "release",
-    "title": "OpenAI and Cisco introduce Shirudo",
-    "summary_en": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+    "id": "0dc8aeb5e6b808e9",
+    "kind": "paper",
+    "title": "HIVE-Bench: Evaluating Patch-Level Visual Representations for Egocentric Robot Manipulation",
+    "summary_en": "Pretrained vision is a common start for robot learning, but most comparisons still score one pooled vector from a third-person image. Bimanual policies instead read dense patch tokens from cameras on the robot. We introduce HIVE-Bench: one shared flow-matching policy reads 20 encoders from seven families on 24 egocentric bimanual tasks, across adaptation, task sharing, and sweeps of data, model size, and layer. Keeping the patches matters. Averaging each view to one token removes most of the success, adaptation helps every pair we test, and one shared policy keeps most of the success of separate policies at a fraction of the updates. The same tokens are then scored with statistics, state and object readouts, published vision scores, and an inverse-dynamics readout. That readout of the commanded motion is one of the strongest measurements available before a policy is trained. Recognition, depth, and correspondence do not transfer reliably. Fine-tuning can improve the action readout even when other measurements move the other way, and no statistic is stable enough to replace a rollout before any deployment.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
+    "topics": [
+      "rag",
+      "cv",
+      "robotics",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.30813",
+        "external_id": "2611.30813"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.30813",
+        "external_id": "2611.30813"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/KolaKivy/HIVE-Bench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Qiwei Liang",
+      "Zhengtu Liang",
+      "Minghao Lai",
+      "Yikeng Chen",
+      "Yiming Wang",
+      "Boyang Cai",
+      "Yuetong Fang",
+      "Taowen Wang",
+      "Baiqiao Yin",
+      "Tianxing Chen",
+      "Yue Chen",
+      "Jiaming Liang",
+      "Guangyu Chen",
+      "Shaolong Zhu",
+      "Daolin Ma",
+      "Renjing Xu"
+    ],
+    "published_at": "2026-11-23T00:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.737151Z",
+    "dedup_keys": [
+      "arxiv:2611.30813",
+      "title:bench egocentric evaluating for hive level manipulation patch representations robot visual",
+      "github:kolakivy/hive-bench"
+    ],
+    "signals": {
+      "hf_upvotes": 10,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 13,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 33.535,
+    "score_breakdown": {
+      "hf_upvotes": 19.183,
+      "github_stars": 5.278,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.926
+    }
+  },
+  {
+    "id": "aa82b875221d5103",
+    "kind": "release",
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "summary_en": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm"
+    ],
     "links": [
       {
         "source": "openai",
-        "url": "https://openai.com/index/introducing-shirudo",
+        "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
         "external_id": null
       }
     ],
     "actors": [
       "openai"
     ],
-    "published_at": "2026-11-23T21:20:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.540089Z",
+    "published_at": "2026-11-24T13:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.730206Z",
     "dedup_keys": [
-      "url:openai.com/index/introducing-shirudo",
-      "title:and cisco introduce openai shirudo"
+      "url:openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "title:capabilities demonstrate design gpt intrinsic models protein"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1478,36 +1366,112 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 29.176,
+    "score": 33.386,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -0.824
+      "topic_match": 4.0,
+      "age_decay": -0.614
     }
   },
   {
-    "id": "85086c677ee09868",
-    "kind": "release",
-    "title": "Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0",
-    "summary_en": "Sparse linear systems are at the core of nearly every engineering and scientific simulation, from structural mechanics and computational fluid dynamics to...",
+    "id": "952fd6cdd7c71f4d",
+    "kind": "paper",
+    "title": "What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym",
+    "summary_en": "Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit SWE-Gym with two LLM families, and a suspected error counts only if execution reproduces it. We find that unsolved often means mislabelled: 74% of the tasks that a 9B base model never solves have a test that rejects correct fixes (a false negative), versus 20% of those it sometimes solves. We repair or remove such tasks, and the audited tasks that remain train better policies. At equal size and matched difficulty, models trained on them score 2.4 and 2.7 points higher on held-out tasks from SWE-bench Verified and SWE-bench Pro than models trained on the original tasks, whereas simply dropping the never-solved tasks shows no such gain. We further find that wrong patches that pass (false positives) make up about a quarter of all passing patches, and that new tests that catch a quarter of them do not change held-out scores detectably. A pass rate shows whether a task yields reward, not whether that reward is right, so the reward labels themselves must be checked. To this end, we release SWE-Gym-Verified with its 1,087 audited tasks, every verdict with its executed evidence, our training sets, and the full audit pipeline.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
+    "topics": [
+      "llm",
+      "agent"
+    ],
     "links": [
       {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/",
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.30207",
+        "external_id": "2611.30207"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.30207",
+        "external_id": "2611.30207"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Arist12/SWE-Gym-Verified",
         "external_id": null
       }
     ],
     "actors": [
-      "nvidia"
+      "Yikai Zhang",
+      "Mai Xu",
+      "Yunbei Zhang",
+      "Qirui Jin",
+      "Kenan Li",
+      "Yuwen Jia",
+      "Jinwei Yao",
+      "Xiangyu Zhang",
+      "Jielun Tan",
+      "Jin Pan",
+      "Zijian Jin",
+      "Xiao Sun"
     ],
-    "published_at": "2026-11-23T19:59:40Z",
-    "first_seen_at": "2026-11-24T10:31:13.263099Z",
+    "published_at": "2026-11-23T00:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.736806Z",
     "dedup_keys": [
-      "url:developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0",
-      "title:accelerating computational cudss direct engineering for nvidia solvers sparse with"
+      "arxiv:2611.30207",
+      "title:agents coding data for good gym makes study swe systematic training what",
+      "github:arist12/swe-gym-verified"
+    ],
+    "signals": {
+      "hf_upvotes": 14,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 32.935,
+    "score_breakdown": {
+      "hf_upvotes": 21.664,
+      "github_stars": 2.197,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.926
+    }
+  },
+  {
+    "id": "ad2d3fd2e1effe41",
+    "kind": "release",
+    "title": "How iFood scales coding agents across 15,000 repositories",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "openai",
+        "url": "https://openai.com/business/customer-stories/ifood",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "openai"
+    ],
+    "published_at": "2026-11-24T00:00:00Z",
+    "first_seen_at": "2026-11-24T22:49:03.730350Z",
+    "dedup_keys": [
+      "url:openai.com/business/customer-stories/ifood",
+      "title:000 across agents coding how ifood repositories scales"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1523,11 +1487,12 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 29.092,
+    "score": 32.574,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -0.908
+      "topic_match": 4.0,
+      "age_decay": -1.426
     }
   },
   {
@@ -1565,19 +1530,19 @@
       "Guodong Long"
     ],
     "published_at": "2026-11-21T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261238Z",
+    "first_seen_at": "2026-11-24T22:49:03.736633Z",
     "dedup_keys": [
       "arxiv:2611.28618",
       "title:agents distilling experience from interaction limited visual",
       "github:elated-sawyer/visual-agent-distillation"
     ],
     "signals": {
-      "hf_upvotes": 15,
+      "hf_upvotes": 19,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 2,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1585,80 +1550,166 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 29.023,
+    "score": 32.237,
     "score_breakdown": {
-      "hf_upvotes": 22.181,
+      "hf_upvotes": 23.966,
+      "github_stars": 2.197,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -5.158
+      "age_decay": -5.926
     }
   },
   {
-    "id": "3a8472e4b794ad03",
-    "kind": "paper",
-    "title": "World Models as Native Latent Action Models",
-    "summary_en": "Large and diverse video sources, such as egocentric human video and heterogeneous robot recordings, carry rich dynamics but come either without actions or without a shared action space. Latent action models (LAMs) can recover these dynamics, but they train their inverse- and forward-dynamics models (IDM, FDM) from scratch, trading off pixel reconstruction against latent capacity and accuracy. Pretrained video world models natively generate high-fidelity dynamics, yet represent them densely, entangled across all layers. Viewing the world model as a LAM, we show that these dynamics can be extracted with minimal changes to the model. Native LAM operates one pretrained video diffusion transformer as both IDM and FDM, with learnable dynamics registers as the only causal bridge between the two, and trains on counterfactual temporal pairs that differ in motion alone, so that the registers distill a video's dynamics into a compact native latent action. We further propose a pretraining paradigm for vision-language-action (VLA) policies, Pretraining Actions from World models (PAWlicy), in which Native LAM serves as a dynamics teacher on large-scale video; unlike world action models, it never generates video. Native latent actions outperform existing LAMs on the LARY benchmark in both action classification and control regression, and replay the same motion on new robots, in new scenes, and from human hands to robots, although no transfer objective is used in training. With a 3.8B model, PAWlicy reaches a 93.6% average success rate on RoboTwin 2.0 trained with domain-randomized demonstrations, the highest among VLAs. On RoboDojo, it is competitive on every dimension we evaluate, and its Precision, evaluated by us, is on par with the leading leaderboard entries. On real robots, it improves over the pi_0.5 baseline on both tasks. Both stages use only public data and a publicly released world model.",
+    "id": "92217dbe10bc8bd8",
+    "kind": "release",
+    "title": "Supercharging transformer residual connections",
+    "summary_en": "Algorithms & Theory",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "cv",
-      "robotics",
-      "eval"
+      "llm"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.30898",
-        "external_id": "2611.30898"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.30898",
-        "external_id": "2611.30898"
+        "source": "google_research",
+        "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+        "external_id": null
       }
     ],
     "actors": [
-      "Qinyue Li",
-      "Weijie Qiao",
-      "Qingyi Tao",
-      "Zerui Gong",
-      "Zhe Yang",
-      "Quanzhou Li",
-      "Taolin Zhang",
-      "Jinglin He",
-      "Zhonghua Wu",
-      "Chen Change Loy"
+      "google_research"
     ],
-    "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261220Z",
+    "published_at": "2026-11-23T17:21:12Z",
+    "first_seen_at": "2026-11-24T22:49:05.434842Z",
     "dedup_keys": [
-      "arxiv:2611.30898",
-      "title:action latent models models native world"
+      "url:research.google/blog/supercharging-transformer-residual-connections",
+      "title:connections residual supercharging transformer"
     ],
     "signals": {
-      "hf_upvotes": 15,
+      "hf_upvotes": 0,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
-      "is_daily_paper": true,
+      "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
+      "num_comments": 0,
       "has_code": false,
       "has_weights": false
     },
-    "score": 29.023,
+    "score": 32.158,
     "score_breakdown": {
-      "hf_upvotes": 22.181,
-      "is_daily_paper": 5.0,
+      "kind_base": 20.0,
+      "known_org": 10.0,
       "topic_match": 4.0,
-      "age_decay": -2.158
+      "age_decay": -1.842
+    }
+  },
+  {
+    "id": "583d5a7c783a15d6",
+    "kind": "model",
+    "title": "llamaindex/OCRia-1",
+    "summary_en": "image-text-to-text, transformers, joblib, qwen3_5, ocr, pdf, markdown",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "multimodal",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/llamaindex/OCRia-1",
+        "external_id": "llamaindex/OCRia-1"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+        "external_id": "Qwen/Qwen3.5-4B"
+      }
+    ],
+    "actors": [
+      "llamaindex"
+    ],
+    "published_at": "2026-11-13T21:52:49Z",
+    "first_seen_at": "2026-11-24T22:49:03.367620Z",
+    "dedup_keys": [
+      "hf:llamaindex/ocria-1"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 40,
+      "hf_downloads": 40,
+      "hf_trending_score": 39.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 32.142,
+    "score_breakdown": {
+      "hf_trending": 22.133,
+      "hf_downloads": 7.427,
+      "hf_likes": 11.141,
+      "has_weights": 4.0,
+      "topic_match": 4.0,
+      "age_decay": -16.559
+    }
+  },
+  {
+    "id": "b56ffd0639ecac2c",
+    "kind": "release",
+    "title": "Finding faster quantum algorithms with agents and formal verification",
+    "summary_en": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent"
+    ],
+    "links": [
+      {
+        "source": "deepmind",
+        "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "deepmind"
+    ],
+    "published_at": "2026-11-23T16:59:40Z",
+    "first_seen_at": "2026-11-24T22:49:04.973382Z",
+    "dedup_keys": [
+      "url:deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+      "title:agents algorithms and faster finding formal quantum verification with"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 32.136,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "known_org": 10.0,
+      "topic_match": 4.0,
+      "age_decay": -1.864
     }
   },
   {
@@ -1705,19 +1756,19 @@
       "Ling Yang"
     ],
     "published_at": "2026-11-19T00:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.261414Z",
+    "first_seen_at": "2026-11-24T22:49:03.737027Z",
     "dedup_keys": [
       "arxiv:2611.25476",
       "title:capabilities installing into networks neural new programming space via weight weightcode",
       "github:gen-verse/weightcode"
     ],
     "signals": {
-      "hf_upvotes": 9,
+      "hf_upvotes": 14,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 28,
+      "github_stars": 33,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -1725,73 +1776,31 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 28.998,
+    "score": 31.791,
     "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "github_stars": 6.735,
+      "hf_upvotes": 21.664,
+      "github_stars": 7.053,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -8.158
+      "age_decay": -8.926
     }
   },
   {
-    "id": "3298abc4c96360aa",
+    "id": "d4f02406a43d2ec4",
     "kind": "release",
-    "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
-    "summary_en": "As datasets grow, analytical queries can take longer to run, slowing down data exploration, pipelines, and applications. For developers using DuckDB, reducing...",
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "summary_en": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
     "summary_vi": null,
     "why_it_matters": null,
-    "topics": [],
-    "links": [
-      {
-        "source": "nvidia",
-        "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
-        "external_id": null
-      }
+    "topics": [
+      "llm",
+      "agent"
     ],
-    "actors": [
-      "nvidia"
-    ],
-    "published_at": "2026-11-23T17:09:28Z",
-    "first_seen_at": "2026-11-24T10:31:13.263157Z",
-    "dedup_keys": [
-      "url:developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension",
-      "title:accelerated analytics core duckdb extension get gpu sirius started the using with"
-    ],
-    "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
-      "has_weights": false
-    },
-    "score": 28.915,
-    "score_breakdown": {
-      "kind_base": 20.0,
-      "known_org": 10.0,
-      "age_decay": -1.085
-    }
-  },
-  {
-    "id": "a3f1af32ea2c873d",
-    "kind": "release",
-    "title": "Connected intelligence for in-house legal",
-    "summary_en": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [],
     "links": [
       {
         "source": "openai",
-        "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+        "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
         "external_id": null
       }
     ],
@@ -1799,10 +1808,10 @@
       "openai"
     ],
     "published_at": "2026-11-23T08:00:00Z",
-    "first_seen_at": "2026-11-24T10:31:11.540156Z",
+    "first_seen_at": "2026-11-24T22:49:03.730443Z",
     "dedup_keys": [
-      "url:openai.com/business/learn/connected-intelligence-for-in-house-legal",
-      "title:connected for house intelligence legal"
+      "url:openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "title:automate companies days helps richpanel support"
     ],
     "signals": {
       "hf_upvotes": 0,
@@ -1818,18 +1827,19 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 28.342,
+    "score": 31.574,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -1.658
+      "topic_match": 4.0,
+      "age_decay": -2.426
     }
   },
   {
     "id": "4c5b0fc07ccf73b0",
     "kind": "model",
     "title": "llamaindex/OCRia-nano-1",
-    "summary_en": "image-to-text, onnx, ocr, pdf, markdown, document-parsing, tables, layout",
+    "summary_en": "image-to-text, liteparse, ocr, pdf, markdown, document-parsing, tables",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -1846,15 +1856,15 @@
       "llamaindex"
     ],
     "published_at": "2026-11-03T21:44:40Z",
-    "first_seen_at": "2026-11-24T10:31:11.236636Z",
+    "first_seen_at": "2026-11-24T22:49:03.367236Z",
     "dedup_keys": [
       "hf:llamaindex/ocria-nano-1"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 81,
+      "hf_likes": 151,
       "hf_downloads": 0,
-      "hf_trending_score": 75.0,
+      "hf_trending_score": 130.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -1864,12 +1874,12 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 12.405,
+    "score": 16.756,
     "score_breakdown": {
-      "hf_trending": 25.984,
-      "hf_likes": 13.22,
+      "hf_trending": 29.251,
+      "hf_likes": 15.072,
       "has_weights": 4.0,
-      "age_decay": -30.799
+      "age_decay": -31.567
     }
   }
 ]
