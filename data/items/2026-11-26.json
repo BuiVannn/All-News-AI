@@ -1,5 +1,80 @@
 [
   {
+    "id": "b333cc0fb65d94f3",
+    "kind": "paper",
+    "title": "Real2SimLab: A Unified Platform for Real-to-Simulation Transfer",
+    "summary_en": "Real-to-simulation transfer, which builds simulations from real-world observations, has long been studied in research and industry. Recently, coding agents have become capable of generating simulation programs from video recordings, and several benchmarks have been proposed to evaluate them. However, each individual benchmark defines its own inputs, deliverables, and scoring pipeline. This leads to N times M integrations when evaluating N methods on M benchmarks. To this end, we present Real2SimLab, a unified platform for real-to-simulation transfer. It evaluates a method by running its written program and scoring the output simulation with the original scorer of each benchmark. Moreover, Real2SimLab provides a pipeline to create training data and reward annotations for real-to-simulation methods. Our pipeline carefully avoids data contamination by filtering out the video recordings that exist in benchmarks. For each video recording, a program is first produced, and then our pipeline computes its reward with the same code that Real2SimLab uses for evaluation. So far, it supports 47 coding agents and 5 non-agent methods on 6 benchmarks. Both the platform and Awesome-Real2Sim, our research map of nearly 300 real-to-simulation papers, are open source, and we invite the Real2SimHub community to build them together.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.34849",
+        "external_id": "2611.34849"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.34849",
+        "external_id": "2611.34849"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/Real2SimHub/Real2SimLab",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yongchang Zhang",
+      "Jie Huang",
+      "Yunhe Ni",
+      "Ningyu Zhou",
+      "Guangyu Zhao",
+      "Ruixun Liu",
+      "Rui Huang",
+      "Yidi Wu",
+      "TianZe Zhang",
+      "Zixiang Jiang",
+      "Xiang Li",
+      "Kevin Shen",
+      "Yiwu Zhong"
+    ],
+    "published_at": "2026-11-25T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301086Z",
+    "dedup_keys": [
+      "arxiv:2611.34849",
+      "title:for platform real real2simlab simulation transfer unified",
+      "github:real2simhub/real2simlab"
+    ],
+    "signals": {
+      "hf_upvotes": 101,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 21,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 52.307,
+    "score_breakdown": {
+      "hf_upvotes": 37.0,
+      "github_stars": 6.182,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.875
+    }
+  },
+  {
     "id": "5c287dc729dd3ad5",
     "kind": "model",
     "title": "prism-ml/Ternary-Bonsai-2.5-27B-mlx-2bit",
@@ -26,15 +101,15 @@
       "prism-ml"
     ],
     "published_at": "2026-11-24T18:38:32Z",
-    "first_seen_at": "2026-11-26T08:59:13.651965Z",
+    "first_seen_at": "2026-11-26T21:59:32.297390Z",
     "dedup_keys": [
       "hf:prism-ml/ternary-bonsai-2.5-27b-mlx-2bit"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 32,
+      "hf_likes": 36,
       "hf_downloads": 1035,
-      "hf_trending_score": 32.0,
+      "hf_trending_score": 35.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -44,151 +119,14 @@
       "has_code": false,
       "has_weights": true
     },
-    "score": 50.958,
+    "score": 51.011,
     "score_breakdown": {
-      "hf_trending": 20.979,
+      "hf_trending": 21.501,
       "hf_downloads": 13.886,
-      "hf_likes": 10.49,
+      "hf_likes": 10.833,
       "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -2.397
-    }
-  },
-  {
-    "id": "e20c25b652cd469e",
-    "kind": "paper",
-    "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
-    "summary_en": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advance, plan each shot before generating it, and regenerate failed shots, which a live stream does not allow. We present Agentic LongLive, an asynchronous agentic memory for long video generation. A memory agent on separate GPUs reads only the prompts revealed so far, never the generated video, and keeps a text state and evolving images for every person, object, and scene. From this entity memory it composes a global image and a per-shot memory image, which an auxiliary GPU prefills into the generator's attention sink before the next shot starts, and writes entity cards for the prompts that name them, so the video never waits for memory and video errors are not written back. A small language model, trained with reinforcement learning and an image reward calibrated using downstream video outcomes, decides what to remember before the next prompt is known. On LongStory-Online, a new benchmark of 25 stories (857 shots) revealed one shot at a time, Agentic LongLive improves persistent-state accuracy of LongLive-2.0, its base generator, by 26.3 points, protagonist identity by 44.9, and revisited-place consistency by 40.4, at about 1% extra generation time on H100. The full system streams faster than real time on one 8xB200 node with the generator in BF16 (34.3 FPS), keeps image quality stable over 14-minute stories, and improves identity on two MiniMax-H3 generators, one of which, LongLive-H3, also runs in real time with it. To our knowledge, it is the first real-time video generator with text and image memory kept by an LLM agent.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.34907",
-        "external_id": "2611.34907"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.34907",
-        "external_id": "2611.34907"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/NVlabs/LongLive",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Shaoteng Liu",
-      "Shuai Yang",
-      "Wei Huang",
-      "Luozhou Wang",
-      "Song Han",
-      "Yukang Chen"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879142Z",
-    "dedup_keys": [
-      "arxiv:2611.34907",
-      "title:agentic agentic asynchronous for generation long longlive memory video",
-      "github:nvlabs/longlive"
-    ],
-    "signals": {
-      "hf_upvotes": 14,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 2910,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 47.555,
-    "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "github_stars": 15.953,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.062
-    }
-  },
-  {
-    "id": "fa05c89de4d5a363",
-    "kind": "paper",
-    "title": "Mixture-of-Loops Transformer",
-    "summary_en": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.34923",
-        "external_id": "2611.34923"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.34923",
-        "external_id": "2611.34923"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/hustvl/MoLT",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Lianghui Zhu",
-      "Shijie Wang",
-      "Xinggang Wang",
-      "Jinze Bai",
-      "Bo Wang",
-      "Xiang Bai"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879010Z",
-    "dedup_keys": [
-      "arxiv:2611.34923",
-      "title:loops mixture transformer",
-      "github:hustvl/molt"
-    ],
-    "signals": {
-      "hf_upvotes": 41,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 44,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 47.452,
-    "score_breakdown": {
-      "hf_upvotes": 29.901,
-      "github_stars": 7.613,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.062
+      "age_decay": -3.209
     }
   },
   {
@@ -332,19 +270,19 @@
       "Yirong Chen"
     ],
     "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.878988Z",
+    "first_seen_at": "2026-11-26T21:59:32.301147Z",
     "dedup_keys": [
       "arxiv:2611.34575",
       "title:intelligence med medical multimodal sage scaling",
       "github:sage-med/sage-med-preview"
     ],
     "signals": {
-      "hf_upvotes": 43,
+      "hf_upvotes": 84,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 5,
+      "github_stars": 19,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -352,21 +290,225 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 43.796,
+    "score": 50.657,
     "score_breakdown": {
-      "hf_upvotes": 30.274,
-      "github_stars": 3.584,
+      "hf_upvotes": 35.541,
+      "github_stars": 5.991,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.062
+      "age_decay": -2.875
     }
   },
   {
-    "id": "47d9043abd1d83b6",
+    "id": "fa05c89de4d5a363",
+    "kind": "paper",
+    "title": "Mixture-of-Loops Transformer",
+    "summary_en": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mechanism connecting adjacent loops: What should be passed as a Transformer loops? We introduce Mixture-of-Loops Transformer (MoLT), whose Mixture-of-Loops Attention (MoLA) uses keys and values (KV) as memory for selective reuse across depths and loops. Under loop residual, MoLT-R retains the residual stream and reads local KV across loops for expressivity. Under loop KV, MoLT-KV instead restarts from embeddings and reads current-loop local KV with preceding-loop memory KV at earlier positions for efficiency. MoLT-KV eliminates same-position cross-loop dependence and, paired with loop forcing for parallel training, unlocks single-traversal Mixture-of-Loops (MoL) decoding beyond the training loop horizon. To balance efficiency and quality, we introduce U-shaped MoLT (U-MoLT), which separates memory construction from prediction readout and skips unused decoder traversals without changing predictions. In 400B-token pretraining, U-MoLT outperforms OLMo3 across 700M/1.5B dense and 3B MoE models, achieving 1.7x validation cross-entropy (CE) token efficiency at 700M while improving 3B MoE 10-domain perplexity by 0.75 and 10-task accuracy by 2.1 percentage points. In 100B-token continued pretraining of Qwen3.5-0.8B-Base, our U-MoLT adaptation lowers CE on all 11 domains over the matched baseline with 1.4x mean token efficiency. At inference, U-MoLT with MoL-Hybrid-2 matches non-looped OLMo3 latency at 996.6 vs. 1,000.6 ms on S-size (~113M) models. Code is available at https://github.com/hustvl/MoLT",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.34923",
+        "external_id": "2611.34923"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.34923",
+        "external_id": "2611.34923"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/hustvl/MoLT",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Lianghui Zhu",
+      "Shijie Wang",
+      "Xinggang Wang",
+      "Jinze Bai",
+      "Bo Wang",
+      "Xiang Bai"
+    ],
+    "published_at": "2026-11-25T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301185Z",
+    "dedup_keys": [
+      "arxiv:2611.34923",
+      "title:loops mixture transformer",
+      "github:hustvl/molt"
+    ],
+    "signals": {
+      "hf_upvotes": 57,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 69,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 50.106,
+    "score_breakdown": {
+      "hf_upvotes": 32.484,
+      "github_stars": 8.497,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.875
+    }
+  },
+  {
+    "id": "e20c25b652cd469e",
+    "kind": "paper",
+    "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+    "summary_en": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advance, plan each shot before generating it, and regenerate failed shots, which a live stream does not allow. We present Agentic LongLive, an asynchronous agentic memory for long video generation. A memory agent on separate GPUs reads only the prompts revealed so far, never the generated video, and keeps a text state and evolving images for every person, object, and scene. From this entity memory it composes a global image and a per-shot memory image, which an auxiliary GPU prefills into the generator's attention sink before the next shot starts, and writes entity cards for the prompts that name them, so the video never waits for memory and video errors are not written back. A small language model, trained with reinforcement learning and an image reward calibrated using downstream video outcomes, decides what to remember before the next prompt is known. On LongStory-Online, a new benchmark of 25 stories (857 shots) revealed one shot at a time, Agentic LongLive improves persistent-state accuracy of LongLive-2.0, its base generator, by 26.3 points, protagonist identity by 44.9, and revisited-place consistency by 40.4, at about 1% extra generation time on H100. The full system streams faster than real time on one 8xB200 node with the generator in BF16 (34.3 FPS), keeps image quality stable over 14-minute stories, and improves identity on two MiniMax-H3 generators, one of which, LongLive-H3, also runs in real time with it. To our knowledge, it is the first real-time video generator with text and image memory kept by an LLM agent.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.34907",
+        "external_id": "2611.34907"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.34907",
+        "external_id": "2611.34907"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/NVlabs/LongLive",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Shaoteng Liu",
+      "Shuai Yang",
+      "Wei Huang",
+      "Luozhou Wang",
+      "Song Han",
+      "Yukang Chen"
+    ],
+    "published_at": "2026-11-25T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301700Z",
+    "dedup_keys": [
+      "arxiv:2611.34907",
+      "title:agentic agentic asynchronous for generation long longlive memory video",
+      "github:nvlabs/longlive"
+    ],
+    "signals": {
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2912,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 48.202,
+    "score_breakdown": {
+      "hf_upvotes": 23.123,
+      "github_stars": 15.954,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.875
+    }
+  },
+  {
+    "id": "a22a03ccdec5410c",
+    "kind": "paper",
+    "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
+    "summary_en": "Diffusion Transformers (DiTs) scale model capacity by increasing both parameter count and computation. Mixture-of-Experts (MoE) variants expand parameter capacity while keeping per-token computation roughly fixed, but still require substantial parameter storage. In this paper, we propose Dynamic Looped MoE DiT (DyLoMo-DiT), which reuses parameters rather than adding them: a weight-shared loop repeatedly applies the middle layers, while sparse experts allocate parameter capacity across tokens. This design deepens the network without adding parameters, freeing the parameter budget for other uses, such as more experts or more distinct layers. It also allocates compute dynamically, varying the number of passes across noise levels. Experiments show that DyLoMo-DiT makes more effective use of parameter and compute budgets, with further gains from assigning more passes to low-noise steps. On ImageNet 256times256, DyLoMo-DiT reduces FID by 11-24% relative to DiT and 36-56% relative to DiT-MoE at matched parameter and compute budgets. For text-to-image generation, a scaled DyLoMo-DiT achieves a higher GenEval score than FLUX.1 (0.714 vs. 0.673), with less than one tenth of its active parameters (1.05B vs. 12B).",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "rag",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.30844",
+        "external_id": "2611.30844"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.30844",
+        "external_id": "2611.30844"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/OneBoxCream/DyLoMo-DiT",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Lernie Li",
+      "Yuanliu Liu",
+      "Pengfei Xiong",
+      "Wei Zhang"
+    ],
+    "published_at": "2026-11-23T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301247Z",
+    "dedup_keys": [
+      "arxiv:2611.30844",
+      "title:diffusion dit dylomo dynamic experts looped mixture transformers",
+      "github:oneboxcream/dylomo-dit"
+    ],
+    "signals": {
+      "hf_upvotes": 54,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 41,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 45.659,
+    "score_breakdown": {
+      "hf_upvotes": 32.059,
+      "github_stars": 7.475,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -5.875
+    }
+  },
+  {
+    "id": "705c77ded1d73a33",
     "kind": "model",
-    "title": "0ppxnhximxr/snapref-v2s",
-    "summary_en": "text-to-image, diffusers, anima, comfyui, reference-image, character-consistency, style-reference",
+    "title": "kandinskylab/Kandinsky-ImageSR-2.0",
+    "summary_en": "image-to-image, diffusers, super-resolution, image-super-resolution, kandinsky",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -375,28 +517,23 @@
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/0ppxnhximxr/snapref-v2s",
-        "external_id": "0ppxnhximxr/snapref-v2s"
-      },
-      {
-        "source": "hf_base_model:adapter",
-        "url": "https://huggingface.co/circlestone-labs/Anima",
-        "external_id": "circlestone-labs/Anima"
+        "url": "https://huggingface.co/kandinskylab/Kandinsky-ImageSR-2.0",
+        "external_id": "kandinskylab/Kandinsky-ImageSR-2.0"
       }
     ],
     "actors": [
-      "0ppxnhximxr"
+      "kandinskylab"
     ],
-    "published_at": "2026-11-23T16:11:17Z",
-    "first_seen_at": "2026-11-26T08:59:13.651921Z",
+    "published_at": "2026-11-24T08:51:19Z",
+    "first_seen_at": "2026-11-26T21:59:32.296751Z",
     "dedup_keys": [
-      "hf:0ppxnhximxr/snapref-v2s"
+      "hf:kandinskylab/kandinsky-imagesr-2.0"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 36,
-      "hf_downloads": 1295,
-      "hf_trending_score": 34.0,
+      "hf_likes": 118,
+      "hf_downloads": 4,
+      "hf_trending_score": 94.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -404,14 +541,63 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": false
+      "has_weights": true
     },
-    "score": 42.449,
+    "score": 45.058,
     "score_breakdown": {
-      "hf_trending": 21.332,
-      "hf_downloads": 14.334,
+      "hf_trending": 27.323,
+      "hf_downloads": 3.219,
+      "hf_likes": 14.337,
+      "has_weights": 4.0,
+      "age_decay": -3.821
+    }
+  },
+  {
+    "id": "7918261546f7a884",
+    "kind": "model",
+    "title": "Retro-Diffusion/rd-flow-64",
+    "summary_en": "text-to-image, pixel-art, flow-matching, small-model, game-assets, sprites",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/Retro-Diffusion/rd-flow-64",
+        "external_id": "Retro-Diffusion/rd-flow-64"
+      }
+    ],
+    "actors": [
+      "Retro-Diffusion"
+    ],
+    "published_at": "2026-11-24T17:01:07Z",
+    "first_seen_at": "2026-11-26T21:59:32.297357Z",
+    "dedup_keys": [
+      "hf:retro-diffusion/rd-flow-64"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 36,
+      "hf_downloads": 403,
+      "hf_trending_score": 35.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 45.026,
+    "score_breakdown": {
+      "hf_trending": 21.501,
+      "hf_downloads": 12.003,
       "hf_likes": 10.833,
-      "age_decay": -4.05
+      "has_weights": 4.0,
+      "age_decay": -3.311
     }
   },
   {
@@ -457,85 +643,87 @@
       "Tingting Gao"
     ],
     "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.878938Z",
+    "first_seen_at": "2026-11-26T21:59:32.301221Z",
     "dedup_keys": [
       "arxiv:2611.34237",
       "title:closing code driven for generation loop perceptual the vibevideoagent video",
       "github:kling-keye/vibevideoagent"
     ],
     "signals": {
-      "hf_upvotes": 48,
+      "hf_upvotes": 54,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 0,
+      "github_stars": 5,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 3,
+      "num_comments": 4,
       "has_code": true,
       "has_weights": false
     },
-    "score": 41.073,
+    "score": 44.768,
     "score_breakdown": {
-      "hf_upvotes": 31.135,
+      "hf_upvotes": 32.059,
+      "github_stars": 3.584,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.062
+      "age_decay": -2.875
     }
   },
   {
-    "id": "a22a03ccdec5410c",
+    "id": "d28f48d38e344323",
     "kind": "paper",
-    "title": "DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers",
-    "summary_en": "Diffusion Transformers (DiTs) scale model capacity by increasing both parameter count and computation. Mixture-of-Experts (MoE) variants expand parameter capacity while keeping per-token computation roughly fixed, but still require substantial parameter storage. In this paper, we propose Dynamic Looped MoE DiT (DyLoMo-DiT), which reuses parameters rather than adding them: a weight-shared loop repeatedly applies the middle layers, while sparse experts allocate parameter capacity across tokens. This design deepens the network without adding parameters, freeing the parameter budget for other uses, such as more experts or more distinct layers. It also allocates compute dynamically, varying the number of passes across noise levels. Experiments show that DyLoMo-DiT makes more effective use of parameter and compute budgets, with further gains from assigning more passes to low-noise steps. On ImageNet 256times256, DyLoMo-DiT reduces FID by 11-24% relative to DiT and 36-56% relative to DiT-MoE at matched parameter and compute budgets. For text-to-image generation, a scaled DyLoMo-DiT achieves a higher GenEval score than FLUX.1 (0.714 vs. 0.673), with less than one tenth of its active parameters (1.05B vs. 12B).",
+    "title": "Improving and Expanding Video Editing Capabilities Without Videos",
+    "summary_en": "Image editing models can follow a wide range of instructions, but video editing models still lag behind, limited in part by the difficulty of collecting paired source and edited videos. Is it possible to transfer advanced image editing capabilities to video editors without new paired videos? We introduce Image-to-Video Transfer (I2VT), which improves pretrained video editors and expands them to new editing tasks using an image editor. It enables efficient post-training with no architectural changes and no new videos, using only individual images. Our key idea is to let the video editor role-play as an image editor: it edits an image as a one-frame video, with the image editor guiding the video editor's predictions at each denoising step. Although the video editor sees only single images during training, at test time it applies the improved and expanded capabilities to whole video clips while preserving temporal consistency. To push the boundaries of video editing, we introduce OpenVE++, an extension of OpenVE-Bench that adds four new editing tasks useful for video production, including action changes, expression changes, body movements, and scene relighting. Our experiments across three different video editors show that I2VT improves existing editing capabilities and expands them to new tasks, and our models achieve state-of-the-art (SOTA) performance on both OpenVE-Bench and OpenVE++.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "rag",
       "cv",
-      "eval"
+      "infra"
     ],
     "links": [
       {
         "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.30844",
-        "external_id": "2611.30844"
+        "url": "https://huggingface.co/papers/2611.34941",
+        "external_id": "2611.34941"
       },
       {
         "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.30844",
-        "external_id": "2611.30844"
+        "url": "https://arxiv.org/abs/2611.34941",
+        "external_id": "2611.34941"
       },
       {
         "source": "github",
-        "url": "https://github.com/OneBoxCream/DyLoMo-DiT",
+        "url": "https://github.com/HorizonWind2004/i2v-transfer",
         "external_id": null
       }
     ],
     "actors": [
-      "Lernie Li",
-      "Yuanliu Liu",
-      "Pengfei Xiong",
-      "Wei Zhang"
+      "Ji Xie",
+      "Yanhao Jia",
+      "Xiangpeng Yang",
+      "Martin Q. Ma",
+      "Sihan Xu",
+      "Erik Cambria",
+      "Louis-Philippe Morency"
     ],
-    "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879061Z",
+    "published_at": "2026-11-25T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301270Z",
     "dedup_keys": [
-      "arxiv:2611.30844",
-      "title:diffusion dit dylomo dynamic experts looped mixture transformers",
-      "github:oneboxcream/dylomo-dit"
+      "arxiv:2611.34941",
+      "title:and capabilities editing expanding improving video videos without",
+      "github:horizonwind2004/i2v-transfer"
     ],
     "signals": {
-      "hf_upvotes": 23,
+      "hf_upvotes": 43,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 35,
+      "github_stars": 29,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -543,21 +731,20 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 39.529,
+    "score": 42.201,
     "score_breakdown": {
-      "hf_upvotes": 25.424,
-      "github_stars": 7.167,
+      "hf_upvotes": 30.274,
+      "github_stars": 6.802,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -5.062
+      "age_decay": -2.875
     }
   },
   {
-    "id": "705c77ded1d73a33",
+    "id": "47d9043abd1d83b6",
     "kind": "model",
-    "title": "kandinskylab/Kandinsky-ImageSR-2.0",
-    "summary_en": "image-to-image, diffusers, super-resolution, image-super-resolution, kandinsky",
+    "title": "0ppxnhximxr/snapref-v2s",
+    "summary_en": "text-to-image, diffusers, anima, comfyui, reference-image, character-consistency, style-reference",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
@@ -566,23 +753,28 @@
     "links": [
       {
         "source": "hf_models",
-        "url": "https://huggingface.co/kandinskylab/Kandinsky-ImageSR-2.0",
-        "external_id": "kandinskylab/Kandinsky-ImageSR-2.0"
+        "url": "https://huggingface.co/0ppxnhximxr/snapref-v2s",
+        "external_id": "0ppxnhximxr/snapref-v2s"
+      },
+      {
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/circlestone-labs/Anima",
+        "external_id": "circlestone-labs/Anima"
       }
     ],
     "actors": [
-      "kandinskylab"
+      "0ppxnhximxr"
     ],
-    "published_at": "2026-11-24T08:51:19Z",
-    "first_seen_at": "2026-11-26T08:59:13.651777Z",
+    "published_at": "2026-11-23T16:11:17Z",
+    "first_seen_at": "2026-11-26T21:59:32.297341Z",
     "dedup_keys": [
-      "hf:kandinskylab/kandinsky-imagesr-2.0"
+      "hf:0ppxnhximxr/snapref-v2s"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 47,
-      "hf_downloads": 4,
-      "hf_trending_score": 47.0,
+      "hf_likes": 37,
+      "hf_downloads": 1295,
+      "hf_trending_score": 35.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -590,15 +782,14 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": true
+      "has_weights": false
     },
-    "score": 39.052,
+    "score": 41.885,
     "score_breakdown": {
-      "hf_trending": 23.227,
-      "hf_downloads": 3.219,
-      "hf_likes": 11.614,
-      "has_weights": 4.0,
-      "age_decay": -3.008
+      "hf_trending": 21.501,
+      "hf_downloads": 14.334,
+      "hf_likes": 10.913,
+      "age_decay": -4.863
     }
   },
   {
@@ -636,11 +827,147 @@
       "Chen Change Loy"
     ],
     "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879076Z",
+    "first_seen_at": "2026-11-26T21:59:32.301318Z",
     "dedup_keys": [
       "arxiv:2611.34420",
       "title:bidirectional cross docseam document encoding for multi page page understanding",
       "github:mossbee/docseam"
+    ],
+    "signals": {
+      "hf_upvotes": 26,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 19,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 3,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 41.483,
+    "score_breakdown": {
+      "hf_upvotes": 26.367,
+      "github_stars": 5.991,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.875
+    }
+  },
+  {
+    "id": "d59c7f6f5b53f95f",
+    "kind": "paper",
+    "title": "Letting Models Manage Their Own Context: Where We Stand",
+    "summary_en": "Agent harnesses today manage context on the model's behalf: when the window fills, the harness triggers a compaction that summarizes the history. We study the alternative, model-driven context management, in which the model itself decides when and what to compact through a context API. We gave models control over their own context in \\nooa, NVIDIA's open source agent harness, and compared the two strategies on document research and machine learning engineering across context budgets from 8K to 512K tokens. Models that use the context API effectively reach higher accuracy, often with fewer input tokens, especially at tight budgets: GPT 6.1 nearly triples its score at a 32K budget on OfficeQA Pro v2 (21\\%~rightarrow~56\\%), and Kimi gains with up to 41\\% fewer input tokens. Models differ widely, however, in how often they use the API, how aggressively they compact, and when they start compacting, and prompt changes shift that timing. Finally, we show that inference engines can make model-driven edits cheaper: by reusing the KV cache of the unchanged suffix after an edit, we cut prefill compute by up to 15\\% per request with no measurable change in accuracy. Together, these results point to a new co-design frontier: models trained to manage their own context, served by inference engines that support KV cache editing.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "llm",
+      "agent",
+      "infra"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.34147",
+        "external_id": "2611.34147"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.34147",
+        "external_id": "2611.34147"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/nvidia-nemo/labs-OO-Agents",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Alessio Devoto",
+      "Avinash Vem",
+      "Tara Safavi",
+      "Sanjay Kariyappa",
+      "Yu-Hsuan Tseng",
+      "Paul Furgale",
+      "Ricardo Silveira Cabral"
+    ],
+    "published_at": "2026-11-25T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.302025Z",
+    "dedup_keys": [
+      "arxiv:2611.34147",
+      "title:context letting manage models own stand their where",
+      "github:nvidia-nemo/labs-oo-agents"
+    ],
+    "signals": {
+      "hf_upvotes": 6,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 2330,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 2,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 40.2,
+    "score_breakdown": {
+      "hf_upvotes": 15.567,
+      "github_stars": 15.508,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.875
+    }
+  },
+  {
+    "id": "0ae4d2dcb651879a",
+    "kind": "paper",
+    "title": "EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts",
+    "summary_en": "AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users' physical surroundings. With these devices, computer tasks can originate from users' ongoing activities rather than solely from explicit instructions. Through first-person observations, agents can identify objects and activities relevant to user requests and ground digital tasks in the surrounding context. We call this interaction paradigm Ego Use. However, first-person observations are limited by the wearer's viewpoint and may provide incomplete or ambiguous evidence of ongoing activities. As new observations arrive, agents may need to revise their understanding of the physical context and user intent, and reassess whether prior digital actions remain valid. Whether current agents can reliably handle these changes remains insufficiently evaluated. We introduce EgoUseBench, a benchmark for evaluating Ego Use across three interaction settings with different levels of first-person context. Computer-Use relies on explicit instructions, Offline Ego Use provides prerecorded first-person context before execution, and Online Ego Use provides continuous observations as user intent evolves. Based on over 74 hours of real-world first-person recordings, we construct 693 tasks across the three interaction settings. To capture task evolution, we track first-person observations, user requirements, and website state separately. We further group tasks by how information changes during execution, resulting in three types: Graft (revised user requirements), Refresh (new first-person observations), and Clarify (agent-initiated information seeking). We evaluate advanced models and find that average success rates in Online Ego Use are 26.3% lower than in Computer-Use. This result reveals the difficulty of keeping task execution aligned with evolving first-person context and user intent.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "rag",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.34466",
+        "external_id": "2611.34466"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.34466",
+        "external_id": "2611.34466"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/YurunChen/EgoUseBench",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Yurun Chen",
+      "Biao Yi",
+      "Qihang Yu",
+      "Keting Yin",
+      "Shengyu Zhang"
+    ],
+    "published_at": "2026-11-25T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301376Z",
+    "dedup_keys": [
+      "arxiv:2611.34466",
+      "title:agents benchmarking computer contexts egousebench evolving first person under use",
+      "github:yurunchen/egousebench"
     ],
     "signals": {
       "hf_upvotes": 19,
@@ -648,7 +975,7 @@
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 9,
+      "github_stars": 26,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -656,14 +983,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 38.509,
+    "score": 39.683,
     "score_breakdown": {
       "hf_upvotes": 23.966,
-      "github_stars": 4.605,
+      "github_stars": 6.592,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.062
+      "age_decay": -2.875
     }
   },
   {
@@ -712,19 +1039,19 @@
       "He Zhang"
     ],
     "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879109Z",
+    "first_seen_at": "2026-11-26T21:59:32.301630Z",
     "dedup_keys": [
       "arxiv:2611.34347",
       "title:airis benchmarking egocentric embodied intelligence social streaming videos",
       "github:airis-bench/airis"
     ],
     "signals": {
-      "hf_upvotes": 15,
+      "hf_upvotes": 17,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 16,
+      "github_stars": 23,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -732,81 +1059,14 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 37.785,
+    "score": 38.604,
     "score_breakdown": {
-      "hf_upvotes": 22.181,
-      "github_stars": 5.666,
+      "hf_upvotes": 23.123,
+      "github_stars": 6.356,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.062
-    }
-  },
-  {
-    "id": "d28f48d38e344323",
-    "kind": "paper",
-    "title": "Improving and Expanding Video Editing Capabilities Without Videos",
-    "summary_en": "Image editing models can follow a wide range of instructions, but video editing models still lag behind, limited in part by the difficulty of collecting paired source and edited videos. Is it possible to transfer advanced image editing capabilities to video editors without new paired videos? We introduce Image-to-Video Transfer (I2VT), which improves pretrained video editors and expands them to new editing tasks using an image editor. It enables efficient post-training with no architectural changes and no new videos, using only individual images. Our key idea is to let the video editor role-play as an image editor: it edits an image as a one-frame video, with the image editor guiding the video editor's predictions at each denoising step. Although the video editor sees only single images during training, at test time it applies the improved and expanded capabilities to whole video clips while preserving temporal consistency. To push the boundaries of video editing, we introduce OpenVE++, an extension of OpenVE-Bench that adds four new editing tasks useful for video production, including action changes, expression changes, body movements, and scene relighting. Our experiments across three different video editors show that I2VT improves existing editing capabilities and expands them to new tasks, and our models achieve state-of-the-art (SOTA) performance on both OpenVE-Bench and OpenVE++.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.34941",
-        "external_id": "2611.34941"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.34941",
-        "external_id": "2611.34941"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/HorizonWind2004/i2v-transfer",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Ji Xie",
-      "Yanhao Jia",
-      "Xiangpeng Yang",
-      "Martin Q. Ma",
-      "Sihan Xu",
-      "Erik Cambria",
-      "Louis-Philippe Morency"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879046Z",
-    "dedup_keys": [
-      "arxiv:2611.34941",
-      "title:and capabilities editing expanding improving video videos without",
-      "github:horizonwind2004/i2v-transfer"
-    ],
-    "signals": {
-      "hf_upvotes": 28,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 6,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 36.768,
-    "score_breakdown": {
-      "hf_upvotes": 26.938,
-      "github_stars": 3.892,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -2.062
+      "age_decay": -2.875
     }
   },
   {
@@ -852,19 +1112,19 @@
       "Weihao Yu"
     ],
     "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879093Z",
+    "first_seen_at": "2026-11-26T21:59:32.301348Z",
     "dedup_keys": [
       "arxiv:2611.34811",
       "title:future gradient hog improving prediction robustness through visual wam",
       "github:ipplab/hog-wam"
     ],
     "signals": {
-      "hf_upvotes": 19,
+      "hf_upvotes": 22,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
       "is_daily_paper": true,
-      "github_stars": 2,
+      "github_stars": 5,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
@@ -872,66 +1132,153 @@
       "has_code": true,
       "has_weights": false
     },
-    "score": 36.101,
+    "score": 37.793,
     "score_breakdown": {
-      "hf_upvotes": 23.966,
-      "github_stars": 2.197,
+      "hf_upvotes": 25.084,
+      "github_stars": 3.584,
       "is_daily_paper": 5.0,
       "has_code": 3.0,
       "topic_match": 4.0,
-      "age_decay": -2.062
+      "age_decay": -2.875
     }
   },
   {
-    "id": "22ba2d47ef4b9b86",
-    "kind": "model",
-    "title": "supermansundies/Minimax-H3-Image-Pose-Transfer-Lora",
-    "summary_en": "text-to-image, diffusers, lora",
+    "id": "a0cc508e9c705e6c",
+    "kind": "paper",
+    "title": "High-Fidelity Image Matting with Pixel-Space Diffusion Transformers",
+    "summary_en": "Diffusion models have shown strong potential for image matting by transferring generative priors learned from large-scale pretraining. However, existing approaches largely rely on latent diffusion models, whose compressed representations and VAE-based reconstruction introduce a mismatch with the high-frequency precision required for matting. We present PixelMatte, a framework that adapts pretrained pixel-space diffusion transformers for high-fidelity image matting. We show that strong image-conditioned matting capabilities can be acquired even from a pure text-to-image model without paired image-to-image pretraining. Our approach reuses the backbone's native patch embedding to jointly process the input image, trimap, and noisy alpha matte as spatially aligned tokens, enabling direct pixel-space prediction without additional condition encoders or adapters. With pixel-accurate synthetic supervision and real-image fine-tuning, PixelMatte predicts alpha mattes in a single forward pass. Two lightweight calibration modules, LayerShift and High-Pass Refiner, further improve regional opacity accuracy and boundary fidelity. Experiments across four benchmarks and two distinct pixel diffusion backbones demonstrate substantial improvements over existing methods, reducing SAD and gradient errors by 24-44% relative to RenderMatte on P3M-500-NP and AM-2K, while achieving competitive performance on AIM-500 and RenderMatte-2K. These results demonstrate the effectiveness of pixel-space generative priors for precision-sensitive image matting. Project page: https://white-yc.github.io/pixelmatte/.",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "cv"
+      "llm",
+      "rag",
+      "cv",
+      "eval"
     ],
     "links": [
       {
-        "source": "hf_models",
-        "url": "https://huggingface.co/supermansundies/Minimax-H3-Image-Pose-Transfer-Lora",
-        "external_id": "supermansundies/Minimax-H3-Image-Pose-Transfer-Lora"
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.34929",
+        "external_id": "2611.34929"
       },
       {
-        "source": "hf_base_model:adapter",
-        "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
-        "external_id": "Comfy-Org/MiniMax-H3-Image"
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.34929",
+        "external_id": "2611.34929"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/White-YC/pixelmatte",
+        "external_id": null
       }
     ],
     "actors": [
-      "supermansundies"
+      "Baihan Yang",
+      "Xin Lin",
+      "Yufan Wei",
+      "Baiang Li",
+      "Yuheng Liu",
+      "Juanxi Tian",
+      "Xiaohui Xie",
+      "Truong Nguyen"
     ],
-    "published_at": "2026-11-25T06:36:21Z",
-    "first_seen_at": "2026-11-26T08:59:13.651834Z",
+    "published_at": "2026-11-25T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301426Z",
     "dedup_keys": [
-      "hf:supermansundies/minimax-h3-image-pose-transfer-lora"
+      "arxiv:2611.34929",
+      "title:diffusion fidelity high image matting pixel space transformers with",
+      "github:white-yc/pixelmatte"
     ],
     "signals": {
-      "hf_upvotes": 0,
-      "hf_likes": 39,
-      "hf_downloads": 6,
-      "hf_trending_score": 38.0,
-      "is_daily_paper": false,
-      "github_stars": 0,
+      "hf_upvotes": 17,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 13,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 0,
-      "has_code": false,
+      "num_comments": 3,
+      "has_code": true,
       "has_weights": false
     },
-    "score": 35.291,
+    "score": 37.526,
     "score_breakdown": {
-      "hf_trending": 21.981,
-      "hf_downloads": 3.892,
-      "hf_likes": 11.067,
-      "age_decay": -1.649
+      "hf_upvotes": 23.123,
+      "github_stars": 5.278,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -2.875
+    }
+  },
+  {
+    "id": "6862982aed47d37c",
+    "kind": "paper",
+    "title": "Playfulness as Feedback for Agentic Game Development",
+    "summary_en": "Coding agents can generate runnable games from natural-language descriptions. However, a runnable game does not guarantee an excellent gameplay experience for players. In our view, a playful game should provide 1) reliable core functionality, 2) appealing visual design and assets, and 3) rich gameplay that supports exploration and progression. How agents can improve these aspects of playfulness remains underexplored. In our work, we propose Play2Evolve, a recursive game development framework with three stages: Initialization, Refinement, and Evolution. Using playfulness as feedback, agents playtest the game and diagnose issues in its functionality, visual presentation, and gameplay. Their feedback guides bug fixes and asset improvements. It also helps agents propose new gameplay and aesthetic goals for continued game evolution. To enrich game materials, we combine a video generation model with code to create appealing static and dynamic assets and integrate them into interactive gameplay. Finally, Play2Evolve achieves state-of-the-art performance among the evaluated methods, scoring 60.05 on GameCraft-Bench compared with 50.81 after Game Initialization and 52.46 for Play2Code. Human overall-quality ratings reach 3.67, compared with 2.38 and 2.43, respectively. Our code will be released at https://github.com/showlab/Play2Evolve.",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "cv",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "hf_papers",
+        "url": "https://huggingface.co/papers/2611.33457",
+        "external_id": "2611.33457"
+      },
+      {
+        "source": "arxiv",
+        "url": "https://arxiv.org/abs/2611.33457",
+        "external_id": "2611.33457"
+      },
+      {
+        "source": "github",
+        "url": "https://github.com/showlab/Play2Evolve",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "Weijia Mao",
+      "Kevin Qinghong Lin",
+      "Zhen Fang",
+      "Danze Chen",
+      "Dongxing Mao",
+      "Mike Zheng Shou"
+    ],
+    "published_at": "2026-11-24T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.301402Z",
+    "dedup_keys": [
+      "arxiv:2611.33457",
+      "title:agentic development feedback for game playfulness",
+      "github:showlab/play2evolve"
+    ],
+    "signals": {
+      "hf_upvotes": 18,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": true,
+      "github_stars": 11,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 1,
+      "has_code": true,
+      "has_weights": false
+    },
+    "score": 36.151,
+    "score_breakdown": {
+      "hf_upvotes": 23.556,
+      "github_stars": 4.97,
+      "is_daily_paper": 5.0,
+      "has_code": 3.0,
+      "topic_match": 4.0,
+      "age_decay": -4.375
     }
   },
   {
@@ -982,13 +1329,13 @@
       "Daquan Zhou"
     ],
     "published_at": "2026-11-24T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879029Z",
+    "first_seen_at": "2026-11-26T21:59:32.301294Z",
     "dedup_keys": [
       "arxiv:2611.33144",
       "title:agents bimanual coding dex dexterous for learning manipulation policies programmatic pyrua with"
     ],
     "signals": {
-      "hf_upvotes": 39,
+      "hf_upvotes": 43,
       "hf_likes": 0,
       "hf_downloads": 0,
       "hf_trending_score": 0.0,
@@ -1001,304 +1348,223 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 34.949,
+    "score": 34.899,
     "score_breakdown": {
-      "hf_upvotes": 29.511,
+      "hf_upvotes": 30.274,
       "is_daily_paper": 5.0,
       "topic_match": 4.0,
-      "age_decay": -3.562
+      "age_decay": -4.375
     }
   },
   {
-    "id": "0ae4d2dcb651879a",
-    "kind": "paper",
-    "title": "EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts",
-    "summary_en": "AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users' physical surroundings. With these devices, computer tasks can originate from users' ongoing activities rather than solely from explicit instructions. Through first-person observations, agents can identify objects and activities relevant to user requests and ground digital tasks in the surrounding context. We call this interaction paradigm Ego Use. However, first-person observations are limited by the wearer's viewpoint and may provide incomplete or ambiguous evidence of ongoing activities. As new observations arrive, agents may need to revise their understanding of the physical context and user intent, and reassess whether prior digital actions remain valid. Whether current agents can reliably handle these changes remains insufficiently evaluated. We introduce EgoUseBench, a benchmark for evaluating Ego Use across three interaction settings with different levels of first-person context. Computer-Use relies on explicit instructions, Offline Ego Use provides prerecorded first-person context before execution, and Online Ego Use provides continuous observations as user intent evolves. Based on over 74 hours of real-world first-person recordings, we construct 693 tasks across the three interaction settings. To capture task evolution, we track first-person observations, user requirements, and website state separately. We further group tasks by how information changes during execution, resulting in three types: Graft (revised user requirements), Refresh (new first-person observations), and Clarify (agent-initiated information seeking). We evaluate advanced models and find that average success rates in Online Ego Use are 26.3% lower than in Computer-Use. This result reveals the difficulty of keeping task execution aligned with evolving first-person context and user intent.",
+    "id": "22ba2d47ef4b9b86",
+    "kind": "model",
+    "title": "supermansundies/Minimax-H3-Image-Pose-Transfer-Lora",
+    "summary_en": "text-to-image, diffusers, lora",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent",
-      "rag",
-      "eval"
+      "cv"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.34466",
-        "external_id": "2611.34466"
+        "source": "hf_models",
+        "url": "https://huggingface.co/supermansundies/Minimax-H3-Image-Pose-Transfer-Lora",
+        "external_id": "supermansundies/Minimax-H3-Image-Pose-Transfer-Lora"
       },
       {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.34466",
-        "external_id": "2611.34466"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/YurunChen/EgoUseBench",
-        "external_id": null
+        "source": "hf_base_model:adapter",
+        "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
+        "external_id": "Comfy-Org/MiniMax-H3-Image"
       }
     ],
     "actors": [
-      "Yurun Chen",
-      "Biao Yi",
-      "Qihang Yu",
-      "Keting Yin",
-      "Shengyu Zhang"
+      "supermansundies"
     ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879200Z",
+    "published_at": "2026-11-25T06:36:21Z",
+    "first_seen_at": "2026-11-26T08:59:13.651834Z",
     "dedup_keys": [
-      "arxiv:2611.34466",
-      "title:agents benchmarking computer contexts egousebench evolving first person under use",
-      "github:yurunchen/egousebench"
+      "hf:supermansundies/minimax-h3-image-pose-transfer-lora"
     ],
     "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 9,
+      "hf_upvotes": 0,
+      "hf_likes": 39,
+      "hf_downloads": 6,
+      "hf_trending_score": 38.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
+      "num_comments": 0,
+      "has_code": false,
       "has_weights": false
     },
-    "score": 34.422,
+    "score": 34.478,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 4.605,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.062
+      "hf_trending": 21.981,
+      "hf_downloads": 3.892,
+      "hf_likes": 11.067,
+      "age_decay": -2.462
     }
   },
   {
-    "id": "6862982aed47d37c",
-    "kind": "paper",
-    "title": "Playfulness as Feedback for Agentic Game Development",
-    "summary_en": "Coding agents can generate runnable games from natural-language descriptions. However, a runnable game does not guarantee an excellent gameplay experience for players. In our view, a playful game should provide 1) reliable core functionality, 2) appealing visual design and assets, and 3) rich gameplay that supports exploration and progression. How agents can improve these aspects of playfulness remains underexplored. In our work, we propose Play2Evolve, a recursive game development framework with three stages: Initialization, Refinement, and Evolution. Using playfulness as feedback, agents playtest the game and diagnose issues in its functionality, visual presentation, and gameplay. Their feedback guides bug fixes and asset improvements. It also helps agents propose new gameplay and aesthetic goals for continued game evolution. To enrich game materials, we combine a video generation model with code to create appealing static and dynamic assets and integrate them into interactive gameplay. Finally, Play2Evolve achieves state-of-the-art performance among the evaluated methods, scoring 60.05 on GameCraft-Bench compared with 50.81 after Game Initialization and 52.46 for Play2Code. Human overall-quality ratings reach 3.67, compared with 2.38 and 2.43, respectively. Our code will be released at https://github.com/showlab/Play2Evolve.",
+    "id": "24f9bdfde9871ee0",
+    "kind": "model",
+    "title": "ostris/ostris_h3_image_vae",
+    "summary_en": "text-to-image, diffusers, image-to-image, image-editing, image-generation, minimax-h3",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "agent",
-      "cv",
-      "eval"
+      "cv"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.33457",
-        "external_id": "2611.33457"
+        "source": "hf_models",
+        "url": "https://huggingface.co/ostris/ostris_h3_image_vae",
+        "external_id": "ostris/ostris_h3_image_vae"
       },
       {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.33457",
-        "external_id": "2611.33457"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/showlab/Play2Evolve",
-        "external_id": null
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+        "external_id": "MiniMaxAI/MiniMax-H3-Image"
       }
     ],
     "actors": [
-      "Weijia Mao",
-      "Kevin Qinghong Lin",
-      "Zhen Fang",
-      "Danze Chen",
-      "Dongxing Mao",
-      "Mike Zheng Shou"
+      "ostris"
     ],
-    "published_at": "2026-11-24T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879185Z",
+    "published_at": "2026-11-25T20:10:43Z",
+    "first_seen_at": "2026-11-26T21:59:32.297515Z",
     "dedup_keys": [
-      "arxiv:2611.33457",
-      "title:agentic development feedback for game playfulness",
-      "github:showlab/play2evolve"
+      "hf:ostris/ostris_h3_image_vae"
     ],
     "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
+      "hf_upvotes": 0,
+      "hf_likes": 31,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 7,
+      "hf_trending_score": 31.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
     },
-    "score": 32.476,
+    "score": 33.578,
     "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 4.159,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -3.562
+      "hf_trending": 20.794,
+      "hf_likes": 10.397,
+      "has_weights": 4.0,
+      "age_decay": -1.613
     }
   },
   {
-    "id": "57d93021d856ee01",
-    "kind": "paper",
-    "title": "ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification",
-    "summary_en": "Embodied spatial intelligence requires agents to gather information through exploration and interaction, then use it to reason and act. Existing benchmarks insufficiently distinguish correct outcomes from completion of these task requirements. We introduce ROAM-Bench to evaluate these abilities under robot motion and collision constraints. Independent checks use simulation state and episode records to assess outcomes and task requirements, with stronger checks of geometry, coverage, or placement. It comprises 250 manually validated tasks across 11 types in five groups and 27 indoor environments, covering object and room search, counting, geometric judgments, direction reasoning, and relocation. Human evaluators achieve 84% strict task success on 100 sampled tasks, with every correct outcome satisfying the required checks. Across seven frontier vision-language models, we identify two complementary failure modes: correct outcomes with unmet task requirements, and incorrect outcomes despite passing stronger checks. Oracle-input diagnostics show that more complete target observations and calibrated feedback improve final spatial judgments.",
+    "id": "ab56731669472b4c",
+    "kind": "model",
+    "title": "data-archetype/dflow_2b",
+    "summary_en": "text-to-image, dflow, flow-matching, comfyui, photography",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "llm",
-      "agent",
-      "rag",
+      "cv"
+    ],
+    "links": [
+      {
+        "source": "hf_models",
+        "url": "https://huggingface.co/data-archetype/dflow_2b",
+        "external_id": "data-archetype/dflow_2b"
+      },
+      {
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/google/t5gemma-2-270m-270m",
+        "external_id": "google/t5gemma-2-270m-270m"
+      }
+    ],
+    "actors": [
+      "data-archetype"
+    ],
+    "published_at": "2026-11-18T12:09:36Z",
+    "first_seen_at": "2026-11-26T21:59:32.297476Z",
+    "dedup_keys": [
+      "hf:data-archetype/dflow_2b"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 32,
+      "hf_downloads": 193,
+      "hf_trending_score": 31.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
+    },
+    "score": 33.205,
+    "score_breakdown": {
+      "hf_trending": 20.794,
+      "hf_downloads": 10.536,
+      "hf_likes": 10.49,
+      "has_weights": 4.0,
+      "age_decay": -12.615
+    }
+  },
+  {
+    "id": "c72ff3a5912cee72",
+    "kind": "model",
+    "title": "loom-fun/unsloth-Inkling-2-Mini-loom",
+    "summary_en": "image-text-to-text, loom, loom-serve, strix-halo, speculative-decoding, dflash, vision",
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
       "multimodal",
-      "cv",
-      "robotics",
-      "eval"
+      "cv"
     ],
     "links": [
       {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.33143",
-        "external_id": "2611.33143"
+        "source": "hf_models",
+        "url": "https://huggingface.co/loom-fun/unsloth-Inkling-2-Mini-loom",
+        "external_id": "loom-fun/unsloth-Inkling-2-Mini-loom"
       },
       {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.33143",
-        "external_id": "2611.33143"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/rxjfighting/ROAM-Bench",
-        "external_id": null
+        "source": "hf_base_model:finetune",
+        "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+        "external_id": "unsloth/Inkling-2-Mini-GGUF"
       }
     ],
     "actors": [
-      "Xingjian Ran",
-      "Xiaoye Mo",
-      "Sihao Liu",
-      "Li Luo",
-      "Taiqiang Wu",
-      "Ji Zhao",
-      "Wenqi Shao",
-      "Hongyang Li",
-      "Jiaqi Wang",
-      "Bo Dai"
+      "loom-fun"
     ],
-    "published_at": "2026-11-24T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879313Z",
+    "published_at": "2026-11-21T05:49:46Z",
+    "first_seen_at": "2026-11-26T21:59:32.297497Z",
     "dedup_keys": [
-      "arxiv:2611.33143",
-      "title:active bench embodied evaluating evidence intelligence roam spatial through verification",
-      "github:rxjfighting/roam-bench"
+      "hf:loom-fun/unsloth-inkling-2-mini-loom"
     ],
     "signals": {
-      "hf_upvotes": 10,
-      "hf_likes": 0,
+      "hf_upvotes": 0,
+      "hf_likes": 31,
       "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 7,
+      "hf_trending_score": 31.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
       "github_stars_delta": 0,
       "hn_points": 0,
       "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": true
     },
-    "score": 31.78,
+    "score": 30.681,
     "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "github_stars": 4.159,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
+      "hf_trending": 20.794,
+      "hf_likes": 10.397,
+      "has_weights": 4.0,
       "topic_match": 4.0,
-      "age_decay": -3.562
-    }
-  },
-  {
-    "id": "6b3beea2debd6700",
-    "kind": "paper",
-    "title": "SEEK: Self-Evolution through Execution Knowledge for Agentic Robot Manipulation",
-    "summary_en": "General-purpose multimodal foundation models enable robots to adapt during deployment from observations and execution feedback, without task-specific demonstrations or training. However, the robot retains what it learns only in the model's working context. Once the task ends, it loses this execution knowledge, such as how to carry a bowl between two grippers. On the next attempt at the task, the robot may take just as long and repeat the same mistakes. To avoid this repetition, robots must retain execution knowledge across attempts. Yet replaying past actions is insufficient, because their effects depend on the current conditions. Procedures that determine actions from the current scene address this, but when they meet conditions that earlier attempts did not cover, revising them requires the measured effects of earlier actions. We therefore propose SEEK, an agentic framework that retains both, enabling robots to improve across attempts while keeping the underlying model fixed. To adapt retained knowledge to the current scene, SEEK adopts a Self-Evolving Programmatic Policy (SEPP) that encodes manipulation as executable procedures and determines each action from current observations. As the robot executes these procedures, SEEK records the measured effects of its actions, including those from failed attempts, in a Persistent Action-Effect Bank (PAEB). Where a retained procedure applies, it acts without a model request; where it meets a condition it does not cover, this evidence guides its revision. On RoboDojo, knowledge retained over ten attempts raises SEEK's average task score from 27.0 to 54.4 and its success rate from 19.7% to 48.0% across all 42 tasks. On 34 of these tasks with GPT-6.2 Astra, SEEK reaches 80.1 after five attempts, against 49.6 for the same model acting directly, and uses 77.6% fewer model requests. https://zeyangguan.github.io/SEEK-Agentic-Robot-Manipulation/",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "rag",
-      "multimodal",
-      "cv",
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.33915",
-        "external_id": "2611.33915"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.33915",
-        "external_id": "2611.33915"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/ZeyangGuan/SEEK-Agentic-Robot-Manipulation",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Zeyang Guan",
-      "Qihao Zhao",
-      "Rui Gong",
-      "Zhang Haitian",
-      "Yalun Dai",
-      "Yangyu Huang",
-      "Lingao Xiao",
-      "Haozhe Du",
-      "Xuehui Yu",
-      "Ye Lu",
-      "Jianjun Gao",
-      "Ruoyu Wang",
-      "Haowen Bai",
-      "Hao Li",
-      "Scarlett Li",
-      "Kim-Hui Yap"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879297Z",
-    "dedup_keys": [
-      "arxiv:2611.33915",
-      "title:agentic evolution execution for knowledge manipulation robot seek self through",
-      "github:zeyangguan/seek-agentic-robot-manipulation"
-    ],
-    "signals": {
-      "hf_upvotes": 10,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 2,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 31.318,
-    "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "github_stars": 2.197,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.062
+      "age_decay": -8.51
     }
   },
   {
@@ -1345,426 +1611,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 29.391,
+    "score": 28.578,
     "score_breakdown": {
       "hf_trending": 21.158,
       "hf_likes": 10.666,
-      "age_decay": -2.433
-    }
-  },
-  {
-    "id": "a0cc508e9c705e6c",
-    "kind": "paper",
-    "title": "High-Fidelity Image Matting with Pixel-Space Diffusion Transformers",
-    "summary_en": "Diffusion models have shown strong potential for image matting by transferring generative priors learned from large-scale pretraining. However, existing approaches largely rely on latent diffusion models, whose compressed representations and VAE-based reconstruction introduce a mismatch with the high-frequency precision required for matting. We present PixelMatte, a framework that adapts pretrained pixel-space diffusion transformers for high-fidelity image matting. We show that strong image-conditioned matting capabilities can be acquired even from a pure text-to-image model without paired image-to-image pretraining. Our approach reuses the backbone's native patch embedding to jointly process the input image, trimap, and noisy alpha matte as spatially aligned tokens, enabling direct pixel-space prediction without additional condition encoders or adapters. With pixel-accurate synthetic supervision and real-image fine-tuning, PixelMatte predicts alpha mattes in a single forward pass. Two lightweight calibration modules, LayerShift and High-Pass Refiner, further improve regional opacity accuracy and boundary fidelity. Experiments across four benchmarks and two distinct pixel diffusion backbones demonstrate substantial improvements over existing methods, reducing SAD and gradient errors by 24-44% relative to RenderMatte on P3M-500-NP and AM-2K, while achieving competitive performance on AIM-500 and RenderMatte-2K. These results demonstrate the effectiveness of pixel-space generative priors for precision-sensitive image matting. Project page: https://white-yc.github.io/pixelmatte/.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "cv",
-      "eval"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.34929",
-        "external_id": "2611.34929"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.34929",
-        "external_id": "2611.34929"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/White-YC/pixelmatte",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Baihan Yang",
-      "Xin Lin",
-      "Yufan Wei",
-      "Baiang Li",
-      "Yuheng Liu",
-      "Juanxi Tian",
-      "Xiaohui Xie",
-      "Truong Nguyen"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879281Z",
-    "dedup_keys": [
-      "arxiv:2611.34929",
-      "title:diffusion fidelity high image matting pixel space transformers with",
-      "github:white-yc/pixelmatte"
-    ],
-    "signals": {
-      "hf_upvotes": 10,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 3,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 29.121,
-    "score_breakdown": {
-      "hf_upvotes": 19.183,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.062
-    }
-  },
-  {
-    "id": "0aea2c88bbe28f36",
-    "kind": "paper",
-    "title": "What Is Redundant at High Resolution? Efficient Attention and Feed-Forward Design for All-in-One Image Restoration",
-    "summary_en": "Multi-scale architectures are widely adopted in all-in-one image restoration (AIO-IR) to capture larger-scale context at low-resolution stages and refine details at high-resolution (HR) stages. However, processing spatially large feature maps at HR stages incurs substantial computational costs and memory traffic, making efficient HR processing challenging. To address this challenge, we propose High-resolution Global-Local Restoration (HiGLR), an efficient multi-scale AIO-IR network grounded in an analysis of spatial redundancy in self-attention and convolutional feed-forward networks (ConvFFNs). Specifically, this analysis identifies three key redundancies: per-query readout at the finest-scale stage, key routing across neighboring queries at intermediate stages, and spatial mixing in the expanded feature spaces of ConvFFNs. Accordingly, HiGLR replaces costly self-attention at the finest-scale stage with a learned input-independent kernel. At intermediate stages, we propose a Block-Routed Hybrid Attention, which combines coarse-scale dense attention with fine-scale block-sparse attention over value residuals relative to coarse summaries, and shares routing indices across neighboring queries. We further introduce a Dual-Space FFN that performs spatial mixing in a compact space and pointwise nonlinear transformation in an expanded space, enabling efficient kernel fusion. Combining these designs, HiGLR achieves state-of-the-art performance while delivering up to a 4.24times inference speedup over existing methods.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.33636",
-        "external_id": "2611.33636"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.33636",
-        "external_id": "2611.33636"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/dslisleedh/HiGLR",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Dongheon Lee",
-      "DongJae Lee",
-      "Sewhan Chun",
-      "Chanseul Cho",
-      "Youngwook Kim",
-      "Youngmin Ro",
-      "Yonghyun Jeong"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879231Z",
-    "dedup_keys": [
-      "arxiv:2611.33636",
-      "title:all and attention design efficient feed for forward high image one redundant resolution restoration what",
-      "github:dslisleedh/higlr"
-    ],
-    "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 4,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 29.036,
-    "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 3.219,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -2.062
-    }
-  },
-  {
-    "id": "62936ecf25fe5c55",
-    "kind": "paper",
-    "title": "RoboEvo^2: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution",
-    "summary_en": "Robots should adapt to unfamiliar environments and acquire new skills through interaction, then execute those skills efficiently with practice. Vision-language-action policies provide efficient control, but often need additional human demonstrations to handle unfamiliar settings; reasoning agents can discover solutions using broad prior knowledge and robot-control APIs, but repeated deliberation and repair are costly. Inspired by human learning through reasoning and practice, we propose RoboEvo^2, a framework for recursive harness-policy co-evolution. In Policy-to-Harness (P2H) evolution, policy failures guide a coding agent to search complementary Code, Code+ICL, and Code+Policy routes, consolidating verified solutions into reusable skills, routing strategies, and experience memory. In Harness-to-Policy (H2P) evolution, verified trajectories provide supervised training, while Counterfactual Preference Distillation (CPD) teaches the policy to favor successful corrections over failures from the same starting state. The improved policy provides stronger motor skills for subsequent search, while its remaining failures redirect harness evolution, closing the reciprocal loop. Through recursive co-evolution without additional human demonstrations, RoboEvo^2 improves standalone success from 11.0% to 84.1% and hybrid success from 30.4% to 90.5% on LIBERO-PRO, with similar gains and reduced agentic costs on RoboTwin C2R. Further experiments demonstrate autonomous task acquisition, cross-embodiment harness transfer, and 95.0% hybrid success on the Unitree G1-D. Our models and code will be publicly released.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "agent",
-      "multimodal",
-      "cv",
-      "robotics"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.34675",
-        "external_id": "2611.34675"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.34675",
-        "external_id": "2611.34675"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/kaiknower/RoboEvo2",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Chenzhi Liu",
-      "Jiehong Lin",
-      "Wei Huang",
-      "Xuzhao Huang",
-      "Haoyuan Li",
-      "Yang Zhang",
-      "Junchao Huang",
-      "Chenyeyang Cai",
-      "Bo Wang",
-      "Kazuhiro Kosuge",
-      "Zhongrui Wang",
-      "Xiaojuan Qi"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879343Z",
-    "dedup_keys": [
-      "arxiv:2611.34675",
-      "title:evolution harness improvement policy recursive roboevo robot self via",
-      "github:kaiknower/roboevo2"
-    ],
-    "signals": {
-      "hf_upvotes": 8,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.902,
-    "score_breakdown": {
-      "hf_upvotes": 17.578,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.062
-    }
-  },
-  {
-    "id": "81b496b261a71893",
-    "kind": "paper",
-    "title": "iMFPO: Improving Mean Flow Policy Optimization with Drift-Aware Velocity Alignment for Embodied Control",
-    "summary_en": "Flow-based generative policies offer expressive action modeling for embodied control, yet achieving efficient one-step generation under reward-driven policy optimization remains challenging. In particular, evolving action distributions during online reinforcement learning may introduce inconsistencies between instantaneous-velocity learning and interval-averaged action generation. To address this challenge, we propose iMFPO, a one-step generative policy optimization framework with decoupled velocity learning and drift-aware velocity alignment. A shared interval-conditioned actor supports instantaneous-velocity supervision and interval-averaged action generation. JVP-corrected velocity regression is jointly optimized with reward-driven policy objectives, with action-level guidance from a frozen PPO teacher during training. At inference, iMFPO directly generates actions through interval-averaged velocity prediction, achieving one-step control without iterative flow integration. Across Go2, G1, H1, and Spot, zero-latent evaluation yields mean returns of 35.69, 34.44, 416.23, and 29.86. On Go2, action-generation latency drops from 15.57 ms to 0.41 ms relative to 64-step RFPO. Code: https://github.com/AIGeeksGroup/iMFPO. Website: https://aigeeksgroup.github.io/iMFPO.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "rag",
-      "cv",
-      "robotics",
-      "eval",
-      "infra"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.33922",
-        "external_id": "2611.33922"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.33922",
-        "external_id": "2611.33922"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/AIGeeksGroup/iMFPO",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Lisiyu Pan",
-      "Ting Huang",
-      "Zeyu Zhang",
-      "Hao Tang"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879328Z",
-    "dedup_keys": [
-      "arxiv:2611.33922",
-      "title:alignment aware control drift embodied flow for imfpo improving mean optimization policy velocity with",
-      "github:aigeeksgroup/imfpo"
-    ],
-    "signals": {
-      "hf_upvotes": 9,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 1,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.359,
-    "score_breakdown": {
-      "hf_upvotes": 18.421,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -2.062
-    }
-  },
-  {
-    "id": "1ae57ebed176cfb5",
-    "kind": "paper",
-    "title": "Let Vision-Language Models Generate Images through Their Representations",
-    "summary_en": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To address this challenge, we introduce Integral, which converts a pretrained vision-language model into a unified multimodal model by constructing a shared visual representation space across the two capabilities. Integral implements this design through two complementary components. Abstraction Fusion constructs shared visual tokens by aggregating hierarchical representations from the frozen vision encoder, while Block-wise MoT introduces a lightweight generative stream that interacts with the vision-language model only at block boundaries. Our approach effectively preserves the pretrained understanding capability while extending it to strong visual generation. Controlled comparisons further demonstrate that sharing visual representations between understanding and generation substantially improves generative learning compared with using a separate visual representation space, despite comparable reconstruction fidelity. These results suggest that representations learned by pretrained vision-language models already provide an effective foundation for visual generation.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "llm",
-      "rag",
-      "multimodal",
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.31237",
-        "external_id": "2611.31237"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.31237",
-        "external_id": "2611.31237"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/the-jb/integral",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "JB Kim",
-      "Byungwoo Jeon",
-      "Kyungmin Lee",
-      "Hyeonmo Kang",
-      "Cheonbok Park",
-      "Shinyoung Joo",
-      "Jinwoo Shin",
-      "Jeonghoon Kim"
-    ],
-    "published_at": "2026-11-23T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879171Z",
-    "dedup_keys": [
-      "arxiv:2611.31237",
-      "title:generate images language let models representations their through vision",
-      "github:the-jb/integral"
-    ],
-    "signals": {
-      "hf_upvotes": 11,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 1,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 28.203,
-    "score_breakdown": {
-      "hf_upvotes": 19.879,
-      "github_stars": 1.386,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "topic_match": 4.0,
-      "age_decay": -5.062
-    }
-  },
-  {
-    "id": "183b45a6a0fc92d5",
-    "kind": "paper",
-    "title": "FoundSurface: Feedforward Ray-Based 3D Scene Surface Reconstruction from Unposed Images",
-    "summary_en": "Accurate 3D surface reconstruction from unposed images remains a fundamental challenge in computer vision. Recent feed-forward pointmap methods eliminate the need for camera poses but inherently produce discrete, sparse representations. In this paper, we present a generalizable pipeline that directly recovers continuous, high-fidelity 3D surfaces from unposed images by seamlessly integrating pointmap- and ray-based representations. Our approach first extracts explicit geometric priors using a pre-trained pointmap model. A query-view-centric selection module then identifies geometrically relevant reference views via a robust surfel voting mechanism. Next, a cross-attention regressor bridges target query rays with reference features to estimate a continuous coarse surface. Lastly, a raylet-based module aggregates local 3D features to carve out high-frequency details and analytical normals. Trained as a single foundation model on 9 diverse datasets, our method demonstrates exceptional zero-shot generalization on 6 unseen datasets, clearly surpassing state-of-the-art baselines in geometric accuracy and detail preservation.",
-    "summary_vi": null,
-    "why_it_matters": null,
-    "topics": [
-      "cv"
-    ],
-    "links": [
-      {
-        "source": "hf_papers",
-        "url": "https://huggingface.co/papers/2611.34128",
-        "external_id": "2611.34128"
-      },
-      {
-        "source": "arxiv",
-        "url": "https://arxiv.org/abs/2611.34128",
-        "external_id": "2611.34128"
-      },
-      {
-        "source": "github",
-        "url": "https://github.com/vLAR-group/FoundSurface",
-        "external_id": null
-      }
-    ],
-    "actors": [
-      "Shenxing Wei",
-      "Jinxi Li",
-      "Zihui Zhang",
-      "Ajay Kumar",
-      "Wei Wang",
-      "Bo Yang"
-    ],
-    "published_at": "2026-11-25T00:00:00Z",
-    "first_seen_at": "2026-11-26T08:59:13.879125Z",
-    "dedup_keys": [
-      "arxiv:2611.34128",
-      "title:based feedforward foundsurface from images ray reconstruction scene surface unposed",
-      "github:vlar-group/foundsurface"
-    ],
-    "signals": {
-      "hf_upvotes": 14,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
-      "is_daily_paper": true,
-      "github_stars": 0,
-      "github_stars_delta": 0,
-      "hn_points": 0,
-      "reddit_score": 0,
-      "num_comments": 2,
-      "has_code": true,
-      "has_weights": false
-    },
-    "score": 27.602,
-    "score_breakdown": {
-      "hf_upvotes": 21.664,
-      "is_daily_paper": 5.0,
-      "has_code": 3.0,
-      "age_decay": -2.062
+      "age_decay": -3.246
     }
   },
   {
@@ -1786,7 +1637,7 @@
       "deepmind"
     ],
     "published_at": "2026-11-24T13:07:53Z",
-    "first_seen_at": "2026-11-26T08:59:14.492789Z",
+    "first_seen_at": "2026-11-26T21:59:33.540268Z",
     "dedup_keys": [
       "url:deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity",
       "title:antigravity for from google identifying mass molecules skills spec spectrum structure with"
@@ -1805,11 +1656,59 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 27.259,
+    "score": 26.446,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -2.741
+      "age_decay": -3.554
+    }
+  },
+  {
+    "id": "148f917212cd8cc2",
+    "kind": "release",
+    "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+    "summary_en": null,
+    "summary_vi": null,
+    "why_it_matters": null,
+    "topics": [
+      "agent",
+      "eval"
+    ],
+    "links": [
+      {
+        "source": "huggingface",
+        "url": "https://huggingface.co/blog/training-swarms",
+        "external_id": null
+      }
+    ],
+    "actors": [
+      "huggingface"
+    ],
+    "published_at": "2026-11-26T00:00:00Z",
+    "first_seen_at": "2026-11-26T21:59:34.345574Z",
+    "dedup_keys": [
+      "url:huggingface.co/blog/training-swarms",
+      "title:agent and build evaluate flocks gangs how multi swarms systems train"
+    ],
+    "signals": {
+      "hf_upvotes": 0,
+      "hf_likes": 0,
+      "hf_downloads": 0,
+      "hf_trending_score": 0.0,
+      "is_daily_paper": false,
+      "github_stars": 0,
+      "github_stars_delta": 0,
+      "hn_points": 0,
+      "reddit_score": 0,
+      "num_comments": 0,
+      "has_code": false,
+      "has_weights": false
+    },
+    "score": 22.625,
+    "score_breakdown": {
+      "kind_base": 20.0,
+      "topic_match": 4.0,
+      "age_decay": -1.375
     }
   },
   {
@@ -1833,7 +1732,7 @@
       "huggingface"
     ],
     "published_at": "2026-11-25T18:52:55Z",
-    "first_seen_at": "2026-11-26T08:59:14.991062Z",
+    "first_seen_at": "2026-11-26T21:59:34.345606Z",
     "dedup_keys": [
       "url:huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
       "title:agents draw line scientists the where"
@@ -1852,11 +1751,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 23.118,
+    "score": 22.306,
     "score_breakdown": {
       "kind_base": 20.0,
       "topic_match": 4.0,
-      "age_decay": -0.882
+      "age_decay": -1.694
     }
   },
   {
@@ -1881,7 +1780,7 @@
       "huggingface"
     ],
     "published_at": "2026-11-25T10:22:09Z",
-    "first_seen_at": "2026-11-26T08:59:14.991082Z",
+    "first_seen_at": "2026-11-26T21:59:34.345643Z",
     "dedup_keys": [
       "url:huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
       "title:agent cuga indic voice with"
@@ -1900,11 +1799,11 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 22.586,
+    "score": 21.773,
     "score_breakdown": {
       "kind_base": 20.0,
       "topic_match": 4.0,
-      "age_decay": -1.414
+      "age_decay": -2.227
     }
   },
   {
@@ -1926,7 +1825,7 @@
       "nvidia"
     ],
     "published_at": "2026-11-19T22:02:30Z",
-    "first_seen_at": "2026-11-26T08:59:15.325919Z",
+    "first_seen_at": "2026-11-26T21:59:34.794789Z",
     "dedup_keys": [
       "url:developer.nvidia.com/blog/manage-liquid-cooled-ai-factories-with-nvidia-mission-control",
       "title:control cooled factories liquid manage mission nvidia with"
@@ -1945,44 +1844,43 @@
       "has_code": false,
       "has_weights": false
     },
-    "score": 20.316,
+    "score": 19.503,
     "score_breakdown": {
       "kind_base": 20.0,
       "known_org": 10.0,
-      "age_decay": -9.684
+      "age_decay": -10.497
     }
   },
   {
-    "id": "ae691850f55833f7",
-    "kind": "release",
-    "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
-    "summary_en": null,
+    "id": "d9e3129755bbc156",
+    "kind": "model",
+    "title": "apple/DepthPro2-H",
+    "summary_en": "depth-estimation, depth-pro-2, metric-depth, monocular-depth, video-depth",
     "summary_vi": null,
     "why_it_matters": null,
     "topics": [
-      "infra"
+      "cv"
     ],
     "links": [
       {
-        "source": "huggingface",
-        "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-        "external_id": null
+        "source": "hf_models",
+        "url": "https://huggingface.co/apple/DepthPro2-H",
+        "external_id": "apple/DepthPro2-H"
       }
     ],
     "actors": [
-      "huggingface"
+      "apple"
     ],
-    "published_at": "2026-11-26T05:05:36Z",
-    "first_seen_at": "2026-11-26T08:59:14.991006Z",
+    "published_at": "2026-11-05T01:28:00Z",
+    "first_seen_at": "2026-11-26T21:59:32.297536Z",
     "dedup_keys": [
-      "url:huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-      "title:and building data faster fine inference nemotron open parse tuning"
+      "hf:apple/depthpro2-h"
     ],
     "signals": {
       "hf_upvotes": 0,
-      "hf_likes": 0,
-      "hf_downloads": 0,
-      "hf_trending_score": 0.0,
+      "hf_likes": 32,
+      "hf_downloads": 2198,
+      "hf_trending_score": 30.0,
       "is_daily_paper": false,
       "github_stars": 0,
       "github_stars_delta": 0,
@@ -1990,12 +1888,15 @@
       "reddit_score": 0,
       "num_comments": 0,
       "has_code": false,
-      "has_weights": false
+      "has_weights": true
     },
-    "score": 19.757,
+    "score": 17.703,
     "score_breakdown": {
-      "kind_base": 20.0,
-      "age_decay": -0.243
+      "hf_trending": 20.604,
+      "hf_downloads": 15.392,
+      "hf_likes": 10.49,
+      "has_weights": 4.0,
+      "age_decay": -32.783
     }
   }
 ]
